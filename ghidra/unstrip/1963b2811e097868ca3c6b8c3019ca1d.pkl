@@ -1,0 +1,1120 @@
+(dp0
+S'DES_cbc_encrypt'
+p1
+(S'\n__stdcall DES_cbc_encrypt(uchar * input, uchar * output, long length, DES_key_schedule * schedule, DES_cblock * ivec, int enc)\n'
+p2
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid DES_cbc_encrypt(uchar *input,uchar *output,long length,DES_key_schedule *schedule,\u000a                    DES_cblock *ivec,int enc)\u000a\u000a{\u000a  (*(code *)PTR_DES_cbc_encrypt_00014fac)();\u000a  return;\u000a}\u000a\u000a
+p3
+S'adr r12,0x110ec\nadd r12,r12,#0x3000\nldr pc,[r12,#0xec0]!\n'
+p4
+S'00 c6 8f e2\n03 ca 8c e2\nc0 fe bc e5\n'
+p5
+S'.plt:000110e4\n.plt:000110e8\n.plt:000110ec\n'
+p6
+tp7
+sS'_FINI_0'
+p8
+(S'\n__stdcall _FINI_0()\n'
+p9
+V\u000avoid _FINI_0(void)\u000a\u000a{\u000a  (*(code *)PTR___cxa_finalize_00014f88)((int)&DAT_00011200 + DAT_00011200);\u000a  return;\u000a}\u000a\u000a
+p10
+S'ldr r0,[0x11200]\nadd r0,pc,r0\nb 0x00011078\n'
+p11
+S'04 00 9f e5\n00 00 8f e0\n9d ff ff ea\n'
+p12
+S'.text:000111f4\n.text:000111f8\n.text:000111fc\n'
+p13
+tp14
+sS'__gnu_Unwind_Restore_WMMXD'
+p15
+(S'\n__stdcall __gnu_Unwind_Restore_WMMXD()\n'
+p16
+V\u000aint __gnu_Unwind_Restore_WMMXD(int iParm1)\u000a\u000a{\u000a  undefined4 in_cr0;\u000a  undefined4 in_cr1;\u000a  undefined4 in_cr2;\u000a  undefined4 in_cr3;\u000a  undefined4 in_cr4;\u000a  undefined4 in_cr5;\u000a  undefined4 in_cr6;\u000a  undefined4 in_cr7;\u000a  undefined4 in_cr8;\u000a  undefined4 in_cr9;\u000a  undefined4 in_cr10;\u000a  undefined4 in_cr11;\u000a  undefined4 in_cr12;\u000a  undefined4 in_cr13;\u000a  undefined4 in_cr14;\u000a  undefined4 in_cr15;\u000a  \u000a  coprocessor_loadlong(1,in_cr0,iParm1);\u000a  coprocessor_loadlong(1,in_cr1,iParm1 + 8);\u000a  coprocessor_loadlong(1,in_cr2,iParm1 + 0x10);\u000a  coprocessor_loadlong(1,in_cr3,iParm1 + 0x18);\u000a  coprocessor_loadlong(1,in_cr4,iParm1 + 0x20);\u000a  coprocessor_loadlong(1,in_cr5,iParm1 + 0x28);\u000a  coprocessor_loadlong(1,in_cr6,iParm1 + 0x30);\u000a  coprocessor_loadlong(1,in_cr7,iParm1 + 0x38);\u000a  coprocessor_loadlong(1,in_cr8,iParm1 + 0x40);\u000a  coprocessor_loadlong(1,in_cr9,iParm1 + 0x48);\u000a  coprocessor_loadlong(1,in_cr10,iParm1 + 0x50);\u000a  coprocessor_loadlong(1,in_cr11,iParm1 + 0x58);\u000a  coprocessor_loadlong(1,in_cr12,iParm1 + 0x60);\u000a  coprocessor_loadlong(1,in_cr13,iParm1 + 0x68);\u000a  coprocessor_loadlong(1,in_cr14,iParm1 + 0x70);\u000a  coprocessor_loadlong(1,in_cr15,iParm1 + 0x78);\u000a  return iParm1 + 0x80;\u000a}\u000a\u000a
+p17
+S'ldcl p1,cr0,[r0],#0x8\nldcl p1,cr1,[r0],#0x8\nldcl p1,cr2,[r0],#0x8\nldcl p1,cr3,[r0],#0x8\nldcl p1,cr4,[r0],#0x8\nldcl p1,cr5,[r0],#0x8\nldcl p1,cr6,[r0],#0x8\nldcl p1,cr7,[r0],#0x8\nldcl p1,cr8,[r0],#0x8\nldcl p1,cr9,[r0],#0x8\nldcl p1,cr10,[r0],#0x8\nldcl p1,cr11,[r0],#0x8\nldcl p1,cr12,[r0],#0x8\nldcl p1,cr13,[r0],#0x8\nldcl p1,cr14,[r0],#0x8\nldcl p1,cr15,[r0],#0x8\nbx lr\n'
+p18
+S'02 01 f0 ec\n02 11 f0 ec\n02 21 f0 ec\n02 31 f0 ec\n02 41 f0 ec\n02 51 f0 ec\n02 61 f0 ec\n02 71 f0 ec\n02 81 f0 ec\n02 91 f0 ec\n02 a1 f0 ec\n02 b1 f0 ec\n02 c1 f0 ec\n02 d1 f0 ec\n02 e1 f0 ec\n02 f1 f0 ec\n1e ff 2f e1\n'
+p19
+S'.text:00012724\n.text:00012728\n.text:0001272c\n.text:00012730\n.text:00012734\n.text:00012738\n.text:0001273c\n.text:00012740\n.text:00012744\n.text:00012748\n.text:0001274c\n.text:00012750\n.text:00012754\n.text:00012758\n.text:0001275c\n.text:00012760\n.text:00012764\n'
+p20
+tp21
+sS'_Unwind_GetLanguageSpecificData'
+p22
+(S'\n__stdcall _Unwind_GetLanguageSpecificData()\n'
+p23
+V\u000aint _Unwind_GetLanguageSpecificData\u000a              (undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,int iParm4)\u000a\u000a{\u000a  int local_c;\u000a  \u000a  local_c = iParm4;\u000a  _Unwind_VRS_Get(uParm1,0,0xc,0,&local_c,uParm2,uParm3);\u000a  return *(int *)(local_c + 0x4c) + (uint)*(byte *)(*(int *)(local_c + 0x4c) + 7) * 4 + 8;\u000a}\u000a\u000a
+p24
+S'stmdb sp!,{ r0 r1 r2 r3 r4 lr }\nmov r1,#0x0\nadd r3,sp,#0xc\nstr r3,[sp,#0x0]\nmov r2,#0xc\ncpy r3,r1\nbl 0x00011cc8\nldr r3,[sp,#0xc]\nldr r3,[r3,#0x4c]\nldrb r2,[r3,#0x7]\nadd r3,r3,r2, lsl #0x2\nadd r0,r3,#0x8\nadd sp,sp,#0x14\nldmia sp!,{ pc }\n'
+p25
+S'1f 40 2d e9\n00 10 a0 e3\n0c 30 8d e2\n00 30 8d e5\n0c 20 a0 e3\n01 30 a0 e1\nf2 fb ff eb\n0c 30 9d e5\n4c 30 93 e5\n07 20 d3 e5\n02 31 83 e0\n08 00 83 e2\n14 d0 8d e2\n00 80 bd e8\n'
+p26
+S'.text:00012ce0\n.text:00012ce4\n.text:00012ce8\n.text:00012cec\n.text:00012cf0\n.text:00012cf4\n.text:00012cf8\n.text:00012cfc\n.text:00012d00\n.text:00012d04\n.text:00012d08\n.text:00012d0c\n.text:00012d10\n.text:00012d14\n'
+p27
+tp28
+sS'__gnu_Unwind_Restore_WMMXC'
+p29
+(S'\n__stdcall __gnu_Unwind_Restore_WMMXC()\n'
+p30
+V\u000aint __gnu_Unwind_Restore_WMMXC(int iParm1)\u000a\u000a{\u000a  undefined4 in_cr8;\u000a  undefined4 in_cr9;\u000a  undefined4 in_cr10;\u000a  undefined4 in_cr11;\u000a  \u000a  coprocessor_load2(1,in_cr8,iParm1);\u000a  coprocessor_load2(1,in_cr9,iParm1 + 4);\u000a  coprocessor_load2(1,in_cr10,iParm1 + 8);\u000a  coprocessor_load2(1,in_cr11,iParm1 + 0xc);\u000a  return iParm1 + 0x10;\u000a}\u000a\u000a
+p31
+S'ldc2 p1,cr8,[r0],#0x4\nldc2 p1,cr9,[r0],#0x4\nldc2 p1,cr10,[r0],#0x4\nldc2 p1,cr11,[r0],#0x4\nbx lr\n'
+p32
+S'01 81 b0 fc\n01 91 b0 fc\n01 a1 b0 fc\n01 b1 b0 fc\n1e ff 2f e1\n'
+p33
+S'.text:000127ac\n.text:000127b0\n.text:000127b4\n.text:000127b8\n.text:000127bc\n'
+p34
+tp35
+sS'FUN_0001191c'
+p36
+(S'\n__stdcall FUN_0001191c()\n'
+p37
+V\u000aundefined4 FUN_0001191c(int iParm1,int iParm2)\u000a\u000a{\u000a  int iVar1;\u000a  int iVar2;\u000a  uint uVar3;\u000a  uint uVar4;\u000a  int iVar5;\u000a  undefined4 uVar6;\u000a  int iVar7;\u000a  int iVar8;\u000a  uint uVar9;\u000a  int iVar10;\u000a  int iVar11;\u000a  int iVar12;\u000a  bool bVar13;\u000a  int local_2c [2];\u000a  \u000a  iVar8 = DAT_00011ad4 + 0x11930;\u000a  uVar9 = iParm2 - 2;\u000a  if (*(int *)(iVar8 + DAT_00011ad8) == 0) {\u000a    iVar2 = *(int *)(iVar8 + DAT_00011ae0);\u000a    local_2c[0] = *(int *)(iVar8 + DAT_00011adc) - iVar2 >> 3;\u000aLAB_00011978:\u000a    if (local_2c[0] != 0) {\u000a      iVar7 = local_2c[0] + -1;\u000a      iVar11 = 0;\u000a      iVar12 = iVar7;\u000a      while( true ) {\u000a        while( true ) {\u000a          iVar1 = (int)(iVar11 + iVar12 + ((uint)(iVar11 + iVar12) >> 0x1f)) >> 1;\u000a          iVar10 = iVar2 + iVar1 * 8;\u000a          uVar3 = FUN_00011904(iVar10);\u000a          if (iVar1 == iVar7) {\u000a            uVar4 = 0xffffffff;\u000a          }\u000a          else {\u000a            iVar5 = FUN_00011904(iVar2 + (iVar1 + 1) * 8);\u000a            uVar4 = iVar5 - 1;\u000a          }\u000a          if (uVar3 <= uVar9) break;\u000a          if (iVar1 == iVar11) goto LAB_00011a0c;\u000a          iVar12 = iVar1 + -1;\u000a        }\u000a        if (uVar9 <= uVar4) break;\u000a        iVar11 = iVar1 + 1;\u000a      }\u000a      if (iVar10 != 0) {\u000a        uVar6 = FUN_00011904(iVar10);\u000a        iVar2 = *(int *)(iVar10 + 4);\u000a        bVar13 = iVar2 == 1;\u000a        if (bVar13) {\u000a          iVar2 = 0;\u000a          *(undefined4 *)(iParm1 + 0x10) = 0;\u000a        }\u000a        *(undefined4 *)(iParm1 + 0x48) = uVar6;\u000a        if (bVar13) {\u000a          return 5;\u000a        }\u000a        if (iVar2 < 0) {\u000a          *(int *)(iParm1 + 0x4c) = iVar10 + 4;\u000a        }\u000a        else {\u000a          uVar6 = FUN_00011904();\u000a          *(undefined4 *)(iParm1 + 0x4c) = uVar6;\u000a        }\u000a        *(uint *)(iParm1 + 0x50) = (uint)(iVar2 < 0);\u000a        if (-1 < (int)**(uint **)(iParm1 + 0x4c)) {\u000a          uVar6 = FUN_00011904();\u000a          *(undefined4 *)(iParm1 + 0x10) = uVar6;\u000a          return 0;\u000a        }\u000a        uVar9 = **(uint **)(iParm1 + 0x4c) >> 0x18 & 0xf;\u000a        if (uVar9 == 0) {\u000a          *(undefined4 *)(iParm1 + 0x10) = *(undefined4 *)(iVar8 + DAT_00011ae4);\u000a          return 0;\u000a        }\u000a        iVar2 = 0;\u000a        iVar12 = DAT_00011ae8;\u000a        if ((uVar9 == 1) || (iVar12 = DAT_00011aec, uVar9 == 2)) {\u000a          *(undefined4 *)(iParm1 + 0x10) = *(undefined4 *)(iVar8 + iVar12);\u000a          return 0;\u000a        }\u000a        goto LAB_00011ab8;\u000a      }\u000a    }\u000aLAB_00011a0c:\u000a    *(undefined4 *)(iParm1 + 0x10) = 0;\u000a  }\u000a  else {\u000a    iVar2 = __gnu_Unwind_Find_exidx(uVar9,local_2c);\u000a    if (iVar2 != 0) goto LAB_00011978;\u000aLAB_00011ab8:\u000a    *(int *)(iParm1 + 0x10) = iVar2;\u000a  }\u000a  return 9;\u000a}\u000a\u000a
+p38
+S'stmdb sp!,{ r4 r5 r6 r7 r8 r9 r10 r11 lr }\nldr r5,[0x11ad4]\nldr r3,[0x11ad8]\nadd r5,pc,r5\nldr r3,[r5,r3]\nsub sp,sp,#0x14\ncmp r3,#0x0\ncpy r4,r0\nsub r6,r1,#0x2\nbeq 0x0001195c\ncpy r0,r6\nadd r1,sp,#0xc\nbl 0x000111b0\nsubs r9,r0,#0x0\nbne 0x00011978\nb 0x00011ab8\nldr r3,[0x11adc]\nldr r2,[0x11ae0]\nldr r3,[r5,r3]\nldr r9,[r5,r2]\nrsb r3,r9,r3\nmov r3,r3, asr #0x3\nstr r3,[sp,#0xc]\nldr r3,[sp,#0xc]\ncmp r3,#0x0\nbeq 0x00011a0c\nsub r3,r3,#0x1\ncpy r11,r3\nmov r10,#0x0\nstr r3,[sp,#0x4]\nadd r7,r10,r11\nadd r7,r7,r7, lsr #0x1f\nmov r7,r7, asr #0x1\nadd r8,r9,r7, lsl #0x3\ncpy r0,r8\nbl 0x00011904\nldr r2,[sp,#0x4]\ncmp r7,r2\ncpy r3,r0\nmvneq r0,#0x0\nbeq 0x000119d8\nadd r0,r7,#0x1\nadd r0,r9,r0, lsl #0x3\nstr r3,[sp,#0x0]\nbl 0x00011904\nldr r3,[sp,#0x0]\nsub r0,r0,#0x1\ncmp r6,r3\nbcs 0x000119f0\ncmp r7,r10\nbeq 0x00011a0c\nsub r11,r7,#0x1\nb 0x00011994\ncmp r6,r0\nbhi 0x00011a04\ncmp r8,#0x0\nbne 0x00011a1c\nb 0x00011a0c\nadd r10,r7,#0x1\nb 0x00011994\nmov r3,#0x0\nstr r3,[r4,#0x10]\nmov r0,#0x9\nb 0x00011acc\ncpy r0,r8\nbl 0x00011904\nldr r3,[r8,#0x4]\ncmp r3,#0x1\nmoveq r3,#0x0\nstreq r3,[r4,#0x10]\nstr r0,[r4,#0x48]\nmoveq r0,#0x5\nbeq 0x00011acc\ncmp r3,#0x0\nadd r0,r8,#0x4\nstrlt r0,[r4,#0x4c]\nmovlt r3,#0x1\nblt 0x00011a60\nbl 0x00011904\nmov r3,#0x0\nstr r0,[r4,#0x4c]\nldr r0,[r4,#0x4c]\nstr r3,[r4,#0x50]\nldr r3,[r0,#0x0]\ncmp r3,#0x0\nbge 0x00011ac0\nmov r3,r3, lsr #0x18\nands r3,r3,#0xf\nldreq r2,[0x11ae4]\ncpyeq r0,r3\nldreq r2,[r5,r2]\nstreq r2,[r4,#0x10]\nbeq 0x00011acc\ncmp r3,#0x1\nmov r0,#0x0\nldreq r3,[0x11ae8]\nbeq 0x00011aac\ncmp r3,#0x2\nbne 0x00011ab8\nldr r3,[0x11aec]\nldr r3,[r5,r3]\nstr r3,[r4,#0x10]\nb 0x00011acc\nstr r0,[r4,#0x10]\nb 0x00011a14\nbl 0x00011904\nstr r0,[r4,#0x10]\nmov r0,#0x0\nadd sp,sp,#0x14\nldmia sp!,{ r4 r5 r6 r7 r8 r9 r10 r11 pc }\n'
+p39
+S'f0 4f 2d e9\nac 51 9f e5\nac 31 9f e5\n05 50 8f e0\n03 30 95 e7\n14 d0 4d e2\n00 00 53 e3\n00 40 a0 e1\n02 60 41 e2\n05 00 00 0a\n06 00 a0 e1\n0c 10 8d e2\n17 fe ff eb\n00 90 50 e2\n07 00 00 1a\n56 00 00 ea\n78 31 9f e5\n78 21 9f e5\n03 30 95 e7\n02 90 95 e7\n03 30 69 e0\nc3 31 a0 e1\n0c 30 8d e5\n0c 30 9d e5\n00 00 53 e3\n21 00 00 0a\n01 30 43 e2\n03 b0 a0 e1\n00 a0 a0 e3\n04 30 8d e5\n0b 70 8a e0\na7 7f 87 e0\nc7 70 a0 e1\n87 81 89 e0\n08 00 a0 e1\nd5 ff ff eb\n04 20 9d e5\n02 00 57 e1\n00 30 a0 e1\n00 00 e0 03\n05 00 00 0a\n01 00 87 e2\n80 01 89 e0\n00 30 8d e5\ncc ff ff eb\n00 30 9d e5\n01 00 40 e2\n03 00 56 e1\n03 00 00 2a\n0a 00 57 e1\n08 00 00 0a\n01 b0 47 e2\ne8 ff ff ea\n00 00 56 e1\n02 00 00 8a\n00 00 58 e3\n06 00 00 1a\n01 00 00 ea\n01 a0 87 e2\ne1 ff ff ea\n00 30 a0 e3\n10 30 84 e5\n09 00 a0 e3\n2b 00 00 ea\n08 00 a0 e1\nb7 ff ff eb\n04 30 98 e5\n01 00 53 e3\n00 30 a0 03\n10 30 84 05\n48 00 84 e5\n05 00 a0 03\n22 00 00 0a\n00 00 53 e3\n04 00 88 e2\n4c 00 84 b5\n01 30 a0 b3\n02 00 00 ba\naa ff ff eb\n00 30 a0 e3\n4c 00 84 e5\n4c 00 94 e5\n50 30 84 e5\n00 30 90 e5\n00 00 53 e3\n12 00 00 aa\n23 3c a0 e1\n0f 30 13 e2\n60 20 9f 05\n03 00 a0 01\n02 20 95 07\n10 20 84 05\n0e 00 00 0a\n01 00 53 e3\n00 00 a0 e3\n48 30 9f 05\n02 00 00 0a\n02 00 53 e3\n03 00 00 1a\n3c 30 9f e5\n03 30 95 e7\n10 30 84 e5\n04 00 00 ea\n10 00 84 e5\nd4 ff ff ea\n8f ff ff eb\n10 00 84 e5\n00 00 a0 e3\n14 d0 8d e2\nf0 8f bd e8\n'
+p40
+S'.text:0001191c\n.text:00011920\n.text:00011924\n.text:00011928\n.text:0001192c\n.text:00011930\n.text:00011934\n.text:00011938\n.text:0001193c\n.text:00011940\n.text:00011944\n.text:00011948\n.text:0001194c\n.text:00011950\n.text:00011954\n.text:00011958\n.text:0001195c\n.text:00011960\n.text:00011964\n.text:00011968\n.text:0001196c\n.text:00011970\n.text:00011974\n.text:00011978\n.text:0001197c\n.text:00011980\n.text:00011984\n.text:00011988\n.text:0001198c\n.text:00011990\n.text:00011994\n.text:00011998\n.text:0001199c\n.text:000119a0\n.text:000119a4\n.text:000119a8\n.text:000119ac\n.text:000119b0\n.text:000119b4\n.text:000119b8\n.text:000119bc\n.text:000119c0\n.text:000119c4\n.text:000119c8\n.text:000119cc\n.text:000119d0\n.text:000119d4\n.text:000119d8\n.text:000119dc\n.text:000119e0\n.text:000119e4\n.text:000119e8\n.text:000119ec\n.text:000119f0\n.text:000119f4\n.text:000119f8\n.text:000119fc\n.text:00011a00\n.text:00011a04\n.text:00011a08\n.text:00011a0c\n.text:00011a10\n.text:00011a14\n.text:00011a18\n.text:00011a1c\n.text:00011a20\n.text:00011a24\n.text:00011a28\n.text:00011a2c\n.text:00011a30\n.text:00011a34\n.text:00011a38\n.text:00011a3c\n.text:00011a40\n.text:00011a44\n.text:00011a48\n.text:00011a4c\n.text:00011a50\n.text:00011a54\n.text:00011a58\n.text:00011a5c\n.text:00011a60\n.text:00011a64\n.text:00011a68\n.text:00011a6c\n.text:00011a70\n.text:00011a74\n.text:00011a78\n.text:00011a7c\n.text:00011a80\n.text:00011a84\n.text:00011a88\n.text:00011a8c\n.text:00011a90\n.text:00011a94\n.text:00011a98\n.text:00011a9c\n.text:00011aa0\n.text:00011aa4\n.text:00011aa8\n.text:00011aac\n.text:00011ab0\n.text:00011ab4\n.text:00011ab8\n.text:00011abc\n.text:00011ac0\n.text:00011ac4\n.text:00011ac8\n.text:00011acc\n.text:00011ad0\n'
+p41
+tp42
+sS'__gnu_unwind_frame'
+p43
+(S'\n__stdcall __gnu_unwind_frame()\n'
+p44
+V\u000a/* WARNING: Could not reconcile some variable overlaps */\u000a\u000avoid __gnu_unwind_frame(int iParm1,undefined4 uParm2,undefined4 uParm3,uint uParm4)\u000a\u000a{\u000a  int iVar1;\u000a  int local_14;\u000a  int local_10;\u000a  uint local_c;\u000a  \u000a  iVar1 = *(int *)(iParm1 + 0x4c);\u000a  local_14 = *(int *)(iVar1 + 4) << 8;\u000a  local_10 = iVar1 + 8;\u000a  local_c._0_2_ = CONCAT11(*(byte *)(iVar1 + 7),3);\u000a  local_c = uParm4 & 0xffff0000 | (uint)(ushort)local_c;\u000a  __gnu_unwind_execute(uParm2,&local_14,3,(uint)*(byte *)(iVar1 + 7),iParm1);\u000a  return;\u000a}\u000a\u000a
+p45
+S'stmdb sp!,{ r0 r1 r2 r3 r4 lr }\nldr r3,[r0,#0x4c]\ncpy r0,r1\nldr r2,[r3,#0x4]\nadd r1,sp,#0x4\nmov r2,r2, lsl #0x8\nstr r2,[sp,#0x4]\nadd r2,r3,#0x8\nstr r2,[sp,#0x8]\nmov r2,#0x3\nstrb r2,[sp,#0xc]\nldrb r3,[r3,#0x7]\nstrb r3,[sp,#0xd]\nbl 0x000128e0\nadd sp,sp,#0x14\nldmia sp!,{ pc }\n'
+p46
+S'1f 40 2d e9\n4c 30 90 e5\n01 00 a0 e1\n04 20 93 e5\n04 10 8d e2\n02 24 a0 e1\n04 20 8d e5\n08 20 83 e2\n08 20 8d e5\n03 20 a0 e3\n0c 20 cd e5\n07 30 d3 e5\n0d 30 cd e5\n0c ff ff eb\n14 d0 8d e2\n00 80 bd e8\n'
+p47
+S'.text:00012c74\n.text:00012c78\n.text:00012c7c\n.text:00012c80\n.text:00012c84\n.text:00012c88\n.text:00012c8c\n.text:00012c90\n.text:00012c94\n.text:00012c98\n.text:00012c9c\n.text:00012ca0\n.text:00012ca4\n.text:00012ca8\n.text:00012cac\n.text:00012cb0\n'
+p48
+tp49
+sS'PEM_read_RSAPrivateKey'
+p50
+(S'\n__stdcall PEM_read_RSAPrivateKey(FILE * fp, RSA * * x, pem_password_cb * cb, void * u)\n'
+p51
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aRSA * PEM_read_RSAPrivateKey(FILE *fp,RSA **x,undefined1 *cb,void *u)\u000a\u000a{\u000a  RSA *pRVar1;\u000a  \u000a  pRVar1 = (RSA *)(*(code *)PTR_PEM_read_RSAPrivateKey_00014fd0)();\u000a  return pRVar1;\u000a}\u000a\u000a
+p52
+S'adr r12,0x11158\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe78]!\n'
+p53
+S'00 c6 8f e2\n03 ca 8c e2\n78 fe bc e5\n'
+p54
+S'.plt:00011150\n.plt:00011154\n.plt:00011158\n'
+p55
+tp56
+sS'FUN_00011d78'
+p57
+(S'\n__stdcall FUN_00011d78()\n'
+p58
+V\u000avoid FUN_00011d78(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3)\u000a\u000a{\u000a  undefined4 local_c;\u000a  \u000a  local_c = uParm3;\u000a  _Unwind_VRS_Set(uParm1,0,uParm2,0,&local_c,uParm2,uParm3);\u000a  return;\u000a}\u000a\u000a
+p59
+S'stmdb sp!,{ r0 r1 r2 r3 r4 lr }\ncpy r3,r1\nadd r1,sp,#0x10\nstr r2,[r1,#-0x4]!\nstr r1,[sp,#0x0]\nmov r1,#0x0\ncpy r2,r3\ncpy r3,r1\nbl 0x00011d34\nadd sp,sp,#0x14\nldmia sp!,{ pc }\n'
+p60
+S'1f 40 2d e9\n01 30 a0 e1\n10 10 8d e2\n04 20 21 e5\n00 10 8d e5\n00 10 a0 e3\n03 20 a0 e1\n01 30 a0 e1\ne5 ff ff eb\n14 d0 8d e2\n00 80 bd e8\n'
+p61
+S'.text:00011d78\n.text:00011d7c\n.text:00011d80\n.text:00011d84\n.text:00011d88\n.text:00011d8c\n.text:00011d90\n.text:00011d94\n.text:00011d98\n.text:00011d9c\n.text:00011da0\n'
+p62
+tp63
+sS'RSA_public_encrypt'
+p64
+(S'\n__stdcall RSA_public_encrypt(int flen, uchar * from, uchar * to, RSA * rsa, int padding)\n'
+p65
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint RSA_public_encrypt(int flen,uchar *from,uchar *to,RSA *rsa,int padding)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_RSA_public_encrypt_00014fc4)();\u000a  return iVar1;\u000a}\u000a\u000a
+p66
+S'adr r12,0x11134\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe90]!\n'
+p67
+S'00 c6 8f e2\n03 ca 8c e2\n90 fe bc e5\n'
+p68
+S'.plt:0001112c\n.plt:00011130\n.plt:00011134\n'
+p69
+tp70
+sS'DES_ncbc_encrypt'
+p71
+(S'\n__stdcall DES_ncbc_encrypt(uchar * input, uchar * output, long length, DES_key_schedule * schedule, DES_cblock * ivec, int enc)\n'
+p72
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid DES_ncbc_encrypt(uchar *input,uchar *output,long length,DES_key_schedule *schedule,\u000a                     DES_cblock *ivec,int enc)\u000a\u000a{\u000a  (*(code *)PTR_DES_ncbc_encrypt_00014fa4)();\u000a  return;\u000a}\u000a\u000a
+p73
+S'adr r12,0x110d4\nadd r12,r12,#0x3000\nldr pc,[r12,#0xed0]!\n'
+p74
+S'00 c6 8f e2\n03 ca 8c e2\nd0 fe bc e5\n'
+p75
+S'.plt:000110cc\n.plt:000110d0\n.plt:000110d4\n'
+p76
+tp77
+sS'sprintf'
+p78
+(S'\n__stdcall sprintf(char * __s, char * __format)\n'
+p79
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint sprintf(char *__s,char *__format,...)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_sprintf_00014fe8)();\u000a  return iVar1;\u000a}\u000a\u000a
+p80
+S'adr r12,0x111a0\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe48]!\n'
+p81
+S'00 c6 8f e2\n03 ca 8c e2\n48 fe bc e5\n'
+p82
+S'.plt:00011198\n.plt:0001119c\n.plt:000111a0\n'
+p83
+tp84
+sS'_Unwind_GetDataRelBase'
+p85
+(S'\n__stdcall _Unwind_GetDataRelBase()\n'
+p86
+V\u000avoid _Unwind_GetDataRelBase(void)\u000a\u000a{\u000a                    /* WARNING: Subroutine does not return */\u000a  abort();\u000a}\u000a\u000a
+p87
+S'stmdb sp!,{ r3 lr }\nbl 0x000111bc\n'
+p88
+S'08 40 2d e9\n26 f9 ff eb\n'
+p89
+S'.text:00012d18\n.text:00012d1c\n'
+p90
+tp91
+sS'strlen'
+p92
+(S'\n__stdcall strlen(char * __s)\n'
+p93
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000asize_t strlen(char *__s)\u000a\u000a{\u000a  size_t sVar1;\u000a  \u000a  sVar1 = (*(code *)PTR_strlen_00014f8c)();\u000a  return sVar1;\u000a}\u000a\u000a
+p94
+S'adr r12,0x1108c\nadd r12,r12,#0x3000\nldr pc,[r12,#0xf00]!\n'
+p95
+S'00 c6 8f e2\n03 ca 8c e2\n00 ff bc e5\n'
+p96
+S'.plt:00011084\n.plt:00011088\n.plt:0001108c\n'
+p97
+tp98
+sS'FUN_00011800'
+p99
+(S'\n__stdcall FUN_00011800()\n'
+p100
+V\u000auint FUN_00011800(uint uParm1,uint uParm2)\u000a\u000a{\u000a  int iVar1;\u000a  uint uVar2;\u000a  int iVar3;\u000a  uint uVar4;\u000a  uint uVar5;\u000a  uint uVar6;\u000a  bool in_NG;\u000a  bool bVar7;\u000a  \u000a  uVar6 = uParm1 ^ uParm2;\u000a  if (in_NG) {\u000a    uParm2 = -uParm2;\u000a  }\u000a  if (uParm2 - 1 == 0) {\u000a    if ((int)(uVar6 ^ uParm1) < 0) {\u000a      uParm1 = -uParm1;\u000a    }\u000a    return uParm1;\u000a  }\u000a  uVar5 = uParm1;\u000a  if ((int)uParm1 < 0) {\u000a    uVar5 = -uParm1;\u000a  }\u000a  if (uVar5 <= uParm2) {\u000a    if (uVar5 < uParm2) {\u000a      uParm1 = 0;\u000a    }\u000a    if (uVar5 == uParm2) {\u000a      uParm1 = (int)uVar6 >> 0x1f | 1;\u000a    }\u000a    return uParm1;\u000a  }\u000a  if ((uParm2 & uParm2 - 1) == 0) {\u000a    iVar1 = count_leading_zeroes(uParm2);\u000a    uVar5 = uVar5 >> (0x1fU - iVar1 & 0xff);\u000a    if ((int)uVar6 < 0) {\u000a      uVar5 = -uVar5;\u000a    }\u000a    return uVar5;\u000a  }\u000a  iVar3 = count_leading_zeroes(uParm2);\u000a  iVar1 = count_leading_zeroes(uVar5);\u000a  uParm2 = uParm2 << (iVar3 - iVar1 & 0xffU);\u000a  uVar4 = 1 << (iVar3 - iVar1 & 0xffU);\u000a  uVar2 = 0;\u000a  while( true ) {\u000a    if (uParm2 <= uVar5) {\u000a      uVar5 = uVar5 - uParm2;\u000a      uVar2 = uVar2 | uVar4;\u000a    }\u000a    if (uParm2 >> 1 <= uVar5) {\u000a      uVar5 = uVar5 - (uParm2 >> 1);\u000a      uVar2 = uVar2 | uVar4 >> 1;\u000a    }\u000a    if (uParm2 >> 2 <= uVar5) {\u000a      uVar5 = uVar5 - (uParm2 >> 2);\u000a      uVar2 = uVar2 | uVar4 >> 2;\u000a    }\u000a    if (uParm2 >> 3 <= uVar5) {\u000a      uVar5 = uVar5 - (uParm2 >> 3);\u000a      uVar2 = uVar2 | uVar4 >> 3;\u000a    }\u000a    bVar7 = uVar5 == 0;\u000a    if (!bVar7) {\u000a      uVar4 = uVar4 >> 4;\u000a      bVar7 = uVar4 == 0;\u000a    }\u000a    if (bVar7) break;\u000a    uParm2 = uParm2 >> 4;\u000a  }\u000a  if ((int)uVar6 < 0) {\u000a    uVar2 = -uVar2;\u000a  }\u000a  return uVar2;\u000a}\u000a\u000a
+p101
+S'eor r12,r0,r1\nrsbmi r1,r1,#0x0\nsubs r2,r1,#0x1\nbeq 0x00011890\nmovs r3,r0\nrsbmi r3,r0,#0x0\ncmp r3,r1\nbls 0x0001189c\ntst r1,r2\nbeq 0x000118ac\nclz r2,r1\nclz r0,r3\nsub r0,r2,r0\nmov r2,#0x1\nmov r1,r1, lsl r0\nmov r2,r2, lsl r0\nmov r0,#0x0\ncmp r3,r1\nsubcs r3,r3,r1\norrcs r0,r0,r2\ncmp r3,r1, lsr #0x1\nsubcs r3,r3,r1, lsr #0x1\norrcs r0,r0,r2, lsr #0x1\ncmp r3,r1, lsr #0x2\nsubcs r3,r3,r1, lsr #0x2\norrcs r0,r0,r2, lsr #0x2\ncmp r3,r1, lsr #0x3\nsubcs r3,r3,r1, lsr #0x3\norrcs r0,r0,r2, lsr #0x3\ncmp r3,#0x0\nmovnes r2,r2, lsr #0x4\nmovne r1,r1, lsr #0x4\nbne 0x00011844\ncmp r12,#0x0\nrsbmi r0,r0,#0x0\nbx lr\nteq r12,r0\nrsbmi r0,r0,#0x0\nbx lr\nmovcc r0,#0x0\nmoveq r0,r12, asr #0x1f\norreq r0,r0,#0x1\nbx lr\nclz r2,r1\nrsb r2,r2,#0x1f\ncmp r12,#0x0\nmov r0,r3, lsr r2\nrsbmi r0,r0,#0x0\nbx lr\n'
+p102
+S'01 c0 20 e0\n00 10 61 42\n01 20 51 e2\n1f 00 00 0a\n00 30 b0 e1\n00 30 60 42\n01 00 53 e1\n1e 00 00 9a\n02 00 11 e1\n20 00 00 0a\n11 2f 6f e1\n13 0f 6f e1\n00 00 42 e0\n01 20 a0 e3\n11 10 a0 e1\n12 20 a0 e1\n00 00 a0 e3\n01 00 53 e1\n01 30 43 20\n02 00 80 21\na1 00 53 e1\na1 30 43 20\na2 00 80 21\n21 01 53 e1\n21 31 43 20\n22 01 80 21\na1 01 53 e1\na1 31 43 20\na2 01 80 21\n00 00 53 e3\n22 22 b0 11\n21 12 a0 11\nef ff ff 1a\n00 00 5c e3\n00 00 60 42\n1e ff 2f e1\n00 00 3c e1\n00 00 60 42\n1e ff 2f e1\n00 00 a0 33\ncc 0f a0 01\n01 00 80 03\n1e ff 2f e1\n11 2f 6f e1\n1f 20 62 e2\n00 00 5c e3\n33 02 a0 e1\n00 00 60 42\n1e ff 2f e1\n'
+p103
+S'.text:00011800\n.text:00011804\n.text:00011808\n.text:0001180c\n.text:00011810\n.text:00011814\n.text:00011818\n.text:0001181c\n.text:00011820\n.text:00011824\n.text:00011828\n.text:0001182c\n.text:00011830\n.text:00011834\n.text:00011838\n.text:0001183c\n.text:00011840\n.text:00011844\n.text:00011848\n.text:0001184c\n.text:00011850\n.text:00011854\n.text:00011858\n.text:0001185c\n.text:00011860\n.text:00011864\n.text:00011868\n.text:0001186c\n.text:00011870\n.text:00011874\n.text:00011878\n.text:0001187c\n.text:00011880\n.text:00011884\n.text:00011888\n.text:0001188c\n.text:00011890\n.text:00011894\n.text:00011898\n.text:0001189c\n.text:000118a0\n.text:000118a4\n.text:000118a8\n.text:000118ac\n.text:000118b0\n.text:000118b4\n.text:000118b8\n.text:000118bc\n.text:000118c0\n'
+p104
+tp105
+sS'raise'
+p106
+(S'\n__stdcall raise(int __sig)\n'
+p107
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint raise(int __sig)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_raise_00014fec)();\u000a  return iVar1;\u000a}\u000a\u000a
+p108
+S'adr r12,0x111ac\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe40]!\n'
+p109
+S'00 c6 8f e2\n03 ca 8c e2\n40 fe bc e5\n'
+p110
+S'.plt:000111a4\n.plt:000111a8\n.plt:000111ac\n'
+p111
+tp112
+sS'_Unwind_GetTextRelBase'
+p113
+(S'\n__stdcall _Unwind_GetTextRelBase()\n'
+p114
+V\u000avoid _Unwind_GetTextRelBase(void)\u000a\u000a{\u000a                    /* WARNING: Subroutine does not return */\u000a  abort();\u000a}\u000a\u000a
+p115
+S'stmdb sp!,{ r3 lr }\nbl 0x000111bc\n'
+p116
+S'08 40 2d e9\n24 f9 ff eb\n'
+p117
+S'.text:00012d20\n.text:00012d24\n'
+p118
+tp119
+sS'FUN_00011b5c'
+p120
+(S'\n__stdcall FUN_00011b5c()\n'
+p121
+V\u000aint FUN_00011b5c(int iParm1,int iParm2,int iParm3)\u000a\u000a{\u000a  int iVar1;\u000a  int iVar2;\u000a  int iVar3;\u000a  code *pcVar4;\u000a  undefined4 uVar5;\u000a  uint uVar6;\u000a  undefined4 local_4a0;\u000a  undefined4 local_49c;\u000a  undefined4 uStack1176;\u000a  undefined4 uStack1172;\u000a  undefined4 uStack1168;\u000a  undefined4 local_48c;\u000a  undefined4 uStack1160;\u000a  undefined4 uStack1156;\u000a  undefined4 uStack1152;\u000a  undefined4 local_47c;\u000a  undefined4 uStack1144;\u000a  undefined4 uStack1140;\u000a  undefined4 uStack1136;\u000a  undefined4 local_46c;\u000a  undefined4 local_468;\u000a  undefined4 uStack1124;\u000a  undefined4 local_460;\u000a  undefined4 local_45c;\u000a  undefined auStack608 [56];\u000a  undefined4 local_228;\u000a  \u000a  pcVar4 = *(code **)(iParm1 + 0xc);\u000a  uVar5 = *(undefined4 *)(iParm1 + 0x18);\u000a  local_49c = *(undefined4 *)(iParm2 + 4);\u000a  uStack1176 = *(undefined4 *)(iParm2 + 8);\u000a  uStack1172 = *(undefined4 *)(iParm2 + 0xc);\u000a  uStack1168 = *(undefined4 *)(iParm2 + 0x10);\u000a  local_48c = *(undefined4 *)(iParm2 + 0x14);\u000a  uStack1160 = *(undefined4 *)(iParm2 + 0x18);\u000a  uStack1156 = *(undefined4 *)(iParm2 + 0x1c);\u000a  uStack1152 = *(undefined4 *)(iParm2 + 0x20);\u000a  local_47c = *(undefined4 *)(iParm2 + 0x24);\u000a  uStack1144 = *(undefined4 *)(iParm2 + 0x28);\u000a  uStack1140 = *(undefined4 *)(iParm2 + 0x2c);\u000a  uStack1136 = *(undefined4 *)(iParm2 + 0x30);\u000a  local_46c = *(undefined4 *)(iParm2 + 0x34);\u000a  local_468 = *(undefined4 *)(iParm2 + 0x38);\u000a  uStack1124 = *(undefined4 *)(iParm2 + 0x3c);\u000a  local_460 = *(undefined4 *)(iParm2 + 0x40);\u000a  iVar3 = 0;\u000a  local_4a0 = 0;\u000a  do {\u000a    iVar1 = FUN_0001191c(iParm1,local_460);\u000a    if (iParm3 == 0) {\u000a      uVar6 = 9;\u000a    }\u000a    else {\u000a      uVar6 = 10;\u000a    }\u000a    if (iVar1 == 0) {\u000a      *(undefined4 *)(iParm1 + 0x14) = local_460;\u000a      memcpy(auStack608,&local_4a0,0x240);\u000a      iVar3 = (**(code **)(iParm1 + 0x10))(uVar6,iParm1,auStack608);\u000a      local_45c = local_228;\u000a    }\u000a    else {\u000a      uVar6 = uVar6 | 0x10;\u000a      local_45c = local_468;\u000a    }\u000a    iVar2 = (*pcVar4)(1,uVar6,iParm1,iParm1,&local_4a0,uVar5);\u000a    if (iVar2 != 0) {\u000a      return 9;\u000a    }\u000a    if (iVar1 != 0) {\u000a      return iVar1;\u000a    }\u000a    memcpy(&local_4a0,auStack608,0x240);\u000a    iParm3 = iVar1;\u000a  } while (iVar3 == 8);\u000a  if (iVar3 == 7) {\u000a    restore_core_regs(&local_49c);\u000a  }\u000a  return 9;\u000a}\u000a\u000a
+p122
+S'stmdb sp!,{ r4 r5 r6 r7 r8 r9 r10 lr }\nadd lr,r1,#0x4\nldr r8,[r0,#0xc]\nldr r9,[r0,#0x18]\nsub sp,sp,#0x480\ncpy r4,r0\ncpy r5,r2\nldmia lr!,{r0 r1 r2 r3 }\nsub sp,sp,#0x8\nadd r12,sp,#0xc\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr!,{r0 r1 r2 r3 }\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr!,{r0 r1 r2 r3 }\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr,{r0 r1 r2 r3 }\nmov r7,#0x0\nadd r6,sp,#0x8\nstmia r12,{r0 r1 r2 r3 }\nstr r7,[sp,#0x8]\ncpy r0,r4\nldr r1,[sp,#0x48]\nbl 0x0001191c\ncmp r5,#0x0\nmovne r10,#0xa\nmoveq r10,#0x9\nsubs r5,r0,#0x0\norrne r10,r10,#0x10\nldrne r3,[sp,#0x40]\nbne 0x00011c08\nldr r3,[sp,#0x48]\nstr r3,[r4,#0x14]\ncpy r1,r6\nmov r2,#0x240\nadd r0,sp,#0x248\nbl 0x000110a8\nldr r3,[r4,#0x10]\ncpy r0,r10\ncpy r1,r4\nadd r2,sp,#0x248\nblx r3\nldr r3,[sp,#0x280]\ncpy r7,r0\nstr r3,[sp,#0x4c]\nstmia sp,{ r6 r9 }\nmov r0,#0x1\ncpy r1,r10\ncpy r2,r4\ncpy r3,r4\nblx r8\ncmp r0,#0x0\nbne 0x00011c5c\ncmp r5,#0x0\nbne 0x00011c60\ncpy r0,r6\nadd r1,sp,#0x248\nmov r2,#0x240\nbl 0x000110a8\ncmp r7,#0x8\nbeq 0x00011bac\ncmp r7,#0x7\nbne 0x00011c5c\nadd r0,r6,#0x4\nbl 0x000126e0\nmov r5,#0x9\ncpy r0,r5\nadd sp,sp,#0x88\nadd sp,sp,#0x400\nldmia sp!,{ r4 r5 r6 r7 r8 r9 r10 pc }\n'
+p123
+S'f0 47 2d e9\n04 e0 81 e2\n0c 80 90 e5\n18 90 90 e5\n12 dd 4d e2\n00 40 a0 e1\n02 50 a0 e1\n0f 00 be e8\n08 d0 4d e2\n0c c0 8d e2\n0f 00 ac e8\n0f 00 be e8\n0f 00 ac e8\n0f 00 be e8\n0f 00 ac e8\n0f 00 9e e8\n00 70 a0 e3\n08 60 8d e2\n0f 00 8c e8\n08 70 8d e5\n04 00 a0 e1\n48 10 9d e5\n58 ff ff eb\n00 00 55 e3\n0a a0 a0 13\n09 a0 a0 03\n00 50 50 e2\n10 a0 8a 13\n40 30 9d 15\n0c 00 00 1a\n48 30 9d e5\n14 30 84 e5\n06 10 a0 e1\n09 2d a0 e3\n92 0f 8d e2\n2e fd ff eb\n10 30 94 e5\n0a 00 a0 e1\n04 10 a0 e1\n92 2f 8d e2\n33 ff 2f e1\n80 32 9d e5\n00 70 a0 e1\n4c 30 8d e5\n40 02 8d e8\n01 00 a0 e3\n0a 10 a0 e1\n04 20 a0 e1\n04 30 a0 e1\n38 ff 2f e1\n00 00 50 e3\n0b 00 00 1a\n00 00 55 e3\n0a 00 00 1a\n06 00 a0 e1\n92 1f 8d e2\n09 2d a0 e3\n18 fd ff eb\n08 00 57 e3\nd7 ff ff 0a\n07 00 57 e3\n01 00 00 1a\n04 00 86 e2\na0 02 00 eb\n09 50 a0 e3\n05 00 a0 e1\n88 d0 8d e2\n01 db 8d e2\nf0 87 bd e8\n'
+p124
+S'.text:00011b5c\n.text:00011b60\n.text:00011b64\n.text:00011b68\n.text:00011b6c\n.text:00011b70\n.text:00011b74\n.text:00011b78\n.text:00011b7c\n.text:00011b80\n.text:00011b84\n.text:00011b88\n.text:00011b8c\n.text:00011b90\n.text:00011b94\n.text:00011b98\n.text:00011b9c\n.text:00011ba0\n.text:00011ba4\n.text:00011ba8\n.text:00011bac\n.text:00011bb0\n.text:00011bb4\n.text:00011bb8\n.text:00011bbc\n.text:00011bc0\n.text:00011bc4\n.text:00011bc8\n.text:00011bcc\n.text:00011bd0\n.text:00011bd4\n.text:00011bd8\n.text:00011bdc\n.text:00011be0\n.text:00011be4\n.text:00011be8\n.text:00011bec\n.text:00011bf0\n.text:00011bf4\n.text:00011bf8\n.text:00011bfc\n.text:00011c00\n.text:00011c04\n.text:00011c08\n.text:00011c0c\n.text:00011c10\n.text:00011c14\n.text:00011c18\n.text:00011c1c\n.text:00011c20\n.text:00011c24\n.text:00011c28\n.text:00011c2c\n.text:00011c30\n.text:00011c34\n.text:00011c38\n.text:00011c3c\n.text:00011c40\n.text:00011c44\n.text:00011c48\n.text:00011c4c\n.text:00011c50\n.text:00011c54\n.text:00011c58\n.text:00011c5c\n.text:00011c60\n.text:00011c64\n.text:00011c68\n.text:00011c6c\n'
+p125
+tp126
+sS'_Unwind_Resume'
+p127
+(S'\n__stdcall _Unwind_Resume()\n'
+p128
+V\u000avoid _Unwind_Resume(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 uStack68;\u000a  undefined4 uStack64;\u000a  undefined4 uStack60;\u000a  undefined4 uStack56;\u000a  undefined4 uStack52;\u000a  undefined4 uStack4;\u000a  \u000a  uStack4 = 0x12800;\u000a  uStack68 = 0;\u000a  uStack64 = uParm1;\u000a  uStack60 = uParm2;\u000a  uStack56 = uParm3;\u000a  uStack52 = uParm4;\u000a  __gnu_Unwind_Resume(uParm1,&uStack68,uParm3,0,uParm3);\u000a  return;\u000a}\u000a\u000a
+p129
+S'stmdb sp!,{ sp lr pc}\nstmdb sp!,{ r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 }\nmov r3,#0x0\nstmdb sp!,{ r2 r3 }\nadd r1,sp,#0x4\nbl 0x00012570\nldr lr,[sp,#0x40]\nadd sp,sp,#0x48\nbx lr\n'
+p130
+S'00 e0 2d e9\nff 1f 2d e9\n00 30 a0 e3\n0c 00 2d e9\n04 10 8d e2\n57 ff ff eb\n40 e0 9d e5\n48 d0 8d e2\n1e ff 2f e1\n'
+p131
+S'.text:000127f8\n.text:000127fc\n.text:00012800\n.text:00012804\n.text:00012808\n.text:0001280c\n.text:00012810\n.text:00012814\n.text:00012818\n'
+p132
+tp133
+sS'restore_core_regs'
+p134
+(S'\n__stdcall restore_core_regs()\n'
+p135
+V\u000aundefined8 restore_core_regs(undefined4 *puParm1)\u000a\u000a{\u000a  return CONCAT44(*puParm1,puParm1[1]);\u000a}\u000a\u000a
+p136
+S'add r1,r0,#0x34\nldmia r1,{ r3 r4 r5 }\nstmdb sp!,{ r3 r4 r5 }\nldmia r0,{r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 }\nldmia sp,{ sp lr pc }\n'
+p137
+S'34 10 80 e2\n38 00 91 e8\n38 00 2d e9\nff 0f 90 e8\n00 e0 9d e8\n'
+p138
+S'.text:000126e0\n.text:000126e4\n.text:000126e8\n.text:000126ec\n.text:000126f0\n'
+p139
+tp140
+sS'__gnu_Unwind_Save_VFP_D'
+p141
+(S'\n__stdcall __gnu_Unwind_Save_VFP_D()\n'
+p142
+V\u000a/* WARNING: Control flow encountered unimplemented instructions */\u000a\u000avoid __gnu_Unwind_Save_VFP_D(void)\u000a\u000a{\u000a                    /* WARNING: Unimplemented instruction - Truncating control flow here */\u000a  halt_unimplemented();\u000a}\u000a\u000a
+p143
+S'vstmia r0,{d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15}\nbx lr\n'
+p144
+S'20 0b 80 ec\n1e ff 2f e1\n'
+p145
+S'.text:0001270c\n.text:00012710\n'
+p146
+tp147
+sS'PEM_read_bio_RSA_PUBKEY'
+p148
+(S'\n__stdcall PEM_read_bio_RSA_PUBKEY(BIO * bp, RSA * * x, pem_password_cb * cb, void * u)\n'
+p149
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aRSA * PEM_read_bio_RSA_PUBKEY(BIO *bp,RSA **x,undefined1 *cb,void *u)\u000a\u000a{\u000a  RSA *pRVar1;\u000a  \u000a  pRVar1 = (RSA *)(*(code *)PTR_PEM_read_bio_RSA_PUBKEY_00014fb4)();\u000a  return pRVar1;\u000a}\u000a\u000a
+p150
+S'adr r12,0x11104\nadd r12,r12,#0x3000\nldr pc,[r12,#0xeb0]!\n'
+p151
+S'00 c6 8f e2\n03 ca 8c e2\nb0 fe bc e5\n'
+p152
+S'.plt:000110fc\n.plt:00011100\n.plt:00011104\n'
+p153
+tp154
+sS'_Unwind_VRS_Set'
+p155
+(S'\n__stdcall _Unwind_VRS_Set(undefined param_1, undefined param_2, undefined param_3, undefined param_4, undefined4 param_5)\n'
+p156
+V\u000aundefined4 _Unwind_VRS_Set(int param_1,uint param_2,uint param_3,int param_4,undefined4 *param_5)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  bool bVar2;\u000a  \u000a  if (param_2 == 0) {\u000a    bVar2 = param_3 == 0xf;\u000a    if (param_3 < 0x10) {\u000a      bVar2 = param_4 == 0;\u000a    }\u000a    if (bVar2) {\u000a      uVar1 = 0;\u000a      *(undefined4 *)(param_1 + param_3 * 4 + 4) = *param_5;\u000a    }\u000a    else {\u000a      uVar1 = 2;\u000a    }\u000a    return uVar1;\u000a  }\u000a  if (param_2 < 5) {\u000a    uVar1 = 1;\u000a  }\u000a  else {\u000a    uVar1 = 2;\u000a  }\u000a  return uVar1;\u000a}\u000a\u000a
+p157
+S'cmp r1,#0x0\nbeq 0x00011d4c\ncmp r1,#0x4\nmovhi r0,#0x2\nmovls r0,#0x1\nbx lr\ncmp r2,#0xf\ncmpls r3,#0x0\nldreq r1,[sp,#0x0]\naddeq r0,r0,r2, lsl #0x2\nmoveq r3,#0x0\nmovne r3,#0x1\nldreq r1,[r1,#0x0]\nstreq r1,[r0,#0x4]\nmovne r0,#0x2\ncpyeq r0,r3\nbx lr\n'
+p158
+S'00 00 51 e3\n03 00 00 0a\n04 00 51 e3\n02 00 a0 83\n01 00 a0 93\n1e ff 2f e1\n0f 00 52 e3\n00 00 53 93\n00 10 9d 05\n02 01 80 00\n00 30 a0 03\n01 30 a0 13\n00 10 91 05\n04 10 80 05\n02 00 a0 13\n03 00 a0 01\n1e ff 2f e1\n'
+p159
+S'.text:00011d34\n.text:00011d38\n.text:00011d3c\n.text:00011d40\n.text:00011d44\n.text:00011d48\n.text:00011d4c\n.text:00011d50\n.text:00011d54\n.text:00011d58\n.text:00011d5c\n.text:00011d60\n.text:00011d64\n.text:00011d68\n.text:00011d6c\n.text:00011d70\n.text:00011d74\n'
+p160
+tp161
+sS'BIO_free_all'
+p162
+(S'\n__stdcall BIO_free_all(BIO * a)\n'
+p163
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid BIO_free_all(BIO *a)\u000a\u000a{\u000a  (*(code *)PTR_BIO_free_all_00014fb8)();\u000a  return;\u000a}\u000a\u000a
+p164
+S'adr r12,0x11110\nadd r12,r12,#0x3000\nldr pc,[r12,#0xea8]!\n'
+p165
+S'00 c6 8f e2\n03 ca 8c e2\na8 fe bc e5\n'
+p166
+S'.plt:00011108\n.plt:0001110c\n.plt:00011110\n'
+p167
+tp168
+sS'__gnu_Unwind_Backtrace'
+p169
+(S'\n__stdcall __gnu_Unwind_Backtrace()\n'
+p170
+V\u000aint __gnu_Unwind_Backtrace(code *pcParm1,undefined4 uParm2,int iParm3)\u000a\u000a{\u000a  int iVar1;\u000a  undefined auStack680 [16];\u000a  code *local_298;\u000a  undefined4 local_250;\u000a  undefined4 local_24c;\u000a  undefined4 uStack584;\u000a  undefined4 uStack580;\u000a  undefined4 uStack576;\u000a  undefined4 local_23c;\u000a  undefined4 uStack568;\u000a  undefined4 uStack564;\u000a  undefined4 uStack560;\u000a  undefined4 local_22c;\u000a  undefined4 uStack552;\u000a  undefined4 uStack548;\u000a  undefined4 uStack544;\u000a  undefined4 local_21c;\u000a  undefined4 uStack536;\u000a  undefined4 uStack532;\u000a  undefined4 local_210;\u000a  \u000a  *(undefined4 *)(iParm3 + 0x40) = *(undefined4 *)(iParm3 + 0x3c);\u000a  local_24c = *(undefined4 *)(iParm3 + 4);\u000a  uStack584 = *(undefined4 *)(iParm3 + 8);\u000a  uStack580 = *(undefined4 *)(iParm3 + 0xc);\u000a  uStack576 = *(undefined4 *)(iParm3 + 0x10);\u000a  local_23c = *(undefined4 *)(iParm3 + 0x14);\u000a  uStack568 = *(undefined4 *)(iParm3 + 0x18);\u000a  uStack564 = *(undefined4 *)(iParm3 + 0x1c);\u000a  uStack560 = *(undefined4 *)(iParm3 + 0x20);\u000a  local_22c = *(undefined4 *)(iParm3 + 0x24);\u000a  uStack552 = *(undefined4 *)(iParm3 + 0x28);\u000a  uStack548 = *(undefined4 *)(iParm3 + 0x2c);\u000a  uStack544 = *(undefined4 *)(iParm3 + 0x30);\u000a  local_21c = *(undefined4 *)(iParm3 + 0x34);\u000a  uStack536 = *(undefined4 *)(iParm3 + 0x38);\u000a  uStack532 = *(undefined4 *)(iParm3 + 0x3c);\u000a  local_210 = *(undefined4 *)(iParm3 + 0x40);\u000a  local_250 = 0xffffffff;\u000a  do {\u000a    iVar1 = FUN_0001191c(auStack680,local_210);\u000a    if (iVar1 != 0) {\u000aLAB_000126c8:\u000a      iVar1 = 9;\u000a      break;\u000a    }\u000a    FUN_00011d78(&local_250,0xc,auStack680);\u000a    iVar1 = (*pcParm1)(&local_250,uParm2);\u000a    if (iVar1 != 0) goto LAB_000126c8;\u000a    iVar1 = (*local_298)(8,auStack680,&local_250);\u000a  } while (iVar1 != 9 && iVar1 != 5);\u000a  FUN_00011af0(&local_250);\u000a  return iVar1;\u000a}\u000a\u000a
+p171
+S'stmdb sp!,{ r4 r5 r6 lr }\nldr r3,[r2,#0x3c]\nadd lr,r2,#0x4\nstr r3,[r2,#0x40]\ncpy r5,r0\ncpy r4,r1\nldmia lr!,{r0 r1 r2 r3 }\nsub sp,sp,#0x298\nadd r12,sp,#0x5c\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr!,{r0 r1 r2 r3 }\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr!,{r0 r1 r2 r3 }\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr,{r0 r1 r2 r3 }\nstmia r12,{r0 r1 r2 r3 }\nmvn r3,#0x0\nstr r3,[sp,#0x58]\ncpy r0,sp\nldr r1,[sp,#0x98]\nbl 0x0001191c\ncmp r0,#0x0\nbne 0x000126c8\nadd r0,sp,#0x58\nmov r1,#0xc\ncpy r2,sp\nbl 0x00011d78\nadd r0,sp,#0x58\ncpy r1,r4\nblx r5\ncmp r0,#0x0\nbne 0x000126c8\nmov r0,#0x8\ncpy r1,sp\nadd r2,sp,#0x58\nldr r3,[sp,#0x10]\nblx r3\ncmp r0,#0x9\ncmpne r0,#0x5\ncpy r6,r0\nbne 0x00012668\nb 0x000126cc\nmov r6,#0x9\nadd r0,sp,#0x58\nbl 0x00011af0\ncpy r0,r6\nadd sp,sp,#0x298\nldmia sp!,{ r4 r5 r6 pc }\n'
+p172
+S'70 40 2d e9\n3c 30 92 e5\n04 e0 82 e2\n40 30 82 e5\n00 50 a0 e1\n01 40 a0 e1\n0f 00 be e8\na6 df 4d e2\n5c c0 8d e2\n0f 00 ac e8\n0f 00 be e8\n0f 00 ac e8\n0f 00 be e8\n0f 00 ac e8\n0f 00 9e e8\n0f 00 8c e8\n00 30 e0 e3\n58 30 8d e5\n0d 00 a0 e1\n98 10 9d e5\na9 fc ff eb\n00 00 50 e3\n12 00 00 1a\n58 00 8d e2\n0c 10 a0 e3\n0d 20 a0 e1\nba fd ff eb\n58 00 8d e2\n04 10 a0 e1\n35 ff 2f e1\n00 00 50 e3\n09 00 00 1a\n08 00 a0 e3\n0d 10 a0 e1\n58 20 8d e2\n10 30 9d e5\n33 ff 2f e1\n09 00 50 e3\n05 00 50 13\n00 60 a0 e1\ne8 ff ff 1a\n00 00 00 ea\n09 60 a0 e3\n58 00 8d e2\n06 fd ff eb\n06 00 a0 e1\na6 df 8d e2\n70 80 bd e8\n'
+p173
+S'.text:00012620\n.text:00012624\n.text:00012628\n.text:0001262c\n.text:00012630\n.text:00012634\n.text:00012638\n.text:0001263c\n.text:00012640\n.text:00012644\n.text:00012648\n.text:0001264c\n.text:00012650\n.text:00012654\n.text:00012658\n.text:0001265c\n.text:00012660\n.text:00012664\n.text:00012668\n.text:0001266c\n.text:00012670\n.text:00012674\n.text:00012678\n.text:0001267c\n.text:00012680\n.text:00012684\n.text:00012688\n.text:0001268c\n.text:00012690\n.text:00012694\n.text:00012698\n.text:0001269c\n.text:000126a0\n.text:000126a4\n.text:000126a8\n.text:000126ac\n.text:000126b0\n.text:000126b4\n.text:000126b8\n.text:000126bc\n.text:000126c0\n.text:000126c4\n.text:000126c8\n.text:000126cc\n.text:000126d0\n.text:000126d4\n.text:000126d8\n.text:000126dc\n'
+p174
+tp175
+sS'FUN_00011380'
+p176
+(S'\n__stdcall FUN_00011380()\n'
+p177
+V\u000avoid * FUN_00011380(void *pvParm1,uint uParm2,int *piParm3,char *pcParm4)\u000a\u000a{\u000a  size_t __n;\u000a  uchar *__dest;\u000a  void *pvVar1;\u000a  uint uVar2;\u000a  int *piVar3;\u000a  int iVar4;\u000a  uchar *input;\u000a  int iVar5;\u000a  DES_key_schedule DStack172;\u000a  undefined4 local_2c;\u000a  undefined4 local_28;\u000a  undefined4 local_24;\u000a  undefined4 local_20;\u000a  int local_1c;\u000a  \u000a  piVar3 = *(int **)(DAT_00011460 + 0x1138c);\u000a  local_1c = *piVar3;\u000a  local_2c = 0;\u000a  local_28 = 0;\u000a  __n = strlen(pcParm4);\u000a  memcpy(&local_2c,pcParm4,__n);\u000a  DES_set_key_unchecked((const_DES_cblock *)&local_2c,&DStack172);\u000a  local_24 = 0;\u000a  local_20 = 0;\u000a  __dest = (uchar *)calloc(uParm2 + 10,1);\u000a  pvVar1 = calloc(0x400,1);\u000a  memcpy(__dest,pvParm1,uParm2);\u000a  uVar2 = DAT_00011464 & uParm2;\u000a  if ((int)uVar2 < 0) {\u000a    uVar2 = (uVar2 - 1 | 0xfffffff8) + 1;\u000a  }\u000a  __n = 8 - uVar2;\u000a  iVar4 = uParm2 + __n;\u000a  memset(__dest + uParm2,__n & 0xff,__n);\u000a  iVar5 = 0;\u000a  input = __dest;\u000a  while (iVar5 < (int)(((uint)(iVar4 >> 0x1f) >> 0x1d) + iVar4) >> 3) {\u000a    DES_ncbc_encrypt(input,(uchar *)((int)((int)pvVar1 - (int)__dest) + (int)input),8,&DStack172,\u000a                     (DES_cblock *)&local_24,1);\u000a    iVar5 = iVar5 + 1;\u000a    input = input + 8;\u000a  }\u000a  memset((void *)((int)pvVar1 + iVar4),0,0x400 - iVar4);\u000a  *piParm3 = iVar4;\u000a  free(__dest);\u000a  if (local_1c != *piVar3) {\u000a                    /* WARNING: Subroutine does not return */\u000a    __stack_chk_fail();\u000a  }\u000a  return pvVar1;\u000a}\u000a\u000a
+p178
+S'push { r4, r5, r6, r7, lr }\nldr r4,[0x00011460]\nmov r7,r3\nsub sp,#0xbc\nadd r4,pc\nldr r4,[r4,#0x0]\nmov r6,#0x0\nstr r0,[sp,#0x10]\nldr r3,[r4,#0x0]\nmov r0,r7\nmov r5,r1\nstr r3,[sp,#0xb4]\nstr r2,[sp,#0x14]\nstr r6,[sp,#0xa4]\nstr r6,[sp,#0xa8]\nblx 0x00011084\nmov r1,r7\nmov r2,r0\nadd r0,sp,#0xa4\nblx 0x000110a8\nadd r0,sp,#0xa4\nadd r1,sp,#0x24\nblx 0x000110b4\nmov r0,r5\nmov r1,#0x1\nadd r0,#0xa\nstr r6,[sp,#0xac]\nstr r6,[sp,#0xb0]\nblx 0x0001109c\nmov r6,r0\nmov r0,#0x80\nmov r1,#0x1\nlsl r0,r0,#0x3\nblx 0x0001109c\nmov r2,r5\nstr r0,[sp,#0xc]\nldr r1,[sp,#0x10]\nmov r0,r6\nblx 0x000110a8\nldr r2,[0x00011464]\nstr r4,[sp,#0x18]\nand r2,r5\nbpl 0x000113ec\nmov r3,#0x8\nsub r2,#0x1\nrsb r3,r3\norr r2,r3\nadd r2,#0x1\nmov r3,#0x8\nsub r2,r3,r2\nlsl r1,r2,#0x18\nadd r4,r5,r2\nadd r0,r6,r5\nlsr r1,r1,#0x18\nblx 0x000110c0\nasr r3,r4,#0x1f\nldr r1,[sp,#0xc]\nlsr r3,r3,#0x1d\nadd r3,r3,r4\nasr r3,r3,#0x3\nsub r1,r1,r6\nstr r3,[sp,#0x10]\nmov r5,r6\nmov r7,#0x0\nstr r1,[sp,#0x1c]\nb 0x0001142c\nldr r3,[sp,#0x1c]\nmov r0,r5\nmov r2,#0x8\nadd r1,r3,r5\nadd r3,sp,#0xac\nstr r3,[sp,#0x0]\nmov r3,#0x1\nstr r3,[sp,#0x4]\nadd r3,sp,#0x24\nblx 0x000110cc\nadd r7,#0x1\nadd r5,#0x8\nldr r1,[sp,#0x10]\ncmp r7,r1\nblt 0x00011412\nldr r3,[sp,#0xc]\nmov r2,#0x80\nlsl r2,r2,#0x3\nsub r2,r2,r4\nadd r0,r3,r4\nmov r1,#0x0\nblx 0x000110c0\nldr r1,[sp,#0x14]\nmov r0,r6\nstr r4,[r1,#0x0]\nblx 0x00011090\nldr r1,[sp,#0x18]\nldr r2,[sp,#0xb4]\nldr r0,[sp,#0xc]\nldr r3,[r1,#0x0]\ncmp r2,r3\nbeq 0x0001145c\nblx 0x000110d8\nadd sp,#0xbc\npop { r4, r5, r6, r7, pc }\n'
+p179
+S'f0 b5\n37 4c\n1f 1c\naf b0\n7c 44\n24 68\n00 26\n04 90\n23 68\n38 1c\n0d 1c\n2d 93\n05 92\n29 96\n2a 96\nff f7 72 ee\n39 1c\n02 1c\n29 a8\nff f7 7e ee\n29 a8\n09 a9\nff f7 80 ee\n28 1c\n01 21\n0a 30\n2b 96\n2c 96\nff f7 6e ee\n06 1c\n80 20\n01 21\nc0 00\nff f7 68 ee\n2a 1c\n03 90\n04 99\n30 1c\nff f7 68 ee\n22 4a\n06 94\n2a 40\n04 d5\n08 23\n01 3a\n5b 42\n1a 43\n01 32\n08 23\n9a 1a\n11 06\nac 18\n70 19\n09 0e\nff f7 62 ee\ne3 17\n03 99\n5b 0f\n1b 19\ndb 10\n89 1b\n04 93\n35 1c\n00 27\n07 91\n0c e0\n07 9b\n28 1c\n08 22\n59 19\n2b ab\n00 93\n01 23\n01 93\n09 ab\nff f7 52 ee\n01 37\n08 35\n04 99\n8f 42\nef db\n03 9b\n80 22\nd2 00\n12 1b\n18 19\n00 21\nff f7 40 ee\n05 99\n30 1c\n0c 60\nff f7 22 ee\n06 99\n2d 9a\n03 98\n0b 68\n9a 42\n01 d0\nff f7 3e ee\n2f b0\nf0 bd\n'
+p180
+S'.text:00011380\n.text:00011382\n.text:00011384\n.text:00011386\n.text:00011388\n.text:0001138a\n.text:0001138c\n.text:0001138e\n.text:00011390\n.text:00011392\n.text:00011394\n.text:00011396\n.text:00011398\n.text:0001139a\n.text:0001139c\n.text:0001139e\n.text:000113a2\n.text:000113a4\n.text:000113a6\n.text:000113a8\n.text:000113ac\n.text:000113ae\n.text:000113b0\n.text:000113b4\n.text:000113b6\n.text:000113b8\n.text:000113ba\n.text:000113bc\n.text:000113be\n.text:000113c2\n.text:000113c4\n.text:000113c6\n.text:000113c8\n.text:000113ca\n.text:000113ce\n.text:000113d0\n.text:000113d2\n.text:000113d4\n.text:000113d6\n.text:000113da\n.text:000113dc\n.text:000113de\n.text:000113e0\n.text:000113e2\n.text:000113e4\n.text:000113e6\n.text:000113e8\n.text:000113ea\n.text:000113ec\n.text:000113ee\n.text:000113f0\n.text:000113f2\n.text:000113f4\n.text:000113f6\n.text:000113f8\n.text:000113fc\n.text:000113fe\n.text:00011400\n.text:00011402\n.text:00011404\n.text:00011406\n.text:00011408\n.text:0001140a\n.text:0001140c\n.text:0001140e\n.text:00011410\n.text:00011412\n.text:00011414\n.text:00011416\n.text:00011418\n.text:0001141a\n.text:0001141c\n.text:0001141e\n.text:00011420\n.text:00011422\n.text:00011424\n.text:00011428\n.text:0001142a\n.text:0001142c\n.text:0001142e\n.text:00011430\n.text:00011432\n.text:00011434\n.text:00011436\n.text:00011438\n.text:0001143a\n.text:0001143c\n.text:0001143e\n.text:00011442\n.text:00011444\n.text:00011446\n.text:00011448\n.text:0001144c\n.text:0001144e\n.text:00011450\n.text:00011452\n.text:00011454\n.text:00011456\n.text:00011458\n.text:0001145c\n.text:0001145e\n'
+p181
+tp182
+sS'__gnu_Unwind_Resume'
+p183
+(S'\n__stdcall __gnu_Unwind_Resume()\n'
+p184
+V\u000avoid __gnu_Unwind_Resume(int iParm1,int iParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  *(undefined4 *)(iParm2 + 0x40) = *(undefined4 *)(iParm1 + 0x14);\u000a  if (*(int *)(iParm1 + 0xc) == 0) {\u000a    iVar1 = (**(code **)(iParm1 + 0x10))(2,iParm1,iParm2,*(code **)(iParm1 + 0x10),uParm4);\u000a    if (iVar1 == 7) {\u000a      restore_core_regs(iParm2 + 4);\u000a    }\u000a    else {\u000a      if (iVar1 != 8) goto LAB_000125d8;\u000a    }\u000a    FUN_00011c70(iParm1,iParm2);\u000a  }\u000a  else {\u000a    FUN_00011b5c(iParm1,iParm2,1);\u000a  }\u000aLAB_000125d8:\u000a                    /* WARNING: Subroutine does not return */\u000a  abort();\u000a}\u000a\u000a
+p185
+S'stmdb sp!,{ r3 r4 r5 lr }\nldr r3,[r0,#0x14]\nstr r3,[r1,#0x40]\nldr r3,[r0,#0xc]\ncpy r4,r0\ncmp r3,#0x0\ncpy r5,r1\nbeq 0x0001259c\nmov r2,#0x1\nbl 0x00011b5c\nb 0x000125d8\nldr r3,[r0,#0x10]\ncpy r1,r4\nmov r0,#0x2\ncpy r2,r5\nblx r3\ncmp r0,#0x7\nbeq 0x000125c4\ncmp r0,#0x8\nbne 0x000125d8\nb 0x000125cc\nadd r0,r5,#0x4\nbl 0x000126e0\ncpy r0,r4\ncpy r1,r5\nbl 0x00011c70\nbl 0x000111bc\n'
+p186
+S'38 40 2d e9\n14 30 90 e5\n40 30 81 e5\n0c 30 90 e5\n00 40 a0 e1\n00 00 53 e3\n01 50 a0 e1\n02 00 00 0a\n01 20 a0 e3\n70 fd ff eb\n0e 00 00 ea\n10 30 90 e5\n04 10 a0 e1\n02 00 a0 e3\n05 20 a0 e1\n33 ff 2f e1\n07 00 50 e3\n02 00 00 0a\n08 00 50 e3\n05 00 00 1a\n01 00 00 ea\n04 00 85 e2\n44 00 00 eb\n04 00 a0 e1\n05 10 a0 e1\na5 fd ff eb\nf7 fa ff eb\n'
+p187
+S'.text:00012570\n.text:00012574\n.text:00012578\n.text:0001257c\n.text:00012580\n.text:00012584\n.text:00012588\n.text:0001258c\n.text:00012590\n.text:00012594\n.text:00012598\n.text:0001259c\n.text:000125a0\n.text:000125a4\n.text:000125a8\n.text:000125ac\n.text:000125b0\n.text:000125b4\n.text:000125b8\n.text:000125bc\n.text:000125c0\n.text:000125c4\n.text:000125c8\n.text:000125cc\n.text:000125d0\n.text:000125d4\n.text:000125d8\n'
+p188
+tp189
+sS'__aeabi_idiv'
+p190
+(S'\n__stdcall __aeabi_idiv()\n'
+p191
+V\u000auint __aeabi_idiv(uint uParm1,uint uParm2)\u000a\u000a{\u000a  int iVar1;\u000a  uint uVar2;\u000a  undefined4 uVar3;\u000a  int iVar4;\u000a  uint uVar5;\u000a  uint uVar6;\u000a  uint uVar7;\u000a  bool bVar8;\u000a  \u000a  if (uParm2 == 0) {\u000a    bVar8 = (int)uParm1 < 0;\u000a    if (0 < (int)uParm1) {\u000a      uParm1 = 0x7fffffff;\u000a    }\u000a    if (bVar8) {\u000a      uParm1 = 0x80000000;\u000a    }\u000a    uVar3 = __aeabi_ldiv0(uParm1);\u000a    return uVar3;\u000a  }\u000a  uVar7 = uParm1 ^ uParm2;\u000a  if ((int)uParm2 < 0) {\u000a    uParm2 = -uParm2;\u000a  }\u000a  if (uParm2 - 1 == 0) {\u000a    if ((int)(uVar7 ^ uParm1) < 0) {\u000a      uParm1 = -uParm1;\u000a    }\u000a    return uParm1;\u000a  }\u000a  uVar6 = uParm1;\u000a  if ((int)uParm1 < 0) {\u000a    uVar6 = -uParm1;\u000a  }\u000a  if (uVar6 <= uParm2) {\u000a    if (uVar6 < uParm2) {\u000a      uParm1 = 0;\u000a    }\u000a    if (uVar6 == uParm2) {\u000a      uParm1 = (int)uVar7 >> 0x1f | 1;\u000a    }\u000a    return uParm1;\u000a  }\u000a  if ((uParm2 & uParm2 - 1) == 0) {\u000a    iVar1 = count_leading_zeroes(uParm2);\u000a    uVar6 = uVar6 >> (0x1fU - iVar1 & 0xff);\u000a    if ((int)uVar7 < 0) {\u000a      uVar6 = -uVar6;\u000a    }\u000a    return uVar6;\u000a  }\u000a  iVar4 = count_leading_zeroes(uParm2);\u000a  iVar1 = count_leading_zeroes(uVar6);\u000a  uParm2 = uParm2 << (iVar4 - iVar1 & 0xffU);\u000a  uVar5 = 1 << (iVar4 - iVar1 & 0xffU);\u000a  uVar2 = 0;\u000a  while( true ) {\u000a    if (uParm2 <= uVar6) {\u000a      uVar6 = uVar6 - uParm2;\u000a      uVar2 = uVar2 | uVar5;\u000a    }\u000a    if (uParm2 >> 1 <= uVar6) {\u000a      uVar6 = uVar6 - (uParm2 >> 1);\u000a      uVar2 = uVar2 | uVar5 >> 1;\u000a    }\u000a    if (uParm2 >> 2 <= uVar6) {\u000a      uVar6 = uVar6 - (uParm2 >> 2);\u000a      uVar2 = uVar2 | uVar5 >> 2;\u000a    }\u000a    if (uParm2 >> 3 <= uVar6) {\u000a      uVar6 = uVar6 - (uParm2 >> 3);\u000a      uVar2 = uVar2 | uVar5 >> 3;\u000a    }\u000a    bVar8 = uVar6 == 0;\u000a    if (!bVar8) {\u000a      uVar5 = uVar5 >> 4;\u000a      bVar8 = uVar5 == 0;\u000a    }\u000a    if (bVar8) break;\u000a    uParm2 = uParm2 >> 4;\u000a  }\u000a  if ((int)uVar7 < 0) {\u000a    uVar2 = -uVar2;\u000a  }\u000a  return uVar2;\u000a}\u000a\u000a
+p192
+S'cmp r1,#0x0\nbeq 0x000118c4\n'
+p193
+S'00 00 51 e3\n30 00 00 0a\n'
+p194
+S'.text:000117f8\n.text:000117fc\n'
+p195
+tp196
+sS'__gnu_Unwind_Save_WMMXC'
+p197
+(S'\n__stdcall __gnu_Unwind_Save_WMMXC()\n'
+p198
+V\u000aint __gnu_Unwind_Save_WMMXC(int iParm1)\u000a\u000a{\u000a  undefined4 in_cr8;\u000a  undefined4 in_cr9;\u000a  undefined4 in_cr10;\u000a  undefined4 in_cr11;\u000a  \u000a  coprocessor_store2(1,in_cr8,iParm1);\u000a  coprocessor_store2(1,in_cr9,iParm1 + 4);\u000a  coprocessor_store2(1,in_cr10,iParm1 + 8);\u000a  coprocessor_store2(1,in_cr11,iParm1 + 0xc);\u000a  return iParm1 + 0x10;\u000a}\u000a\u000a
+p199
+S'stc2 p1,cr8,[r0],#0x4\nstc2 p1,cr9,[r0],#0x4\nstc2 p1,cr10,[r0],#0x4\nstc2 p1,cr11,[r0],#0x4\nbx lr\n'
+p200
+S'01 81 a0 fc\n01 91 a0 fc\n01 a1 a0 fc\n01 b1 a0 fc\n1e ff 2f e1\n'
+p201
+S'.text:000127c0\n.text:000127c4\n.text:000127c8\n.text:000127cc\n.text:000127d0\n'
+p202
+tp203
+sS'__aeabi_unwind_cpp_pr2'
+p204
+(S'\n__stdcall __aeabi_unwind_cpp_pr2()\n'
+p205
+V\u000a/* WARNING: Removing unreachable block (ram,0x00011dd8) */\u000a/* WARNING: Removing unreachable block (ram,0x00011e3c) */\u000a\u000aundefined4 __aeabi_unwind_cpp_pr2(uint uParm1,int iParm2,undefined4 uParm3)\u000a\u000a{\u000a  bool bVar1;\u000a  uint uVar2;\u000a  int iVar3;\u000a  uint *puVar4;\u000a  int iVar5;\u000a  undefined4 uVar6;\u000a  uint uVar7;\u000a  uint *puVar8;\u000a  uint uVar9;\u000a  uint uVar10;\u000a  int iVar11;\u000a  uint uVar12;\u000a  uint uVar13;\u000a  uint *puVar14;\u000a  int iStack56;\u000a  int iStack52;\u000a  uint *puStack48;\u000a  undefined uStack44;\u000a  undefined uStack43;\u000a  \u000a  puStack48 = *(uint **)(iParm2 + 0x4c) + 1;\u000a  uVar7 = **(uint **)(iParm2 + 0x4c);\u000a  uVar10 = uParm1 & 3;\u000a  uVar12 = uVar7 >> 0x10 & 0xff;\u000a  iStack52 = uVar7 << 0x10;\u000a  puVar8 = puStack48 + uVar12;\u000a  uStack43 = (undefined)uVar12;\u000a  uStack44 = 2;\u000a  if (uVar10 == 2) {\u000a    puVar8 = *(uint **)(iParm2 + 0x38);\u000a  }\u000a  uVar7 = *(uint *)(iParm2 + 0x50) & 1;\u000a  if (uVar7 == 0) {\u000a    iVar5 = iParm2 + 0x58;\u000aLAB_000120c4:\u000a    do {\u000a      while( true ) {\u000a        uVar12 = *puVar8;\u000a        if (uVar12 == 0) goto LAB_000120d0;\u000a        uVar13 = puVar8[1];\u000a        puVar4 = puVar8 + 2;\u000a        uVar9 = (uVar13 & 0xfffffffe) + *(int *)(iParm2 + 0x48);\u000a        uVar2 = FUN_00011d0c(uParm3,0xf);\u000a        if (uVar2 < uVar9) {\u000a          bVar1 = false;\u000a        }\u000a        else {\u000a          if (uVar2 < uVar9 + (uVar12 & 0xfffffffe)) {\u000a            bVar1 = true;\u000a          }\u000a          else {\u000a            bVar1 = false;\u000a          }\u000a        }\u000a        uVar12 = uVar12 & 1 | (uVar13 & 1) << 1;\u000a        if (uVar12 != 1) break;\u000a        if (uVar10 == 0) {\u000a          if (bVar1) {\u000a            uVar12 = puVar8[3];\u000a            if (uVar12 == 0xfffffffe) {\u000a              return 9;\u000a            }\u000a            iStack56 = iVar5;\u000a            if (uVar12 != 0xffffffff) {\u000a              uVar2 = uVar10;\u000a              if (uVar12 != 0) {\u000a                uVar2 = *(uint *)((int)puVar4 + uVar12 + 4);\u000a              }\u000a              iStack56 = iVar5;\u000a              iVar3 = __cxa_type_match(iParm2,uVar2,*puVar4 >> 0x1f,&iStack56);\u000a              if (iVar3 == 0) {\u000a                iStack56 = iVar3;\u000a              }\u000a            }\u000a            if (iStack56 != 0) {\u000aLAB_00012004:\u000a              uVar6 = FUN_00011d0c(uParm3,0xd);\u000a              *(int *)(iParm2 + 0x24) = iStack56;\u000a              *(uint **)(iParm2 + 0x28) = puVar4;\u000a              *(undefined4 *)(iParm2 + 0x20) = uVar6;\u000a              return 6;\u000a            }\u000a          }\u000a        }\u000a        else {\u000a          iVar11 = *(int *)(iParm2 + 0x20);\u000a          iVar3 = FUN_00011d0c(uParm3,0xd);\u000a          if ((iVar11 == iVar3) && (puVar4 == *(uint **)(iParm2 + 0x28))) {\u000aLAB_0001207c:\u000a            uVar6 = FUN_00011904(puVar4);\u000a            FUN_00011d78(uParm3,0xf,uVar6);\u000a            uVar6 = 0;\u000a            goto LAB_0001211c;\u000a          }\u000a        }\u000a        puVar8 = puVar8 + 4;\u000a      }\u000a      if (uVar12 != 0) {\u000a        if (uVar12 != 2) {\u000a          return 9;\u000a        }\u000a        uVar12 = *puVar4 & 0x7fffffff;\u000a        if (uVar10 == 0) {\u000a          if ((bVar1) && (uVar2 = uVar10, puVar14 = puVar4, (uParm1 & 8) == 0 || uVar12 == 0)) {\u000a            do {\u000a              uVar9 = uVar2;\u000a              if (uVar9 == uVar12) goto LAB_00012004;\u000a              puVar14 = puVar14 + 1;\u000a              uVar2 = *puVar14;\u000a              if (uVar2 != 0) {\u000a                uVar2 = *(uint *)(uVar2 + (int)puVar14);\u000a              }\u000a              iStack56 = iVar5;\u000a              iVar3 = __cxa_type_match(iParm2,uVar2,0,&iStack56);\u000a              uVar2 = uVar9 + 1;\u000a            } while (iVar3 == 0);\u000a            if (uVar9 == uVar12) goto LAB_00012004;\u000a          }\u000a        }\u000a        else {\u000a          iVar11 = *(int *)(iParm2 + 0x20);\u000a          iVar3 = FUN_00011d0c(uParm3,0xd);\u000a          if ((iVar11 == iVar3) && (puVar4 == *(uint **)(iParm2 + 0x28))) {\u000a            *(undefined4 *)(iParm2 + 0x30) = 4;\u000a            *(uint *)(iParm2 + 0x28) = uVar12;\u000a            *(undefined4 *)(iParm2 + 0x2c) = 0;\u000a            *(uint **)(iParm2 + 0x34) = puVar8 + 3;\u000a            if (-1 < (int)*puVar4) {\u000a              puVar4 = puVar4 + uVar12 + 1;\u000a              goto LAB_0001207c;\u000a            }\u000a            uVar7 = 1;\u000a          }\u000a        }\u000a        if ((int)*puVar4 < 0) {\u000a          puVar4 = puVar8 + 3;\u000a        }\u000a        puVar8 = puVar4 + uVar12 + 1;\u000a        goto LAB_000120c4;\u000a      }\u000a      if (uVar10 == 0) {\u000a        bVar1 = false;\u000a      }\u000a      puVar8 = puVar8 + 3;\u000a    } while (!bVar1);\u000a    FUN_00011904(puVar4);\u000a    *(uint **)(iParm2 + 0x38) = puVar8;\u000a    iVar5 = __cxa_begin_cleanup(iParm2);\u000a    if (iVar5 == 0) {\u000a      return 9;\u000a    }\u000a    uVar6 = 0xf;\u000a  }\u000a  else {\u000a    uVar7 = 0;\u000aLAB_000120d0:\u000a    iVar5 = __gnu_unwind_execute(uParm3,&iStack52);\u000a    if (iVar5 != 0) {\u000a      return 9;\u000a    }\u000a    if (uVar7 == 0) {\u000a      return 8;\u000a    }\u000a    uVar6 = FUN_00011d0c(uParm3,0xf);\u000a    FUN_00011d78(uParm3,0xe,uVar6);\u000a    uVar6 = 0xf;\u000a  }\u000aLAB_0001211c:\u000a  FUN_00011d78(uParm3,uVar6);\u000a  return 7;\u000a}\u000a\u000a
+p206
+S'mov r3,#0x2\nb 0x00011da4\n'
+p207
+S'02 30 a0 e3\n18 ff ff ea\n'
+p208
+S'.text:00012138\n.text:0001213c\n'
+p209
+tp210
+sS'__gnu_Unwind_Save_WMMXD'
+p211
+(S'\n__stdcall __gnu_Unwind_Save_WMMXD()\n'
+p212
+V\u000aint __gnu_Unwind_Save_WMMXD(int iParm1)\u000a\u000a{\u000a  undefined4 in_cr0;\u000a  undefined4 in_cr1;\u000a  undefined4 in_cr2;\u000a  undefined4 in_cr3;\u000a  undefined4 in_cr4;\u000a  undefined4 in_cr5;\u000a  undefined4 in_cr6;\u000a  undefined4 in_cr7;\u000a  undefined4 in_cr8;\u000a  undefined4 in_cr9;\u000a  undefined4 in_cr10;\u000a  undefined4 in_cr11;\u000a  undefined4 in_cr12;\u000a  undefined4 in_cr13;\u000a  undefined4 in_cr14;\u000a  undefined4 in_cr15;\u000a  \u000a  coprocessor_storelong(1,in_cr0,iParm1);\u000a  coprocessor_storelong(1,in_cr1,iParm1 + 8);\u000a  coprocessor_storelong(1,in_cr2,iParm1 + 0x10);\u000a  coprocessor_storelong(1,in_cr3,iParm1 + 0x18);\u000a  coprocessor_storelong(1,in_cr4,iParm1 + 0x20);\u000a  coprocessor_storelong(1,in_cr5,iParm1 + 0x28);\u000a  coprocessor_storelong(1,in_cr6,iParm1 + 0x30);\u000a  coprocessor_storelong(1,in_cr7,iParm1 + 0x38);\u000a  coprocessor_storelong(1,in_cr8,iParm1 + 0x40);\u000a  coprocessor_storelong(1,in_cr9,iParm1 + 0x48);\u000a  coprocessor_storelong(1,in_cr10,iParm1 + 0x50);\u000a  coprocessor_storelong(1,in_cr11,iParm1 + 0x58);\u000a  coprocessor_storelong(1,in_cr12,iParm1 + 0x60);\u000a  coprocessor_storelong(1,in_cr13,iParm1 + 0x68);\u000a  coprocessor_storelong(1,in_cr14,iParm1 + 0x70);\u000a  coprocessor_storelong(1,in_cr15,iParm1 + 0x78);\u000a  return iParm1 + 0x80;\u000a}\u000a\u000a
+p213
+S'stcl p1,cr0,[r0],#0x8\nstcl p1,cr1,[r0],#0x8\nstcl p1,cr2,[r0],#0x8\nstcl p1,cr3,[r0],#0x8\nstcl p1,cr4,[r0],#0x8\nstcl p1,cr5,[r0],#0x8\nstcl p1,cr6,[r0],#0x8\nstcl p1,cr7,[r0],#0x8\nstcl p1,cr8,[r0],#0x8\nstcl p1,cr9,[r0],#0x8\nstcl p1,cr10,[r0],#0x8\nstcl p1,cr11,[r0],#0x8\nstcl p1,cr12,[r0],#0x8\nstcl p1,cr13,[r0],#0x8\nstcl p1,cr14,[r0],#0x8\nstcl p1,cr15,[r0],#0x8\nbx lr\n'
+p214
+S'02 01 e0 ec\n02 11 e0 ec\n02 21 e0 ec\n02 31 e0 ec\n02 41 e0 ec\n02 51 e0 ec\n02 61 e0 ec\n02 71 e0 ec\n02 81 e0 ec\n02 91 e0 ec\n02 a1 e0 ec\n02 b1 e0 ec\n02 c1 e0 ec\n02 d1 e0 ec\n02 e1 e0 ec\n02 f1 e0 ec\n1e ff 2f e1\n'
+p215
+S'.text:00012768\n.text:0001276c\n.text:00012770\n.text:00012774\n.text:00012778\n.text:0001277c\n.text:00012780\n.text:00012784\n.text:00012788\n.text:0001278c\n.text:00012790\n.text:00012794\n.text:00012798\n.text:0001279c\n.text:000127a0\n.text:000127a4\n.text:000127a8\n'
+p216
+tp217
+sS'memset'
+p218
+(S'\n__stdcall memset(void * __s, int __c, size_t __n)\n'
+p219
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid * memset(void *__s,int __c,size_t __n)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = (void *)(*(code *)PTR_memset_00014fa0)();\u000a  return pvVar1;\u000a}\u000a\u000a
+p220
+S'adr r12,0x110c8\nadd r12,r12,#0x3000\nldr pc,[r12,#0xed8]!\n'
+p221
+S'00 c6 8f e2\n03 ca 8c e2\nd8 fe bc e5\n'
+p222
+S'.plt:000110c0\n.plt:000110c4\n.plt:000110c8\n'
+p223
+tp224
+sS'__aeabi_unwind_cpp_pr1'
+p225
+(S'\n__stdcall __aeabi_unwind_cpp_pr1()\n'
+p226
+V\u000a/* WARNING: Removing unreachable block (ram,0x00011dd8) */\u000a/* WARNING: Removing unreachable block (ram,0x00011e38) */\u000a\u000aundefined4 __aeabi_unwind_cpp_pr1(uint uParm1,int iParm2,undefined4 uParm3)\u000a\u000a{\u000a  ushort uVar1;\u000a  ushort uVar2;\u000a  bool bVar3;\u000a  uint uVar4;\u000a  int iVar5;\u000a  uint *puVar6;\u000a  int iVar7;\u000a  undefined4 uVar8;\u000a  uint uVar9;\u000a  uint *puVar10;\u000a  uint uVar11;\u000a  uint uVar12;\u000a  uint uVar13;\u000a  int iVar14;\u000a  uint *puVar15;\u000a  int iStack56;\u000a  int iStack52;\u000a  uint *puStack48;\u000a  undefined uStack44;\u000a  undefined uStack43;\u000a  \u000a  puStack48 = *(uint **)(iParm2 + 0x4c) + 1;\u000a  uVar9 = **(uint **)(iParm2 + 0x4c);\u000a  uVar12 = uParm1 & 3;\u000a  uVar4 = uVar9 >> 0x10 & 0xff;\u000a  iStack52 = uVar9 << 0x10;\u000a  puVar10 = puStack48 + uVar4;\u000a  uStack43 = (undefined)uVar4;\u000a  uStack44 = 2;\u000a  if (uVar12 == 2) {\u000a    puVar10 = *(uint **)(iParm2 + 0x38);\u000a  }\u000a  uVar9 = *(uint *)(iParm2 + 0x50) & 1;\u000a  if (uVar9 == 0) {\u000a    iVar7 = iParm2 + 0x58;\u000aLAB_000120c4:\u000a    do {\u000a      while( true ) {\u000a        if (*puVar10 == 0) goto LAB_000120d0;\u000a        uVar1 = *(ushort *)((int)puVar10 + 2);\u000a        uVar2 = *(ushort *)puVar10;\u000a        puVar6 = puVar10 + 1;\u000a        uVar11 = ((uint)uVar1 & 0xfffffffe) + *(int *)(iParm2 + 0x48);\u000a        uVar4 = FUN_00011d0c(uParm3,0xf);\u000a        if (uVar4 < uVar11) {\u000a          bVar3 = false;\u000a        }\u000a        else {\u000a          if (uVar4 < uVar11 + ((uint)uVar2 & 0xfffffffe)) {\u000a            bVar3 = true;\u000a          }\u000a          else {\u000a            bVar3 = false;\u000a          }\u000a        }\u000a        uVar4 = (uint)uVar2 & 1 | ((uint)uVar1 & 1) << 1;\u000a        if (uVar4 != 1) break;\u000a        if (uVar12 == 0) {\u000a          if (bVar3) {\u000a            uVar4 = puVar10[2];\u000a            if (uVar4 == 0xfffffffe) {\u000a              return 9;\u000a            }\u000a            iStack56 = iVar7;\u000a            if (uVar4 != 0xffffffff) {\u000a              uVar11 = uVar12;\u000a              if (uVar4 != 0) {\u000a                uVar11 = *(uint *)((int)puVar6 + uVar4 + 4);\u000a              }\u000a              iStack56 = iVar7;\u000a              iVar5 = __cxa_type_match(iParm2,uVar11,*puVar6 >> 0x1f,&iStack56);\u000a              if (iVar5 == 0) {\u000a                iStack56 = iVar5;\u000a              }\u000a            }\u000a            if (iStack56 != 0) {\u000aLAB_00012004:\u000a              uVar8 = FUN_00011d0c(uParm3,0xd);\u000a              *(int *)(iParm2 + 0x24) = iStack56;\u000a              *(uint **)(iParm2 + 0x28) = puVar6;\u000a              *(undefined4 *)(iParm2 + 0x20) = uVar8;\u000a              return 6;\u000a            }\u000a          }\u000a        }\u000a        else {\u000a          iVar14 = *(int *)(iParm2 + 0x20);\u000a          iVar5 = FUN_00011d0c(uParm3,0xd);\u000a          if ((iVar14 == iVar5) && (puVar6 == *(uint **)(iParm2 + 0x28))) {\u000aLAB_0001207c:\u000a            uVar8 = FUN_00011904(puVar6);\u000a            FUN_00011d78(uParm3,0xf,uVar8);\u000a            uVar8 = 0;\u000a            goto LAB_0001211c;\u000a          }\u000a        }\u000a        puVar10 = puVar10 + 3;\u000a      }\u000a      if (uVar4 != 0) {\u000a        if (uVar4 != 2) {\u000a          return 9;\u000a        }\u000a        uVar4 = *puVar6 & 0x7fffffff;\u000a        if (uVar12 == 0) {\u000a          if ((bVar3) && (uVar11 = uVar12, puVar15 = puVar6, (uParm1 & 8) == 0 || uVar4 == 0)) {\u000a            do {\u000a              uVar13 = uVar11;\u000a              if (uVar13 == uVar4) goto LAB_00012004;\u000a              puVar15 = puVar15 + 1;\u000a              uVar11 = *puVar15;\u000a              if (uVar11 != 0) {\u000a                uVar11 = *(uint *)(uVar11 + (int)puVar15);\u000a              }\u000a              iStack56 = iVar7;\u000a              iVar5 = __cxa_type_match(iParm2,uVar11,0,&iStack56);\u000a              uVar11 = uVar13 + 1;\u000a            } while (iVar5 == 0);\u000a            if (uVar13 == uVar4) goto LAB_00012004;\u000a          }\u000a        }\u000a        else {\u000a          iVar14 = *(int *)(iParm2 + 0x20);\u000a          iVar5 = FUN_00011d0c(uParm3,0xd);\u000a          if ((iVar14 == iVar5) && (puVar6 == *(uint **)(iParm2 + 0x28))) {\u000a            *(undefined4 *)(iParm2 + 0x30) = 4;\u000a            *(uint *)(iParm2 + 0x28) = uVar4;\u000a            *(undefined4 *)(iParm2 + 0x2c) = 0;\u000a            *(uint **)(iParm2 + 0x34) = puVar10 + 2;\u000a            if (-1 < (int)*puVar6) {\u000a              puVar6 = puVar6 + uVar4 + 1;\u000a              goto LAB_0001207c;\u000a            }\u000a            uVar9 = 1;\u000a          }\u000a        }\u000a        if ((int)*puVar6 < 0) {\u000a          puVar6 = puVar10 + 2;\u000a        }\u000a        puVar10 = puVar6 + uVar4 + 1;\u000a        goto LAB_000120c4;\u000a      }\u000a      if (uVar12 == 0) {\u000a        bVar3 = false;\u000a      }\u000a      puVar10 = puVar10 + 2;\u000a    } while (!bVar3);\u000a    FUN_00011904(puVar6);\u000a    *(uint **)(iParm2 + 0x38) = puVar10;\u000a    iVar7 = __cxa_begin_cleanup(iParm2);\u000a    if (iVar7 == 0) {\u000a      return 9;\u000a    }\u000a    uVar8 = 0xf;\u000a  }\u000a  else {\u000a    uVar9 = 0;\u000aLAB_000120d0:\u000a    iVar7 = __gnu_unwind_execute(uParm3,&iStack52);\u000a    if (iVar7 != 0) {\u000a      return 9;\u000a    }\u000a    if (uVar9 == 0) {\u000a      return 8;\u000a    }\u000a    uVar8 = FUN_00011d0c(uParm3,0xf);\u000a    FUN_00011d78(uParm3,0xe,uVar8);\u000a    uVar8 = 0xf;\u000a  }\u000aLAB_0001211c:\u000a  FUN_00011d78(uParm3,uVar8);\u000a  return 7;\u000a}\u000a\u000a
+p227
+S'mov r3,#0x1\nb 0x00011da4\n'
+p228
+S'01 30 a0 e3\n16 ff ff ea\n'
+p229
+S'.text:00012140\n.text:00012144\n'
+p230
+tp231
+sS'RSA_free'
+p232
+(S'\n__stdcall RSA_free(RSA * r)\n'
+p233
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid RSA_free(RSA *r)\u000a\u000a{\u000a  (*(code *)PTR_RSA_free_00014fc8)();\u000a  return;\u000a}\u000a\u000a
+p234
+S'adr r12,0x11140\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe88]!\n'
+p235
+S'00 c6 8f e2\n03 ca 8c e2\n88 fe bc e5\n'
+p236
+S'.plt:00011138\n.plt:0001113c\n.plt:00011140\n'
+p237
+tp238
+sS'__aeabi_unwind_cpp_pr0'
+p239
+(S'\n__stdcall __aeabi_unwind_cpp_pr0()\n'
+p240
+V\u000a/* WARNING: Removing unreachable block (ram,0x00011df0) */\u000a/* WARNING: Removing unreachable block (ram,0x00011e38) */\u000a\u000aundefined4 __aeabi_unwind_cpp_pr0(uint uParm1,int iParm2,undefined4 uParm3)\u000a\u000a{\u000a  ushort uVar1;\u000a  ushort uVar2;\u000a  bool bVar3;\u000a  uint uVar4;\u000a  int iVar5;\u000a  uint *puVar6;\u000a  int iVar7;\u000a  undefined4 uVar8;\u000a  uint *puVar9;\u000a  uint uVar10;\u000a  uint uVar11;\u000a  uint uVar12;\u000a  uint uVar13;\u000a  int iVar14;\u000a  uint *puVar15;\u000a  int local_38;\u000a  int local_34;\u000a  uint *local_30;\u000a  undefined local_2c;\u000a  undefined local_2b;\u000a  \u000a  local_30 = (uint *)(*(int **)(iParm2 + 0x4c) + 1);\u000a  uVar11 = uParm1 & 3;\u000a  local_34 = **(int **)(iParm2 + 0x4c) << 8;\u000a  local_2b = 0;\u000a  local_2c = 3;\u000a  puVar9 = local_30;\u000a  if (uVar11 == 2) {\u000a    puVar9 = *(uint **)(iParm2 + 0x38);\u000a  }\u000a  uVar12 = *(uint *)(iParm2 + 0x50) & 1;\u000a  if (uVar12 == 0) {\u000a    iVar7 = iParm2 + 0x58;\u000aLAB_000120c4:\u000a    do {\u000a      while( true ) {\u000a        if (*puVar9 == 0) goto LAB_000120d0;\u000a        uVar1 = *(ushort *)((int)puVar9 + 2);\u000a        uVar2 = *(ushort *)puVar9;\u000a        puVar6 = puVar9 + 1;\u000a        uVar10 = ((uint)uVar1 & 0xfffffffe) + *(int *)(iParm2 + 0x48);\u000a        uVar4 = FUN_00011d0c(uParm3,0xf);\u000a        if (uVar4 < uVar10) {\u000a          bVar3 = false;\u000a        }\u000a        else {\u000a          if (uVar4 < uVar10 + ((uint)uVar2 & 0xfffffffe)) {\u000a            bVar3 = true;\u000a          }\u000a          else {\u000a            bVar3 = false;\u000a          }\u000a        }\u000a        uVar4 = (uint)uVar2 & 1 | ((uint)uVar1 & 1) << 1;\u000a        if (uVar4 != 1) break;\u000a        if (uVar11 == 0) {\u000a          if (bVar3) {\u000a            uVar4 = puVar9[2];\u000a            if (uVar4 == 0xfffffffe) {\u000a              return 9;\u000a            }\u000a            local_38 = iVar7;\u000a            if (uVar4 != 0xffffffff) {\u000a              uVar10 = uVar11;\u000a              if (uVar4 != 0) {\u000a                uVar10 = *(uint *)((int)puVar6 + uVar4 + 4);\u000a              }\u000a              local_38 = iVar7;\u000a              iVar5 = __cxa_type_match(iParm2,uVar10,*puVar6 >> 0x1f,&local_38);\u000a              if (iVar5 == 0) {\u000a                local_38 = iVar5;\u000a              }\u000a            }\u000a            if (local_38 != 0) {\u000aLAB_00012004:\u000a              uVar8 = FUN_00011d0c(uParm3,0xd);\u000a              *(int *)(iParm2 + 0x24) = local_38;\u000a              *(uint **)(iParm2 + 0x28) = puVar6;\u000a              *(undefined4 *)(iParm2 + 0x20) = uVar8;\u000a              return 6;\u000a            }\u000a          }\u000a        }\u000a        else {\u000a          iVar14 = *(int *)(iParm2 + 0x20);\u000a          iVar5 = FUN_00011d0c(uParm3,0xd);\u000a          if ((iVar14 == iVar5) && (puVar6 == *(uint **)(iParm2 + 0x28))) {\u000aLAB_0001207c:\u000a            uVar8 = FUN_00011904(puVar6);\u000a            FUN_00011d78(uParm3,0xf,uVar8);\u000a            uVar8 = 0;\u000a            goto LAB_0001211c;\u000a          }\u000a        }\u000a        puVar9 = puVar9 + 3;\u000a      }\u000a      if (uVar4 != 0) {\u000a        if (uVar4 != 2) {\u000a          return 9;\u000a        }\u000a        uVar4 = *puVar6 & 0x7fffffff;\u000a        if (uVar11 == 0) {\u000a          if ((bVar3) && (uVar10 = uVar11, puVar15 = puVar6, (uParm1 & 8) == 0 || uVar4 == 0)) {\u000a            do {\u000a              uVar13 = uVar10;\u000a              if (uVar13 == uVar4) goto LAB_00012004;\u000a              puVar15 = puVar15 + 1;\u000a              uVar10 = *puVar15;\u000a              if (uVar10 != 0) {\u000a                uVar10 = *(uint *)(uVar10 + (int)puVar15);\u000a              }\u000a              local_38 = iVar7;\u000a              iVar5 = __cxa_type_match(iParm2,uVar10,0,&local_38);\u000a              uVar10 = uVar13 + 1;\u000a            } while (iVar5 == 0);\u000a            if (uVar13 == uVar4) goto LAB_00012004;\u000a          }\u000a        }\u000a        else {\u000a          iVar14 = *(int *)(iParm2 + 0x20);\u000a          iVar5 = FUN_00011d0c(uParm3,0xd);\u000a          if ((iVar14 == iVar5) && (puVar6 == *(uint **)(iParm2 + 0x28))) {\u000a            *(undefined4 *)(iParm2 + 0x30) = 4;\u000a            *(uint *)(iParm2 + 0x28) = uVar4;\u000a            *(undefined4 *)(iParm2 + 0x2c) = 0;\u000a            *(uint **)(iParm2 + 0x34) = puVar9 + 2;\u000a            if (-1 < (int)*puVar6) {\u000a              puVar6 = puVar6 + uVar4 + 1;\u000a              goto LAB_0001207c;\u000a            }\u000a            uVar12 = 1;\u000a          }\u000a        }\u000a        if ((int)*puVar6 < 0) {\u000a          puVar6 = puVar9 + 2;\u000a        }\u000a        puVar9 = puVar6 + uVar4 + 1;\u000a        goto LAB_000120c4;\u000a      }\u000a      if (uVar11 == 0) {\u000a        bVar3 = false;\u000a      }\u000a      puVar9 = puVar9 + 2;\u000a    } while (!bVar3);\u000a    FUN_00011904(puVar6);\u000a    *(uint **)(iParm2 + 0x38) = puVar9;\u000a    iVar7 = __cxa_begin_cleanup(iParm2);\u000a    if (iVar7 == 0) {\u000a      return 9;\u000a    }\u000a    uVar8 = 0xf;\u000a  }\u000a  else {\u000a    uVar12 = 0;\u000aLAB_000120d0:\u000a    iVar7 = __gnu_unwind_execute(uParm3,&local_34);\u000a    if (iVar7 != 0) {\u000a      return 9;\u000a    }\u000a    if (uVar12 == 0) {\u000a      return 8;\u000a    }\u000a    uVar8 = FUN_00011d0c(uParm3,0xf);\u000a    FUN_00011d78(uParm3,0xe,uVar8);\u000a    uVar8 = 0xf;\u000a  }\u000aLAB_0001211c:\u000a  FUN_00011d78(uParm3,uVar8);\u000a  return 7;\u000a}\u000a\u000a
+p241
+S'mov r3,#0x0\nb 0x00011da4\n'
+p242
+S'00 30 a0 e3\n14 ff ff ea\n'
+p243
+S'.text:00012148\n.text:0001214c\n'
+p244
+tp245
+sS'_Unwind_VRS_Pop'
+p246
+(S'\n__stdcall _Unwind_VRS_Pop()\n'
+p247
+V\u000a/* WARNING: Type propagation algorithm not settling */\u000a\u000aundefined4 _Unwind_VRS_Pop(uint *puParm1,undefined4 uParm2,uint uParm3,uint uParm4)\u000a\u000a{\u000a  uint uVar1;\u000a  uint *puVar2;\u000a  uint uVar3;\u000a  undefined4 *puVar4;\u000a  undefined4 *puVar5;\u000a  uint *puVar6;\u000a  uint *puVar7;\u000a  uint uVar8;\u000a  undefined4 *puVar9;\u000a  uint uVar10;\u000a  int iVar11;\u000a  uint in_r12;\u000a  bool bVar12;\u000a  bool bVar13;\u000a  undefined4 auStack552 [28];\u000a  undefined4 local_1b8 [4];\u000a  undefined auStack424 [128];\u000a  undefined4 auStack296 [32];\u000a  undefined4 auStack168 [35];\u000a  \u000a  switch(uParm2) {\u000a  case 0:\u000a    if (uParm4 != 0) {\u000a      return 2;\u000a    }\u000a    puVar6 = (uint *)puParm1[0xe];\u000a    do {\u000a      puVar2 = (uint *)(uParm3 & 0xffff & 1 << (uParm4 & 0xff));\u000a      bVar12 = puVar2 != (uint *)0x0;\u000a      puVar7 = puVar6;\u000a      if (bVar12) {\u000a        puVar2 = puParm1 + uParm4;\u000a        puVar7 = puVar6 + 1;\u000a        in_r12 = *puVar6;\u000a      }\u000a      uParm4 = uParm4 + 1;\u000a      if (bVar12) {\u000a        puVar2[1] = in_r12;\u000a      }\u000a      puVar6 = puVar7;\u000a    } while (uParm4 != 0x10);\u000a    if ((uParm3 & 0x2000) != 0) {\u000a      return 0;\u000a    }\u000a    *(uint **)(puParm1 + 0xe) = puVar7;\u000a    return 0;\u000a  case 1:\u000a    uVar10 = uParm4 - 5;\u000a    if (uVar10 != 0) {\u000a      uVar10 = 1;\u000a    }\u000a    if (uParm4 != 1 && uParm4 != 5) {\u000a      return 2;\u000a    }\u000a    uVar1 = uParm3 >> 0x10;\u000a    uParm3 = uParm3 & 0xffff;\u000a    uVar8 = uParm3 + uVar1;\u000a    if (uParm4 == 1) {\u000a      uVar3 = 0x10;\u000a    }\u000a    else {\u000a      uVar3 = 0x20;\u000a    }\u000a    if (uVar3 < uVar8) {\u000a      return 2;\u000a    }\u000a    bVar13 = uParm4 == 1;\u000a    bVar12 = 0xf < uVar1;\u000a    if (bVar12 && bVar13) {\u000a      return 2;\u000a    }\u000a    uVar3 = uParm3;\u000a    if ((!bVar12) && (uVar3 = (uint)bVar12, 0x10 < uVar8)) {\u000a      uVar3 = uVar8 - 0x10;\u000a    }\u000a    uVar8 = uVar3;\u000a    if (uVar3 != 0) {\u000a      uVar8 = 1;\u000a    }\u000a    if ((uVar8 & uVar10) != 0) {\u000a      return 2;\u000a    }\u000a    if ((uVar1 < 0x10) && (uVar10 = *puParm1, (uVar10 & 1) != 0)) {\u000a      *puParm1 = uVar10 & 0xfffffffe;\u000a      if (uParm4 == 5) {\u000a        *puParm1 = uVar10 & 0xfffffffe | 2;\u000a        __gnu_Unwind_Save_VFP_D();\u000a      }\u000a      else {\u000a        *puParm1 = uVar10 & 0xfffffffc;\u000a        __gnu_Unwind_Save_VFP(puParm1 + 0x12);\u000a      }\u000a    }\u000a    if ((uVar8 != 0) && ((*puParm1 & 4) != 0)) {\u000a      *puParm1 = *puParm1 & 0xfffffffb;\u000a      __gnu_Unwind_Save_VFP_D_16_to_31(puParm1 + 0x34);\u000a    }\u000a    if (bVar13) {\u000a      __gnu_Unwind_Save_VFP(auStack168);\u000a      if (uVar8 == 0) goto LAB_000122f0;\u000a    }\u000a    else {\u000a      if (uVar1 < 0x10) {\u000a        __gnu_Unwind_Save_VFP_D(auStack168);\u000a      }\u000a      if (uVar8 == 0) goto LAB_000122f0;\u000a      __gnu_Unwind_Save_VFP_D_16_to_31(auStack424);\u000a    }\u000a    uParm3 = 0x10 - uVar1;\u000aLAB_000122f0:\u000a    puVar9 = (undefined4 *)puParm1[0xe];\u000a    if (0 < (int)uParm3) {\u000a      iVar11 = uParm3 * 2;\u000a      puVar4 = auStack168 + uVar1 * 2;\u000a      puVar5 = puVar9;\u000a      while (bVar12 = iVar11 != 0, iVar11 = iVar11 + -1, bVar12) {\u000a        *puVar4 = *puVar5;\u000a        puVar4 = puVar4 + 1;\u000a        puVar5 = puVar5 + 1;\u000a      }\u000a      puVar9 = puVar9 + uParm3 * 2;\u000a    }\u000a    if (uVar8 != 0) {\u000a      uVar10 = uVar1;\u000a      if (uVar1 < 0x10) {\u000a        uVar10 = 0x10;\u000a      }\u000a      iVar11 = uVar3 * 2;\u000a      puVar4 = auStack552 + uVar10 * 2;\u000a      puVar5 = puVar9;\u000a      while (bVar12 = iVar11 != 0, iVar11 = iVar11 + -1, bVar12) {\u000a        *puVar4 = *puVar5;\u000a        puVar4 = puVar4 + 1;\u000a        puVar5 = puVar5 + 1;\u000a      }\u000a      puVar9 = puVar9 + uVar3 * 2;\u000a    }\u000a    if (bVar13) {\u000a      puVar9 = puVar9 + 1;\u000a    }\u000a    *(undefined4 **)(puParm1 + 0xe) = puVar9;\u000a    if (bVar13) {\u000a      __gnu_Unwind_Restore_VFP(auStack168);\u000a    }\u000a    else {\u000a      if (uVar1 < 0x10) {\u000a        __gnu_Unwind_Restore_VFP_D(auStack168);\u000a      }\u000a      if (uVar8 == 0) {\u000a        return 0;\u000a      }\u000a      __gnu_Unwind_Restore_VFP_D_16_to_31(auStack424);\u000a    }\u000a    return 0;\u000a  case 2:\u000a    return 1;\u000a  case 3:\u000a    if (uParm4 == 3) {\u000a      uVar10 = uParm3 & 0xffff;\u000a      if (uVar10 + (uParm3 >> 0x10) < 0x11) {\u000a        if ((*puParm1 & 8) != 0) {\u000a          *puParm1 = *puParm1 & 0xfffffff7;\u000a          __gnu_Unwind_Save_WMMXD(puParm1 + 0x6c);\u000a        }\u000a        __gnu_Unwind_Save_WMMXD(auStack296);\u000a        puVar5 = (undefined4 *)puParm1[0xe];\u000a        iVar11 = uVar10 * 2;\u000a        puVar9 = puVar5;\u000a        puVar4 = auStack296 + (uParm3 >> 0x10) * 2;\u000a        while (iVar11 != 0) {\u000a          iVar11 = iVar11 + -1;\u000a          *puVar4 = *puVar9;\u000a          puVar9 = puVar9 + 1;\u000a          puVar4 = puVar4 + 1;\u000a        }\u000a        *(undefined4 **)(puParm1 + 0xe) = puVar5 + uVar10 * 2;\u000a        __gnu_Unwind_Restore_WMMXD(auStack296);\u000a        return 0;\u000a      }\u000a    }\u000a    break;\u000a  case 4:\u000a    bVar12 = uParm3 == 0x10;\u000a    if (uParm3 < 0x11) {\u000a      bVar12 = uParm4 == 0;\u000a    }\u000a    if (bVar12) {\u000a      if ((*puParm1 & 0x10) != 0) {\u000a        *puParm1 = *puParm1 & 0xffffffef;\u000a        __gnu_Unwind_Save_WMMXC(puParm1 + 0x8c);\u000a      }\u000a      __gnu_Unwind_Save_WMMXC(local_1b8);\u000a      puVar9 = (undefined4 *)puParm1[0xe];\u000a      uVar10 = 0;\u000a      do {\u000a        if ((uParm3 & 1 << (uVar10 & 0xff)) != 0) {\u000a          local_1b8[uVar10] = *puVar9;\u000a          puVar9 = puVar9 + 1;\u000a        }\u000a        uVar10 = uVar10 + 1;\u000a      } while (uVar10 != 4);\u000a      *(undefined4 **)(puParm1 + 0xe) = puVar9;\u000a      __gnu_Unwind_Restore_WMMXC(local_1b8);\u000a      return 0;\u000a    }\u000a  }\u000a  return 2;\u000a}\u000a\u000a
+p248
+S'stmdb sp!,{ r4 r5 r6 r7 r8 r10 lr }\ncpy r4,r0\nsub sp,sp,#0x19c\ncpy r5,r2\ncmp r1,#0x4\naddls pc,pc,r1, lsl #0x2\nb 0x00012498\nb 0x00012188\nb 0x000121cc\nb 0x00012180\nb 0x000123b0\nb 0x00012434\nmov r7,#0x1\nb 0x0001249c\ncmp r3,#0x0\nbne 0x00012498\nmov r7,r2, lsl #0x10\nldr r2,[r0,#0x38]\nmov r7,r7, lsr #0x10\nmov r1,#0x1\nands r0,r7,r1, lsl r3\naddne r0,r4,r3, lsl #0x2\nldrne r12,[r2],#0x4\nadd r3,r3,#0x1\nstrne r12,[r0,#0x4]\ncmp r3,#0x10\nbne 0x000121a0\nands r7,r7,#0x2000\nstreq r2,[r4,#0x38]\nbeq 0x0001249c\nb 0x00012490\nsubs r1,r3,#0x5\nmovne r1,#0x1\ncmp r3,#0x1\ncmpne r3,#0x5\nbne 0x00012498\nmov r5,r2, lsl #0x10\ncmp r3,#0x1\nmov r6,r2, lsr #0x10\nmov r5,r5, lsr #0x10\nadd r2,r5,r6\nmovne r0,#0x20\nmoveq r0,#0x10\ncmp r2,r0\nbhi 0x00012498\nsub r0,r3,#0x1\nrsbs r8,r0,#0x0\nadc r8,r8,r0\ncmp r6,#0xf\nmovls r10,#0x0\nmovhi r10,#0x1\ntst r10,r8\nbne 0x00012498\ncmp r10,#0x0\ncpyne r10,r5\nbne 0x00012238\ncmp r2,#0x10\nsubhi r10,r2,#0x10\nadds r7,r10,#0x0\nmovne r7,#0x1\ntst r7,r1\nbne 0x00012498\ncmp r6,#0xf\nbhi 0x0001228c\nldr r2,[r4,#0x0]\ntst r2,#0x1\nbeq 0x0001228c\nbic r1,r2,#0x1\ncpy r0,r4\ncmp r3,#0x5\nstr r1,[r0],#0x48\nbne 0x00012280\norr r1,r1,#0x2\nstr r1,[r4,#0x0]\nbl 0x0001270c\nb 0x0001228c\nbic r2,r2,#0x3\nstr r2,[r4,#0x0]\nbl 0x000126fc\ncmp r7,#0x0\nbeq 0x000122b0\nldr r3,[r4,#0x0]\ntst r3,#0x4\nbeq 0x000122b0\nbic r3,r3,#0x4\ncpy r0,r4\nstr r3,[r0],#0xd0\nbl 0x0001271c\ncmp r8,#0x0\nbeq 0x000122cc\nadd r0,sp,#0x110\nbl 0x000126fc\ncmp r7,#0x0\nbne 0x000122ec\nb 0x000122f0\ncmp r6,#0xf\nbhi 0x000122dc\nadd r0,sp,#0x110\nbl 0x0001270c\ncmp r7,#0x0\nbeq 0x000122f0\nadd r0,sp,#0x10\nbl 0x0001271c\nrsb r5,r6,#0x10\nldr r1,[r4,#0x38]\ncmp r5,#0x0\ncpy r3,r1\nble 0x00012328\nadd r2,sp,#0x110\nmov r5,r5, lsl #0x1\nadd r0,r2,r6, lsl #0x3\ncpy r2,r5\nb 0x0001231c\nldr r12,[r1],#0x4\nstr r12,[r0],#0x4\nsubs r2,r2,#0x1\nbcs 0x00012314\nadd r3,r3,r5, lsl #0x2\ncmp r7,#0x0\nbeq 0x0001236c\nadd r1,sp,#0x198\ncmp r6,#0x10\ncpycs r0,r6\nmovcc r0,#0x10\nadd r0,r1,r0, lsl #0x3\nmov r10,r10, lsl #0x1\nsub r0,r0,#0x208\ncpy r1,r3\ncpy r2,r10\nb 0x00012360\nldr r12,[r1],#0x4\nstr r12,[r0],#0x4\nsubs r2,r2,#0x1\nbcs 0x00012358\nadd r3,r3,r10, lsl #0x2\ncmp r8,#0x0\naddne r3,r3,#0x4\ncmp r8,#0x0\nstr r3,[r4,#0x38]\nbeq 0x0001238c\nadd r0,sp,#0x110\nbl 0x000126f4\nb 0x00012490\ncmp r6,#0xf\nbhi 0x0001239c\nadd r0,sp,#0x110\nbl 0x00012704\ncmp r7,#0x0\nbeq 0x0001249c\nadd r0,sp,#0x10\nbl 0x00012714\nb 0x00012490\ncmp r3,#0x3\nbne 0x00012498\nmov r5,r2, lsl #0x10\nmov r6,r2, lsr #0x10\nmov r5,r5, lsr #0x10\nadd r3,r5,r6\ncmp r3,#0x10\nbhi 0x00012498\nldr r3,[r0,#0x0]\ntst r3,#0x8\nbeq 0x000123e8\nbic r3,r3,#0x8\nstr r3,[r0],#0x1b0\nbl 0x00012768\nadd r0,sp,#0x90\nbl 0x00012768\nldr r3,[r4,#0x38]\nadd r0,sp,#0x90\nmov r5,r5, lsl #0x1\ncpy r2,r3\nadd r6,r0,r6, lsl #0x3\ncpy r7,r5\nb 0x00012418\nldr r1,[r3],#0x4\nsub r7,r7,#0x1\nstr r1,[r6],#0x4\ncmp r7,#0x0\nbne 0x0001240c\nadd r5,r2,r5, lsl #0x2\nstr r5,[r4,#0x38]\nadd r0,sp,#0x90\nbl 0x00012724\nb 0x0001249c\ncmp r2,#0x10\ncmpls r3,#0x0\nbne 0x00012498\nldr r3,[r0,#0x0]\ntst r3,#0x10\nbeq 0x00012458\nbic r3,r3,#0x10\nstr r3,[r0],#0x230\nbl 0x000127c0\ncpy r0,sp\nbl 0x000127c0\nldr r2,[r4,#0x38]\nmov r3,#0x0\nmov r1,#0x1\nands r0,r5,r1, lsl r3\nldrne r0,[r2],#0x4\nstrne r0,[sp,r3,lsl #0x2]\nadd r3,r3,#0x1\ncmp r3,#0x4\nbne 0x0001246c\nstr r2,[r4,#0x38]\ncpy r0,sp\nbl 0x000127ac\nmov r7,#0x0\nb 0x0001249c\nmov r7,#0x2\ncpy r0,r7\nadd sp,sp,#0x19c\nldmia sp!,{ r4 r5 r6 r7 r8 r10 pc }\n'
+p249
+S'f0 45 2d e9\n00 40 a0 e1\n67 df 4d e2\n02 50 a0 e1\n04 00 51 e3\n01 f1 8f 90\nca 00 00 ea\n05 00 00 ea\n15 00 00 ea\n01 00 00 ea\n8c 00 00 ea\nac 00 00 ea\n01 70 a0 e3\nc4 00 00 ea\n00 00 53 e3\nc1 00 00 1a\n02 78 a0 e1\n38 20 90 e5\n27 78 a0 e1\n01 10 a0 e3\n11 03 17 e0\n03 01 84 10\n04 c0 92 14\n01 30 83 e2\n04 c0 80 15\n10 00 53 e3\nf8 ff ff 1a\n02 7a 17 e2\n38 20 84 05\nb4 00 00 0a\nb0 00 00 ea\n05 10 53 e2\n01 10 a0 13\n01 00 53 e3\n05 00 53 13\nad 00 00 1a\n02 58 a0 e1\n01 00 53 e3\n22 68 a0 e1\n25 58 a0 e1\n06 20 85 e0\n20 00 a0 13\n10 00 a0 03\n00 00 52 e1\na4 00 00 8a\n01 00 43 e2\n00 80 70 e2\n00 80 a8 e0\n0f 00 56 e3\n00 a0 a0 93\n01 a0 a0 83\n08 00 1a e1\n9c 00 00 1a\n00 00 5a e3\n05 a0 a0 11\n01 00 00 1a\n10 00 52 e3\n10 a0 42 82\n00 70 9a e2\n01 70 a0 13\n01 00 17 e1\n93 00 00 1a\n0f 00 56 e3\n0e 00 00 8a\n00 20 94 e5\n01 00 12 e3\n0b 00 00 0a\n01 10 c2 e3\n04 00 a0 e1\n05 00 53 e3\n48 10 80 e4\n03 00 00 1a\n02 10 81 e3\n00 10 84 e5\n23 01 00 eb\n02 00 00 ea\n03 20 c2 e3\n00 20 84 e5\n1b 01 00 eb\n00 00 57 e3\n06 00 00 0a\n00 30 94 e5\n04 00 13 e3\n03 00 00 0a\n04 30 c3 e3\n04 00 a0 e1\nd0 30 80 e4\n1a 01 00 eb\n00 00 58 e3\n04 00 00 0a\n11 0e 8d e2\n0e 01 00 eb\n00 00 57 e3\n08 00 00 1a\n08 00 00 ea\n0f 00 56 e3\n01 00 00 8a\n11 0e 8d e2\n0b 01 00 eb\n00 00 57 e3\n02 00 00 0a\n10 00 8d e2\n0b 01 00 eb\n10 50 66 e2\n38 10 94 e5\n00 00 55 e3\n01 30 a0 e1\n09 00 00 da\n11 2e 8d e2\n85 50 a0 e1\n86 01 82 e0\n05 20 a0 e1\n01 00 00 ea\n04 c0 91 e4\n04 c0 80 e4\n01 20 52 e2\nfb ff ff 2a\n05 31 83 e0\n00 00 57 e3\n0e 00 00 0a\n66 1f 8d e2\n10 00 56 e3\n06 00 a0 21\n10 00 a0 33\n80 01 81 e0\n8a a0 a0 e1\n82 0f 40 e2\n03 10 a0 e1\n0a 20 a0 e1\n01 00 00 ea\n04 c0 91 e4\n04 c0 80 e4\n01 20 52 e2\nfb ff ff 2a\n0a 31 83 e0\n00 00 58 e3\n04 30 83 12\n00 00 58 e3\n38 30 84 e5\n02 00 00 0a\n11 0e 8d e2\nda 00 00 eb\n40 00 00 ea\n0f 00 56 e3\n01 00 00 8a\n11 0e 8d e2\nd9 00 00 eb\n00 00 57 e3\n3d 00 00 0a\n10 00 8d e2\nd9 00 00 eb\n37 00 00 ea\n03 00 53 e3\n37 00 00 1a\n02 58 a0 e1\n22 68 a0 e1\n25 58 a0 e1\n06 30 85 e0\n10 00 53 e3\n31 00 00 8a\n00 30 90 e5\n08 00 13 e3\n02 00 00 0a\n08 30 c3 e3\nb0 31 80 e4\ndf 00 00 eb\n90 00 8d e2\ndd 00 00 eb\n38 30 94 e5\n90 00 8d e2\n85 50 a0 e1\n03 20 a0 e1\n86 61 80 e0\n05 70 a0 e1\n02 00 00 ea\n04 10 93 e4\n01 70 47 e2\n04 10 86 e4\n00 00 57 e3\nfa ff ff 1a\n05 51 82 e0\n38 50 84 e5\n90 00 8d e2\nbc 00 00 eb\n19 00 00 ea\n10 00 52 e3\n00 00 53 93\n15 00 00 1a\n00 30 90 e5\n10 00 13 e3\n02 00 00 0a\n10 30 c3 e3\n30 32 80 e4\nd9 00 00 eb\n0d 00 a0 e1\nd7 00 00 eb\n38 20 94 e5\n00 30 a0 e3\n01 10 a0 e3\n11 03 15 e0\n04 00 92 14\n03 01 8d 17\n01 30 83 e2\n04 00 53 e3\nf9 ff ff 1a\n38 20 84 e5\n0d 00 a0 e1\nc6 00 00 eb\n00 70 a0 e3\n00 00 00 ea\n02 70 a0 e3\n07 00 a0 e1\n67 df 8d e2\nf0 85 bd e8\n'
+p250
+S'.text:00012150\n.text:00012154\n.text:00012158\n.text:0001215c\n.text:00012160\n.text:00012164\n.text:00012168\n.text:0001216c\n.text:00012170\n.text:00012174\n.text:00012178\n.text:0001217c\n.text:00012180\n.text:00012184\n.text:00012188\n.text:0001218c\n.text:00012190\n.text:00012194\n.text:00012198\n.text:0001219c\n.text:000121a0\n.text:000121a4\n.text:000121a8\n.text:000121ac\n.text:000121b0\n.text:000121b4\n.text:000121b8\n.text:000121bc\n.text:000121c0\n.text:000121c4\n.text:000121c8\n.text:000121cc\n.text:000121d0\n.text:000121d4\n.text:000121d8\n.text:000121dc\n.text:000121e0\n.text:000121e4\n.text:000121e8\n.text:000121ec\n.text:000121f0\n.text:000121f4\n.text:000121f8\n.text:000121fc\n.text:00012200\n.text:00012204\n.text:00012208\n.text:0001220c\n.text:00012210\n.text:00012214\n.text:00012218\n.text:0001221c\n.text:00012220\n.text:00012224\n.text:00012228\n.text:0001222c\n.text:00012230\n.text:00012234\n.text:00012238\n.text:0001223c\n.text:00012240\n.text:00012244\n.text:00012248\n.text:0001224c\n.text:00012250\n.text:00012254\n.text:00012258\n.text:0001225c\n.text:00012260\n.text:00012264\n.text:00012268\n.text:0001226c\n.text:00012270\n.text:00012274\n.text:00012278\n.text:0001227c\n.text:00012280\n.text:00012284\n.text:00012288\n.text:0001228c\n.text:00012290\n.text:00012294\n.text:00012298\n.text:0001229c\n.text:000122a0\n.text:000122a4\n.text:000122a8\n.text:000122ac\n.text:000122b0\n.text:000122b4\n.text:000122b8\n.text:000122bc\n.text:000122c0\n.text:000122c4\n.text:000122c8\n.text:000122cc\n.text:000122d0\n.text:000122d4\n.text:000122d8\n.text:000122dc\n.text:000122e0\n.text:000122e4\n.text:000122e8\n.text:000122ec\n.text:000122f0\n.text:000122f4\n.text:000122f8\n.text:000122fc\n.text:00012300\n.text:00012304\n.text:00012308\n.text:0001230c\n.text:00012310\n.text:00012314\n.text:00012318\n.text:0001231c\n.text:00012320\n.text:00012324\n.text:00012328\n.text:0001232c\n.text:00012330\n.text:00012334\n.text:00012338\n.text:0001233c\n.text:00012340\n.text:00012344\n.text:00012348\n.text:0001234c\n.text:00012350\n.text:00012354\n.text:00012358\n.text:0001235c\n.text:00012360\n.text:00012364\n.text:00012368\n.text:0001236c\n.text:00012370\n.text:00012374\n.text:00012378\n.text:0001237c\n.text:00012380\n.text:00012384\n.text:00012388\n.text:0001238c\n.text:00012390\n.text:00012394\n.text:00012398\n.text:0001239c\n.text:000123a0\n.text:000123a4\n.text:000123a8\n.text:000123ac\n.text:000123b0\n.text:000123b4\n.text:000123b8\n.text:000123bc\n.text:000123c0\n.text:000123c4\n.text:000123c8\n.text:000123cc\n.text:000123d0\n.text:000123d4\n.text:000123d8\n.text:000123dc\n.text:000123e0\n.text:000123e4\n.text:000123e8\n.text:000123ec\n.text:000123f0\n.text:000123f4\n.text:000123f8\n.text:000123fc\n.text:00012400\n.text:00012404\n.text:00012408\n.text:0001240c\n.text:00012410\n.text:00012414\n.text:00012418\n.text:0001241c\n.text:00012420\n.text:00012424\n.text:00012428\n.text:0001242c\n.text:00012430\n.text:00012434\n.text:00012438\n.text:0001243c\n.text:00012440\n.text:00012444\n.text:00012448\n.text:0001244c\n.text:00012450\n.text:00012454\n.text:00012458\n.text:0001245c\n.text:00012460\n.text:00012464\n.text:00012468\n.text:0001246c\n.text:00012470\n.text:00012474\n.text:00012478\n.text:0001247c\n.text:00012480\n.text:00012484\n.text:00012488\n.text:0001248c\n.text:00012490\n.text:00012494\n.text:00012498\n.text:0001249c\n.text:000124a0\n.text:000124a4\n'
+p251
+tp252
+sS'__gnu_Unwind_Restore_VFP_D'
+p253
+(S'\n__stdcall __gnu_Unwind_Restore_VFP_D()\n'
+p254
+V\u000a/* WARNING: Control flow encountered unimplemented instructions */\u000a\u000avoid __gnu_Unwind_Restore_VFP_D(void)\u000a\u000a{\u000a                    /* WARNING: Unimplemented instruction - Truncating control flow here */\u000a  halt_unimplemented();\u000a}\u000a\u000a
+p255
+S'vldmia r0,{d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15}\nbx lr\n'
+p256
+S'20 0b 90 ec\n1e ff 2f e1\n'
+p257
+S'.text:00012704\n.text:00012708\n'
+p258
+tp259
+sS'_Unwind_VRS_Get'
+p260
+(S'\n__stdcall _Unwind_VRS_Get(undefined param_1, undefined param_2, undefined param_3, undefined param_4, undefined4 param_5)\n'
+p261
+V\u000aundefined4 _Unwind_VRS_Get(int param_1,uint param_2,uint param_3,int param_4,undefined4 *param_5)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  bool bVar2;\u000a  \u000a  if (param_2 == 0) {\u000a    bVar2 = param_3 == 0xf;\u000a    if (param_3 < 0x10) {\u000a      bVar2 = param_4 == 0;\u000a    }\u000a    if (bVar2) {\u000a      uVar1 = 0;\u000a      *param_5 = *(undefined4 *)(param_1 + param_3 * 4 + 4);\u000a    }\u000a    else {\u000a      uVar1 = 2;\u000a    }\u000a    return uVar1;\u000a  }\u000a  if (param_2 < 5) {\u000a    uVar1 = 1;\u000a  }\u000a  else {\u000a    uVar1 = 2;\u000a  }\u000a  return uVar1;\u000a}\u000a\u000a
+p262
+S'cmp r1,#0x0\nbeq 0x00011ce0\ncmp r1,#0x4\nmovhi r0,#0x2\nmovls r0,#0x1\nbx lr\ncmp r2,#0xf\ncmpls r3,#0x0\naddeq r0,r0,r2, lsl #0x2\nldreq r2,[sp,#0x0]\nldreq r1,[r0,#0x4]\nmoveq r3,#0x0\nmovne r3,#0x1\nstreq r1,[r2,#0x0]\ncpyeq r0,r3\nmovne r0,#0x2\nbx lr\n'
+p263
+S'00 00 51 e3\n03 00 00 0a\n04 00 51 e3\n02 00 a0 83\n01 00 a0 93\n1e ff 2f e1\n0f 00 52 e3\n00 00 53 93\n02 01 80 00\n00 20 9d 05\n04 10 90 05\n00 30 a0 03\n01 30 a0 13\n00 10 82 05\n03 00 a0 01\n02 00 a0 13\n1e ff 2f e1\n'
+p264
+S'.text:00011cc8\n.text:00011ccc\n.text:00011cd0\n.text:00011cd4\n.text:00011cd8\n.text:00011cdc\n.text:00011ce0\n.text:00011ce4\n.text:00011ce8\n.text:00011cec\n.text:00011cf0\n.text:00011cf4\n.text:00011cf8\n.text:00011cfc\n.text:00011d00\n.text:00011d04\n.text:00011d08\n'
+p265
+tp266
+sS'abort'
+p267
+(S'\n__stdcall abort()\n'
+p268
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid abort(void)\u000a\u000a{\u000a  (*(code *)PTR_abort_00014ff4)();\u000a  return;\u000a}\u000a\u000a
+p269
+S'adr r12,0x111c4\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe30]!\n'
+p270
+S'00 c6 8f e2\n03 ca 8c e2\n30 fe bc e5\n'
+p271
+S'.plt:000111bc\n.plt:000111c0\n.plt:000111c4\n'
+p272
+tp273
+sS'_Unwind_DeleteException'
+p274
+(S'\n__stdcall _Unwind_DeleteException()\n'
+p275
+V\u000avoid _Unwind_DeleteException(int iParm1)\u000a\u000a{\u000a  if (*(code **)(iParm1 + 8) == (code *)0x0) {\u000a    return;\u000a  }\u000a  (**(code **)(iParm1 + 8))(1);\u000a  return;\u000a}\u000a\u000a
+p276
+S'stmdb sp!,{ r3 lr }\nldr r3,[r0,#0x8]\ncpy r1,r0\ncmp r3,#0x0\nldmeqia sp!,{ r3 pc }\nmov r0,#0x1\nblx r3\nldmia sp!,{ r3 pc }\n'
+p277
+S'08 40 2d e9\n08 30 90 e5\n00 10 a0 e1\n00 00 53 e3\n08 80 bd 08\n01 00 a0 e3\n33 ff 2f e1\n08 80 bd e8\n'
+p278
+S'.text:00012600\n.text:00012604\n.text:00012608\n.text:0001260c\n.text:00012610\n.text:00012614\n.text:00012618\n.text:0001261c\n'
+p279
+tp280
+sS'_Unwind_Resume_or_Rethrow'
+p281
+(S'\n__stdcall _Unwind_Resume_or_Rethrow()\n'
+p282
+V\u000avoid _Unwind_Resume_or_Rethrow\u000a               (undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 uStack68;\u000a  undefined4 uStack64;\u000a  undefined4 uStack60;\u000a  undefined4 uStack56;\u000a  undefined4 uStack52;\u000a  undefined4 uStack4;\u000a  \u000a  uStack4 = 0x12824;\u000a  uStack68 = 0;\u000a  uStack64 = uParm1;\u000a  uStack60 = uParm2;\u000a  uStack56 = uParm3;\u000a  uStack52 = uParm4;\u000a  __gnu_Unwind_Resume_or_Rethrow(uParm1,&uStack68,uParm3,0,uParm3);\u000a  return;\u000a}\u000a\u000a
+p283
+S'stmdb sp!,{ sp lr pc}\nstmdb sp!,{ r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 }\nmov r3,#0x0\nstmdb sp!,{ r2 r3 }\nadd r1,sp,#0x4\nbl 0x000125dc\nldr lr,[sp,#0x40]\nadd sp,sp,#0x48\nbx lr\n'
+p284
+S'00 e0 2d e9\nff 1f 2d e9\n00 30 a0 e3\n0c 00 2d e9\n04 10 8d e2\n69 ff ff eb\n40 e0 9d e5\n48 d0 8d e2\n1e ff 2f e1\n'
+p285
+S'.text:0001281c\n.text:00012820\n.text:00012824\n.text:00012828\n.text:0001282c\n.text:00012830\n.text:00012834\n.text:00012838\n.text:0001283c\n'
+p286
+tp287
+sS'_Unwind_RaiseException'
+p288
+(S'\n__stdcall _Unwind_RaiseException()\n'
+p289
+V\u000avoid _Unwind_RaiseException(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 uStack68;\u000a  undefined4 uStack64;\u000a  undefined4 uStack60;\u000a  undefined4 uStack56;\u000a  undefined4 uStack52;\u000a  undefined4 uStack4;\u000a  \u000a  uStack4 = 0x127dc;\u000a  uStack68 = 0;\u000a  uStack64 = uParm1;\u000a  uStack60 = uParm2;\u000a  uStack56 = uParm3;\u000a  uStack52 = uParm4;\u000a  __gnu_Unwind_RaiseException(uParm1,&uStack68,uParm3,0,uParm3);\u000a  return;\u000a}\u000a\u000a
+p290
+S'stmdb sp!,{ sp lr pc}\nstmdb sp!,{ r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 }\nmov r3,#0x0\nstmdb sp!,{ r2 r3 }\nadd r1,sp,#0x4\nbl 0x000124b0\nldr lr,[sp,#0x40]\nadd sp,sp,#0x48\nbx lr\n'
+p291
+S'00 e0 2d e9\nff 1f 2d e9\n00 30 a0 e3\n0c 00 2d e9\n04 10 8d e2\n30 ff ff eb\n40 e0 9d e5\n48 d0 8d e2\n1e ff 2f e1\n'
+p292
+S'.text:000127d4\n.text:000127d8\n.text:000127dc\n.text:000127e0\n.text:000127e4\n.text:000127e8\n.text:000127ec\n.text:000127f0\n.text:000127f4\n'
+p293
+tp294
+sS'BIO_new_mem_buf'
+p295
+(S'\n__stdcall BIO_new_mem_buf(void * buf, int len)\n'
+p296
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aBIO * BIO_new_mem_buf(void *buf,int len)\u000a\u000a{\u000a  BIO *pBVar1;\u000a  \u000a  pBVar1 = (BIO *)(*(code *)PTR_BIO_new_mem_buf_00014fb0)();\u000a  return pBVar1;\u000a}\u000a\u000a
+p297
+S'adr r12,0x110f8\nadd r12,r12,#0x3000\nldr pc,[r12,#0xeb8]!\n'
+p298
+S'00 c6 8f e2\n03 ca 8c e2\nb8 fe bc e5\n'
+p299
+S'.plt:000110f0\n.plt:000110f4\n.plt:000110f8\n'
+p300
+tp301
+sS'RSA_private_decrypt'
+p302
+(S'\n__stdcall RSA_private_decrypt(int flen, uchar * from, uchar * to, RSA * rsa, int padding)\n'
+p303
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint RSA_private_decrypt(int flen,uchar *from,uchar *to,RSA *rsa,int padding)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_RSA_private_decrypt_00014fd8)();\u000a  return iVar1;\u000a}\u000a\u000a
+p304
+S'adr r12,0x11170\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe68]!\n'
+p305
+S'00 c6 8f e2\n03 ca 8c e2\n68 fe bc e5\n'
+p306
+S'.plt:00011168\n.plt:0001116c\n.plt:00011170\n'
+p307
+tp308
+sS'FUN_000114d4'
+p309
+(S'\n__stdcall FUN_000114d4()\n'
+p310
+V\u000aBIO * FUN_000114d4(uchar *puParm1,undefined4 uParm2,undefined4 *puParm3)\u000a\u000a{\u000a  BIO *bp;\u000a  RSA *rsa;\u000a  int flen;\u000a  int *piVar1;\u000a  BIO *__s;\u000a  undefined auStack284 [118];\u000a  undefined auStack166 [138];\u000a  int local_1c;\u000a  \u000a  piVar1 = *(int **)(DAT_0001158c + 0x114e0);\u000a  local_1c = *piVar1;\u000a  memcpy(auStack284,(void *)(DAT_00011590 + 0x114ea),0x76);\u000a  memset(auStack166,0,0x8a);\u000a  bp = BIO_new_mem_buf(auStack284,-1);\u000a  __s = bp;\u000a  if (bp != (BIO *)0x0) {\u000a    rsa = PEM_read_bio_RSA_PUBKEY(bp,(RSA **)0x0,(undefined1 *)0x0,(void *)0x0);\u000a    if (rsa == (RSA *)0x0) {\u000a      BIO_free_all(bp);\u000a    }\u000a    flen = RSA_size(rsa);\u000a    __s = (BIO *)malloc(flen + 1U);\u000a    memset(__s,0,flen + 1U);\u000a    flen = RSA_public_encrypt(flen,puParm1,(uchar *)__s,rsa,3);\u000a    if (flen < 0) {\u000a      RSA_free(rsa);\u000a      BIO_free_all(bp);\u000a      __s = (BIO *)0x0;\u000a    }\u000a    else {\u000a      *puParm3 = 0x10;\u000a      RSA_free(rsa);\u000a      BIO_free_all(bp);\u000a    }\u000a  }\u000a  if (local_1c != *piVar1) {\u000a                    /* WARNING: Subroutine does not return */\u000a    __stack_chk_fail();\u000a  }\u000a  return __s;\u000a}\u000a\u000a
+p311
+S'push { r4, r5, r6, r7, lr }\nldr r4,[0x0001158c]\nldr r1,[0x00011590]\nsub sp,#0x124\nadd r4,pc\nldr r4,[r4,#0x0]\nstr r0,[sp,#0xc]\nstr r2,[sp,#0x10]\nldr r3,[r4,#0x0]\nadd r1,pc\nmov r2,#0x76\nadd r0,sp,#0x1c\nstr r3,[sp,#0x11c]\nblx 0x000110a8\nmov r0,sp\nmov r1,#0x0\nmov r2,#0x8a\nadd r0,#0x92\nblx 0x000110c0\nmov r1,#0x1\nadd r0,sp,#0x1c\nrsb r1,r1\nblx 0x000110f0\nstr r4,[sp,#0x14]\nmov r5,r0\nsub r7,r0,#0x0\nbeq 0x00011576\nmov r1,#0x0\nmov r2,r1\nmov r3,r1\nblx 0x000110fc\nsub r6,r0,#0x0\nbne 0x00011524\nmov r0,r5\nblx 0x00011108\nmov r0,r6\nblx 0x00011114\nmov r4,r0\nadd r4,#0x1\nstr r0,[sp,#0x8]\nmov r0,r4\nblx 0x00011120\nmov r1,#0x0\nmov r2,r4\nmov r7,r0\nblx 0x000110c0\nmov r3,#0x3\nstr r3,[sp,#0x0]\nldr r0,[sp,#0x8]\nldr r1,[sp,#0xc]\nmov r2,r7\nmov r3,r6\nblx 0x0001112c\ncmp r0,#0x0\nbge 0x00011564\nmov r0,r6\nblx 0x00011138\nmov r0,r5\nblx 0x00011108\nmov r7,#0x0\nb 0x00011576\nldr r1,[sp,#0x10]\nmov r3,#0x10\nmov r0,r6\nstr r3,[r1,#0x0]\nblx 0x00011138\nmov r0,r5\nblx 0x00011108\nldr r1,[sp,#0x14]\nldr r2,[sp,#0x11c]\nmov r0,r7\nldr r3,[r1,#0x0]\ncmp r2,r3\nbeq 0x00011586\nblx 0x000110d8\nadd sp,#0x124\npop { r4, r5, r6, r7, pc }\n'
+p312
+S'f0 b5\n2d 4c\n2d 49\nc9 b0\n7c 44\n24 68\n03 90\n04 92\n23 68\n79 44\n76 22\n07 a8\n47 93\nff f7 dc ed\n68 46\n00 21\n8a 22\n92 30\nff f7 e2 ed\n01 21\n07 a8\n49 42\nff f7 f4 ed\n05 94\n05 1c\n07 1e\n32 d0\n00 21\n0a 1c\n0b 1c\nff f7 f2 ed\n06 1e\n02 d1\n28 1c\nff f7 f2 ed\n30 1c\nff f7 f6 ed\n04 1c\n01 34\n02 90\n20 1c\nff f7 f6 ed\n00 21\n22 1c\n07 1c\nff f7 c0 ed\n03 23\n00 93\n02 98\n03 99\n3a 1c\n33 1c\nff f7 ee ed\n00 28\n07 da\n30 1c\nff f7 f0 ed\n28 1c\nff f7 d4 ed\n00 27\n08 e0\n04 99\n10 23\n30 1c\n0b 60\nff f7 e4 ed\n28 1c\nff f7 ca ed\n05 99\n47 9a\n38 1c\n0b 68\n9a 42\n01 d0\nff f7 aa ed\n49 b0\nf0 bd\n'
+p313
+S'.text:000114d4\n.text:000114d6\n.text:000114d8\n.text:000114da\n.text:000114dc\n.text:000114de\n.text:000114e0\n.text:000114e2\n.text:000114e4\n.text:000114e6\n.text:000114e8\n.text:000114ea\n.text:000114ec\n.text:000114ee\n.text:000114f2\n.text:000114f4\n.text:000114f6\n.text:000114f8\n.text:000114fa\n.text:000114fe\n.text:00011500\n.text:00011502\n.text:00011504\n.text:00011508\n.text:0001150a\n.text:0001150c\n.text:0001150e\n.text:00011510\n.text:00011512\n.text:00011514\n.text:00011516\n.text:0001151a\n.text:0001151c\n.text:0001151e\n.text:00011520\n.text:00011524\n.text:00011526\n.text:0001152a\n.text:0001152c\n.text:0001152e\n.text:00011530\n.text:00011532\n.text:00011536\n.text:00011538\n.text:0001153a\n.text:0001153c\n.text:00011540\n.text:00011542\n.text:00011544\n.text:00011546\n.text:00011548\n.text:0001154a\n.text:0001154c\n.text:00011550\n.text:00011552\n.text:00011554\n.text:00011556\n.text:0001155a\n.text:0001155c\n.text:00011560\n.text:00011562\n.text:00011564\n.text:00011566\n.text:00011568\n.text:0001156a\n.text:0001156c\n.text:00011570\n.text:00011572\n.text:00011576\n.text:00011578\n.text:0001157a\n.text:0001157c\n.text:0001157e\n.text:00011580\n.text:00011582\n.text:00011586\n.text:00011588\n'
+p314
+tp315
+sS'__stack_chk_fail'
+p316
+(S'\n__stdcall __stack_chk_fail()\n'
+p317
+V\u000avoid __stack_chk_fail(void)\u000a\u000a{\u000a  (*(code *)PTR___stack_chk_fail_00014fa8)();\u000a  return;\u000a}\u000a\u000a
+p318
+S'adr r12,0x110e0\nadd r12,r12,#0x3000\nldr pc,[r12,#0xec8]!\n'
+p319
+S'00 c6 8f e2\n03 ca 8c e2\nc8 fe bc e5\n'
+p320
+S'.plt:000110d8\n.plt:000110dc\n.plt:000110e0\n'
+p321
+tp322
+sS'calloc'
+p323
+(S'\n__stdcall calloc(size_t __nmemb, size_t __size)\n'
+p324
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid * calloc(size_t __nmemb,size_t __size)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = (void *)(*(code *)PTR_calloc_00014f94)();\u000a  return pvVar1;\u000a}\u000a\u000a
+p325
+S'adr r12,0x110a4\nadd r12,r12,#0x3000\nldr pc,[r12,#0xef0]!\n'
+p326
+S'00 c6 8f e2\n03 ca 8c e2\nf0 fe bc e5\n'
+p327
+S'.plt:0001109c\n.plt:000110a0\n.plt:000110a4\n'
+p328
+tp329
+sS'_Unwind_GetCFA'
+p330
+(S'\n__stdcall _Unwind_GetCFA()\n'
+p331
+V\u000aundefined4 _Unwind_GetCFA(int iParm1)\u000a\u000a{\u000a  return *(undefined4 *)(iParm1 + 0x44);\u000a}\u000a\u000a
+p332
+S'ldr r0,[r0,#0x44]\nbx lr\n'
+p333
+S'44 00 90 e5\n1e ff 2f e1\n'
+p334
+S'.text:000124a8\n.text:000124ac\n'
+p335
+tp336
+sS'__gnu_Unwind_Restore_VFP'
+p337
+(S'\n__stdcall __gnu_Unwind_Restore_VFP()\n'
+p338
+V\u000avoid __gnu_Unwind_Restore_VFP(undefined4 uParm1)\u000a\u000a{\u000a  undefined4 in_cr0;\u000a  \u000a  coprocessor_load(0xb,in_cr0,uParm1);\u000a  return;\u000a}\u000a\u000a
+p339
+S'ldc p11,cr0,[r0],{0x21}\nbx lr\n'
+p340
+S'21 0b 90 ec\n1e ff 2f e1\n'
+p341
+S'.text:000126f4\n.text:000126f8\n'
+p342
+tp343
+sS'_Unwind_Backtrace'
+p344
+(S'\n__stdcall _Unwind_Backtrace()\n'
+p345
+V\u000avoid _Unwind_Backtrace(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 uStack68;\u000a  undefined4 uStack64;\u000a  undefined4 uStack60;\u000a  undefined4 uStack56;\u000a  undefined4 uStack52;\u000a  undefined4 uStack4;\u000a  \u000a  uStack4 = 0x1286c;\u000a  uStack68 = 0;\u000a  uStack64 = uParm1;\u000a  uStack60 = uParm2;\u000a  uStack56 = uParm3;\u000a  uStack52 = uParm4;\u000a  __gnu_Unwind_Backtrace(uParm1,uParm2,&uStack68,0,uParm3);\u000a  return;\u000a}\u000a\u000a
+p346
+S'stmdb sp!,{ sp lr pc}\nstmdb sp!,{ r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 }\nmov r3,#0x0\nstmdb sp!,{ r2 r3 }\nadd r2,sp,#0x4\nbl 0x00012620\nldr lr,[sp,#0x40]\nadd sp,sp,#0x48\nbx lr\n'
+p347
+S'00 e0 2d e9\nff 1f 2d e9\n00 30 a0 e3\n0c 00 2d e9\n04 20 8d e2\n68 ff ff eb\n40 e0 9d e5\n48 d0 8d e2\n1e ff 2f e1\n'
+p348
+S'.text:00012864\n.text:00012868\n.text:0001286c\n.text:00012870\n.text:00012874\n.text:00012878\n.text:0001287c\n.text:00012880\n.text:00012884\n'
+p349
+tp350
+sS'__gnu_Unwind_Resume_or_Rethrow'
+p351
+(S'\n__stdcall __gnu_Unwind_Resume_or_Rethrow()\n'
+p352
+V\u000avoid __gnu_Unwind_Resume_or_Rethrow(int iParm1,int iParm2)\u000a\u000a{\u000a  if (*(int *)(iParm1 + 0xc) == 0) {\u000a    __gnu_Unwind_RaiseException();\u000a    return;\u000a  }\u000a  *(undefined4 *)(iParm2 + 0x40) = *(undefined4 *)(iParm2 + 0x3c);\u000a  FUN_00011b5c(iParm1,iParm2,0);\u000a  return;\u000a}\u000a\u000a
+p353
+S'ldr r2,[r0,#0xc]\ncmp r2,#0x0\nbne 0x000125ec\nb 0x000124b0\nldr r2,[r1,#0x3c]\nstr r2,[r1,#0x40]\nmov r2,#0x0\nb 0x00011b5c\n'
+p354
+S'0c 20 90 e5\n00 00 52 e3\n00 00 00 1a\nb0 ff ff ea\n3c 20 91 e5\n40 20 81 e5\n00 20 a0 e3\n57 fd ff ea\n'
+p355
+S'.text:000125dc\n.text:000125e0\n.text:000125e4\n.text:000125e8\n.text:000125ec\n.text:000125f0\n.text:000125f4\n.text:000125f8\n'
+p356
+tp357
+sS'FUN_00011708'
+p358
+(S'\n__stdcall FUN_00011708()\n'
+p359
+V\u000a/* WARNING: Could not reconcile some variable overlaps */\u000a\u000aundefined * FUN_00011708(byte *pbParm1,uint uParm2,int *piParm3)\u000a\u000a{\u000a  byte bVar1;\u000a  undefined *puVar2;\u000a  int iVar3;\u000a  int iVar4;\u000a  byte *pbVar5;\u000a  undefined *puVar6;\u000a  undefined2 uStack28;\u000a  undefined uStack26;\u000a  \u000a  puVar2 = (undefined *)calloc(0x400,1);\u000a  pbVar5 = pbParm1;\u000a  puVar6 = puVar2;\u000a  while ((int)(pbVar5 + -(int)pbParm1) < (int)uParm2) {\u000a    uStack28 = 0;\u000a    uStack26 = 0;\u000a    bVar1 = *pbVar5;\u000a    if ((bVar1 == 0x61) || (bVar1 == 0x41)) {\u000a      iVar3 = 10;\u000a    }\u000a    else {\u000a      if ((bVar1 == 0x62) || (bVar1 == 0x42)) {\u000a        iVar3 = 0xb;\u000a      }\u000a      else {\u000a        if ((bVar1 == 99) || (bVar1 == 0x43)) {\u000a          iVar3 = 0xc;\u000a        }\u000a        else {\u000a          if ((bVar1 == 100) || (bVar1 == 0x44)) {\u000a            iVar3 = 0xd;\u000a          }\u000a          else {\u000a            if ((bVar1 == 0x65) || (bVar1 == 0x45)) {\u000a              iVar3 = 0xe;\u000a            }\u000a            else {\u000a              if ((bVar1 == 0x66) || (bVar1 == 0x46)) {\u000a                iVar3 = 0xf;\u000a              }\u000a              else {\u000a                iVar3 = (uint)bVar1 - 0x30;\u000a              }\u000a            }\u000a          }\u000a        }\u000a      }\u000a    }\u000a    bVar1 = pbVar5[1];\u000a    if ((bVar1 == 0x61) || (bVar1 == 0x41)) {\u000a      iVar4 = 10;\u000a    }\u000a    else {\u000a      if ((bVar1 == 0x62) || (bVar1 == 0x42)) {\u000a        iVar4 = 0xb;\u000a      }\u000a      else {\u000a        if ((bVar1 == 99) || (bVar1 == 0x43)) {\u000a          iVar4 = 0xc;\u000a        }\u000a        else {\u000a          if ((bVar1 == 100) || (bVar1 == 0x44)) {\u000a            iVar4 = 0xd;\u000a          }\u000a          else {\u000a            if ((bVar1 == 0x65) || (bVar1 == 0x45)) {\u000a              iVar4 = 0xe;\u000a            }\u000a            else {\u000a              if ((bVar1 == 0x66) || (bVar1 == 0x46)) {\u000a                iVar4 = 0xf;\u000a              }\u000a              else {\u000a                iVar4 = (uint)bVar1 - 0x30;\u000a              }\u000a            }\u000a          }\u000a        }\u000a      }\u000a    }\u000a    sprintf((char *)&uStack28,(char *)(DAT_000117f4 + 0x117d0),iVar3 * 0x10 + iVar4);\u000a    pbVar5 = pbVar5 + 2;\u000a    *puVar6 = (undefined)uStack28;\u000a    puVar6 = puVar6 + 1;\u000a  }\u000a  *piParm3 = (int)((uParm2 >> 0x1f) + uParm2) >> 1;\u000a  return puVar2;\u000a}\u000a\u000a
+p360
+S'push { r4, r5, r6, r7, lr }\n'
+p361
+S'f0 b5\n'
+p362
+S'.text:00011708\n'
+p363
+tp364
+sS'FUN_00011c70'
+p365
+(S'\n__stdcall FUN_00011c70()\n'
+p366
+V\u000aundefined4 FUN_00011c70(int iParm1,uint uParm2,undefined4 uParm3,undefined4 *puParm4)\u000a\u000a{\u000a  int iVar1;\u000a  undefined4 uVar2;\u000a  uint uVar3;\u000a  code *pcVar4;\u000a  bool bVar5;\u000a  undefined8 uVar6;\u000a  \u000a  do {\u000a    iVar1 = FUN_0001191c(iParm1,*(undefined4 *)(uParm2 + 0x40));\u000a    if (iVar1 != 0) goto LAB_00011cbc;\u000a    *(undefined4 *)(iParm1 + 0x14) = *(undefined4 *)(uParm2 + 0x40);\u000a    pcVar4 = *(code **)(iParm1 + 0x10);\u000a    uVar3 = uParm2;\u000a    iVar1 = (*pcVar4)(1,iParm1);\u000a  } while (iVar1 == 8);\u000a  if (iVar1 == 7) {\u000a    uVar6 = restore_core_regs(uParm2 + 4);\u000a    if ((uint)uVar6 == 0) {\u000a      bVar5 = uVar3 == 0xf;\u000a      if (uVar3 < 0x10) {\u000a        bVar5 = pcVar4 == (code *)0x0;\u000a      }\u000a      if (bVar5) {\u000a        uVar2 = 0;\u000a        *puParm4 = *(undefined4 *)((int)((ulonglong)uVar6 >> 0x20) + uVar3 * 4 + 4);\u000a      }\u000a      else {\u000a        uVar2 = 2;\u000a      }\u000a      return uVar2;\u000a    }\u000a    if ((uint)uVar6 < 5) {\u000a      uVar2 = 1;\u000a    }\u000a    else {\u000a      uVar2 = 2;\u000a    }\u000a    return uVar2;\u000a  }\u000aLAB_00011cbc:\u000a                    /* WARNING: Subroutine does not return */\u000a  abort();\u000a}\u000a\u000a
+p367
+S'stmdb sp!,{ r3 r4 r5 lr }\ncpy r5,r0\ncpy r4,r1\ncpy r0,r5\nldr r1,[r4,#0x40]\nbl 0x0001191c\ncmp r0,#0x0\nbne 0x00011cbc\nldr r3,[r4,#0x40]\nstr r3,[r5,#0x14]\nmov r0,#0x1\nldr r3,[r5,#0x10]\ncpy r1,r5\ncpy r2,r4\nblx r3\ncmp r0,#0x8\nbeq 0x00011c7c\ncmp r0,#0x7\nbeq 0x00011cc0\nbl 0x000111bc\nadd r0,r4,#0x4\nbl 0x000126e0\n'
+p368
+S'38 40 2d e9\n00 50 a0 e1\n01 40 a0 e1\n05 00 a0 e1\n40 10 94 e5\n24 ff ff eb\n00 00 50 e3\n0a 00 00 1a\n40 30 94 e5\n14 30 85 e5\n01 00 a0 e3\n10 30 95 e5\n05 10 a0 e1\n04 20 a0 e1\n33 ff 2f e1\n08 00 50 e3\nf1 ff ff 0a\n07 00 50 e3\n00 00 00 0a\n3e fd ff eb\n04 00 84 e2\n85 02 00 eb\n'
+p369
+S'.text:00011c70\n.text:00011c74\n.text:00011c78\n.text:00011c7c\n.text:00011c80\n.text:00011c84\n.text:00011c88\n.text:00011c8c\n.text:00011c90\n.text:00011c94\n.text:00011c98\n.text:00011c9c\n.text:00011ca0\n.text:00011ca4\n.text:00011ca8\n.text:00011cac\n.text:00011cb0\n.text:00011cb4\n.text:00011cb8\n.text:00011cbc\n.text:00011cc0\n.text:00011cc4\n'
+p370
+tp371
+sS'FUN_00011904'
+p372
+(S'\n__stdcall FUN_00011904()\n'
+p373
+V\u000aint FUN_00011904(uint *puParm1)\u000a\u000a{\u000a  uint uVar1;\u000a  \u000a  uVar1 = *puParm1;\u000a  if ((uVar1 & 0x40000000) == 0) {\u000a    uVar1 = uVar1 & 0x7fffffff;\u000a  }\u000a  else {\u000a    uVar1 = uVar1 | 0x80000000;\u000a  }\u000a  return (int)puParm1 + uVar1;\u000a}\u000a\u000a
+p374
+S'ldr r3,[r0,#0x0]\ntst r3,#0x40000000\norrne r3,r3,#0x80000000\nbiceq r3,r3,#0x80000000\nadd r0,r0,r3\nbx lr\n'
+p375
+S'00 30 90 e5\n01 01 13 e3\n02 31 83 13\n02 31 c3 03\n03 00 80 e0\n1e ff 2f e1\n'
+p376
+S'.text:00011904\n.text:00011908\n.text:0001190c\n.text:00011910\n.text:00011914\n.text:00011918\n'
+p377
+tp378
+sS'DES_set_key_unchecked'
+p379
+(S'\n__stdcall DES_set_key_unchecked(const_DES_cblock * key, DES_key_schedule * schedule)\n'
+p380
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid DES_set_key_unchecked(const_DES_cblock *key,DES_key_schedule *schedule)\u000a\u000a{\u000a  (*(code *)PTR_DES_set_key_unchecked_00014f9c)();\u000a  return;\u000a}\u000a\u000a
+p381
+S'adr r12,0x110bc\nadd r12,r12,#0x3000\nldr pc,[r12,#0xee0]!\n'
+p382
+S'00 c6 8f e2\n03 ca 8c e2\ne0 fe bc e5\n'
+p383
+S'.plt:000110b4\n.plt:000110b8\n.plt:000110bc\n'
+p384
+tp385
+sS'FUN_00011624'
+p386
+(S'\n__stdcall FUN_00011624()\n'
+p387
+V\u000avoid * FUN_00011624(void)\u000a\u000a{\u000a  void *pvVar1;\u000a  size_t sVar2;\u000a  time_t __seedval;\u000a  long lVar3;\u000a  int extraout_r1;\u000a  int iVar4;\u000a  char cVar5;\u000a  int *piVar6;\u000a  char *pcVar7;\u000a  char local_80 [100];\u000a  int local_1c;\u000a  \u000a  piVar6 = *(int **)(DAT_0001169c + 0x11630);\u000a  local_1c = *piVar6;\u000a  pvVar1 = calloc(10,1);\u000a  memset(local_80,0,100);\u000a  cVar5 = '!';\u000a  iVar4 = 0;\u000a  do {\u000a    local_80[iVar4] = cVar5;\u000a    cVar5 = cVar5 + 1;\u000a    iVar4 = iVar4 + 1;\u000a  } while (iVar4 != 0x5e);\u000a  sVar2 = strlen(local_80);\u000a  __seedval = time((time_t *)0x0);\u000a  srand48(__seedval);\u000a  iVar4 = 0;\u000a  do {\u000a    lVar3 = lrand48();\u000a    __aeabi_idivmod(lVar3,sVar2);\u000a    pcVar7 = (char *)((int)pvVar1 + iVar4);\u000a    iVar4 = iVar4 + 1;\u000a    *pcVar7 = local_80[extraout_r1];\u000a  } while (iVar4 != 8);\u000a  if (local_1c != *piVar6) {\u000a                    /* WARNING: Subroutine does not return */\u000a    __stack_chk_fail();\u000a  }\u000a  return pvVar1;\u000a}\u000a\u000a
+p388
+S'push { r4, r5, r6, r7, lr }\nldr r4,[0x0001169c]\nsub sp,#0x74\nmov r1,#0x1\nadd r4,pc\nldr r4,[r4,#0x0]\nmov r0,#0xa\nldr r3,[r4,#0x0]\nmov r6,r4\nstr r3,[sp,#0x6c]\nblx 0x0001109c\nmov r2,#0x64\nmov r7,r0\nmov r1,#0x0\nadd r0,sp,#0x8\nblx 0x000110c0\nmov r3,#0x21\nmov r2,#0x0\nadd r5,sp,#0x8\nstrb r3,[r2,r5]\nadd r3,#0x1\nlsl r3,r3,#0x18\nadd r2,#0x1\nlsr r3,r3,#0x18\ncmp r2,#0x5e\nbne 0x0001164c\nmov r0,r5\nblx 0x00011084\nstr r0,[sp,#0x4]\nmov r0,#0x0\nblx 0x00011174\nblx 0x00011180\nmov r4,#0x0\nblx 0x0001118c\nldr r1,[sp,#0x4]\nblx 0x000118d4\nadd r2,sp,#0x8\nldrb r3,[r2,r1]\nadd r5,r7,r4\nadd r4,#0x1\nstrb r3,[r5,#0x0]\ncmp r4,#0x8\nbne 0x00011670\nldr r2,[sp,#0x6c]\nldr r3,[r6,#0x0]\nmov r0,r7\ncmp r2,r3\nbeq 0x00011696\nblx 0x000110d8\nadd sp,#0x74\npop { r4, r5, r6, r7, pc }\n'
+p389
+S'f0 b5\n1d 4c\n9d b0\n01 21\n7c 44\n24 68\n0a 20\n23 68\n26 1c\n1b 93\nff f7 30 ed\n64 22\n07 1c\n00 21\n02 a8\nff f7 3c ed\n21 23\n00 22\n02 ad\n53 55\n01 33\n1b 06\n01 32\n1b 0e\n5e 2a\nf7 d1\n28 1c\nff f7 12 ed\n01 90\n00 20\nff f7 86 ed\nff f7 8a ed\n00 24\nff f7 8c ed\n01 99\n00 f0 2e e9\n02 aa\n53 5c\n3d 19\n01 34\n2b 70\n08 2c\nf3 d1\n1b 9a\n33 68\n38 1c\n9a 42\n01 d0\nff f7 22 ed\n1d b0\nf0 bd\n'
+p390
+S'.text:00011624\n.text:00011626\n.text:00011628\n.text:0001162a\n.text:0001162c\n.text:0001162e\n.text:00011630\n.text:00011632\n.text:00011634\n.text:00011636\n.text:00011638\n.text:0001163c\n.text:0001163e\n.text:00011640\n.text:00011642\n.text:00011644\n.text:00011648\n.text:0001164a\n.text:0001164c\n.text:0001164e\n.text:00011650\n.text:00011652\n.text:00011654\n.text:00011656\n.text:00011658\n.text:0001165a\n.text:0001165c\n.text:0001165e\n.text:00011662\n.text:00011664\n.text:00011666\n.text:0001166a\n.text:0001166e\n.text:00011670\n.text:00011674\n.text:00011676\n.text:0001167a\n.text:0001167c\n.text:0001167e\n.text:00011680\n.text:00011682\n.text:00011684\n.text:00011686\n.text:00011688\n.text:0001168a\n.text:0001168c\n.text:0001168e\n.text:00011690\n.text:00011692\n.text:00011696\n.text:00011698\n'
+p391
+tp392
+sS'__gnu_Unwind_RaiseException'
+p393
+(S'\n__stdcall __gnu_Unwind_RaiseException()\n'
+p394
+V\u000aundefined4 __gnu_Unwind_RaiseException(int iParm1,int iParm2)\u000a\u000a{\u000a  int iVar1;\u000a  undefined4 local_258;\u000a  undefined4 local_254;\u000a  undefined4 uStack592;\u000a  undefined4 uStack588;\u000a  undefined4 uStack584;\u000a  undefined4 local_244;\u000a  undefined4 uStack576;\u000a  undefined4 uStack572;\u000a  undefined4 uStack568;\u000a  undefined4 local_234;\u000a  undefined4 uStack560;\u000a  undefined4 uStack556;\u000a  undefined4 uStack552;\u000a  undefined4 local_224;\u000a  undefined4 uStack544;\u000a  undefined4 uStack540;\u000a  undefined4 local_218;\u000a  \u000a  *(undefined4 *)(iParm2 + 0x40) = *(undefined4 *)(iParm2 + 0x3c);\u000a  local_254 = *(undefined4 *)(iParm2 + 4);\u000a  uStack592 = *(undefined4 *)(iParm2 + 8);\u000a  uStack588 = *(undefined4 *)(iParm2 + 0xc);\u000a  uStack584 = *(undefined4 *)(iParm2 + 0x10);\u000a  local_244 = *(undefined4 *)(iParm2 + 0x14);\u000a  uStack576 = *(undefined4 *)(iParm2 + 0x18);\u000a  uStack572 = *(undefined4 *)(iParm2 + 0x1c);\u000a  uStack568 = *(undefined4 *)(iParm2 + 0x20);\u000a  local_234 = *(undefined4 *)(iParm2 + 0x24);\u000a  uStack560 = *(undefined4 *)(iParm2 + 0x28);\u000a  uStack556 = *(undefined4 *)(iParm2 + 0x2c);\u000a  uStack552 = *(undefined4 *)(iParm2 + 0x30);\u000a  local_224 = *(undefined4 *)(iParm2 + 0x34);\u000a  uStack544 = *(undefined4 *)(iParm2 + 0x38);\u000a  uStack540 = *(undefined4 *)(iParm2 + 0x3c);\u000a  local_218 = *(undefined4 *)(iParm2 + 0x40);\u000a  local_258 = 0xffffffff;\u000a  do {\u000a    iVar1 = FUN_0001191c(iParm1,local_218);\u000a    if (iVar1 != 0) {\u000a      return 9;\u000a    }\u000a    iVar1 = (**(code **)(iParm1 + 0x10))(0,iParm1,&local_258);\u000a  } while (iVar1 == 8);\u000a  FUN_00011af0(&local_258);\u000a  if (iVar1 == 6) {\u000a    FUN_00011c70(iParm1,iParm2);\u000a  }\u000a  return 9;\u000a}\u000a\u000a
+p395
+S'stmdb sp!,{ r4 r5 r6 r7 lr }\nldr r3,[r1,#0x3c]\nadd lr,r1,#0x4\nstr r3,[r1,#0x40]\ncpy r5,r0\ncpy r4,r1\nldmia lr!,{r0 r1 r2 r3 }\nsub sp,sp,#0x244\nadd r12,sp,#0x4\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr!,{r0 r1 r2 r3 }\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr!,{r0 r1 r2 r3 }\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr,{r0 r1 r2 r3 }\nadd r6,sp,#0x240\nstmia r12,{r0 r1 r2 r3 }\nmvn r3,#0x0\nstr r3,[r6,#-0x240]!\ncpy r0,r5\nldr r1,[sp,#0x40]\nbl 0x0001191c\ncmp r0,#0x0\nbne 0x00012548\nldr r3,[r5,#0x10]\ncpy r1,r5\ncpy r2,sp\nblx r3\ncmp r0,#0x8\ncpy r7,r0\nbeq 0x000124fc\ncpy r0,sp\nbl 0x00011af0\ncmp r7,#0x6\nbne 0x00012548\ncpy r0,r5\ncpy r1,r4\nbl 0x00011c70\nmov r0,#0x9\nadd sp,sp,#0x244\nldmia sp!,{ r4 r5 r6 r7 pc }\n'
+p396
+S'f0 40 2d e9\n3c 30 91 e5\n04 e0 81 e2\n40 30 81 e5\n00 50 a0 e1\n01 40 a0 e1\n0f 00 be e8\n91 df 4d e2\n04 c0 8d e2\n0f 00 ac e8\n0f 00 be e8\n0f 00 ac e8\n0f 00 be e8\n0f 00 ac e8\n0f 00 9e e8\n09 6d 8d e2\n0f 00 8c e8\n00 30 e0 e3\n40 32 26 e5\n05 00 a0 e1\n40 10 9d e5\n04 fd ff eb\n00 00 50 e3\n0d 00 00 1a\n10 30 95 e5\n05 10 a0 e1\n0d 20 a0 e1\n33 ff 2f e1\n08 00 50 e3\n00 70 a0 e1\nf3 ff ff 0a\n0d 00 a0 e1\n6e fd ff eb\n06 00 57 e3\n02 00 00 1a\n05 00 a0 e1\n04 10 a0 e1\nc9 fd ff eb\n09 00 a0 e3\n91 df 8d e2\nf0 80 bd e8\n'
+p397
+S'.text:000124b0\n.text:000124b4\n.text:000124b8\n.text:000124bc\n.text:000124c0\n.text:000124c4\n.text:000124c8\n.text:000124cc\n.text:000124d0\n.text:000124d4\n.text:000124d8\n.text:000124dc\n.text:000124e0\n.text:000124e4\n.text:000124e8\n.text:000124ec\n.text:000124f0\n.text:000124f4\n.text:000124f8\n.text:000124fc\n.text:00012500\n.text:00012504\n.text:00012508\n.text:0001250c\n.text:00012510\n.text:00012514\n.text:00012518\n.text:0001251c\n.text:00012520\n.text:00012524\n.text:00012528\n.text:0001252c\n.text:00012530\n.text:00012534\n.text:00012538\n.text:0001253c\n.text:00012540\n.text:00012544\n.text:00012548\n.text:0001254c\n.text:00012550\n'
+p398
+tp399
+sS'Java_cn_ufuns_dmbillsdk_JniHelper_encode'
+p400
+(S'\n__stdcall Java_cn_ufuns_dmbillsdk_JniHelper_encode()\n'
+p401
+V\u000aundefined4\u000aJava_cn_ufuns_dmbillsdk_JniHelper_encode\u000a          (int *piParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  char *__s;\u000a  undefined4 uVar1;\u000a  char *__s_00;\u000a  size_t __n;\u000a  void *__ptr;\u000a  void *__ptr_00;\u000a  char *__s_01;\u000a  char *__s_02;\u000a  size_t __n_00;\u000a  void *__dest;\u000a  undefined4 uVar2;\u000a  int iVar3;\u000a  int iVar4;\u000a  undefined4 local_28;\u000a  undefined4 local_24;\u000a  undefined4 local_20;\u000a  undefined4 local_1c [2];\u000a  \u000a  __s = (char *)(**(code **)(*piParm1 + 0x2a4))(piParm1,uParm3,0);\u000a  uVar1 = (**(code **)(*piParm1 + 0x2a4))(piParm1,uParm4,0);\u000a  __s_00 = (char *)FUN_00011624();\u000a  local_28 = 0;\u000a  __n = strlen(__s);\u000a  __ptr = (void *)FUN_00011380(__s,__n,&local_28,__s_00);\u000a  if (__ptr == (void *)0x0) {\u000a    (**(code **)(*piParm1 + 0x2a8))(piParm1,uParm3,__s);\u000a    (**(code **)(*piParm1 + 0x2a8))(piParm1,uParm4,uVar1);\u000a    free(__s_00);\u000a    iVar4 = *piParm1;\u000a    iVar3 = DAT_00011378 + 0x11278;\u000a  }\u000a  else {\u000a    local_24 = 0;\u000a    __n = strlen(__s_00);\u000a    __ptr_00 = (void *)FUN_000114d4(__s_00,__n,&local_24,uVar1);\u000a    if (__ptr_00 != (void *)0x0) {\u000a      local_20 = 0;\u000a      local_1c[0] = 0;\u000a      __s_01 = (char *)FUN_000116a0(__ptr,local_28,&local_20);\u000a      __s_02 = (char *)FUN_000116a0(__ptr_00,local_24,local_1c);\u000a      __n = strlen(__s_01);\u000a      __n_00 = strlen(__s_02);\u000a      __dest = calloc(__n + __n_00 + 10,1);\u000a      __n = strlen(__s_01);\u000a      memcpy(__dest,__s_01,__n);\u000a      __n = strlen(__s_01);\u000a      __n_00 = strlen(__s_02);\u000a      memcpy((void *)((int)__dest + __n),__s_02,__n_00);\u000a      uVar2 = (**(code **)(*piParm1 + 0x29c))(piParm1,__dest);\u000a      (**(code **)(*piParm1 + 0x2a8))(piParm1,uParm3,__s);\u000a      (**(code **)(*piParm1 + 0x2a8))(piParm1,uParm4,uVar1);\u000a      free(__s_00);\u000a      free(__ptr);\u000a      free(__s_02);\u000a      free(__s_01);\u000a      free(__ptr_00);\u000a      return uVar2;\u000a    }\u000a    (**(code **)(*piParm1 + 0x2a8))(piParm1,uParm3,__s);\u000a    (**(code **)(*piParm1 + 0x2a8))(piParm1,uParm4,uVar1);\u000a    free(__s_00);\u000a    free(__ptr);\u000a    iVar4 = *piParm1;\u000a    iVar3 = DAT_0001137c + 0x112be;\u000a  }\u000a  uVar1 = (**(code **)(iVar4 + 0x29c))(piParm1,iVar3);\u000a  return uVar1;\u000a}\u000a\u000a
+p402
+S'push { r4, r5, r6, r7, lr }\nsub sp,#0x3c\nstr r3,[sp,#0x1c]\nldr r3,[r0,#0x0]\nmov r4,#0xa9\nlsl r4,r4,#0x2\nldr r3,[r3,r4]\nmov r1,r2\nstr r2,[sp,#0x18]\nmov r2,#0x0\nmov r5,r0\nblx r3\nldr r3,[r5,#0x0]\nldr r1,[sp,#0x1c]\nmov r2,#0x0\nldr r3,[r3,r4]\nstr r0,[sp,#0x8]\nmov r0,r5\nblx r3\nstr r0,[sp,#0xc]\nbl 0x00011624\nmov r4,#0x0\nstr r0,[sp,#0x4]\nldr r0,[sp,#0x8]\nstr r4,[sp,#0x28]\nblx 0x00011084\nadd r2,sp,#0x28\nmov r1,r0\nldr r3,[sp,#0x4]\nldr r0,[sp,#0x8]\nbl 0x00011380\nmov r6,#0xaa\nstr r0,[sp,#0x10]\nlsl r6,r6,#0x2\ncmp r0,r4\nbne 0x00011278\nldr r3,[r5,#0x0]\nmov r0,r5\nldr r1,[sp,#0x18]\nldr r3,[r3,r6]\nldr r2,[sp,#0x8]\nblx r3\nldr r3,[r5,#0x0]\nldr r1,[sp,#0x1c]\nmov r0,r5\nldr r3,[r3,r6]\nldr r2,[sp,#0xc]\nblx r3\nldr r0,[sp,#0x4]\nblx 0x00011090\nldr r1,[0x00011378]\nldr r3,[r5,#0x0]\nadd r1,pc\nb 0x000112bc\nldr r0,[sp,#0x4]\nstr r4,[sp,#0x2c]\nblx 0x00011084\nadd r2,sp,#0x2c\nmov r1,r0\nldr r3,[sp,#0xc]\nldr r0,[sp,#0x4]\nbl 0x000114d4\nstr r0,[sp,#0x20]\ncmp r0,#0x0\nbne 0x000112ca\nldr r3,[r5,#0x0]\nmov r0,r5\nldr r1,[sp,#0x18]\nldr r3,[r3,r6]\nldr r2,[sp,#0x8]\nblx r3\nldr r3,[r5,#0x0]\nldr r1,[sp,#0x1c]\nldr r2,[sp,#0xc]\nldr r3,[r3,r6]\nmov r0,r5\nblx r3\nldr r0,[sp,#0x4]\nblx 0x00011090\nldr r0,[sp,#0x10]\nblx 0x00011090\nldr r1,[0x0001137c]\nldr r3,[r5,#0x0]\nadd r1,pc\nmov r2,#0xa7\nlsl r2,r2,#0x2\nldr r3,[r3,r2]\nmov r0,r5\nblx r3\nmov r4,r0\nb 0x00011370\nldr r1,[sp,#0x28]\nadd r2,sp,#0x30\nldr r0,[sp,#0x10]\nstr r4,[sp,#0x30]\nstr r4,[sp,#0x34]\nbl 0x000116a0\nadd r2,sp,#0x34\nmov r7,r0\nldr r1,[sp,#0x2c]\nldr r0,[sp,#0x20]\nbl 0x000116a0\nstr r0,[sp,#0x14]\nmov r0,r7\nblx 0x00011084\nmov r4,r0\nldr r0,[sp,#0x14]\nblx 0x00011084\nadd r0,r4,r0\nmov r1,#0x1\nadd r0,#0xa\nblx 0x0001109c\nstr r0,[sp,#0x24]\nmov r0,r7\nblx 0x00011084\nmov r1,r7\nmov r2,r0\nldr r0,[sp,#0x24]\nblx 0x000110a8\nmov r0,r7\nblx 0x00011084\nmov r4,r0\nldr r0,[sp,#0x14]\nblx 0x00011084\nldr r3,[sp,#0x24]\nmov r2,r0\nldr r1,[sp,#0x14]\nadd r0,r3,r4\nblx 0x000110a8\nldr r3,[r5,#0x0]\nmov r2,#0xa7\nlsl r2,r2,#0x2\nldr r3,[r3,r2]\nldr r1,[sp,#0x24]\nmov r0,r5\nblx r3\nldr r3,[r5,#0x0]\nldr r1,[sp,#0x18]\nldr r2,[sp,#0x8]\nldr r3,[r3,r6]\nmov r4,r0\nmov r0,r5\nblx r3\nldr r3,[r5,#0x0]\nldr r1,[sp,#0x1c]\nldr r2,[sp,#0xc]\nldr r3,[r3,r6]\nmov r0,r5\nblx r3\nldr r0,[sp,#0x4]\nblx 0x00011090\nldr r0,[sp,#0x10]\nblx 0x00011090\nldr r0,[sp,#0x14]\nblx 0x00011090\nmov r0,r7\nblx 0x00011090\nldr r0,[sp,#0x20]\nblx 0x00011090\nadd sp,#0x3c\nmov r0,r4\npop { r4, r5, r6, r7, pc }\n'
+p403
+S'f0 b5\n8f b0\n07 93\n03 68\na9 24\na4 00\n1b 59\n11 1c\n06 92\n00 22\n05 1c\n98 47\n2b 68\n07 99\n00 22\n1b 59\n02 90\n28 1c\n98 47\n03 90\n00 f0 fa f9\n00 24\n01 90\n02 98\n0a 94\nff f7 24 ef\n0a aa\n01 1c\n01 9b\n02 98\n00 f0 9c f8\naa 26\n04 90\nb6 00\na0 42\n12 d1\n2b 68\n28 1c\n06 99\n9b 59\n02 9a\n98 47\n2b 68\n07 99\n28 1c\n9b 59\n03 9a\n98 47\n01 98\nff f7 10 ef\n41 49\n2b 68\n79 44\n21 e0\n01 98\n0b 94\nff f7 02 ef\n0b aa\n01 1c\n03 9b\n01 98\n00 f0 24 f9\n08 90\n00 28\n1b d1\n2b 68\n28 1c\n06 99\n9b 59\n02 9a\n98 47\n2b 68\n07 99\n03 9a\n9b 59\n28 1c\n98 47\n01 98\nff f7 f0 ee\n04 98\nff f7 ee ee\n31 49\n2b 68\n79 44\na7 22\n92 00\n9b 58\n28 1c\n98 47\n04 1c\n52 e0\n0a 99\n0c aa\n04 98\n0c 94\n0d 94\n00 f0 e4 f9\n0d aa\n07 1c\n0b 99\n08 98\n00 f0 de f9\n05 90\n38 1c\nff f7 cc ee\n04 1c\n05 98\nff f7 c8 ee\n20 18\n01 21\n0a 30\nff f7 d0 ee\n09 90\n38 1c\nff f7 c0 ee\n39 1c\n02 1c\n09 98\nff f7 cc ee\n38 1c\nff f7 b8 ee\n04 1c\n05 98\nff f7 b4 ee\n09 9b\n02 1c\n05 99\n18 19\nff f7 c0 ee\n2b 68\na7 22\n92 00\n9b 58\n09 99\n28 1c\n98 47\n2b 68\n06 99\n02 9a\n9b 59\n04 1c\n28 1c\n98 47\n2b 68\n07 99\n03 9a\n9b 59\n28 1c\n98 47\n01 98\nff f7 9c ee\n04 98\nff f7 9a ee\n05 98\nff f7 96 ee\n38 1c\nff f7 94 ee\n08 98\nff f7 90 ee\n0f b0\n20 1c\nf0 bd\n'
+p404
+S'.text:00011204\n.text:00011206\n.text:00011208\n.text:0001120a\n.text:0001120c\n.text:0001120e\n.text:00011210\n.text:00011212\n.text:00011214\n.text:00011216\n.text:00011218\n.text:0001121a\n.text:0001121c\n.text:0001121e\n.text:00011220\n.text:00011222\n.text:00011224\n.text:00011226\n.text:00011228\n.text:0001122a\n.text:0001122c\n.text:00011230\n.text:00011232\n.text:00011234\n.text:00011236\n.text:00011238\n.text:0001123c\n.text:0001123e\n.text:00011240\n.text:00011242\n.text:00011244\n.text:00011248\n.text:0001124a\n.text:0001124c\n.text:0001124e\n.text:00011250\n.text:00011252\n.text:00011254\n.text:00011256\n.text:00011258\n.text:0001125a\n.text:0001125c\n.text:0001125e\n.text:00011260\n.text:00011262\n.text:00011264\n.text:00011266\n.text:00011268\n.text:0001126a\n.text:0001126c\n.text:00011270\n.text:00011272\n.text:00011274\n.text:00011276\n.text:00011278\n.text:0001127a\n.text:0001127c\n.text:00011280\n.text:00011282\n.text:00011284\n.text:00011286\n.text:00011288\n.text:0001128c\n.text:0001128e\n.text:00011290\n.text:00011292\n.text:00011294\n.text:00011296\n.text:00011298\n.text:0001129a\n.text:0001129c\n.text:0001129e\n.text:000112a0\n.text:000112a2\n.text:000112a4\n.text:000112a6\n.text:000112a8\n.text:000112aa\n.text:000112ac\n.text:000112b0\n.text:000112b2\n.text:000112b6\n.text:000112b8\n.text:000112ba\n.text:000112bc\n.text:000112be\n.text:000112c0\n.text:000112c2\n.text:000112c4\n.text:000112c6\n.text:000112c8\n.text:000112ca\n.text:000112cc\n.text:000112ce\n.text:000112d0\n.text:000112d2\n.text:000112d4\n.text:000112d8\n.text:000112da\n.text:000112dc\n.text:000112de\n.text:000112e0\n.text:000112e4\n.text:000112e6\n.text:000112e8\n.text:000112ec\n.text:000112ee\n.text:000112f0\n.text:000112f4\n.text:000112f6\n.text:000112f8\n.text:000112fa\n.text:000112fe\n.text:00011300\n.text:00011302\n.text:00011306\n.text:00011308\n.text:0001130a\n.text:0001130c\n.text:00011310\n.text:00011312\n.text:00011316\n.text:00011318\n.text:0001131a\n.text:0001131e\n.text:00011320\n.text:00011322\n.text:00011324\n.text:00011326\n.text:0001132a\n.text:0001132c\n.text:0001132e\n.text:00011330\n.text:00011332\n.text:00011334\n.text:00011336\n.text:00011338\n.text:0001133a\n.text:0001133c\n.text:0001133e\n.text:00011340\n.text:00011342\n.text:00011344\n.text:00011346\n.text:00011348\n.text:0001134a\n.text:0001134c\n.text:0001134e\n.text:00011350\n.text:00011352\n.text:00011354\n.text:00011358\n.text:0001135a\n.text:0001135e\n.text:00011360\n.text:00011364\n.text:00011366\n.text:0001136a\n.text:0001136c\n.text:00011370\n.text:00011372\n.text:00011374\n'
+p405
+tp406
+sS'_Unwind_ForcedUnwind'
+p407
+(S'\n__stdcall _Unwind_ForcedUnwind()\n'
+p408
+V\u000avoid _Unwind_ForcedUnwind(void)\u000a\u000a{\u000a  __gnu_Unwind_ForcedUnwind();\u000a  return;\u000a}\u000a\u000a
+p409
+S'stmdb sp!,{ sp lr pc}\nstmdb sp!,{ r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 }\nmov r3,#0x0\nstmdb sp!,{ r2 r3 }\nadd r3,sp,#0x4\nbl 0x00012554\nldr lr,[sp,#0x40]\nadd sp,sp,#0x48\nbx lr\n'
+p410
+S'00 e0 2d e9\nff 1f 2d e9\n00 30 a0 e3\n0c 00 2d e9\n04 30 8d e2\n3e ff ff eb\n40 e0 9d e5\n48 d0 8d e2\n1e ff 2f e1\n'
+p411
+S'.text:00012840\n.text:00012844\n.text:00012848\n.text:0001284c\n.text:00012850\n.text:00012854\n.text:00012858\n.text:0001285c\n.text:00012860\n'
+p412
+tp413
+sS'FUN_00011468'
+p414
+(S'\n__stdcall FUN_00011468()\n'
+p415
+V\u000auchar * FUN_00011468(uchar *puParm1,int iParm2,int *piParm3,void *pvParm4)\u000a\u000a{\u000a  byte bVar1;\u000a  uchar *output;\u000a  int *piVar2;\u000a  DES_key_schedule DStack172;\u000a  uchar auStack44 [8];\u000a  undefined4 uStack36;\u000a  undefined4 uStack32;\u000a  int iStack28;\u000a  \u000a  piVar2 = *(int **)(DAT_000114d0 + 0x11474);\u000a  iStack28 = *piVar2;\u000a  memcpy(auStack44,pvParm4,8);\u000a  DES_set_key_unchecked((const_DES_cblock *)auStack44,&DStack172);\u000a  output = (uchar *)calloc(iParm2 << 1,1);\u000a  uStack36 = 0;\u000a  uStack32 = 0;\u000a  DES_cbc_encrypt(puParm1,output,iParm2,&DStack172,(DES_cblock *)&uStack36,0);\u000a  bVar1 = output[iParm2 + -1];\u000a  output[iParm2 - (uint)bVar1] = 0;\u000a  *piParm3 = iParm2 - (uint)bVar1;\u000a  if (iStack28 != *piVar2) {\u000a                    /* WARNING: Subroutine does not return */\u000a    __stack_chk_fail();\u000a  }\u000a  return output;\u000a}\u000a\u000a
+p416
+S'push { r4, r5, r6, r7, lr }\n'
+p417
+S'f0 b5\n'
+p418
+S'.text:00011468\n'
+p419
+tp420
+sS'free'
+p421
+(S'\n__stdcall free(void * __ptr)\n'
+p422
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid free(void *__ptr)\u000a\u000a{\u000a  (*(code *)PTR_free_00014f90)();\u000a  return;\u000a}\u000a\u000a
+p423
+S'adr r12,0x11098\nadd r12,r12,#0x3000\nldr pc,[r12,#0xef8]!\n'
+p424
+S'00 c6 8f e2\n03 ca 8c e2\nf8 fe bc e5\n'
+p425
+S'.plt:00011090\n.plt:00011094\n.plt:00011098\n'
+p426
+tp427
+sS'__cxa_type_match'
+p428
+(S'\n__stdcall __cxa_type_match()\n'
+p429
+V\u000avoid __cxa_type_match(void)\u000a\u000a{\u000a  (*(code *)PTR___cxa_type_match_00014ffc)();\u000a  return;\u000a}\u000a\u000a
+p430
+S'adr r12,0x111dc\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe20]!\n'
+p431
+S'00 c6 8f e2\n03 ca 8c e2\n20 fe bc e5\n'
+p432
+S'.plt:000111d4\n.plt:000111d8\n.plt:000111dc\n'
+p433
+tp434
+sS'_Unwind_Complete'
+p435
+(S'\n__stdcall _Unwind_Complete()\n'
+p436
+V\u000avoid _Unwind_Complete(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p437
+S'bx lr\n'
+p438
+S'1e ff 2f e1\n'
+p439
+S'.text:000125fc\n'
+p440
+tp441
+sS'RSA_size'
+p442
+(S'\n__stdcall RSA_size(RSA * rsa)\n'
+p443
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint RSA_size(RSA *rsa)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_RSA_size_00014fbc)();\u000a  return iVar1;\u000a}\u000a\u000a
+p444
+S'adr r12,0x1111c\nadd r12,r12,#0x3000\nldr pc,[r12,#0xea0]!\n'
+p445
+S'00 c6 8f e2\n03 ca 8c e2\na0 fe bc e5\n'
+p446
+S'.plt:00011114\n.plt:00011118\n.plt:0001111c\n'
+p447
+tp448
+sS'malloc'
+p449
+(S'\n__stdcall malloc(size_t __size)\n'
+p450
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid * malloc(size_t __size)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = (void *)(*(code *)PTR_malloc_00014fc0)();\u000a  return pvVar1;\u000a}\u000a\u000a
+p451
+S'adr r12,0x11128\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe98]!\n'
+p452
+S'00 c6 8f e2\n03 ca 8c e2\n98 fe bc e5\n'
+p453
+S'.plt:00011120\n.plt:00011124\n.plt:00011128\n'
+p454
+tp455
+sS'fopen'
+p456
+(S'\n__stdcall fopen(char * __filename, char * __modes)\n'
+p457
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aFILE * fopen(char *__filename,char *__modes)\u000a\u000a{\u000a  FILE *pFVar1;\u000a  \u000a  pFVar1 = (FILE *)(*(code *)PTR_fopen_00014fcc)();\u000a  return pFVar1;\u000a}\u000a\u000a
+p458
+S'adr r12,0x1114c\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe80]!\n'
+p459
+S'00 c6 8f e2\n03 ca 8c e2\n80 fe bc e5\n'
+p460
+S'.plt:00011144\n.plt:00011148\n.plt:0001114c\n'
+p461
+tp462
+sS'__gnu_Unwind_Find_exidx'
+p463
+(S'\n__stdcall __gnu_Unwind_Find_exidx()\n'
+p464
+V\u000avoid __gnu_Unwind_Find_exidx(void)\u000a\u000a{\u000a  (*(code *)PTR___gnu_Unwind_Find_exidx_00014ff0)();\u000a  return;\u000a}\u000a\u000a
+p465
+S'adr r12,0x111b8\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe38]!\n'
+p466
+S'00 c6 8f e2\n03 ca 8c e2\n38 fe bc e5\n'
+p467
+S'.plt:000111b0\n.plt:000111b4\n.plt:000111b8\n'
+p468
+tp469
+sS'srand48'
+p470
+(S'\n__stdcall srand48(long __seedval)\n'
+p471
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid srand48(long __seedval)\u000a\u000a{\u000a  (*(code *)PTR_srand48_00014fe0)();\u000a  return;\u000a}\u000a\u000a
+p472
+S'adr r12,0x11188\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe58]!\n'
+p473
+S'00 c6 8f e2\n03 ca 8c e2\n58 fe bc e5\n'
+p474
+S'.plt:00011180\n.plt:00011184\n.plt:00011188\n'
+p475
+tp476
+sS'__gnu_unwind_execute'
+p477
+(S'\n__stdcall __gnu_unwind_execute()\n'
+p478
+V\u000aundefined4 __gnu_unwind_execute(int *piParm1,undefined4 uParm2,undefined4 uParm3,int iParm4)\u000a\u000a{\u000a  uint uVar1;\u000a  uint uVar2;\u000a  uint uVar3;\u000a  bool bVar4;\u000a  int iVar5;\u000a  int *local_30;\u000a  undefined4 uVar6;\u000a  int local_24;\u000a  \u000a  bVar4 = false;\u000a  local_30 = piParm1;\u000a  uVar6 = uParm2;\u000a  local_24 = iParm4;\u000aLAB_000128f8:\u000a  do {\u000a    while( true ) {\u000a      uVar1 = FUN_00012888(uParm2);\u000a      if (uVar1 == 0xb0) {\u000a        if (bVar4) {\u000a          return 0;\u000a        }\u000a        _Unwind_VRS_Get(piParm1,0,0xe,0,&local_24,uVar6,uParm3);\u000a        _Unwind_VRS_Set(piParm1,0,0xf,0,&local_24);\u000a        return 0;\u000a      }\u000a      if ((uVar1 & 0x80) != 0) break;\u000a      _Unwind_VRS_Get(piParm1,0,0xd,0,&local_24,uVar6,uParm3);\u000a      iVar5 = (uVar1 & 0x3f) * 4 + 4;\u000a      if ((uVar1 & 0x40) != 0) {\u000a        iVar5 = -iVar5;\u000a      }\u000a      local_24 = local_24 + iVar5;\u000a      uVar2 = 0;\u000aLAB_00012a34:\u000a      local_30 = &local_24;\u000a      _Unwind_VRS_Set(piParm1,uVar2,0xd,uVar2);\u000a    }\u000a    uVar2 = uVar1 & 0xf0;\u000a    if (uVar2 == 0x80) {\u000a      uVar2 = FUN_00012888(uParm2);\u000a      uVar2 = uVar2 | uVar1 << 8;\u000a      if (uVar2 == 0x8000) {\u000a        return 9;\u000a      }\u000a      iVar5 = _Unwind_VRS_Pop(piParm1,0,(uVar2 << 0x14) >> 0x10,0,local_30);\u000a      if (iVar5 != 0) {\u000a        return 9;\u000a      }\u000a      if ((uVar2 & 0x800) != 0) {\u000a        bVar4 = true;\u000a      }\u000a      goto LAB_000128f8;\u000a    }\u000a    if (uVar2 == 0x90) {\u000a      uVar1 = uVar1 & 0xf;\u000a      if (uVar1 == 0xd || uVar1 == 0xf) {\u000a        return 9;\u000a      }\u000a      uVar2 = 0;\u000a      _Unwind_VRS_Get(piParm1,0,uVar1,0,&local_24,uVar6,uParm3);\u000a      goto LAB_00012a34;\u000a    }\u000a    if (uVar2 == 0xa0) {\u000a      uVar1 = 0;\u000a    }\u000a    else {\u000a      if (uVar2 == 0xb0) {\u000a        if (uVar1 == 0xb1) {\u000a          uVar1 = FUN_00012888(uParm2);\u000a          if (uVar1 == 0) {\u000a            return 9;\u000a          }\u000a          uVar1 = uVar1 & 0xf0;\u000a          if (uVar1 != 0) {\u000a            return 9;\u000a          }\u000a        }\u000a        else {\u000a          if (uVar1 == 0xb2) {\u000a            _Unwind_VRS_Get(piParm1,0,0xd,0,&local_24,uVar6,uParm3);\u000a            uVar1 = FUN_00012888(uParm2);\u000a            uVar3 = 2;\u000a            while( true ) {\u000a              uVar2 = uVar1 & 0x80;\u000a              if (uVar2 == 0) break;\u000a              local_24 = local_24 + ((uVar1 & 0x7f) << (uVar3 & 0xff));\u000a              uVar3 = uVar3 + 7;\u000a              uVar1 = FUN_00012888(uParm2);\u000a            }\u000a            local_24 = local_24 + 0x204 + ((uVar1 & 0x7f) << (uVar3 & 0xff));\u000a            goto LAB_00012a34;\u000a          }\u000a          if (uVar1 == 0xb3) {\u000a            FUN_00012888(uParm2);\u000a            uVar1 = 1;\u000a          }\u000a          else {\u000a            if ((uVar1 & 0xfc) == 0xb4) {\u000a              uVar1 = 2;\u000a            }\u000a            else {\u000a              uVar1 = 1;\u000a            }\u000a          }\u000a        }\u000a      }\u000a      else {\u000a        if (uVar2 == 0xc0) {\u000a          if (uVar1 == 0xc6) {\u000a            FUN_00012888(uParm2);\u000a            uVar1 = 3;\u000a          }\u000a          else {\u000a            if (uVar1 == 199) {\u000a              uVar1 = FUN_00012888(uParm2);\u000a              if (uVar1 == 0) {\u000a                return 9;\u000a              }\u000a              if ((uVar1 & 0xf0) != 0) {\u000a                return 9;\u000a              }\u000a              uVar1 = 4;\u000a            }\u000a            else {\u000a              if ((uVar1 & 0xf8) != 0xc0) {\u000a                if (uVar1 == 200) {\u000a                  FUN_00012888(uParm2);\u000a                }\u000a                else {\u000a                  if (uVar1 != 0xc9) {\u000a                    return 9;\u000a                  }\u000a                  FUN_00012888(uParm2);\u000a                }\u000a                goto LAB_00012c58;\u000a              }\u000a              uVar1 = 3;\u000a            }\u000a          }\u000a        }\u000a        else {\u000a          if ((uVar1 & 0xf8) != 0xd0) {\u000a            return 9;\u000a          }\u000aLAB_00012c58:\u000a          uVar1 = 1;\u000a        }\u000a      }\u000a    }\u000a    iVar5 = _Unwind_VRS_Pop(piParm1,uVar1);\u000a    if (iVar5 != 0) {\u000a      return 9;\u000a    }\u000a  } while( true );\u000a}\u000a\u000a
+p479
+S'stmdb sp!,{ r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 lr }\ncpy r5,r0\ncpy r6,r1\nmov r7,#0x0\nadd r10,sp,#0xc\nmov r9,#0xff0\ncpy r0,r6\nbl 0x00012888\ncmp r0,#0xb0\ncpy r4,r0\nbne 0x00012954\ncmp r7,#0x0\nmovne r0,#0x0\nbne 0x00012c6c\nadd r4,sp,#0xc\ncpy r1,r7\nmov r2,#0xe\ncpy r3,r7\ncpy r0,r5\nstr r4,[sp,#0x0]\nbl 0x00011cc8\ncpy r0,r5\ncpy r1,r7\nmov r2,#0xf\ncpy r3,r7\nstr r4,[sp,#0x0]\nbl 0x00011d34\ncpy r0,r7\nb 0x00012c6c\nands r1,r0,#0x80\nbne 0x000129a0\ncpy r3,r1\nmov r8,r0, lsl #0x2\nmov r2,#0xd\ncpy r0,r5\nand r8,r8,#0xff\nstr r10,[sp,#0x0]\nbl 0x00011cc8\nldr r3,[sp,#0xc]\nadd r8,r8,#0x4\ntst r4,#0x40\nrsbne r8,r8,r3\naddeq r8,r3,r8\nstr r8,[sp,#0xc]\nstr r10,[sp,#0x0]\ncpy r0,r5\nmov r1,#0x0\nb 0x00012a34\nand r3,r0,#0xf0\ncmp r3,#0x80\nbne 0x000129f4\nmov r4,r0, lsl #0x8\ncpy r0,r6\nbl 0x00012888\norr r4,r0,r4\ncmp r4,#0x8000\nbeq 0x00012c68\nmov r1,#0x0\nmov r2,r4, lsl #0x14\ncpy r0,r5\nmov r2,r2, lsr #0x10\ncpy r3,r1\nbl 0x00012150\nmov r8,r4, lsl #0x4\ncmp r0,#0x0\nbne 0x00012c68\ntst r8,#0x8000\nmovne r7,#0x1\nb 0x000128f8\ncmp r3,#0x90\nbne 0x00012a44\nand r2,r0,#0xf\ncmp r2,#0xd\ncmpne r2,#0xf\nmovne r8,#0x0\nmoveq r8,#0x1\nbeq 0x00012c68\ncpy r1,r8\ncpy r0,r5\ncpy r3,r8\nstr r10,[sp,#0x0]\nbl 0x00011cc8\ncpy r0,r5\ncpy r1,r8\nstr r10,[sp,#0x0]\nmov r2,#0xd\ncpy r3,r1\nbl 0x00011d34\nb 0x000128f8\ncmp r3,#0xa0\nbne 0x00012a70\nmvn r2,r0\nand r2,r2,#0x7\nmov r2,r9, asr r2\ntst r0,#0x8\nand r2,r2,#0xff0\norrne r2,r2,#0x4000\ncpy r0,r5\nmov r1,#0x0\nb 0x00012be8\ncmp r3,#0xb0\nbne 0x00012b68\ncmp r0,#0xb1\nbne 0x00012aa0\ncpy r0,r6\nbl 0x00012888\nsubs r2,r0,#0x0\nbeq 0x00012c68\nands r1,r2,#0xf0\nbne 0x00012c68\ncpy r0,r5\nb 0x00012be8\ncmp r0,#0xb2\nbne 0x00012b0c\nmov r1,#0x0\nmov r2,#0xd\ncpy r3,r1\ncpy r0,r5\nstr r10,[sp,#0x0]\nbl 0x00011cc8\ncpy r0,r6\nbl 0x00012888\nmov r4,#0x2\nb 0x00012ae4\nadd r0,r3,r0, lsl r4\nstr r0,[sp,#0xc]\ncpy r0,r6\nadd r4,r4,#0x7\nbl 0x00012888\nands r1,r0,#0x80\nldr r3,[sp,#0xc]\nand r0,r0,#0x7f\nbne 0x00012ad0\nadd r3,r3,#0x204\nadd r0,r3,r0, lsl r4\nstr r10,[sp,#0x0]\nstr r0,[sp,#0xc]\ncpy r0,r5\nb 0x00012a34\ncmp r0,#0xb3\nbne 0x00012b34\ncpy r0,r6\nbl 0x00012888\nmov r1,#0x1\nand r3,r0,#0xf\nand r2,r0,#0xf0\nadd r3,r3,#0x1\ncpy r0,r5\nb 0x00012b94\nand r3,r0,#0xfc\ncmp r3,#0xb4\nandeq r4,r0,#0x3\nandne r4,r4,#0x7\naddeq r2,r4,#0x1\naddne r2,r4,#0x1\ncpyeq r0,r5\nmoveq r1,#0x2\norreq r2,r2,#0x40000\ncpyne r0,r5\nmovne r1,#0x1\norrne r2,r2,#0x80000\nb 0x00012be8\ncmp r3,#0xc0\nbne 0x00012c38\ncmp r0,#0xc6\nbne 0x00012b9c\ncpy r0,r6\nbl 0x00012888\nmov r1,#0x3\nand r3,r0,#0xf\nand r2,r0,#0xf0\nadd r3,r3,#0x1\ncpy r0,r5\norr r2,r3,r2, lsl #0xc\nb 0x00012be8\ncmp r0,#0xc7\nbne 0x00012bc8\ncpy r0,r6\nbl 0x00012888\nsubs r2,r0,#0x0\nbeq 0x00012c68\nands r3,r2,#0xf0\nbne 0x00012c68\ncpy r0,r5\nmov r1,#0x4\nb 0x00012c5c\nand r3,r0,#0xf8\ncmp r3,#0xc0\nbne 0x00012bf0\nand r4,r0,#0xf\nadd r2,r4,#0x1\ncpy r0,r5\nmov r1,#0x3\norr r2,r2,#0xa0000\ncpy r3,r1\nb 0x00012c5c\ncmp r0,#0xc8\nbne 0x00012c0c\ncpy r0,r6\nbl 0x00012888\nand r2,r0,#0xf0\nadd r2,r2,#0x10\nb 0x00012c20\ncmp r0,#0xc9\nbne 0x00012c68\ncpy r0,r6\nbl 0x00012888\nand r2,r0,#0xf0\nand r3,r0,#0xf\nadd r3,r3,#0x1\ncpy r0,r5\nmov r1,#0x1\norr r2,r3,r2, lsl #0xc\nb 0x00012c58\nand r3,r0,#0xf8\ncmp r3,#0xd0\nbne 0x00012c68\nand r4,r0,#0x7\nadd r2,r4,#0x1\ncpy r0,r5\nmov r1,#0x1\norr r2,r2,#0x80000\nmov r3,#0x5\nbl 0x00012150\ncmp r0,#0x0\nbeq 0x000128f8\nmov r0,#0x9\nadd sp,sp,#0x10\nldmia sp!,{ r4 r5 r6 r7 r8 r9 r10 pc }\n'
+p480
+S'ff 47 2d e9\n00 50 a0 e1\n01 60 a0 e1\n00 70 a0 e3\n0c a0 8d e2\nff 9e a0 e3\n06 00 a0 e1\ne1 ff ff eb\nb0 00 50 e3\n00 40 a0 e1\n11 00 00 1a\n00 00 57 e3\n00 00 a0 13\nd4 00 00 1a\n0c 40 8d e2\n07 10 a0 e1\n0e 20 a0 e3\n07 30 a0 e1\n05 00 a0 e1\n00 40 8d e5\ne4 fc ff eb\n05 00 a0 e1\n07 10 a0 e1\n0f 20 a0 e3\n07 30 a0 e1\n00 40 8d e5\nf9 fc ff eb\n07 00 a0 e1\nc5 00 00 ea\n80 10 10 e2\n10 00 00 1a\n01 30 a0 e1\n00 81 a0 e1\n0d 20 a0 e3\n05 00 a0 e1\nff 80 08 e2\n00 a0 8d e5\nd3 fc ff eb\n0c 30 9d e5\n04 80 88 e2\n40 00 14 e3\n03 80 68 10\n08 80 83 00\n0c 80 8d e5\n00 a0 8d e5\n05 00 a0 e1\n00 10 a0 e3\n24 00 00 ea\nf0 30 00 e2\n80 00 53 e3\n11 00 00 1a\n00 44 a0 e1\n06 00 a0 e1\nb3 ff ff eb\n04 40 80 e1\n02 09 54 e3\na8 00 00 0a\n00 10 a0 e3\n04 2a a0 e1\n05 00 a0 e1\n22 28 a0 e1\n01 30 a0 e1\ndc fd ff eb\n04 82 a0 e1\n00 00 50 e3\n9f 00 00 1a\n02 09 18 e3\n01 70 a0 13\nc0 ff ff ea\n90 00 53 e3\n11 00 00 1a\n0f 20 00 e2\n0d 00 52 e3\n0f 00 52 13\n00 80 a0 13\n01 80 a0 03\n94 00 00 0a\n08 10 a0 e1\n05 00 a0 e1\n08 30 a0 e1\n00 a0 8d e5\na7 fc ff eb\n05 00 a0 e1\n08 10 a0 e1\n00 a0 8d e5\n0d 20 a0 e3\n01 30 a0 e1\nbc fc ff eb\nac ff ff ea\na0 00 53 e3\n08 00 00 1a\n00 20 e0 e1\n07 20 02 e2\n59 22 a0 e1\n08 00 10 e3\nff 2e 02 e2\n01 29 82 13\n05 00 a0 e1\n00 10 a0 e3\n5d 00 00 ea\nb0 00 53 e3\n3b 00 00 1a\nb1 00 50 e3\n07 00 00 1a\n06 00 a0 e1\n7f ff ff eb\n00 20 50 e2\n75 00 00 0a\nf0 10 12 e2\n73 00 00 1a\n05 00 a0 e1\n51 00 00 ea\nb2 00 50 e3\n18 00 00 1a\n00 10 a0 e3\n0d 20 a0 e3\n01 30 a0 e1\n05 00 a0 e1\n00 a0 8d e5\n81 fc ff eb\n06 00 a0 e1\n6f ff ff eb\n02 40 a0 e3\n04 00 00 ea\n10 04 83 e0\n0c 00 8d e5\n06 00 a0 e1\n07 40 84 e2\n68 ff ff eb\n80 10 10 e2\n0c 30 9d e5\n7f 00 00 e2\nf6 ff ff 1a\n81 3f 83 e2\n10 04 83 e0\n00 a0 8d e5\n0c 00 8d e5\n05 00 a0 e1\nc9 ff ff ea\nb3 00 50 e3\n07 00 00 1a\n06 00 a0 e1\n5a ff ff eb\n01 10 a0 e3\n0f 30 00 e2\nf0 20 00 e2\n01 30 83 e2\n05 00 a0 e1\n17 00 00 ea\nfc 30 00 e2\nb4 00 53 e3\n03 40 00 02\n07 40 04 12\n01 20 84 02\n01 20 84 12\n05 00 a0 01\n02 10 a0 03\n01 27 82 03\n05 00 a0 11\n01 10 a0 13\n02 27 82 13\n1f 00 00 ea\nc0 00 53 e3\n31 00 00 1a\nc6 00 50 e3\n08 00 00 1a\n06 00 a0 e1\n41 ff ff eb\n03 10 a0 e3\n0f 30 00 e2\nf0 20 00 e2\n01 30 83 e2\n05 00 a0 e1\n02 26 83 e1\n12 00 00 ea\nc7 00 50 e3\n08 00 00 1a\n06 00 a0 e1\n36 ff ff eb\n00 20 50 e2\n2c 00 00 0a\nf0 30 12 e2\n2a 00 00 1a\n05 00 a0 e1\n04 10 a0 e3\n24 00 00 ea\nf8 30 00 e2\nc0 00 53 e3\n06 00 00 1a\n0f 40 00 e2\n01 20 84 e2\n05 00 a0 e1\n03 10 a0 e3\n0a 28 82 e3\n01 30 a0 e1\n1a 00 00 ea\nc8 00 50 e3\n04 00 00 1a\n06 00 a0 e1\n21 ff ff eb\nf0 20 00 e2\n10 20 82 e2\n04 00 00 ea\nc9 00 50 e3\n14 00 00 1a\n06 00 a0 e1\n1a ff ff eb\nf0 20 00 e2\n0f 30 00 e2\n01 30 83 e2\n05 00 a0 e1\n01 10 a0 e3\n02 26 83 e1\n07 00 00 ea\nf8 30 00 e2\nd0 00 53 e3\n08 00 00 1a\n07 40 00 e2\n01 20 84 e2\n05 00 a0 e1\n01 10 a0 e3\n02 27 82 e3\n05 30 a0 e3\n3b fd ff eb\n00 00 50 e3\n23 ff ff 0a\n09 00 a0 e3\n10 d0 8d e2\nf0 87 bd e8\n'
+p481
+S'.text:000128e0\n.text:000128e4\n.text:000128e8\n.text:000128ec\n.text:000128f0\n.text:000128f4\n.text:000128f8\n.text:000128fc\n.text:00012900\n.text:00012904\n.text:00012908\n.text:0001290c\n.text:00012910\n.text:00012914\n.text:00012918\n.text:0001291c\n.text:00012920\n.text:00012924\n.text:00012928\n.text:0001292c\n.text:00012930\n.text:00012934\n.text:00012938\n.text:0001293c\n.text:00012940\n.text:00012944\n.text:00012948\n.text:0001294c\n.text:00012950\n.text:00012954\n.text:00012958\n.text:0001295c\n.text:00012960\n.text:00012964\n.text:00012968\n.text:0001296c\n.text:00012970\n.text:00012974\n.text:00012978\n.text:0001297c\n.text:00012980\n.text:00012984\n.text:00012988\n.text:0001298c\n.text:00012990\n.text:00012994\n.text:00012998\n.text:0001299c\n.text:000129a0\n.text:000129a4\n.text:000129a8\n.text:000129ac\n.text:000129b0\n.text:000129b4\n.text:000129b8\n.text:000129bc\n.text:000129c0\n.text:000129c4\n.text:000129c8\n.text:000129cc\n.text:000129d0\n.text:000129d4\n.text:000129d8\n.text:000129dc\n.text:000129e0\n.text:000129e4\n.text:000129e8\n.text:000129ec\n.text:000129f0\n.text:000129f4\n.text:000129f8\n.text:000129fc\n.text:00012a00\n.text:00012a04\n.text:00012a08\n.text:00012a0c\n.text:00012a10\n.text:00012a14\n.text:00012a18\n.text:00012a1c\n.text:00012a20\n.text:00012a24\n.text:00012a28\n.text:00012a2c\n.text:00012a30\n.text:00012a34\n.text:00012a38\n.text:00012a3c\n.text:00012a40\n.text:00012a44\n.text:00012a48\n.text:00012a4c\n.text:00012a50\n.text:00012a54\n.text:00012a58\n.text:00012a5c\n.text:00012a60\n.text:00012a64\n.text:00012a68\n.text:00012a6c\n.text:00012a70\n.text:00012a74\n.text:00012a78\n.text:00012a7c\n.text:00012a80\n.text:00012a84\n.text:00012a88\n.text:00012a8c\n.text:00012a90\n.text:00012a94\n.text:00012a98\n.text:00012a9c\n.text:00012aa0\n.text:00012aa4\n.text:00012aa8\n.text:00012aac\n.text:00012ab0\n.text:00012ab4\n.text:00012ab8\n.text:00012abc\n.text:00012ac0\n.text:00012ac4\n.text:00012ac8\n.text:00012acc\n.text:00012ad0\n.text:00012ad4\n.text:00012ad8\n.text:00012adc\n.text:00012ae0\n.text:00012ae4\n.text:00012ae8\n.text:00012aec\n.text:00012af0\n.text:00012af4\n.text:00012af8\n.text:00012afc\n.text:00012b00\n.text:00012b04\n.text:00012b08\n.text:00012b0c\n.text:00012b10\n.text:00012b14\n.text:00012b18\n.text:00012b1c\n.text:00012b20\n.text:00012b24\n.text:00012b28\n.text:00012b2c\n.text:00012b30\n.text:00012b34\n.text:00012b38\n.text:00012b3c\n.text:00012b40\n.text:00012b44\n.text:00012b48\n.text:00012b4c\n.text:00012b50\n.text:00012b54\n.text:00012b58\n.text:00012b5c\n.text:00012b60\n.text:00012b64\n.text:00012b68\n.text:00012b6c\n.text:00012b70\n.text:00012b74\n.text:00012b78\n.text:00012b7c\n.text:00012b80\n.text:00012b84\n.text:00012b88\n.text:00012b8c\n.text:00012b90\n.text:00012b94\n.text:00012b98\n.text:00012b9c\n.text:00012ba0\n.text:00012ba4\n.text:00012ba8\n.text:00012bac\n.text:00012bb0\n.text:00012bb4\n.text:00012bb8\n.text:00012bbc\n.text:00012bc0\n.text:00012bc4\n.text:00012bc8\n.text:00012bcc\n.text:00012bd0\n.text:00012bd4\n.text:00012bd8\n.text:00012bdc\n.text:00012be0\n.text:00012be4\n.text:00012be8\n.text:00012bec\n.text:00012bf0\n.text:00012bf4\n.text:00012bf8\n.text:00012bfc\n.text:00012c00\n.text:00012c04\n.text:00012c08\n.text:00012c0c\n.text:00012c10\n.text:00012c14\n.text:00012c18\n.text:00012c1c\n.text:00012c20\n.text:00012c24\n.text:00012c28\n.text:00012c2c\n.text:00012c30\n.text:00012c34\n.text:00012c38\n.text:00012c3c\n.text:00012c40\n.text:00012c44\n.text:00012c48\n.text:00012c4c\n.text:00012c50\n.text:00012c54\n.text:00012c58\n.text:00012c5c\n.text:00012c60\n.text:00012c64\n.text:00012c68\n.text:00012c6c\n.text:00012c70\n'
+p482
+tp483
+sS'FUN_00011af0'
+p484
+(S'\n__stdcall FUN_00011af0()\n'
+p485
+V\u000avoid FUN_00011af0(uint *puParm1)\u000a\u000a{\u000a  if ((*puParm1 & 1) == 0) {\u000a    if ((*puParm1 & 2) == 0) {\u000a      __gnu_Unwind_Restore_VFP(puParm1 + 0x12);\u000a    }\u000a    else {\u000a      __gnu_Unwind_Restore_VFP_D();\u000a    }\u000a  }\u000a  if ((*puParm1 & 4) == 0) {\u000a    __gnu_Unwind_Restore_VFP_D_16_to_31(puParm1 + 0x34);\u000a  }\u000a  if ((*puParm1 & 8) == 0) {\u000a    __gnu_Unwind_Restore_WMMXD(puParm1 + 0x6c);\u000a  }\u000a  if ((*puParm1 & 0x10) != 0) {\u000a    return;\u000a  }\u000a  __gnu_Unwind_Restore_WMMXC(puParm1 + 0x8c);\u000a  return;\u000a}\u000a\u000a
+p486
+S'ldr r3,[r0,#0x0]\nstmdb sp!,{ r4 lr }\ntst r3,#0x1\ncpy r4,r0\nbne 0x00011b1c\ntst r3,#0x2\nadd r0,r0,#0x48\nbeq 0x00011b18\nbl 0x00012704\nb 0x00011b1c\nbl 0x000126f4\nldr r3,[r4,#0x0]\ntst r3,#0x4\nbne 0x00011b30\nadd r0,r4,#0xd0\nbl 0x00012714\nldr r3,[r4,#0x0]\ntst r3,#0x8\nbne 0x00011b44\nadd r0,r4,#0x1b0\nbl 0x00012724\nldr r3,[r4,#0x0]\ntst r3,#0x10\nldmneia sp!,{ r4 pc }\nadd r0,r4,#0x230\nldmia sp!,{ r4 lr }\nb 0x000127ac\n'
+p487
+S'00 30 90 e5\n10 40 2d e9\n01 00 13 e3\n00 40 a0 e1\n05 00 00 1a\n02 00 13 e3\n48 00 80 e2\n01 00 00 0a\nfb 02 00 eb\n00 00 00 ea\nf5 02 00 eb\n00 30 94 e5\n04 00 13 e3\n01 00 00 1a\nd0 00 84 e2\nf8 02 00 eb\n00 30 94 e5\n08 00 13 e3\n01 00 00 1a\n1b 0e 84 e2\nf7 02 00 eb\n00 30 94 e5\n10 00 13 e3\n10 80 bd 18\n23 0e 84 e2\n10 40 bd e8\n13 03 00 ea\n'
+p488
+S'.text:00011af0\n.text:00011af4\n.text:00011af8\n.text:00011afc\n.text:00011b00\n.text:00011b04\n.text:00011b08\n.text:00011b0c\n.text:00011b10\n.text:00011b14\n.text:00011b18\n.text:00011b1c\n.text:00011b20\n.text:00011b24\n.text:00011b28\n.text:00011b2c\n.text:00011b30\n.text:00011b34\n.text:00011b38\n.text:00011b3c\n.text:00011b40\n.text:00011b44\n.text:00011b48\n.text:00011b4c\n.text:00011b50\n.text:00011b54\n.text:00011b58\n'
+p489
+tp490
+sS'lrand48'
+p491
+(S'\n__stdcall lrand48()\n'
+p492
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000along lrand48(void)\u000a\u000a{\u000a  long lVar1;\u000a  \u000a  lVar1 = (*(code *)PTR_lrand48_00014fe4)();\u000a  return lVar1;\u000a}\u000a\u000a
+p493
+S'adr r12,0x11194\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe50]!\n'
+p494
+S'00 c6 8f e2\n03 ca 8c e2\n50 fe bc e5\n'
+p495
+S'.plt:0001118c\n.plt:00011190\n.plt:00011194\n'
+p496
+tp497
+sS'fclose'
+p498
+(S'\n__stdcall fclose(FILE * __stream)\n'
+p499
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint fclose(FILE *__stream)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_fclose_00014fd4)();\u000a  return iVar1;\u000a}\u000a\u000a
+p500
+S'adr r12,0x11164\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe70]!\n'
+p501
+S'00 c6 8f e2\n03 ca 8c e2\n70 fe bc e5\n'
+p502
+S'.plt:0001115c\n.plt:00011160\n.plt:00011164\n'
+p503
+tp504
+sS'__gnu_Unwind_Save_VFP'
+p505
+(S'\n__stdcall __gnu_Unwind_Save_VFP()\n'
+p506
+V\u000avoid __gnu_Unwind_Save_VFP(undefined4 uParm1)\u000a\u000a{\u000a  undefined4 in_cr0;\u000a  \u000a  coprocessor_store(0xb,in_cr0,uParm1);\u000a  return;\u000a}\u000a\u000a
+p507
+S'stc p11,cr0,[r0],{0x21}\nbx lr\n'
+p508
+S'21 0b 80 ec\n1e ff 2f e1\n'
+p509
+S'.text:000126fc\n.text:00012700\n'
+p510
+tp511
+sS'FUN_000116a0'
+p512
+(S'\n__stdcall FUN_000116a0()\n'
+p513
+V\u000aundefined2 * FUN_000116a0(int iParm1,int iParm2,int *piParm3)\u000a\u000a{\u000a  undefined2 *puVar1;\u000a  int *piVar2;\u000a  char *__format;\u000a  int iVar3;\u000a  undefined2 *puVar4;\u000a  undefined2 local_28 [6];\u000a  int local_1c;\u000a  \u000a  piVar2 = *(int **)(DAT_00011700 + 0x116ac);\u000a  local_1c = *piVar2;\u000a  puVar1 = (undefined2 *)calloc(0x400,1);\u000a  iVar3 = 0;\u000a  __format = (char *)(DAT_00011704 + 0x116cc);\u000a  puVar4 = puVar1;\u000a  while (iVar3 < iParm2) {\u000a    sprintf((char *)local_28,__format,(uint)*(byte *)(iParm1 + iVar3));\u000a    iVar3 = iVar3 + 1;\u000a    *puVar4 = local_28[0];\u000a    puVar4 = puVar4 + 1;\u000a  }\u000a  *piParm3 = iParm2 << 1;\u000a  if (local_1c != *piVar2) {\u000a                    /* WARNING: Subroutine does not return */\u000a    __stack_chk_fail();\u000a  }\u000a  return puVar1;\u000a}\u000a\u000a
+p514
+S'push { r4, r5, r6, r7, lr }\nldr r4,[0x00011700]\nsub sp,#0x24\nstr r0,[sp,#0x8]\nadd r4,pc\nldr r4,[r4,#0x0]\nmov r0,#0x80\nstr r1,[sp,#0x4]\nldr r3,[r4,#0x0]\nlsl r0,r0,#0x3\nmov r1,#0x1\nstr r2,[sp,#0xc]\nstr r3,[sp,#0x1c]\nblx 0x0001109c\nmov r7,r4\nldr r4,[0x00011704]\nstr r0,[sp,#0x0]\nmov r6,r0\nmov r5,#0x0\nadd r4,pc\nb 0x000116e2\nldr r3,[sp,#0x8]\nadd r0,sp,#0x10\nmov r1,r4\nldrb r2,[r3,r5]\nblx 0x00011198\nmov r2,sp\nldrh r3,[r2,#0x10]\nadd r5,#0x1\nstrh r3,[r6,#0x0]\nadd r6,#0x2\nldr r3,[sp,#0x4]\ncmp r5,r3\nblt 0x000116cc\nldr r2,[sp,#0xc]\nlsl r3,r3,#0x1\nldr r0,[sp,#0x0]\nstr r3,[r2,#0x0]\nldr r2,[sp,#0x1c]\nldr r3,[r7,#0x0]\ncmp r2,r3\nbeq 0x000116fc\nblx 0x000110d8\nadd sp,#0x24\npop { r4, r5, r6, r7, pc }\n'
+p515
+S'f0 b5\n17 4c\n89 b0\n02 90\n7c 44\n24 68\n80 20\n01 91\n23 68\nc0 00\n01 21\n03 92\n07 93\nff f7 f0 ec\n27 1c\n10 4c\n00 90\n06 1c\n00 25\n7c 44\n0a e0\n02 9b\n04 a8\n21 1c\n5a 5d\nff f7 60 ed\n6a 46\n13 8a\n01 35\n33 80\n02 36\n01 9b\n9d 42\nf1 db\n03 9a\n5b 00\n00 98\n13 60\n07 9a\n3b 68\n9a 42\n01 d0\nff f7 ee ec\n09 b0\nf0 bd\n'
+p516
+S'.text:000116a0\n.text:000116a2\n.text:000116a4\n.text:000116a6\n.text:000116a8\n.text:000116aa\n.text:000116ac\n.text:000116ae\n.text:000116b0\n.text:000116b2\n.text:000116b4\n.text:000116b6\n.text:000116b8\n.text:000116ba\n.text:000116be\n.text:000116c0\n.text:000116c2\n.text:000116c4\n.text:000116c6\n.text:000116c8\n.text:000116ca\n.text:000116cc\n.text:000116ce\n.text:000116d0\n.text:000116d2\n.text:000116d4\n.text:000116d8\n.text:000116da\n.text:000116dc\n.text:000116de\n.text:000116e0\n.text:000116e2\n.text:000116e4\n.text:000116e6\n.text:000116e8\n.text:000116ea\n.text:000116ec\n.text:000116ee\n.text:000116f0\n.text:000116f2\n.text:000116f4\n.text:000116f6\n.text:000116f8\n.text:000116fc\n.text:000116fe\n'
+p517
+tp518
+sS'__aeabi_ldiv0'
+p519
+(S'\n__stdcall __aeabi_ldiv0()\n'
+p520
+V\u000avoid __aeabi_ldiv0(void)\u000a\u000a{\u000a  raise(8);\u000a  return;\u000a}\u000a\u000a
+p521
+S'stmdb sp!,{ r1 lr }\nmov r0,#0x8\nbl 0x000111a4\nldmia sp!,{ r1 pc }\n'
+p522
+S'02 40 2d e9\n08 00 a0 e3\n28 fe ff eb\n02 80 bd e8\n'
+p523
+S'.text:000118f4\n.text:000118f8\n.text:000118fc\n.text:00011900\n'
+p524
+tp525
+sS'__gnu_Unwind_Save_VFP_D_16_to_31'
+p526
+(S'\n__stdcall __gnu_Unwind_Save_VFP_D_16_to_31()\n'
+p527
+V\u000a/* WARNING: Control flow encountered unimplemented instructions */\u000a\u000avoid __gnu_Unwind_Save_VFP_D_16_to_31(void)\u000a\u000a{\u000a                    /* WARNING: Unimplemented instruction - Truncating control flow here */\u000a  halt_unimplemented();\u000a}\u000a\u000a
+p528
+S'vstmia r0,{d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31}\nbx lr\n'
+p529
+S'20 0b c0 ec\n1e ff 2f e1\n'
+p530
+S'.text:0001271c\n.text:00012720\n'
+p531
+tp532
+sS'__gnu_Unwind_ForcedUnwind'
+p533
+(S'\n__stdcall __gnu_Unwind_ForcedUnwind()\n'
+p534
+V\u000avoid __gnu_Unwind_ForcedUnwind(int iParm1,undefined4 uParm2,undefined4 uParm3,int iParm4)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  \u000a  *(undefined4 *)(iParm1 + 0x18) = uParm3;\u000a  uVar1 = *(undefined4 *)(iParm4 + 0x3c);\u000a  *(undefined4 *)(iParm1 + 0xc) = uParm2;\u000a  *(undefined4 *)(iParm4 + 0x40) = uVar1;\u000a  FUN_00011b5c(iParm1,iParm4,0);\u000a  return;\u000a}\u000a\u000a
+p535
+S'str r2,[r0,#0x18]\nldr r2,[r3,#0x3c]\nstr r1,[r0,#0xc]\nstr r2,[r3,#0x40]\ncpy r1,r3\nmov r2,#0x0\nb 0x00011b5c\n'
+p536
+S'18 20 80 e5\n3c 20 93 e5\n0c 10 80 e5\n40 20 83 e5\n03 10 a0 e1\n00 20 a0 e3\n7a fd ff ea\n'
+p537
+S'.text:00012554\n.text:00012558\n.text:0001255c\n.text:00012560\n.text:00012564\n.text:00012568\n.text:0001256c\n'
+p538
+tp539
+sS'__aeabi_idivmod'
+p540
+(S'\n__stdcall __aeabi_idivmod()\n'
+p541
+V\u000avoid __aeabi_idivmod(int iParm1,int iParm2)\u000a\u000a{\u000a  bool bVar1;\u000a  \u000a  if (iParm2 != 0) {\u000a    FUN_00011800();\u000a    return;\u000a  }\u000a  bVar1 = iParm1 < 0;\u000a  if (0 < iParm1) {\u000a    iParm1 = 0x7fffffff;\u000a  }\u000a  if (bVar1) {\u000a    iParm1 = -0x80000000;\u000a  }\u000a  __aeabi_ldiv0(iParm1);\u000a  return;\u000a}\u000a\u000a
+p542
+S'cmp r1,#0x0\nbeq 0x000118c4\nstmdb sp!,{ r0 r1 lr }\nbl 0x00011800\nldmia sp!,{ r1 r2 lr }\nmul r3,r2,r0\nsub r1,r1,r3\nbx lr\n'
+p543
+S'00 00 51 e3\nf9 ff ff 0a\n03 40 2d e9\nc6 ff ff eb\n06 40 bd e8\n92 00 03 e0\n03 10 41 e0\n1e ff 2f e1\n'
+p544
+S'.text:000118d4\n.text:000118d8\n.text:000118dc\n.text:000118e0\n.text:000118e4\n.text:000118e8\n.text:000118ec\n.text:000118f0\n'
+p545
+tp546
+sS'__cxa_begin_cleanup'
+p547
+(S'\n__stdcall __cxa_begin_cleanup()\n'
+p548
+V\u000avoid __cxa_begin_cleanup(void)\u000a\u000a{\u000a  (*(code *)PTR___cxa_begin_cleanup_00014ff8)();\u000a  return;\u000a}\u000a\u000a
+p549
+S'adr r12,0x111d0\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe28]!\n'
+p550
+S'00 c6 8f e2\n03 ca 8c e2\n28 fe bc e5\n'
+p551
+S'.plt:000111c8\n.plt:000111cc\n.plt:000111d0\n'
+p552
+tp553
+sS'_Unwind_GetRegionStart'
+p554
+(S'\n__stdcall _Unwind_GetRegionStart()\n'
+p555
+V\u000aundefined4 _Unwind_GetRegionStart(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,int iParm4)\u000a\u000a{\u000a  int local_c;\u000a  \u000a  local_c = iParm4;\u000a  _Unwind_VRS_Get(uParm1,0,0xc,0,&local_c,uParm2,uParm3);\u000a  return *(undefined4 *)(local_c + 0x48);\u000a}\u000a\u000a
+p556
+S'stmdb sp!,{ r0 r1 r2 r3 r4 lr }\nmov r1,#0x0\nadd r3,sp,#0xc\nstr r3,[sp,#0x0]\nmov r2,#0xc\ncpy r3,r1\nbl 0x00011cc8\nldr r3,[sp,#0xc]\nldr r0,[r3,#0x48]\nadd sp,sp,#0x14\nldmia sp!,{ pc }\n'
+p557
+S'1f 40 2d e9\n00 10 a0 e3\n0c 30 8d e2\n00 30 8d e5\n0c 20 a0 e3\n01 30 a0 e1\nfd fb ff eb\n0c 30 9d e5\n48 00 93 e5\n14 d0 8d e2\n00 80 bd e8\n'
+p558
+S'.text:00012cb4\n.text:00012cb8\n.text:00012cbc\n.text:00012cc0\n.text:00012cc4\n.text:00012cc8\n.text:00012ccc\n.text:00012cd0\n.text:00012cd4\n.text:00012cd8\n.text:00012cdc\n'
+p559
+tp560
+sS'memcpy'
+p561
+(S'\n__stdcall memcpy(void * __dest, void * __src, size_t __n)\n'
+p562
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid * memcpy(void *__dest,void *__src,size_t __n)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = (void *)(*(code *)PTR_memcpy_00014f98)();\u000a  return pvVar1;\u000a}\u000a\u000a
+p563
+S'adr r12,0x110b0\nadd r12,r12,#0x3000\nldr pc,[r12,#0xee8]!\n'
+p564
+S'00 c6 8f e2\n03 ca 8c e2\ne8 fe bc e5\n'
+p565
+S'.plt:000110a8\n.plt:000110ac\n.plt:000110b0\n'
+p566
+tp567
+sS'__gnu_Unwind_Restore_VFP_D_16_to_31'
+p568
+(S'\n__stdcall __gnu_Unwind_Restore_VFP_D_16_to_31()\n'
+p569
+V\u000a/* WARNING: Control flow encountered unimplemented instructions */\u000a\u000avoid __gnu_Unwind_Restore_VFP_D_16_to_31(void)\u000a\u000a{\u000a                    /* WARNING: Unimplemented instruction - Truncating control flow here */\u000a  halt_unimplemented();\u000a}\u000a\u000a
+p570
+S'vldmia r0,{d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31}\nbx lr\n'
+p571
+S'20 0b d0 ec\n1e ff 2f e1\n'
+p572
+S'.text:00012714\n.text:00012718\n'
+p573
+tp574
+sS'FUN_00011d0c'
+p575
+(S'\n__stdcall FUN_00011d0c()\n'
+p576
+V\u000aundefined4 FUN_00011d0c(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 local_c;\u000a  \u000a  local_c = uParm4;\u000a  _Unwind_VRS_Get(uParm1,0,uParm2,0,&local_c,uParm2,uParm3);\u000a  return local_c;\u000a}\u000a\u000a
+p577
+S'stmdb sp!,{ r0 r1 r2 r3 r4 lr }\ncpy r2,r1\nadd r3,sp,#0xc\nmov r1,#0x0\nstr r3,[sp,#0x0]\ncpy r3,r1\nbl 0x00011cc8\nldr r0,[sp,#0xc]\nadd sp,sp,#0x14\nldmia sp!,{ pc }\n'
+p578
+S'1f 40 2d e9\n01 20 a0 e1\n0c 30 8d e2\n00 10 a0 e3\n00 30 8d e5\n01 30 a0 e1\ne7 ff ff eb\n0c 00 9d e5\n14 d0 8d e2\n00 80 bd e8\n'
+p579
+S'.text:00011d0c\n.text:00011d10\n.text:00011d14\n.text:00011d18\n.text:00011d1c\n.text:00011d20\n.text:00011d24\n.text:00011d28\n.text:00011d2c\n.text:00011d30\n'
+p580
+tp581
+sS'FUN_00012888'
+p582
+(S'\n__stdcall FUN_00012888()\n'
+p583
+V\u000auint FUN_00012888(uint *puParm1)\u000a\u000a{\u000a  char cVar1;\u000a  uint uVar2;\u000a  \u000a  if (*(char *)(puParm1 + 2) == 0) {\u000a    if (*(char *)((int)puParm1 + 9) == 0) {\u000a      return 0xb0;\u000a    }\u000a    *(char *)((int)puParm1 + 9) = *(char *)((int)puParm1 + 9) + -1;\u000a    *puParm1 = *(uint *)puParm1[1];\u000a    *(uint **)(puParm1 + 1) = (uint *)puParm1[1] + 1;\u000a    cVar1 = 3;\u000a  }\u000a  else {\u000a    cVar1 = *(char *)(puParm1 + 2) + -1;\u000a  }\u000a  *(char *)(puParm1 + 2) = cVar1;\u000a  uVar2 = *puParm1;\u000a  *puParm1 = uVar2 << 8;\u000a  return uVar2 >> 0x18;\u000a}\u000a\u000a
+p584
+S'ldrb r2,[r0,#0x8]\ncpy r3,r0\ncmp r2,#0x0\nsubne r2,r2,#0x1\nbne 0x000128c0\nldrb r2,[r0,#0x9]\ncmp r2,#0x0\nbeq 0x000128d8\nsub r2,r2,#0x1\nstrb r2,[r0,#0x9]\nldr r2,[r0,#0x4]\nldr r1,[r2],#0x4\nstmia r0,{ r1 r2 }\nmov r2,#0x3\nstrb r2,[r3,#0x8]\nldr r2,[r3,#0x0]\nmov r0,r2, lsr #0x18\nmov r2,r2, lsl #0x8\nstr r2,[r3,#0x0]\nbx lr\nmov r0,#0xb0\nbx lr\n'
+p585
+S'08 20 d0 e5\n00 30 a0 e1\n00 00 52 e3\n01 20 42 12\n08 00 00 1a\n09 20 d0 e5\n00 00 52 e3\n0b 00 00 0a\n01 20 42 e2\n09 20 c0 e5\n04 20 90 e5\n04 10 92 e4\n06 00 80 e8\n03 20 a0 e3\n08 20 c3 e5\n00 20 93 e5\n22 0c a0 e1\n02 24 a0 e1\n00 20 83 e5\n1e ff 2f e1\nb0 00 a0 e3\n1e ff 2f e1\n'
+p586
+S'.text:00012888\n.text:0001288c\n.text:00012890\n.text:00012894\n.text:00012898\n.text:0001289c\n.text:000128a0\n.text:000128a4\n.text:000128a8\n.text:000128ac\n.text:000128b0\n.text:000128b4\n.text:000128b8\n.text:000128bc\n.text:000128c0\n.text:000128c4\n.text:000128c8\n.text:000128cc\n.text:000128d0\n.text:000128d4\n.text:000128d8\n.text:000128dc\n'
+p587
+tp588
+sS'time'
+p589
+(S'\n__stdcall time(time_t * __timer)\n'
+p590
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000atime_t time(time_t *__timer)\u000a\u000a{\u000a  time_t tVar1;\u000a  \u000a  tVar1 = (*(code *)PTR_time_00014fdc)();\u000a  return tVar1;\u000a}\u000a\u000a
+p591
+S'adr r12,0x1117c\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe60]!\n'
+p592
+S'00 c6 8f e2\n03 ca 8c e2\n60 fe bc e5\n'
+p593
+S'.plt:00011174\n.plt:00011178\n.plt:0001117c\n'
+p594
+tp595
+sS'FUN_00011594'
+p596
+(S'\n__stdcall FUN_00011594()\n'
+p597
+V\u000aFILE * FUN_00011594(uchar *puParm1,undefined4 uParm2,size_t *psParm3,char *pcParm4)\u000a\u000a{\u000a  FILE *fp;\u000a  FILE *rsa;\u000a  int flen;\u000a  size_t sVar1;\u000a  FILE *__s;\u000a  \u000a  fp = fopen(pcParm4,(char *)(DAT_00011620 + 0x115a0));\u000a  __s = fp;\u000a  if (fp != (FILE *)0x0) {\u000a    rsa = (FILE *)PEM_read_RSAPrivateKey(fp,(RSA **)0x0,(undefined1 *)0x0,(void *)0x0);\u000a    if (rsa == (FILE *)0x0) {\u000a      fclose(fp);\u000a      __s = rsa;\u000a    }\u000a    else {\u000a      flen = RSA_size((RSA *)rsa);\u000a      __s = (FILE *)malloc(flen + 1U);\u000a      memset(__s,0,flen + 1U);\u000a      flen = RSA_private_decrypt(flen,puParm1,(uchar *)__s,(RSA *)rsa,3);\u000a      if (flen < 0) {\u000a        RSA_free((RSA *)rsa);\u000a        fclose(fp);\u000a        __s = (FILE *)0x0;\u000a      }\u000a      else {\u000a        sVar1 = strlen((char *)__s);\u000a        *psParm3 = sVar1;\u000a        RSA_free((RSA *)rsa);\u000a        fclose(fp);\u000a      }\u000a    }\u000a  }\u000a  return __s;\u000a}\u000a\u000a
+p598
+S'push { r4, r5, r6, r7, lr }\n'
+p599
+S'f0 b5\n'
+p600
+S'.text:00011594\n'
+p601
+tp602
+s.

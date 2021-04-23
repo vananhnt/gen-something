@@ -1,0 +1,977 @@
+(dp0
+S'__gnu_Unwind_Restore_WMMXD'
+p1
+(S'\n__stdcall __gnu_Unwind_Restore_WMMXD()\n'
+p2
+V\u000aint __gnu_Unwind_Restore_WMMXD(int iParm1)\u000a\u000a{\u000a  undefined4 in_cr0;\u000a  undefined4 in_cr1;\u000a  undefined4 in_cr2;\u000a  undefined4 in_cr3;\u000a  undefined4 in_cr4;\u000a  undefined4 in_cr5;\u000a  undefined4 in_cr6;\u000a  undefined4 in_cr7;\u000a  undefined4 in_cr8;\u000a  undefined4 in_cr9;\u000a  undefined4 in_cr10;\u000a  undefined4 in_cr11;\u000a  undefined4 in_cr12;\u000a  undefined4 in_cr13;\u000a  undefined4 in_cr14;\u000a  undefined4 in_cr15;\u000a  \u000a  coprocessor_loadlong(1,in_cr0,iParm1);\u000a  coprocessor_loadlong(1,in_cr1,iParm1 + 8);\u000a  coprocessor_loadlong(1,in_cr2,iParm1 + 0x10);\u000a  coprocessor_loadlong(1,in_cr3,iParm1 + 0x18);\u000a  coprocessor_loadlong(1,in_cr4,iParm1 + 0x20);\u000a  coprocessor_loadlong(1,in_cr5,iParm1 + 0x28);\u000a  coprocessor_loadlong(1,in_cr6,iParm1 + 0x30);\u000a  coprocessor_loadlong(1,in_cr7,iParm1 + 0x38);\u000a  coprocessor_loadlong(1,in_cr8,iParm1 + 0x40);\u000a  coprocessor_loadlong(1,in_cr9,iParm1 + 0x48);\u000a  coprocessor_loadlong(1,in_cr10,iParm1 + 0x50);\u000a  coprocessor_loadlong(1,in_cr11,iParm1 + 0x58);\u000a  coprocessor_loadlong(1,in_cr12,iParm1 + 0x60);\u000a  coprocessor_loadlong(1,in_cr13,iParm1 + 0x68);\u000a  coprocessor_loadlong(1,in_cr14,iParm1 + 0x70);\u000a  coprocessor_loadlong(1,in_cr15,iParm1 + 0x78);\u000a  return iParm1 + 0x80;\u000a}\u000a\u000a
+p3
+S'ldcl p1,cr0,[r0],#0x8\nldcl p1,cr1,[r0],#0x8\nldcl p1,cr2,[r0],#0x8\nldcl p1,cr3,[r0],#0x8\nldcl p1,cr4,[r0],#0x8\nldcl p1,cr5,[r0],#0x8\nldcl p1,cr6,[r0],#0x8\nldcl p1,cr7,[r0],#0x8\nldcl p1,cr8,[r0],#0x8\nldcl p1,cr9,[r0],#0x8\nldcl p1,cr10,[r0],#0x8\nldcl p1,cr11,[r0],#0x8\nldcl p1,cr12,[r0],#0x8\nldcl p1,cr13,[r0],#0x8\nldcl p1,cr14,[r0],#0x8\nldcl p1,cr15,[r0],#0x8\nbx lr\n'
+p4
+S'02 01 f0 ec\n02 11 f0 ec\n02 21 f0 ec\n02 31 f0 ec\n02 41 f0 ec\n02 51 f0 ec\n02 61 f0 ec\n02 71 f0 ec\n02 81 f0 ec\n02 91 f0 ec\n02 a1 f0 ec\n02 b1 f0 ec\n02 c1 f0 ec\n02 d1 f0 ec\n02 e1 f0 ec\n02 f1 f0 ec\n1e ff 2f e1\n'
+p5
+S'.text:00013148\n.text:0001314c\n.text:00013150\n.text:00013154\n.text:00013158\n.text:0001315c\n.text:00013160\n.text:00013164\n.text:00013168\n.text:0001316c\n.text:00013170\n.text:00013174\n.text:00013178\n.text:0001317c\n.text:00013180\n.text:00013184\n.text:00013188\n'
+p6
+tp7
+sS'_FINI_0'
+p8
+(S'\n__stdcall _FINI_0()\n'
+p9
+V\u000avoid _FINI_0(void)\u000a\u000a{\u000a  (*(code *)PTR___cxa_finalize_00014f5c)((int)&DAT_000112ac + DAT_000112ac);\u000a  return;\u000a}\u000a\u000a
+p10
+S'ldr r0,[0x112ac]\nadd r0,pc,r0\nb 0x000110b4\n'
+p11
+S'04 00 9f e5\n00 00 8f e0\n81 ff ff ea\n'
+p12
+S'.text:000112a0\n.text:000112a4\n.text:000112a8\n'
+p13
+tp14
+sS'_Unwind_GetLanguageSpecificData'
+p15
+(S'\n__stdcall _Unwind_GetLanguageSpecificData()\n'
+p16
+V\u000aint _Unwind_GetLanguageSpecificData(void)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = thunk_FUN_0001330c();\u000a  return *(int *)(iVar1 + 0x4c) + (uint)*(byte *)(*(int *)(iVar1 + 0x4c) + 7) * 4 + 8;\u000a}\u000a\u000a
+p17
+S'stmdb sp!,{ r3 lr }\nbl 0x00013334\nldr r3,[r0,#0x4c]\nldrb r0,[r3,#0x7]\nadd r0,r3,r0, lsl #0x2\nadd r0,r0,#0x8\nldmia sp!,{ r3 pc }\n'
+p18
+S'08 40 2d e9\n02 ff ff eb\n4c 30 90 e5\n07 00 d3 e5\n00 01 83 e0\n08 00 80 e2\n08 80 bd e8\n'
+p19
+S'.text:00013720\n.text:00013724\n.text:00013728\n.text:0001372c\n.text:00013730\n.text:00013734\n.text:00013738\n'
+p20
+tp21
+sS'__gnu_Unwind_Restore_WMMXC'
+p22
+(S'\n__stdcall __gnu_Unwind_Restore_WMMXC()\n'
+p23
+V\u000aint __gnu_Unwind_Restore_WMMXC(int iParm1)\u000a\u000a{\u000a  undefined4 in_cr8;\u000a  undefined4 in_cr9;\u000a  undefined4 in_cr10;\u000a  undefined4 in_cr11;\u000a  \u000a  coprocessor_load2(1,in_cr8,iParm1);\u000a  coprocessor_load2(1,in_cr9,iParm1 + 4);\u000a  coprocessor_load2(1,in_cr10,iParm1 + 8);\u000a  coprocessor_load2(1,in_cr11,iParm1 + 0xc);\u000a  return iParm1 + 0x10;\u000a}\u000a\u000a
+p24
+S'ldc2 p1,cr8,[r0],#0x4\nldc2 p1,cr9,[r0],#0x4\nldc2 p1,cr10,[r0],#0x4\nldc2 p1,cr11,[r0],#0x4\nbx lr\n'
+p25
+S'01 81 b0 fc\n01 91 b0 fc\n01 a1 b0 fc\n01 b1 b0 fc\n1e ff 2f e1\n'
+p26
+S'.text:000131d0\n.text:000131d4\n.text:000131d8\n.text:000131dc\n.text:000131e0\n'
+p27
+tp28
+sS'FUN_000124c8'
+p29
+(S'\n__stdcall FUN_000124c8()\n'
+p30
+V\u000aint FUN_000124c8(int iParm1,int iParm2)\u000a\u000a{\u000a  int iVar1;\u000a  int iVar2;\u000a  int iVar3;\u000a  int iVar4;\u000a  code *pcVar5;\u000a  undefined4 uVar6;\u000a  uint uVar7;\u000a  undefined8 uVar8;\u000a  undefined4 uStack1016;\u000a  undefined4 uStack1012;\u000a  undefined4 uStack1008;\u000a  undefined4 uStack1004;\u000a  undefined4 uStack1000;\u000a  undefined4 uStack996;\u000a  undefined4 uStack992;\u000a  undefined4 uStack988;\u000a  undefined4 uStack984;\u000a  undefined4 uStack980;\u000a  undefined4 uStack976;\u000a  undefined4 uStack972;\u000a  undefined4 uStack968;\u000a  undefined4 uStack964;\u000a  undefined4 uStack960;\u000a  undefined4 uStack956;\u000a  undefined4 uStack952;\u000a  undefined4 uStack948;\u000a  undefined auStack536 [56];\u000a  undefined4 uStack480;\u000a  int iStack52;\u000a  int iStack48;\u000a  int iStack44;\u000a  code *pcStack20;\u000a  \u000a  do {\u000a    iStack44 = FUN_0001233c(iParm1,*(undefined4 *)(iParm2 + 0x40));\u000a    if (iStack44 != 0) goto LAB_000124e8;\u000a    *(undefined4 *)(iParm1 + 0x14) = *(undefined4 *)(iParm2 + 0x40);\u000a    iVar3 = iParm2;\u000a    iVar1 = (**(code **)(iParm1 + 0x10))(1,iParm1);\u000a  } while (iVar1 == 8);\u000a  if (iVar1 == 7) {\u000a    FUN_000124c4(0,*(undefined4 *)(iParm2 + 0x40));\u000a    pcStack20 = FUN_0001252c;\u000a    uVar8 = restore_core_regs(iParm2 + 4);\u000a    iVar1 = (int)((ulonglong)uVar8 >> 0x20);\u000a    iVar2 = (int)uVar8;\u000a    pcVar5 = *(code **)(iVar1 + 0xc);\u000a    uVar6 = *(undefined4 *)(iVar1 + 0x18);\u000a    uStack1012 = *(undefined4 *)(iVar2 + 4);\u000a    uStack1008 = *(undefined4 *)(iVar2 + 8);\u000a    uStack1004 = *(undefined4 *)(iVar2 + 0xc);\u000a    uStack1000 = *(undefined4 *)(iVar2 + 0x10);\u000a    iVar4 = 0;\u000a    uStack996 = *(undefined4 *)(iVar2 + 0x14);\u000a    uStack992 = *(undefined4 *)(iVar2 + 0x18);\u000a    uStack988 = *(undefined4 *)(iVar2 + 0x1c);\u000a    uStack984 = *(undefined4 *)(iVar2 + 0x20);\u000a    uStack980 = *(undefined4 *)(iVar2 + 0x24);\u000a    uStack976 = *(undefined4 *)(iVar2 + 0x28);\u000a    uStack972 = *(undefined4 *)(iVar2 + 0x2c);\u000a    uStack968 = *(undefined4 *)(iVar2 + 0x30);\u000a    uStack964 = *(undefined4 *)(iVar2 + 0x34);\u000a    uStack960 = *(undefined4 *)(iVar2 + 0x38);\u000a    uStack956 = *(undefined4 *)(iVar2 + 0x3c);\u000a    uStack952 = *(undefined4 *)(iVar2 + 0x40);\u000a    uStack1016 = 0;\u000a    iStack52 = iParm2;\u000a    iStack48 = iParm1;\u000a    do {\u000a      iVar2 = FUN_0001233c(iVar1,uStack952);\u000a      if (iVar3 == 0) {\u000a        uVar7 = 9;\u000a      }\u000a      else {\u000a        uVar7 = 10;\u000a      }\u000a      if (iVar2 == 0) {\u000a        *(undefined4 *)(iVar1 + 0x14) = uStack952;\u000a        memcpy(auStack536,&uStack1016,0x1e0);\u000a        iVar4 = (**(code **)(iVar1 + 0x10))(uVar7,iVar1,auStack536);\u000a        uStack948 = uStack480;\u000a      }\u000a      else {\u000a        uVar7 = uVar7 | 0x10;\u000a        uStack948 = uStack960;\u000a      }\u000a      iVar3 = (*pcVar5)(1,uVar7,iVar1,iVar1,&uStack1016,uVar6);\u000a      if (iVar3 != 0) {\u000a        return 9;\u000a      }\u000a      if (iVar2 != 0) {\u000a        return iVar2;\u000a      }\u000a      memcpy(&uStack1016,auStack536,0x1e0);\u000a      iVar3 = iVar2;\u000a    } while (iVar4 == 8);\u000a    if (iVar4 == 7) {\u000a      FUN_000124c4(0,uStack952);\u000a      restore_core_regs(&uStack1012);\u000a    }\u000a    return 9;\u000a  }\u000aLAB_000124e8:\u000a                    /* WARNING: Subroutine does not return */\u000a  abort();\u000a}\u000a\u000a
+p31
+S'stmdb sp!,{ r4 r5 r6 lr }\ncpy r5,r0\ncpy r4,r1\ncpy r0,r5\nldr r1,[r4,#0x40]\nbl 0x0001233c\nsubs r6,r0,#0x0\nbeq 0x000124ec\nbl 0x000111bc\nldr r3,[r4,#0x40]\nmov r0,#0x1\ncpy r1,r5\ncpy r2,r4\nstr r3,[r5,#0x14]\nldr r3,[r5,#0x10]\nblx r3\ncmp r0,#0x8\nbeq 0x000124d4\ncmp r0,#0x7\nbne 0x000124e8\ncpy r0,r6\nldr r1,[r4,#0x40]\nbl 0x000124c4\nadd r0,r4,#0x4\nbl 0x000111c8\n'
+p32
+S'70 40 2d e9\n00 50 a0 e1\n01 40 a0 e1\n05 00 a0 e1\n40 10 94 e5\n96 ff ff eb\n00 60 50 e2\n00 00 00 0a\n33 fb ff eb\n40 30 94 e5\n01 00 a0 e3\n05 10 a0 e1\n04 20 a0 e1\n14 30 85 e5\n10 30 95 e5\n33 ff 2f e1\n08 00 50 e3\nf0 ff ff 0a\n07 00 50 e3\nf3 ff ff 1a\n06 00 a0 e1\n40 10 94 e5\ne7 ff ff eb\n04 00 84 e2\n26 fb ff eb\n'
+p33
+S'.text:000124c8\n.text:000124cc\n.text:000124d0\n.text:000124d4\n.text:000124d8\n.text:000124dc\n.text:000124e0\n.text:000124e4\n.text:000124e8\n.text:000124ec\n.text:000124f0\n.text:000124f4\n.text:000124f8\n.text:000124fc\n.text:00012500\n.text:00012504\n.text:00012508\n.text:0001250c\n.text:00012510\n.text:00012514\n.text:00012518\n.text:0001251c\n.text:00012520\n.text:00012524\n.text:00012528\n'
+p34
+tp35
+sS'FUN_000124c4'
+p36
+(S'\n__stdcall FUN_000124c4()\n'
+p37
+V\u000avoid FUN_000124c4(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p38
+S'bx lr\n'
+p39
+S'1e ff 2f e1\n'
+p40
+S'.text:000124c4\n'
+p41
+tp42
+sS'__gnu_unwind_frame'
+p43
+(S'\n__stdcall __gnu_unwind_frame()\n'
+p44
+V\u000a/* WARNING: Could not reconcile some variable overlaps */\u000a\u000avoid __gnu_unwind_frame(int iParm1,undefined4 uParm2,undefined4 uParm3,uint uParm4)\u000a\u000a{\u000a  int iVar1;\u000a  int local_14;\u000a  int local_10;\u000a  uint local_c;\u000a  \u000a  iVar1 = *(int *)(iParm1 + 0x4c);\u000a  local_14 = *(int *)(iVar1 + 4) << 8;\u000a  local_10 = iVar1 + 8;\u000a  local_c._0_2_ = CONCAT11(*(byte *)(iVar1 + 7),3);\u000a  local_c = uParm4 & 0xffff0000 | (uint)(ushort)local_c;\u000a  __gnu_unwind_execute(uParm2,&local_14,3,(uint)*(byte *)(iVar1 + 7),iParm1);\u000a  return;\u000a}\u000a\u000a
+p45
+S'stmdb sp!,{ r0 r1 r2 r3 r4 lr }\nldr r3,[r0,#0x4c]\ncpy r0,r1\nadd r1,sp,#0x4\nldr r2,[r3,#0x4]\nmov r2,r2, lsl #0x8\nstr r2,[sp,#0x4]\nadd r2,r3,#0x8\nstr r2,[sp,#0x8]\nmov r2,#0x3\nstrb r2,[sp,#0xc]\nldrb r3,[r3,#0x7]\nstrb r3,[sp,#0xd]\nbl 0x0001121c\nadd sp,sp,#0x14\nldr pc,[sp],#0x4\n'
+p46
+S'1f 40 2d e9\n4c 30 90 e5\n01 00 a0 e1\n04 10 8d e2\n04 20 93 e5\n02 24 a0 e1\n04 20 8d e5\n08 20 83 e2\n08 20 8d e5\n03 20 a0 e3\n0c 20 cd e5\n07 30 d3 e5\n0d 30 cd e5\nc4 f6 ff eb\n14 d0 8d e2\n04 f0 9d e4\n'
+p47
+S'.text:000136d0\n.text:000136d4\n.text:000136d8\n.text:000136dc\n.text:000136e0\n.text:000136e4\n.text:000136e8\n.text:000136ec\n.text:000136f0\n.text:000136f4\n.text:000136f8\n.text:000136fc\n.text:00013700\n.text:00013704\n.text:00013708\n.text:0001370c\n'
+p48
+tp49
+sS'FUN_0001252c'
+p50
+(S'\n__stdcall FUN_0001252c()\n'
+p51
+V\u000aint FUN_0001252c(int iParm1,int iParm2,int iParm3)\u000a\u000a{\u000a  int iVar1;\u000a  int iVar2;\u000a  int iVar3;\u000a  code *pcVar4;\u000a  undefined4 uVar5;\u000a  uint uVar6;\u000a  undefined4 local_3e8;\u000a  undefined4 local_3e4;\u000a  undefined4 uStack992;\u000a  undefined4 uStack988;\u000a  undefined4 uStack984;\u000a  undefined4 local_3d4;\u000a  undefined4 uStack976;\u000a  undefined4 uStack972;\u000a  undefined4 uStack968;\u000a  undefined4 local_3c4;\u000a  undefined4 uStack960;\u000a  undefined4 uStack956;\u000a  undefined4 uStack952;\u000a  undefined4 local_3b4;\u000a  undefined4 local_3b0;\u000a  undefined4 uStack940;\u000a  undefined4 local_3a8;\u000a  undefined4 local_3a4;\u000a  undefined auStack520 [56];\u000a  undefined4 local_1d0;\u000a  \u000a  pcVar4 = *(code **)(iParm1 + 0xc);\u000a  uVar5 = *(undefined4 *)(iParm1 + 0x18);\u000a  local_3e4 = *(undefined4 *)(iParm2 + 4);\u000a  uStack992 = *(undefined4 *)(iParm2 + 8);\u000a  uStack988 = *(undefined4 *)(iParm2 + 0xc);\u000a  uStack984 = *(undefined4 *)(iParm2 + 0x10);\u000a  iVar3 = 0;\u000a  local_3d4 = *(undefined4 *)(iParm2 + 0x14);\u000a  uStack976 = *(undefined4 *)(iParm2 + 0x18);\u000a  uStack972 = *(undefined4 *)(iParm2 + 0x1c);\u000a  uStack968 = *(undefined4 *)(iParm2 + 0x20);\u000a  local_3c4 = *(undefined4 *)(iParm2 + 0x24);\u000a  uStack960 = *(undefined4 *)(iParm2 + 0x28);\u000a  uStack956 = *(undefined4 *)(iParm2 + 0x2c);\u000a  uStack952 = *(undefined4 *)(iParm2 + 0x30);\u000a  local_3b4 = *(undefined4 *)(iParm2 + 0x34);\u000a  local_3b0 = *(undefined4 *)(iParm2 + 0x38);\u000a  uStack940 = *(undefined4 *)(iParm2 + 0x3c);\u000a  local_3a8 = *(undefined4 *)(iParm2 + 0x40);\u000a  local_3e8 = 0;\u000a  do {\u000a    iVar1 = FUN_0001233c(iParm1,local_3a8);\u000a    if (iParm3 == 0) {\u000a      uVar6 = 9;\u000a    }\u000a    else {\u000a      uVar6 = 10;\u000a    }\u000a    if (iVar1 == 0) {\u000a      *(undefined4 *)(iParm1 + 0x14) = local_3a8;\u000a      memcpy(auStack520,&local_3e8,0x1e0);\u000a      iVar3 = (**(code **)(iParm1 + 0x10))(uVar6,iParm1,auStack520);\u000a      local_3a4 = local_1d0;\u000a    }\u000a    else {\u000a      uVar6 = uVar6 | 0x10;\u000a      local_3a4 = local_3b0;\u000a    }\u000a    iVar2 = (*pcVar4)(1,uVar6,iParm1,iParm1,&local_3e8,uVar5);\u000a    if (iVar2 != 0) {\u000a      return 9;\u000a    }\u000a    if (iVar1 != 0) {\u000a      return iVar1;\u000a    }\u000a    memcpy(&local_3e8,auStack520,0x1e0);\u000a    iParm3 = iVar1;\u000a  } while (iVar3 == 8);\u000a  if (iVar3 == 7) {\u000a    FUN_000124c4(0,local_3a8);\u000a    restore_core_regs(&local_3e4);\u000a  }\u000a  return 9;\u000a}\u000a\u000a
+p52
+S'stmdb sp!,{ r4 r5 r6 r7 r8 r9 r10 r11 lr }\nadd lr,r1,#0x4\nldr r8,[r0,#0xc]\ncpy r4,r0\nldr r9,[r0,#0x18]\ncpy r10,r2\nldmia lr!,{r0 r1 r2 r3 }\nsub sp,sp,#0x3cc\nadd r12,sp,#0xc\nadd r11,sp,#0x8\nadd r7,sp,#0x1e8\nmov r6,#0x0\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr!,{r0 r1 r2 r3 }\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr!,{r0 r1 r2 r3 }\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr,{r0 r1 r2 r3 }\nstmia r12,{r0 r1 r2 r3 }\nstr r6,[sp,#0x8]\ncpy r0,r4\nldr r1,[sp,#0x48]\nbl 0x0001233c\ncmp r10,#0x0\nmovne r10,#0xa\nmoveq r10,#0x9\nsubs r5,r0,#0x0\norrne r10,r10,#0x10\nldrne r3,[sp,#0x40]\nbne 0x000125d8\nldr r3,[sp,#0x48]\ncpy r1,r11\nmov r2,#0x1e0\ncpy r0,r7\nstr r3,[r4,#0x14]\nbl 0x000111d4\nldr r3,[r4,#0x10]\ncpy r0,r10\ncpy r1,r4\ncpy r2,r7\nblx r3\nldr r3,[sp,#0x220]\ncpy r6,r0\nstr r3,[sp,#0x4c]\nmov r0,#0x1\nstr r11,[sp,#0x0]\ncpy r1,r10\nstr r9,[sp,#0x4]\ncpy r2,r4\ncpy r3,r4\nblx r8\ncmp r0,#0x0\nbne 0x00012640\ncmp r5,#0x0\nbne 0x00012648\ncpy r0,r11\ncpy r1,r7\nmov r2,#0x1e0\ncpy r10,r5\nbl 0x000111d4\ncmp r6,#0x8\nbeq 0x0001257c\ncmp r6,#0x7\nbne 0x00012640\ncpy r0,r5\nldr r1,[sp,#0x48]\nbl 0x000124c4\nadd r0,sp,#0xc\nbl 0x000111c8\nmov r0,#0x9\nb 0x0001264c\ncpy r0,r5\nadd sp,sp,#0x3cc\nldmia sp!,{ r4 r5 r6 r7 r8 r9 r10 r11 pc }\n'
+p53
+S'f0 4f 2d e9\n04 e0 81 e2\n0c 80 90 e5\n00 40 a0 e1\n18 90 90 e5\n02 a0 a0 e1\n0f 00 be e8\nf3 df 4d e2\n0c c0 8d e2\n08 b0 8d e2\n7a 7f 8d e2\n00 60 a0 e3\n0f 00 ac e8\n0f 00 be e8\n0f 00 ac e8\n0f 00 be e8\n0f 00 ac e8\n0f 00 9e e8\n0f 00 8c e8\n08 60 8d e5\n04 00 a0 e1\n48 10 9d e5\n6c ff ff eb\n00 00 5a e3\n0a a0 a0 13\n09 a0 a0 03\n00 50 50 e2\n10 a0 8a 13\n40 30 9d 15\n0c 00 00 1a\n48 30 9d e5\n0b 10 a0 e1\n1e 2e a0 e3\n07 00 a0 e1\n14 30 84 e5\n05 fb ff eb\n10 30 94 e5\n0a 00 a0 e1\n04 10 a0 e1\n07 20 a0 e1\n33 ff 2f e1\n20 32 9d e5\n00 60 a0 e1\n4c 30 8d e5\n01 00 a0 e3\n00 b0 8d e5\n0a 10 a0 e1\n04 90 8d e5\n04 20 a0 e1\n04 30 a0 e1\n38 ff 2f e1\n00 00 50 e3\n0f 00 00 1a\n00 00 55 e3\n0f 00 00 1a\n0b 00 a0 e1\n07 10 a0 e1\n1e 2e a0 e3\n05 a0 a0 e1\ned fa ff eb\n08 00 56 e3\nd5 ff ff 0a\n07 00 56 e3\n04 00 00 1a\n05 00 a0 e1\n48 10 9d e5\na2 ff ff eb\n0c 00 8d e2\ne1 fa ff eb\n09 00 a0 e3\n00 00 00 ea\n05 00 a0 e1\nf3 df 8d e2\nf0 8f bd e8\n'
+p54
+S'.text:0001252c\n.text:00012530\n.text:00012534\n.text:00012538\n.text:0001253c\n.text:00012540\n.text:00012544\n.text:00012548\n.text:0001254c\n.text:00012550\n.text:00012554\n.text:00012558\n.text:0001255c\n.text:00012560\n.text:00012564\n.text:00012568\n.text:0001256c\n.text:00012570\n.text:00012574\n.text:00012578\n.text:0001257c\n.text:00012580\n.text:00012584\n.text:00012588\n.text:0001258c\n.text:00012590\n.text:00012594\n.text:00012598\n.text:0001259c\n.text:000125a0\n.text:000125a4\n.text:000125a8\n.text:000125ac\n.text:000125b0\n.text:000125b4\n.text:000125b8\n.text:000125bc\n.text:000125c0\n.text:000125c4\n.text:000125c8\n.text:000125cc\n.text:000125d0\n.text:000125d4\n.text:000125d8\n.text:000125dc\n.text:000125e0\n.text:000125e4\n.text:000125e8\n.text:000125ec\n.text:000125f0\n.text:000125f4\n.text:000125f8\n.text:000125fc\n.text:00012600\n.text:00012604\n.text:00012608\n.text:0001260c\n.text:00012610\n.text:00012614\n.text:00012618\n.text:0001261c\n.text:00012620\n.text:00012624\n.text:00012628\n.text:0001262c\n.text:00012630\n.text:00012634\n.text:00012638\n.text:0001263c\n.text:00012640\n.text:00012644\n.text:00012648\n.text:0001264c\n.text:00012650\n'
+p55
+tp56
+sS'_Unwind_GetDataRelBase'
+p57
+(S'\n__stdcall _Unwind_GetDataRelBase()\n'
+p58
+V\u000avoid _Unwind_GetDataRelBase(void)\u000a\u000a{\u000a                    /* WARNING: Subroutine does not return */\u000a  abort();\u000a}\u000a\u000a
+p59
+S'stmdb sp!,{ r3 lr }\nbl 0x000111bc\n'
+p60
+S'08 40 2d e9\n9d f6 ff eb\n'
+p61
+S'.text:0001373c\n.text:00013740\n'
+p62
+tp63
+sS'FUN_000128ac'
+p64
+(S'\n__stdcall FUN_000128ac()\n'
+p65
+V\u000avoid FUN_000128ac(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3)\u000a\u000a{\u000a  undefined4 local_c;\u000a  \u000a  local_c = uParm3;\u000a  _Unwind_VRS_Set(uParm1,0,uParm2,0,&local_c,uParm2,uParm3);\u000a  return;\u000a}\u000a\u000a
+p66
+S'stmdb sp!,{ r0 r1 r2 r3 r4 lr }\nadd r3,sp,#0x10\ncpy r12,r1\nmov r1,#0x0\nstr r2,[r3,#-0x4]!\ncpy r2,r12\nstr r3,[sp,#0x0]\ncpy r3,r1\nbl 0x000111f8\nadd sp,sp,#0x14\nldr pc,[sp],#0x4\n'
+p67
+S'1f 40 2d e9\n10 30 8d e2\n01 c0 a0 e1\n00 10 a0 e3\n04 20 23 e5\n0c 20 a0 e1\n00 30 8d e5\n01 30 a0 e1\n49 fa ff eb\n14 d0 8d e2\n04 f0 9d e4\n'
+p68
+S'.text:000128ac\n.text:000128b0\n.text:000128b4\n.text:000128b8\n.text:000128bc\n.text:000128c0\n.text:000128c4\n.text:000128c8\n.text:000128cc\n.text:000128d0\n.text:000128d4\n'
+p69
+tp70
+sS'_Unwind_GetTextRelBase'
+p71
+(S'\n__stdcall _Unwind_GetTextRelBase()\n'
+p72
+V\u000avoid _Unwind_GetTextRelBase(void)\u000a\u000a{\u000a                    /* WARNING: Subroutine does not return */\u000a  abort();\u000a}\u000a\u000a
+p73
+S'stmdb sp!,{ r3 lr }\nbl 0x000111bc\n'
+p74
+S'08 40 2d e9\n9b f6 ff eb\n'
+p75
+S'.text:00013744\n.text:00013748\n'
+p76
+tp77
+sS'_Unwind_Resume'
+p78
+(S'\n__stdcall _Unwind_Resume()\n'
+p79
+V\u000avoid _Unwind_Resume(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 uStack68;\u000a  undefined4 uStack64;\u000a  undefined4 uStack60;\u000a  undefined4 uStack56;\u000a  undefined4 uStack52;\u000a  undefined4 uStack4;\u000a  \u000a  uStack4 = 0x13224;\u000a  uStack68 = 0;\u000a  uStack64 = uParm1;\u000a  uStack60 = uParm2;\u000a  uStack56 = uParm3;\u000a  uStack52 = uParm4;\u000a  __gnu_Unwind_Resume(uParm1,&uStack68,uParm3,0,uParm3);\u000a  return;\u000a}\u000a\u000a
+p80
+S'stmdb sp!,{ sp lr pc}\nstmdb sp!,{ r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 }\nmov r3,#0x0\nstmdb sp!,{ r2 r3 }\nadd r1,sp,#0x4\nbl 0x00011264\nldr lr,[sp,#0x40]\nadd sp,sp,#0x48\nbx lr\n'
+p81
+S'00 e0 2d e9\nff 1f 2d e9\n00 30 a0 e3\n0c 00 2d e9\n04 10 8d e2\n0b f8 ff eb\n40 e0 9d e5\n48 d0 8d e2\n1e ff 2f e1\n'
+p82
+S'.text:0001321c\n.text:00013220\n.text:00013224\n.text:00013228\n.text:0001322c\n.text:00013230\n.text:00013234\n.text:00013238\n.text:0001323c\n'
+p83
+tp84
+sS'restore_core_regs'
+p85
+(S'\n__stdcall restore_core_regs()\n'
+p86
+V\u000aundefined8 restore_core_regs(undefined4 *puParm1)\u000a\u000a{\u000a  return CONCAT44(*puParm1,puParm1[1]);\u000a}\u000a\u000a
+p87
+S'add r1,r0,#0x34\nldmia r1,{ r3 r4 r5 }\nstmdb sp!,{ r3 r4 r5 }\nldmia r0,{r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 }\nldmia sp,{ sp lr pc }\n'
+p88
+S'34 10 80 e2\n38 00 91 e8\n38 00 2d e9\nff 0f 90 e8\n00 e0 9d e8\n'
+p89
+S'.text:00013104\n.text:00013108\n.text:0001310c\n.text:00013110\n.text:00013114\n'
+p90
+tp91
+sS'__gnu_Unwind_Save_VFP_D'
+p92
+(S'\n__stdcall __gnu_Unwind_Save_VFP_D()\n'
+p93
+V\u000a/* WARNING: Control flow encountered unimplemented instructions */\u000a\u000avoid __gnu_Unwind_Save_VFP_D(void)\u000a\u000a{\u000a                    /* WARNING: Unimplemented instruction - Truncating control flow here */\u000a  halt_unimplemented();\u000a}\u000a\u000a
+p94
+S'vstmia r0,{d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15}\nbx lr\n'
+p95
+S'20 0b 80 ec\n1e ff 2f e1\n'
+p96
+S'.text:00013130\n.text:00013134\n'
+p97
+tp98
+sS'_Unwind_VRS_Set'
+p99
+(S'\n__stdcall _Unwind_VRS_Set(undefined param_1, undefined param_2, undefined param_3, undefined param_4, undefined4 param_5)\n'
+p100
+V\u000aundefined4\u000a_Unwind_VRS_Set(int param_1,undefined4 param_2,uint param_3,int param_4,undefined4 *param_5)\u000a\u000a{\u000a  bool bVar1;\u000a  \u000a  switch(param_2) {\u000a  case 0:\u000a    bVar1 = param_3 == 0xf;\u000a    if (param_3 < 0x10) {\u000a      bVar1 = param_4 == 0;\u000a    }\u000a    if (bVar1) {\u000a      *(undefined4 *)(param_1 + param_3 * 4 + 4) = *param_5;\u000a      return 0;\u000a    }\u000a    break;\u000a  case 1:\u000a    return 1;\u000a  case 2:\u000a    break;\u000a  case 3:\u000a    return 1;\u000a  case 4:\u000a    return 1;\u000a  }\u000a  return 2;\u000a}\u000a\u000a
+p101
+S'cmp r1,#0x4\naddls pc,pc,r1, lsl #0x2\nb 0x000128a4\nb 0x00012870\nb 0x0001289c\nb 0x000128a4\nb 0x0001289c\nb 0x0001289c\ncmp r2,#0xf\ncmpls r3,#0x0\nmovne r3,#0x1\nmoveq r3,#0x0\nbne 0x000128a4\nldr r1,[sp,#0x0]\nadd r0,r0,r2, lsl #0x2\nldr r1,[r1,#0x0]\nstr r1,[r0,#0x4]\ncpy r0,r3\nbx lr\nmov r0,#0x1\nbx lr\nmov r0,#0x2\nbx lr\n'
+p102
+S'04 00 51 e3\n01 f1 8f 90\n11 00 00 ea\n03 00 00 ea\n0d 00 00 ea\n0e 00 00 ea\n0b 00 00 ea\n0a 00 00 ea\n0f 00 52 e3\n00 00 53 93\n01 30 a0 13\n00 30 a0 03\n07 00 00 1a\n00 10 9d e5\n02 01 80 e0\n00 10 91 e5\n04 10 80 e5\n03 00 a0 e1\n1e ff 2f e1\n01 00 a0 e3\n1e ff 2f e1\n02 00 a0 e3\n1e ff 2f e1\n'
+p103
+S'.text:00012850\n.text:00012854\n.text:00012858\n.text:0001285c\n.text:00012860\n.text:00012864\n.text:00012868\n.text:0001286c\n.text:00012870\n.text:00012874\n.text:00012878\n.text:0001287c\n.text:00012880\n.text:00012884\n.text:00012888\n.text:0001288c\n.text:00012890\n.text:00012894\n.text:00012898\n.text:0001289c\n.text:000128a0\n.text:000128a4\n.text:000128a8\n'
+p104
+tp105
+sS'FUN_00012230'
+p106
+(S'\n__stdcall FUN_00012230()\n'
+p107
+V\u000avoid FUN_00012230(undefined4 uParm1,undefined4 uParm2,int iParm3,undefined uParm4,undefined4 uParm5,\u000a                 undefined4 uParm6,undefined4 uParm7)\u000a\u000a{\u000a  undefined uVar1;\u000a  int iVar2;\u000a  int iVar3;\u000a  undefined4 uVar4;\u000a  int iVar5;\u000a  int unaff_r4;\u000a  int unaff_r5;\u000a  int unaff_r6;\u000a  undefined4 uVar6;\u000a  \u000a  uVar6 = *(undefined4 *)(unaff_r5 + 0x40);\u000a  iVar2 = *(int *)(unaff_r4 + 100);\u000a  *(undefined *)(iParm3 + 0x11) = uParm4;\u000a  iVar3 = *(int *)(unaff_r6 + 0x14);\u000a  *(int *)(unaff_r5 + 0x74) = unaff_r6;\u000a  iVar5 = *(int *)(iVar2 + 0x24);\u000a  *(undefined *)(iVar5 + 0x19) = (char)iVar2;\u000a  *(undefined *)(unaff_r5 + 1) = (char)unaff_r6;\u000a  uVar1 = (undefined)unaff_r5;\u000a  *(undefined *)(unaff_r6 + 0x11) = uVar1;\u000a  *(undefined *)(iVar3 + 0x11) = uParm4;\u000a  *(int *)(unaff_r6 + 0x54) = iVar3;\u000a  iVar2 = *(int *)(iVar5 + 0x54);\u000a  *(undefined4 *)(iVar5 + 0x54) = uVar6;\u000a  iVar5 = iVar5 + unaff_r6;\u000a  *(undefined *)(unaff_r6 + 0xd) = (char)uVar6;\u000a  *(undefined *)(iVar5 + 0x11) = uVar1;\u000a  *(int *)(iVar2 + 0x14) = iVar5;\u000a  *(int *)(unaff_r5 + 0x44) = unaff_r6;\u000a  uVar4 = *(undefined4 *)(unaff_r6 + 0x74);\u000a  *(int *)(unaff_r5 + 0x44) = iVar2;\u000a  *(undefined4 *)(unaff_r5 + 0x30) = uVar6;\u000a  iVar3 = *(int *)(unaff_r5 + 100);\u000a  *(int *)(unaff_r6 + 0x54) = iVar5;\u000a  *(undefined *)(unaff_r5 + 0x11) = (char)unaff_r6;\u000a  *(undefined *)(unaff_r5 + 8) = (char)iVar3;\u000a  *(undefined *)(iVar5 + 0xd) = uVar1;\u000a  *(undefined *)(unaff_r6 + 0xd) = (char)(unaff_r6 << 1);\u000a  *(undefined *)(iVar5 + 0x11) = uVar1;\u000a  *(int *)(iVar2 + 0x14) = unaff_r5;\u000a  *(int *)(unaff_r5 + 0x14) = unaff_r6;\u000a  *(int *)(iVar5 + 0x54) = iVar3 >> unaff_r5;\u000a  *(undefined *)(unaff_r5 + 0x15) = (char)uVar4;\u000a  *(int *)(unaff_r5 + 0x40) = unaff_r6;\u000a  rrr(10,0x54,6,uParm5,uParm6,uParm7,6);\u000a  return;\u000a}\u000a\u000a
+p108
+S'add r0,#0x0\nb 0x00011d56\n'
+p109
+S'00 30\n90 e5\n'
+p110
+S'.text:00012230\n.text:00012232\n'
+p111
+tp112
+sS'__gnu_Unwind_Backtrace'
+p113
+(S'\n__stdcall __gnu_Unwind_Backtrace()\n'
+p114
+V\u000aint __gnu_Unwind_Backtrace(code *pcParm1,undefined4 uParm2,int iParm3)\u000a\u000a{\u000a  int iVar1;\u000a  undefined auStack592 [16];\u000a  code *local_240;\u000a  undefined4 local_1f8;\u000a  undefined4 local_1f4;\u000a  undefined4 uStack496;\u000a  undefined4 uStack492;\u000a  undefined4 uStack488;\u000a  undefined4 local_1e4;\u000a  undefined4 uStack480;\u000a  undefined4 uStack476;\u000a  undefined4 uStack472;\u000a  undefined4 local_1d4;\u000a  undefined4 uStack464;\u000a  undefined4 uStack460;\u000a  undefined4 uStack456;\u000a  undefined4 local_1c4;\u000a  undefined4 uStack448;\u000a  undefined4 uStack444;\u000a  undefined4 local_1b8;\u000a  \u000a  *(undefined4 *)(iParm3 + 0x40) = *(undefined4 *)(iParm3 + 0x3c);\u000a  local_1f4 = *(undefined4 *)(iParm3 + 4);\u000a  uStack496 = *(undefined4 *)(iParm3 + 8);\u000a  uStack492 = *(undefined4 *)(iParm3 + 0xc);\u000a  uStack488 = *(undefined4 *)(iParm3 + 0x10);\u000a  local_1e4 = *(undefined4 *)(iParm3 + 0x14);\u000a  uStack480 = *(undefined4 *)(iParm3 + 0x18);\u000a  uStack476 = *(undefined4 *)(iParm3 + 0x1c);\u000a  uStack472 = *(undefined4 *)(iParm3 + 0x20);\u000a  local_1d4 = *(undefined4 *)(iParm3 + 0x24);\u000a  uStack464 = *(undefined4 *)(iParm3 + 0x28);\u000a  uStack460 = *(undefined4 *)(iParm3 + 0x2c);\u000a  uStack456 = *(undefined4 *)(iParm3 + 0x30);\u000a  local_1c4 = *(undefined4 *)(iParm3 + 0x34);\u000a  uStack448 = *(undefined4 *)(iParm3 + 0x38);\u000a  uStack444 = *(undefined4 *)(iParm3 + 0x3c);\u000a  local_1b8 = *(undefined4 *)(iParm3 + 0x40);\u000a  local_1f8 = 0xffffffff;\u000a  do {\u000a    iVar1 = FUN_0001233c(auStack592,local_1b8);\u000a    if (iVar1 != 0) {\u000aLAB_0001293c:\u000a      iVar1 = 9;\u000a      break;\u000a    }\u000a    FUN_000128ac(&local_1f8,0xc,auStack592);\u000a    iVar1 = (*pcParm1)(&local_1f8,uParm2);\u000a    if (iVar1 != 0) goto LAB_0001293c;\u000a    iVar1 = (*local_240)(8,auStack592,&local_1f8);\u000a  } while ((iVar1 - 5U & 0xfffffffb) != 0);\u000a  FUN_0001243c(&local_1f8);\u000a  return iVar1;\u000a}\u000a\u000a
+p115
+S'ldr r3,[r2,#0x3c]\nadd r12,r2,#0x4\nstmdb sp!,{ r4 r5 r6 r7 r8 lr }\ncpy r7,r0\nstr r3,[r2,#0x40]\ncpy r8,r1\nldmia r12!,{r0 r1 r2 r3 }\nsub sp,sp,#0x238\nadd lr,sp,#0x5c\nadd r4,sp,#0x58\ncpy r6,sp\nstmia lr!,{r0 r1 r2 r3 }\nldmia r12!,{r0 r1 r2 r3 }\nstmia lr!,{r0 r1 r2 r3 }\nldmia r12!,{r0 r1 r2 r3 }\nstmia lr!,{r0 r1 r2 r3 }\nldmia r12,{r0 r1 r2 r3 }\nstmia lr,{r0 r1 r2 r3 }\nmvn r3,#0x0\nstr r3,[sp,#0x58]\ncpy r0,r6\nldr r1,[sp,#0x98]\nbl 0x0001233c\ncmp r0,#0x0\nbeq 0x00012944\nmov r5,#0x9\nb 0x0001298c\ncpy r0,r4\nmov r1,#0xc\ncpy r2,r6\nbl 0x000128ac\ncpy r0,r4\ncpy r1,r8\nblx r7\ncmp r0,#0x0\nbne 0x0001293c\nldr r3,[sp,#0x10]\nmov r0,#0x8\ncpy r1,r6\ncpy r2,r4\nblx r3\nsub r3,r0,#0x5\ncpy r5,r0\nbics r3,r3,#0x4\nbne 0x00012928\ncpy r0,r4\nbl 0x0001243c\ncpy r0,r5\nadd sp,sp,#0x238\nldmia sp!,{ r4 r5 r6 r7 r8 pc }\n'
+p116
+S'3c 30 92 e5\n04 c0 82 e2\nf0 41 2d e9\n00 70 a0 e1\n40 30 82 e5\n01 80 a0 e1\n0f 00 bc e8\n8e df 4d e2\n5c e0 8d e2\n58 40 8d e2\n0d 60 a0 e1\n0f 00 ae e8\n0f 00 bc e8\n0f 00 ae e8\n0f 00 bc e8\n0f 00 ae e8\n0f 00 9c e8\n0f 00 8e e8\n00 30 e0 e3\n58 30 8d e5\n06 00 a0 e1\n98 10 9d e5\n81 fe ff eb\n00 00 50 e3\n01 00 00 0a\n09 50 a0 e3\n11 00 00 ea\n04 00 a0 e1\n0c 10 a0 e3\n06 20 a0 e1\nd5 ff ff eb\n04 00 a0 e1\n08 10 a0 e1\n37 ff 2f e1\n00 00 50 e3\nf4 ff ff 1a\n10 30 9d e5\n08 00 a0 e3\n06 10 a0 e1\n04 20 a0 e1\n33 ff 2f e1\n05 30 40 e2\n00 50 a0 e1\n04 30 d3 e3\ne6 ff ff 1a\n04 00 a0 e1\na9 fe ff eb\n05 00 a0 e1\n8e df 8d e2\nf0 81 bd e8\n'
+p117
+S'.text:000128d8\n.text:000128dc\n.text:000128e0\n.text:000128e4\n.text:000128e8\n.text:000128ec\n.text:000128f0\n.text:000128f4\n.text:000128f8\n.text:000128fc\n.text:00012900\n.text:00012904\n.text:00012908\n.text:0001290c\n.text:00012910\n.text:00012914\n.text:00012918\n.text:0001291c\n.text:00012920\n.text:00012924\n.text:00012928\n.text:0001292c\n.text:00012930\n.text:00012934\n.text:00012938\n.text:0001293c\n.text:00012940\n.text:00012944\n.text:00012948\n.text:0001294c\n.text:00012950\n.text:00012954\n.text:00012958\n.text:0001295c\n.text:00012960\n.text:00012964\n.text:00012968\n.text:0001296c\n.text:00012970\n.text:00012974\n.text:00012978\n.text:0001297c\n.text:00012980\n.text:00012984\n.text:00012988\n.text:0001298c\n.text:00012990\n.text:00012994\n.text:00012998\n.text:0001299c\n'
+p118
+tp119
+sS'__gnu_Unwind_Resume'
+p120
+(S'\n__stdcall __gnu_Unwind_Resume()\n'
+p121
+V\u000avoid __gnu_Unwind_Resume(int iParm1,int iParm2)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = *(int *)(iParm1 + 0xc);\u000a  *(undefined4 *)(iParm2 + 0x40) = *(undefined4 *)(iParm1 + 0x14);\u000a  if (iVar1 == 0) {\u000a    iVar1 = (**(code **)(iParm1 + 0x10))(2,iParm1,iParm2);\u000a    if (iVar1 != 7) {\u000a      if (iVar1 != 8) goto LAB_0001278c;\u000a      FUN_000124c8(iParm1,iParm2);\u000a    }\u000a    FUN_000124c4(0,*(undefined4 *)(iParm2 + 0x40));\u000a    restore_core_regs(iParm2 + 4);\u000a  }\u000a  else {\u000a    FUN_0001252c(iParm1,iParm2,1);\u000a  }\u000aLAB_0001278c:\u000a                    /* WARNING: Subroutine does not return */\u000a  abort();\u000a}\u000a\u000a
+p122
+S'stmdb sp!,{ r4 r5 r6 lr }\ncpy r5,r0\nldr r6,[r0,#0xc]\ncpy r4,r1\nldr r3,[r0,#0x14]\ncmp r6,#0x0\nstr r3,[r1,#0x40]\nbeq 0x00012748\nmov r2,#0x1\nbl 0x0001252c\nb 0x0001278c\nldr r3,[r0,#0x10]\ncpy r1,r5\nmov r0,#0x2\ncpy r2,r4\nblx r3\ncmp r0,#0x7\nbeq 0x00012778\ncmp r0,#0x8\nbne 0x0001278c\ncpy r0,r5\ncpy r1,r4\nbl 0x000124c8\ncpy r0,r6\nldr r1,[r4,#0x40]\nbl 0x000124c4\nadd r0,r4,#0x4\nbl 0x000111c8\nbl 0x000111bc\n'
+p123
+S'70 40 2d e9\n00 50 a0 e1\n0c 60 90 e5\n01 40 a0 e1\n14 30 90 e5\n00 00 56 e3\n40 30 81 e5\n02 00 00 0a\n01 20 a0 e3\n79 ff ff eb\n10 00 00 ea\n10 30 90 e5\n05 10 a0 e1\n02 00 a0 e3\n04 20 a0 e1\n33 ff 2f e1\n07 00 50 e3\n04 00 00 0a\n08 00 50 e3\n07 00 00 1a\n05 00 a0 e1\n04 10 a0 e1\n53 ff ff eb\n06 00 a0 e1\n40 10 94 e5\n4f ff ff eb\n04 00 84 e2\n8e fa ff eb\n8a fa ff eb\n'
+p124
+S'.text:0001271c\n.text:00012720\n.text:00012724\n.text:00012728\n.text:0001272c\n.text:00012730\n.text:00012734\n.text:00012738\n.text:0001273c\n.text:00012740\n.text:00012744\n.text:00012748\n.text:0001274c\n.text:00012750\n.text:00012754\n.text:00012758\n.text:0001275c\n.text:00012760\n.text:00012764\n.text:00012768\n.text:0001276c\n.text:00012770\n.text:00012774\n.text:00012778\n.text:0001277c\n.text:00012780\n.text:00012784\n.text:00012788\n.text:0001278c\n'
+p125
+tp126
+sS'FUN_0001330c'
+p127
+(S'\n__stdcall FUN_0001330c()\n'
+p128
+V\u000aundefined4 FUN_0001330c(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 local_c;\u000a  \u000a  local_c = uParm4;\u000a  _Unwind_VRS_Get(uParm1,0,0xc,0,&local_c,uParm2,uParm3);\u000a  return local_c;\u000a}\u000a\u000a
+p129
+S'stmdb sp!,{ r0 r1 r2 r3 r4 lr }\nmov r1,#0x0\nadd r3,sp,#0xc\nmov r2,#0xc\nstr r3,[sp,#0x0]\ncpy r3,r1\nbl 0x000111ec\nldr r0,[sp,#0xc]\nadd sp,sp,#0x14\nldr pc,[sp],#0x4\n'
+p130
+S'1f 40 2d e9\n00 10 a0 e3\n0c 30 8d e2\n0c 20 a0 e3\n00 30 8d e5\n01 30 a0 e1\nb0 f7 ff eb\n0c 00 9d e5\n14 d0 8d e2\n04 f0 9d e4\n'
+p131
+S'.text:0001330c\n.text:00013310\n.text:00013314\n.text:00013318\n.text:0001331c\n.text:00013320\n.text:00013324\n.text:00013328\n.text:0001332c\n.text:00013330\n'
+p132
+tp133
+sS'FUN_0001233c'
+p134
+(S'\n__stdcall FUN_0001233c()\n'
+p135
+V\u000aundefined4 FUN_0001233c(int iParm1,int iParm2,undefined4 uParm3)\u000a\u000a{\u000a  int iVar1;\u000a  undefined4 uVar2;\u000a  int iVar3;\u000a  bool bVar4;\u000a  int local_14;\u000a  undefined4 uStack16;\u000a  \u000a  if (*(int *)(DAT_00012430 + 0x12350) == 0) {\u000a    iVar1 = *(int *)(DAT_00012438 + 0x12390);\u000a    local_14 = *(int *)(DAT_00012434 + 0x1238c) - iVar1 >> 3;\u000a    uStack16 = uParm3;\u000a  }\u000a  else {\u000a    local_14 = iParm2;\u000a    uStack16 = uParm3;\u000a    iVar1 = __gnu_Unwind_Find_exidx\u000a                      (iParm2 + -2,&local_14,uParm3,*(int *)(DAT_00012430 + 0x12350),iParm1);\u000a    if (iVar1 == 0) goto LAB_0001236c;\u000a  }\u000a  iVar1 = FUN_00012248(iVar1,local_14,iParm2 + -2);\u000a  if (iVar1 != 0) {\u000a    uVar2 = FUN_00012230();\u000a    iVar3 = *(int *)(iVar1 + 4);\u000a    bVar4 = iVar3 == 1;\u000a    if (bVar4) {\u000a      iVar3 = 0;\u000a      *(undefined4 *)(iParm1 + 0x10) = 0;\u000a    }\u000a    *(undefined4 *)(iParm1 + 0x48) = uVar2;\u000a    if (bVar4) {\u000a      return 5;\u000a    }\u000a    if (iVar3 < 0) {\u000a      *(int *)(iParm1 + 0x4c) = iVar1 + 4;\u000a    }\u000a    else {\u000a      uVar2 = FUN_00012230();\u000a      *(undefined4 *)(iParm1 + 0x4c) = uVar2;\u000a    }\u000a    *(uint *)(iParm1 + 0x50) = (uint)(iVar3 < 0);\u000a    if (**(int **)(iParm1 + 0x4c) < 0) {\u000a      iVar1 = FUN_000122ec((uint)(**(int **)(iParm1 + 0x4c) << 4) >> 0x1c);\u000a      *(int *)(iParm1 + 0x10) = iVar1;\u000a      if (iVar1 != 0) {\u000a        return 0;\u000a      }\u000a      return 9;\u000a    }\u000a    uVar2 = FUN_00012230();\u000a    *(undefined4 *)(iParm1 + 0x10) = uVar2;\u000a    return 0;\u000a  }\u000aLAB_0001236c:\u000a  *(undefined4 *)(iParm1 + 0x10) = 0;\u000a  return 9;\u000a}\u000a\u000a
+p136
+S'ldr r3,[0x12430]\nstmdb sp!,{ r0 r1 r2 r4 r5 lr }\ncpy r4,r0\nldr r3,[pc,r3]\nsub r5,r1,#0x2\ncmp r3,#0x0\nbeq 0x0001237c\ncpy r0,r5\nadd r1,sp,#0x4\nbl 0x00011174\ncmp r0,#0x0\nbne 0x00012398\nmov r3,#0x0\nmov r0,#0x9\nstr r3,[r4,#0x10]\nb 0x00012428\nldr r3,[0x12434]\nldr r0,[0x12438]\nldr r3,[pc,r3]\nldr r0,[pc,r0]\nrsb r3,r0,r3\nmov r3,r3, asr #0x3\nstr r3,[sp,#0x4]\ncpy r2,r5\nldr r1,[sp,#0x4]\nbl 0x00012248\nsubs r5,r0,#0x0\nbeq 0x0001236c\nbl 0x00012230\nldr r3,[r5,#0x4]\ncmp r3,#0x1\nmoveq r3,#0x0\nstreq r3,[r4,#0x10]\nstr r0,[r4,#0x48]\nmoveq r0,#0x5\nbeq 0x00012428\ncmp r3,#0x0\nadd r0,r5,#0x4\nstrlt r0,[r4,#0x4c]\nmovlt r3,#0x1\nblt 0x000123ec\nbl 0x00012230\nmov r3,#0x0\nstr r0,[r4,#0x4c]\nldr r0,[r4,#0x4c]\nstr r3,[r4,#0x50]\nldr r3,[r0,#0x0]\ncmp r3,#0x0\nbge 0x0001241c\nubfx r0,r3,#0x18,#0x4\nbl 0x000122ec\ncmp r0,#0x0\nstr r0,[r4,#0x10]\nmoveq r0,#0x9\nmovne r0,#0x0\nb 0x00012428\nbl 0x00012230\nstr r0,[r4,#0x10]\nmov r0,#0x0\nadd sp,sp,#0xc\nldmia sp!,{ r4 r5 pc }\n'
+p137
+S'ec 30 9f e5\n37 40 2d e9\n00 40 a0 e1\n03 30 9f e7\n02 50 41 e2\n00 00 53 e3\n08 00 00 0a\n05 00 a0 e1\n04 10 8d e2\n83 fb ff eb\n00 00 50 e3\n0a 00 00 1a\n00 30 a0 e3\n09 00 a0 e3\n10 30 84 e5\n2a 00 00 ea\nb0 30 9f e5\nb0 00 9f e5\n03 30 9f e7\n00 00 9f e7\n03 30 60 e0\nc3 31 a0 e1\n04 30 8d e5\n05 20 a0 e1\n04 10 9d e5\na8 ff ff eb\n00 50 50 e2\nef ff ff 0a\n9f ff ff eb\n04 30 95 e5\n01 00 53 e3\n00 30 a0 03\n10 30 84 05\n48 00 84 e5\n05 00 a0 03\n16 00 00 0a\n00 00 53 e3\n04 00 85 e2\n4c 00 84 b5\n01 30 a0 b3\n02 00 00 ba\n92 ff ff eb\n00 30 a0 e3\n4c 00 84 e5\n4c 00 94 e5\n50 30 84 e5\n00 30 90 e5\n00 00 53 e3\n06 00 00 aa\n53 0c e3 e7\nb8 ff ff eb\n00 00 50 e3\n10 00 84 e5\n09 00 a0 03\n00 00 a0 13\n02 00 00 ea\n83 ff ff eb\n10 00 84 e5\n00 00 a0 e3\n0c d0 8d e2\n30 80 bd e8\n'
+p138
+S'.text:0001233c\n.text:00012340\n.text:00012344\n.text:00012348\n.text:0001234c\n.text:00012350\n.text:00012354\n.text:00012358\n.text:0001235c\n.text:00012360\n.text:00012364\n.text:00012368\n.text:0001236c\n.text:00012370\n.text:00012374\n.text:00012378\n.text:0001237c\n.text:00012380\n.text:00012384\n.text:00012388\n.text:0001238c\n.text:00012390\n.text:00012394\n.text:00012398\n.text:0001239c\n.text:000123a0\n.text:000123a4\n.text:000123a8\n.text:000123ac\n.text:000123b0\n.text:000123b4\n.text:000123b8\n.text:000123bc\n.text:000123c0\n.text:000123c4\n.text:000123c8\n.text:000123cc\n.text:000123d0\n.text:000123d4\n.text:000123d8\n.text:000123dc\n.text:000123e0\n.text:000123e4\n.text:000123e8\n.text:000123ec\n.text:000123f0\n.text:000123f4\n.text:000123f8\n.text:000123fc\n.text:00012400\n.text:00012404\n.text:00012408\n.text:0001240c\n.text:00012410\n.text:00012414\n.text:00012418\n.text:0001241c\n.text:00012420\n.text:00012424\n.text:00012428\n.text:0001242c\n'
+p139
+tp140
+sS'__gnu_Unwind_Save_WMMXC'
+p141
+(S'\n__stdcall __gnu_Unwind_Save_WMMXC()\n'
+p142
+V\u000aint __gnu_Unwind_Save_WMMXC(int iParm1)\u000a\u000a{\u000a  undefined4 in_cr8;\u000a  undefined4 in_cr9;\u000a  undefined4 in_cr10;\u000a  undefined4 in_cr11;\u000a  \u000a  coprocessor_store2(1,in_cr8,iParm1);\u000a  coprocessor_store2(1,in_cr9,iParm1 + 4);\u000a  coprocessor_store2(1,in_cr10,iParm1 + 8);\u000a  coprocessor_store2(1,in_cr11,iParm1 + 0xc);\u000a  return iParm1 + 0x10;\u000a}\u000a\u000a
+p143
+S'stc2 p1,cr8,[r0],#0x4\nstc2 p1,cr9,[r0],#0x4\nstc2 p1,cr10,[r0],#0x4\nstc2 p1,cr11,[r0],#0x4\nbx lr\n'
+p144
+S'01 81 a0 fc\n01 91 a0 fc\n01 a1 a0 fc\n01 b1 a0 fc\n1e ff 2f e1\n'
+p145
+S'.text:000131e4\n.text:000131e8\n.text:000131ec\n.text:000131f0\n.text:000131f4\n'
+p146
+tp147
+sS'__gnu_Unwind_Save_WMMXD'
+p148
+(S'\n__stdcall __gnu_Unwind_Save_WMMXD()\n'
+p149
+V\u000aint __gnu_Unwind_Save_WMMXD(int iParm1)\u000a\u000a{\u000a  undefined4 in_cr0;\u000a  undefined4 in_cr1;\u000a  undefined4 in_cr2;\u000a  undefined4 in_cr3;\u000a  undefined4 in_cr4;\u000a  undefined4 in_cr5;\u000a  undefined4 in_cr6;\u000a  undefined4 in_cr7;\u000a  undefined4 in_cr8;\u000a  undefined4 in_cr9;\u000a  undefined4 in_cr10;\u000a  undefined4 in_cr11;\u000a  undefined4 in_cr12;\u000a  undefined4 in_cr13;\u000a  undefined4 in_cr14;\u000a  undefined4 in_cr15;\u000a  \u000a  coprocessor_storelong(1,in_cr0,iParm1);\u000a  coprocessor_storelong(1,in_cr1,iParm1 + 8);\u000a  coprocessor_storelong(1,in_cr2,iParm1 + 0x10);\u000a  coprocessor_storelong(1,in_cr3,iParm1 + 0x18);\u000a  coprocessor_storelong(1,in_cr4,iParm1 + 0x20);\u000a  coprocessor_storelong(1,in_cr5,iParm1 + 0x28);\u000a  coprocessor_storelong(1,in_cr6,iParm1 + 0x30);\u000a  coprocessor_storelong(1,in_cr7,iParm1 + 0x38);\u000a  coprocessor_storelong(1,in_cr8,iParm1 + 0x40);\u000a  coprocessor_storelong(1,in_cr9,iParm1 + 0x48);\u000a  coprocessor_storelong(1,in_cr10,iParm1 + 0x50);\u000a  coprocessor_storelong(1,in_cr11,iParm1 + 0x58);\u000a  coprocessor_storelong(1,in_cr12,iParm1 + 0x60);\u000a  coprocessor_storelong(1,in_cr13,iParm1 + 0x68);\u000a  coprocessor_storelong(1,in_cr14,iParm1 + 0x70);\u000a  coprocessor_storelong(1,in_cr15,iParm1 + 0x78);\u000a  return iParm1 + 0x80;\u000a}\u000a\u000a
+p150
+S'stcl p1,cr0,[r0],#0x8\nstcl p1,cr1,[r0],#0x8\nstcl p1,cr2,[r0],#0x8\nstcl p1,cr3,[r0],#0x8\nstcl p1,cr4,[r0],#0x8\nstcl p1,cr5,[r0],#0x8\nstcl p1,cr6,[r0],#0x8\nstcl p1,cr7,[r0],#0x8\nstcl p1,cr8,[r0],#0x8\nstcl p1,cr9,[r0],#0x8\nstcl p1,cr10,[r0],#0x8\nstcl p1,cr11,[r0],#0x8\nstcl p1,cr12,[r0],#0x8\nstcl p1,cr13,[r0],#0x8\nstcl p1,cr14,[r0],#0x8\nstcl p1,cr15,[r0],#0x8\nbx lr\n'
+p151
+S'02 01 e0 ec\n02 11 e0 ec\n02 21 e0 ec\n02 31 e0 ec\n02 41 e0 ec\n02 51 e0 ec\n02 61 e0 ec\n02 71 e0 ec\n02 81 e0 ec\n02 91 e0 ec\n02 a1 e0 ec\n02 b1 e0 ec\n02 c1 e0 ec\n02 d1 e0 ec\n02 e1 e0 ec\n02 f1 e0 ec\n1e ff 2f e1\n'
+p152
+S'.text:0001318c\n.text:00013190\n.text:00013194\n.text:00013198\n.text:0001319c\n.text:000131a0\n.text:000131a4\n.text:000131a8\n.text:000131ac\n.text:000131b0\n.text:000131b4\n.text:000131b8\n.text:000131bc\n.text:000131c0\n.text:000131c4\n.text:000131c8\n.text:000131cc\n'
+p153
+tp154
+sS'__aeabi_unwind_cpp_pr2'
+p155
+(S'\n__stdcall __aeabi_unwind_cpp_pr2()\n'
+p156
+V\u000a/* WARNING: Removing unreachable block (ram,0x00012a58) */\u000a/* WARNING: Removing unreachable block (ram,0x000129d0) */\u000a/* WARNING: Removing unreachable block (ram,0x00012cf4) */\u000a/* WARNING: Removing unreachable block (ram,0x00012a5c) */\u000a/* WARNING: Removing unreachable block (ram,0x00012a60) */\u000a\u000aundefined4 __aeabi_unwind_cpp_pr2(uint uParm1,int **ppiParm2,undefined4 uParm3)\u000a\u000a{\u000a  bool bVar1;\u000a  uint uVar2;\u000a  undefined4 uVar3;\u000a  int iVar4;\u000a  int **ppiVar5;\u000a  uint uVar6;\u000a  int *piVar7;\u000a  int *piVar8;\u000a  uint *puVar9;\u000a  int *piVar10;\u000a  uint uVar11;\u000a  int *piVar12;\u000a  uint uVar13;\u000a  uint *puVar14;\u000a  uint local_44;\u000a  int **local_38;\u000a  int local_34;\u000a  uint *local_30;\u000a  undefined local_2c;\u000a  undefined local_2b;\u000a  \u000a  local_30 = (uint *)(ppiParm2[0x13] + 1);\u000a  piVar10 = (int *)(uParm1 & 3);\u000a  uVar6 = *ppiParm2[0x13];\u000a  local_2b = (undefined)(uVar6 >> 0x10);\u000a  local_34 = uVar6 << 0x10;\u000a  local_2c = 2;\u000a  puVar14 = local_30 + (uVar6 >> 0x10 & 0xff);\u000a  if (piVar10 == (int *)0x2) {\u000a    puVar14 = (uint *)ppiParm2[0xe];\u000a  }\u000a  local_44 = (uint)ppiParm2[0x14] & 1;\u000a  if (local_44 == 0) {\u000aLAB_00012a34:\u000a    do {\u000a      while( true ) {\u000a        uVar6 = *puVar14;\u000a        if (uVar6 == 0) goto LAB_00012cec;\u000a        uVar11 = puVar14[1];\u000a        puVar9 = puVar14 + 2;\u000a        uVar13 = (uVar11 & 0xfffffffe) + (int)ppiParm2[0x12];\u000a        uVar2 = FUN_00012828(uParm3,0xf);\u000a        if (uVar2 < uVar13) {\u000a          bVar1 = false;\u000a        }\u000a        else {\u000a          if (uVar2 < uVar13 + (uVar6 & 0xfffffffe)) {\u000a            bVar1 = true;\u000a          }\u000a          else {\u000a            bVar1 = false;\u000a          }\u000a        }\u000a        uVar6 = uVar6 & 1 | (uVar11 & 1) << 1;\u000a        if (uVar6 != 1) break;\u000a        if (piVar10 == (int *)0x0) {\u000a          if (bVar1) {\u000a            uVar2 = *puVar9;\u000a            if (puVar14[3] == 0xfffffffe) {\u000a              return 9;\u000a            }\u000a            local_38 = ppiParm2 + 0x16;\u000a            if (puVar14[3] == 0xffffffff) {\u000aLAB_00012b5c:\u000a              piVar10 = (int *)FUN_00012828(uParm3,0xd);\u000a              ppiVar5 = ppiParm2;\u000a              if (uVar6 != 2) {\u000a                ppiVar5 = local_38;\u000a              }\u000a              ppiParm2[8] = piVar10;\u000a              if (uVar6 == 2) {\u000a                ppiVar5 = ppiVar5 + 0xb;\u000a                *(int ***)ppiVar5 = local_38;\u000a              }\u000aLAB_00012d74:\u000a              *(int ***)(ppiParm2 + 9) = ppiVar5;\u000a              *(uint **)(ppiParm2 + 10) = puVar9;\u000a              return 6;\u000a            }\u000a            uVar3 = FUN_000124a8(puVar14 + 3);\u000a            uVar6 = __cxa_type_match(ppiParm2,uVar3,uVar2 >> 0x1f);\u000a            if (uVar6 != 0) goto LAB_00012b5c;\u000a          }\u000a        }\u000a        else {\u000a          piVar7 = ppiParm2[8];\u000a          piVar8 = (int *)FUN_00012828(uParm3,0xd);\u000a          if ((piVar7 == piVar8) && (puVar9 == (uint *)ppiParm2[10])) {\u000a            uVar3 = FUN_00012230(puVar9);\u000a            FUN_000128ac(uParm3,0xf,uVar3);\u000aLAB_00012cbc:\u000a            uVar3 = 0;\u000a            ppiVar5 = ppiParm2;\u000a            goto LAB_00012d4c;\u000a          }\u000a        }\u000a        puVar14 = puVar14 + 4;\u000a      }\u000a      if (uVar6 != 0) {\u000a        if (uVar6 != 2) {\u000a          return 9;\u000a        }\u000a        piVar8 = (int *)(*puVar9 & 0x7fffffff);\u000a        if (piVar10 == (int *)0x0) {\u000a          if (bVar1) {\u000a            uVar6 = ((uParm1 ^ 8) << 0x1c) >> 0x1f;\u000a            if (piVar8 == (int *)0x0) {\u000a              uVar6 = 1;\u000a            }\u000a            if (uVar6 != 0) {\u000a              piVar7 = piVar10;\u000a              do {\u000a                if (piVar7 == piVar8) {\u000a                  piVar10 = (int *)FUN_00012828(uParm3,0xd);\u000a                  ppiParm2[8] = piVar10;\u000a                  ppiVar5 = local_38;\u000a                  goto LAB_00012d74;\u000a                }\u000a                piVar7 = (int *)((int)piVar7 + 1);\u000a                local_38 = ppiParm2 + 0x16;\u000a                uVar3 = FUN_000124a8(puVar9 + (int)piVar7);\u000a                iVar4 = __cxa_type_match(ppiParm2,uVar3,0,&local_38);\u000a              } while (iVar4 == 0);\u000a            }\u000a          }\u000a        }\u000a        else {\u000a          piVar12 = ppiParm2[8];\u000a          piVar7 = (int *)FUN_00012828(uParm3,0xd);\u000a          if ((piVar12 == piVar7) && (puVar9 == (uint *)ppiParm2[10])) {\u000a            ppiParm2[10] = piVar8;\u000a            ppiParm2[0xc] = (int *)0x4;\u000a            ppiParm2[0xb] = (int *)0x0;\u000a            *(uint **)(ppiParm2 + 0xd) = puVar14 + 3;\u000a            if ((int)*puVar9 < 0) {\u000a              uVar3 = FUN_00012230(puVar9 + (int)piVar8 + 1);\u000a              FUN_000128ac(uParm3,0xf,uVar3);\u000a              goto LAB_00012cbc;\u000a            }\u000a            local_44 = 1;\u000a          }\u000a        }\u000a        if ((int)*puVar9 < 0) {\u000a          puVar9 = puVar14 + 3;\u000a        }\u000a        puVar14 = puVar9 + (int)piVar8 + 1;\u000a        goto LAB_00012a34;\u000a      }\u000a      if (piVar10 == (int *)0x0) {\u000a        bVar1 = false;\u000a      }\u000a      puVar14 = puVar14 + 3;\u000a    } while (!bVar1);\u000a    ppiVar5 = (int **)FUN_00012230(puVar9);\u000a    *(uint **)(ppiParm2 + 0xe) = puVar14;\u000a    iVar4 = __cxa_begin_cleanup(ppiParm2);\u000a    if (iVar4 == 0) {\u000a      return 9;\u000a    }\u000a    uVar3 = 0xf;\u000a  }\u000a  else {\u000a    local_44 = 0;\u000aLAB_00012cec:\u000a    iVar4 = __gnu_unwind_execute(uParm3,&local_34);\u000a    if (iVar4 != 0) {\u000a      return 9;\u000a    }\u000a    if (local_44 == 0) {\u000a      return 8;\u000a    }\u000a    uVar3 = FUN_00012828(uParm3,0xf);\u000a    FUN_000128ac(uParm3,0xe,uVar3);\u000a    uVar3 = 0xf;\u000a    ppiVar5 = *(int ***)(DAT_00012d88 + 0x12d50);\u000a  }\u000aLAB_00012d4c:\u000a  FUN_000128ac(uParm3,uVar3,ppiVar5);\u000a  return 7;\u000a}\u000a\u000a
+p157
+S'mov r3,#0x2\nb 0x000129a0\n'
+p158
+S'02 30 a0 e3\nfe fe ff ea\n'
+p159
+S'.text:00012d9c\n.text:00012da0\n'
+p160
+tp161
+sS'setsid'
+p162
+(S'\n__stdcall setsid()\n'
+p163
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000a__pid_t setsid(void)\u000a\u000a{\u000a  __pid_t _Var1;\u000a  \u000a  _Var1 = (*(code *)PTR_setsid_00014f88)();\u000a  return _Var1;\u000a}\u000a\u000a
+p164
+S'adr r12,0x11140\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe48]!\n'
+p165
+S'00 c6 8f e2\n03 ca 8c e2\n48 fe bc e5\n'
+p166
+S'.plt:00011138\n.plt:0001113c\n.plt:00011140\n'
+p167
+tp168
+sS'__aeabi_unwind_cpp_pr1'
+p169
+(S'\n__stdcall __aeabi_unwind_cpp_pr1()\n'
+p170
+V\u000a/* WARNING: Removing unreachable block (ram,0x00012a50) */\u000a/* WARNING: Removing unreachable block (ram,0x000129d0) */\u000a/* WARNING: Removing unreachable block (ram,0x00012cf4) */\u000a/* WARNING: Removing unreachable block (ram,0x00012a54) */\u000a\u000aundefined4 __aeabi_unwind_cpp_pr1(uint uParm1,int **ppiParm2,undefined4 uParm3)\u000a\u000a{\u000a  ushort uVar1;\u000a  ushort uVar2;\u000a  bool bVar3;\u000a  undefined4 uVar4;\u000a  int iVar5;\u000a  int **ppiVar6;\u000a  uint uVar7;\u000a  int *piVar8;\u000a  int *piVar9;\u000a  uint *puVar10;\u000a  int *piVar11;\u000a  int *piVar12;\u000a  uint uVar13;\u000a  uint *puVar14;\u000a  uint uStack68;\u000a  int **ppiStack56;\u000a  int iStack52;\u000a  uint *puStack48;\u000a  undefined uStack44;\u000a  undefined uStack43;\u000a  \u000a  puStack48 = (uint *)(ppiParm2[0x13] + 1);\u000a  piVar11 = (int *)(uParm1 & 3);\u000a  uVar7 = *ppiParm2[0x13];\u000a  uStack43 = (undefined)(uVar7 >> 0x10);\u000a  iStack52 = uVar7 << 0x10;\u000a  uStack44 = 2;\u000a  puVar14 = puStack48 + (uVar7 >> 0x10 & 0xff);\u000a  if (piVar11 == (int *)0x2) {\u000a    puVar14 = (uint *)ppiParm2[0xe];\u000a  }\u000a  uStack68 = (uint)ppiParm2[0x14] & 1;\u000a  if (uStack68 == 0) {\u000aLAB_00012a34:\u000a    do {\u000a      while( true ) {\u000a        if (*puVar14 == 0) goto LAB_00012cec;\u000a        uVar1 = *(ushort *)((int)puVar14 + 2);\u000a        puVar10 = puVar14 + 1;\u000a        uVar2 = *(ushort *)puVar14;\u000a        uVar13 = ((uint)uVar1 & 0xfffffffe) + (int)ppiParm2[0x12];\u000a        uVar7 = FUN_00012828(uParm3,0xf);\u000a        if (uVar7 < uVar13) {\u000a          bVar3 = false;\u000a        }\u000a        else {\u000a          if (uVar7 < uVar13 + ((uint)uVar2 & 0xfffffffe)) {\u000a            bVar3 = true;\u000a          }\u000a          else {\u000a            bVar3 = false;\u000a          }\u000a        }\u000a        uVar7 = (uint)uVar2 & 1 | ((uint)uVar1 & 1) << 1;\u000a        if (uVar7 != 1) break;\u000a        if (piVar11 == (int *)0x0) {\u000a          if (bVar3) {\u000a            uVar13 = *puVar10;\u000a            if (puVar14[2] == 0xfffffffe) {\u000a              return 9;\u000a            }\u000a            ppiStack56 = ppiParm2 + 0x16;\u000a            if (puVar14[2] == 0xffffffff) {\u000aLAB_00012b5c:\u000a              piVar11 = (int *)FUN_00012828(uParm3,0xd);\u000a              ppiVar6 = ppiParm2;\u000a              if (uVar7 != 2) {\u000a                ppiVar6 = ppiStack56;\u000a              }\u000a              ppiParm2[8] = piVar11;\u000a              if (uVar7 == 2) {\u000a                ppiVar6 = ppiVar6 + 0xb;\u000a                *(int ***)ppiVar6 = ppiStack56;\u000a              }\u000aLAB_00012d74:\u000a              *(int ***)(ppiParm2 + 9) = ppiVar6;\u000a              *(uint **)(ppiParm2 + 10) = puVar10;\u000a              return 6;\u000a            }\u000a            uVar4 = FUN_000124a8(puVar14 + 2);\u000a            uVar7 = __cxa_type_match(ppiParm2,uVar4,uVar13 >> 0x1f);\u000a            if (uVar7 != 0) goto LAB_00012b5c;\u000a          }\u000a        }\u000a        else {\u000a          piVar8 = ppiParm2[8];\u000a          piVar9 = (int *)FUN_00012828(uParm3,0xd);\u000a          if ((piVar8 == piVar9) && (puVar10 == (uint *)ppiParm2[10])) {\u000a            uVar4 = FUN_00012230(puVar10);\u000a            FUN_000128ac(uParm3,0xf,uVar4);\u000aLAB_00012cbc:\u000a            uVar4 = 0;\u000a            ppiVar6 = ppiParm2;\u000a            goto LAB_00012d4c;\u000a          }\u000a        }\u000a        puVar14 = puVar14 + 3;\u000a      }\u000a      if (uVar7 != 0) {\u000a        if (uVar7 != 2) {\u000a          return 9;\u000a        }\u000a        piVar9 = (int *)(*puVar10 & 0x7fffffff);\u000a        if (piVar11 == (int *)0x0) {\u000a          if (bVar3) {\u000a            uVar7 = ((uParm1 ^ 8) << 0x1c) >> 0x1f;\u000a            if (piVar9 == (int *)0x0) {\u000a              uVar7 = 1;\u000a            }\u000a            if (uVar7 != 0) {\u000a              piVar8 = piVar11;\u000a              do {\u000a                if (piVar8 == piVar9) {\u000a                  piVar11 = (int *)FUN_00012828(uParm3,0xd);\u000a                  ppiParm2[8] = piVar11;\u000a                  ppiVar6 = ppiStack56;\u000a                  goto LAB_00012d74;\u000a                }\u000a                piVar8 = (int *)((int)piVar8 + 1);\u000a                ppiStack56 = ppiParm2 + 0x16;\u000a                uVar4 = FUN_000124a8(puVar10 + (int)piVar8);\u000a                iVar5 = __cxa_type_match(ppiParm2,uVar4,0,&ppiStack56);\u000a              } while (iVar5 == 0);\u000a            }\u000a          }\u000a        }\u000a        else {\u000a          piVar12 = ppiParm2[8];\u000a          piVar8 = (int *)FUN_00012828(uParm3,0xd);\u000a          if ((piVar12 == piVar8) && (puVar10 == (uint *)ppiParm2[10])) {\u000a            ppiParm2[10] = piVar9;\u000a            ppiParm2[0xc] = (int *)0x4;\u000a            ppiParm2[0xb] = (int *)0x0;\u000a            *(uint **)(ppiParm2 + 0xd) = puVar14 + 2;\u000a            if ((int)*puVar10 < 0) {\u000a              uVar4 = FUN_00012230(puVar10 + (int)piVar9 + 1);\u000a              FUN_000128ac(uParm3,0xf,uVar4);\u000a              goto LAB_00012cbc;\u000a            }\u000a            uStack68 = 1;\u000a          }\u000a        }\u000a        if ((int)*puVar10 < 0) {\u000a          puVar10 = puVar14 + 2;\u000a        }\u000a        puVar14 = puVar10 + (int)piVar9 + 1;\u000a        goto LAB_00012a34;\u000a      }\u000a      if (piVar11 == (int *)0x0) {\u000a        bVar3 = false;\u000a      }\u000a      puVar14 = puVar14 + 2;\u000a    } while (!bVar3);\u000a    ppiVar6 = (int **)FUN_00012230(puVar10);\u000a    *(uint **)(ppiParm2 + 0xe) = puVar14;\u000a    iVar5 = __cxa_begin_cleanup(ppiParm2);\u000a    if (iVar5 == 0) {\u000a      return 9;\u000a    }\u000a    uVar4 = 0xf;\u000a  }\u000a  else {\u000a    uStack68 = 0;\u000aLAB_00012cec:\u000a    iVar5 = __gnu_unwind_execute(uParm3,&iStack52);\u000a    if (iVar5 != 0) {\u000a      return 9;\u000a    }\u000a    if (uStack68 == 0) {\u000a      return 8;\u000a    }\u000a    uVar4 = FUN_00012828(uParm3,0xf);\u000a    FUN_000128ac(uParm3,0xe,uVar4);\u000a    uVar4 = 0xf;\u000a    ppiVar6 = *(int ***)(DAT_00012d88 + 0x12d50);\u000a  }\u000aLAB_00012d4c:\u000a  FUN_000128ac(uParm3,uVar4,ppiVar6);\u000a  return 7;\u000a}\u000a\u000a
+p171
+S'mov r3,#0x1\nb 0x000129a0\n'
+p172
+S'01 30 a0 e3\n00 ff ff ea\n'
+p173
+S'.text:00012d94\n.text:00012d98\n'
+p174
+tp175
+sS'__aeabi_unwind_cpp_pr0'
+p176
+(S'\n__stdcall __aeabi_unwind_cpp_pr0()\n'
+p177
+V\u000a/* WARNING: Removing unreachable block (ram,0x00012a50) */\u000a/* WARNING: Removing unreachable block (ram,0x000129e8) */\u000a/* WARNING: Removing unreachable block (ram,0x000129f0) */\u000a/* WARNING: Removing unreachable block (ram,0x00012cf4) */\u000a/* WARNING: Removing unreachable block (ram,0x00012a54) */\u000a\u000aundefined4 __aeabi_unwind_cpp_pr0(uint uParm1,int **ppiParm2,undefined4 uParm3)\u000a\u000a{\u000a  ushort uVar1;\u000a  ushort uVar2;\u000a  bool bVar3;\u000a  uint uVar4;\u000a  undefined4 uVar5;\u000a  int iVar6;\u000a  int **ppiVar7;\u000a  int *piVar8;\u000a  int *piVar9;\u000a  uint *puVar10;\u000a  int *piVar11;\u000a  int *piVar12;\u000a  uint uVar13;\u000a  uint *puVar14;\u000a  uint uStack68;\u000a  int **ppiStack56;\u000a  int iStack52;\u000a  uint *puStack48;\u000a  undefined uStack44;\u000a  undefined uStack43;\u000a  \u000a  puStack48 = (uint *)(ppiParm2[0x13] + 1);\u000a  piVar11 = (int *)(uParm1 & 3);\u000a  iStack52 = *ppiParm2[0x13] << 8;\u000a  uStack43 = 0;\u000a  uStack44 = 3;\u000a  puVar14 = puStack48;\u000a  if (piVar11 == (int *)0x2) {\u000a    puVar14 = (uint *)ppiParm2[0xe];\u000a  }\u000a  uStack68 = (uint)ppiParm2[0x14] & 1;\u000a  if (uStack68 == 0) {\u000aLAB_00012a34:\u000a    do {\u000a      while( true ) {\u000a        if (*puVar14 == 0) goto LAB_00012cec;\u000a        uVar1 = *(ushort *)((int)puVar14 + 2);\u000a        puVar10 = puVar14 + 1;\u000a        uVar2 = *(ushort *)puVar14;\u000a        uVar13 = ((uint)uVar1 & 0xfffffffe) + (int)ppiParm2[0x12];\u000a        uVar4 = FUN_00012828(uParm3,0xf);\u000a        if (uVar4 < uVar13) {\u000a          bVar3 = false;\u000a        }\u000a        else {\u000a          if (uVar4 < uVar13 + ((uint)uVar2 & 0xfffffffe)) {\u000a            bVar3 = true;\u000a          }\u000a          else {\u000a            bVar3 = false;\u000a          }\u000a        }\u000a        uVar4 = (uint)uVar2 & 1 | ((uint)uVar1 & 1) << 1;\u000a        if (uVar4 != 1) break;\u000a        if (piVar11 == (int *)0x0) {\u000a          if (bVar3) {\u000a            uVar13 = *puVar10;\u000a            if (puVar14[2] == 0xfffffffe) {\u000a              return 9;\u000a            }\u000a            ppiStack56 = ppiParm2 + 0x16;\u000a            if (puVar14[2] == 0xffffffff) {\u000aLAB_00012b5c:\u000a              piVar11 = (int *)FUN_00012828(uParm3,0xd);\u000a              ppiVar7 = ppiParm2;\u000a              if (uVar4 != 2) {\u000a                ppiVar7 = ppiStack56;\u000a              }\u000a              ppiParm2[8] = piVar11;\u000a              if (uVar4 == 2) {\u000a                ppiVar7 = ppiVar7 + 0xb;\u000a                *(int ***)ppiVar7 = ppiStack56;\u000a              }\u000aLAB_00012d74:\u000a              *(int ***)(ppiParm2 + 9) = ppiVar7;\u000a              *(uint **)(ppiParm2 + 10) = puVar10;\u000a              return 6;\u000a            }\u000a            uVar5 = FUN_000124a8(puVar14 + 2);\u000a            uVar4 = __cxa_type_match(ppiParm2,uVar5,uVar13 >> 0x1f);\u000a            if (uVar4 != 0) goto LAB_00012b5c;\u000a          }\u000a        }\u000a        else {\u000a          piVar8 = ppiParm2[8];\u000a          piVar9 = (int *)FUN_00012828(uParm3,0xd);\u000a          if ((piVar8 == piVar9) && (puVar10 == (uint *)ppiParm2[10])) {\u000a            uVar5 = FUN_00012230(puVar10);\u000a            FUN_000128ac(uParm3,0xf,uVar5);\u000aLAB_00012cbc:\u000a            uVar5 = 0;\u000a            ppiVar7 = ppiParm2;\u000a            goto LAB_00012d4c;\u000a          }\u000a        }\u000a        puVar14 = puVar14 + 3;\u000a      }\u000a      if (uVar4 != 0) {\u000a        if (uVar4 != 2) {\u000a          return 9;\u000a        }\u000a        piVar9 = (int *)(*puVar10 & 0x7fffffff);\u000a        if (piVar11 == (int *)0x0) {\u000a          if (bVar3) {\u000a            uVar4 = ((uParm1 ^ 8) << 0x1c) >> 0x1f;\u000a            if (piVar9 == (int *)0x0) {\u000a              uVar4 = 1;\u000a            }\u000a            if (uVar4 != 0) {\u000a              piVar8 = piVar11;\u000a              do {\u000a                if (piVar8 == piVar9) {\u000a                  piVar11 = (int *)FUN_00012828(uParm3,0xd);\u000a                  ppiParm2[8] = piVar11;\u000a                  ppiVar7 = ppiStack56;\u000a                  goto LAB_00012d74;\u000a                }\u000a                piVar8 = (int *)((int)piVar8 + 1);\u000a                ppiStack56 = ppiParm2 + 0x16;\u000a                uVar5 = FUN_000124a8(puVar10 + (int)piVar8);\u000a                iVar6 = __cxa_type_match(ppiParm2,uVar5,0,&ppiStack56);\u000a              } while (iVar6 == 0);\u000a            }\u000a          }\u000a        }\u000a        else {\u000a          piVar12 = ppiParm2[8];\u000a          piVar8 = (int *)FUN_00012828(uParm3,0xd);\u000a          if ((piVar12 == piVar8) && (puVar10 == (uint *)ppiParm2[10])) {\u000a            ppiParm2[10] = piVar9;\u000a            ppiParm2[0xc] = (int *)0x4;\u000a            ppiParm2[0xb] = (int *)0x0;\u000a            *(uint **)(ppiParm2 + 0xd) = puVar14 + 2;\u000a            if ((int)*puVar10 < 0) {\u000a              uVar5 = FUN_00012230(puVar10 + (int)piVar9 + 1);\u000a              FUN_000128ac(uParm3,0xf,uVar5);\u000a              goto LAB_00012cbc;\u000a            }\u000a            uStack68 = 1;\u000a          }\u000a        }\u000a        if ((int)*puVar10 < 0) {\u000a          puVar10 = puVar14 + 2;\u000a        }\u000a        puVar14 = puVar10 + (int)piVar9 + 1;\u000a        goto LAB_00012a34;\u000a      }\u000a      if (piVar11 == (int *)0x0) {\u000a        bVar3 = false;\u000a      }\u000a      puVar14 = puVar14 + 2;\u000a    } while (!bVar3);\u000a    ppiVar7 = (int **)FUN_00012230(puVar10);\u000a    *(uint **)(ppiParm2 + 0xe) = puVar14;\u000a    iVar6 = __cxa_begin_cleanup(ppiParm2);\u000a    if (iVar6 == 0) {\u000a      return 9;\u000a    }\u000a    uVar5 = 0xf;\u000a  }\u000a  else {\u000a    uStack68 = 0;\u000aLAB_00012cec:\u000a    iVar6 = __gnu_unwind_execute(uParm3,&iStack52);\u000a    if (iVar6 != 0) {\u000a      return 9;\u000a    }\u000a    if (uStack68 == 0) {\u000a      return 8;\u000a    }\u000a    uVar5 = FUN_00012828(uParm3,0xf);\u000a    FUN_000128ac(uParm3,0xe,uVar5);\u000a    uVar5 = 0xf;\u000a    ppiVar7 = *(int ***)(DAT_00012d88 + 0x12d50);\u000a  }\u000aLAB_00012d4c:\u000a  FUN_000128ac(uParm3,uVar5,ppiVar7);\u000a  return 7;\u000a}\u000a\u000a
+p178
+S'mov r3,#0x0\nb 0x000129a0\n'
+p179
+S'00 30 a0 e3\n02 ff ff ea\n'
+p180
+S'.text:00012d8c\n.text:00012d90\n'
+p181
+tp182
+sS'exit'
+p183
+(S'\n__stdcall exit(int __status)\n'
+p184
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid exit(int __status)\u000a\u000a{\u000a  (*(code *)PTR_exit_00014f94)();\u000a  return;\u000a}\u000a\u000a
+p185
+S'adr r12,0x11164\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe30]!\n'
+p186
+S'00 c6 8f e2\n03 ca 8c e2\n30 fe bc e5\n'
+p187
+S'.plt:0001115c\n.plt:00011160\n.plt:00011164\n'
+p188
+tp189
+sS'_Unwind_VRS_Pop'
+p190
+(S'\n__stdcall _Unwind_VRS_Pop()\n'
+p191
+V\u000a/* WARNING: Type propagation algorithm not settling */\u000a\u000auint _Unwind_VRS_Pop(uint *puParm1,undefined4 uParm2,uint uParm3,uint uParm4)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  uint *puVar2;\u000a  uint uVar3;\u000a  undefined4 *puVar4;\u000a  int iVar5;\u000a  uint uVar6;\u000a  undefined4 *puVar7;\u000a  uint uVar8;\u000a  uint uVar9;\u000a  undefined4 *puVar10;\u000a  uint uVar11;\u000a  bool bVar12;\u000a  undefined4 auStack428 [33];\u000a  undefined auStack296 [124];\u000a  undefined4 auStack172 [36];\u000a  \u000a  switch(uParm2) {\u000a  case 0:\u000a    if (uParm4 != 0) {\u000a      return 2;\u000a    }\u000a    iVar5 = 1;\u000a    puVar2 = (uint *)puParm1[0xe];\u000a    do {\u000a      if ((uParm3 & 0xffff & 1 << (iVar5 - 1U & 0xff)) != 0) {\u000a        uVar6 = *puVar2;\u000a        puVar2 = puVar2 + 1;\u000a        puParm1[iVar5] = uVar6;\u000a      }\u000a      iVar5 = iVar5 + 1;\u000a    } while (iVar5 != 0x11);\u000a    if ((uParm3 & 0x2000) != 0) {\u000a      return 0;\u000a    }\u000a    *(uint **)(puParm1 + 0xe) = puVar2;\u000a    return 0;\u000a  case 1:\u000a    if ((uParm4 & 0xfffffffb) != 1) {\u000a      return 2;\u000a    }\u000a    uVar6 = uParm3 >> 0x10;\u000a    uParm3 = uParm3 & 0xffff;\u000a    uVar8 = uParm3 + uVar6;\u000a    if (uParm4 == 1) {\u000a      if (0x10 < uVar8) {\u000a        return 2;\u000a      }\u000a      if (0xf < uVar6) {\u000a        return 2;\u000a      }\u000a      uVar9 = 0;\u000a      uVar8 = uParm4;\u000a    }\u000a    else {\u000a      if (0x20 < uVar8) {\u000a        return 2;\u000a      }\u000a      uVar9 = uParm3;\u000a      if (uVar6 < 0x10) {\u000a        if (uVar8 < 0x11) {\u000a          uVar9 = 0;\u000a          uVar8 = uVar9;\u000a          goto LAB_00012e70;\u000a        }\u000a        uVar9 = uVar8 - 0x10;\u000a      }\u000a      uVar8 = 0;\u000a    }\u000aLAB_00012e70:\u000a    uVar11 = uVar9;\u000a    if (uVar9 != 0) {\u000a      uVar11 = 1;\u000a    }\u000a    if (uParm4 != 5 && uVar9 != 0) {\u000a      return 2;\u000a    }\u000a    if ((uVar6 < 0x10) && (uVar3 = *puParm1, (uVar3 & 1) != 0)) {\u000a      *puParm1 = uVar3 & 0xfffffffe;\u000a      if (uParm4 != 5) {\u000a        *puParm1 = uVar3 & 0xfffffffc;\u000a        __gnu_Unwind_Save_VFP(puParm1 + 0x12);\u000a        goto LAB_00012ed8;\u000a      }\u000a      *puParm1 = uVar3 & 0xfffffffe | 2;\u000a      __gnu_Unwind_Save_VFP_D();\u000a      if (uVar11 != 0) goto LAB_00012ee0;\u000aLAB_00012ec0:\u000a      __gnu_Unwind_Save_VFP_D(auStack172 + 1);\u000aLAB_00012f0c:\u000a      if (uVar11 == 0) goto LAB_00012f20;\u000a      __gnu_Unwind_Save_VFP_D_16_to_31(auStack296);\u000a    }\u000a    else {\u000aLAB_00012ed8:\u000a      if (uVar11 == 0) {\u000a        if (uVar8 != 0) {\u000a          __gnu_Unwind_Save_VFP(auStack172 + 1);\u000a          goto LAB_00012f20;\u000a        }\u000a        if (0xf < uVar6) goto LAB_00012f20;\u000a        goto LAB_00012ec0;\u000a      }\u000aLAB_00012ee0:\u000a      if ((*puParm1 & 4) != 0) {\u000a        *puParm1 = *puParm1 & 0xfffffffb;\u000a        __gnu_Unwind_Save_VFP_D_16_to_31(puParm1 + 0x34);\u000a      }\u000a      if (uVar8 == 0) {\u000a        if (uVar6 < 0x10) goto LAB_00012ec0;\u000a        goto LAB_00012f0c;\u000a      }\u000a      __gnu_Unwind_Save_VFP(auStack172 + 1);\u000a    }\u000a    uParm3 = 0x10 - uVar6;\u000aLAB_00012f20:\u000a    puVar4 = (undefined4 *)puParm1[0xe];\u000a    if (0 < (int)uParm3) {\u000a      iVar5 = 0;\u000a      while (iVar5 != uParm3 * 2) {\u000a        auStack172[uVar6 * 2 + iVar5 + 1] = puVar4[iVar5];\u000a        iVar5 = iVar5 + 1;\u000a      }\u000a      puVar4 = puVar4 + iVar5;\u000a    }\u000a    if (uVar11 != 0) {\u000a      puVar10 = puVar4 + uVar9 * 2;\u000a      uVar9 = uVar6;\u000a      if (uVar6 < 0x10) {\u000a        uVar9 = 0x10;\u000a      }\u000a      puVar7 = auStack428 + uVar9 * 2;\u000a      while (puVar4 != puVar10) {\u000a        puVar7 = puVar7 + 1;\u000a        *puVar7 = *puVar4;\u000a        puVar4 = puVar4 + 1;\u000a      }\u000a    }\u000a    if (uVar8 != 0) {\u000a      puVar4 = puVar4 + 1;\u000a    }\u000a    *(undefined4 **)(puParm1 + 0xe) = puVar4;\u000a    if (uVar8 == 0) {\u000a      if (uVar6 < 0x10) {\u000a        __gnu_Unwind_Restore_VFP_D(auStack172 + 1);\u000a      }\u000a      if (uVar11 != 0) {\u000a        __gnu_Unwind_Restore_VFP_D_16_to_31(auStack296);\u000a      }\u000a    }\u000a    else {\u000a      __gnu_Unwind_Restore_VFP(auStack172 + 1);\u000a    }\u000a    return 0;\u000a  case 2:\u000a    break;\u000a  case 3:\u000a    if (uParm4 == 3) {\u000a      if ((uParm3 & 0xffff) + (uParm3 >> 0x10) < 0x11) {\u000a        if ((*puParm1 & 8) != 0) {\u000a          *puParm1 = *puParm1 & 0xfffffff7;\u000a          __gnu_Unwind_Save_WMMXD(puParm1 + 0x54);\u000a        }\u000a        puVar7 = auStack172 + (uParm3 >> 0x10) * 2;\u000a        __gnu_Unwind_Save_WMMXD(auStack172 + 1);\u000a        puVar10 = (undefined4 *)puParm1[0xe];\u000a        puVar4 = puVar10;\u000a        while (puVar4 != puVar10 + (uParm3 & 0xffff) * 2) {\u000a          puVar7 = puVar7 + 1;\u000a          *puVar7 = *puVar4;\u000a          puVar4 = puVar4 + 1;\u000a        }\u000a        *(undefined4 **)(puParm1 + 0xe) = puVar4;\u000a        __gnu_Unwind_Restore_WMMXD(auStack172 + 1);\u000a        return 0;\u000a      }\u000a    }\u000a    break;\u000a  case 4:\u000a    bVar12 = uParm3 == 0x10;\u000a    if (uParm3 < 0x11) {\u000a      bVar12 = uParm4 == 0;\u000a    }\u000a    if (bVar12) {\u000a      if ((*puParm1 & 0x10) != 0) {\u000a        *puParm1 = *puParm1 & 0xffffffef;\u000a        __gnu_Unwind_Save_WMMXC(puParm1 + 0x74);\u000a      }\u000a      puVar10 = auStack172 + 1;\u000a      __gnu_Unwind_Save_WMMXC(puVar10);\u000a      puVar4 = (undefined4 *)puParm1[0xe];\u000a      uVar6 = 0;\u000a      do {\u000a        if ((uParm3 & 1 << (uVar6 & 0xff)) != 0) {\u000a          uVar1 = *puVar4;\u000a          puVar4 = puVar4 + 1;\u000a          puVar10[uVar6] = uVar1;\u000a        }\u000a        uVar6 = uVar6 + 1;\u000a      } while (uVar6 != 4);\u000a      *(undefined4 **)(puParm1 + 0xe) = puVar4;\u000a      __gnu_Unwind_Restore_WMMXC(puVar10);\u000a      return 0;\u000a    }\u000a  }\u000a  return 2;\u000a}\u000a\u000a
+p192
+S'stmdb sp!,{ r4 r5 r6 r7 r8 r9 lr }\ncpy r5,r0\nsub sp,sp,#0x10c\ncpy r4,r2\ncmp r1,#0x4\naddls pc,pc,r1, lsl #0x2\nb 0x000130a8\nb 0x00012dd4\nb 0x00012e1c\nb 0x000130a8\nb 0x00012fd0\nb 0x00013040\ncmp r3,#0x0\nbne 0x000130a8\nmov r3,#0x1\nuxth r1,r2\nldr r2,[r0,#0x38]\ncpy r0,r3\nsub r12,r3,#0x1\nands r12,r1,r0, lsl r12\nldrne r12,[r2,#0x0]\naddne r2,r2,#0x4\nstrne r12,[r5,r3,lsl #0x2]\nadd r3,r3,#0x1\ncmp r3,#0x11\nbne 0x00012dec\nands r0,r4,#0x2000\nstreq r2,[r5,#0x38]\nbeq 0x000130fc\nb 0x000130b0\nbic r2,r3,#0x4\ncmp r2,#0x1\nbne 0x000130a8\ncmp r3,#0x1\nmov r7,r4, lsr #0x10\nuxth r4,r4\nadd r6,r4,r7\nbne 0x00012e58\ncmp r6,#0x10\nbhi 0x000130a8\ncmp r7,#0xf\ncpyls r8,r3\nmovls r6,#0x0\nbhi 0x000130a8\nb 0x00012e70\ncmp r6,#0x20\nbhi 0x000130a8\ncmp r7,#0xf\nbls 0x000130b8\ncpy r6,r4\nmov r8,#0x0\nadds r9,r6,#0x0\nmovne r9,#0x1\ncmp r3,#0x5\ncmpne r6,#0x0\nbne 0x000130a8\ncmp r7,#0xf\nbhi 0x00012ed8\nldr r2,[r5,#0x0]\ntst r2,#0x1\nbeq 0x00012ed8\ncmp r3,#0x5\ncpy r0,r5\nbic r1,r2,#0x1\nstr r1,[r0],#0x48\nbne 0x00012ecc\norr r1,r1,#0x2\nstr r1,[r5,#0x0]\nbl 0x00011228\ncmp r9,#0x0\nbne 0x00012ee0\nadd r0,sp,#0x80\nbl 0x00011228\nb 0x00012f0c\nbic r2,r2,#0x3\nstr r2,[r5,#0x0]\nbl 0x00011234\ncmp r9,#0x0\nbeq 0x000130d0\nldr r3,[r5,#0x0]\ntst r3,#0x4\nbeq 0x00012efc\ncpy r0,r5\nbic r3,r3,#0x4\nstr r3,[r0],#0xd0\nbl 0x00011240\ncmp r8,#0x0\nbne 0x000130e4\ncmp r7,#0xf\nbls 0x00012ec0\ncmp r9,#0x0\nbeq 0x00012f20\ncpy r0,sp\nbl 0x00011240\nrsb r4,r7,#0x10\nldr r2,[r5,#0x38]\ncmp r4,#0x0\ncpy r3,r2\nble 0x00012f58\nadd r1,sp,#0x80\nmov r4,r4, lsl #0x1\nadd r1,r1,r7, lsl #0x3\nmov r3,#0x0\ncmp r3,r4\nldrne r0,[r2,r3,lsl #0x2]\nstrne r0,[r1,r3,lsl #0x2]\naddne r3,r3,#0x1\nbne 0x00012f40\nadd r3,r2,r3, lsl #0x2\ncmp r9,#0x0\nbeq 0x00012f8c\ncmp r7,#0x10\nadd r2,sp,#0x108\nadd r6,r3,r6, lsl #0x3\ncpycs r4,r7\nmovcc r4,#0x10\nadd r4,r2,r4, lsl #0x3\nsub r4,r4,#0x18c\ncmp r3,r6\nldrne r2,[r3],#0x4\nstrne r2,[r4,#0x4]!\nbne 0x00012f7c\ncmp r8,#0x0\naddne r3,r3,#0x4\ncmp r8,#0x0\nstr r3,[r5,#0x38]\nbeq 0x00012fac\nadd r0,sp,#0x80\nbl 0x0001118c\nb 0x000130b0\ncmp r7,#0xf\nbhi 0x00012fbc\nadd r0,sp,#0x80\nbl 0x00011180\ncmp r9,#0x0\nbeq 0x000130b0\ncpy r0,sp\nbl 0x00011198\nb 0x000130b0\ncmp r3,#0x3\nbne 0x000130a8\nmov r6,r2, lsr #0x10\nuxth r4,r2\nadd r3,r4,r6\ncmp r3,#0x10\nbhi 0x000130a8\nldr r3,[r0,#0x0]\ntst r3,#0x8\nbeq 0x00013004\nbic r3,r3,#0x8\nstr r3,[r0],#0x150\nbl 0x0001124c\nadd r7,sp,#0x80\nadd r6,r7,r6, lsl #0x3\ncpy r0,r7\nsub r6,r6,#0x4\nbl 0x0001124c\nldr r3,[r5,#0x38]\nadd r4,r3,r4, lsl #0x3\ncmp r3,r4\nldrne r2,[r3],#0x4\nstrne r2,[r6,#0x4]!\nbne 0x00013020\nstr r3,[r5,#0x38]\ncpy r0,r7\nbl 0x000111a4\nb 0x000130b0\ncmp r2,#0x10\ncmpls r3,#0x0\nbne 0x000130a8\nldr r3,[r0,#0x0]\ntst r3,#0x10\nbeq 0x00013064\nbic r3,r3,#0x10\nstr r3,[r0],#0x1d0\nbl 0x00011258\nadd r6,sp,#0x80\ncpy r0,r6\nbl 0x00011258\nldr r2,[r5,#0x38]\nmov r3,#0x0\nmov r1,#0x1\nands r0,r4,r1, lsl r3\nldrne r0,[r2,#0x0]\naddne r2,r2,#0x4\nstrne r0,[r6,r3,lsl #0x2]\nadd r3,r3,#0x1\ncmp r3,#0x4\nbne 0x0001307c\nstr r2,[r5,#0x38]\ncpy r0,r6\nbl 0x000111b0\nb 0x000130b0\nmov r0,#0x2\nb 0x000130fc\nmov r0,#0x0\nb 0x000130fc\ncmp r6,#0x10\nmovls r8,#0x0\ncpyls r6,r8\nbls 0x00012e70\nsub r6,r6,#0x10\nb 0x00012e6c\ncmp r8,#0x0\nbeq 0x000130f0\nadd r0,sp,#0x80\nbl 0x00011234\nb 0x00012f20\nadd r0,sp,#0x80\nbl 0x00011234\nb 0x00012f1c\ncmp r7,#0xf\nbhi 0x00012f20\nb 0x00012ec0\nadd sp,sp,#0x10c\nldmia sp!,{ r4 r5 r6 r7 r8 r9 pc }\n'
+p193
+S'f0 43 2d e9\n00 50 a0 e1\n43 df 4d e2\n02 40 a0 e1\n04 00 51 e3\n01 f1 8f 90\nb9 00 00 ea\n03 00 00 ea\n14 00 00 ea\nb6 00 00 ea\n7f 00 00 ea\n9a 00 00 ea\n00 00 53 e3\nb2 00 00 1a\n01 30 a0 e3\n72 10 ff e6\n38 20 90 e5\n03 00 a0 e1\n01 c0 43 e2\n10 cc 11 e0\n00 c0 92 15\n04 20 82 12\n03 c1 85 17\n01 30 83 e2\n11 00 53 e3\nf7 ff ff 1a\n02 0a 14 e2\n38 20 85 05\nb8 00 00 0a\na4 00 00 ea\n04 20 c3 e3\n01 00 52 e3\n9f 00 00 1a\n01 00 53 e3\n24 78 a0 e1\n74 40 ff e6\n07 60 84 e0\n06 00 00 1a\n10 00 56 e3\n98 00 00 8a\n0f 00 57 e3\n03 80 a0 91\n00 60 a0 93\n94 00 00 8a\n05 00 00 ea\n20 00 56 e3\n91 00 00 8a\n0f 00 57 e3\n93 00 00 9a\n04 60 a0 e1\n00 80 a0 e3\n00 90 96 e2\n01 90 a0 13\n05 00 53 e3\n00 00 56 13\n88 00 00 1a\n0f 00 57 e3\n12 00 00 8a\n00 20 95 e5\n01 00 12 e3\n0f 00 00 0a\n05 00 53 e3\n05 00 a0 e1\n01 10 c2 e3\n48 10 80 e4\n07 00 00 1a\n02 10 81 e3\n00 10 85 e5\ndb f8 ff eb\n00 00 59 e3\n07 00 00 1a\n80 00 8d e2\nd7 f8 ff eb\n0f 00 00 ea\n03 20 c2 e3\n00 20 85 e5\nd6 f8 ff eb\n00 00 59 e3\n7b 00 00 0a\n00 30 95 e5\n04 00 13 e3\n03 00 00 0a\n05 00 a0 e1\n04 30 c3 e3\nd0 30 80 e4\nd0 f8 ff eb\n00 00 58 e3\n77 00 00 1a\n0f 00 57 e3\nec ff ff 9a\n00 00 59 e3\n02 00 00 0a\n0d 00 a0 e1\nc8 f8 ff eb\n10 40 67 e2\n38 20 95 e5\n00 00 54 e3\n02 30 a0 e1\n09 00 00 da\n80 10 8d e2\n84 40 a0 e1\n87 11 81 e0\n00 30 a0 e3\n04 00 53 e1\n03 01 92 17\n03 01 81 17\n01 30 83 12\nfa ff ff 1a\n03 31 82 e0\n00 00 59 e3\n0a 00 00 0a\n10 00 57 e3\n42 2f 8d e2\n86 61 83 e0\n07 40 a0 21\n10 40 a0 33\n84 41 82 e0\n63 4f 44 e2\n06 00 53 e1\n04 20 93 14\n04 20 a4 15\nfb ff ff 1a\n00 00 58 e3\n04 30 83 12\n00 00 58 e3\n38 30 85 e5\n02 00 00 0a\n80 00 8d e2\n78 f8 ff eb\n40 00 00 ea\n0f 00 57 e3\n01 00 00 8a\n80 00 8d e2\n70 f8 ff eb\n00 00 59 e3\n3a 00 00 0a\n0d 00 a0 e1\n72 f8 ff eb\n37 00 00 ea\n03 00 53 e3\n33 00 00 1a\n22 68 a0 e1\n72 40 ff e6\n06 30 84 e0\n10 00 53 e3\n2e 00 00 8a\n00 30 90 e5\n08 00 13 e3\n02 00 00 0a\n08 30 c3 e3\n50 31 80 e4\n91 f8 ff eb\n80 70 8d e2\n86 61 87 e0\n07 00 a0 e1\n04 60 46 e2\n8c f8 ff eb\n38 30 95 e5\n84 41 83 e0\n04 00 53 e1\n04 20 93 14\n04 20 a6 15\nfb ff ff 1a\n38 30 85 e5\n07 00 a0 e1\n59 f8 ff eb\n1b 00 00 ea\n10 00 52 e3\n00 00 53 93\n16 00 00 1a\n00 30 90 e5\n10 00 13 e3\n02 00 00 0a\n10 30 c3 e3\nd0 31 80 e4\n7c f8 ff eb\n80 60 8d e2\n06 00 a0 e1\n79 f8 ff eb\n38 20 95 e5\n00 30 a0 e3\n01 10 a0 e3\n11 03 14 e0\n00 00 92 15\n04 20 82 12\n03 01 86 17\n01 30 83 e2\n04 00 53 e3\nf8 ff ff 1a\n38 20 85 e5\n06 00 a0 e1\n42 f8 ff eb\n01 00 00 ea\n02 00 a0 e3\n12 00 00 ea\n00 00 a0 e3\n10 00 00 ea\n10 00 56 e3\n00 80 a0 93\n08 60 a0 91\n69 ff ff 9a\n10 60 46 e2\n66 ff ff ea\n00 00 58 e3\n05 00 00 0a\n80 00 8d e2\n54 f8 ff eb\n8e ff ff ea\n80 00 8d e2\n51 f8 ff eb\n8a ff ff ea\n0f 00 57 e3\n89 ff ff 8a\n70 ff ff ea\n43 df 8d e2\nf0 83 bd e8\n'
+p194
+S'.text:00012da4\n.text:00012da8\n.text:00012dac\n.text:00012db0\n.text:00012db4\n.text:00012db8\n.text:00012dbc\n.text:00012dc0\n.text:00012dc4\n.text:00012dc8\n.text:00012dcc\n.text:00012dd0\n.text:00012dd4\n.text:00012dd8\n.text:00012ddc\n.text:00012de0\n.text:00012de4\n.text:00012de8\n.text:00012dec\n.text:00012df0\n.text:00012df4\n.text:00012df8\n.text:00012dfc\n.text:00012e00\n.text:00012e04\n.text:00012e08\n.text:00012e0c\n.text:00012e10\n.text:00012e14\n.text:00012e18\n.text:00012e1c\n.text:00012e20\n.text:00012e24\n.text:00012e28\n.text:00012e2c\n.text:00012e30\n.text:00012e34\n.text:00012e38\n.text:00012e3c\n.text:00012e40\n.text:00012e44\n.text:00012e48\n.text:00012e4c\n.text:00012e50\n.text:00012e54\n.text:00012e58\n.text:00012e5c\n.text:00012e60\n.text:00012e64\n.text:00012e68\n.text:00012e6c\n.text:00012e70\n.text:00012e74\n.text:00012e78\n.text:00012e7c\n.text:00012e80\n.text:00012e84\n.text:00012e88\n.text:00012e8c\n.text:00012e90\n.text:00012e94\n.text:00012e98\n.text:00012e9c\n.text:00012ea0\n.text:00012ea4\n.text:00012ea8\n.text:00012eac\n.text:00012eb0\n.text:00012eb4\n.text:00012eb8\n.text:00012ebc\n.text:00012ec0\n.text:00012ec4\n.text:00012ec8\n.text:00012ecc\n.text:00012ed0\n.text:00012ed4\n.text:00012ed8\n.text:00012edc\n.text:00012ee0\n.text:00012ee4\n.text:00012ee8\n.text:00012eec\n.text:00012ef0\n.text:00012ef4\n.text:00012ef8\n.text:00012efc\n.text:00012f00\n.text:00012f04\n.text:00012f08\n.text:00012f0c\n.text:00012f10\n.text:00012f14\n.text:00012f18\n.text:00012f1c\n.text:00012f20\n.text:00012f24\n.text:00012f28\n.text:00012f2c\n.text:00012f30\n.text:00012f34\n.text:00012f38\n.text:00012f3c\n.text:00012f40\n.text:00012f44\n.text:00012f48\n.text:00012f4c\n.text:00012f50\n.text:00012f54\n.text:00012f58\n.text:00012f5c\n.text:00012f60\n.text:00012f64\n.text:00012f68\n.text:00012f6c\n.text:00012f70\n.text:00012f74\n.text:00012f78\n.text:00012f7c\n.text:00012f80\n.text:00012f84\n.text:00012f88\n.text:00012f8c\n.text:00012f90\n.text:00012f94\n.text:00012f98\n.text:00012f9c\n.text:00012fa0\n.text:00012fa4\n.text:00012fa8\n.text:00012fac\n.text:00012fb0\n.text:00012fb4\n.text:00012fb8\n.text:00012fbc\n.text:00012fc0\n.text:00012fc4\n.text:00012fc8\n.text:00012fcc\n.text:00012fd0\n.text:00012fd4\n.text:00012fd8\n.text:00012fdc\n.text:00012fe0\n.text:00012fe4\n.text:00012fe8\n.text:00012fec\n.text:00012ff0\n.text:00012ff4\n.text:00012ff8\n.text:00012ffc\n.text:00013000\n.text:00013004\n.text:00013008\n.text:0001300c\n.text:00013010\n.text:00013014\n.text:00013018\n.text:0001301c\n.text:00013020\n.text:00013024\n.text:00013028\n.text:0001302c\n.text:00013030\n.text:00013034\n.text:00013038\n.text:0001303c\n.text:00013040\n.text:00013044\n.text:00013048\n.text:0001304c\n.text:00013050\n.text:00013054\n.text:00013058\n.text:0001305c\n.text:00013060\n.text:00013064\n.text:00013068\n.text:0001306c\n.text:00013070\n.text:00013074\n.text:00013078\n.text:0001307c\n.text:00013080\n.text:00013084\n.text:00013088\n.text:0001308c\n.text:00013090\n.text:00013094\n.text:00013098\n.text:0001309c\n.text:000130a0\n.text:000130a4\n.text:000130a8\n.text:000130ac\n.text:000130b0\n.text:000130b4\n.text:000130b8\n.text:000130bc\n.text:000130c0\n.text:000130c4\n.text:000130c8\n.text:000130cc\n.text:000130d0\n.text:000130d4\n.text:000130d8\n.text:000130dc\n.text:000130e0\n.text:000130e4\n.text:000130e8\n.text:000130ec\n.text:000130f0\n.text:000130f4\n.text:000130f8\n.text:000130fc\n.text:00013100\n'
+p195
+tp196
+sS'__gnu_Unwind_Restore_VFP_D'
+p197
+(S'\n__stdcall __gnu_Unwind_Restore_VFP_D()\n'
+p198
+V\u000a/* WARNING: Control flow encountered unimplemented instructions */\u000a\u000avoid __gnu_Unwind_Restore_VFP_D(void)\u000a\u000a{\u000a                    /* WARNING: Unimplemented instruction - Truncating control flow here */\u000a  halt_unimplemented();\u000a}\u000a\u000a
+p199
+S'vldmia r0,{d0,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15}\nbx lr\n'
+p200
+S'20 0b 90 ec\n1e ff 2f e1\n'
+p201
+S'.text:00013128\n.text:0001312c\n'
+p202
+tp203
+sS'rrr'
+p204
+(S'\n__stdcall rrr(undefined param_1, undefined param_2, undefined param_3, undefined param_4, undefined4 param_5, undefined4 param_6)\n'
+p205
+V\u000avoid rrr(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5,\u000a        undefined4 param_6)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  undefined4 uVar2;\u000a  undefined4 uVar3;\u000a  undefined4 uVar4;\u000a  undefined4 uVar5;\u000a  undefined4 uVar6;\u000a  undefined4 uVar7;\u000a  undefined4 uVar8;\u000a  undefined4 uVar9;\u000a  undefined4 uVar10;\u000a  undefined4 uVar11;\u000a  int iVar12;\u000a  code *pcVar13;\u000a  int iVar14;\u000a  \u000a  uVar1 = (**(code **)(*param_1 + 0x18))(param_1,DAT_00011cc4 + 0x1163a);\u000a  uVar1 = (**(code **)(*param_1 + 0x84))\u000a                    (param_1,uVar1,DAT_00011cc8 + 0x11650,DAT_00011ccc + 0x11652);\u000a  uVar2 = (**(code **)(*param_1 + 0x29c))(param_1,DAT_00011cd0 + 0x11664);\u000a  uVar3 = (**(code **)(*param_1 + 0x18))(param_1,DAT_00011cd4 + 0x11674);\u000a  uVar4 = (**(code **)(*param_1 + 0x240))(param_1,uVar3,DAT_00011cd8 + 0x1168c,&UNK_00011cdc);\u000a  uVar3 = (**(code **)(*param_1 + 600))(param_1,uVar3,uVar4);\u000a  uVar1 = (**(code **)(*param_1 + 0x88))(param_1,param_2,uVar1,uVar2,uVar3);\u000a  uVar2 = (**(code **)(*param_1 + 0x18))(param_1,DAT_00011ce0 + 0x116bc);\u000a  iVar14 = DAT_00011ce8 + 0x116d2;\u000a  uVar2 = (**(code **)(*param_1 + 0x84))(param_1,uVar2,DAT_00011ce4 + 0x116d4,iVar14);\u000a  uVar1 = (**(code **)(*param_1 + 0x88))(param_1,uVar1,uVar2);\u000a  uVar2 = (**(code **)(*param_1 + 0x18))(param_1,DAT_00011cec + 0x116f4);\u000a  uVar3 = (**(code **)(*param_1 + 0x84))(param_1,uVar2,DAT_00011cf0 + 0x1170c,&UNK_00011cf4);\u000a  uVar3 = (**(code **)(*param_1 + 0x70))(param_1,uVar2,uVar3);\u000a  uVar4 = (**(code **)(*param_1 + 0x84))\u000a                    (param_1,uVar2,DAT_00011cf8 + 0x11730,DAT_00011cfc + 0x11732);\u000a  (**(code **)(*param_1 + 0x88))(param_1,uVar3,uVar4,uVar1);\u000a  uVar5 = (**(code **)(*param_1 + 0x29c))(param_1,DAT_00011d00 + 0x11758);\u000a  (**(code **)(*param_1 + 0x88))(param_1,uVar3,uVar4,uVar5);\u000a  uVar2 = (**(code **)(*param_1 + 0x84))(param_1,uVar2,DAT_00011d04 + 0x1177c,iVar14);\u000a  uVar2 = (**(code **)(*param_1 + 0x88))(param_1,uVar3,uVar2);\u000a  uVar3 = rr(param_1);\u000a  uVar4 = (**(code **)(*param_1 + 0x18))(param_1,iRam00011e28 + 0x117a2);\u000a  iVar14 = iRam00011e30 + 0x117ba;\u000a  uVar5 = (**(code **)(*param_1 + 0x84))(param_1,uVar4,iVar14,DAT_00011d08 + 0x117bc);\u000a  uVar5 = (**(code **)(*param_1 + 0x70))(param_1,uVar4,uVar5,uVar2);\u000a  uVar4 = (**(code **)(*param_1 + 0x84))(param_1,uVar4,DAT_00011d0c + 0x117e4,&UNK_00011d10);\u000a  (**(code **)(*param_1 + 0x94))(param_1,uVar5,uVar4);\u000a  uVar4 = (**(code **)(*param_1 + 0x18))(param_1,DAT_00011d14 + 0x11800);\u000a  uVar6 = (**(code **)(*param_1 + 0x84))(param_1,uVar4,iVar14,DAT_00011d18 + 0x11816);\u000a  uVar5 = (**(code **)(*param_1 + 0x70))(param_1,uVar4,uVar6,uVar5);\u000a  uVar6 = (**(code **)(*param_1 + 0x18))(param_1,DAT_00011d1c + 0x11836);\u000a  uVar7 = (**(code **)(*param_1 + 0x84))(param_1,uVar6,iVar14,DAT_00011d20 + 0x1184c);\u000a  uVar3 = (**(code **)(*param_1 + 0x70))(param_1,uVar6,uVar7,uVar5,uVar3);\u000a  uVar7 = (**(code **)(*param_1 + 0x18))(param_1,"android/content/res/AssetManager");\u000a  uVar7 = (**(code **)(*param_1 + 0x84))(param_1,uVar7,&UNK_00011d48,&UNK_00011d50);\u000a  uVar8 = (**(code **)(*param_1 + 0x18))(param_1,iRam00011e24 + 0x11896);\u000a  uVar8 = (**(code **)(*param_1 + 0x84))(param_1,uVar8,0x11d7c,0x11d88);\u000a  uVar8 = (**(code **)(*param_1 + 0x88))(param_1,param_3,uVar8);\u000a  uVar9 = (**(code **)(*param_1 + 0x29c))(param_1,0x11db0);\u000a  iVar14 = (**(code **)(*param_1 + 0x88))(param_1,uVar8,uVar7,uVar9);\u000a  if (iVar14 != 0) {\u000a    uVar7 = (**(code **)(*param_1 + 0x2c0))(param_1,0x400);\u000a    uVar8 = (**(code **)(*param_1 + 0x18))(param_1,iRam00011db8 + 0x1190e);\u000a    uVar9 = (**(code **)(*param_1 + 0x84))\u000a                      (param_1,uVar8,iRam00011dbc + 0x11926,iRam00011dc0 + 0x11928);\u000a    uVar10 = (**(code **)(*param_1 + 0x84))\u000a                       (param_1,uVar6,iRam00011dc4 + 0x1193c,iRam00011dc8 + 0x11942);\u000a    uVar11 = (**(code **)(*param_1 + 0x84))(param_1,uVar6,iRam00011dcc + 0x1195e,&UNK_00011cf4);\u000a    iVar12 = iRam00011dd0 + 0x11974;\u000a    uVar6 = (**(code **)(*param_1 + 0x84))(param_1,uVar6,iVar12,&UNK_00011cf4);\u000a    uVar4 = (**(code **)(*param_1 + 0x84))(param_1,uVar4,iVar12,&UNK_00011cf4);\u000a    uVar8 = (**(code **)(*param_1 + 0x84))(param_1,uVar8,iVar12,&UNK_00011cf4);\u000a    iVar12 = (**(code **)(*param_1 + 0xc4))(param_1,iVar14,uVar9,uVar7);\u000a    pcVar13 = *(code **)(*param_1 + 0xf4);\u000a    while (iVar12 != -1) {\u000a      (*pcVar13)(param_1,uVar3,uVar10,uVar7,0,iVar12);\u000a      (**(code **)(*param_1 + 0xf4))(param_1,uVar3,uVar11);\u000a      iVar12 = (**(code **)(*param_1 + 0xc4))(param_1,iVar14,uVar9,uVar7);\u000a      pcVar13 = *(code **)(*param_1 + 0xf4);\u000a    }\u000a    (*pcVar13)(param_1,uVar3,uVar6);\u000a    (**(code **)(*param_1 + 0xf4))(param_1,uVar5,uVar4);\u000a    (**(code **)(*param_1 + 0xf4))(param_1,iVar14,uVar8);\u000a  }\u000a  uVar3 = (**(code **)(*param_1 + 0x18))(param_1,iRam00011dd4 + 0x11a40);\u000a  iVar14 = iRam00011dd8 + 0x11a52;\u000a  uVar4 = (**(code **)(*param_1 + 0x84))(param_1,uVar3,iVar14,iRam00011ddc + 0x11a58);\u000a  uVar2 = (**(code **)(*param_1 + 0x70))(param_1,uVar3,uVar4,uVar2,uVar1,param_4,param_5);\u000a  uVar3 = (**(code **)(*param_1 + 0x18))(param_1,iRam00011de0 + 0x11a84);\u000a  uVar4 = (**(code **)(*param_1 + 0x84))(param_1,uVar3,iVar14,&UNK_00011cf4);\u000a  uVar4 = (**(code **)(*param_1 + 0x70))(param_1,uVar3,uVar4);\u000a  uVar5 = (**(code **)(*param_1 + 0x84))\u000a                    (param_1,uVar3,iRam00011de4 + 0x11ab8,iRam00011de8 + 0x11aba);\u000a  (**(code **)(*param_1 + 0x88))(param_1,uVar4,uVar5,uVar1);\u000a  uVar6 = (**(code **)(*param_1 + 0x29c))(param_1,iRam00011dec + 0x11ada);\u000a  (**(code **)(*param_1 + 0x88))(param_1,uVar4,uVar5,uVar6);\u000a  uVar3 = (**(code **)(*param_1 + 0x84))\u000a                    (param_1,uVar3,iRam00011df0 + 0x11afc,iRam00011df4 + 0x11afe);\u000a  uVar3 = (**(code **)(*param_1 + 0x88))(param_1,uVar4,uVar3);\u000a  uVar4 = (**(code **)(*param_1 + 0x18))(param_1,iRam00011e34 + 0x11b1a);\u000a  uVar5 = (**(code **)(*param_1 + 0x84))(param_1,uVar4,iVar14,&UNK_00011cf4);\u000a  uVar5 = (**(code **)(*param_1 + 0x70))(param_1,uVar4,uVar5);\u000a  uVar6 = (**(code **)(*param_1 + 0x84))\u000a                    (param_1,uVar4,iRam00011e38 + 0x11b4c,iRam00011e3c + 0x11b4e);\u000a  (**(code **)(*param_1 + 0x88))(param_1,uVar5,uVar6,uVar1);\u000a  uVar1 = (**(code **)(*param_1 + 0x29c))(param_1,iRam00011df8 + 0x11b6e);\u000a  (**(code **)(*param_1 + 0x88))(param_1,uVar5,uVar6,uVar1);\u000a  uVar1 = (**(code **)(*param_1 + 0x84))\u000a                    (param_1,uVar4,iRam00011e40 + 0x11b90,iRam00011e44 + 0x11b92);\u000a  uVar1 = (**(code **)(*param_1 + 0x88))(param_1,uVar5,uVar1);\u000a  uVar4 = (**(code **)(*param_1 + 0x18))(param_1,iRam00011dfc + 0x11bae);\u000a  uVar5 = (**(code **)(*param_1 + 0x84))(param_1,uVar4,iRam00011e00 + 0x11bc4,&UNK_00011d10);\u000a  uVar6 = (**(code **)(*param_1 + 0x84))(param_1,uVar4,iRam00011e04 + 0x11bda,&UNK_00011d10);\u000a  uVar7 = (**(code **)(*param_1 + 0x84))\u000a                    (param_1,uVar4,iRam00011e2c + 0x11bf0,iRam00011e08 + 0x11bee);\u000a  uVar3 = (**(code **)(*param_1 + 0x70))(param_1,uVar4,uVar7,uVar3);\u000a  iVar14 = (**(code **)(*param_1 + 0x94))(param_1,uVar3,uVar5);\u000a  if (iVar14 != 0) {\u000a    (**(code **)(*param_1 + 0x94))(param_1,uVar3,uVar6);\u000a  }\u000a  uVar1 = (**(code **)(*param_1 + 0x70))(param_1,uVar4,uVar7,uVar1);\u000a  iVar14 = (**(code **)(*param_1 + 0x94))(param_1,uVar1,uVar5);\u000a  if (iVar14 != 0) {\u000a    (**(code **)(*param_1 + 0x94))(param_1,uVar1,uVar6);\u000a  }\u000a  uVar1 = (**(code **)(*param_1 + 0x18))(param_1,iRam00011e0c + 0x11c5a);\u000a  uVar3 = (**(code **)(*param_1 + 0x1c4))\u000a                    (param_1,uVar1,iRam00011e10 + 0x11c6e,iRam00011e14 + 0x11c70);\u000a  uVar4 = (**(code **)(*param_1 + 0x29c))(param_1,iRam00011e18 + 0x11c80);\u000a  uVar5 = (**(code **)(*param_1 + 0x29c))(param_1,iRam00011e1c + 0x11c90);\u000a  (**(code **)(*param_1 + 0x234))(param_1,uVar1,uVar3,uVar4,uVar5,param_6,uVar2);\u000a                    /* WARNING: Could not recover jumptable at 0x00011cc2. Too many branches */\u000a                    /* WARNING: Treating indirect jump as call */\u000a  (**(code **)(*param_1 + 0x29c))(param_1,iRam00011e20 + 0x11cb8);\u000a  return;\u000a}\u000a\u000a
+p206
+S'push { r4, r5, r6, r7, lr }\nadd r7,sp,#0xc\npush { r8, r9, r10, r11  }\nsub sp,#0x44\nstr r3,[sp,#0x38]\nmov r4,r0\nstr r2,[sp,#0x40]\nmov r8,r1\nldr r0,[r4,#0x0]\nldr.w r1,[0x00011cc4]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r1,r0\nldr r0,[r4,#0x0]\nldr.w r2,[0x00011cc8]\nldr.w r3,[0x00011ccc]\nldr.w r6,[r0,#0x84]\nadd r2,pc\nadd r3,pc\nmov r0,r4\nblx r6\nmov r9,r0\nldr r0,[r4,#0x0]\nldr.w r1,[0x00011cd0]\nldr.w r2,[r0,#0x29c]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r10,r0\nldr r0,[r4,#0x0]\nldr.w r1,[0x00011cd4]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r6,r0\nldr r0,[r4,#0x0]\nldr.w r2,[0x00011cd8]\nadr.w r3,0x11cdc\nmov r1,r6\nldr.w r5,[r0,#0x240]\nadd r2,pc\nmov r0,r4\nblx r5\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r6\nldr.w r3,[r0,#0x258]\nmov r0,r4\nblx r3\nldr r1,[r4,#0x0]\nmov r2,r9\nmov r3,r10\nldr.w r6,[r1,#0x88]\nmov r1,r8\nstr r0,[sp,#0x0]\nmov r0,r4\nblx r6\nmov r5,r0\nldr r0,[r4,#0x0]\nldr.w r1,[0x00011ce0]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r1,r0\nldr r0,[r4,#0x0]\nldr.w r10,[0x00011ce8]\nldr.w r2,[0x00011ce4]\nldr.w r6,[r0,#0x84]\nadd r10,pc\nadd r2,pc\nmov r0,r4\nmov r3,r10\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r5\nldr.w r3,[r0,#0x88]\nmov r0,r4\nblx r3\nmov r9,r0\nldr r0,[r4,#0x0]\nldr.w r1,[0x00011cec]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r8,r0\nldr r0,[r4,#0x0]\nldr.w r2,[0x00011cf0]\nadr.w r3,0x11cf4\nmov r1,r8\nldr.w r6,[r0,#0x84]\nadd r2,pc\nmov r0,r4\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r8\nldr r3,[r0,#0x70]\nmov r0,r4\nblx r3\nmov r11,r0\nldr r0,[r4,#0x0]\nldr.w r2,[0x00011cf8]\nmov r1,r8\nldr.w r3,[0x00011cfc]\nldr.w r6,[r0,#0x84]\nadd r2,pc\nadd r3,pc\nmov r0,r4\nblx r6\nmov r6,r0\nldr r0,[r4,#0x0]\nmov r1,r11\nmov r2,r6\nmov r3,r9\nldr.w r5,[r0,#0x88]\nmov r0,r4\nstr.w r9,[sp,#0x3c]\nblx r5\nldr r0,[r4,#0x0]\nldr.w r1,[0x00011d00]\nldr.w r2,[r0,#0x29c]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r3,r0\nldr r0,[r4,#0x0]\nmov r1,r11\nmov r2,r6\nldr.w r5,[r0,#0x88]\nmov r0,r4\nblx r5\nldr r0,[r4,#0x0]\nmov r1,r8\nldr.w r2,[0x00011d04]\nmov r3,r10\nldr.w r6,[r0,#0x84]\nadd r2,pc\nmov r0,r4\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r11\nldr.w r3,[r0,#0x88]\nmov r0,r4\nblx r3\nmov r11,r0\nmov r0,r4\nblx 0x000110d8\nmov r10,r0\nldr r0,[r4,#0x0]\nldr.w r1,[0x00011e28]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r6,r0\nldr r0,[r4,#0x0]\nldr.w r9,[0x00011e30]\nmov r1,r6\nldr.w r3,[0x00011d08]\nldr.w r5,[r0,#0x84]\nadd r9,pc\nadd r3,pc\nmov r0,r4\nmov r2,r9\nblx r5\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r6\nmov r3,r11\nldr r5,[r0,#0x70]\nmov r0,r4\nblx r5\nmov r8,r0\nldr r0,[r4,#0x0]\nldr.w r2,[0x00011d0c]\nadr.w r3,0x11d10\nmov r1,r6\nldr.w r5,[r0,#0x84]\nadd r2,pc\nmov r0,r4\nblx r5\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r8\nldr.w r3,[r0,#0x94]\nmov r0,r4\nblx r3\nldr r0,[r4,#0x0]\nldr.w r1,[0x00011d14]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r5,r0\nldr r0,[r4,#0x0]\nldr.w r3,[0x00011d18]\nmov r1,r5\nmov r2,r9\nldr.w r6,[r0,#0x84]\nadd r3,pc\nmov r0,r4\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r5\nmov r3,r8\nldr r6,[r0,#0x70]\nmov r0,r4\nstr r5,[sp,#0x2c]\nblx r6\nmov r8,r0\nldr r0,[r4,#0x0]\nldr.w r1,[0x00011d1c]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r5,r0\nldr r0,[r4,#0x0]\nldr.w r3,[0x00011d20]\nmov r1,r5\nmov r2,r9\nldr.w r6,[r0,#0x84]\nadd r3,pc\nmov r0,r4\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r5\nmov r3,r8\nldr r6,[r0,#0x70]\nmov r0,r4\nstr.w r10,[sp,#0x0]\nstr r5,[sp,#0x28]\nstr.w r8,[sp,#0x30]\nblx r6\nmov r8,r0\nldr r0,[r4,#0x0]\nadr.w r1,0x11d24\nldr r2,[r0,#0x18]\nmov r0,r4\nblx r2\nmov r1,r0\nldr r0,[r4,#0x0]\nadr.w r2,0x11d48\nadr.w r3,0x11d50\nldr.w r6,[r0,#0x84]\nmov r0,r4\nblx r6\nmov r9,r0\nldr r0,[r4,#0x0]\nldr.w r1,[0x00011e24]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r1,r0\nldr r0,[r4,#0x0]\nadr.w r2,0x11d7c\nadr.w r3,0x11d88\nldr.w r6,[r0,#0x84]\nmov r0,r4\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nldr r1,[sp,#0x40]\nldr.w r3,[r0,#0x88]\nmov r0,r4\nblx r3\nmov r6,r0\nldr r0,[r4,#0x0]\nadr.w r1,0x11db0\nldr.w r2,[r0,#0x29c]\nmov r0,r4\nblx r2\nmov r3,r0\nldr r0,[r4,#0x0]\nmov r1,r6\nmov r2,r9\nldr.w r5,[r0,#0x88]\nmov r0,r4\nblx r5\nmov r1,r0\nldr r0,[r7,#0xc]\nstr r0,[sp,#0x34]\ncmp r1,#0x0\nldr.w r10,[r7,#0x8]\nbeq.w 0x00011a36\nadd r0,sp,#0x1c\nstm r0,{ r8, r10, r11 }\nmov r8,r1\nmov.w r1,#0x400\nldr r0,[r4,#0x0]\nldr.w r2,[r0,#0x2c0]\nmov r0,r4\nblx r2\nstr r0,[sp,#0x14]\nldr r0,[r4,#0x0]\nldr.w r1,[0x00011db8]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r10,r0\nldr r0,[r4,#0x0]\nldr.w r2,[0x00011dbc]\nmov r1,r10\nldr.w r3,[0x00011dc0]\nldr.w r6,[r0,#0x84]\nadd r2,pc\nadd r3,pc\nmov r0,r4\nblx r6\nmov r11,r0\nldr r0,[r4,#0x0]\nldr.w r2,[0x00011dc4]\nldr.w r3,[0x00011dc8]\nldr r5,[sp,#0x28]\nadd r2,pc\nldr.w r6,[r0,#0x84]\nadd r3,pc\nmov r0,r4\nmov r1,r5\nblx r6\nstr r0,[sp,#0x10]\nadr.w r9,0x11cf4\nldr r0,[r4,#0x0]\nmov r1,r5\nldr.w r2,[0x00011dcc]\nmov r3,r9\nldr.w r6,[r0,#0x84]\nadd r2,pc\nmov r0,r4\nblx r6\nstr r0,[sp,#0xc]\nmov r1,r5\nldr r0,[r4,#0x0]\nmov r3,r9\nldr.w r2,[0x00011dd0]\nldr.w r6,[r0,#0x84]\nadd r2,pc\nmov r0,r4\nmov r5,r2\nblx r6\nstr r0,[sp,#0x28]\nmov r2,r5\nldr r0,[r4,#0x0]\nmov r3,r9\nldr r1,[sp,#0x2c]\nldr.w r6,[r0,#0x84]\nmov r0,r4\nblx r6\nstr r0,[sp,#0x2c]\nmov r3,r9\nldr r0,[r4,#0x0]\nmov r1,r10\nmov r2,r5\nldr.w r9,[sp,#0x14]\nldr.w r6,[r0,#0x84]\nmov r0,r4\nblx r6\nstr r0,[sp,#0x18]\nmov r1,r8\nldr r0,[r4,#0x0]\nmov r2,r11\nmov r3,r9\nmov r10,r11\nldr.w r6,[r0,#0xc4]\nmov r0,r4\nstr.w r8,[sp,#0x40]\nblx r6\nldr r1,[r4,#0x0]\nldr.w r5,[r1,#0xf4]\nadd r1,r0,#0x1\nbeq 0x00011a0a\nmov r6,r9\nldr.w r8,[sp,#0x10]\nldr.w r9,[sp,#0xc]\nldr.w r11,[sp,#0x1c]\nmov r1,#0x0\nmov r2,r8\nstrd r1,r0,[sp,#0x0]\nmov r0,r4\nmov r1,r11\nmov r3,r6\nblx r5\nldr r0,[r4,#0x0]\nmov r1,r11\nmov r2,r9\nldr.w r3,[r0,#0xf4]\nmov r0,r4\nblx r3\nldr r0,[r4,#0x0]\nmov r2,r10\nldr r1,[sp,#0x40]\nmov r3,r6\nldr.w r5,[r0,#0xc4]\nmov r0,r4\nblx r5\nldr r1,[r4,#0x0]\nldr.w r5,[r1,#0xf4]\nadd r1,r0,#0x1\nbne 0x000119d0\nb 0x00011a0e\nldr.w r11,[sp,#0x1c]\nldr r2,[sp,#0x28]\nmov r0,r4\nmov r1,r11\nblx r5\nldr r0,[r4,#0x0]\nldr.w r3,[r0,#0xf4]\nmov r0,r4\nldrd r2,r1,[sp,#0x2c]\nblx r3\nldr r0,[r4,#0x0]\nldr r1,[sp,#0x40]\nldr r2,[sp,#0x18]\nldr.w r3,[r0,#0xf4]\nmov r0,r4\nblx r3\nldrd r10,r11,[sp,#0x20]\nldr r0,[r4,#0x0]\nldr r1,[0x00011dd4]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r5,r0\nldr r0,[r4,#0x0]\nldr.w r8,[0x00011dd8]\nmov r1,r5\nldr r3,[0x00011ddc]\nadd r8,pc\nldr.w r6,[r0,#0x84]\nadd r3,pc\nmov r0,r4\nmov r2,r8\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nldr.w r9,[sp,#0x3c]\nmov r1,r5\nmov r3,r11\nldr r6,[r0,#0x70]\nstr.w r9,[sp,#0x0]\nldr r0,[sp,#0x38]\nstrd r0,r10,[sp,#0x4]\nmov r0,r4\nblx r6\nstr r0,[sp,#0x40]\nldr r0,[r4,#0x0]\nldr r1,[0x00011de0]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r11,r0\nldr r0,[r4,#0x0]\nadr r3,[0x11cf4]\nmov r1,r11\nmov r2,r8\nmov r10,r8\nldr.w r6,[r0,#0x84]\nmov r0,r4\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r11\nldr r3,[r0,#0x70]\nmov r0,r4\nblx r3\nmov r8,r0\nldr r0,[r4,#0x0]\nldr r2,[0x00011de4]\nmov r1,r11\nldr r3,[0x00011de8]\nldr.w r6,[r0,#0x84]\nadd r2,pc\nadd r3,pc\nmov r0,r4\nblx r6\nmov r6,r0\nldr r0,[r4,#0x0]\nmov r1,r8\nmov r2,r6\nmov r3,r9\nldr.w r5,[r0,#0x88]\nmov r0,r4\nblx r5\nldr r0,[r4,#0x0]\nldr r1,[0x00011dec]\nldr.w r2,[r0,#0x29c]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r3,r0\nldr r0,[r4,#0x0]\nmov r1,r8\nmov r2,r6\nldr.w r5,[r0,#0x88]\nmov r0,r4\nblx r5\nldr r0,[r4,#0x0]\nmov r1,r11\nldr r2,[0x00011df0]\nldr r3,[0x00011df4]\nldr.w r6,[r0,#0x84]\nadd r2,pc\nadd r3,pc\nmov r0,r4\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r8\nldr.w r3,[r0,#0x88]\nmov r0,r4\nblx r3\nstr r0,[sp,#0x38]\nldr r0,[r4,#0x0]\nldr r1,[0x00011e34]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r8,r0\nldr r0,[r4,#0x0]\nadr r3,[0x11cf4]\nmov r1,r8\nmov r2,r10\nldr.w r6,[r0,#0x84]\nmov r0,r4\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r8\nldr r3,[r0,#0x70]\nmov r0,r4\nblx r3\nmov r11,r0\nldr r0,[r4,#0x0]\nldr r2,[0x00011e38]\nmov r1,r8\nldr r3,[0x00011e3c]\nldr.w r6,[r0,#0x84]\nadd r2,pc\nadd r3,pc\nmov r0,r4\nblx r6\nmov r6,r0\nldr r0,[r4,#0x0]\nmov r1,r11\nmov r2,r6\nmov r3,r9\nldr.w r5,[r0,#0x88]\nmov r0,r4\nblx r5\nldr r0,[r4,#0x0]\nldr r1,[0x00011df8]\nldr.w r2,[r0,#0x29c]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r3,r0\nldr r0,[r4,#0x0]\nmov r1,r11\nmov r2,r6\nldr.w r5,[r0,#0x88]\nmov r0,r4\nblx r5\nldr r0,[r4,#0x0]\nmov r1,r8\nldr r2,[0x00011e40]\nldr r3,[0x00011e44]\nldr.w r6,[r0,#0x84]\nadd r2,pc\nadd r3,pc\nmov r0,r4\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r11\nldr.w r3,[r0,#0x88]\nmov r0,r4\nblx r3\nmov r8,r0\nldr r0,[r4,#0x0]\nldr r1,[0x00011dfc]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r5,r0\nldr r0,[r4,#0x0]\nldr r2,[0x00011e00]\nadr.w r9,0x11d10\nmov r1,r5\nldr.w r6,[r0,#0x84]\nadd r2,pc\nmov r0,r4\nmov r3,r9\nblx r6\nmov r10,r0\nldr r0,[r4,#0x0]\nldr r2,[0x00011e04]\nmov r1,r5\nmov r3,r9\nldr.w r6,[r0,#0x84]\nadd r2,pc\nmov r0,r4\nblx r6\nmov r9,r0\nldr r0,[r4,#0x0]\nldr r3,[0x00011e08]\nmov r1,r5\nldr r2,[0x00011e2c]\nldr.w r6,[r0,#0x84]\nadd r3,pc\nadd r2,pc\nmov r0,r4\nblx r6\nmov r11,r0\nldr r0,[r4,#0x0]\nldr r3,[sp,#0x38]\nmov r1,r5\nmov r2,r11\nldr r6,[r0,#0x70]\nmov r0,r4\nblx r6\nmov r6,r0\nldr r0,[r4,#0x0]\nmov r1,r6\nmov r2,r10\nldr.w r3,[r0,#0x94]\nmov r0,r4\nblx r3\ncbz r0,0x00011c22\nldr r0,[r4,#0x0]\nmov r1,r6\nmov r2,r9\nldr.w r3,[r0,#0x94]\nmov r0,r4\nblx r3\nldr r0,[r4,#0x0]\nmov r1,r5\nmov r2,r11\nmov r3,r8\nldr r6,[r0,#0x70]\nmov r0,r4\nblx r6\nmov r5,r0\nldr r0,[r4,#0x0]\nmov r1,r5\nmov r2,r10\nldr.w r3,[r0,#0x94]\nmov r0,r4\nblx r3\ncbz r0,0x00011c50\nldr r0,[r4,#0x0]\nmov r1,r5\nmov r2,r9\nldr.w r3,[r0,#0x94]\nmov r0,r4\nblx r3\nldr r0,[r4,#0x0]\nldr r1,[0x00011e0c]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r5,r0\nldr r0,[r4,#0x0]\nldr r2,[0x00011e10]\nmov r1,r5\nldr r3,[0x00011e14]\nldr.w r6,[r0,#0x1c4]\nadd r2,pc\nadd r3,pc\nmov r0,r4\nblx r6\nmov r8,r0\nldr r0,[r4,#0x0]\nldr r1,[0x00011e18]\nldr.w r2,[r0,#0x29c]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r9,r0\nldr r0,[r4,#0x0]\nldr r1,[0x00011e1c]\nldr.w r2,[r0,#0x29c]\nadd r1,pc\nmov r0,r4\nblx r2\nldr r1,[r4,#0x0]\nmov r2,r8\nmov r3,r9\nldr.w r6,[r1,#0x234]\nmov r1,r5\nstr r0,[sp,#0x0]\nldr r0,[sp,#0x34]\nstr r0,[sp,#0x4]\nldr r0,[sp,#0x40]\nstr r0,[sp,#0x8]\nmov r0,r4\nblx r6\nldr r0,[r4,#0x0]\nldr r1,[0x00011e20]\nldr.w r2,[r0,#0x29c]\nadd r1,pc\nmov r0,r4\nadd sp,#0x44\npop.w { r8, r9, r10, r11 }\npop.w { r4, r5, r6, r7, lr }\nbx r2\n'
+p207
+S'f0 b5\n03 af\n2d e9 00 0f\n91 b0\n0e 93\n04 46\n10 92\n88 46\n20 68\ndf f8 90 16\n82 69\n79 44\n20 46\n90 47\n01 46\n20 68\ndf f8 84 26\ndf f8 84 36\nd0 f8 84 60\n7a 44\n7b 44\n20 46\nb0 47\n81 46\n20 68\ndf f8 74 16\nd0 f8 9c 22\n79 44\n20 46\n90 47\n82 46\n20 68\ndf f8 68 16\n82 69\n79 44\n20 46\n90 47\n06 46\n20 68\ndf f8 5c 26\n0f f2 5c 63\n31 46\nd0 f8 40 52\n7a 44\n20 46\na8 47\n02 46\n20 68\n31 46\nd0 f8 58 32\n20 46\n98 47\n21 68\n4a 46\n53 46\nd1 f8 88 60\n41 46\n00 90\n20 46\nb0 47\n05 46\n20 68\ndf f8 2c 16\n82 69\n79 44\n20 46\n90 47\n01 46\n20 68\ndf f8 24 a6\ndf f8 1c 26\nd0 f8 84 60\nfa 44\n7a 44\n20 46\n53 46\nb0 47\n02 46\n20 68\n29 46\nd0 f8 88 30\n20 46\n98 47\n81 46\n20 68\ndf f8 00 16\n82 69\n79 44\n20 46\n90 47\n80 46\n20 68\ndf f8 f4 25\n0f f2 f4 53\n41 46\nd0 f8 84 60\n7a 44\n20 46\nb0 47\n02 46\n20 68\n41 46\n03 6f\n20 46\n98 47\n83 46\n20 68\ndf f8 d8 25\n41 46\ndf f8 d4 35\nd0 f8 84 60\n7a 44\n7b 44\n20 46\nb0 47\n06 46\n20 68\n59 46\n32 46\n4b 46\nd0 f8 88 50\n20 46\ncd f8 3c 90\na8 47\n20 68\ndf f8 b0 15\nd0 f8 9c 22\n79 44\n20 46\n90 47\n03 46\n20 68\n59 46\n32 46\nd0 f8 88 50\n20 46\na8 47\n20 68\n41 46\ndf f8 94 25\n53 46\nd0 f8 84 60\n7a 44\n20 46\nb0 47\n02 46\n20 68\n59 46\nd0 f8 88 30\n20 46\n98 47\n83 46\n20 46\nff f7 a2 ec\n82 46\n20 68\ndf f8 8c 16\n82 69\n79 44\n20 46\n90 47\n06 46\n20 68\ndf f8 84 96\n31 46\ndf f8 58 35\nd0 f8 84 50\nf9 44\n7b 44\n20 46\n4a 46\na8 47\n02 46\n20 68\n31 46\n5b 46\n05 6f\n20 46\na8 47\n80 46\n20 68\ndf f8 38 25\n0f f2 38 53\n31 46\nd0 f8 84 50\n7a 44\n20 46\na8 47\n02 46\n20 68\n41 46\nd0 f8 94 30\n20 46\n98 47\n20 68\ndf f8 1c 15\n82 69\n79 44\n20 46\n90 47\n05 46\n20 68\ndf f8 10 35\n29 46\n4a 46\nd0 f8 84 60\n7b 44\n20 46\nb0 47\n02 46\n20 68\n29 46\n43 46\n06 6f\n20 46\n0b 95\nb0 47\n80 46\n20 68\ndf f8 ec 14\n82 69\n79 44\n20 46\n90 47\n05 46\n20 68\ndf f8 e0 34\n29 46\n4a 46\nd0 f8 84 60\n7b 44\n20 46\nb0 47\n02 46\n20 68\n29 46\n43 46\n06 6f\n20 46\ncd f8 00 a0\n0a 95\ncd f8 30 80\nb0 47\n80 46\n20 68\n0f f2 b8 41\n82 69\n20 46\n90 47\n01 46\n20 68\n0f f2 cc 42\n0f f2 d0 43\nd0 f8 84 60\n20 46\nb0 47\n81 46\n20 68\ndf f8 94 15\n82 69\n79 44\n20 46\n90 47\n01 46\n20 68\n0f f2 dc 42\n0f f2 e4 43\nd0 f8 84 60\n20 46\nb0 47\n02 46\n20 68\n10 99\nd0 f8 88 30\n20 46\n98 47\n06 46\n20 68\n0f f2 f0 41\nd0 f8 9c 22\n20 46\n90 47\n03 46\n20 68\n31 46\n4a 46\nd0 f8 88 50\n20 46\na8 47\n01 46\nf8 68\n0d 90\n00 29\nd7 f8 08 a0\n00 f0 a6 80\n07 a8\n80 e8 00 0d\n88 46\n4f f4 80 61\n20 68\nd0 f8 c0 22\n20 46\n90 47\n05 90\n20 68\ndf f8 b0 14\n82 69\n79 44\n20 46\n90 47\n82 46\n20 68\ndf f8 a4 24\n51 46\ndf f8 a4 34\nd0 f8 84 60\n7a 44\n7b 44\n20 46\nb0 47\n83 46\n20 68\ndf f8 94 24\ndf f8 94 34\n0a 9d\n7a 44\nd0 f8 84 60\n7b 44\n20 46\n29 46\nb0 47\n04 90\n0f f2 a8 39\n20 68\n29 46\ndf f8 78 24\n4b 46\nd0 f8 84 60\n7a 44\n20 46\nb0 47\n03 90\n29 46\n20 68\n4b 46\ndf f8 64 24\nd0 f8 84 60\n7a 44\n20 46\n15 46\nb0 47\n0a 90\n2a 46\n20 68\n4b 46\n0b 99\nd0 f8 84 60\n20 46\nb0 47\n0b 90\n4b 46\n20 68\n51 46\n2a 46\ndd f8 14 90\nd0 f8 84 60\n20 46\nb0 47\n06 90\n41 46\n20 68\n5a 46\n4b 46\nda 46\nd0 f8 c4 60\n20 46\ncd f8 40 80\nb0 47\n21 68\nd1 f8 f4 50\n41 1c\n23 d0\n4e 46\ndd f8 10 80\ndd f8 0c 90\ndd f8 1c b0\n00 21\n42 46\ncd e9 00 10\n20 46\n59 46\n33 46\na8 47\n20 68\n59 46\n4a 46\nd0 f8 f4 30\n20 46\n98 47\n20 68\n52 46\n10 99\n33 46\nd0 f8 c4 50\n20 46\na8 47\n21 68\nd1 f8 f4 50\n41 1c\ne3 d1\n01 e0\ndd f8 1c b0\n0a 9a\n20 46\n59 46\na8 47\n20 68\nd0 f8 f4 30\n20 46\ndd e9 0b 21\n98 47\n20 68\n10 99\n06 9a\nd0 f8 f4 30\n20 46\n98 47\ndd e9 08 ab\n20 68\ne6 49\n82 69\n79 44\n20 46\n90 47\n05 46\n20 68\ndf f8 90 83\n29 46\ne3 4b\nf8 44\nd0 f8 84 60\n7b 44\n20 46\n42 46\nb0 47\n02 46\n20 68\ndd f8 3c 90\n29 46\n5b 46\n06 6f\ncd f8 00 90\n0e 98\ncd e9 01 0a\n20 46\nb0 47\n10 90\n20 68\nd8 49\n82 69\n79 44\n20 46\n90 47\n83 46\n20 68\n9a a3\n59 46\n42 46\nc2 46\nd0 f8 84 60\n20 46\nb0 47\n02 46\n20 68\n59 46\n03 6f\n20 46\n98 47\n80 46\n20 68\nce 4a\n59 46\nce 4b\nd0 f8 84 60\n7a 44\n7b 44\n20 46\nb0 47\n06 46\n20 68\n41 46\n32 46\n4b 46\nd0 f8 88 50\n20 46\na8 47\n20 68\nc6 49\nd0 f8 9c 22\n79 44\n20 46\n90 47\n03 46\n20 68\n41 46\n32 46\nd0 f8 88 50\n20 46\na8 47\n20 68\n59 46\nbf 4a\nc0 4b\nd0 f8 84 60\n7a 44\n7b 44\n20 46\nb0 47\n02 46\n20 68\n41 46\nd0 f8 88 30\n20 46\n98 47\n0e 90\n20 68\nc8 49\n82 69\n79 44\n20 46\n90 47\n80 46\n20 68\n74 a3\n41 46\n52 46\nd0 f8 84 60\n20 46\nb0 47\n02 46\n20 68\n41 46\n03 6f\n20 46\n98 47\n83 46\n20 68\nbe 4a\n41 46\nbe 4b\nd0 f8 84 60\n7a 44\n7b 44\n20 46\nb0 47\n06 46\n20 68\n59 46\n32 46\n4b 46\nd0 f8 88 50\n20 46\na8 47\n20 68\na4 49\nd0 f8 9c 22\n79 44\n20 46\n90 47\n03 46\n20 68\n59 46\n32 46\nd0 f8 88 50\n20 46\na8 47\n20 68\n41 46\nae 4a\naf 4b\nd0 f8 84 60\n7a 44\n7b 44\n20 46\nb0 47\n02 46\n20 68\n59 46\nd0 f8 88 30\n20 46\n98 47\n80 46\n20 68\n95 49\n82 69\n79 44\n20 46\n90 47\n05 46\n20 68\n92 4a\n0f f2 58 19\n29 46\nd0 f8 84 60\n7a 44\n20 46\n4b 46\nb0 47\n82 46\n20 68\n8d 4a\n29 46\n4b 46\nd0 f8 84 60\n7a 44\n20 46\nb0 47\n81 46\n20 68\n89 4b\n29 46\n91 4a\nd0 f8 84 60\n7b 44\n7a 44\n20 46\nb0 47\n83 46\n20 68\n0e 9b\n29 46\n5a 46\n06 6f\n20 46\nb0 47\n06 46\n20 68\n31 46\n52 46\nd0 f8 94 30\n20 46\n98 47\n30 b1\n20 68\n31 46\n4a 46\nd0 f8 94 30\n20 46\n98 47\n20 68\n29 46\n5a 46\n43 46\n06 6f\n20 46\nb0 47\n05 46\n20 68\n29 46\n52 46\nd0 f8 94 30\n20 46\n98 47\n30 b1\n20 68\n29 46\n4a 46\nd0 f8 94 30\n20 46\n98 47\n20 68\n6e 49\n82 69\n79 44\n20 46\n90 47\n05 46\n20 68\n6b 4a\n29 46\n6b 4b\nd0 f8 c4 61\n7a 44\n7b 44\n20 46\nb0 47\n80 46\n20 68\n68 49\nd0 f8 9c 22\n79 44\n20 46\n90 47\n81 46\n20 68\n65 49\nd0 f8 9c 22\n79 44\n20 46\n90 47\n21 68\n42 46\n4b 46\nd1 f8 34 62\n29 46\n00 90\n0d 98\n01 90\n10 98\n02 90\n20 46\nb0 47\n20 68\n5c 49\nd0 f8 9c 22\n79 44\n20 46\n11 b0\nbd e8 00 0f\nbd e8 f0 40\n10 47\n'
+p208
+S'.text:0001161c\n.text:0001161e\n.text:00011620\n.text:00011624\n.text:00011626\n.text:00011628\n.text:0001162a\n.text:0001162c\n.text:0001162e\n.text:00011630\n.text:00011634\n.text:00011636\n.text:00011638\n.text:0001163a\n.text:0001163c\n.text:0001163e\n.text:00011640\n.text:00011644\n.text:00011648\n.text:0001164c\n.text:0001164e\n.text:00011650\n.text:00011652\n.text:00011654\n.text:00011656\n.text:00011658\n.text:0001165c\n.text:00011660\n.text:00011662\n.text:00011664\n.text:00011666\n.text:00011668\n.text:0001166a\n.text:0001166e\n.text:00011670\n.text:00011672\n.text:00011674\n.text:00011676\n.text:00011678\n.text:0001167a\n.text:0001167e\n.text:00011682\n.text:00011684\n.text:00011688\n.text:0001168a\n.text:0001168c\n.text:0001168e\n.text:00011690\n.text:00011692\n.text:00011694\n.text:00011698\n.text:0001169a\n.text:0001169c\n.text:0001169e\n.text:000116a0\n.text:000116a2\n.text:000116a6\n.text:000116a8\n.text:000116aa\n.text:000116ac\n.text:000116ae\n.text:000116b0\n.text:000116b2\n.text:000116b6\n.text:000116b8\n.text:000116ba\n.text:000116bc\n.text:000116be\n.text:000116c0\n.text:000116c2\n.text:000116c6\n.text:000116ca\n.text:000116ce\n.text:000116d0\n.text:000116d2\n.text:000116d4\n.text:000116d6\n.text:000116d8\n.text:000116da\n.text:000116dc\n.text:000116de\n.text:000116e2\n.text:000116e4\n.text:000116e6\n.text:000116e8\n.text:000116ea\n.text:000116ee\n.text:000116f0\n.text:000116f2\n.text:000116f4\n.text:000116f6\n.text:000116f8\n.text:000116fa\n.text:000116fe\n.text:00011702\n.text:00011704\n.text:00011708\n.text:0001170a\n.text:0001170c\n.text:0001170e\n.text:00011710\n.text:00011712\n.text:00011714\n.text:00011716\n.text:00011718\n.text:0001171a\n.text:0001171c\n.text:0001171e\n.text:00011722\n.text:00011724\n.text:00011728\n.text:0001172c\n.text:0001172e\n.text:00011730\n.text:00011732\n.text:00011734\n.text:00011736\n.text:00011738\n.text:0001173a\n.text:0001173c\n.text:0001173e\n.text:00011742\n.text:00011744\n.text:00011748\n.text:0001174a\n.text:0001174c\n.text:00011750\n.text:00011754\n.text:00011756\n.text:00011758\n.text:0001175a\n.text:0001175c\n.text:0001175e\n.text:00011760\n.text:00011762\n.text:00011766\n.text:00011768\n.text:0001176a\n.text:0001176c\n.text:0001176e\n.text:00011772\n.text:00011774\n.text:00011778\n.text:0001177a\n.text:0001177c\n.text:0001177e\n.text:00011780\n.text:00011782\n.text:00011784\n.text:00011788\n.text:0001178a\n.text:0001178c\n.text:0001178e\n.text:00011790\n.text:00011794\n.text:00011796\n.text:00011798\n.text:0001179c\n.text:0001179e\n.text:000117a0\n.text:000117a2\n.text:000117a4\n.text:000117a6\n.text:000117a8\n.text:000117ac\n.text:000117ae\n.text:000117b2\n.text:000117b6\n.text:000117b8\n.text:000117ba\n.text:000117bc\n.text:000117be\n.text:000117c0\n.text:000117c2\n.text:000117c4\n.text:000117c6\n.text:000117c8\n.text:000117ca\n.text:000117cc\n.text:000117ce\n.text:000117d0\n.text:000117d2\n.text:000117d6\n.text:000117da\n.text:000117dc\n.text:000117e0\n.text:000117e2\n.text:000117e4\n.text:000117e6\n.text:000117e8\n.text:000117ea\n.text:000117ec\n.text:000117f0\n.text:000117f2\n.text:000117f4\n.text:000117f6\n.text:000117fa\n.text:000117fc\n.text:000117fe\n.text:00011800\n.text:00011802\n.text:00011804\n.text:00011806\n.text:0001180a\n.text:0001180c\n.text:0001180e\n.text:00011812\n.text:00011814\n.text:00011816\n.text:00011818\n.text:0001181a\n.text:0001181c\n.text:0001181e\n.text:00011820\n.text:00011822\n.text:00011824\n.text:00011826\n.text:00011828\n.text:0001182a\n.text:0001182c\n.text:00011830\n.text:00011832\n.text:00011834\n.text:00011836\n.text:00011838\n.text:0001183a\n.text:0001183c\n.text:00011840\n.text:00011842\n.text:00011844\n.text:00011848\n.text:0001184a\n.text:0001184c\n.text:0001184e\n.text:00011850\n.text:00011852\n.text:00011854\n.text:00011856\n.text:00011858\n.text:0001185a\n.text:0001185e\n.text:00011860\n.text:00011864\n.text:00011866\n.text:00011868\n.text:0001186a\n.text:0001186e\n.text:00011870\n.text:00011872\n.text:00011874\n.text:00011876\n.text:00011878\n.text:0001187c\n.text:00011880\n.text:00011884\n.text:00011886\n.text:00011888\n.text:0001188a\n.text:0001188c\n.text:00011890\n.text:00011892\n.text:00011894\n.text:00011896\n.text:00011898\n.text:0001189a\n.text:0001189c\n.text:000118a0\n.text:000118a4\n.text:000118a8\n.text:000118aa\n.text:000118ac\n.text:000118ae\n.text:000118b0\n.text:000118b2\n.text:000118b6\n.text:000118b8\n.text:000118ba\n.text:000118bc\n.text:000118be\n.text:000118c2\n.text:000118c6\n.text:000118c8\n.text:000118ca\n.text:000118cc\n.text:000118ce\n.text:000118d0\n.text:000118d2\n.text:000118d6\n.text:000118d8\n.text:000118da\n.text:000118dc\n.text:000118de\n.text:000118e0\n.text:000118e2\n.text:000118e6\n.text:000118ea\n.text:000118ec\n.text:000118f0\n.text:000118f2\n.text:000118f6\n.text:000118f8\n.text:000118fc\n.text:000118fe\n.text:00011900\n.text:00011902\n.text:00011904\n.text:00011908\n.text:0001190a\n.text:0001190c\n.text:0001190e\n.text:00011910\n.text:00011912\n.text:00011914\n.text:00011918\n.text:0001191a\n.text:0001191e\n.text:00011922\n.text:00011924\n.text:00011926\n.text:00011928\n.text:0001192a\n.text:0001192c\n.text:0001192e\n.text:00011932\n.text:00011936\n.text:00011938\n.text:0001193a\n.text:0001193e\n.text:00011940\n.text:00011942\n.text:00011944\n.text:00011946\n.text:00011948\n.text:0001194c\n.text:0001194e\n.text:00011950\n.text:00011954\n.text:00011956\n.text:0001195a\n.text:0001195c\n.text:0001195e\n.text:00011960\n.text:00011962\n.text:00011964\n.text:00011966\n.text:00011968\n.text:0001196c\n.text:00011970\n.text:00011972\n.text:00011974\n.text:00011976\n.text:00011978\n.text:0001197a\n.text:0001197c\n.text:0001197e\n.text:00011980\n.text:00011982\n.text:00011986\n.text:00011988\n.text:0001198a\n.text:0001198c\n.text:0001198e\n.text:00011990\n.text:00011992\n.text:00011994\n.text:00011998\n.text:0001199c\n.text:0001199e\n.text:000119a0\n.text:000119a2\n.text:000119a4\n.text:000119a6\n.text:000119a8\n.text:000119aa\n.text:000119ac\n.text:000119b0\n.text:000119b2\n.text:000119b6\n.text:000119b8\n.text:000119ba\n.text:000119be\n.text:000119c0\n.text:000119c2\n.text:000119c4\n.text:000119c8\n.text:000119cc\n.text:000119d0\n.text:000119d2\n.text:000119d4\n.text:000119d8\n.text:000119da\n.text:000119dc\n.text:000119de\n.text:000119e0\n.text:000119e2\n.text:000119e4\n.text:000119e6\n.text:000119ea\n.text:000119ec\n.text:000119ee\n.text:000119f0\n.text:000119f2\n.text:000119f4\n.text:000119f6\n.text:000119fa\n.text:000119fc\n.text:000119fe\n.text:00011a00\n.text:00011a04\n.text:00011a06\n.text:00011a08\n.text:00011a0a\n.text:00011a0e\n.text:00011a10\n.text:00011a12\n.text:00011a14\n.text:00011a16\n.text:00011a18\n.text:00011a1c\n.text:00011a1e\n.text:00011a22\n.text:00011a24\n.text:00011a26\n.text:00011a28\n.text:00011a2a\n.text:00011a2e\n.text:00011a30\n.text:00011a32\n.text:00011a36\n.text:00011a38\n.text:00011a3a\n.text:00011a3c\n.text:00011a3e\n.text:00011a40\n.text:00011a42\n.text:00011a44\n.text:00011a46\n.text:00011a4a\n.text:00011a4c\n.text:00011a4e\n.text:00011a50\n.text:00011a54\n.text:00011a56\n.text:00011a58\n.text:00011a5a\n.text:00011a5c\n.text:00011a5e\n.text:00011a60\n.text:00011a64\n.text:00011a66\n.text:00011a68\n.text:00011a6a\n.text:00011a6e\n.text:00011a70\n.text:00011a74\n.text:00011a76\n.text:00011a78\n.text:00011a7a\n.text:00011a7c\n.text:00011a7e\n.text:00011a80\n.text:00011a82\n.text:00011a84\n.text:00011a86\n.text:00011a88\n.text:00011a8a\n.text:00011a8c\n.text:00011a8e\n.text:00011a90\n.text:00011a92\n.text:00011a96\n.text:00011a98\n.text:00011a9a\n.text:00011a9c\n.text:00011a9e\n.text:00011aa0\n.text:00011aa2\n.text:00011aa4\n.text:00011aa6\n.text:00011aa8\n.text:00011aaa\n.text:00011aac\n.text:00011aae\n.text:00011ab0\n.text:00011ab4\n.text:00011ab6\n.text:00011ab8\n.text:00011aba\n.text:00011abc\n.text:00011abe\n.text:00011ac0\n.text:00011ac2\n.text:00011ac4\n.text:00011ac6\n.text:00011aca\n.text:00011acc\n.text:00011ace\n.text:00011ad0\n.text:00011ad2\n.text:00011ad6\n.text:00011ad8\n.text:00011ada\n.text:00011adc\n.text:00011ade\n.text:00011ae0\n.text:00011ae2\n.text:00011ae4\n.text:00011ae8\n.text:00011aea\n.text:00011aec\n.text:00011aee\n.text:00011af0\n.text:00011af2\n.text:00011af4\n.text:00011af8\n.text:00011afa\n.text:00011afc\n.text:00011afe\n.text:00011b00\n.text:00011b02\n.text:00011b04\n.text:00011b06\n.text:00011b0a\n.text:00011b0c\n.text:00011b0e\n.text:00011b10\n.text:00011b12\n.text:00011b14\n.text:00011b16\n.text:00011b18\n.text:00011b1a\n.text:00011b1c\n.text:00011b1e\n.text:00011b20\n.text:00011b22\n.text:00011b24\n.text:00011b26\n.text:00011b2a\n.text:00011b2c\n.text:00011b2e\n.text:00011b30\n.text:00011b32\n.text:00011b34\n.text:00011b36\n.text:00011b38\n.text:00011b3a\n.text:00011b3c\n.text:00011b3e\n.text:00011b40\n.text:00011b42\n.text:00011b44\n.text:00011b48\n.text:00011b4a\n.text:00011b4c\n.text:00011b4e\n.text:00011b50\n.text:00011b52\n.text:00011b54\n.text:00011b56\n.text:00011b58\n.text:00011b5a\n.text:00011b5e\n.text:00011b60\n.text:00011b62\n.text:00011b64\n.text:00011b66\n.text:00011b6a\n.text:00011b6c\n.text:00011b6e\n.text:00011b70\n.text:00011b72\n.text:00011b74\n.text:00011b76\n.text:00011b78\n.text:00011b7c\n.text:00011b7e\n.text:00011b80\n.text:00011b82\n.text:00011b84\n.text:00011b86\n.text:00011b88\n.text:00011b8c\n.text:00011b8e\n.text:00011b90\n.text:00011b92\n.text:00011b94\n.text:00011b96\n.text:00011b98\n.text:00011b9a\n.text:00011b9e\n.text:00011ba0\n.text:00011ba2\n.text:00011ba4\n.text:00011ba6\n.text:00011ba8\n.text:00011baa\n.text:00011bac\n.text:00011bae\n.text:00011bb0\n.text:00011bb2\n.text:00011bb4\n.text:00011bb6\n.text:00011bba\n.text:00011bbc\n.text:00011bc0\n.text:00011bc2\n.text:00011bc4\n.text:00011bc6\n.text:00011bc8\n.text:00011bca\n.text:00011bcc\n.text:00011bce\n.text:00011bd0\n.text:00011bd2\n.text:00011bd6\n.text:00011bd8\n.text:00011bda\n.text:00011bdc\n.text:00011bde\n.text:00011be0\n.text:00011be2\n.text:00011be4\n.text:00011be6\n.text:00011bea\n.text:00011bec\n.text:00011bee\n.text:00011bf0\n.text:00011bf2\n.text:00011bf4\n.text:00011bf6\n.text:00011bf8\n.text:00011bfa\n.text:00011bfc\n.text:00011bfe\n.text:00011c00\n.text:00011c02\n.text:00011c04\n.text:00011c06\n.text:00011c08\n.text:00011c0a\n.text:00011c0e\n.text:00011c10\n.text:00011c12\n.text:00011c14\n.text:00011c16\n.text:00011c18\n.text:00011c1a\n.text:00011c1e\n.text:00011c20\n.text:00011c22\n.text:00011c24\n.text:00011c26\n.text:00011c28\n.text:00011c2a\n.text:00011c2c\n.text:00011c2e\n.text:00011c30\n.text:00011c32\n.text:00011c34\n.text:00011c36\n.text:00011c38\n.text:00011c3c\n.text:00011c3e\n.text:00011c40\n.text:00011c42\n.text:00011c44\n.text:00011c46\n.text:00011c48\n.text:00011c4c\n.text:00011c4e\n.text:00011c50\n.text:00011c52\n.text:00011c54\n.text:00011c56\n.text:00011c58\n.text:00011c5a\n.text:00011c5c\n.text:00011c5e\n.text:00011c60\n.text:00011c62\n.text:00011c64\n.text:00011c66\n.text:00011c6a\n.text:00011c6c\n.text:00011c6e\n.text:00011c70\n.text:00011c72\n.text:00011c74\n.text:00011c76\n.text:00011c78\n.text:00011c7c\n.text:00011c7e\n.text:00011c80\n.text:00011c82\n.text:00011c84\n.text:00011c86\n.text:00011c88\n.text:00011c8c\n.text:00011c8e\n.text:00011c90\n.text:00011c92\n.text:00011c94\n.text:00011c96\n.text:00011c98\n.text:00011c9c\n.text:00011c9e\n.text:00011ca0\n.text:00011ca2\n.text:00011ca4\n.text:00011ca6\n.text:00011ca8\n.text:00011caa\n.text:00011cac\n.text:00011cae\n.text:00011cb0\n.text:00011cb4\n.text:00011cb6\n.text:00011cb8\n.text:00011cba\n.text:00011cbe\n.text:00011cc2\n'
+p209
+tp210
+sS'FUN_00012828'
+p211
+(S'\n__stdcall FUN_00012828()\n'
+p212
+V\u000aundefined4 FUN_00012828(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 local_c;\u000a  \u000a  local_c = uParm4;\u000a  _Unwind_VRS_Get(uParm1,0,uParm2,0,&local_c,uParm2,uParm3);\u000a  return local_c;\u000a}\u000a\u000a
+p213
+S'stmdb sp!,{ r0 r1 r2 r3 r4 lr }\ncpy r2,r1\nmov r1,#0x0\nadd r3,sp,#0xc\nstr r3,[sp,#0x0]\ncpy r3,r1\nbl 0x000111ec\nldr r0,[sp,#0xc]\nadd sp,sp,#0x14\nldr pc,[sp],#0x4\n'
+p214
+S'1f 40 2d e9\n01 20 a0 e1\n00 10 a0 e3\n0c 30 8d e2\n00 30 8d e5\n01 30 a0 e1\n69 fa ff eb\n0c 00 9d e5\n14 d0 8d e2\n04 f0 9d e4\n'
+p215
+S'.text:00012828\n.text:0001282c\n.text:00012830\n.text:00012834\n.text:00012838\n.text:0001283c\n.text:00012840\n.text:00012844\n.text:00012848\n.text:0001284c\n'
+p216
+tp217
+sS'_Unwind_VRS_Get'
+p218
+(S'\n__stdcall _Unwind_VRS_Get(undefined param_1, undefined param_2, undefined param_3, undefined param_4, undefined4 param_5)\n'
+p219
+V\u000aundefined4\u000a_Unwind_VRS_Get(int param_1,undefined4 param_2,uint param_3,int param_4,undefined4 *param_5)\u000a\u000a{\u000a  bool bVar1;\u000a  \u000a  switch(param_2) {\u000a  case 0:\u000a    bVar1 = param_3 == 0xf;\u000a    if (param_3 < 0x10) {\u000a      bVar1 = param_4 == 0;\u000a    }\u000a    if (bVar1) {\u000a      *param_5 = *(undefined4 *)(param_1 + param_3 * 4 + 4);\u000a      return 0;\u000a    }\u000a    break;\u000a  case 1:\u000a    return 1;\u000a  case 2:\u000a    break;\u000a  case 3:\u000a    return 1;\u000a  case 4:\u000a    return 1;\u000a  }\u000a  return 2;\u000a}\u000a\u000a
+p220
+S'cmp r1,#0x4\naddls pc,pc,r1, lsl #0x2\nb 0x00012820\nb 0x000127ec\nb 0x00012818\nb 0x00012820\nb 0x00012818\nb 0x00012818\ncmp r2,#0xf\ncmpls r3,#0x0\nmovne r3,#0x1\nmoveq r3,#0x0\nbne 0x00012820\nadd r0,r0,r2, lsl #0x2\nldr r2,[sp,#0x0]\nldr r1,[r0,#0x4]\ncpy r0,r3\nstr r1,[r2,#0x0]\nbx lr\nmov r0,#0x1\nbx lr\nmov r0,#0x2\nbx lr\n'
+p221
+S'04 00 51 e3\n01 f1 8f 90\n11 00 00 ea\n03 00 00 ea\n0d 00 00 ea\n0e 00 00 ea\n0b 00 00 ea\n0a 00 00 ea\n0f 00 52 e3\n00 00 53 93\n01 30 a0 13\n00 30 a0 03\n07 00 00 1a\n02 01 80 e0\n00 20 9d e5\n04 10 90 e5\n03 00 a0 e1\n00 10 82 e5\n1e ff 2f e1\n01 00 a0 e3\n1e ff 2f e1\n02 00 a0 e3\n1e ff 2f e1\n'
+p222
+S'.text:000127cc\n.text:000127d0\n.text:000127d4\n.text:000127d8\n.text:000127dc\n.text:000127e0\n.text:000127e4\n.text:000127e8\n.text:000127ec\n.text:000127f0\n.text:000127f4\n.text:000127f8\n.text:000127fc\n.text:00012800\n.text:00012804\n.text:00012808\n.text:0001280c\n.text:00012810\n.text:00012814\n.text:00012818\n.text:0001281c\n.text:00012820\n.text:00012824\n'
+p223
+tp224
+sS'abort'
+p225
+(S'\n__stdcall abort()\n'
+p226
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid abort(void)\u000a\u000a{\u000a  (*(code *)PTR_abort_00014fb4)();\u000a  return;\u000a}\u000a\u000a
+p227
+S'adr r12,0x111c4\nadd r12,r12,#0x3000\nldr pc,[r12,#0xdf0]!\n'
+p228
+S'00 c6 8f e2\n03 ca 8c e2\nf0 fd bc e5\n'
+p229
+S'.plt:000111bc\n.plt:000111c0\n.plt:000111c4\n'
+p230
+tp231
+sS'_Unwind_DeleteException'
+p232
+(S'\n__stdcall _Unwind_DeleteException()\n'
+p233
+V\u000avoid _Unwind_DeleteException(int iParm1)\u000a\u000a{\u000a  if (*(code **)(iParm1 + 8) == (code *)0x0) {\u000a    return;\u000a  }\u000a                    /* WARNING: Could not recover jumptable at 0x000127c8. Too many branches */\u000a                    /* WARNING: Treating indirect jump as call */\u000a  (**(code **)(iParm1 + 8))(1);\u000a  return;\u000a}\u000a\u000a
+p234
+S'ldr r3,[r0,#0x8]\ncpy r1,r0\ncmp r3,#0x0\nbxeq lr\nmov r0,#0x1\nbx r3\n'
+p235
+S'08 30 90 e5\n00 10 a0 e1\n00 00 53 e3\n1e ff 2f 01\n01 00 a0 e3\n13 ff 2f e1\n'
+p236
+S'.text:000127b4\n.text:000127b8\n.text:000127bc\n.text:000127c0\n.text:000127c4\n.text:000127c8\n'
+p237
+tp238
+sS'FUN_000124bc'
+p239
+(S'\n__stdcall FUN_000124bc()\n'
+p240
+V\u000aundefined4 FUN_000124bc(void)\u000a\u000a{\u000a  return 9;\u000a}\u000a\u000a
+p241
+S'mov r0,#0x9\nbx lr\n'
+p242
+S'09 00 a0 e3\n1e ff 2f e1\n'
+p243
+S'.text:000124bc\n.text:000124c0\n'
+p244
+tp245
+sS'_Unwind_Resume_or_Rethrow'
+p246
+(S'\n__stdcall _Unwind_Resume_or_Rethrow()\n'
+p247
+V\u000avoid _Unwind_Resume_or_Rethrow\u000a               (undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 uStack68;\u000a  undefined4 uStack64;\u000a  undefined4 uStack60;\u000a  undefined4 uStack56;\u000a  undefined4 uStack52;\u000a  undefined4 uStack4;\u000a  \u000a  uStack4 = 0x13248;\u000a  uStack68 = 0;\u000a  uStack64 = uParm1;\u000a  uStack60 = uParm2;\u000a  uStack56 = uParm3;\u000a  uStack52 = uParm4;\u000a  __gnu_Unwind_Resume_or_Rethrow(uParm1,&uStack68,uParm3,0,uParm3);\u000a  return;\u000a}\u000a\u000a
+p248
+S'stmdb sp!,{ sp lr pc}\nstmdb sp!,{ r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 }\nmov r3,#0x0\nstmdb sp!,{ r2 r3 }\nadd r1,sp,#0x4\nbl 0x00011270\nldr lr,[sp,#0x40]\nadd sp,sp,#0x48\nbx lr\n'
+p249
+S'00 e0 2d e9\nff 1f 2d e9\n00 30 a0 e3\n0c 00 2d e9\n04 10 8d e2\n05 f8 ff eb\n40 e0 9d e5\n48 d0 8d e2\n1e ff 2f e1\n'
+p250
+S'.text:00013240\n.text:00013244\n.text:00013248\n.text:0001324c\n.text:00013250\n.text:00013254\n.text:00013258\n.text:0001325c\n.text:00013260\n'
+p251
+tp252
+sS'rr'
+p253
+(S'\n__stdcall rr()\n'
+p254
+V\u000aundefined4 rr(int *piParm1)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  undefined4 uVar2;\u000a  undefined4 uVar3;\u000a  undefined4 uVar4;\u000a  undefined4 uVar5;\u000a  int iVar6;\u000a  \u000a  uVar1 = (**(code **)(*piParm1 + 0x29c))(piParm1,DAT_0001154c + 0x113b8);\u000a  uVar2 = (**(code **)(*piParm1 + 0x18))(piParm1,DAT_00011550 + 0x113ca);\u000a  iVar6 = DAT_00011558 + 0x113da;\u000a  uVar2 = (**(code **)(*piParm1 + 0x84))(piParm1,uVar2,DAT_00011554 + 0x113e0,iVar6);\u000a  uVar1 = (**(code **)(*piParm1 + 0x88))(piParm1,uVar1,uVar2);\u000a  uVar2 = (**(code **)(*piParm1 + 0x18))(piParm1,DAT_0001155c + 0x113fe);\u000a  uVar3 = (**(code **)(*piParm1 + 0x1c4))\u000a                    (piParm1,uVar2,DAT_00011560 + 0x11412,DAT_00011564 + 0x11414);\u000a  uVar4 = (**(code **)(*piParm1 + 0x240))(piParm1,uVar2,DAT_00011568 + 0x11428,&UNK_0001156c);\u000a  uVar4 = (**(code **)(*piParm1 + 600))(piParm1,uVar2,uVar4);\u000a  uVar1 = (**(code **)(*piParm1 + 0x1c8))(piParm1,uVar2,uVar3,uVar1,uVar4);\u000a  uVar2 = (**(code **)(*piParm1 + 0x18))(piParm1,DAT_00011570 + 0x11456);\u000a  uVar3 = (**(code **)(*piParm1 + 0x84))\u000a                    (piParm1,uVar2,DAT_00011574 + 0x1146a,DAT_00011578 + 0x1146c);\u000a  uVar4 = (**(code **)(*piParm1 + 0x29c))(piParm1,&UNK_0001157c);\u000a  uVar1 = (**(code **)(*piParm1 + 0x70))(piParm1,uVar2,uVar3,uVar1,uVar4);\u000a  uVar5 = (**(code **)(*piParm1 + 0x18))(piParm1,"java/security/Key");\u000a  uVar5 = (**(code **)(*piParm1 + 0x84))(piParm1,uVar5,"getEncoded",iVar6);\u000a  uVar1 = (**(code **)(*piParm1 + 0x88))(piParm1,uVar1,uVar5);\u000a  uVar1 = (**(code **)(*piParm1 + 0x70))(piParm1,uVar2,uVar3,uVar1,uVar4);\u000a  uVar2 = (**(code **)(*piParm1 + 0x18))(piParm1,"javax/crypto/Cipher");\u000a  uVar3 = (**(code **)(*piParm1 + 0x1c4))\u000a                    (piParm1,uVar2,"getInstance","(Ljava/lang/String;)Ljavax/crypto/Cipher;");\u000a  uVar3 = (**(code **)(*piParm1 + 0x1c8))(piParm1,uVar2,uVar3,uVar4);\u000a  uVar4 = (**(code **)(*piParm1 + 0x84))(piParm1,uVar2,&UNK_000115ec,"(ILjava/security/Key;)V");\u000a  uVar5 = (**(code **)(*piParm1 + 0x240))(piParm1,uVar2,"DECRYPT_MODE",&UNK_0001156c);\u000a  uVar2 = (**(code **)(*piParm1 + 600))(piParm1,uVar2,uVar5);\u000a  (**(code **)(*piParm1 + 0xf4))(piParm1,uVar3,uVar4,uVar2,uVar1);\u000a  return uVar3;\u000a}\u000a\u000a
+p255
+S'push { r4, r5, r6, r7, lr }\nadd r7,sp,#0xc\npush { r8, r9, r10, r11  }\nsub sp,#0x4\nmov r4,r0\nldr r1,[0x0001154c]\nldr r0,[r4,#0x0]\nadd r1,pc\nldr.w r2,[r0,#0x29c]\nmov r0,r4\nblx r2\nmov r5,r0\nldr r0,[r4,#0x0]\nldr r1,[0x00011550]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r1,r0\nldr r0,[r4,#0x0]\nldr.w r9,[0x00011558]\nldr r2,[0x00011554]\nadd r9,pc\nldr.w r6,[r0,#0x84]\nadd r2,pc\nmov r0,r4\nmov r3,r9\nblx r6\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r5\nldr.w r3,[r0,#0x88]\nmov r0,r4\nblx r3\nmov r10,r0\nldr r0,[r4,#0x0]\nldr r1,[0x0001155c]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r6,r0\nldr r0,[r4,#0x0]\nldr r2,[0x00011560]\nmov r1,r6\nldr r3,[0x00011564]\nldr.w r5,[r0,#0x1c4]\nadd r2,pc\nadd r3,pc\nmov r0,r4\nblx r5\nmov r8,r0\nldr r0,[r4,#0x0]\nldr r2,[0x00011568]\nadr r3,[0x1156c]\nmov r1,r6\nldr.w r5,[r0,#0x240]\nadd r2,pc\nmov r0,r4\nblx r5\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r6\nldr.w r3,[r0,#0x258]\nmov r0,r4\nblx r3\nldr r1,[r4,#0x0]\nmov r2,r8\nmov r3,r10\nldr.w r5,[r1,#0x1c8]\nmov r1,r6\nstr r0,[sp,#0x0]\nmov r0,r4\nblx r5\nmov r11,r0\nldr r0,[r4,#0x0]\nldr r1,[0x00011570]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r6,r0\nldr r0,[r4,#0x0]\nldr r2,[0x00011574]\nmov r1,r6\nldr r3,[0x00011578]\nldr.w r5,[r0,#0x84]\nadd r2,pc\nadd r3,pc\nmov r0,r4\nblx r5\nmov r10,r0\nldr r0,[r4,#0x0]\nadr r1,[0x1157c]\nldr.w r2,[r0,#0x29c]\nmov r0,r4\nblx r2\nmov r8,r0\nldr r0,[r4,#0x0]\nmov r1,r6\nmov r2,r10\nmov r3,r11\nldr r5,[r0,#0x70]\nmov r0,r4\nstr.w r8,[sp,#0x0]\nblx r5\nmov r11,r0\nldr r0,[r4,#0x0]\nadr r1,[0x11580]\nldr r2,[r0,#0x18]\nmov r0,r4\nblx r2\nmov r1,r0\nldr r0,[r4,#0x0]\nadr r2,[0x11594]\nmov r3,r9\nldr.w r5,[r0,#0x84]\nmov r0,r4\nblx r5\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r11\nldr.w r3,[r0,#0x88]\nmov r0,r4\nblx r3\nmov r3,r0\nldr r0,[r4,#0x0]\nmov r1,r6\nmov r2,r10\nldr r5,[r0,#0x70]\nmov r0,r4\nstr.w r8,[sp,#0x0]\nblx r5\nmov r9,r0\nldr r0,[r4,#0x0]\nadr r1,[0x115a0]\nldr r2,[r0,#0x18]\nmov r0,r4\nblx r2\nmov r6,r0\nldr r0,[r4,#0x0]\nadr r2,[0x115b4]\nadr r3,[0x115c0]\nmov r1,r6\nldr.w r5,[r0,#0x1c4]\nmov r0,r4\nblx r5\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r6\nmov r3,r8\nldr.w r5,[r0,#0x1c8]\nmov r0,r4\nblx r5\nmov r10,r0\nldr r0,[r4,#0x0]\nadr r2,[0x115ec]\nadr r3,[0x115f4]\nmov r1,r6\nldr.w r5,[r0,#0x84]\nmov r0,r4\nblx r5\nmov r8,r0\nldr r0,[r4,#0x0]\nadr r2,[0x1160c]\nadr r3,[0x1156c]\nmov r1,r6\nldr.w r5,[r0,#0x240]\nmov r0,r4\nblx r5\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r6\nldr.w r3,[r0,#0x258]\nmov r0,r4\nblx r3\nmov r3,r0\nldr r0,[r4,#0x0]\nmov r1,r10\nmov r2,r8\nldr.w r6,[r0,#0xf4]\nmov r0,r4\nstr.w r9,[sp,#0x0]\nblx r6\nmov r0,r10\nadd sp,#0x4\npop.w { r8, r9, r10, r11 }\npop { r4, r5, r6, r7, pc }\n'
+p256
+S'f0 b5\n03 af\n2d e9 00 0f\n81 b0\n04 46\n66 49\n20 68\n79 44\nd0 f8 9c 22\n20 46\n90 47\n05 46\n20 68\n63 49\n82 69\n79 44\n20 46\n90 47\n01 46\n20 68\ndf f8 84 91\n5f 4a\nf9 44\nd0 f8 84 60\n7a 44\n20 46\n4b 46\nb0 47\n02 46\n20 68\n29 46\nd0 f8 88 30\n20 46\n98 47\n82 46\n20 68\n59 49\n82 69\n79 44\n20 46\n90 47\n06 46\n20 68\n56 4a\n31 46\n56 4b\nd0 f8 c4 51\n7a 44\n7b 44\n20 46\na8 47\n80 46\n20 68\n53 4a\n53 a3\n31 46\nd0 f8 40 52\n7a 44\n20 46\na8 47\n02 46\n20 68\n31 46\nd0 f8 58 32\n20 46\n98 47\n21 68\n42 46\n53 46\nd1 f8 c8 51\n31 46\n00 90\n20 46\na8 47\n83 46\n20 68\n48 49\n82 69\n79 44\n20 46\n90 47\n06 46\n20 68\n45 4a\n31 46\n45 4b\nd0 f8 84 50\n7a 44\n7b 44\n20 46\na8 47\n82 46\n20 68\n42 a1\nd0 f8 9c 22\n20 46\n90 47\n80 46\n20 68\n31 46\n52 46\n5b 46\n05 6f\n20 46\ncd f8 00 80\na8 47\n83 46\n20 68\n3a a1\n82 69\n20 46\n90 47\n01 46\n20 68\n3c a2\n4b 46\nd0 f8 84 50\n20 46\na8 47\n02 46\n20 68\n59 46\nd0 f8 88 30\n20 46\n98 47\n03 46\n20 68\n31 46\n52 46\n05 6f\n20 46\ncd f8 00 80\na8 47\n81 46\n20 68\n33 a1\n82 69\n20 46\n90 47\n06 46\n20 68\n35 a2\n38 a3\n31 46\nd0 f8 c4 51\n20 46\na8 47\n02 46\n20 68\n31 46\n43 46\nd0 f8 c8 51\n20 46\na8 47\n82 46\n20 68\n3b a2\n3c a3\n31 46\nd0 f8 84 50\n20 46\na8 47\n80 46\n20 68\n3e a2\n16 a3\n31 46\nd0 f8 40 52\n20 46\na8 47\n02 46\n20 68\n31 46\nd0 f8 58 32\n20 46\n98 47\n03 46\n20 68\n51 46\n42 46\nd0 f8 f4 60\n20 46\ncd f8 00 90\nb0 47\n50 46\n01 b0\nbd e8 00 0f\nf0 bd\n'
+p257
+S'.text:000113a4\n.text:000113a6\n.text:000113a8\n.text:000113ac\n.text:000113ae\n.text:000113b0\n.text:000113b2\n.text:000113b4\n.text:000113b6\n.text:000113ba\n.text:000113bc\n.text:000113be\n.text:000113c0\n.text:000113c2\n.text:000113c4\n.text:000113c6\n.text:000113c8\n.text:000113ca\n.text:000113cc\n.text:000113ce\n.text:000113d0\n.text:000113d4\n.text:000113d6\n.text:000113d8\n.text:000113dc\n.text:000113de\n.text:000113e0\n.text:000113e2\n.text:000113e4\n.text:000113e6\n.text:000113e8\n.text:000113ea\n.text:000113ee\n.text:000113f0\n.text:000113f2\n.text:000113f4\n.text:000113f6\n.text:000113f8\n.text:000113fa\n.text:000113fc\n.text:000113fe\n.text:00011400\n.text:00011402\n.text:00011404\n.text:00011406\n.text:00011408\n.text:0001140a\n.text:0001140e\n.text:00011410\n.text:00011412\n.text:00011414\n.text:00011416\n.text:00011418\n.text:0001141a\n.text:0001141c\n.text:0001141e\n.text:00011420\n.text:00011424\n.text:00011426\n.text:00011428\n.text:0001142a\n.text:0001142c\n.text:0001142e\n.text:00011430\n.text:00011434\n.text:00011436\n.text:00011438\n.text:0001143a\n.text:0001143c\n.text:0001143e\n.text:00011442\n.text:00011444\n.text:00011446\n.text:00011448\n.text:0001144a\n.text:0001144c\n.text:0001144e\n.text:00011450\n.text:00011452\n.text:00011454\n.text:00011456\n.text:00011458\n.text:0001145a\n.text:0001145c\n.text:0001145e\n.text:00011460\n.text:00011462\n.text:00011466\n.text:00011468\n.text:0001146a\n.text:0001146c\n.text:0001146e\n.text:00011470\n.text:00011472\n.text:00011474\n.text:00011478\n.text:0001147a\n.text:0001147c\n.text:0001147e\n.text:00011480\n.text:00011482\n.text:00011484\n.text:00011486\n.text:00011488\n.text:0001148a\n.text:0001148e\n.text:00011490\n.text:00011492\n.text:00011494\n.text:00011496\n.text:00011498\n.text:0001149a\n.text:0001149c\n.text:0001149e\n.text:000114a0\n.text:000114a2\n.text:000114a4\n.text:000114a8\n.text:000114aa\n.text:000114ac\n.text:000114ae\n.text:000114b0\n.text:000114b2\n.text:000114b6\n.text:000114b8\n.text:000114ba\n.text:000114bc\n.text:000114be\n.text:000114c0\n.text:000114c2\n.text:000114c4\n.text:000114c6\n.text:000114ca\n.text:000114cc\n.text:000114ce\n.text:000114d0\n.text:000114d2\n.text:000114d4\n.text:000114d6\n.text:000114d8\n.text:000114da\n.text:000114dc\n.text:000114de\n.text:000114e0\n.text:000114e2\n.text:000114e6\n.text:000114e8\n.text:000114ea\n.text:000114ec\n.text:000114ee\n.text:000114f0\n.text:000114f2\n.text:000114f6\n.text:000114f8\n.text:000114fa\n.text:000114fc\n.text:000114fe\n.text:00011500\n.text:00011502\n.text:00011504\n.text:00011508\n.text:0001150a\n.text:0001150c\n.text:0001150e\n.text:00011510\n.text:00011512\n.text:00011514\n.text:00011516\n.text:0001151a\n.text:0001151c\n.text:0001151e\n.text:00011520\n.text:00011522\n.text:00011524\n.text:00011528\n.text:0001152a\n.text:0001152c\n.text:0001152e\n.text:00011530\n.text:00011532\n.text:00011534\n.text:00011538\n.text:0001153a\n.text:0001153e\n.text:00011540\n.text:00011542\n.text:00011544\n.text:00011548\n'
+p258
+tp259
+sS'FUN_000124a8'
+p260
+(S'\n__stdcall FUN_000124a8()\n'
+p261
+V\u000aint FUN_000124a8(int *piParm1)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = *piParm1;\u000a  if (iVar1 != 0) {\u000a    iVar1 = *(int *)(iVar1 + (int)piParm1);\u000a  }\u000a  return iVar1;\u000a}\u000a\u000a
+p262
+S'ldr r3,[r0,#0x0]\ncmp r3,#0x0\nldrne r0,[r3,r0]\ncpyeq r0,r3\nbx lr\n'
+p263
+S'00 30 90 e5\n00 00 53 e3\n00 00 93 17\n03 00 a0 01\n1e ff 2f e1\n'
+p264
+S'.text:000124a8\n.text:000124ac\n.text:000124b0\n.text:000124b4\n.text:000124b8\n'
+p265
+tp266
+sS'_Unwind_RaiseException'
+p267
+(S'\n__stdcall _Unwind_RaiseException()\n'
+p268
+V\u000avoid _Unwind_RaiseException(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 uStack68;\u000a  undefined4 uStack64;\u000a  undefined4 uStack60;\u000a  undefined4 uStack56;\u000a  undefined4 uStack52;\u000a  undefined4 uStack4;\u000a  \u000a  uStack4 = 0x13200;\u000a  uStack68 = 0;\u000a  uStack64 = uParm1;\u000a  uStack60 = uParm2;\u000a  uStack56 = uParm3;\u000a  uStack52 = uParm4;\u000a  __gnu_Unwind_RaiseException(uParm1,&uStack68,uParm3,0,uParm3);\u000a  return;\u000a}\u000a\u000a
+p269
+S'stmdb sp!,{ sp lr pc}\nstmdb sp!,{ r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 }\nmov r3,#0x0\nstmdb sp!,{ r2 r3 }\nadd r1,sp,#0x4\nbl 0x000111e0\nldr lr,[sp,#0x40]\nadd sp,sp,#0x48\nbx lr\n'
+p270
+S'00 e0 2d e9\nff 1f 2d e9\n00 30 a0 e3\n0c 00 2d e9\n04 10 8d e2\nf3 f7 ff eb\n40 e0 9d e5\n48 d0 8d e2\n1e ff 2f e1\n'
+p271
+S'.text:000131f8\n.text:000131fc\n.text:00013200\n.text:00013204\n.text:00013208\n.text:0001320c\n.text:00013210\n.text:00013214\n.text:00013218\n'
+p272
+tp273
+sS'__stack_chk_fail'
+p274
+(S'\n__stdcall __stack_chk_fail()\n'
+p275
+V\u000avoid __stack_chk_fail(void)\u000a\u000a{\u000a  (*(code *)PTR___stack_chk_fail_00014f78)();\u000a  return;\u000a}\u000a\u000a
+p276
+S'adr r12,0x11110\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe68]!\n'
+p277
+S'00 c6 8f e2\n03 ca 8c e2\n68 fe bc e5\n'
+p278
+S'.plt:00011108\n.plt:0001110c\n.plt:00011110\n'
+p279
+tp280
+sS'_Unwind_GetCFA'
+p281
+(S'\n__stdcall _Unwind_GetCFA()\n'
+p282
+V\u000aundefined4 _Unwind_GetCFA(int iParm1)\u000a\u000a{\u000a  return *(undefined4 *)(iParm1 + 0x44);\u000a}\u000a\u000a
+p283
+S'ldr r0,[r0,#0x44]\nbx lr\n'
+p284
+S'44 00 90 e5\n1e ff 2f e1\n'
+p285
+S'.text:00012654\n.text:00012658\n'
+p286
+tp287
+sS'__gnu_Unwind_Restore_VFP'
+p288
+(S'\n__stdcall __gnu_Unwind_Restore_VFP()\n'
+p289
+V\u000avoid __gnu_Unwind_Restore_VFP(undefined4 uParm1)\u000a\u000a{\u000a  undefined4 in_cr0;\u000a  \u000a  coprocessor_load(0xb,in_cr0,uParm1);\u000a  return;\u000a}\u000a\u000a
+p290
+S'ldc p11,cr0,[r0],{0x21}\nbx lr\n'
+p291
+S'21 0b 90 ec\n1e ff 2f e1\n'
+p292
+S'.text:00013118\n.text:0001311c\n'
+p293
+tp294
+sS'__system_property_get'
+p295
+(S'\n__stdcall __system_property_get()\n'
+p296
+V\u000avoid __system_property_get(void)\u000a\u000a{\u000a  (*(code *)PTR___system_property_get_00014f70)();\u000a  return;\u000a}\u000a\u000a
+p297
+S'adr r12,0x110f8\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe78]!\n'
+p298
+S'00 c6 8f e2\n03 ca 8c e2\n78 fe bc e5\n'
+p299
+S'.plt:000110f0\n.plt:000110f4\n.plt:000110f8\n'
+p300
+tp301
+sS'sleep'
+p302
+(S'\n__stdcall sleep(uint __seconds)\n'
+p303
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000auint sleep(uint __seconds)\u000a\u000a{\u000a  uint uVar1;\u000a  \u000a  uVar1 = (*(code *)PTR_sleep_00014f8c)();\u000a  return uVar1;\u000a}\u000a\u000a
+p304
+S'adr r12,0x1114c\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe40]!\n'
+p305
+S'00 c6 8f e2\n03 ca 8c e2\n40 fe bc e5\n'
+p306
+S'.plt:00011144\n.plt:00011148\n.plt:0001114c\n'
+p307
+tp308
+sS'_Unwind_Backtrace'
+p309
+(S'\n__stdcall _Unwind_Backtrace()\n'
+p310
+V\u000avoid _Unwind_Backtrace(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 uStack68;\u000a  undefined4 uStack64;\u000a  undefined4 uStack60;\u000a  undefined4 uStack56;\u000a  undefined4 uStack52;\u000a  undefined4 uStack4;\u000a  \u000a  uStack4 = 0x13290;\u000a  uStack68 = 0;\u000a  uStack64 = uParm1;\u000a  uStack60 = uParm2;\u000a  uStack56 = uParm3;\u000a  uStack52 = uParm4;\u000a  __gnu_Unwind_Backtrace(uParm1,uParm2,&uStack68,0,uParm3);\u000a  return;\u000a}\u000a\u000a
+p311
+S'stmdb sp!,{ sp lr pc}\nstmdb sp!,{ r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 }\nmov r3,#0x0\nstmdb sp!,{ r2 r3 }\nadd r2,sp,#0x4\nbl 0x00011288\nldr lr,[sp,#0x40]\nadd sp,sp,#0x48\nbx lr\n'
+p312
+S'00 e0 2d e9\nff 1f 2d e9\n00 30 a0 e3\n0c 00 2d e9\n04 20 8d e2\nf9 f7 ff eb\n40 e0 9d e5\n48 d0 8d e2\n1e ff 2f e1\n'
+p313
+S'.text:00013288\n.text:0001328c\n.text:00013290\n.text:00013294\n.text:00013298\n.text:0001329c\n.text:000132a0\n.text:000132a4\n.text:000132a8\n'
+p314
+tp315
+sS'__gnu_Unwind_Resume_or_Rethrow'
+p316
+(S'\n__stdcall __gnu_Unwind_Resume_or_Rethrow()\n'
+p317
+V\u000avoid __gnu_Unwind_Resume_or_Rethrow(int iParm1,int iParm2)\u000a\u000a{\u000a  if (*(int *)(iParm1 + 0xc) == 0) {\u000a    __gnu_Unwind_RaiseException();\u000a    return;\u000a  }\u000a  *(undefined4 *)(iParm2 + 0x40) = *(undefined4 *)(iParm2 + 0x3c);\u000a  FUN_0001252c(iParm1,iParm2,0);\u000a  return;\u000a}\u000a\u000a
+p318
+S'ldr r2,[r0,#0xc]\ncmp r2,#0x0\nbne 0x000127a0\nb 0x000111e0\nldr r2,[r1,#0x3c]\nstr r2,[r1,#0x40]\nmov r2,#0x0\nb 0x0001252c\n'
+p319
+S'0c 20 90 e5\n00 00 52 e3\n00 00 00 1a\n8f fa ff ea\n3c 20 91 e5\n40 20 81 e5\n00 20 a0 e3\n5e ff ff ea\n'
+p320
+S'.text:00012790\n.text:00012794\n.text:00012798\n.text:0001279c\n.text:000127a0\n.text:000127a4\n.text:000127a8\n.text:000127ac\n'
+p321
+tp322
+sS'__android_log_write'
+p323
+(S'\n__stdcall __android_log_write()\n'
+p324
+V\u000avoid __android_log_write(void)\u000a\u000a{\u000a  (*(code *)PTR___android_log_write_00014f80)();\u000a  return;\u000a}\u000a\u000a
+p325
+S'adr r12,0x11128\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe58]!\n'
+p326
+S'00 c6 8f e2\n03 ca 8c e2\n58 fe bc e5\n'
+p327
+S'.plt:00011120\n.plt:00011124\n.plt:00011128\n'
+p328
+tp329
+sS'Java_all_GUW_run'
+p330
+(S'\n__stdcall Java_all_GUW_run(undefined param_1, undefined param_2, undefined param_3, undefined param_4, undefined4 param_5, undefined param_6, undefined4 param_7)\n'
+p331
+V\u000avoid Java_all_GUW_run(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,\u000a                     undefined4 param_5,undefined4 param_6,undefined4 param_7)\u000a\u000a{\u000a  rrr(param_1,param_3,param_4,param_5,param_6,param_7);\u000a  return;\u000a}\u000a\u000a
+p332
+S'push { r7, lr }\nmov r7,sp\nsub sp,#0x8\nldrd r12,r1,[r7,#0x8]\nldr.w lr,[r7,#0x10]\nstrd r1,lr,[sp,#0x0]\nmov r1,r2\nmov r2,r3\nmov r3,r12\nblx 0x000110e4\nadd sp,#0x8\npop { r7, pc }\n'
+p333
+S'80 b5\n6f 46\n82 b0\nd7 e9 02 c1\nd7 f8 10 e0\ncd e9 00 1e\n11 46\n1a 46\n63 46\nff f7 40 e9\n02 b0\n80 bd\n'
+p334
+S'.text:00011e48\n.text:00011e4a\n.text:00011e4c\n.text:00011e4e\n.text:00011e52\n.text:00011e56\n.text:00011e5a\n.text:00011e5c\n.text:00011e5e\n.text:00011e60\n.text:00011e64\n.text:00011e66\n'
+p335
+tp336
+sS'thunk_FUN_0001330c'
+p337
+(S'\n__stdcall thunk_FUN_0001330c()\n'
+p338
+V\u000aundefined4\u000athunk_FUN_0001330c(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  undefined4 uStack12;\u000a  \u000a  uStack12 = uParm4;\u000a  _Unwind_VRS_Get(uParm1,0,0xc,0,&uStack12,uParm2,uParm3);\u000a  return uStack12;\u000a}\u000a\u000a
+p339
+S'b 0x0001330c\n'
+p340
+S'f4 ff ff ea\n'
+p341
+S'.text:00013334\n'
+p342
+tp343
+sS'__gnu_Unwind_RaiseException'
+p344
+(S'\n__stdcall __gnu_Unwind_RaiseException()\n'
+p345
+V\u000aundefined4 __gnu_Unwind_RaiseException(int iParm1,int iParm2)\u000a\u000a{\u000a  int iVar1;\u000a  undefined4 local_1f8;\u000a  undefined4 local_1f4;\u000a  undefined4 uStack496;\u000a  undefined4 uStack492;\u000a  undefined4 uStack488;\u000a  undefined4 local_1e4;\u000a  undefined4 uStack480;\u000a  undefined4 uStack476;\u000a  undefined4 uStack472;\u000a  undefined4 local_1d4;\u000a  undefined4 uStack464;\u000a  undefined4 uStack460;\u000a  undefined4 uStack456;\u000a  undefined4 local_1c4;\u000a  undefined4 uStack448;\u000a  undefined4 uStack444;\u000a  undefined4 local_1b8;\u000a  \u000a  *(undefined4 *)(iParm2 + 0x40) = *(undefined4 *)(iParm2 + 0x3c);\u000a  local_1f4 = *(undefined4 *)(iParm2 + 4);\u000a  uStack496 = *(undefined4 *)(iParm2 + 8);\u000a  uStack492 = *(undefined4 *)(iParm2 + 0xc);\u000a  uStack488 = *(undefined4 *)(iParm2 + 0x10);\u000a  local_1e4 = *(undefined4 *)(iParm2 + 0x14);\u000a  uStack480 = *(undefined4 *)(iParm2 + 0x18);\u000a  uStack476 = *(undefined4 *)(iParm2 + 0x1c);\u000a  uStack472 = *(undefined4 *)(iParm2 + 0x20);\u000a  local_1d4 = *(undefined4 *)(iParm2 + 0x24);\u000a  uStack464 = *(undefined4 *)(iParm2 + 0x28);\u000a  uStack460 = *(undefined4 *)(iParm2 + 0x2c);\u000a  uStack456 = *(undefined4 *)(iParm2 + 0x30);\u000a  local_1c4 = *(undefined4 *)(iParm2 + 0x34);\u000a  uStack448 = *(undefined4 *)(iParm2 + 0x38);\u000a  uStack444 = *(undefined4 *)(iParm2 + 0x3c);\u000a  local_1b8 = *(undefined4 *)(iParm2 + 0x40);\u000a  local_1f8 = 0xffffffff;\u000a  do {\u000a    iVar1 = FUN_0001233c(iParm1,local_1b8);\u000a    if (iVar1 != 0) {\u000a      return 9;\u000a    }\u000a    iVar1 = (**(code **)(iParm1 + 0x10))(0,iParm1,&local_1f8);\u000a  } while (iVar1 == 8);\u000a  FUN_0001243c(&local_1f8);\u000a  if (iVar1 == 6) {\u000a    FUN_000124c8(iParm1,iParm2);\u000a  }\u000a  return 9;\u000a}\u000a\u000a
+p346
+S'ldr r3,[r1,#0x3c]\nstmdb sp!,{ r4 r5 r6 r7 lr }\nadd lr,r1,#0x4\nstr r3,[r1,#0x40]\ncpy r5,r0\ncpy r4,r1\nsub sp,sp,#0x1e4\nldmia lr!,{r0 r1 r2 r3 }\nadd r12,sp,#0x4\nadd r6,sp,#0x1e0\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr!,{r0 r1 r2 r3 }\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr!,{r0 r1 r2 r3 }\nstmia r12!,{r0 r1 r2 r3 }\nldmia lr,{r0 r1 r2 r3 }\nstmia r12,{r0 r1 r2 r3 }\nmvn r3,#0x0\nstr r3,[r6,#-0x1e0]!\ncpy r0,r5\nldr r1,[sp,#0x40]\nbl 0x0001233c\ncmp r0,#0x0\nbne 0x000126f4\nldr r3,[r5,#0x10]\ncpy r1,r5\ncpy r2,r6\nblx r3\ncmp r0,#0x8\ncpy r7,r0\nbeq 0x000126a8\ncpy r0,r6\nbl 0x0001243c\ncmp r7,#0x6\nbne 0x000126f4\ncpy r0,r5\ncpy r1,r4\nbl 0x000124c8\nmov r0,#0x9\nadd sp,sp,#0x1e4\nldmia sp!,{ r4 r5 r6 r7 pc }\n'
+p347
+S'3c 30 91 e5\nf0 40 2d e9\n04 e0 81 e2\n40 30 81 e5\n00 50 a0 e1\n01 40 a0 e1\n79 df 4d e2\n0f 00 be e8\n04 c0 8d e2\n1e 6e 8d e2\n0f 00 ac e8\n0f 00 be e8\n0f 00 ac e8\n0f 00 be e8\n0f 00 ac e8\n0f 00 9e e8\n0f 00 8c e8\n00 30 e0 e3\ne0 31 26 e5\n05 00 a0 e1\n40 10 9d e5\n21 ff ff eb\n00 00 50 e3\n0d 00 00 1a\n10 30 95 e5\n05 10 a0 e1\n06 20 a0 e1\n33 ff 2f e1\n08 00 50 e3\n00 70 a0 e1\nf3 ff ff 0a\n06 00 a0 e1\n56 ff ff eb\n06 00 57 e3\n02 00 00 1a\n05 00 a0 e1\n04 10 a0 e1\n74 ff ff eb\n09 00 a0 e3\n79 df 8d e2\nf0 80 bd e8\n'
+p348
+S'.text:0001265c\n.text:00012660\n.text:00012664\n.text:00012668\n.text:0001266c\n.text:00012670\n.text:00012674\n.text:00012678\n.text:0001267c\n.text:00012680\n.text:00012684\n.text:00012688\n.text:0001268c\n.text:00012690\n.text:00012694\n.text:00012698\n.text:0001269c\n.text:000126a0\n.text:000126a4\n.text:000126a8\n.text:000126ac\n.text:000126b0\n.text:000126b4\n.text:000126b8\n.text:000126bc\n.text:000126c0\n.text:000126c4\n.text:000126c8\n.text:000126cc\n.text:000126d0\n.text:000126d4\n.text:000126d8\n.text:000126dc\n.text:000126e0\n.text:000126e4\n.text:000126e8\n.text:000126ec\n.text:000126f0\n.text:000126f4\n.text:000126f8\n.text:000126fc\n'
+p349
+tp350
+sS'_Unwind_ForcedUnwind'
+p351
+(S'\n__stdcall _Unwind_ForcedUnwind()\n'
+p352
+V\u000avoid _Unwind_ForcedUnwind(void)\u000a\u000a{\u000a  __gnu_Unwind_ForcedUnwind();\u000a  return;\u000a}\u000a\u000a
+p353
+S'stmdb sp!,{ sp lr pc}\nstmdb sp!,{ r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12 }\nmov r3,#0x0\nstmdb sp!,{ r2 r3 }\nadd r3,sp,#0x4\nbl 0x0001127c\nldr lr,[sp,#0x40]\nadd sp,sp,#0x48\nbx lr\n'
+p354
+S'00 e0 2d e9\nff 1f 2d e9\n00 30 a0 e3\n0c 00 2d e9\n04 30 8d e2\nff f7 ff eb\n40 e0 9d e5\n48 d0 8d e2\n1e ff 2f e1\n'
+p355
+S'.text:00013264\n.text:00013268\n.text:0001326c\n.text:00013270\n.text:00013274\n.text:00013278\n.text:0001327c\n.text:00013280\n.text:00013284\n'
+p356
+tp357
+sS'__cxa_type_match'
+p358
+(S'\n__stdcall __cxa_type_match()\n'
+p359
+V\u000avoid __cxa_type_match(void)\u000a\u000a{\u000a  (*(code *)PTR___cxa_type_match_00014fd0)();\u000a  return;\u000a}\u000a\u000a
+p360
+S'adr r12,0x11218\nadd r12,r12,#0x3000\nldr pc,[r12,#0xdb8]!\n'
+p361
+S'00 c6 8f e2\n03 ca 8c e2\nb8 fd bc e5\n'
+p362
+S'.plt:00011210\n.plt:00011214\n.plt:00011218\n'
+p363
+tp364
+sS'_Unwind_Complete'
+p365
+(S'\n__stdcall _Unwind_Complete()\n'
+p366
+V\u000avoid _Unwind_Complete(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p367
+S'bx lr\n'
+p368
+S'1e ff 2f e1\n'
+p369
+S'.text:000127b0\n'
+p370
+tp371
+sS'atoi'
+p372
+(S'\n__stdcall atoi(char * __nptr)\n'
+p373
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint atoi(char *__nptr)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_atoi_00014f74)();\u000a  return iVar1;\u000a}\u000a\u000a
+p374
+S'adr r12,0x11104\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe70]!\n'
+p375
+S'00 c6 8f e2\n03 ca 8c e2\n70 fe bc e5\n'
+p376
+S'.plt:000110fc\n.plt:00011100\n.plt:00011104\n'
+p377
+tp378
+sS'malloc'
+p379
+(S'\n__stdcall malloc(size_t __size)\n'
+p380
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid * malloc(size_t __size)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = (void *)(*(code *)PTR_malloc_00014f60)();\u000a  return pvVar1;\u000a}\u000a\u000a
+p381
+S'adr r12,0x110c8\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe98]!\n'
+p382
+S'00 c6 8f e2\n03 ca 8c e2\n98 fe bc e5\n'
+p383
+S'.plt:000110c0\n.plt:000110c4\n.plt:000110c8\n'
+p384
+tp385
+sS'FUN_000122ec'
+p386
+(S'\n__stdcall FUN_000122ec()\n'
+p387
+V\u000aundefined4 FUN_000122ec(int iParm1)\u000a\u000a{\u000a  if (iParm1 == 1) {\u000a    return *(undefined4 *)(DAT_00012334 + 0x1231c);\u000a  }\u000a  if (iParm1 != 2) {\u000a    if (iParm1 == 0) {\u000a      return *(undefined4 *)(DAT_00012330 + 0x12310);\u000a    }\u000a    return 0;\u000a  }\u000a  return *(undefined4 *)(DAT_00012338 + 0x12328);\u000a}\u000a\u000a
+p388
+S'cmp r0,#0x1\nbeq 0x00012310\ncmp r0,#0x2\nbeq 0x0001231c\ncmp r0,#0x0\nbne 0x00012328\nldr r0,[0x12330]\nldr r0,[pc,r0]\nbx lr\nldr r0,[0x12334]\nldr r0,[pc,r0]\nbx lr\nldr r0,[0x12338]\nldr r0,[pc,r0]\nbx lr\nmov r0,#0x0\nbx lr\n'
+p389
+S'01 00 50 e3\n06 00 00 0a\n02 00 50 e3\n07 00 00 0a\n00 00 50 e3\n08 00 00 1a\n24 00 9f e5\n00 00 9f e7\n1e ff 2f e1\n1c 00 9f e5\n00 00 9f e7\n1e ff 2f e1\n14 00 9f e5\n00 00 9f e7\n1e ff 2f e1\n00 00 a0 e3\n1e ff 2f e1\n'
+p390
+S'.text:000122ec\n.text:000122f0\n.text:000122f4\n.text:000122f8\n.text:000122fc\n.text:00012300\n.text:00012304\n.text:00012308\n.text:0001230c\n.text:00012310\n.text:00012314\n.text:00012318\n.text:0001231c\n.text:00012320\n.text:00012324\n.text:00012328\n.text:0001232c\n'
+p391
+tp392
+sS'__gnu_Unwind_Find_exidx'
+p393
+(S'\n__stdcall __gnu_Unwind_Find_exidx()\n'
+p394
+V\u000avoid __gnu_Unwind_Find_exidx(void)\u000a\u000a{\u000a  (*(code *)PTR___gnu_Unwind_Find_exidx_00014f9c)();\u000a  return;\u000a}\u000a\u000a
+p395
+S'adr r12,0x1117c\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe20]!\n'
+p396
+S'00 c6 8f e2\n03 ca 8c e2\n20 fe bc e5\n'
+p397
+S'.plt:00011174\n.plt:00011178\n.plt:0001117c\n'
+p398
+tp399
+sS'__gnu_unwind_execute'
+p400
+(S'\n__stdcall __gnu_unwind_execute()\n'
+p401
+V\u000aundefined4 __gnu_unwind_execute(undefined4 uParm1,undefined4 uParm2)\u000a\u000a{\u000a  uint uVar1;\u000a  uint uVar2;\u000a  uint uVar3;\u000a  uint uVar4;\u000a  bool bVar5;\u000a  int iVar6;\u000a  int local_24 [2];\u000a  \u000a  bVar5 = false;\u000aLAB_0001334c:\u000a  do {\u000a    while( true ) {\u000a      uVar1 = FUN_000132ac(uParm2);\u000a      if (uVar1 == 0xb0) {\u000a        if (!bVar5) {\u000a          _Unwind_VRS_Get(uParm1,0,0xe,0,local_24);\u000a          _Unwind_VRS_Set(uParm1,0,0xf,0,local_24);\u000a        }\u000a        return 0;\u000a      }\u000a      if ((uVar1 & 0x80) != 0) break;\u000a      _Unwind_VRS_Get(uParm1,0,0xd,0,local_24);\u000a      iVar6 = (uVar1 & 0x3f) * 4 + 4;\u000a      if ((uVar1 & 0x40) != 0) {\u000a        iVar6 = -iVar6;\u000a      }\u000a      local_24[0] = local_24[0] + iVar6;\u000aLAB_00013478:\u000a      uVar2 = 0;\u000aLAB_00013480:\u000a      _Unwind_VRS_Set(uParm1,uVar2,0xd,uVar2,local_24);\u000a    }\u000a    uVar4 = uVar1 & 0xf0;\u000a    if (uVar4 == 0x80) {\u000a      uVar4 = FUN_000132ac(uParm2);\u000a      uVar4 = uVar4 | uVar1 << 8;\u000a      if (uVar4 == 0x8000) {\u000a        return 9;\u000a      }\u000a      uVar4 = uVar4 << 4;\u000a      iVar6 = _Unwind_VRS_Pop(uParm1,0,uVar4 & 0xffff,0);\u000a      if (iVar6 != 0) {\u000a        return 9;\u000a      }\u000a      if ((uVar4 & 0x8000) != 0) {\u000a        bVar5 = true;\u000a      }\u000a      goto LAB_0001334c;\u000a    }\u000a    if (uVar4 == 0x90) {\u000a      if ((uVar1 & 0xd) == 0xd) {\u000a        return 9;\u000a      }\u000a      _Unwind_VRS_Get(uParm1,0,uVar1 & 0xf,0,local_24);\u000a      goto LAB_00013478;\u000a    }\u000a    if (uVar4 == 0xa0) {\u000a      uVar3 = 0xff0 >> (~uVar1 & 7) & 0xff0;\u000a      uVar4 = 0;\u000a      uVar2 = uVar4;\u000a      if ((uVar1 & 8) != 0) {\u000a        uVar3 = uVar3 | 0x4000;\u000a        uVar2 = uVar4;\u000a      }\u000a    }\u000a    else {\u000a      if (uVar4 == 0xb0) {\u000a        if (uVar1 == 0xb1) {\u000a          uVar3 = FUN_000132ac(uParm2);\u000a          if (uVar3 == 0) {\u000a            return 9;\u000a          }\u000a          uVar4 = uVar3 & 0xf0;\u000a          uVar2 = uVar4;\u000a          if (uVar4 != 0) {\u000a            return 9;\u000a          }\u000a        }\u000a        else {\u000a          if (uVar1 == 0xb2) {\u000a            _Unwind_VRS_Get(uParm1,0,0xd,0,local_24);\u000a            uVar1 = FUN_000132ac(uParm2);\u000a            uVar4 = 2;\u000a            while( true ) {\u000a              uVar2 = uVar1 & 0x80;\u000a              if (uVar2 == 0) break;\u000a              local_24[0] = local_24[0] + ((uVar1 & 0x7f) << (uVar4 & 0xff));\u000a              uVar4 = uVar4 + 7;\u000a              uVar1 = FUN_000132ac(uParm2);\u000a            }\u000a            local_24[0] = local_24[0] + 0x204 + ((uVar1 & 0x7f) << (uVar4 & 0xff));\u000a            goto LAB_00013480;\u000a          }\u000a          if (uVar1 == 0xb3) {\u000a            uVar1 = FUN_000132ac(uParm2);\u000a            uVar4 = 1;\u000a            goto LAB_000135dc;\u000a          }\u000a          if ((uVar1 & 0xfc) == 0xb4) {\u000a            return 9;\u000a          }\u000a          uVar4 = 1;\u000a          uVar3 = (uVar1 & 7) + 1 | 0x80000;\u000a          uVar2 = uVar4;\u000a        }\u000a      }\u000a      else {\u000a        if (uVar4 == 0xc0) {\u000a          if (uVar1 == 0xc6) {\u000a            uVar1 = FUN_000132ac(uParm2);\u000a            uVar4 = 3;\u000aLAB_000135dc:\u000a            uVar3 = (uVar1 & 0xf) + 1 | (uVar1 & 0xf0) << 0xc;\u000a            uVar2 = uVar4;\u000a          }\u000a          else {\u000a            if (uVar1 == 199) {\u000a              uVar3 = FUN_000132ac(uParm2);\u000a              if (uVar3 == 0) {\u000a                return 9;\u000a              }\u000a              if ((uVar3 & 0xf0) != 0) {\u000a                return 9;\u000a              }\u000a              uVar4 = 4;\u000a              uVar2 = uVar3 & 0xf0;\u000a            }\u000a            else {\u000a              if ((uVar1 & 0xf8) != 0xc0) {\u000a                if (uVar1 == 200) {\u000a                  uVar1 = FUN_000132ac(uParm2);\u000a                  uVar3 = (uVar1 & 0xf) + 1 | ((uVar1 & 0xf0) + 0x10) * 0x1000;\u000a                }\u000a                else {\u000a                  if (uVar1 != 0xc9) {\u000a                    return 9;\u000a                  }\u000a                  uVar1 = FUN_000132ac(uParm2);\u000a                  uVar3 = (uVar1 & 0xf) + 1 | (uVar1 & 0xf0) << 0xc;\u000a                }\u000a                goto LAB_000136b0;\u000a              }\u000a              uVar4 = 3;\u000a              uVar3 = (uVar1 & 0xf) + 1 | 0xa0000;\u000a              uVar2 = uVar4;\u000a            }\u000a          }\u000a        }\u000a        else {\u000a          if ((uVar1 & 0xf8) != 0xd0) {\u000a            return 9;\u000a          }\u000a          uVar3 = (uVar1 & 7) + 1 | 0x80000;\u000aLAB_000136b0:\u000a          uVar4 = 1;\u000a          uVar2 = 5;\u000a        }\u000a      }\u000a    }\u000a    iVar6 = _Unwind_VRS_Pop(uParm1,uVar4,uVar3,uVar2);\u000a    if (iVar6 != 0) {\u000a      return 9;\u000a    }\u000a  } while( true );\u000a}\u000a\u000a
+p402
+S'stmdb sp!,{ r4 r5 r6 r7 r8 r9 lr }\nsub sp,sp,#0x14\ncpy r5,r0\ncpy r7,r1\nmov r6,#0x0\ncpy r0,r7\nbl 0x000132ac\ncmp r0,#0xb0\ncpy r4,r0\nbne 0x000133a0\ncmp r6,#0x0\nbne 0x000136c4\nadd r4,sp,#0xc\ncpy r1,r6\ncpy r3,r6\nstr r4,[sp,#0x0]\ncpy r0,r5\nmov r2,#0xe\nbl 0x000111ec\nstr r4,[sp,#0x0]\ncpy r0,r5\ncpy r1,r6\nmov r2,#0xf\ncpy r3,r6\nbl 0x000111f8\nb 0x000136c4\nbic r1,r0,#0x7f\nands r1,r1,#0xff\nbne 0x000133ec\nmov r8,r0, lsl #0x2\nadd r9,sp,#0xc\ncpy r3,r1\nstr r9,[sp,#0x0]\ncpy r0,r5\nmov r2,#0xd\nbl 0x000111ec\nuxtb r8,r8\nldr r3,[sp,#0xc]\nadd r8,r8,#0x4\ntst r4,#0x40\nstr r9,[sp,#0x0]\nrsbne r8,r8,r3\naddeq r8,r8,r3\nstr r8,[sp,#0xc]\nb 0x00013478\nand r3,r0,#0xf0\ncmp r3,#0x80\nbne 0x00013444\nmov r4,r0, lsl #0x8\ncpy r0,r7\nbl 0x000132ac\norr r0,r0,r4\ncmp r0,#0x8000\nbne 0x00013418\nmov r0,#0x9\nb 0x000136c8\nmov r4,r0, lsl #0x4\nmov r1,#0x0\ncpy r0,r5\ncpy r3,r1\nuxth r2,r4\nbl 0x00011294\ncmp r0,#0x0\nbne 0x00013410\ntst r4,#0x8000\nmovne r6,#0x1\nb 0x0001334c\ncmp r3,#0x90\nbne 0x00013490\nand r3,r0,#0xd\ncmp r3,#0xd\nbeq 0x00013410\nmov r1,#0x0\nadd r8,sp,#0xc\ncpy r0,r5\nstr r8,[sp,#0x0]\nand r2,r4,#0xf\ncpy r3,r1\nbl 0x000111ec\nstr r8,[sp,#0x0]\ncpy r0,r5\nmov r1,#0x0\nmov r2,#0xd\ncpy r3,r1\nbl 0x000111f8\nb 0x0001334c\ncmp r3,#0xa0\nbne 0x000134c0\nmvn r2,r0\nmov r3,#0xff0\nand r2,r2,#0x7\ntst r0,#0x8\nmov r2,r3, asr r2\ncpy r0,r5\nand r2,r2,r3\nmov r1,#0x0\norrne r2,r2,#0x4000\nb 0x000134ec\ncmp r3,#0xb0\nbne 0x000135b0\ncmp r0,#0xb1\nbne 0x000134f4\ncpy r0,r7\nbl 0x000132ac\nsubs r2,r0,#0x0\nbeq 0x00013410\nands r1,r2,#0xf0\nbne 0x00013410\ncpy r0,r5\ncpy r3,r1\nb 0x000136b4\ncmp r0,#0xb2\nbne 0x00013564\nmov r1,#0x0\nmov r2,#0xd\ncpy r3,r1\nadd r4,sp,#0xc\ncpy r0,r5\nstr r4,[sp,#0x0]\nbl 0x000111ec\ncpy r0,r7\nbl 0x000132ac\nmov r8,#0x2\nands r1,r0,#0x80\nldr r3,[sp,#0xc]\nand r0,r0,#0x7f\nbeq 0x0001354c\nadd r3,r3,r0, lsl r8\ncpy r0,r7\nstr r3,[sp,#0xc]\nadd r8,r8,#0x7\nbl 0x000132ac\nb 0x00013524\nadd r3,r3,#0x204\nstr r4,[sp,#0x0]\nadd r3,r3,r0, lsl r8\ncpy r0,r5\nstr r3,[sp,#0xc]\nb 0x00013480\ncmp r0,#0xb3\nbne 0x0001358c\ncpy r0,r7\nbl 0x000132ac\nmov r1,#0x1\nand r2,r0,#0xf\nand r3,r0,#0xf0\nadd r2,r2,#0x1\ncpy r0,r5\nb 0x000135dc\nand r3,r0,#0xfc\ncmp r3,#0xb4\nbeq 0x00013410\nand r2,r0,#0x7\nmov r1,#0x1\nadd r2,r2,#0x1\ncpy r0,r5\norr r2,r2,#0x80000\nb 0x000134ec\ncmp r3,#0xc0\nbne 0x00013690\ncmp r0,#0xc6\nbne 0x000135e4\ncpy r0,r7\nbl 0x000132ac\nmov r1,#0x3\nand r2,r0,#0xf\nand r3,r0,#0xf0\nadd r2,r2,#0x1\ncpy r0,r5\norr r2,r2,r3, lsl #0xc\nb 0x000134ec\ncmp r0,#0xc7\nbne 0x00013610\ncpy r0,r7\nbl 0x000132ac\nsubs r2,r0,#0x0\nbeq 0x00013410\nands r3,r2,#0xf0\nbne 0x00013410\ncpy r0,r5\nmov r1,#0x4\nb 0x000136b4\nand r3,r0,#0xf8\ncmp r3,#0xc0\nbne 0x00013634\nand r2,r0,#0xf\nmov r1,#0x3\nadd r2,r2,#0x1\ncpy r0,r5\norr r2,r2,#0xa0000\nb 0x000134ec\ncmp r0,#0xc8\nbne 0x00013664\ncpy r0,r7\nbl 0x000132ac\nmov r1,#0x1\nand r2,r0,#0xf0\nand r0,r0,#0xf\nadd r2,r2,#0x10\nadd r3,r0,#0x1\ncpy r0,r5\norr r2,r3,r2, lsl #0xc\nb 0x000136b0\ncmp r0,#0xc9\nbne 0x00013410\ncpy r0,r7\nbl 0x000132ac\nmov r1,#0x1\nand r2,r0,#0xf\nand r3,r0,#0xf0\nadd r2,r2,#0x1\ncpy r0,r5\norr r2,r2,r3, lsl #0xc\nb 0x000136b0\nand r3,r0,#0xf8\ncmp r3,#0xd0\nbne 0x00013410\nand r2,r0,#0x7\nmov r1,#0x1\nadd r2,r2,#0x1\ncpy r0,r5\norr r2,r2,#0x80000\nmov r3,#0x5\nbl 0x00011294\ncmp r0,#0x0\nbne 0x00013410\nb 0x0001334c\nmov r0,#0x0\nadd sp,sp,#0x14\nldmia sp!,{ r4 r5 r6 r7 r8 r9 pc }\n'
+p403
+S'f0 43 2d e9\n14 d0 4d e2\n00 50 a0 e1\n01 70 a0 e1\n00 60 a0 e3\n07 00 a0 e1\nd5 ff ff eb\nb0 00 50 e3\n00 40 a0 e1\n0f 00 00 1a\n00 00 56 e3\nd6 00 00 1a\n0c 40 8d e2\n06 10 a0 e1\n06 30 a0 e1\n00 40 8d e5\n05 00 a0 e1\n0e 20 a0 e3\n99 f7 ff eb\n00 40 8d e5\n05 00 a0 e1\n06 10 a0 e1\n0f 20 a0 e3\n06 30 a0 e1\n96 f7 ff eb\nc8 00 00 ea\n7f 10 c0 e3\nff 10 11 e2\n0f 00 00 1a\n00 81 a0 e1\n0c 90 8d e2\n01 30 a0 e1\n00 90 8d e5\n05 00 a0 e1\n0d 20 a0 e3\n88 f7 ff eb\n78 80 ef e6\n0c 30 9d e5\n04 80 88 e2\n40 00 14 e3\n00 90 8d e5\n03 80 68 10\n03 80 88 00\n0c 80 8d e5\n22 00 00 ea\nf0 30 00 e2\n80 00 53 e3\n12 00 00 1a\n00 44 a0 e1\n07 00 a0 e1\na9 ff ff eb\n04 00 80 e1\n02 09 50 e3\n01 00 00 1a\n09 00 a0 e3\nab 00 00 ea\n00 42 a0 e1\n00 10 a0 e3\n05 00 a0 e1\n01 30 a0 e1\n74 20 ff e6\n98 f7 ff eb\n00 00 50 e3\nf5 ff ff 1a\n02 09 14 e3\n01 60 a0 13\nc1 ff ff ea\n90 00 53 e3\n10 00 00 1a\n0d 30 00 e2\n0d 00 53 e3\ned ff ff 0a\n00 10 a0 e3\n0c 80 8d e2\n05 00 a0 e1\n00 80 8d e5\n0f 20 04 e2\n01 30 a0 e1\n5d f7 ff eb\n00 80 8d e5\n05 00 a0 e1\n00 10 a0 e3\n0d 20 a0 e3\n01 30 a0 e1\n5a f7 ff eb\nae ff ff ea\na0 00 53 e3\n09 00 00 1a\n00 20 e0 e1\nff 3e a0 e3\n07 20 02 e2\n08 00 10 e3\n53 22 a0 e1\n05 00 a0 e1\n03 20 02 e0\n00 10 a0 e3\n01 29 82 13\n0a 00 00 ea\nb0 00 53 e3\n39 00 00 1a\nb1 00 50 e3\n08 00 00 1a\n07 00 a0 e1\n74 ff ff eb\n00 20 50 e2\ncb ff ff 0a\nf0 10 12 e2\nc9 ff ff 1a\n05 00 a0 e1\n01 30 a0 e1\n6f 00 00 ea\nb2 00 50 e3\n19 00 00 1a\n00 10 a0 e3\n0d 20 a0 e3\n01 30 a0 e1\n0c 40 8d e2\n05 00 a0 e1\n00 40 8d e5\n34 f7 ff eb\n07 00 a0 e1\n62 ff ff eb\n02 80 a0 e3\n80 10 10 e2\n0c 30 9d e5\n7f 00 00 e2\n05 00 00 0a\n10 38 83 e0\n07 00 a0 e1\n0c 30 8d e5\n07 80 88 e2\n58 ff ff eb\nf5 ff ff ea\n81 3f 83 e2\n00 40 8d e5\n10 38 83 e0\n05 00 a0 e1\n0c 30 8d e5\nc6 ff ff ea\nb3 00 50 e3\n07 00 00 1a\n07 00 a0 e1\n4d ff ff eb\n01 10 a0 e3\n0f 20 00 e2\nf0 30 00 e2\n01 20 82 e2\n05 00 a0 e1\n13 00 00 ea\nfc 30 00 e2\nb4 00 53 e3\n9d ff ff 0a\n07 20 00 e2\n01 10 a0 e3\n01 20 82 e2\n05 00 a0 e1\n02 27 82 e3\nce ff ff ea\nc0 00 53 e3\n35 00 00 1a\nc6 00 50 e3\n08 00 00 1a\n07 00 a0 e1\n38 ff ff eb\n03 10 a0 e3\n0f 20 00 e2\nf0 30 00 e2\n01 20 82 e2\n05 00 a0 e1\n03 26 82 e1\nc1 ff ff ea\nc7 00 50 e3\n08 00 00 1a\n07 00 a0 e1\n2d ff ff eb\n00 20 50 e2\n84 ff ff 0a\nf0 30 12 e2\n82 ff ff 1a\n05 00 a0 e1\n04 10 a0 e3\n28 00 00 ea\nf8 30 00 e2\nc0 00 53 e3\n05 00 00 1a\n0f 20 00 e2\n03 10 a0 e3\n01 20 82 e2\n05 00 a0 e1\n0a 28 82 e3\nad ff ff ea\nc8 00 50 e3\n09 00 00 1a\n07 00 a0 e1\n19 ff ff eb\n01 10 a0 e3\nf0 20 00 e2\n0f 00 00 e2\n10 20 82 e2\n01 30 80 e2\n05 00 a0 e1\n02 26 83 e1\n12 00 00 ea\nc9 00 50 e3\n68 ff ff 1a\n07 00 a0 e1\n0d ff ff eb\n01 10 a0 e3\n0f 20 00 e2\nf0 30 00 e2\n01 20 82 e2\n05 00 a0 e1\n03 26 82 e1\n07 00 00 ea\nf8 30 00 e2\nd0 00 53 e3\n5c ff ff 1a\n07 20 00 e2\n01 10 a0 e3\n01 20 82 e2\n05 00 a0 e1\n02 27 82 e3\n05 30 a0 e3\nf6 f6 ff eb\n00 00 50 e3\n53 ff ff 1a\n21 ff ff ea\n00 00 a0 e3\n14 d0 8d e2\nf0 83 bd e8\n'
+p404
+S'.text:00013338\n.text:0001333c\n.text:00013340\n.text:00013344\n.text:00013348\n.text:0001334c\n.text:00013350\n.text:00013354\n.text:00013358\n.text:0001335c\n.text:00013360\n.text:00013364\n.text:00013368\n.text:0001336c\n.text:00013370\n.text:00013374\n.text:00013378\n.text:0001337c\n.text:00013380\n.text:00013384\n.text:00013388\n.text:0001338c\n.text:00013390\n.text:00013394\n.text:00013398\n.text:0001339c\n.text:000133a0\n.text:000133a4\n.text:000133a8\n.text:000133ac\n.text:000133b0\n.text:000133b4\n.text:000133b8\n.text:000133bc\n.text:000133c0\n.text:000133c4\n.text:000133c8\n.text:000133cc\n.text:000133d0\n.text:000133d4\n.text:000133d8\n.text:000133dc\n.text:000133e0\n.text:000133e4\n.text:000133e8\n.text:000133ec\n.text:000133f0\n.text:000133f4\n.text:000133f8\n.text:000133fc\n.text:00013400\n.text:00013404\n.text:00013408\n.text:0001340c\n.text:00013410\n.text:00013414\n.text:00013418\n.text:0001341c\n.text:00013420\n.text:00013424\n.text:00013428\n.text:0001342c\n.text:00013430\n.text:00013434\n.text:00013438\n.text:0001343c\n.text:00013440\n.text:00013444\n.text:00013448\n.text:0001344c\n.text:00013450\n.text:00013454\n.text:00013458\n.text:0001345c\n.text:00013460\n.text:00013464\n.text:00013468\n.text:0001346c\n.text:00013470\n.text:00013474\n.text:00013478\n.text:0001347c\n.text:00013480\n.text:00013484\n.text:00013488\n.text:0001348c\n.text:00013490\n.text:00013494\n.text:00013498\n.text:0001349c\n.text:000134a0\n.text:000134a4\n.text:000134a8\n.text:000134ac\n.text:000134b0\n.text:000134b4\n.text:000134b8\n.text:000134bc\n.text:000134c0\n.text:000134c4\n.text:000134c8\n.text:000134cc\n.text:000134d0\n.text:000134d4\n.text:000134d8\n.text:000134dc\n.text:000134e0\n.text:000134e4\n.text:000134e8\n.text:000134ec\n.text:000134f0\n.text:000134f4\n.text:000134f8\n.text:000134fc\n.text:00013500\n.text:00013504\n.text:00013508\n.text:0001350c\n.text:00013510\n.text:00013514\n.text:00013518\n.text:0001351c\n.text:00013520\n.text:00013524\n.text:00013528\n.text:0001352c\n.text:00013530\n.text:00013534\n.text:00013538\n.text:0001353c\n.text:00013540\n.text:00013544\n.text:00013548\n.text:0001354c\n.text:00013550\n.text:00013554\n.text:00013558\n.text:0001355c\n.text:00013560\n.text:00013564\n.text:00013568\n.text:0001356c\n.text:00013570\n.text:00013574\n.text:00013578\n.text:0001357c\n.text:00013580\n.text:00013584\n.text:00013588\n.text:0001358c\n.text:00013590\n.text:00013594\n.text:00013598\n.text:0001359c\n.text:000135a0\n.text:000135a4\n.text:000135a8\n.text:000135ac\n.text:000135b0\n.text:000135b4\n.text:000135b8\n.text:000135bc\n.text:000135c0\n.text:000135c4\n.text:000135c8\n.text:000135cc\n.text:000135d0\n.text:000135d4\n.text:000135d8\n.text:000135dc\n.text:000135e0\n.text:000135e4\n.text:000135e8\n.text:000135ec\n.text:000135f0\n.text:000135f4\n.text:000135f8\n.text:000135fc\n.text:00013600\n.text:00013604\n.text:00013608\n.text:0001360c\n.text:00013610\n.text:00013614\n.text:00013618\n.text:0001361c\n.text:00013620\n.text:00013624\n.text:00013628\n.text:0001362c\n.text:00013630\n.text:00013634\n.text:00013638\n.text:0001363c\n.text:00013640\n.text:00013644\n.text:00013648\n.text:0001364c\n.text:00013650\n.text:00013654\n.text:00013658\n.text:0001365c\n.text:00013660\n.text:00013664\n.text:00013668\n.text:0001366c\n.text:00013670\n.text:00013674\n.text:00013678\n.text:0001367c\n.text:00013680\n.text:00013684\n.text:00013688\n.text:0001368c\n.text:00013690\n.text:00013694\n.text:00013698\n.text:0001369c\n.text:000136a0\n.text:000136a4\n.text:000136a8\n.text:000136ac\n.text:000136b0\n.text:000136b4\n.text:000136b8\n.text:000136bc\n.text:000136c0\n.text:000136c4\n.text:000136c8\n.text:000136cc\n'
+p405
+tp406
+sS'__gnu_Unwind_Save_VFP'
+p407
+(S'\n__stdcall __gnu_Unwind_Save_VFP()\n'
+p408
+V\u000avoid __gnu_Unwind_Save_VFP(undefined4 uParm1)\u000a\u000a{\u000a  undefined4 in_cr0;\u000a  \u000a  coprocessor_store(0xb,in_cr0,uParm1);\u000a  return;\u000a}\u000a\u000a
+p409
+S'stc p11,cr0,[r0],{0x21}\nbx lr\n'
+p410
+S'21 0b 80 ec\n1e ff 2f e1\n'
+p411
+S'.text:00013120\n.text:00013124\n'
+p412
+tp413
+sS'Jstring2CStr'
+p414
+(S'\n__stdcall Jstring2CStr()\n'
+p415
+V\u000avoid * Jstring2CStr(int *piParm1,undefined4 uParm2)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  undefined4 uVar2;\u000a  int iVar3;\u000a  void *pvVar4;\u000a  \u000a  uVar1 = (**(code **)(*piParm1 + 0x18))(piParm1,DAT_0001137c + 0x112f2);\u000a  uVar2 = (**(code **)(*piParm1 + 0x29c))(piParm1,&UNK_00011380);\u000a  uVar1 = (**(code **)(*piParm1 + 0x84))\u000a                    (piParm1,uVar1,DAT_00011388 + 0x11314,"(Ljava/lang/String;)[B");\u000a  uVar1 = (**(code **)(*piParm1 + 0x88))(piParm1,uParm2,uVar1,uVar2);\u000a  iVar3 = (**(code **)(*piParm1 + 0x2ac))(piParm1,uVar1);\u000a  pvVar4 = (void *)0x0;\u000a  uVar2 = (**(code **)(*piParm1 + 0x2e0))(piParm1,uVar1,0);\u000a  if (0 < iVar3) {\u000a    pvVar4 = malloc(iVar3 + 1);\u000a    __aeabi_memcpy(pvVar4,uVar2,iVar3);\u000a    *(undefined *)((int)pvVar4 + iVar3) = 0;\u000a  }\u000a  (**(code **)(*piParm1 + 0x300))(piParm1,uVar1,uVar2,0);\u000a  return pvVar4;\u000a}\u000a\u000a
+p416
+S'push { r4, r5, r6, r7, lr }\nadd r7,sp,#0xc\npush { r8, r9, r10  }\nmov r4,r0\nmov r8,r1\nldr r0,[r4,#0x0]\nldr r1,[0x0001137c]\nldr r2,[r0,#0x18]\nadd r1,pc\nmov r0,r4\nblx r2\nmov r6,r0\nldr r0,[r4,#0x0]\nadr r1,[0x11380]\nldr.w r2,[r0,#0x29c]\nmov r0,r4\nblx r2\nmov r9,r0\nldr r0,[r4,#0x0]\nldr r2,[0x00011388]\nadr r3,[0x1138c]\nmov r1,r6\nldr.w r5,[r0,#0x84]\nadd r2,pc\nmov r0,r4\nblx r5\nmov r2,r0\nldr r0,[r4,#0x0]\nmov r1,r8\nmov r3,r9\nldr.w r6,[r0,#0x88]\nmov r0,r4\nblx r6\nmov r10,r0\nldr r0,[r4,#0x0]\nmov r1,r10\nldr.w r2,[r0,#0x2ac]\nmov r0,r4\nblx r2\nmov r6,r0\nldr r0,[r4,#0x0]\nmov r1,r10\nmov r2,#0x0\nmov.w r9,#0x0\nldr.w r3,[r0,#0x2e0]\nmov r0,r4\nblx r3\nmov r8,r0\ncmp r6,#0x1\nblt 0x00011364\nadd r0,r6,#0x1\nblx 0x000110c0\nmov r1,r8\nmov r2,r6\nmov r5,r0\nblx 0x000110cc\nstrb.w r9,[r5,r6,lsl #0x0]\nmov r9,r5\nldr r0,[r4,#0x0]\nmov r1,r10\nmov r2,r8\nmov r3,#0x0\nldr.w r6,[r0,#0x300]\nmov r0,r4\nblx r6\nmov r0,r9\npop.w { r8, r9, r10 }\npop { r4, r5, r6, r7, pc }\n'
+p417
+S'f0 b5\n03 af\n2d e9 00 07\n04 46\n88 46\n20 68\n24 49\n82 69\n79 44\n20 46\n90 47\n06 46\n20 68\n21 a1\nd0 f8 9c 22\n20 46\n90 47\n81 46\n20 68\n20 4a\n20 a3\n31 46\nd0 f8 84 50\n7a 44\n20 46\na8 47\n02 46\n20 68\n41 46\n4b 46\nd0 f8 88 60\n20 46\nb0 47\n82 46\n20 68\n51 46\nd0 f8 ac 22\n20 46\n90 47\n06 46\n20 68\n51 46\n00 22\n4f f0 00 09\nd0 f8 e0 32\n20 46\n98 47\n80 46\n01 2e\n0a db\n70 1c\nff f7 b6 ee\n41 46\n32 46\n05 46\nff f7 b8 ee\n05 f8 06 90\na9 46\n20 68\n51 46\n42 46\n00 23\nd0 f8 00 63\n20 46\nb0 47\n48 46\nbd e8 00 07\nf0 bd\n'
+p418
+S'.text:000112dc\n.text:000112de\n.text:000112e0\n.text:000112e4\n.text:000112e6\n.text:000112e8\n.text:000112ea\n.text:000112ec\n.text:000112ee\n.text:000112f0\n.text:000112f2\n.text:000112f4\n.text:000112f6\n.text:000112f8\n.text:000112fa\n.text:000112fe\n.text:00011300\n.text:00011302\n.text:00011304\n.text:00011306\n.text:00011308\n.text:0001130a\n.text:0001130c\n.text:00011310\n.text:00011312\n.text:00011314\n.text:00011316\n.text:00011318\n.text:0001131a\n.text:0001131c\n.text:0001131e\n.text:00011322\n.text:00011324\n.text:00011326\n.text:00011328\n.text:0001132a\n.text:0001132c\n.text:00011330\n.text:00011332\n.text:00011334\n.text:00011336\n.text:00011338\n.text:0001133a\n.text:0001133c\n.text:00011340\n.text:00011344\n.text:00011346\n.text:00011348\n.text:0001134a\n.text:0001134c\n.text:0001134e\n.text:00011350\n.text:00011354\n.text:00011356\n.text:00011358\n.text:0001135a\n.text:0001135e\n.text:00011362\n.text:00011364\n.text:00011366\n.text:00011368\n.text:0001136a\n.text:0001136c\n.text:00011370\n.text:00011372\n.text:00011374\n.text:00011376\n.text:0001137a\n'
+p419
+tp420
+sS'Java_com_q_n_g_bk_BK_init2'
+p421
+(S'\n__stdcall Java_com_q_n_g_bk_BK_init2()\n'
+p422
+V\u000avoid Java_com_q_n_g_bk_BK_init2(int *piParm1,undefined4 uParm2,undefined4 uParm3)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  undefined4 uVar2;\u000a  undefined4 uVar3;\u000a  __pid_t __pid;\u000a  char *pcVar4;\u000a  int iVar5;\u000a  code *pcVar6;\u000a  code *pcVar7;\u000a  int iVar8;\u000a  undefined *local_40;\u000a  undefined *puVar9;\u000a  undefined4 local_30;\u000a  undefined4 uStack44;\u000a  int local_28;\u000a  \u000a  local_28 = **(int **)(DAT_0001216c + 0x11ec8);\u000a  local_40 = (undefined *)Jstring2CStr(piParm1,uParm3);\u000a  uVar1 = (**(code **)(*piParm1 + 0x29c))(piParm1,DAT_00012170 + 0x11ee2);\u000a  iVar5 = DAT_00012174 + 0x11ef2;\u000a  uVar2 = (**(code **)(*piParm1 + 0x2a4))(piParm1,uVar1,iVar5);\u000a  pcVar7 = *(code **)(*piParm1 + 0x2a4);\u000a  uVar3 = (**(code **)(*piParm1 + 0x29c))(piParm1,"init OK");\u000a  uVar3 = (*pcVar7)(piParm1,uVar3,iVar5);\u000a  __android_log_write(3,uVar2,uVar3);\u000a  __pid = fork();\u000a  if (__pid < 0) {\u000a    iVar5 = DAT_00012204 + 0x12050;\u000a    uVar1 = (**(code **)(*piParm1 + 0x2a4))(piParm1,uVar1,iVar5);\u000a    pcVar7 = *(code **)(*piParm1 + 0x2a4);\u000a    uVar2 = (**(code **)(*piParm1 + 0x29c))(piParm1,"fork failed !!!");\u000a    uVar2 = (*pcVar7)(piParm1,uVar2,iVar5);\u000a    __android_log_write(6,uVar1,uVar2);\u000a  }\u000a  else {\u000a    if (__pid == 0) {\u000a      iVar5 = DAT_00012180 + 0x11f3e;\u000a      uVar2 = (**(code **)(*piParm1 + 0x2a4))(piParm1,uVar1,iVar5);\u000a      pcVar7 = *(code **)(*piParm1 + 0x2a4);\u000a      uVar3 = (**(code **)(*piParm1 + 0x29c))(piParm1,"init OK");\u000a      uVar3 = (*pcVar7)(piParm1,uVar3,iVar5);\u000a      __android_log_write(3,uVar2,uVar3);\u000a      setsid();\u000a      uVar2 = (**(code **)(*piParm1 + 0x2a4))(piParm1,uVar1,iVar5);\u000a      pcVar7 = *(code **)(*piParm1 + 0x2a4);\u000a      uVar3 = (**(code **)(*piParm1 + 0x29c))(piParm1,"init OK2");\u000a      uVar3 = (*pcVar7)(piParm1,uVar3,iVar5);\u000a      __android_log_write(3,uVar2,uVar3);\u000a      sleep(0xb);\u000a      local_30 = 0;\u000a      uStack44 = 0;\u000a      __system_property_get(DAT_00012190 + 0x11fb6,&local_30);\u000a      iVar5 = atoi((char *)&local_30);\u000a      __pid = fork();\u000a      if (-1 < __pid) {\u000a        iVar8 = DAT_00012194 + 0x11fd8;\u000a        do {\u000a          if (__pid == 0) {\u000a            iVar8 = DAT_00012198 + 0x120b2;\u000a            uVar2 = (**(code **)(*piParm1 + 0x2a4))(piParm1,uVar1,iVar8);\u000a            pcVar7 = *(code **)(*piParm1 + 0x2a4);\u000a            uVar3 = (**(code **)(*piParm1 + 0x29c))(piParm1,"init OK3");\u000a            uVar3 = (*pcVar7)(piParm1,uVar3,iVar8);\u000a            __android_log_write(3,uVar2,uVar3);\u000a            uVar1 = (**(code **)(*piParm1 + 0x2a4))(piParm1,uVar1,iVar8);\u000a            pcVar7 = *(code **)(*piParm1 + 0x29c);\u000a            pcVar6 = *(code **)(*piParm1 + 0x2a4);\u000a            if ((iVar5 < 0x11) && (iVar5 != 0)) {\u000a              uVar2 = (*pcVar7)(piParm1,"start service2");\u000a              uVar2 = (*pcVar6)(piParm1,uVar2,DAT_000121b8 + 0x12114);\u000a              __android_log_write(3,uVar1,uVar2);\u000a              puVar9 = (undefined *)0x0;\u000a              pcVar4 = "-n";\u000a            }\u000a            else {\u000a              uVar2 = (*pcVar7)(piParm1,"start service");\u000a              uVar2 = (*pcVar6)(piParm1,uVar2,DAT_000121e4 + 0x1213c);\u000a              __android_log_write(3,uVar1,uVar2);\u000a              pcVar4 = "--user";\u000a              local_40 = &DAT_000121e8;\u000a              puVar9 = &DAT_000121d0;\u000a            }\u000a            execlp("am","am","startservice",pcVar4,local_40,puVar9);\u000a                    /* WARNING: Subroutine does not return */\u000a            exit(0);\u000a          }\u000a          waitpid(__pid,(int *)0x0,0);\u000a          sleep(0xb);\u000a          local_30 = 0;\u000a          uStack44 = 0;\u000a          __system_property_get(iVar8,&local_30);\u000a          iVar5 = atoi((char *)&local_30);\u000a          __pid = fork();\u000a        } while (-1 < __pid);\u000a      }\u000a      iVar5 = DAT_000121f4 + 0x12010;\u000a      uVar1 = (**(code **)(*piParm1 + 0x2a4))(piParm1,uVar1,iVar5);\u000a      pcVar7 = *(code **)(*piParm1 + 0x2a4);\u000a      uVar2 = (**(code **)(*piParm1 + 0x29c))(piParm1,"init fail");\u000a      uVar2 = (*pcVar7)(piParm1,uVar2,iVar5);\u000a      __android_log_write(3,uVar1,uVar2);\u000a                    /* WARNING: Subroutine does not return */\u000a      exit(1);\u000a    }\u000a  }\u000a  if (**(int **)(DAT_0001222c + 0x1208e) == local_28) {\u000a                    /* WARNING: Could not recover jumptable at 0x000120a2. Too many branches */\u000a                    /* WARNING: Treating indirect jump as call */\u000a    (**(code **)(*piParm1 + 0x29c))(piParm1,"Hello from JNI !");\u000a    return;\u000a  }\u000a                    /* WARNING: Subroutine does not return */\u000a  __stack_chk_fail();\u000a}\u000a\u000a
+p423
+S'push { r4, r5, r6, r7, lr }\nadd r7,sp,#0xc\npush { r8, r9, r10, r11  }\nsub sp,#0x1c\nmov r10,r0\nldr r0,[0x0001216c]\nmov r1,r2\nadd r0,pc\nldr r0,[r0,#0x0]\nldr r0,[r0,#0x0]\nstr r0,[sp,#0x18]\nmov r0,r10\nblx 0x00011114\nmov r8,r0\nldr.w r0,[r10,#0x0]\nldr r1,[0x00012170]\nldr.w r2,[r0,#0x29c]\nadd r1,pc\nmov r0,r10\nblx r2\nmov r9,r0\nldr.w r0,[r10,#0x0]\nldr r4,[0x00012174]\nmov r1,r9\nadd r4,pc\nldr.w r3,[r0,#0x2a4]\nmov r0,r10\nmov r2,r4\nblx r3\nmov r5,r0\nldr.w r0,[r10,#0x0]\nadr r1,[0x12178]\nldr.w r2,[r0,#0x29c]\nldr.w r6,[r0,#0x2a4]\nmov r0,r10\nblx r2\nmov r1,r0\nmov r0,r10\nmov r2,r4\nblx r6\nmov r2,r0\nmov r0,#0x3\nmov r1,r5\nblx 0x00011120\nblx 0x0001112c\ncmp.w r0,#0xffffffff\nble.w 0x00012044\ncmp r0,#0x0\nbne.w 0x0001207e\nldr.w r0,[r10,#0x0]\nmov r1,r9\nldr r5,[0x00012180]\nadd r5,pc\nldr.w r3,[r0,#0x2a4]\nmov r0,r10\nmov r2,r5\nblx r3\nmov r4,r0\nldr.w r0,[r10,#0x0]\nadr r1,[0x12178]\nldr.w r2,[r0,#0x29c]\nldr.w r6,[r0,#0x2a4]\nmov r0,r10\nblx r2\nmov r1,r0\nmov r0,r10\nmov r2,r5\nblx r6\nmov r2,r0\nmov r0,#0x3\nmov r1,r4\nblx 0x00011120\nblx 0x00011138\nldr.w r0,[r10,#0x0]\nmov r1,r9\nmov r2,r5\nldr.w r3,[r0,#0x2a4]\nmov r0,r10\nblx r3\nmov r4,r0\nldr.w r0,[r10,#0x0]\nadr r1,[0x12184]\nldr.w r2,[r0,#0x29c]\nldr.w r6,[r0,#0x2a4]\nmov r0,r10\nblx r2\nmov r1,r0\nmov r0,r10\nmov r2,r5\nblx r6\nmov r2,r0\nmov r0,#0x3\nmov r1,r4\nblx 0x00011120\nmov r0,#0xb\nblx 0x00011144\nldr r0,[0x00012190]\nadd r4,sp,#0x10\nmov r6,#0x0\nadd r0,pc\nmov r1,r4\nstrd r6,r6,[sp,#0x10]\nblx 0x000110f0\nmov r0,r4\nblx 0x000110fc\nmov r5,r0\nblx 0x0001112c\ncmp r0,#0x0\nblt 0x00012004\nldr.w r11,[0x00012194]\nadd r4,sp,#0x10\nadd r11,pc\ncmp r0,#0x0\nbeq 0x000120a4\nmov r1,#0x0\nmov r2,#0x0\nblx 0x00011150\nmov r0,#0xb\nblx 0x00011144\nmov r0,r11\nmov r1,r4\nstrd r6,r6,[sp,#0x10]\nblx 0x000110f0\nmov r0,r4\nblx 0x000110fc\nmov r5,r0\nblx 0x0001112c\ncmp r0,#0x0\nbge 0x00011fd6\nldr.w r0,[r10,#0x0]\nmov r1,r9\nldr r4,[0x000121f4]\nadd r4,pc\nldr.w r3,[r0,#0x2a4]\nmov r0,r10\nmov r2,r4\nblx r3\nmov r5,r0\nldr.w r0,[r10,#0x0]\nadr r1,[0x121f8]\nldr.w r2,[r0,#0x29c]\nldr.w r6,[r0,#0x2a4]\nmov r0,r10\nblx r2\nmov r1,r0\nmov r0,r10\nmov r2,r4\nblx r6\nmov r2,r0\nmov r0,#0x3\nmov r1,r5\nblx 0x00011120\nmov r0,#0x1\nblx 0x0001115c\nldr.w r0,[r10,#0x0]\nmov r1,r9\nldr r4,[0x00012204]\nadd r4,pc\nldr.w r3,[r0,#0x2a4]\nmov r0,r10\nmov r2,r4\nblx r3\nmov r5,r0\nldr.w r0,[r10,#0x0]\nadr r1,[0x12208]\nldr.w r2,[r0,#0x29c]\nldr.w r6,[r0,#0x2a4]\nmov r0,r10\nblx r2\nmov r1,r0\nmov r0,r10\nmov r2,r4\nblx r6\nmov r2,r0\nmov r0,#0x6\nmov r1,r5\nblx 0x00011120\nldr.w r0,[r10,#0x0]\nldr.w r2,[r0,#0x29c]\nldr r0,[0x0001222c]\nldr r1,[sp,#0x18]\nadd r0,pc\nldr r0,[r0,#0x0]\nldr r0,[r0,#0x0]\nsub r0,r0,r1\nbne 0x00012166\nadr r1,[0x12218]\nmov r0,r10\nadd sp,#0x1c\npop.w { r8, r9, r10, r11 }\npop.w { r4, r5, r6, r7, lr }\nbx r2\nldr.w r0,[r10,#0x0]\nmov r1,r9\nldr.w r11,[0x00012198]\nadd r11,pc\nldr.w r3,[r0,#0x2a4]\nmov r0,r10\nmov r2,r11\nblx r3\nmov r6,r0\nldr.w r0,[r10,#0x0]\nadr r1,[0x1219c]\nldr.w r2,[r0,#0x29c]\nldr.w r4,[r0,#0x2a4]\nmov r0,r10\nblx r2\nmov r1,r0\nmov r0,r10\nmov r2,r11\nblx r4\nmov r2,r0\nmov r0,#0x3\nmov r1,r6\nblx 0x00011120\nldr.w r0,[r10,#0x0]\nmov r1,r9\nmov r2,r11\nldr.w r3,[r0,#0x2a4]\nmov r0,r10\nblx r3\nmov r6,r0\nldr.w r0,[r10,#0x0]\ncmp r5,#0x10\nldr.w r2,[r0,#0x29c]\nldr.w r4,[r0,#0x2a4]\nbgt 0x0001212c\ncbz r5,0x0001212c\nadr r1,[0x121a8]\nmov r0,r10\nblx r2\nldr r2,[0x000121b8]\nmov r1,r0\nmov r0,r10\nadd r2,pc\nblx r4\nmov r2,r0\nmov r0,#0x3\nmov r1,r6\nblx 0x00011120\nmov r0,#0x0\nadr r2,[0x121c0]\nstrd r8,r0,[sp,#0x0]\nadr r0,[0x121bc]\nadr r3,[0x121d0]\nb 0x0001215a\nadr r1,[0x121d4]\nmov r0,r10\nblx r2\nldr r2,[0x000121e4]\nmov r1,r0\nmov r0,r10\nadd r2,pc\nblx r4\nmov r2,r0\nmov r0,#0x3\nmov r1,r6\nblx 0x00011120\nadr r1,[0x121d0]\nadr r2,[0x121e8]\nmov r0,#0x0\nadr r3,[0x121ec]\nstrd r2,r1,[sp,#0x0]\nadr r2,[0x121c0]\nstrd r8,r0,[sp,#0x8]\nadr r0,[0x121bc]\nmov r1,r0\nblx 0x00011168\nmov r0,#0x0\nblx 0x0001115c\nblx 0x00011108\n'
+p424
+S'f0 b5\n03 af\n2d e9 00 0f\n87 b0\n82 46\naa 48\n11 46\n78 44\n00 68\n00 68\n06 90\n50 46\nff f7 22 e9\n80 46\nda f8 00 00\na5 49\nd0 f8 9c 22\n79 44\n50 46\n90 47\n81 46\nda f8 00 00\na2 4c\n49 46\n7c 44\nd0 f8 a4 32\n50 46\n22 46\n98 47\n05 46\nda f8 00 00\n9d a1\nd0 f8 9c 22\nd0 f8 a4 62\n50 46\n90 47\n01 46\n50 46\n22 46\nb0 47\n02 46\n03 20\n29 46\nff f7 00 e9\nff f7 04 e9\nb0 f1 ff 3f\n40 f3 8c 80\n00 28\n40 f0 a6 80\nda f8 00 00\n49 46\n91 4d\n7d 44\nd0 f8 a4 32\n50 46\n2a 46\n98 47\n04 46\nda f8 00 00\n8a a1\nd0 f8 9c 22\nd0 f8 a4 62\n50 46\n90 47\n01 46\n50 46\n2a 46\nb0 47\n02 46\n03 20\n21 46\nff f7 da e8\nff f7 e4 e8\nda f8 00 00\n49 46\n2a 46\nd0 f8 a4 32\n50 46\n98 47\n04 46\nda f8 00 00\n7f a1\nd0 f8 9c 22\nd0 f8 a4 62\n50 46\n90 47\n01 46\n50 46\n2a 46\nb0 47\n02 46\n03 20\n21 46\nff f7 be e8\n0b 20\nff f7 cc e8\n78 48\n04 ac\n00 26\n78 44\n21 46\ncd e9 04 66\nff f7 9a e8\n20 46\nff f7 9c e8\n05 46\nff f7 b2 e8\n00 28\n1a db\ndf f8 c4 b1\n04 ac\nfb 44\n00 28\n64 d0\n00 21\n00 22\nff f7 b8 e8\n0b 20\nff f7 ae e8\n58 46\n21 46\ncd e9 04 66\nff f7 7e e8\n20 46\nff f7 82 e8\n05 46\nff f7 96 e8\n00 28\ne8 da\nda f8 00 00\n49 46\n7a 4c\n7c 44\nd0 f8 a4 32\n50 46\n22 46\n98 47\n05 46\nda f8 00 00\n76 a1\nd0 f8 9c 22\nd0 f8 a4 62\n50 46\n90 47\n01 46\n50 46\n22 46\nb0 47\n02 46\n03 20\n29 46\nff f7 72 e8\n01 20\nff f7 8c e8\nda f8 00 00\n49 46\n6e 4c\n7c 44\nd0 f8 a4 32\n50 46\n22 46\n98 47\n05 46\nda f8 00 00\n6a a1\nd0 f8 9c 22\nd0 f8 a4 62\n50 46\n90 47\n01 46\n50 46\n22 46\nb0 47\n02 46\n06 20\n29 46\nff f7 52 e8\nda f8 00 00\nd0 f8 9c 22\n69 48\n06 99\n78 44\n00 68\n00 68\n40 1a\n68 d1\n60 a1\n50 46\n07 b0\nbd e8 00 0f\nbd e8 f0 40\n10 47\nda f8 00 00\n49 46\ndf f8 ec b0\nfb 44\nd0 f8 a4 32\n50 46\n5a 46\n98 47\n06 46\nda f8 00 00\n36 a1\nd0 f8 9c 22\nd0 f8 a4 42\n50 46\n90 47\n01 46\n50 46\n5a 46\na0 47\n02 46\n03 20\n31 46\nff f7 20 e8\nda f8 00 00\n49 46\n5a 46\nd0 f8 a4 32\n50 46\n98 47\n06 46\nda f8 00 00\n10 2d\nd0 f8 9c 22\nd0 f8 a4 42\n14 dc\n9d b1\n28 a1\n50 46\n90 47\n2b 4a\n01 46\n50 46\n7a 44\na0 47\n02 46\n03 20\n31 46\nff f7 02 e8\n00 20\n27 a2\ncd e9 00 80\n25 a0\n29 a3\n16 e0\n29 a1\n50 46\n90 47\n2c 4a\n01 46\n50 46\n7a 44\na0 47\n02 46\n03 20\n31 46\nfe f7 ee ef\n22 a1\n27 a2\n00 20\n27 a3\ncd e9 00 21\n1b a2\ncd e9 02 80\n18 a0\n01 46\nff f7 04 e8\n00 20\nfe f7 fc ef\nfe f7 d0 ef\n'
+p425
+S'.text:00011eb4\n.text:00011eb6\n.text:00011eb8\n.text:00011ebc\n.text:00011ebe\n.text:00011ec0\n.text:00011ec2\n.text:00011ec4\n.text:00011ec6\n.text:00011ec8\n.text:00011eca\n.text:00011ecc\n.text:00011ece\n.text:00011ed2\n.text:00011ed4\n.text:00011ed8\n.text:00011eda\n.text:00011ede\n.text:00011ee0\n.text:00011ee2\n.text:00011ee4\n.text:00011ee6\n.text:00011eea\n.text:00011eec\n.text:00011eee\n.text:00011ef0\n.text:00011ef4\n.text:00011ef6\n.text:00011ef8\n.text:00011efa\n.text:00011efc\n.text:00011f00\n.text:00011f02\n.text:00011f06\n.text:00011f0a\n.text:00011f0c\n.text:00011f0e\n.text:00011f10\n.text:00011f12\n.text:00011f14\n.text:00011f16\n.text:00011f18\n.text:00011f1a\n.text:00011f1c\n.text:00011f20\n.text:00011f24\n.text:00011f28\n.text:00011f2c\n.text:00011f2e\n.text:00011f32\n.text:00011f36\n.text:00011f38\n.text:00011f3a\n.text:00011f3c\n.text:00011f40\n.text:00011f42\n.text:00011f44\n.text:00011f46\n.text:00011f48\n.text:00011f4c\n.text:00011f4e\n.text:00011f52\n.text:00011f56\n.text:00011f58\n.text:00011f5a\n.text:00011f5c\n.text:00011f5e\n.text:00011f60\n.text:00011f62\n.text:00011f64\n.text:00011f66\n.text:00011f68\n.text:00011f6c\n.text:00011f70\n.text:00011f74\n.text:00011f76\n.text:00011f78\n.text:00011f7c\n.text:00011f7e\n.text:00011f80\n.text:00011f82\n.text:00011f86\n.text:00011f88\n.text:00011f8c\n.text:00011f90\n.text:00011f92\n.text:00011f94\n.text:00011f96\n.text:00011f98\n.text:00011f9a\n.text:00011f9c\n.text:00011f9e\n.text:00011fa0\n.text:00011fa2\n.text:00011fa6\n.text:00011fa8\n.text:00011fac\n.text:00011fae\n.text:00011fb0\n.text:00011fb2\n.text:00011fb4\n.text:00011fb6\n.text:00011fba\n.text:00011fbe\n.text:00011fc0\n.text:00011fc4\n.text:00011fc6\n.text:00011fca\n.text:00011fcc\n.text:00011fce\n.text:00011fd2\n.text:00011fd4\n.text:00011fd6\n.text:00011fd8\n.text:00011fda\n.text:00011fdc\n.text:00011fde\n.text:00011fe2\n.text:00011fe4\n.text:00011fe8\n.text:00011fea\n.text:00011fec\n.text:00011ff0\n.text:00011ff4\n.text:00011ff6\n.text:00011ffa\n.text:00011ffc\n.text:00012000\n.text:00012002\n.text:00012004\n.text:00012008\n.text:0001200a\n.text:0001200c\n.text:0001200e\n.text:00012012\n.text:00012014\n.text:00012016\n.text:00012018\n.text:0001201a\n.text:0001201e\n.text:00012020\n.text:00012024\n.text:00012028\n.text:0001202a\n.text:0001202c\n.text:0001202e\n.text:00012030\n.text:00012032\n.text:00012034\n.text:00012036\n.text:00012038\n.text:0001203a\n.text:0001203e\n.text:00012040\n.text:00012044\n.text:00012048\n.text:0001204a\n.text:0001204c\n.text:0001204e\n.text:00012052\n.text:00012054\n.text:00012056\n.text:00012058\n.text:0001205a\n.text:0001205e\n.text:00012060\n.text:00012064\n.text:00012068\n.text:0001206a\n.text:0001206c\n.text:0001206e\n.text:00012070\n.text:00012072\n.text:00012074\n.text:00012076\n.text:00012078\n.text:0001207a\n.text:0001207e\n.text:00012082\n.text:00012086\n.text:00012088\n.text:0001208a\n.text:0001208c\n.text:0001208e\n.text:00012090\n.text:00012092\n.text:00012094\n.text:00012096\n.text:00012098\n.text:0001209a\n.text:0001209e\n.text:000120a2\n.text:000120a4\n.text:000120a8\n.text:000120aa\n.text:000120ae\n.text:000120b0\n.text:000120b4\n.text:000120b6\n.text:000120b8\n.text:000120ba\n.text:000120bc\n.text:000120c0\n.text:000120c2\n.text:000120c6\n.text:000120ca\n.text:000120cc\n.text:000120ce\n.text:000120d0\n.text:000120d2\n.text:000120d4\n.text:000120d6\n.text:000120d8\n.text:000120da\n.text:000120dc\n.text:000120e0\n.text:000120e4\n.text:000120e6\n.text:000120e8\n.text:000120ec\n.text:000120ee\n.text:000120f0\n.text:000120f2\n.text:000120f6\n.text:000120f8\n.text:000120fc\n.text:00012100\n.text:00012102\n.text:00012104\n.text:00012106\n.text:00012108\n.text:0001210a\n.text:0001210c\n.text:0001210e\n.text:00012110\n.text:00012112\n.text:00012114\n.text:00012116\n.text:00012118\n.text:0001211a\n.text:0001211e\n.text:00012120\n.text:00012122\n.text:00012126\n.text:00012128\n.text:0001212a\n.text:0001212c\n.text:0001212e\n.text:00012130\n.text:00012132\n.text:00012134\n.text:00012136\n.text:00012138\n.text:0001213a\n.text:0001213c\n.text:0001213e\n.text:00012140\n.text:00012142\n.text:00012146\n.text:00012148\n.text:0001214a\n.text:0001214c\n.text:0001214e\n.text:00012152\n.text:00012154\n.text:00012158\n.text:0001215a\n.text:0001215c\n.text:00012160\n.text:00012162\n.text:00012166\n'
+p426
+tp427
+sS'get_version'
+p428
+(S'\n__stdcall get_version()\n'
+p429
+V\u000avoid get_version(void)\u000a\u000a{\u000a  undefined4 local_20;\u000a  undefined4 uStack28;\u000a  int local_14;\u000a  \u000a  local_14 = **(int **)(DAT_00011ea8 + 0x11e76);\u000a  local_20 = 0;\u000a  uStack28 = 0;\u000a  __system_property_get(DAT_00011eac + 0x11e82,&local_20);\u000a  atoi((char *)&local_20);\u000a  if (**(int **)(DAT_00011eb0 + 0x11e98) != local_14) {\u000a                    /* WARNING: Subroutine does not return */\u000a    __stack_chk_fail();\u000a  }\u000a  return;\u000a}\u000a\u000a
+p430
+S'push { r4, r6, r7, lr }\nadd r7,sp,#0x8\nsub sp,#0x10\nldr r0,[0x00011ea8]\nmov r4,sp\nadd r0,pc\nldr r0,[r0,#0x0]\nldr r1,[r0,#0x0]\nldr r0,[0x00011eac]\nstr r1,[sp,#0xc]\nmov r1,#0x0\nadd r0,pc\nstrd r1,r1,[sp,#0x0]\nmov r1,r4\nblx 0x000110f0\nmov r0,r4\nblx 0x000110fc\nldr r1,[0x00011eb0]\nldr r2,[sp,#0xc]\nadd r1,pc\nldr r1,[r1,#0x0]\nldr r1,[r1,#0x0]\nsub r1,r1,r2\nitT eq\nadd.eq sp,#0x10\npop.eq { r4, r6, r7, pc }\nblx 0x00011108\n'
+p431
+S'd0 b5\n02 af\n84 b0\n0e 48\n6c 46\n78 44\n00 68\n01 68\n0c 48\n03 91\n00 21\n78 44\ncd e9 00 11\n21 46\nff f7 34 e9\n20 46\nff f7 36 e9\n07 49\n03 9a\n79 44\n09 68\n09 68\n89 1a\n04 bf\n04 b0\nd0 bd\nff f7 32 e9\n'
+p432
+S'.text:00011e68\n.text:00011e6a\n.text:00011e6c\n.text:00011e6e\n.text:00011e70\n.text:00011e72\n.text:00011e74\n.text:00011e76\n.text:00011e78\n.text:00011e7a\n.text:00011e7c\n.text:00011e7e\n.text:00011e80\n.text:00011e84\n.text:00011e86\n.text:00011e8a\n.text:00011e8c\n.text:00011e90\n.text:00011e92\n.text:00011e94\n.text:00011e96\n.text:00011e98\n.text:00011e9a\n.text:00011e9c\n.text:00011e9e\n.text:00011ea0\n.text:00011ea2\n'
+p433
+tp434
+sS'FUN_0001243c'
+p435
+(S'\n__stdcall FUN_0001243c()\n'
+p436
+V\u000avoid FUN_0001243c(uint *puParm1)\u000a\u000a{\u000a  if ((*puParm1 & 1) == 0) {\u000a    if ((*puParm1 & 2) == 0) {\u000a      __gnu_Unwind_Restore_VFP(puParm1 + 0x12);\u000a    }\u000a    else {\u000a      __gnu_Unwind_Restore_VFP_D();\u000a    }\u000a  }\u000a  if ((*puParm1 & 4) == 0) {\u000a    __gnu_Unwind_Restore_VFP_D_16_to_31(puParm1 + 0x34);\u000a  }\u000a  if ((*puParm1 & 8) == 0) {\u000a    __gnu_Unwind_Restore_WMMXD(puParm1 + 0x54);\u000a  }\u000a  if ((*puParm1 & 0x10) != 0) {\u000a    return;\u000a  }\u000a  __gnu_Unwind_Restore_WMMXC(puParm1 + 0x74);\u000a  return;\u000a}\u000a\u000a
+p437
+S'ldr r3,[r0,#0x0]\nstmdb sp!,{ r4 lr }\ntst r3,#0x1\ncpy r4,r0\nbne 0x00012468\ntst r3,#0x2\nadd r0,r0,#0x48\nbeq 0x00012464\nbl 0x00011180\nb 0x00012468\nbl 0x0001118c\nldr r3,[r4,#0x0]\ntst r3,#0x4\nbne 0x0001247c\nadd r0,r4,#0xd0\nbl 0x00011198\nldr r3,[r4,#0x0]\ntst r3,#0x8\nbne 0x00012490\nadd r0,r4,#0x150\nbl 0x000111a4\nldr r3,[r4,#0x0]\ntst r3,#0x10\nldmneia sp!,{ r4 pc }\nadd r0,r4,#0x1d0\nldmia sp!,{ r4 lr }\nb 0x000111b0\n'
+p438
+S'00 30 90 e5\n10 40 2d e9\n01 00 13 e3\n00 40 a0 e1\n05 00 00 1a\n02 00 13 e3\n48 00 80 e2\n01 00 00 0a\n47 fb ff eb\n00 00 00 ea\n48 fb ff eb\n00 30 94 e5\n04 00 13 e3\n01 00 00 1a\nd0 00 84 e2\n46 fb ff eb\n00 30 94 e5\n08 00 13 e3\n01 00 00 1a\n15 0e 84 e2\n44 fb ff eb\n00 30 94 e5\n10 00 13 e3\n10 80 bd 18\n1d 0e 84 e2\n10 40 bd e8\n41 fb ff ea\n'
+p439
+S'.text:0001243c\n.text:00012440\n.text:00012444\n.text:00012448\n.text:0001244c\n.text:00012450\n.text:00012454\n.text:00012458\n.text:0001245c\n.text:00012460\n.text:00012464\n.text:00012468\n.text:0001246c\n.text:00012470\n.text:00012474\n.text:00012478\n.text:0001247c\n.text:00012480\n.text:00012484\n.text:00012488\n.text:0001248c\n.text:00012490\n.text:00012494\n.text:00012498\n.text:0001249c\n.text:000124a0\n.text:000124a4\n'
+p440
+tp441
+sS'__gnu_Unwind_Save_VFP_D_16_to_31'
+p442
+(S'\n__stdcall __gnu_Unwind_Save_VFP_D_16_to_31()\n'
+p443
+V\u000a/* WARNING: Control flow encountered unimplemented instructions */\u000a\u000avoid __gnu_Unwind_Save_VFP_D_16_to_31(void)\u000a\u000a{\u000a                    /* WARNING: Unimplemented instruction - Truncating control flow here */\u000a  halt_unimplemented();\u000a}\u000a\u000a
+p444
+S'vstmia r0,{d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31}\nbx lr\n'
+p445
+S'20 0b c0 ec\n1e ff 2f e1\n'
+p446
+S'.text:00013140\n.text:00013144\n'
+p447
+tp448
+sS'__gnu_Unwind_ForcedUnwind'
+p449
+(S'\n__stdcall __gnu_Unwind_ForcedUnwind()\n'
+p450
+V\u000avoid __gnu_Unwind_ForcedUnwind(int iParm1,undefined4 uParm2,undefined4 uParm3,int iParm4)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  \u000a  *(undefined4 *)(iParm1 + 0x18) = uParm3;\u000a  uVar1 = *(undefined4 *)(iParm4 + 0x3c);\u000a  *(undefined4 *)(iParm1 + 0xc) = uParm2;\u000a  *(undefined4 *)(iParm4 + 0x40) = uVar1;\u000a  FUN_0001252c(iParm1,iParm4,0);\u000a  return;\u000a}\u000a\u000a
+p451
+S'str r2,[r0,#0x18]\nldr r2,[r3,#0x3c]\nstr r1,[r0,#0xc]\ncpy r1,r3\nstr r2,[r3,#0x40]\nmov r2,#0x0\nb 0x0001252c\n'
+p452
+S'18 20 80 e5\n3c 20 93 e5\n0c 10 80 e5\n03 10 a0 e1\n40 20 83 e5\n00 20 a0 e3\n83 ff ff ea\n'
+p453
+S'.text:00012700\n.text:00012704\n.text:00012708\n.text:0001270c\n.text:00012710\n.text:00012714\n.text:00012718\n'
+p454
+tp455
+sS'fork'
+p456
+(S'\n__stdcall fork()\n'
+p457
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000a__pid_t fork(void)\u000a\u000a{\u000a  __pid_t _Var1;\u000a  \u000a  _Var1 = (*(code *)PTR_fork_00014f84)();\u000a  return _Var1;\u000a}\u000a\u000a
+p458
+S'adr r12,0x11134\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe50]!\n'
+p459
+S'00 c6 8f e2\n03 ca 8c e2\n50 fe bc e5\n'
+p460
+S'.plt:0001112c\n.plt:00011130\n.plt:00011134\n'
+p461
+tp462
+sS'__cxa_begin_cleanup'
+p463
+(S'\n__stdcall __cxa_begin_cleanup()\n'
+p464
+V\u000avoid __cxa_begin_cleanup(void)\u000a\u000a{\u000a  (*(code *)PTR___cxa_begin_cleanup_00014fcc)();\u000a  return;\u000a}\u000a\u000a
+p465
+S'adr r12,0x1120c\nadd r12,r12,#0x3000\nldr pc,[r12,#0xdc0]!\n'
+p466
+S'00 c6 8f e2\n03 ca 8c e2\nc0 fd bc e5\n'
+p467
+S'.plt:00011204\n.plt:00011208\n.plt:0001120c\n'
+p468
+tp469
+sS'_Unwind_GetRegionStart'
+p470
+(S'\n__stdcall _Unwind_GetRegionStart()\n'
+p471
+V\u000aundefined4 _Unwind_GetRegionStart(void)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = thunk_FUN_0001330c();\u000a  return *(undefined4 *)(iVar1 + 0x48);\u000a}\u000a\u000a
+p472
+S'stmdb sp!,{ r3 lr }\nbl 0x00013334\nldr r0,[r0,#0x48]\nldmia sp!,{ r3 pc }\n'
+p473
+S'08 40 2d e9\n06 ff ff eb\n48 00 90 e5\n08 80 bd e8\n'
+p474
+S'.text:00013710\n.text:00013714\n.text:00013718\n.text:0001371c\n'
+p475
+tp476
+sS'memcpy'
+p477
+(S'\n__stdcall memcpy(void * __dest, void * __src, size_t __n)\n'
+p478
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid * memcpy(void *__dest,void *__src,size_t __n)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = (void *)(*(code *)PTR_memcpy_00014fbc)();\u000a  return pvVar1;\u000a}\u000a\u000a
+p479
+S'adr r12,0x111dc\nadd r12,r12,#0x3000\nldr pc,[r12,#0xde0]!\n'
+p480
+S'00 c6 8f e2\n03 ca 8c e2\ne0 fd bc e5\n'
+p481
+S'.plt:000111d4\n.plt:000111d8\n.plt:000111dc\n'
+p482
+tp483
+sS'execlp'
+p484
+(S'\n__stdcall execlp(char * __file, char * __arg)\n'
+p485
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint execlp(char *__file,char *__arg,...)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_execlp_00014f98)();\u000a  return iVar1;\u000a}\u000a\u000a
+p486
+S'adr r12,0x11170\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe28]!\n'
+p487
+S'00 c6 8f e2\n03 ca 8c e2\n28 fe bc e5\n'
+p488
+S'.plt:00011168\n.plt:0001116c\n.plt:00011170\n'
+p489
+tp490
+sS'__gnu_Unwind_Restore_VFP_D_16_to_31'
+p491
+(S'\n__stdcall __gnu_Unwind_Restore_VFP_D_16_to_31()\n'
+p492
+V\u000a/* WARNING: Control flow encountered unimplemented instructions */\u000a\u000avoid __gnu_Unwind_Restore_VFP_D_16_to_31(void)\u000a\u000a{\u000a                    /* WARNING: Unimplemented instruction - Truncating control flow here */\u000a  halt_unimplemented();\u000a}\u000a\u000a
+p493
+S'vldmia r0,{d16,d17,d18,d19,d20,d21,d22,d23,d24,d25,d26,d27,d28,d29,d30,d31}\nbx lr\n'
+p494
+S'20 0b d0 ec\n1e ff 2f e1\n'
+p495
+S'.text:00013138\n.text:0001313c\n'
+p496
+tp497
+sS'__aeabi_memcpy'
+p498
+(S'\n__stdcall __aeabi_memcpy()\n'
+p499
+V\u000avoid __aeabi_memcpy(void)\u000a\u000a{\u000a  (*(code *)PTR___aeabi_memcpy_00014f64)();\u000a  return;\u000a}\u000a\u000a
+p500
+S'adr r12,0x110d4\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe90]!\n'
+p501
+S'00 c6 8f e2\n03 ca 8c e2\n90 fe bc e5\n'
+p502
+S'.plt:000110cc\n.plt:000110d0\n.plt:000110d4\n'
+p503
+tp504
+sS'FUN_00012248'
+p505
+(S'\n__stdcall FUN_00012248()\n'
+p506
+V\u000aint FUN_00012248(int iParm1,int iParm2,uint uParm3)\u000a\u000a{\u000a  int iVar1;\u000a  uint uVar2;\u000a  int iVar3;\u000a  int iVar4;\u000a  int iVar5;\u000a  int iVar6;\u000a  \u000a  if (iParm2 == 0) {\u000a    return 0;\u000a  }\u000a  iVar6 = 0;\u000a  iVar5 = iParm2 + -1;\u000a  do {\u000a    while( true ) {\u000a      iVar1 = (int)(iVar6 + iVar5 + ((uint)(iVar6 + iVar5) >> 0x1f)) >> 1;\u000a      iVar4 = iParm1 + iVar1 * 8;\u000a      uVar2 = FUN_00012230(iVar4);\u000a      if (iVar1 == iParm2 + -1) break;\u000a      iVar3 = FUN_00012230(iParm1 + iVar1 * 8 + 8);\u000a      if (uParm3 < uVar2) goto LAB_000122ac;\u000a      if (uParm3 <= iVar3 - 1U) {\u000a        return iVar4;\u000a      }\u000a      iVar6 = iVar1 + 1;\u000a    }\u000a    if (uVar2 <= uParm3) {\u000a      return iVar4;\u000a    }\u000aLAB_000122ac:\u000a    if (iVar1 == iVar6) {\u000a      return 0;\u000a    }\u000a    iVar5 = iVar1 + -1;\u000a  } while( true );\u000a}\u000a\u000a
+p507
+S'stmdb sp!,{ r0 r1 r2 r4 r5 r6 r7 r8 r9 r10 r11 lr }\ncmp r1,#0x0\ncpy r5,r1\nbeq 0x000122e0\nsub r8,r1,#0x1\ncpy r6,r2\ncpy r7,r0\nmov r11,#0x0\ncpy r9,r8\nadd r4,r11,r9\nadd r4,r4,r4, lsr #0x1f\nmov r4,r4, asr #0x1\nmov r10,r4, lsl #0x3\nadd r5,r7,r10\ncpy r0,r5\nbl 0x00012230\ncmp r4,r8\nbeq 0x000122d8\nstr r0,[sp,#0x4]\nadd r0,r10,#0x8\nadd r0,r7,r0\nbl 0x00012230\nldr r3,[sp,#0x4]\ncmp r6,r3\nbcs 0x000122bc\ncmp r4,r11\nbeq 0x000122d0\nsub r9,r4,#0x1\nb 0x0001226c\nsub r0,r0,#0x1\ncmp r6,r0\nbls 0x000122e0\nadd r11,r4,#0x1\nb 0x0001226c\nmov r5,#0x0\nb 0x000122e0\ncmp r6,r0\nbcc 0x000122ac\ncpy r0,r5\nadd sp,sp,#0xc\nldmia sp!,{ r4 r5 r6 r7 r8 r9 r10 r11 pc }\n'
+p508
+S'f7 4f 2d e9\n00 00 51 e3\n01 50 a0 e1\n21 00 00 0a\n01 80 41 e2\n02 60 a0 e1\n00 70 a0 e1\n00 b0 a0 e3\n08 90 a0 e1\n09 40 8b e0\na4 4f 84 e0\nc4 40 a0 e1\n84 a1 a0 e1\n0a 50 87 e0\n05 00 a0 e1\ne9 ff ff eb\n08 00 54 e1\n11 00 00 0a\n04 00 8d e5\n08 00 8a e2\n00 00 87 e0\ne3 ff ff eb\n04 30 9d e5\n03 00 56 e1\n03 00 00 2a\n0b 00 54 e1\n06 00 00 0a\n01 90 44 e2\neb ff ff ea\n01 00 40 e2\n00 00 56 e1\n05 00 00 9a\n01 b0 84 e2\ne6 ff ff ea\n00 50 a0 e3\n01 00 00 ea\n00 00 56 e1\nf2 ff ff 3a\n05 00 a0 e1\n0c d0 8d e2\nf0 8f bd e8\n'
+p509
+S'.text:00012248\n.text:0001224c\n.text:00012250\n.text:00012254\n.text:00012258\n.text:0001225c\n.text:00012260\n.text:00012264\n.text:00012268\n.text:0001226c\n.text:00012270\n.text:00012274\n.text:00012278\n.text:0001227c\n.text:00012280\n.text:00012284\n.text:00012288\n.text:0001228c\n.text:00012290\n.text:00012294\n.text:00012298\n.text:0001229c\n.text:000122a0\n.text:000122a4\n.text:000122a8\n.text:000122ac\n.text:000122b0\n.text:000122b4\n.text:000122b8\n.text:000122bc\n.text:000122c0\n.text:000122c4\n.text:000122c8\n.text:000122cc\n.text:000122d0\n.text:000122d4\n.text:000122d8\n.text:000122dc\n.text:000122e0\n.text:000122e4\n.text:000122e8\n'
+p510
+tp511
+sS'FUN_000132ac'
+p512
+(S'\n__stdcall FUN_000132ac()\n'
+p513
+V\u000auint FUN_000132ac(uint *puParm1)\u000a\u000a{\u000a  char cVar1;\u000a  uint *puVar2;\u000a  uint uVar3;\u000a  \u000a  if (*(char *)(puParm1 + 2) == 0) {\u000a    if (*(char *)((int)puParm1 + 9) == 0) {\u000a      return 0xb0;\u000a    }\u000a    *(char *)((int)puParm1 + 9) = *(char *)((int)puParm1 + 9) + -1;\u000a    puVar2 = (uint *)puParm1[1];\u000a    *(uint **)(puParm1 + 1) = puVar2 + 1;\u000a    *puParm1 = *puVar2;\u000a    cVar1 = 3;\u000a  }\u000a  else {\u000a    cVar1 = *(char *)(puParm1 + 2) + -1;\u000a  }\u000a  *(char *)(puParm1 + 2) = cVar1;\u000a  uVar3 = *puParm1;\u000a  *puParm1 = uVar3 << 8;\u000a  return uVar3 >> 0x18;\u000a}\u000a\u000a
+p514
+S'ldrb r3,[r0,#0x8]\ncmp r3,#0x0\nbne 0x000132e8\nldrb r3,[r0,#0x9]\ncmp r3,#0x0\nbeq 0x00013304\nsub r3,r3,#0x1\nstrb r3,[r0,#0x9]\nldr r3,[r0,#0x4]\nadd r2,r3,#0x4\nstr r2,[r0,#0x4]\nldr r3,[r3,#0x0]\nstr r3,[r0,#0x0]\nmov r3,#0x3\nb 0x000132ec\nsub r3,r3,#0x1\nstrb r3,[r0,#0x8]\nldr r3,[r0,#0x0]\nmov r2,r3, lsl #0x8\nstr r2,[r0,#0x0]\nmov r0,r3, lsr #0x18\nbx lr\nmov r0,#0xb0\nbx lr\n'
+p515
+S'08 30 d0 e5\n00 00 53 e3\n0b 00 00 1a\n09 30 d0 e5\n00 00 53 e3\n0f 00 00 0a\n01 30 43 e2\n09 30 c0 e5\n04 30 90 e5\n04 20 83 e2\n04 20 80 e5\n00 30 93 e5\n00 30 80 e5\n03 30 a0 e3\n00 00 00 ea\n01 30 43 e2\n08 30 c0 e5\n00 30 90 e5\n03 24 a0 e1\n00 20 80 e5\n23 0c a0 e1\n1e ff 2f e1\nb0 00 a0 e3\n1e ff 2f e1\n'
+p516
+S'.text:000132ac\n.text:000132b0\n.text:000132b4\n.text:000132b8\n.text:000132bc\n.text:000132c0\n.text:000132c4\n.text:000132c8\n.text:000132cc\n.text:000132d0\n.text:000132d4\n.text:000132d8\n.text:000132dc\n.text:000132e0\n.text:000132e4\n.text:000132e8\n.text:000132ec\n.text:000132f0\n.text:000132f4\n.text:000132f8\n.text:000132fc\n.text:00013300\n.text:00013304\n.text:00013308\n'
+p517
+tp518
+sS'waitpid'
+p519
+(S'\n__stdcall waitpid(__pid_t __pid, int * __stat_loc, int __options)\n'
+p520
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000a__pid_t waitpid(__pid_t __pid,int *__stat_loc,int __options)\u000a\u000a{\u000a  __pid_t _Var1;\u000a  \u000a  _Var1 = (*(code *)PTR_waitpid_00014f90)();\u000a  return _Var1;\u000a}\u000a\u000a
+p521
+S'adr r12,0x11158\nadd r12,r12,#0x3000\nldr pc,[r12,#0xe38]!\n'
+p522
+S'00 c6 8f e2\n03 ca 8c e2\n38 fe bc e5\n'
+p523
+S'.plt:00011150\n.plt:00011154\n.plt:00011158\n'
+p524
+tp525
+s.
