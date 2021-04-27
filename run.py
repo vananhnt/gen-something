@@ -2,7 +2,7 @@ from model import Seq2Seq
 from tqdm import tqdm, trange
 from transformers import RobertaModel, RobertaTokenizer, RobertaConfig,AdamW, get_linear_schedule_with_warmup
 from torch.utils.data import DataLoader, Dataset, SequentialSampler, RandomSampler,TensorDataset
-from preprocess import build_program
+from preprocess import extract_decompile
 from entities import convert_examples_to_features, read_examples
 import argparse
 from itertools import cycle
@@ -35,9 +35,14 @@ import random
 
 
 default_output_dir = './model/'
-train_dataset='./spoc/spoc-train.frange'
-dev_dataset = './spoc/spoc-testp.frange'
-test_dataset = './spoc/spoc-testw.frange'
+# train_dataset='./spoc/spoc-train.frange'
+# dev_dataset = './spoc/spoc-testp.frange'
+# test_dataset = './spoc/spoc-testw.frange'
+train_dataset_dir='./ghidra/unstrip/train'
+dev_dataset_dir = './ghidra/unstrip/dev'
+test_dataset_dir ='./ghidra/unstrip/test'
+
+
 
 MODEL_CLASSES = {'roberta': (RobertaConfig, RobertaModel, RobertaTokenizer)}
 
@@ -336,8 +341,7 @@ def main():
 
     if args.do_train:
         # Prepare training data loader
-        pg,f_range = build_program('train')
-        train_examples = read_examples(pg, f_range)
+        train_examples = read_examples(train_dataset_dir)
         train_features = convert_examples_to_features(train_examples, tokenizer,args,stage='train')
         all_source_ids = torch.tensor([f.source_ids for f in train_features], dtype=torch.long)
         all_source_mask = torch.tensor([f.source_mask for f in train_features], dtype=torch.long)
@@ -411,8 +415,8 @@ def main():
                 if 'dev_loss' in dev_dataset:
                     eval_examples,eval_data=dev_dataset['dev_loss']
                 else:
-                    pg,f_range = build_program('eval')
-                    eval_examples = read_examples(pg, f_range)
+                    eval_examples = read_examples(dev_dataset_dir)
+
                     eval_features = convert_examples_to_features(eval_examples, tokenizer, args,stage='dev')
                     all_source_ids = torch.tensor([f.source_ids for f in eval_features], dtype=torch.long)
                     all_source_mask = torch.tensor([f.source_mask for f in eval_features], dtype=torch.long)
@@ -472,8 +476,7 @@ def main():
                 if 'dev_bleu' in dev_dataset:
                     eval_examples,eval_data=dev_dataset['dev_bleu']
                 else:
-                    pg,f_range = build_program('eval')
-                    eval_examples = read_examples(pg, f_range)
+                    eval_examples = read_examples(dev_dataset_dir)
                     eval_examples = random.sample(eval_examples,min(1000,len(eval_examples)))
                     eval_features = convert_examples_to_features(eval_examples, tokenizer, args,stage='test')
                     all_source_ids = torch.tensor([f.source_ids for f in eval_features], dtype=torch.long)
@@ -523,10 +526,10 @@ def main():
                     torch.save(model_to_save.state_dict(), output_model_file)
                
     if args.do_test:
-        pg, f_range = build_program('test')
-        for idx, program_dict in tqdm(enumerate(pg), total=len(f_range)):
-            logger.info("Test file: {}".format(idx))
-            eval_examples = read_examples(program_dict)
+        sample_dict = extract_decompile(test_dataset_dir)
+        for idx in tqdm(sample_dict, total=len(sample_dict)):
+            logger.info("Test function: {}".format(idx))
+            eval_examples = read_examples(sample_dict, idx=idx)
             eval_features = convert_examples_to_features(eval_examples, tokenizer, args,stage='test')
             all_source_ids = torch.tensor([f.source_ids for f in eval_features], dtype=torch.long)
             all_source_mask = torch.tensor([f.source_mask for f in eval_features], dtype=torch.long)    

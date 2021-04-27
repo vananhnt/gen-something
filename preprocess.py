@@ -6,7 +6,6 @@ import pickle
 from tqdm import tqdm
 from transformers import RobertaTokenizer
 
-unstrip_dataset = './ghidra/unstrip'
 tokenizer = RobertaTokenizer.from_pretrained("microsoft/codebert-base")
 
 def to_token(s):
@@ -18,15 +17,18 @@ def to_token(s):
 def stripcomments(text):
     return re.sub('//.*?\n|/\*.*?\*/', '', text, flags=re.S)
 
+
+# TODO: Need to add sampleID when process ghidra, not here
 def load_dataframe(dataset_dir):
     fileID = 0
     fid = 0
-    number_files = len(os.listdir((dataset_dir))) # dir is your directory path
+    number_files = len(os.listdir(dataset_dir)) # dir is your directory path
     
     row_list = []
     
     header = ['id', 'funcname', 'signature', 'decompiled', 'disassembly', 'bytes', 'address', 'sampleID']
-    for filename in tqdm(glob.iglob('./ghidra/unstrip/*.pkl'), total=number_files):
+
+    for filename in tqdm(glob.iglob(dataset_dir + '/*.pkl'), total=number_files):
         funcmap = pickle.load(open(filename, "rb" ))
         for k in funcmap:
             funcname = k
@@ -36,9 +38,9 @@ def load_dataframe(dataset_dir):
                          'disassembly': disasm_result, 'bytes': byte, 
                          'address':addr, 'sampleID':fileID,
                         }
+            row_list.append(func_dict)
             fid += 1
         fileID +=1
-        row_list.append(func_dict)
     df = pd.DataFrame(row_list, columns = header)               
     return df
 

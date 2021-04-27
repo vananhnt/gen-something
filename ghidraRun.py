@@ -48,13 +48,23 @@ def split_train_test():
     no_train, no_dev =  math.floor(0.7*total), math.floor(0.15*total), 
     no_test = total - no_train - no_dev    
     
+<<<<<<< HEAD
+    print("[" + str(total) +" files total ]")
+
+=======
+>>>>>>> refs/remotes/origin/main
     for i in range(no_dev):
         #Variable random_file stores the name of the random file chosen
         random_file=random.choice(os.listdir(source))
         source_file="%s/%s"%(source,random_file)
         dest_file=dev
         shutil.move(source_file,dest_file)
+<<<<<<< HEAD
+
+    print("[" + str(no_dev) + " files moved ]")
+=======
         print("\n [" + str(random_file +"Files Moved Successfully ]"))
+>>>>>>> refs/remotes/origin/main
     
     for i in range(no_test):
         #Variable random_file stores the name of the random file chosen
@@ -62,7 +72,11 @@ def split_train_test():
         source_file="%s/%s"%(source,random_file)
         dest_file=test
         shutil.move(source_file,dest_file)
+<<<<<<< HEAD
+    print("[" + str(no_test) +" files moved ]")
+=======
         print("\n [" + str(random_file +"Files Moved Successfully ]"))
+>>>>>>> refs/remotes/origin/main
     
             
 if __name__ == '__main__':
