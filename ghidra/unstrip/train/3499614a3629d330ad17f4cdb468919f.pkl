@@ -1,0 +1,67 @@
+(dp0
+S'FUN_00012460'
+p1
+(S'\n__stdcall FUN_00012460(undefined param_1, undefined param_2, undefined param_3, undefined param_4, undefined4 param_5, undefined4 param_6, undefined param_7, undefined param_8, undefined4 param_9)\n'
+p2
+V\u000a/* WARNING: Control flow encountered bad instruction data */\u000a\u000avoid FUN_00012460(void)\u000a\u000a{\u000a  uint uVar1;\u000a  uint uVar2;\u000a  uint unaff_r10;\u000a  int unaff_r11;\u000a  uint in_r12;\u000a  int in_lr;\u000a  bool in_NG;\u000a  bool in_ZR;\u000a  bool in_CY;\u000a  char in_OV;\u000a  bool bVar3;\u000a  int param_5;\u000a  char *param_6;\u000a  \u000a  param_5 = (in_lr + -0x10) - *(int *)(in_lr + -0x10);\u000a  software_interrupt(0);\u000a  param_6 = "/proc/self/exe";\u000a  uVar2 = *(uint *)(in_lr + -0xc);\u000a  bVar3 = in_CY;\u000a  uVar1 = FUN_00012370("/proc/self/exe",0);\u000a  if (in_ZR) {\u000a    uVar1 = uVar1 & in_r12 >> 1 & (int)in_r12 >> (unaff_r10 & 0xff) & unaff_r11 >> 0xd;\u000a    bVar3 = in_CY;\u000a  }\u000a  if (in_CY && !in_ZR) {\u000a    in_NG = (int)(uVar1 ^ 0xff) < 0;\u000a    in_ZR = (uVar1 ^ 0xff) == 0;\u000a    in_CY = bVar3;\u000a  }\u000a  if (in_NG == (bool)in_OV) {\u000a    in_ZR = (uVar2 >> 0x1d | uVar2 << 3) == uVar1 + (uint)!in_CY;\u000a  }\u000a  if (!in_ZR) {\u000a    software_interrupt(0xc0fde1);\u000a  }\u000a                    /* WARNING: Bad instruction - Truncating control flow here */\u000a  halt_baddata();\u000a}\u000a\u000a
+p3
+S'ldr r0,[lr,#-0x10]\nsub r6,lr,#0x10\nstr lr,[sp,#0x10]\nsub r6,r6,r0\nstr r6,[sp,#0x0]\ncpy r9,r0\nadr r0,0x12450\nmov r1,#0x0\nmov r7,#0x5\nswi 0x0\nstr r0,[sp,#0x4]\nldr r3,[lr,#-0xc]\nbl 0x00012370\nandeq r0,r0,r12, lsr #0x1\nandeq r0,r0,r12, asr r10\nandeq r0,r0,r11, asr #0xd\nandeq r5,r0,r3\nteqhi r0,#0xff\nrscges r0,r0,r3, ror #0x1d\nswine 0xc0fde1\n'
+p4
+S'10 00 1e e5\n10 60 4e e2\n10 e0 8d e5\n00 60 46 e0\n00 60 8d e5\n00 90 a0 e1\n30 00 4f e2\n00 10 a0 e3\n05 70 a0 e3\n00 00 00 ef\n04 00 8d e5\n0c 30 1e e5\nb6 ff ff eb\nac 00 00 00\n5c 0a 00 00\ncb 06 00 00\n03 50 00 00\nff 00 30 83\ne3 0e f0 a0\ne1 fd c0 1f\n'
+p5
+S'segment_0:00012460\nsegment_0:00012464\nsegment_0:00012468\nsegment_0:0001246c\nsegment_0:00012470\nsegment_0:00012474\nsegment_0:00012478\nsegment_0:0001247c\nsegment_0:00012480\nsegment_0:00012484\nsegment_0:00012488\nsegment_0:0001248c\nsegment_0:00012490\nsegment_0:00012494\nsegment_0:00012498\nsegment_0:0001249c\nsegment_0:000124a0\nsegment_0:000124a4\nsegment_0:000124a8\nsegment_0:000124ac\n'
+p6
+tp7
+sS'FUN_00012370'
+p8
+(S'\n__stdcall FUN_00012370(undefined param_1, undefined param_2, undefined param_3, undefined param_4, undefined param_5, undefined4 param_6, undefined4 param_7, undefined4 param_8, undefined4 param_9, undefined4 param_10)\n'
+p9
+V\u000avoid FUN_00012370(void)\u000a\u000a{\u000a  uint *puVar1;\u000a  uint param_4;\u000a  uint unaff_r6;\u000a  int *piVar2;\u000a  int iVar3;\u000a  undefined4 *in_lr;\u000a  undefined4 param_7;\u000a  int param_8;\u000a  code *param_9;\u000a  uint param_10;\u000a  int local_4;\u000a  \u000a  iVar3 = ~unaff_r6 + 1;\u000a  piVar2 = in_lr + 1;\u000a  param_8 = (int)piVar2 + *piVar2 + iVar3;\u000a  software_interrupt(0);\u000a  param_7 = 0;\u000a  software_interrupt(0);\u000a  local_4 = *piVar2;\u000a  puVar1 = (uint *)((int)piVar2 + iVar3);\u000a  param_10 = param_4;\u000a  (*param_9)(in_lr + 4,in_lr[2],puVar1,&local_4,(uint)*(byte *)(in_lr + 3));\u000a  *puVar1 = *puVar1 | param_10;\u000a  software_interrupt(0);\u000a                    /* WARNING: Could not recover jumptable at 0x0001244c. Too many branches */\u000a                    /* WARNING: Treating indirect jump as call */\u000a  (*(code *)((int)in_lr + ~unaff_r6 + 0xd))(param_7,*in_lr,5,local_4);\u000a  return;\u000a}\u000a\u000a
+p10
+S'str r3,[sp,#0x14]\nmvn r10,r6\nadd r10,r10,#0x1\nadd r6,lr,#0x4\nadd lr,r6,r10\nldr r1,[r6,#0x0]\nmov r5,#0x0\nmvn r4,#0x0\nmov r2,#0x3\nadd r1,r1,lr\nmov r0,#0x0\nstr r1,[sp,#0xc]\nmov r7,#0xc0\nswi 0x0\nstr r0,[sp,#0x8]\nldr r1,[r6,#0x4]\nldr r4,[sp,#0x4]\nmov r3,#0x12\nadd r1,r1,lr\nmov r7,#0xc0\nswi 0x0\nadd r10,r0,r10\nldr r3,[r6,#0x0]\nstr r3,[sp,#-0x4]!\ncpy r3,sp\nldrb r0,[r6,#0x8]\nstr r0,[sp,#-0x4]!\nadd r2,r6,r10\nldr r1,[r6,#0x4]\nadd r0,r6,#0xc\ncpy r4,r2\nmov lr,pc\nldr pc,[sp,#0x18]\nadd sp,sp,#0x4\nldr r3,[sp],#0x4\nldr r1,[sp,#0x14]\nldr r0,[r4,#0x0]\norr r0,r0,r1\nstr r0,[r4,#0x0]\nldr r0,[sp,#0x10]\nadd r1,r3,r6\nadd r0,r0,r10\nadd r1,r1,r10\nstr r0,[sp,#0x10]\nmov r0,r0, lsr #0xc\nmov r2,#0x5\nmov r0,r0, lsl #0xc\nsub r1,r1,r0\nmov r7,#0x7d\nswi 0x0\nldr r1,[r6,#-0x4]\nldr r0,[sp,#0x8]\nsub r4,r9,r1\nadd r5,r0,r1\nadd r6,r6,#0x8\nadd pc,r6,r10\n'
+p11
+S'14 30 8d e5\n06 a0 e0 e1\n01 a0 8a e2\n04 60 8e e2\n0a e0 86 e0\n00 10 96 e5\n00 50 a0 e3\n00 40 e0 e3\n03 20 a0 e3\n0e 10 81 e0\n00 00 a0 e3\n0c 10 8d e5\nc0 70 a0 e3\n00 00 00 ef\n08 00 8d e5\n04 10 96 e5\n04 40 9d e5\n12 30 a0 e3\n0e 10 81 e0\nc0 70 a0 e3\n00 00 00 ef\n0a a0 80 e0\n00 30 96 e5\n04 30 2d e5\n0d 30 a0 e1\n08 00 d6 e5\n04 00 2d e5\n0a 20 86 e0\n04 10 96 e5\n0c 00 86 e2\n02 40 a0 e1\n0f e0 a0 e1\n18 f0 9d e5\n04 d0 8d e2\n04 30 9d e4\n14 10 9d e5\n00 00 94 e5\n01 00 80 e1\n00 00 84 e5\n10 00 9d e5\n06 10 83 e0\n0a 00 80 e0\n0a 10 81 e0\n10 00 8d e5\n20 06 a0 e1\n05 20 a0 e3\n00 06 a0 e1\n00 10 41 e0\n7d 70 a0 e3\n00 00 00 ef\n04 10 16 e5\n08 00 9d e5\n01 40 49 e0\n01 50 80 e0\n08 60 86 e2\n0a f0 86 e0\n'
+p12
+S'segment_0:00012370\nsegment_0:00012374\nsegment_0:00012378\nsegment_0:0001237c\nsegment_0:00012380\nsegment_0:00012384\nsegment_0:00012388\nsegment_0:0001238c\nsegment_0:00012390\nsegment_0:00012394\nsegment_0:00012398\nsegment_0:0001239c\nsegment_0:000123a0\nsegment_0:000123a4\nsegment_0:000123a8\nsegment_0:000123ac\nsegment_0:000123b0\nsegment_0:000123b4\nsegment_0:000123b8\nsegment_0:000123bc\nsegment_0:000123c0\nsegment_0:000123c4\nsegment_0:000123c8\nsegment_0:000123cc\nsegment_0:000123d0\nsegment_0:000123d4\nsegment_0:000123d8\nsegment_0:000123dc\nsegment_0:000123e0\nsegment_0:000123e4\nsegment_0:000123e8\nsegment_0:000123ec\nsegment_0:000123f0\nsegment_0:000123f4\nsegment_0:000123f8\nsegment_0:000123fc\nsegment_0:00012400\nsegment_0:00012404\nsegment_0:00012408\nsegment_0:0001240c\nsegment_0:00012410\nsegment_0:00012414\nsegment_0:00012418\nsegment_0:0001241c\nsegment_0:00012420\nsegment_0:00012424\nsegment_0:00012428\nsegment_0:0001242c\nsegment_0:00012430\nsegment_0:00012434\nsegment_0:00012438\nsegment_0:0001243c\nsegment_0:00012440\nsegment_0:00012444\nsegment_0:00012448\nsegment_0:0001244c\n'
+p13
+tp14
+sS'FUN_0001224c'
+p15
+(S'\n__stdcall FUN_0001224c()\n'
+p16
+V\u000avoid FUN_0001224c(undefined4 uParm1)\u000a\u000a{\u000a  uint uVar1;\u000a  undefined4 uVar2;\u000a  uint uVar3;\u000a  bool in_CY;\u000a  undefined8 uVar4;\u000a  \u000a  uVar2 = 1;\u000a  do {\u000a    uVar4 = FUN_00012234(uParm1,uVar2);\u000a    uVar3 = (uint)uVar4;\u000a    uVar1 = (uint)in_CY;\u000a    in_CY = CARRY4(uVar3,uVar3 + uVar1);\u000a    uVar4 = FUN_00012234((int)((ulonglong)uVar4 >> 0x20),uVar3 + uVar3 + uVar1);\u000a    uParm1 = (undefined4)((ulonglong)uVar4 >> 0x20);\u000a    uVar2 = (undefined4)uVar4;\u000a  } while (!in_CY);\u000a  return;\u000a}\u000a\u000a
+p17
+S'mov r1,#0x1\ncpy r12,lr\nbl 0x00012234\nadcs r1,r1,r1\nbl 0x00012234\nbcc 0x00012254\ncpy pc,r12\n'
+p18
+S'01 10 a0 e3\n0e c0 a0 e1\nf6 ff ff eb\n01 10 b1 e0\nf4 ff ff eb\nfb ff ff 3a\n0c f0 a0 e1\n'
+p19
+S'segment_0:0001224c\nsegment_0:00012250\nsegment_0:00012254\nsegment_0:00012258\nsegment_0:0001225c\nsegment_0:00012260\nsegment_0:00012264\n'
+p20
+tp21
+sS'entry'
+p22
+(S'\n__stdcall entry()\n'
+p23
+V\u000aundefined8 entry(undefined4 uParm1,undefined4 uParm2,undefined *puParm3,undefined4 *puParm4)\u000a\u000a{\u000a  undefined *puVar1;\u000a  byte *pbVar2;\u000a  byte *pbVar3;\u000a  undefined *puVar4;\u000a  uint uVar5;\u000a  int iVar6;\u000a  undefined *puVar7;\u000a  undefined *puVar8;\u000a  uint uVar9;\u000a  bool in_CY;\u000a  bool bVar10;\u000a  bool bVar11;\u000a  undefined8 uVar12;\u000a  \u000a  uVar12 = FUN_00012460();\u000a  puVar1 = (undefined *)((ulonglong)uVar12 >> 0x20);\u000a  puVar4 = puVar1 + (int)uVar12;\u000a  uVar9 = 0xffffffff;\u000a  puVar8 = puParm3;\u000a  do {\u000a    while (puVar7 = (undefined *)FUN_00012234(puVar1), in_CY) {\u000a      puVar1 = puVar7 + 1;\u000a      *puVar8 = *puVar7;\u000a      puVar8 = puVar8 + 1;\u000a    }\u000a    uVar12 = FUN_0001224c();\u000a    pbVar2 = (byte *)((ulonglong)uVar12 >> 0x20);\u000a    bVar10 = 2 < (uint)uVar12;\u000a    pbVar3 = pbVar2;\u000a    if (bVar10) {\u000a      pbVar3 = pbVar2 + 1;\u000a      uVar9 = ~((uint)*pbVar2 | ((uint)uVar12 - 3) * 0x100);\u000a      if (uVar9 == 0) {\u000a        *(undefined **)puParm4 = puVar8 + -(int)puParm3;\u000a        software_interrupt(0);\u000a        return CONCAT44(pbVar3 + -(int)puVar4,puParm3 + (int)(puVar8 + -(int)puParm3));\u000a      }\u000a    }\u000a    uVar12 = FUN_00012234(pbVar3,0);\u000a    uVar5 = (uint)uVar12;\u000a    bVar11 = CARRY4(uVar5,uVar5 + (uint)bVar10);\u000a    uVar12 = FUN_00012234((int)((ulonglong)uVar12 >> 0x20),uVar5 + uVar5 + (uint)bVar10);\u000a    puVar1 = (undefined *)((ulonglong)uVar12 >> 0x20);\u000a    iVar6 = (int)uVar12 * 2 + (uint)bVar11;\u000a    if (iVar6 == 0) {\u000a      uVar12 = FUN_0001224c();\u000a      puVar1 = (undefined *)((ulonglong)uVar12 >> 0x20);\u000a      iVar6 = (int)uVar12 + 2;\u000a    }\u000a    puVar7 = puVar8;\u000a    if (uVar9 < 0xfffff300) {\u000a      iVar6 = iVar6 + 1;\u000a      puVar7 = puVar8;\u000a    }\u000a    do {\u000a      in_CY = iVar6 != 0;\u000a      iVar6 = iVar6 + -1;\u000a      puVar8 = puVar7 + 1;\u000a      *puVar7 = puVar7[uVar9];\u000a      puVar7 = puVar8;\u000a    } while (in_CY);\u000a  } while( true );\u000a}\u000a\u000a
+p24
+S'sub sp,sp,#0x18\nbl 0x00012460\nadd r1,r1,r0\nstmdb sp!,{ r1 r2 r3 r4 r5 lr }\nmvn r5,#0x0\nmov r4,#0x80000000\nb 0x00012270\nldmia sp!,{ r1 r3 r4 }\nsub r0,r0,r1\nsub r2,r2,r3\nstr r2,[r4,#0x0]\ncpy r4,r0\ncpy r0,r3\nadd r1,r3,r2\nmov r2,#0x0\ncpy r12,r7\nmov r7,#0x2\norr r7,r7,#0xf0000\nswi 0x0\ncpy r7,r12\ncpy r0,r4\nldmia sp!,{ r4 r5 pc }\n'
+p25
+S'18 d0 4d e2\n9e 00 00 eb\n00 10 81 e0\n3e 40 2d e9\n00 50 e0 e3\n02 41 a0 e3\n1d 00 00 ea\n1a 00 bd e8\n01 00 40 e0\n03 20 42 e0\n00 20 84 e5\n00 40 a0 e1\n03 00 a0 e1\n02 10 83 e0\n00 20 a0 e3\n07 c0 a0 e1\n02 70 a0 e3\n0f 78 87 e3\n00 00 00 ef\n0c 70 a0 e1\n04 00 a0 e1\n30 80 bd e8\n'
+p26
+S'segment_0:000121dc\nsegment_0:000121e0\nsegment_0:000121e4\nsegment_0:000121e8\nsegment_0:000121ec\nsegment_0:000121f0\nsegment_0:000121f4\nsegment_0:000121f8\nsegment_0:000121fc\nsegment_0:00012200\nsegment_0:00012204\nsegment_0:00012208\nsegment_0:0001220c\nsegment_0:00012210\nsegment_0:00012214\nsegment_0:00012218\nsegment_0:0001221c\nsegment_0:00012220\nsegment_0:00012224\nsegment_0:00012228\nsegment_0:0001222c\nsegment_0:00012230\n'
+p27
+tp28
+sS'FUN_00012234'
+p29
+(S'\n__stdcall FUN_00012234()\n'
+p30
+V\u000aint FUN_00012234(int iParm1)\u000a\u000a{\u000a  uint unaff_r4;\u000a  \u000a  if ((unaff_r4 & 0x7fffffff) != 0) {\u000a    return iParm1;\u000a  }\u000a  return iParm1 + 1;\u000a}\u000a\u000a
+p31
+S'adds r4,r4,r4\nmovne pc,lr\nldrb r4,[r0],#0x1\nadc r4,r4,r4\nmovs r4,r4, lsl #0x18\nmov pc,lr\n'
+p32
+S'04 40 94 e0\n0e f0 a0 11\n01 40 d0 e4\n04 40 a4 e0\n04 4c b0 e1\n0e f0 a0 e1\n'
+p33
+S'segment_0:00012234\nsegment_0:00012238\nsegment_0:0001223c\nsegment_0:00012240\nsegment_0:00012244\nsegment_0:00012248\n'
+p34
+tp35
+s.

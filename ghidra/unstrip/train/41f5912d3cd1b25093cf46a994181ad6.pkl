@@ -1,0 +1,145 @@
+(dp0
+S'FUN_00041456'
+p1
+(S'\n__stdcall FUN_00041456()\n'
+p2
+V\u000a/* WARNING: Control flow encountered bad instruction data */\u000a\u000avoid FUN_00041456(void)\u000a\u000a{\u000a  int iVar1;\u000a  undefined extraout_r1;\u000a  \u000a  FUN_000416f8();\u000a  FUN_000416f8();\u000a  iVar1 = FUN_000415a8();\u000a  *(undefined *)(iVar1 >> 0x20) = extraout_r1;\u000a                    /* WARNING: Bad instruction - Truncating control flow here */\u000a  halt_baddata();\u000a}\u000a\u000a
+p3
+S'push { lr }\nldrb r3,[r1,#0x5]\npush { r3 }\nldrb r3,[r1,#0x6]\npush { r3 }\npush { r4 }\npush { r0 }\nbl 0x000416f8\nmov r5,r4\nbl 0x000416f8\npush { r4 }\nbl 0x000415a8\nasr r0,r0,#0x0\nb 0x0004157c\n'
+p4
+S'00 b5\n4b 79\n08 b4\n8b 79\n08 b4\n10 b4\n01 b4\n00 f0 48 f9\n25 1c\n00 f0 45 f9\n10 b4\n00 f0 9a f8\n00 10\n81 e0\n'
+p5
+S'segment_1.2:00041456\nsegment_1.2:00041458\nsegment_1.2:0004145a\nsegment_1.2:0004145c\nsegment_1.2:0004145e\nsegment_1.2:00041460\nsegment_1.2:00041462\nsegment_1.2:00041464\nsegment_1.2:00041468\nsegment_1.2:0004146a\nsegment_1.2:0004146e\nsegment_1.2:00041470\nsegment_1.2:00041474\nsegment_1.2:00041476\n'
+p6
+tp7
+sS'FUN_00041478'
+p8
+(S'\n__stdcall FUN_00041478()\n'
+p9
+V\u000aundefined8 FUN_00041478(byte *pbParm1,int iParm2,byte *pbParm3,byte **ppbParm4)\u000a\u000a{\u000a  byte *pbVar1;\u000a  byte *pbVar2;\u000a  uint uVar3;\u000a  int iVar4;\u000a  byte *pbVar5;\u000a  uint uVar6;\u000a  bool in_CY;\u000a  bool bVar7;\u000a  bool bVar8;\u000a  undefined8 uVar9;\u000a  \u000a  uVar6 = 0xffffffff;\u000a  pbVar5 = pbParm3;\u000a  do {\u000a    while (pbVar2 = (byte *)FUN_000414c4(pbParm1), in_CY) {\u000a      pbParm1 = pbVar2 + 1;\u000a      *pbVar5 = *pbVar2 ^ 0x50;\u000a      pbVar5 = pbVar5 + 1;\u000a    }\u000a    uVar9 = FUN_000414dc();\u000a    pbVar1 = (byte *)((ulonglong)uVar9 >> 0x20);\u000a    bVar7 = 2 < (uint)uVar9;\u000a    pbVar2 = pbVar1;\u000a    if (bVar7) {\u000a      pbVar2 = pbVar1 + 1;\u000a      uVar6 = ~((uint)*pbVar1 | ((uint)uVar9 - 3) * 0x100);\u000a      if (uVar6 == 0) {\u000a        *ppbParm4 = pbVar5 + -(int)pbParm3;\u000a        software_interrupt(0);\u000a        return CONCAT44(pbVar2 + -iParm2,pbParm3 + (int)(pbVar5 + -(int)pbParm3));\u000a      }\u000a    }\u000a    uVar9 = FUN_000414c4(pbVar2,0);\u000a    uVar3 = (uint)uVar9;\u000a    bVar8 = CARRY4(uVar3,uVar3 + (uint)bVar7);\u000a    uVar9 = FUN_000414c4((int)((ulonglong)uVar9 >> 0x20),uVar3 + uVar3 + (uint)bVar7);\u000a    pbParm1 = (byte *)((ulonglong)uVar9 >> 0x20);\u000a    iVar4 = (int)uVar9 * 2 + (uint)bVar8;\u000a    if (iVar4 == 0) {\u000a      uVar9 = FUN_000414dc();\u000a      pbParm1 = (byte *)((ulonglong)uVar9 >> 0x20);\u000a      iVar4 = (int)uVar9 + 2;\u000a    }\u000a    pbVar2 = pbVar5;\u000a    if (uVar6 < 0xfffff300) {\u000a      iVar4 = iVar4 + 1;\u000a      pbVar2 = pbVar5;\u000a    }\u000a    do {\u000a      in_CY = iVar4 != 0;\u000a      iVar4 = iVar4 + -1;\u000a      pbVar5 = pbVar2 + 1;\u000a      *pbVar2 = pbVar2[uVar6];\u000a      pbVar2 = pbVar5;\u000a    } while (in_CY);\u000a  } while( true );\u000a}\u000a\u000a
+p10
+S'stmdb sp!,{ r1 r2 r3 r4 r5 lr }\nmvn r5,#0x0\nmov r4,#0x80000000\nb 0x00041504\nldmia sp!,{ r1 r3 r4 }\nsub r0,r0,r1\nsub r2,r2,r3\nstr r2,[r4,#0x0]\ncpy r4,r0\ncpy r0,r3\nadd r1,r3,r2\nmov r2,#0x0\ncpy r12,r7\nmov r7,#0x2\norr r7,r7,#0xf0000\nswi 0x0\ncpy r7,r12\ncpy r0,r4\nldmia sp!,{ r4 r5 pc }\n'
+p11
+S'3e 40 2d e9\n00 50 e0 e3\n02 41 a0 e3\n1e 00 00 ea\n1a 00 bd e8\n01 00 40 e0\n03 20 42 e0\n00 20 84 e5\n00 40 a0 e1\n03 00 a0 e1\n02 10 83 e0\n00 20 a0 e3\n07 c0 a0 e1\n02 70 a0 e3\n0f 78 87 e3\n00 00 00 ef\n0c 70 a0 e1\n04 00 a0 e1\n30 80 bd e8\n'
+p12
+S'segment_1.2:00041478\nsegment_1.2:0004147c\nsegment_1.2:00041480\nsegment_1.2:00041484\nsegment_1.2:00041488\nsegment_1.2:0004148c\nsegment_1.2:00041490\nsegment_1.2:00041494\nsegment_1.2:00041498\nsegment_1.2:0004149c\nsegment_1.2:000414a0\nsegment_1.2:000414a4\nsegment_1.2:000414a8\nsegment_1.2:000414ac\nsegment_1.2:000414b0\nsegment_1.2:000414b4\nsegment_1.2:000414b8\nsegment_1.2:000414bc\nsegment_1.2:000414c0\n'
+p13
+tp14
+sS'FUN_00041710'
+p15
+(S'\n__stdcall FUN_00041710()\n'
+p16
+V\u000avoid FUN_00041710(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p17
+S'lsr r3,r3,#0x2\nlsl r3,r3,#0x2\nsub r3,#0x4\nldrh r5,[r3,#0x0]\nlsl r5,r5,#0x15\nlsr r5,r5,#0xa\nldrh r3,[r3,#0x2]\nlsl r3,r3,#0x15\nlsr r3,r3,#0x15\nadd r5,r5,r3\nadd r5,#0x2\nlsr r5,r5,#0x1\nbx lr\n'
+p18
+S'9b 08\n9b 00\n04 3b\n1d 88\n6d 05\nad 0a\n5b 88\n5b 05\n5b 0d\ned 18\n02 35\n6d 08\n70 47\n'
+p19
+S'segment_1.2:00041710\nsegment_1.2:00041712\nsegment_1.2:00041714\nsegment_1.2:00041716\nsegment_1.2:00041718\nsegment_1.2:0004171a\nsegment_1.2:0004171c\nsegment_1.2:0004171e\nsegment_1.2:00041720\nsegment_1.2:00041722\nsegment_1.2:00041724\nsegment_1.2:00041726\nsegment_1.2:00041728\n'
+p20
+tp21
+sS'FUN_00041638'
+p22
+(S'\n__stdcall FUN_00041638()\n'
+p23
+V\u000avoid FUN_00041638(undefined4 uParm1,uint uParm2,undefined4 uParm3)\u000a\u000a{\u000a  undefined4 *puVar1;\u000a  undefined4 *puVar2;\u000a  undefined4 uVar3;\u000a  undefined4 uVar4;\u000a  undefined4 uVar5;\u000a  uint unaff_r5;\u000a  uint uVar6;\u000a  undefined4 uVar7;\u000a  undefined4 uVar8;\u000a  undefined4 uVar9;\u000a  undefined4 uVar10;\u000a  undefined4 uVar11;\u000a  undefined8 uVar12;\u000a  \u000a  uVar12 = FUN_00041710(uParm1,uParm2 & 0xfffffffc,uParm3,uParm2 & 0xfffffffc);\u000a  do {\u000a    puVar1 = (undefined4 *)((ulonglong)uVar12 >> 0x20);\u000a    puVar2 = (undefined4 *)uVar12 + 1;\u000a    *puVar1 = *(undefined4 *)uVar12;\u000a    puVar1 = puVar1 + 1;\u000a    uVar12 = CONCAT44(puVar1,puVar2);\u000a    unaff_r5 = unaff_r5 - 1;\u000a  } while ((unaff_r5 & 7) != 0);\u000a  uVar6 = unaff_r5 >> 3;\u000a  if (uVar6 == 0) {\u000a    return;\u000a  }\u000a  do {\u000a    uVar3 = *puVar2;\u000a    uVar4 = puVar2[1];\u000a    uVar5 = puVar2[2];\u000a    uVar7 = puVar2[3];\u000a    uVar8 = puVar2[4];\u000a    uVar9 = puVar2[5];\u000a    uVar10 = puVar2[6];\u000a    uVar11 = puVar2[7];\u000a    puVar2 = puVar2 + 8;\u000a    uVar6 = uVar6 - 1;\u000a    *puVar1 = uVar3;\u000a    puVar1[1] = uVar4;\u000a    puVar1[2] = uVar5;\u000a    puVar1[3] = uVar7;\u000a    puVar1[4] = uVar8;\u000a    puVar1[5] = uVar9;\u000a    puVar1[6] = uVar10;\u000a    puVar1[7] = uVar11;\u000a    puVar1 = puVar1 + 8;\u000a  } while (uVar6 != 0);\u000a  return;\u000a}\u000a\u000a
+p24
+S'lsr r1,r1,#0x2\nlsl r1,r1,#0x2\npush { lr }\nmov r3,r1\nbl 0x00041710\npop { r3 }\nmov lr,r3\n'
+p25
+S'89 08\n89 00\n00 b5\n0b 1c\n00 f0 66 f8\n08 bc\n9e 46\n'
+p26
+S'segment_1.2:00041638\nsegment_1.2:0004163a\nsegment_1.2:0004163c\nsegment_1.2:0004163e\nsegment_1.2:00041640\nsegment_1.2:00041644\nsegment_1.2:00041646\n'
+p27
+tp28
+sS'FUN_00041680'
+p29
+(S'\n__stdcall FUN_00041680()\n'
+p30
+V\u000avoid FUN_00041680(void)\u000a\u000a{\u000a  software_interrupt(0);\u000a  return;\u000a}\u000a\u000a
+p31
+S'mov r2,#0x0\nmov r7,#0xf\nlsl r7,r7,#0x10\nadd r7,#0x2\nsvc 0x0\nbx lr\n'
+p32
+S'00 22\n0f 27\n3f 04\n02 37\n00 df\n70 47\n'
+p33
+S'segment_1.2:00041680\nsegment_1.2:00041682\nsegment_1.2:00041684\nsegment_1.2:00041686\nsegment_1.2:00041688\nsegment_1.2:0004168a\n'
+p34
+tp35
+sS'FUN_000414dc'
+p36
+(S'\n__stdcall FUN_000414dc()\n'
+p37
+V\u000avoid FUN_000414dc(undefined4 uParm1)\u000a\u000a{\u000a  uint uVar1;\u000a  undefined4 uVar2;\u000a  uint uVar3;\u000a  bool in_CY;\u000a  undefined8 uVar4;\u000a  \u000a  uVar2 = 1;\u000a  do {\u000a    uVar4 = FUN_000414c4(uParm1,uVar2);\u000a    uVar3 = (uint)uVar4;\u000a    uVar1 = (uint)in_CY;\u000a    in_CY = CARRY4(uVar3,uVar3 + uVar1);\u000a    uVar4 = FUN_000414c4((int)((ulonglong)uVar4 >> 0x20),uVar3 + uVar3 + uVar1);\u000a    uParm1 = (undefined4)((ulonglong)uVar4 >> 0x20);\u000a    uVar2 = (undefined4)uVar4;\u000a  } while (!in_CY);\u000a  return;\u000a}\u000a\u000a
+p38
+S'mov r1,#0x1\ncpy r12,lr\nbl 0x000414c4\nadcs r1,r1,r1\nbl 0x000414c4\nbcc 0x000414e4\ncpy pc,r12\n'
+p39
+S'01 10 a0 e3\n0e c0 a0 e1\nf6 ff ff eb\n01 10 b1 e0\nf4 ff ff eb\nfb ff ff 3a\n0c f0 a0 e1\n'
+p40
+S'segment_1.2:000414dc\nsegment_1.2:000414e0\nsegment_1.2:000414e4\nsegment_1.2:000414e8\nsegment_1.2:000414ec\nsegment_1.2:000414f0\nsegment_1.2:000414f4\n'
+p41
+tp42
+sS'FUN_00041652'
+p43
+(S'\n__stdcall FUN_00041652()\n'
+p44
+V\u000avoid FUN_00041652(undefined4 *puParm1,undefined4 *puParm2)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  undefined4 uVar2;\u000a  undefined4 uVar3;\u000a  uint unaff_r5;\u000a  uint uVar4;\u000a  undefined4 uVar5;\u000a  undefined4 uVar6;\u000a  undefined4 uVar7;\u000a  undefined4 uVar8;\u000a  undefined4 uVar9;\u000a  \u000a  while ((unaff_r5 & 7) != 0) {\u000a    uVar1 = *puParm2;\u000a    puParm2 = puParm2 + 1;\u000a    *puParm1 = uVar1;\u000a    puParm1 = puParm1 + 1;\u000a    unaff_r5 = unaff_r5 - 1;\u000a  }\u000a  uVar4 = unaff_r5 >> 3;\u000a  if (uVar4 == 0) {\u000a    return;\u000a  }\u000a  do {\u000a    uVar1 = *puParm2;\u000a    uVar2 = puParm2[1];\u000a    uVar3 = puParm2[2];\u000a    uVar5 = puParm2[3];\u000a    uVar6 = puParm2[4];\u000a    uVar7 = puParm2[5];\u000a    uVar8 = puParm2[6];\u000a    uVar9 = puParm2[7];\u000a    puParm2 = puParm2 + 8;\u000a    uVar4 = uVar4 - 1;\u000a    *puParm1 = uVar1;\u000a    puParm1[1] = uVar2;\u000a    puParm1[2] = uVar3;\u000a    puParm1[3] = uVar5;\u000a    puParm1[4] = uVar6;\u000a    puParm1[5] = uVar7;\u000a    puParm1[6] = uVar8;\u000a    puParm1[7] = uVar9;\u000a    puParm1 = puParm1 + 8;\u000a  } while (uVar4 != 0);\u000a  return;\u000a}\u000a\u000a
+p45
+S'mov r3,#0x7\ntst r5,r3\nbne 0x00041648\nlsr r5,r5,#0x3\nbne 0x0004165e\nbx lr\nlsl r0,r0,#0x0\nbx pc\nstmdb sp!,{ r2 r4 r6 r7 r8 r9 }\nldmia r1!,{ r2 r3 r4 r6 r7 r8 r9 r12 }\nsubs r5,r5,#0x1\nstmia r0!,{ r2 r3 r4 r6 r7 r8 r9 r12 }\nbne 0x00041668\nldmia sp!,{ r2 r4 r6 r7 r8 r9 }\nbx lr\n'
+p46
+S'07 23\n1d 42\nf7 d1\ned 08\n00 d1\n70 47\n00 00\n78 47\nd4 03 2d e9\ndc 13 b1 e8\n01 50 55 e2\ndc 13 a0 e8\nfb ff ff 1a\nd4 03 bd e8\n1e ff 2f e1\n'
+p47
+S'segment_1.2:00041652\nsegment_1.2:00041654\nsegment_1.2:00041656\nsegment_1.2:00041658\nsegment_1.2:0004165a\nsegment_1.2:0004165c\nsegment_1.2:0004165e\nsegment_1.2:00041660\nsegment_1.2:00041664\nsegment_1.2:00041668\nsegment_1.2:0004166c\nsegment_1.2:00041670\nsegment_1.2:00041674\nsegment_1.2:00041678\nsegment_1.2:0004167c\n'
+p48
+tp49
+sS'FUN_000414c4'
+p50
+(S'\n__stdcall FUN_000414c4()\n'
+p51
+V\u000aint FUN_000414c4(int iParm1)\u000a\u000a{\u000a  uint unaff_r4;\u000a  \u000a  if ((unaff_r4 & 0x7fffffff) != 0) {\u000a    return iParm1;\u000a  }\u000a  return iParm1 + 1;\u000a}\u000a\u000a
+p52
+S'adds r4,r4,r4\nmovne pc,lr\nldrb r4,[r0],#0x1\nadc r4,r4,r4\nmovs r4,r4, lsl #0x18\nmov pc,lr\n'
+p53
+S'04 40 94 e0\n0e f0 a0 11\n01 40 d0 e4\n04 40 a4 e0\n04 4c b0 e1\n0e f0 a0 e1\n'
+p54
+S'segment_1.2:000414c4\nsegment_1.2:000414c8\nsegment_1.2:000414cc\nsegment_1.2:000414d0\nsegment_1.2:000414d4\nsegment_1.2:000414d8\n'
+p55
+tp56
+sS'FUN_000416f8'
+p57
+(S'\n__stdcall FUN_000416f8()\n'
+p58
+V\u000avoid FUN_000416f8(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p59
+S'ldrb r4,[r1,#0x3]\nldrb r3,[r1,#0x2]\nlsl r4,r4,#0x8\norr r4,r3\nldrb r3,[r1,#0x1]\nlsl r4,r4,#0x8\norr r4,r3\nldrb r3,[r1,#0x0]\nlsl r4,r4,#0x8\norr r4,r3\nadd r1,#0x4\nbx lr\n'
+p60
+S'cc 78\n8b 78\n24 02\n1c 43\n4b 78\n24 02\n1c 43\n0b 78\n24 02\n1c 43\n04 31\n70 47\n'
+p61
+S'segment_1.2:000416f8\nsegment_1.2:000416fa\nsegment_1.2:000416fc\nsegment_1.2:000416fe\nsegment_1.2:00041700\nsegment_1.2:00041702\nsegment_1.2:00041704\nsegment_1.2:00041706\nsegment_1.2:00041708\nsegment_1.2:0004170a\nsegment_1.2:0004170c\nsegment_1.2:0004170e\n'
+p62
+tp63
+sS'FUN_000415a8'
+p64
+(S'\n__stdcall FUN_000415a8(undefined param_1, undefined param_2, undefined param_3, undefined param_4, undefined param_5, undefined param_6, undefined param_7, undefined param_8, undefined param_9, undefined4 param_10, undefined4 param_11, undefined4 param_12, undefined4 param_13, undefined4 param_14, undefined4 param_15)\n'
+p65
+V\u000a/* WARNING: Removing unreachable block (ram,0x000415f2) */\u000a\u000aundefined8 FUN_000415a8(undefined4 param_1,uint param_2)\u000a\u000a{\u000a  undefined4 *puVar1;\u000a  int iVar2;\u000a  int unaff_r5;\u000a  uint uVar3;\u000a  int in_lr;\u000a  undefined8 uVar4;\u000a  int param_6;\u000a  int param_7;\u000a  undefined4 param_8;\u000a  int param_9;\u000a  code *param_10;\u000a  int param_11;\u000a  int param_12;\u000a  int param_13;\u000a  undefined4 param_14;\u000a  undefined4 in_stack_0000002c;\u000a  int param_15;\u000a  \u000a  uVar3 = unaff_r5 + 3 + (param_2 & 3) >> 2;\u000a  iVar2 = param_11 + uVar3;\u000a  uVar4 = FUN_00041710(param_1,param_2,iVar2,(code *)(in_lr + -1));\u000a  iVar2 = iVar2 + uVar3;\u000a  uVar4 = FUN_00041710((int)((ulonglong)uVar4 >> 0x20),(int)uVar4,iVar2,param_10);\u000a  FUN_0004168c((int)((ulonglong)uVar4 >> 0x20),(int)uVar4,iVar2 + uVar3);\u000a  software_interrupt(0);\u000a  FUN_00041652(param_12,param_14,3,0x32);\u000a  (*(code *)(in_lr + -1))(param_2,unaff_r5,param_1,&stack0x00000008);\u000a  puVar1 = (undefined4 *)(param_6 + param_7 & 0xfffffffc);\u000a  *puVar1 = DAT_00041634;\u000a  param_15 = (int)puVar1 + 1;\u000a  if (param_9 != 0) {\u000a    (*param_10)(param_6,param_7,param_8);\u000a  }\u000a  FUN_00041680(param_12,param_13 + param_12);\u000a  software_interrupt(0);\u000a  return CONCAT44(param_14,in_stack_0000002c);\u000a}\u000a\u000a
+p66
+S'mov r3,lr\nsub r3,#0x1\npush { r3 }\nadd r3,sp,#0xc\npush { r3 }\npush { r0 }\npush { r5 }\npush { r1 }\nmov r3,#0x3\nand r3,r1\nadd r5,#0x3\nadd r5,r5,r3\nlsr r5,r5,#0x2\nldr r3,[sp,#0x2c]\nadd r2,r3,r5\nldr r3,[sp,#0x10]\nbl 0x00041710\nadd r2,r2,r5\nldr r3,[sp,#0x28]\nbl 0x00041710\nadd r2,r2,r5\nlsl r0,r0,#0x0\nbl 0x0004168c\nmov r4,#0x0\nmvn r4,r4\nmov r3,#0x32\nmov r2,#0x3\nldr r1,[sp,#0x34]\nldr r0,[sp,#0x30]\nmov r6,r0\nmov r7,#0xc0\nsvc 0x0\ncmp r0,r6\nbeq 0x000415f4\nudf #0x1\nldr r5,[sp,#0x2c]\nldr r1,[sp,#0x3c]\nbl 0x00041652\npop { r0, r1, r2, r3, r4 }\nblx r4\npop { r3 }\npop { r0, r1 }\npush { r0, r1 }\nadd r0,r0,r1\nmov r3,#0x3\nbic r0,r3\nldr r3,[0x00041634]\nstr r3,[r0,#0x0]\nadd r0,#0x1\nstr r0,[sp,#0x2c]\npop { r0, r1, r2, r3, r4, r5 }\ntst r3,r3\nbeq 0x0004161c\nblx r4\nldr r0,[sp,#0x0]\nldr r1,[sp,#0x4]\nadd r1,r1,r0\nbl 0x00041680\npop { r0, r1, r3 }\nmov lr,r3\nmov r2,#0x5\nmov r7,#0x7d\nsvc 0x0\nmov r7,#0x5b\npop { r0, r1, pc }\n'
+p67
+S'73 46\n01 3b\n08 b4\n03 ab\n08 b4\n01 b4\n20 b4\n02 b4\n03 23\n0b 40\n03 35\ned 18\nad 08\n0b 9b\n5a 19\n04 9b\n00 f0 a2 f8\n52 19\n0a 9b\n00 f0 9e f8\n52 19\n00 00\n00 f0 58 f8\n00 24\ne4 43\n32 23\n03 22\n0d 99\n0c 98\n06 1c\nc0 27\n00 df\nb0 42\n00 d0\n01 de\n0b 9d\n0f 99\n00 f0 2b f8\n1f bc\na0 47\n08 bc\n03 bc\n03 b4\n40 18\n03 23\n98 43\n09 4b\n03 60\n01 30\n0b 90\n3f bc\n1b 42\n00 d0\na0 47\n00 98\n01 99\n09 18\n00 f0 2d f8\n0b bc\n9e 46\n05 22\n7d 27\n00 df\n5b 27\n03 bd\n'
+p68
+S'segment_1.2:000415a8\nsegment_1.2:000415aa\nsegment_1.2:000415ac\nsegment_1.2:000415ae\nsegment_1.2:000415b0\nsegment_1.2:000415b2\nsegment_1.2:000415b4\nsegment_1.2:000415b6\nsegment_1.2:000415b8\nsegment_1.2:000415ba\nsegment_1.2:000415bc\nsegment_1.2:000415be\nsegment_1.2:000415c0\nsegment_1.2:000415c2\nsegment_1.2:000415c4\nsegment_1.2:000415c6\nsegment_1.2:000415c8\nsegment_1.2:000415cc\nsegment_1.2:000415ce\nsegment_1.2:000415d0\nsegment_1.2:000415d4\nsegment_1.2:000415d6\nsegment_1.2:000415d8\nsegment_1.2:000415dc\nsegment_1.2:000415de\nsegment_1.2:000415e0\nsegment_1.2:000415e2\nsegment_1.2:000415e4\nsegment_1.2:000415e6\nsegment_1.2:000415e8\nsegment_1.2:000415ea\nsegment_1.2:000415ec\nsegment_1.2:000415ee\nsegment_1.2:000415f0\nsegment_1.2:000415f2\nsegment_1.2:000415f4\nsegment_1.2:000415f6\nsegment_1.2:000415f8\nsegment_1.2:000415fc\nsegment_1.2:000415fe\nsegment_1.2:00041600\nsegment_1.2:00041602\nsegment_1.2:00041604\nsegment_1.2:00041606\nsegment_1.2:00041608\nsegment_1.2:0004160a\nsegment_1.2:0004160c\nsegment_1.2:0004160e\nsegment_1.2:00041610\nsegment_1.2:00041612\nsegment_1.2:00041614\nsegment_1.2:00041616\nsegment_1.2:00041618\nsegment_1.2:0004161a\nsegment_1.2:0004161c\nsegment_1.2:0004161e\nsegment_1.2:00041620\nsegment_1.2:00041622\nsegment_1.2:00041626\nsegment_1.2:00041628\nsegment_1.2:0004162a\nsegment_1.2:0004162c\nsegment_1.2:0004162e\nsegment_1.2:00041630\nsegment_1.2:00041632\n'
+p69
+tp70
+sS'FUN_0004168c'
+p71
+(S'\n__stdcall FUN_0004168c(undefined param_1, undefined param_2, undefined param_3, undefined param_4, undefined4 param_5, undefined4 param_6, undefined param_7, undefined param_8, undefined4 param_9, undefined param_10, undefined4 param_11, undefined4 param_12, undefined4 param_13, undefined4 param_14, undefined4 param_15)\n'
+p72
+V\u000a/* WARNING: Removing unreachable block (ram,0x000416b0) */\u000a\u000avoid FUN_0004168c(void)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  undefined4 uVar2;\u000a  int in_lr;\u000a  uint param_5;\u000a  undefined4 param_9;\u000a  undefined4 param_11;\u000a  undefined4 param_13;\u000a  \u000a  FUN_00041710();\u000a  software_interrupt(0);\u000a  uVar1 = FUN_00041652(0,param_13,7);\u000a  uVar1 = FUN_00041652(uVar1,param_5 - (param_5 & 3));\u000a  uVar2 = FUN_00041638(uVar1,param_9,uVar1);\u000a  uVar2 = FUN_00041638(uVar2,param_11);\u000a  uVar2 = FUN_00041638(uVar2,in_lr + -1);\u000a  FUN_00041680(uVar1,uVar2);\u000a  return;\u000a}\u000a\u000a
+p73
+S'mov r3,lr\nsub r3,#0x1\npush { r3 }\nbl 0x00041710\nadd r2,r2,r5\nlsl r1,r2,#0x2\nmov r4,#0x0\nmvn r4,r4\nmov r3,#0x22\nmov r2,#0x7\nstr r1,[sp,#0x44]\nmov r0,#0x0\nmov r7,#0xc0\nsvc 0x0\nasr r3,r0,#0xc\nadd r3,#0x1\nbne 0x000416b2\nudf #0x1\nstr r0,[sp,#0x40]\nldr r1,[sp,#0x34]\nldr r5,[sp,#0x30]\nbl 0x00041652\nldr r1,[sp,#0x4]\nldr r5,[sp,#0x8]\nmov r3,#0x3\nand r3,r1\nsub r1,r1,r3\nadd r5,r5,r3\nadd r3,r3,r0\nstr r3,[sp,#0x4]\nadd r5,#0x3\nlsr r5,r5,#0x2\nbl 0x00041652\nmov r2,r0\nldr r1,[sp,#0x14]\nstr r0,[sp,#0x14]\nbl 0x00041638\nadd r3,r0,#0x1\nldr r1,[sp,#0x2c]\nstr r3,[sp,#0x2c]\nbl 0x00041638\npop { r1 }\nadd r7,r0,#0x1\nbl 0x00041638\nmov r1,r0\nmov r0,r2\nmov lr,r7\nb 0x00041680\n'
+p74
+S'73 46\n01 3b\n08 b4\n00 f0 3d f8\n52 19\n91 00\n00 24\ne4 43\n22 23\n07 22\n11 91\n00 20\nc0 27\n00 df\n03 13\n01 33\n00 d1\n01 de\n10 90\n0d 99\n0c 9d\nff f7 cb ff\n01 99\n02 9d\n03 23\n0b 40\nc9 1a\ned 18\n1b 18\n01 93\n03 35\nad 08\nff f7 bf ff\n02 1c\n05 99\n05 90\nff f7 ad ff\n43 1c\n0b 99\n0b 93\nff f7 a8 ff\n02 bc\n47 1c\nff f7 a4 ff\n01 1c\n10 1c\nbe 46\nc3 e7\n'
+p75
+S'segment_1.2:0004168c\nsegment_1.2:0004168e\nsegment_1.2:00041690\nsegment_1.2:00041692\nsegment_1.2:00041696\nsegment_1.2:00041698\nsegment_1.2:0004169a\nsegment_1.2:0004169c\nsegment_1.2:0004169e\nsegment_1.2:000416a0\nsegment_1.2:000416a2\nsegment_1.2:000416a4\nsegment_1.2:000416a6\nsegment_1.2:000416a8\nsegment_1.2:000416aa\nsegment_1.2:000416ac\nsegment_1.2:000416ae\nsegment_1.2:000416b0\nsegment_1.2:000416b2\nsegment_1.2:000416b4\nsegment_1.2:000416b6\nsegment_1.2:000416b8\nsegment_1.2:000416bc\nsegment_1.2:000416be\nsegment_1.2:000416c0\nsegment_1.2:000416c2\nsegment_1.2:000416c4\nsegment_1.2:000416c6\nsegment_1.2:000416c8\nsegment_1.2:000416ca\nsegment_1.2:000416cc\nsegment_1.2:000416ce\nsegment_1.2:000416d0\nsegment_1.2:000416d4\nsegment_1.2:000416d6\nsegment_1.2:000416d8\nsegment_1.2:000416da\nsegment_1.2:000416de\nsegment_1.2:000416e0\nsegment_1.2:000416e2\nsegment_1.2:000416e4\nsegment_1.2:000416e8\nsegment_1.2:000416ea\nsegment_1.2:000416ec\nsegment_1.2:000416f0\nsegment_1.2:000416f2\nsegment_1.2:000416f4\nsegment_1.2:000416f6\n'
+p76
+tp77
+s.
