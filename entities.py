@@ -1,4 +1,4 @@
-from preprocess import to_token, extract_decompile, unstrip_dataset
+from preprocess import to_token, extract_decompile
 from tqdm import tqdm
 
 class Example(object):
@@ -35,18 +35,28 @@ class Example(object):
 #             examples.append(Example(idx = program_dict['idx'],source=src,target=tgt))
 #     return examples
 
-def read_examples(sample_dict):
-    """Read examples from dictionary id: [source, target]."""
+def read_examples(dataset, idx = None):
+    """Read examples from dictionary id: [source, target]. or dir"""
     examples=[]
     
-    for idx in tqdm(sample_dict, total = len(sample_dict)):
-        row = sample_dict[idx]
+    if idx is not None and type(dataset) == dict:
+        row = dataset[idx]
         if len(row) > 1:
-            source, target = row[0], row[1]
-            train_src_toks, train_tgt_toks = to_token(source), to_token(target)
-            src =' '.join(train_src_toks).replace('\n',' ')
-            tgt =' '.join(train_tgt_toks).replace('\n',' ')
-            examples.append(Example(idx = idx,source=src,target=tgt))
+                source, target = row[0], row[1]
+                train_src_toks, train_tgt_toks = to_token(source), to_token(target)
+                src =' '.join(train_src_toks).replace('\n',' ')
+                tgt =' '.join(train_tgt_toks).replace('\n',' ')
+                examples.append(Example(idx = idx,source=src,target=tgt))
+    else:
+        sample_dict = extract_decompile(dataset)
+        for idx in tqdm(sample_dict, total = len(sample_dict)):
+            row = sample_dict[idx]
+            if len(row) > 1:
+                source, target = row[0], row[1]
+                train_src_toks, train_tgt_toks = to_token(source), to_token(target)
+                src =' '.join(train_src_toks).replace('\n',' ')
+                tgt =' '.join(train_tgt_toks).replace('\n',' ')
+                examples.append(Example(idx = idx,source=src,target=tgt))
     return examples
 
 class InputFeatures(object):
