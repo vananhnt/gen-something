@@ -3,7 +3,6 @@ import os
 import re
 import glob
 import pickle
-from tqdm import tqdm
 from transformers import RobertaTokenizer
 
 tokenizer = RobertaTokenizer.from_pretrained("microsoft/codebert-base")
@@ -28,7 +27,7 @@ def load_dataframe(dataset_dir):
     
     header = ['id', 'funcname', 'signature', 'decompiled', 'disassembly', 'bytes', 'address', 'sampleID']
 
-    for filename in tqdm(glob.iglob(dataset_dir + '/*.pkl'), total=number_files):
+    for filename in glob.iglob(dataset_dir + '/*.pkl'):
         funcmap = pickle.load(open(filename, "rb" ))
         for k in funcmap:
             funcname = k
@@ -48,6 +47,12 @@ def extract_decompile(dataset_dir):
     # return dict : idx, source, target
     df = load_dataframe(dataset_dir)
     samples = df.set_index('id')[['decompiled', 'funcname']].T.to_dict('list')
+    return samples
+
+def extract_asm(dataset_dir):
+    # return dict : idx, source, target
+    df = load_dataframe(dataset_dir)
+    samples = df.set_index('id')[['disassembly', 'funcname']].T.to_dict('list')
     return samples
 
 def args_parser(parser):
