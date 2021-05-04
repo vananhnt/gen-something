@@ -1,0 +1,249 @@
+(dp0
+S'__cxa_finalize'
+p1
+(S'\n__stdcall __cxa_finalize()\n'
+p2
+V\u000avoid __cxa_finalize(void)\u000a\u000a{\u000a  (*(code *)PTR___cxa_finalize_0002100c)();\u000a  return;\u000a}\u000a\u000a
+p3
+S'adr r12,0x10540\nadd r12,r12,#0x10000\nldr pc,[r12,#0xacc]!\n'
+p4
+S'00 c6 8f e2\n10 ca 8c e2\ncc fa bc e5\n'
+p5
+S'.plt:00010538\n.plt:0001053c\n.plt:00010540\n'
+p6
+tp7
+sS'setvbuf'
+p8
+(S'\n__stdcall setvbuf(FILE * __stream, char * __buf, int __modes, size_t __n)\n'
+p9
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint setvbuf(FILE *__stream,char *__buf,int __modes,size_t __n)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_setvbuf_00021028)();\u000a  return iVar1;\u000a}\u000a\u000a
+p10
+S'adr r12,0x10594\nadd r12,r12,#0x10000\nldr pc,[r12,#0xa94]!\n'
+p11
+S'00 c6 8f e2\n10 ca 8c e2\n94 fa bc e5\n'
+p12
+S'.plt:0001058c\n.plt:00010590\n.plt:00010594\n'
+p13
+tp14
+sS'register_tm_clones'
+p15
+(S'\n__stdcall register_tm_clones()\n'
+p16
+V\u000avoid register_tm_clones(void)\u000a\u000a{\u000a  uint uVar1;\u000a  code *pcVar2;\u000a  \u000a  uVar1 = (DAT_00010628 + 0x1060c) - (DAT_00010624 + 0x10608) >> 2;\u000a  if (((int)(uVar1 + (uVar1 >> 0x1f)) >> 1 != 0) &&\u000a     (pcVar2 = *(code **)(DAT_0001062c + 0x10610 + DAT_00010630), pcVar2 != (code *)0x0)) {\u000a    (*pcVar2)();\u000a    return;\u000a  }\u000a  return;\u000a}\u000a\u000a
+p17
+S'ldr r0,[0x00010624]\nldr r3,[0x00010628]\nadd r0,pc\nldr r2,[0x0001062c]\nadd r3,pc\nsub r1,r3,r0\nadd r2,pc\nasr r1,r1,#0x2\nadd.w r1,r1,r1, lsr #0x1f\nasr r1,r1,#0x1\nbeq 0x00010620\nldr r3,[0x00010630]\nldr r3,[r2,r3]\ncbz r3,0x00010620\nbx r3\nbx lr\n'
+p18
+S'08 48\n09 4b\n78 44\n09 4a\n7b 44\n19 1a\n7a 44\n89 10\n01 eb d1 71\n49 10\n03 d0\n05 4b\nd3 58\n03 b1\n18 47\n70 47\n'
+p19
+S'.text:00010600\n.text:00010602\n.text:00010604\n.text:00010606\n.text:00010608\n.text:0001060a\n.text:0001060c\n.text:0001060e\n.text:00010610\n.text:00010614\n.text:00010616\n.text:00010618\n.text:0001061a\n.text:0001061c\n.text:0001061e\n.text:00010620\n'
+p20
+tp21
+sS'call_weak_fn'
+p22
+(S'\n__stdcall call_weak_fn()\n'
+p23
+V\u000avoid call_weak_fn(void)\u000a\u000a{\u000a  if (*(int *)(DAT_000105cc + 0x105c0 + DAT_000105d0) == 0) {\u000a    return;\u000a  }\u000a  (*(code *)PTR___gmon_start___0002101c)();\u000a  return;\u000a}\u000a\u000a
+p24
+S'ldr r3,[0x105cc]\nldr r2,[0x105d0]\nadd r3,pc,r3\nldr r2,[r3,r2]\ncmp r2,#0x0\nbxeq lr\nb 0x00010568\n'
+p25
+S'14 30 9f e5\n14 20 9f e5\n03 30 8f e0\n02 20 93 e7\n00 00 52 e3\n1e ff 2f 01\ne6 ff ff ea\n'
+p26
+S'.text:000105b0\n.text:000105b4\n.text:000105b8\n.text:000105bc\n.text:000105c0\n.text:000105c4\n.text:000105c8\n'
+p27
+tp28
+sS'_init'
+p29
+(S'\n__stdcall _init(EVP_PKEY_CTX * ctx)\n'
+p30
+V\u000aint _init(EVP_PKEY_CTX *ctx)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = call_weak_fn();\u000a  return iVar1;\u000a}\u000a\u000a
+p31
+S'stmdb sp!,{ r3 lr }\nbl 0x000105b0\nldmia sp!,{ r3 pc }\n'
+p32
+S'08 40 2d e9\n23 00 00 eb\n08 80 bd e8\n'
+p33
+S'.init:00010518\n.init:0001051c\n.init:00010520\n'
+p34
+tp35
+sS'rpl_malloc'
+p36
+(S'\n__stdcall rpl_malloc()\n'
+p37
+V\u000avoid rpl_malloc(void)\u000a\u000a{\u000a  (*(code *)PTR_rpl_malloc_00021024)();\u000a  return;\u000a}\u000a\u000a
+p38
+S'adr r12,0x10588\nadd r12,r12,#0x10000\nldr pc,[r12,#0xa9c]!\n'
+p39
+S'00 c6 8f e2\n10 ca 8c e2\n9c fa bc e5\n'
+p40
+S'.plt:00010580\n.plt:00010584\n.plt:00010588\n'
+p41
+tp42
+sS'apply_mode'
+p43
+(S'\n__stdcall apply_mode()\n'
+p44
+V\u000avoid apply_mode(FILE *pFParm1,char *pcParm2)\u000a\u000a{\u000a  undefined4 uVar1;\u000a  undefined4 uVar2;\u000a  int __modes;\u000a  ulong __n;\u000a  undefined4 uVar3;\u000a  int iVar4;\u000a  char *__buf;\u000a  \u000a  iVar4 = DAT_00010784 + 0x106bc;\u000a  if (*pcParm2 == '0') {\u000a    __n = 0;\u000a    __modes = 2;\u000a    __buf = (char *)0x0;\u000a  }\u000a  else {\u000a    if (*pcParm2 == 'L') {\u000a      __n = 0;\u000a      __modes = 1;\u000a      __buf = (char *)0x0;\u000a    }\u000a    else {\u000a      __n = strtoul(pcParm2,(char **)0x0,10);\u000a      if (__n == 0) {\u000a        uVar3 = **(undefined4 **)(iVar4 + DAT_00010788);\u000a        uVar1 = dcgettext(0,DAT_00010790 + 0x10728,5);\u000a        fileno(pFParm1);\u000a        uVar2 = fileno_to_name();\u000a        __fprintf_chk(uVar3,1,uVar1,pcParm2,uVar2);\u000a        return;\u000a      }\u000a      __buf = (char *)rpl_malloc();\u000a      if (__buf == (char *)0x0) {\u000a        uVar2 = **(undefined4 **)(iVar4 + DAT_00010788);\u000a        uVar1 = dcgettext(0,DAT_0001078c + 0x10706,5);\u000a        __fprintf_chk(uVar2,1,uVar1,0,__n,0);\u000a        return;\u000a      }\u000a      __modes = 0;\u000a    }\u000a  }\u000a  __modes = setvbuf(pFParm1,__buf,__modes,__n);\u000a  if (__modes != 0) {\u000a    uVar3 = **(undefined4 **)(iVar4 + DAT_00010788);\u000a    uVar1 = dcgettext(0,DAT_00010794 + 0x1075e,5);\u000a    fileno(pFParm1);\u000a    uVar2 = fileno_to_name();\u000a    __fprintf_chk(uVar3,1,uVar1,uVar2,pcParm2);\u000a    free(__buf);\u000a  }\u000a  return;\u000a}\u000a\u000a
+p45
+S'push { r4, r5, r6, r7, r8, lr  }\nsub sp,#0x8\nmov r7,r0\nmov r4,r1\nldr r6,[0x00010784]\nadd r6,pc\nldrb r3,[r1,#0x0]\ncmp r3,#0x30\nbeq 0x00010748\ncmp r3,#0x4c\nbne 0x000106de\nmov r5,#0x0\nmov r2,#0x1\nmov r8,r5\nmov r3,r5\nmov r1,r8\nmov r0,r7\nblx 0x0001058c\ncmp r0,#0x0\nbne 0x00010750\nadd sp,#0x8\npop.w { r4, r5, r6, r7, r8, pc }\nmov r2,#0xa\nmov r1,#0x0\nmov r0,r4\nblx 0x00010574\nmov r5,r0\ncbz r0,0x0001071a\nblx 0x00010580\nmov r8,r0\ncbz r0,0x000106f8\nmov r2,#0x0\nb 0x000106ca\nldr r3,[0x00010788]\nldr r3,[r6,r3]\nldr r4,[r3,#0x0]\nmov r2,#0x5\nldr r1,[0x0001078c]\nadd r1,pc\nblx 0x00010550\nstr r5,[sp,#0x0]\nmov r3,#0x0\nstr r3,[sp,#0x4]\nmov r2,r0\nmov r1,#0x1\nmov r0,r4\nblx 0x000105a4\nb 0x000106d8\nldr r3,[0x00010788]\nldr r3,[r6,r3]\nldr r5,[r3,#0x0]\nmov r2,#0x5\nldr r1,[0x00010790]\nadd r1,pc\nmov r0,#0x0\nblx 0x00010550\nmov r6,r0\nmov r0,r7\nblx 0x00010598\nbl 0x00010678\nstr r0,[sp,#0x0]\nmov r3,r4\nmov r2,r6\nmov r1,#0x1\nmov r0,r5\nblx 0x000105a4\nb 0x000106d8\nmov r5,#0x0\nmov r2,#0x2\nmov r8,r5\nb 0x000106ca\nldr r3,[0x00010788]\nldr r3,[r6,r3]\nldr r5,[r3,#0x0]\nmov r2,#0x5\nldr r1,[0x00010794]\nadd r1,pc\nmov r0,#0x0\nblx 0x00010550\nmov r6,r0\nmov r0,r7\nblx 0x00010598\nbl 0x00010678\nstr r4,[sp,#0x0]\nmov r3,r0\nmov r2,r6\nmov r1,#0x1\nmov r0,r5\nblx 0x000105a4\nmov r0,r8\nblx 0x00010544\nb 0x000106d8\n'
+p46
+S'2d e9 f0 41\n82 b0\n07 46\n0c 46\n33 4e\n7e 44\n0b 78\n30 2b\n43 d0\n4c 2b\n0c d1\n00 25\n01 22\na8 46\n2b 46\n41 46\n38 46\nff f7 5c ef\n00 28\n3b d1\n02 b0\nbd e8 f0 81\n0a 22\n00 21\n20 46\nff f7 46 ef\n05 46\nb0 b1\nff f7 48 ef\n80 46\n08 b1\n00 22\ne8 e7\n23 4b\nf3 58\n1c 68\n05 22\n22 49\n79 44\nff f7 24 ef\n00 95\n00 23\n01 93\n02 46\n01 21\n20 46\nff f7 46 ef\nde e7\n1b 4b\nf3 58\n1d 68\n05 22\n1b 49\n79 44\n00 20\nff f7 12 ef\n06 46\n38 46\nff f7 32 ef\nff f7 a0 ff\n00 90\n23 46\n32 46\n01 21\n28 46\nff f7 30 ef\nc7 e7\n00 25\n02 22\na8 46\nbc e7\n0d 4b\nf3 58\n1d 68\n05 22\n0e 49\n79 44\n00 20\nff f7 f8 ee\n06 46\n38 46\nff f7 18 ef\nff f7 85 ff\n00 94\n03 46\n32 46\n01 21\n28 46\nff f7 14 ef\n40 46\nff f7 e2 ee\na9 e7\n'
+p47
+S'.text:000106ac\n.text:000106b0\n.text:000106b2\n.text:000106b4\n.text:000106b6\n.text:000106b8\n.text:000106ba\n.text:000106bc\n.text:000106be\n.text:000106c0\n.text:000106c2\n.text:000106c4\n.text:000106c6\n.text:000106c8\n.text:000106ca\n.text:000106cc\n.text:000106ce\n.text:000106d0\n.text:000106d4\n.text:000106d6\n.text:000106d8\n.text:000106da\n.text:000106de\n.text:000106e0\n.text:000106e2\n.text:000106e4\n.text:000106e8\n.text:000106ea\n.text:000106ec\n.text:000106f0\n.text:000106f2\n.text:000106f4\n.text:000106f6\n.text:000106f8\n.text:000106fa\n.text:000106fc\n.text:000106fe\n.text:00010700\n.text:00010702\n.text:00010704\n.text:00010708\n.text:0001070a\n.text:0001070c\n.text:0001070e\n.text:00010710\n.text:00010712\n.text:00010714\n.text:00010718\n.text:0001071a\n.text:0001071c\n.text:0001071e\n.text:00010720\n.text:00010722\n.text:00010724\n.text:00010726\n.text:00010728\n.text:0001072c\n.text:0001072e\n.text:00010730\n.text:00010734\n.text:00010738\n.text:0001073a\n.text:0001073c\n.text:0001073e\n.text:00010740\n.text:00010742\n.text:00010746\n.text:00010748\n.text:0001074a\n.text:0001074c\n.text:0001074e\n.text:00010750\n.text:00010752\n.text:00010754\n.text:00010756\n.text:00010758\n.text:0001075a\n.text:0001075c\n.text:0001075e\n.text:00010762\n.text:00010764\n.text:00010766\n.text:0001076a\n.text:0001076e\n.text:00010770\n.text:00010772\n.text:00010774\n.text:00010776\n.text:00010778\n.text:0001077c\n.text:0001077e\n.text:00010782\n'
+p48
+tp49
+sS'dcgettext'
+p50
+(S'\n__stdcall dcgettext()\n'
+p51
+V\u000avoid dcgettext(void)\u000a\u000a{\u000a  (*(code *)PTR_dcgettext_00021014)();\u000a  return;\u000a}\u000a\u000a
+p52
+S'adr r12,0x10558\nadd r12,r12,#0x10000\nldr pc,[r12,#0xabc]!\n'
+p53
+S'00 c6 8f e2\n10 ca 8c e2\nbc fa bc e5\n'
+p54
+S'.plt:00010550\n.plt:00010554\n.plt:00010558\n'
+p55
+tp56
+sS'__fprintf_chk'
+p57
+(S'\n__stdcall __fprintf_chk()\n'
+p58
+V\u000avoid __fprintf_chk(void)\u000a\u000a{\u000a  (*(code *)PTR___fprintf_chk_00021030)();\u000a  return;\u000a}\u000a\u000a
+p59
+S'adr r12,0x105ac\nadd r12,r12,#0x10000\nldr pc,[r12,#0xa84]!\n'
+p60
+S'00 c6 8f e2\n10 ca 8c e2\n84 fa bc e5\n'
+p61
+S'.plt:000105a4\n.plt:000105a8\n.plt:000105ac\n'
+p62
+tp63
+sS'deregister_tm_clones'
+p64
+(S'\n__stdcall deregister_tm_clones()\n'
+p65
+V\u000avoid deregister_tm_clones(void)\u000a\u000a{\u000a  code *pcVar1;\u000a  \u000a  if ((DAT_000105f4 + 0x105e0 != DAT_000105f0 + 0x105dc) &&\u000a     (pcVar1 = *(code **)(DAT_000105f8 + 0x105e4 + DAT_000105fc), pcVar1 != (code *)0x0)) {\u000a    (*pcVar1)();\u000a    return;\u000a  }\u000a  return;\u000a}\u000a\u000a
+p66
+S'ldr r0,[0x000105f0]\nldr r3,[0x000105f4]\nadd r0,pc\nldr r2,[0x000105f8]\nadd r3,pc\ncmp r3,r0\nadd r2,pc\nbeq 0x000105ec\nldr r3,[0x000105fc]\nldr r3,[r2,r3]\ncbz r3,0x000105ec\nbx r3\nbx lr\n'
+p67
+S'06 48\n07 4b\n78 44\n07 4a\n7b 44\n83 42\n7a 44\n03 d0\n05 4b\nd3 58\n03 b1\n18 47\n70 47\n'
+p68
+S'.text:000105d4\n.text:000105d6\n.text:000105d8\n.text:000105da\n.text:000105dc\n.text:000105de\n.text:000105e0\n.text:000105e2\n.text:000105e4\n.text:000105e6\n.text:000105e8\n.text:000105ea\n.text:000105ec\n'
+p69
+tp70
+sS'fileno_to_name'
+p71
+(S'\n__stdcall fileno_to_name()\n'
+p72
+V\u000aundefined * fileno_to_name(int iParm1)\u000a\u000a{\u000a  if (iParm1 == 1) {\u000a    return &UNK_0001069a + DAT_000106a8;\u000a  }\u000a  if (iParm1 != 2) {\u000a    if (iParm1 != 0) {\u000a      return (undefined *)(DAT_0001069c + 0x10688);\u000a    }\u000a    return (undefined *)(DAT_000106a0 + 0x1068e);\u000a  }\u000a  return (undefined *)(DAT_000106a4 + 0x10694);\u000a}\u000a\u000a
+p73
+S'cmp r0,#0x1\nbeq 0x00010694\ncmp r0,#0x2\nbeq 0x0001068e\ncbz r0,0x00010688\nldr r0,[0x0001069c]\nadd r0,pc\nbx lr\nldr r0,[0x000106a0]\nadd r0,pc\nbx lr\nldr r0,[0x000106a4]\nadd r0,pc\nbx lr\nldr r0,[0x000106a8]\nadd r0,pc\nbx lr\n'
+p74
+S'01 28\n0b d0\n02 28\n06 d0\n10 b1\n06 48\n78 44\n70 47\n05 48\n78 44\n70 47\n05 48\n78 44\n70 47\n04 48\n78 44\n70 47\n'
+p75
+S'.text:00010678\n.text:0001067a\n.text:0001067c\n.text:0001067e\n.text:00010680\n.text:00010682\n.text:00010684\n.text:00010686\n.text:00010688\n.text:0001068a\n.text:0001068c\n.text:0001068e\n.text:00010690\n.text:00010692\n.text:00010694\n.text:00010696\n.text:00010698\n'
+p76
+tp77
+sS'fileno'
+p78
+(S'\n__stdcall fileno(FILE * __stream)\n'
+p79
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint fileno(FILE *__stream)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_fileno_0002102c)();\u000a  return iVar1;\u000a}\u000a\u000a
+p80
+S'adr r12,0x105a0\nadd r12,r12,#0x10000\nldr pc,[r12,#0xa8c]!\n'
+p81
+S'00 c6 8f e2\n10 ca 8c e2\n8c fa bc e5\n'
+p82
+S'.plt:00010598\n.plt:0001059c\n.plt:000105a0\n'
+p83
+tp84
+sS'__do_global_dtors_aux'
+p85
+(S'\n__stdcall __do_global_dtors_aux()\n'
+p86
+V\u000avoid __do_global_dtors_aux(void)\u000a\u000a{\u000a  if (*(char *)(DAT_00010660 + 0x1063e) == 0) {\u000a    if (*(int *)(DAT_00010664 + 0x10640 + DAT_00010668) != 0) {\u000a      __cxa_finalize(*(undefined4 *)(DAT_0001066c + 0x1064e));\u000a    }\u000a    deregister_tm_clones();\u000a    *(undefined *)(DAT_00010670 + 0x1065e) = 1;\u000a  }\u000a  return;\u000a}\u000a\u000a
+p87
+S'push { r3, lr }\nldr r3,[0x00010660]\nldr r2,[0x00010664]\nadd r3,pc\nadd r2,pc\nldrb r3,[r3,#0x0]\ncbnz r3,0x0001065e\nldr r3,[0x00010668]\nldr r3,[r2,r3]\ncbz r3,0x00010652\nldr r3,[0x0001066c]\nadd r3,pc\nldr r0,[r3,#0x0]\nblx 0x00010538\nbl 0x000105d4\nldr r3,[0x00010670]\nmov r2,#0x1\nadd r3,pc\nstrb r2,[r3,#0x0]\npop { r3, pc }\n'
+p88
+S'08 b5\n0a 4b\n0a 4a\n7b 44\n7a 44\n1b 78\n6b b9\n09 4b\nd3 58\n23 b1\n08 4b\n7b 44\n18 68\nff f7 74 ef\nff f7 bf ff\n06 4b\n01 22\n7b 44\n1a 70\n08 bd\n'
+p89
+S'.text:00010634\n.text:00010636\n.text:00010638\n.text:0001063a\n.text:0001063c\n.text:0001063e\n.text:00010640\n.text:00010642\n.text:00010644\n.text:00010646\n.text:00010648\n.text:0001064a\n.text:0001064c\n.text:0001064e\n.text:00010652\n.text:00010656\n.text:00010658\n.text:0001065a\n.text:0001065c\n.text:0001065e\n'
+p90
+tp91
+sS'_fini'
+p92
+(S'\n__stdcall _fini()\n'
+p93
+V\u000avoid _fini(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p94
+S'stmdb sp!,{ r3 lr }\nldmia sp!,{ r3 pc }\n'
+p95
+S'08 40 2d e9\n08 80 bd e8\n'
+p96
+S'.fini:00010804\n.fini:00010808\n'
+p97
+tp98
+sS'strtoul'
+p99
+(S'\n__stdcall strtoul(char * __nptr, char * * __endptr, int __base)\n'
+p100
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aulong strtoul(char *__nptr,char **__endptr,int __base)\u000a\u000a{\u000a  ulong uVar1;\u000a  \u000a  uVar1 = (*(code *)PTR_strtoul_00021020)();\u000a  return uVar1;\u000a}\u000a\u000a
+p101
+S'adr r12,0x1057c\nadd r12,r12,#0x10000\nldr pc,[r12,#0xaa4]!\n'
+p102
+S'00 c6 8f e2\n10 ca 8c e2\na4 fa bc e5\n'
+p103
+S'.plt:00010574\n.plt:00010578\n.plt:0001057c\n'
+p104
+tp105
+sS'free'
+p106
+(S'\n__stdcall free(void * __ptr)\n'
+p107
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid free(void *__ptr)\u000a\u000a{\u000a  (*(code *)PTR_free_00021010)();\u000a  return;\u000a}\u000a\u000a
+p108
+S'adr r12,0x1054c\nadd r12,r12,#0x10000\nldr pc,[r12,#0xac4]!\n'
+p109
+S'00 c6 8f e2\n10 ca 8c e2\nc4 fa bc e5\n'
+p110
+S'.plt:00010544\n.plt:00010548\n.plt:0001054c\n'
+p111
+tp112
+sS'frame_dummy'
+p113
+(S'\n__stdcall frame_dummy()\n'
+p114
+V\u000avoid frame_dummy(void)\u000a\u000a{\u000a  uint uVar1;\u000a  code *pcVar2;\u000a  \u000a  uVar1 = (DAT_00010628 + 0x1060c) - (DAT_00010624 + 0x10608) >> 2;\u000a  if (((int)(uVar1 + (uVar1 >> 0x1f)) >> 1 != 0) &&\u000a     (pcVar2 = *(code **)(DAT_0001062c + 0x10610 + DAT_00010630), pcVar2 != (code *)0x0)) {\u000a    (*pcVar2)();\u000a    return;\u000a  }\u000a  return;\u000a}\u000a\u000a
+p115
+S'b 0x00010600\n'
+p116
+S'c4 e7\n'
+p117
+S'.text:00010674\n'
+p118
+tp119
+sS'stdbuf'
+p120
+(S'\n__stdcall stdbuf()\n'
+p121
+V\u000avoid stdbuf(undefined4 uParm1,undefined4 uParm2,undefined4 uParm3,undefined4 uParm4)\u000a\u000a{\u000a  char *pcVar1;\u000a  char *pcVar2;\u000a  char *pcVar3;\u000a  int iVar4;\u000a  \u000a  iVar4 = DAT_000107e8 + 0x107a0;\u000a  pcVar1 = getenv((char *)(DAT_000107ec + 0x107a4));\u000a  pcVar2 = getenv((char *)(DAT_000107f0 + 0x107ae));\u000a  pcVar3 = getenv((char *)(DAT_000107f4 + 0x107b8));\u000a  if (pcVar1 != (char *)0x0) {\u000a    apply_mode(**(undefined4 **)(iVar4 + DAT_000107f8),pcVar1,uParm3,\u000a               *(undefined4 **)(iVar4 + DAT_000107f8),uParm4);\u000a  }\u000a  if (pcVar2 != (char *)0x0) {\u000a    apply_mode(**(undefined4 **)(iVar4 + DAT_000107fc),pcVar2,uParm3,\u000a               *(undefined4 **)(iVar4 + DAT_000107fc),uParm4);\u000a  }\u000a  if (pcVar3 != (char *)0x0) {\u000a    apply_mode(**(undefined4 **)(iVar4 + DAT_00010800),pcVar3);\u000a  }\u000a  return;\u000a}\u000a\u000a
+p122
+S'push { r3, r4, r5, r6, r7, lr }\nldr r4,[0x000107e8]\nadd r4,pc\nldr r0,[0x000107ec]\nadd r0,pc\nblx 0x0001055c\nmov r7,r0\nldr r0,[0x000107f0]\nadd r0,pc\nblx 0x0001055c\nmov r6,r0\nldr r0,[0x000107f4]\nadd r0,pc\nblx 0x0001055c\nmov r5,r0\ncbz r7,0x000107ca\nldr r3,[0x000107f8]\nldr r3,[r4,r3]\nmov r1,r7\nldr r0,[r3,#0x0]\nbl 0x000106ac\ncbz r6,0x000107d8\nldr r3,[0x000107fc]\nldr r3,[r4,r3]\nmov r1,r6\nldr r0,[r3,#0x0]\nbl 0x000106ac\ncbz r5,0x000107e6\nldr r3,[0x00010800]\nldr r3,[r4,r3]\nmov r1,r5\nldr r0,[r3,#0x0]\nbl 0x000106ac\npop { r3, r4, r5, r6, r7, pc }\n'
+p123
+S'f8 b5\n13 4c\n7c 44\n13 48\n78 44\nff f7 dc ee\n07 46\n11 48\n78 44\nff f7 d6 ee\n06 46\n10 48\n78 44\nff f7 d2 ee\n05 46\n2f b1\n0e 4b\ne3 58\n39 46\n18 68\nff f7 71 ff\n2e b1\n0b 4b\ne3 58\n31 46\n18 68\nff f7 6a ff\n2d b1\n09 4b\ne3 58\n29 46\n18 68\nff f7 63 ff\nf8 bd\n'
+p124
+S'.text:00010798\n.text:0001079a\n.text:0001079c\n.text:0001079e\n.text:000107a0\n.text:000107a2\n.text:000107a6\n.text:000107a8\n.text:000107aa\n.text:000107ac\n.text:000107b0\n.text:000107b2\n.text:000107b4\n.text:000107b6\n.text:000107ba\n.text:000107bc\n.text:000107be\n.text:000107c0\n.text:000107c2\n.text:000107c4\n.text:000107c6\n.text:000107ca\n.text:000107cc\n.text:000107ce\n.text:000107d0\n.text:000107d2\n.text:000107d4\n.text:000107d8\n.text:000107da\n.text:000107dc\n.text:000107de\n.text:000107e0\n.text:000107e2\n.text:000107e6\n'
+p125
+tp126
+sS'getenv'
+p127
+(S'\n__stdcall getenv(char * __name)\n'
+p128
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000achar * getenv(char *__name)\u000a\u000a{\u000a  char *pcVar1;\u000a  \u000a  pcVar1 = (char *)(*(code *)PTR_getenv_00021018)();\u000a  return pcVar1;\u000a}\u000a\u000a
+p129
+S'adr r12,0x10564\nadd r12,r12,#0x10000\nldr pc,[r12,#0xab4]!\n'
+p130
+S'00 c6 8f e2\n10 ca 8c e2\nb4 fa bc e5\n'
+p131
+S'.plt:0001055c\n.plt:00010560\n.plt:00010564\n'
+p132
+tp133
+s.
