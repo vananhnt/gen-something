@@ -1,0 +1,1068 @@
+(dp0
+S'XtAppMainLoop'
+p1
+(S'\n__stdcall XtAppMainLoop()\n'
+p2
+V\u000avoid XtAppMainLoop(void)\u000a\u000a{\u000a  (*(code *)PTR_XtAppMainLoop_006050f8)();\u000a  return;\u000a}\u000a\u000a
+p3
+S'JMP qword ptr [0x006050f8]\n'
+p4
+S'ff 25 22 3b 20 00\n'
+p5
+S'.plt:00000000004015d0\n'
+p6
+tp7
+sS'__libc_csu_init'
+p8
+(S'\n__stdcall __libc_csu_init()\n'
+p9
+V\u000avoid __libc_csu_init(EVP_PKEY_CTX *pEParm1,undefined8 uParm2,undefined8 uParm3)\u000a\u000a{\u000a  long lVar1;\u000a  \u000a  _init(pEParm1);\u000a  lVar1 = 0;\u000a  do {\u000a    (*(code *)(&__frame_dummy_init_array_entry)[lVar1])((ulong)pEParm1 & 0xffffffff,uParm2,uParm3);\u000a    lVar1 = lVar1 + 1;\u000a  } while (lVar1 != 1);\u000a  return;\u000a}\u000a\u000a
+p10
+S'PUSH R15\nPUSH R14\nMOV R15D,EDI\nPUSH R13\nPUSH R12\nLEA R12,[0x604368]\nPUSH RBP\nLEA RBP,[0x604370]\nPUSH RBX\nMOV R14,RSI\nMOV R13,RDX\nSUB RBP,R12\nSUB RSP,0x8\nSAR RBP,0x3\nCALL 0x004013e8\nTEST RBP,RBP\nJZ 0x00403406\nXOR EBX,EBX\nNOP dword ptr [RAX + RAX*0x1]\nMOV RDX,R13\nMOV RSI,R14\nMOV EDI,R15D\nCALL qword ptr [R12 + RBX*0x8]\nADD RBX,0x1\nCMP RBP,RBX\nJNZ 0x004033f0\nADD RSP,0x8\nPOP RBX\nPOP RBP\nPOP R12\nPOP R13\nPOP R14\nPOP R15\nRET\n'
+p11
+S'41 57\n41 56\n41 89 ff\n41 55\n41 54\n4c 8d 25 a6 0f 20 00\n55\n48 8d 2d a6 0f 20 00\n53\n49 89 f6\n49 89 d5\n4c 29 e5\n48 83 ec 08\n48 c1 fd 03\ne8 07 e0 ff ff\n48 85 ed\n74 20\n31 db\n0f 1f 84 00 00 00 00 00\n4c 89 ea\n4c 89 f6\n44 89 ff\n41 ff 14 dc\n48 83 c3 01\n48 39 dd\n75 ea\n48 83 c4 08\n5b\n5d\n41 5c\n41 5d\n41 5e\n41 5f\nc3\n'
+p12
+S'.text:00000000004033b0\n.text:00000000004033b2\n.text:00000000004033b4\n.text:00000000004033b7\n.text:00000000004033b9\n.text:00000000004033bb\n.text:00000000004033c2\n.text:00000000004033c3\n.text:00000000004033ca\n.text:00000000004033cb\n.text:00000000004033ce\n.text:00000000004033d1\n.text:00000000004033d4\n.text:00000000004033d8\n.text:00000000004033dc\n.text:00000000004033e1\n.text:00000000004033e4\n.text:00000000004033e6\n.text:00000000004033e8\n.text:00000000004033f0\n.text:00000000004033f3\n.text:00000000004033f6\n.text:00000000004033f9\n.text:00000000004033fd\n.text:0000000000403401\n.text:0000000000403404\n.text:0000000000403406\n.text:000000000040340a\n.text:000000000040340b\n.text:000000000040340c\n.text:000000000040340e\n.text:0000000000403410\n.text:0000000000403412\n.text:0000000000403414\n'
+p13
+tp14
+sS'_init'
+p15
+(S'\n__stdcall _init(EVP_PKEY_CTX * ctx)\n'
+p16
+V\u000aint _init(EVP_PKEY_CTX *ctx)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (int)PTR___gmon_start___00604ff8;\u000a  if (PTR___gmon_start___00604ff8 != (undefined *)0x0) {\u000a    iVar1 = (*(code *)PTR___gmon_start___00604ff8)();\u000a  }\u000a  return iVar1;\u000a}\u000a\u000a
+p17
+S'SUB RSP,0x8\nMOV RAX,qword ptr [0x00604ff8]\nTEST RAX,RAX\nJZ 0x004013fa\nCALL RAX\nADD RSP,0x8\nRET\n'
+p18
+S'48 83 ec 08\n48 8b 05 05 3c 20 00\n48 85 c0\n74 02\nff d0\n48 83 c4 08\nc3\n'
+p19
+S'.init:00000000004013e8\n.init:00000000004013ec\n.init:00000000004013f3\n.init:00000000004013f6\n.init:00000000004013f8\n.init:00000000004013fa\n.init:00000000004013fe\n'
+p20
+tp21
+sS'usage'
+p22
+(S'\n__stdcall usage()\n'
+p23
+V\u000avoid usage(void)\u000a\u000a{\u000a  char *pcVar1;\u000a  char **ppcVar2;\u000a  \u000a  fprintf(stderr,"usage:  %s [-options...]\u005cn",ProgramName);\u000a  fwrite("\u005cnwhere options include:\u005cn",0x18,1,stderr);\u000a  pcVar1 = "-top name        object to be top of tree";\u000a  ppcVar2 = help_message;\u000a  do {\u000a    ppcVar2 = ppcVar2 + 1;\u000a    fprintf(stderr,"    %s\u005cn",pcVar1);\u000a    pcVar1 = *ppcVar2;\u000a  } while (pcVar1 != (char *)0x0);\u000a  fputc(10,stderr);\u000a                    /* WARNING: Subroutine does not return */\u000a  exit(1);\u000a}\u000a\u000a
+p24
+S'PUSH RBX\nMOV RDI,qword ptr [0x006069e0]\nMOV RDX,qword ptr [0x00606a10]\nMOV ESI,0x403963\nXOR EAX,EAX\nCALL 0x00401520\nMOV RCX,qword ptr [0x006069e0]\nMOV EDI,0x40397d\nMOV ESI,0x18\nMOV EDX,0x1\nCALL 0x00401660\nMOV EDX,0x40399e\nMOV EBX,0x4034c8\nMOV RCX,qword ptr [0x006069e0]\nNOP word ptr [RAX + RAX*0x1]\nMOV ESI,0x403996\nXOR EAX,EAX\nMOV RDI,RCX\nCALL 0x00401520\nMOV RDX,qword ptr [RBX]\nMOV RCX,qword ptr [0x006069e0]\nADD RBX,0x8\nTEST RDX,RDX\nJNZ 0x00402100\nMOV EDI,0xa\nMOV RSI,RCX\nCALL 0x004014f0\nMOV EDI,0x1\nCALL 0x00401650\n'
+p25
+S'53\n48 8b 3d 28 49 20 00\n48 8b 15 51 49 20 00\nbe 63 39 40 00\n31 c0\ne8 55 f4 ff ff\n48 8b 0d 0e 49 20 00\nbf 7d 39 40 00\nbe 18 00 00 00\nba 01 00 00 00\ne8 7a f5 ff ff\nba 9e 39 40 00\nbb c8 34 40 00\n48 8b 0d e9 48 20 00\n66 0f 1f 84 00 00 00 00 00\nbe 96 39 40 00\n31 c0\n48 89 cf\ne8 11 f4 ff ff\n48 8b 13\n48 8b 0d c7 48 20 00\n48 83 c3 08\n48 85 d2\n75 de\nbf 0a 00 00 00\n48 89 ce\ne8 c1 f3 ff ff\nbf 01 00 00 00\ne8 17 f5 ff ff\n'
+p26
+S'.text:00000000004020b0\n.text:00000000004020b1\n.text:00000000004020b8\n.text:00000000004020bf\n.text:00000000004020c4\n.text:00000000004020c6\n.text:00000000004020cb\n.text:00000000004020d2\n.text:00000000004020d7\n.text:00000000004020dc\n.text:00000000004020e1\n.text:00000000004020e6\n.text:00000000004020eb\n.text:00000000004020f0\n.text:00000000004020f7\n.text:0000000000402100\n.text:0000000000402105\n.text:0000000000402107\n.text:000000000040210a\n.text:000000000040210f\n.text:0000000000402112\n.text:0000000000402119\n.text:000000000040211d\n.text:0000000000402120\n.text:0000000000402122\n.text:0000000000402127\n.text:000000000040212a\n.text:000000000040212f\n.text:0000000000402134\n'
+p27
+tp28
+sS'main'
+p29
+(S'\n__stdcall main(char * * argv)\n'
+p30
+V\u000aint main(char **argv)\u000a\u000a{\u000a  XtCallbackRec callback_rec [2];\u000a  long lVar1;\u000a  undefined8 uVar2;\u000a  undefined8 uVar3;\u000a  ViewresData *pVVar4;\u000a  XtPointer pvVar5;\u000a  XtPointer pvVar6;\u000a  undefined1 *node;\u000a  char **in_RSI;\u000a  long lVar7;\u000a  Arg args [6];\u000a  ushort local_a8;\u000a  ushort local_a6;\u000a  ushort local_a4;\u000a  ushort local_a2;\u000a  int local_a0;\u000a  uint local_9c;\u000a  char *local_98;\u000a  char *local_90;\u000a  char *local_88;\u000a  ushort *local_80;\u000a  char *local_78;\u000a  ulong local_70;\u000a  char *local_68;\u000a  ulong local_60;\u000a  undefined8 local_30;\u000a  \u000a  local_a0 = (int)argv;\u000a  ProgramName = *in_RSI;\u000a  XtSetLanguageProc(0,0,0);\u000a  lVar1 = XtAppInitialize(&local_30,"Viewres",Options,3,&local_a0);\u000a  if (local_a0 == 1) {\u000a    initialize_widgetnode_list(10);\u000a    XtGetApplicationResources(lVar1,&options,Resources,2,0,0);\u000a    XmuWnInitializeNodes(XawWidgetArray,(ulong)XawWidgetCount);\u000a    topnode = (XmuWidgetNode *)\u000a              XmuWnNameToNode(XawWidgetArray,(ulong)XawWidgetCount,options.top_object);\u000a    if (topnode != (XmuWidgetNode *)0x0) {\u000a      XtAppAddActions(local_30,viewres_actions,5);\u000a      uVar2 = XtParseTranslationTable("<Message>WM_PROTOCOLS: Quit()");\u000a      XtOverrideTranslations(lVar1,uVar2);\u000a      local_98 = (char *)0x6046e8;\u000a      local_90 = (char *)0x1;\u000a      local_88 = (char *)0x60446a;\u000a      local_80 = (ushort *)0x1;\u000a      uVar2 = XtCreateWidget("dummy",widgetClass,lVar1,&local_98,2);\u000a      uVar3 = XmuWnNameToNode(XawWidgetArray,(ulong)XawWidgetCount,0x403a2f);\u000a      if (0 < (int)XawWidgetCount) {\u000a        node = XawWidgetArray;\u000a        lVar7 = 0;\u000a        do {\u000a          XmuWnFetchResources(node,uVar2,uVar3);\u000a          pVVar4 = create_viewres_data((XmuWidgetNode *)node);\u000a          *(ViewresData **)&((XmuWidgetNode *)node)->data = pVVar4;\u000a          lVar7 = lVar7 + 1;\u000a          node = (undefined1 *)((XmuWidgetNode *)node + 1);\u000a        } while (lVar7 < (long)(int)XawWidgetCount);\u000a      }\u000a      XtDestroyWidget(uVar2);\u000a      uVar2 = XtCreateManagedWidget(&DAT_00403531,panedWidgetClass,lVar1,0,0);\u000a      uVar3 = XtCreateManagedWidget("buttonbox",boxWidgetClass,uVar2,0,0);\u000a      XtCreateManagedWidget(&DAT_00403540,commandWidgetClass,uVar3,0,0);\u000a      local_98 = "menuName";\u000a      local_90 = "viewMenu";\u000a      viewButton = (Widget)XtCreateManagedWidget\u000a                                     (&DAT_00403557,menuButtonWidgetClass,uVar3,&local_98,1);\u000a      viewMenu = (Widget)XtCreatePopupShell("viewMenu",simpleMenuWidgetClass,viewButton,0,0);\u000a      local_98 = (char *)0x604408;\u000a      local_90 = (char *)0x6069f0;\u000a      callback_rec[0].closure = (XtPointer)0x4;\u000a      callback_rec[0].callback = gravity_callback;\u000a      view_widgets_0 =\u000a           XtCreateManagedWidget("layoutHorizontal",smeBSBObjectClass,viewMenu,&local_98,1);\u000a      callback_rec[0].closure = (XtPointer)0x2;\u000a      view_widgets_1 =\u000a           XtCreateManagedWidget("layoutVertical",smeBSBObjectClass,viewMenu,&local_98,1);\u000a      XtCreateManagedWidget("line1",smeLineObjectClass,viewMenu,0,0);\u000a      callback_rec[0].closure = (XtPointer)0x1;\u000a      callback_rec[0].callback = variable_labeltype_callback;\u000a      view_widgets_2 = XtCreateManagedWidget("namesVariable",smeBSBObjectClass,viewMenu,&local_98,1)\u000a      ;\u000a      callback_rec[0].closure = (XtPointer)0x0;\u000a      view_widgets_3 = XtCreateManagedWidget("namesClass",smeBSBObjectClass,viewMenu,&local_98,1);\u000a      XtCreateManagedWidget("line2",smeLineObjectClass,viewMenu,0,0);\u000a      callback_rec[0].closure = (XtPointer)0x1;\u000a      callback_rec[0].callback = show_resources_callback;\u000a      view_widgets_4 = XtCreateManagedWidget("viewResources",smeBSBObjectClass,viewMenu,&local_98,1)\u000a      ;\u000a      callback_rec[0].closure = (XtPointer)0x0;\u000a      view_widgets_5 =\u000a           XtCreateManagedWidget("viewNoResources",smeBSBObjectClass,viewMenu,&local_98,1);\u000a      local_98 = "menuName";\u000a      local_90 = "selectMenu";\u000a      selectButton = (Widget)XtCreateManagedWidget(0x4035cc,menuButtonWidgetClass,uVar3,&local_98,1)\u000a      ;\u000a      selectMenu = (Widget)XtCreatePopupShell("selectMenu",simpleMenuWidgetClass,selectButton,0,0);\u000a      local_98 = (char *)0x604408;\u000a      local_90 = (char *)0x6069f0;\u000a      callback_rec[0].closure = (XtPointer)0x0;\u000a      callback_rec[0].callback = select_callback;\u000a      select_widgets_0 = XtCreateManagedWidget("unselect",smeBSBObjectClass,selectMenu,&local_98,1);\u000a      callback_rec[0].closure = (XtPointer)0x1;\u000a      select_widgets_1 = XtCreateManagedWidget("selectAll",smeBSBObjectClass,selectMenu,&local_98,1)\u000a      ;\u000a      callback_rec[0].closure = (XtPointer)0x2;\u000a      select_widgets_2 =\u000a           XtCreateManagedWidget("selectInvert",smeBSBObjectClass,selectMenu,&local_98,1);\u000a      XtCreateManagedWidget("line1",smeLineObjectClass,selectMenu,0,0);\u000a      callback_rec[0].closure = (XtPointer)0x3;\u000a      select_widgets_3 =\u000a           XtCreateManagedWidget("selectParent",smeBSBObjectClass,selectMenu,&local_98,1);\u000a      callback_rec[0].closure = (XtPointer)0x4;\u000a      select_widgets_4 =\u000a           XtCreateManagedWidget("selectAncestors",smeBSBObjectClass,selectMenu,&local_98,1);\u000a      callback_rec[0].closure = (XtPointer)0x5;\u000a      select_widgets_5 =\u000a           XtCreateManagedWidget("selectChildren",smeBSBObjectClass,selectMenu,&local_98,1);\u000a      callback_rec[0].closure = (XtPointer)0x6;\u000a      select_widgets_6 =\u000a           XtCreateManagedWidget("selectDescendants",smeBSBObjectClass,selectMenu,&local_98,1);\u000a      XtCreateManagedWidget("line2",smeLineObjectClass,selectMenu,0,0);\u000a      callback_rec[0].closure = (XtPointer)0x7;\u000a      select_widgets_7 =\u000a           XtCreateManagedWidget("selectHasResources",smeBSBObjectClass,selectMenu,&local_98,1);\u000a      callback_rec[0].closure = (XtPointer)0x8;\u000a      select_widgets_8 =\u000a           XtCreateManagedWidget("selectShownResources",smeBSBObjectClass,selectMenu,&local_98,1);\u000a      uVar2 = XtCreateManagedWidget("treeform",formWidgetClass,uVar2,0,0);\u000a      local_98 = (char *)0x6043bf;\u000a      local_90 = (char *)0x0;\u000a      pvVar5 = (XtPointer)XtCreateManagedWidget("porthole",portholeWidgetClass,uVar2,&local_98,1);\u000a      pvVar6 = (XtPointer)XtCreateManagedWidget("panner",pannerWidgetClass,uVar2,0,0);\u000a      local_98 = "reportCallback";\u000a      local_90 = (char *)0x6069f0;\u000a      callback_rec[0].callback = panner_callback;\u000a      callback_rec[0].closure = pvVar5;\u000a      XtSetValues(pvVar6,&local_98,1);\u000a      callback_rec[0].callback = porthole_callback;\u000a      callback_rec[0].closure = pvVar6;\u000a      XtSetValues(pvVar5,&local_98,1);\u000a      treeWidget = (Widget)XtCreateManagedWidget(0x4039c3,treeWidgetClass,pvVar5,0,0);\u000a      set_labeltype_menu((ulong)(uint)(int)options.show_variable,0);\u000a      local_98 = "gravity";\u000a      local_90 = (char *)&local_9c;\u000a      XtGetValues(treeWidget,&local_98,1);\u000a      set_orientation_menu((ulong)local_9c,0);\u000a      update_selection_items();\u000a      build_tree(topnode,treeWidget,(Widget)0x0);\u000a      XtRealizeWidget(lVar1);\u000a      wm_delete_window =\u000a           XInternAtom(*(undefined8 *)(*(long *)(lVar1 + 0x98) + 8),"WM_DELETE_WINDOW",0);\u000a      XSetWMProtocols(*(undefined8 *)(*(long *)(lVar1 + 0x98) + 8),*(undefined8 *)(lVar1 + 0xa8),\u000a                      &wm_delete_window,1);\u000a      local_98 = (char *)0x6046e8;\u000a      local_90 = (char *)&local_a2;\u000a      local_88 = (char *)0x60446a;\u000a      local_80 = &local_a4;\u000a      XtGetValues(treeWidget,&local_98,2);\u000a      local_98 = (char *)0x6046e8;\u000a      local_90 = (char *)&local_a6;\u000a      local_88 = (char *)0x60446a;\u000a      local_80 = &local_a8;\u000a      XtGetValues(pvVar5,&local_98,2);\u000a      local_98 = "canvasWidth";\u000a      local_90 = (char *)(ulong)local_a2;\u000a      local_88 = "canvasHeight";\u000a      local_80 = (ushort *)(ulong)local_a4;\u000a      local_78 = "sliderWidth";\u000a      local_70 = (ulong)local_a6;\u000a      local_68 = "sliderHeight";\u000a      local_60 = (ulong)local_a8;\u000a      XtSetValues(pvVar6,&local_98,4);\u000a      XRaiseWindow(*(undefined8 *)(*(long *)((long)pvVar6 + 0x98) + 8),\u000a                   *(undefined8 *)((long)pvVar6 + 0xa8));\u000a      XtAppMainLoop(local_30);\u000a      return 0;\u000a    }\u000a  }\u000a  else {\u000a    usage();\u000a  }\u000a  fprintf(stderr,"%s: no widget with name \u005c"%s\u005c" found.\u005cn",ProgramName,options.top_object);\u000a                    /* WARNING: Subroutine does not return */\u000a  exit(1);\u000a}\u000a\u000a
+p31
+S'PUSH R15\nPUSH R14\nPUSH R13\nPUSH R12\nPUSH RBX\nSUB RSP,0x80\nMOV RBX,RSI\nMOV dword ptr [RSP + 0x8],EDI\nMOV RAX,qword ptr [RBX]\nMOV qword ptr [0x00606a10],RAX\nXOR EDI,EDI\nXOR ESI,ESI\nXOR EDX,EDX\nCALL 0x00401620\nSUB RSP,0x8\nLEA RDI,[0x80 + RSP]\nLEA R8,[RSP + 0x10]\nMOV ESI,0x4034e0\nMOV EDX,0x605170\nMOV ECX,0x3\nMOV R9,RBX\nPUSH 0x0\nPUSH 0x0\nPUSH 0x6051d0\nCALL 0x00401450\nADD RSP,0x20\nMOV R14,RAX\nCMP dword ptr [RSP + 0x8],0x1\nJNZ 0x0040207e\nMOV EDI,0xa\nCALL 0x00402140\nMOV ESI,0x606a28\nMOV EDX,0x605270\nMOV ECX,0x2\nXOR R8D,R8D\nXOR R9D,R9D\nMOV RDI,R14\nCALL 0x00401410\nMOV ESI,dword ptr [0x006069a8]\nMOV EDI,0x6054a0\nCALL 0x00401510\nMOV ESI,dword ptr [0x006069a8]\nMOV RDX,qword ptr [0x00606a28]\nMOV EDI,0x6054a0\nCALL 0x00401590\nMOV qword ptr [0x00606a38],RAX\nTEST RAX,RAX\nJZ 0x00402083\nMOV RDI,qword ptr [RSP + 0x78]\nMOV ESI,0x6052d0\nMOV EDX,0x5\nCALL 0x004015b0\nMOV EDI,0x40350d\nCALL 0x004015e0\nMOV RDI,R14\nMOV RSI,RAX\nCALL 0x00401560\nMOV qword ptr [RSP + 0x10],0x6046e8\nMOV qword ptr [RSP + 0x18],0x1\nMOV qword ptr [RSP + 0x20],0x60446a\nMOV qword ptr [RSP + 0x28],0x1\nMOV RSI,qword ptr [0x00606928]\nLEA RCX,[RSP + 0x10]\nMOV EDI,0x40352b\nMOV R8D,0x2\nMOV RDX,R14\nCALL 0x00401430\nMOV R15,RAX\nMOV ESI,dword ptr [0x006069a8]\nMOV EDI,0x6054a0\nMOV EDX,0x403a2f\nCALL 0x00401590\nMOV R12,RAX\nCMP dword ptr [0x006069a8],0x0\nJLE 0x0040193d\nMOV EBX,0x6054a0\nXOR R13D,R13D\nNOP dword ptr CS:[RAX + RAX*0x1]\nMOV RDI,RBX\nMOV RSI,R15\nMOV RDX,R12\nCALL 0x00401580\nMOV RDI,RBX\nCALL 0x004021c0\nMOV qword ptr [RBX + 0x70],RAX\nINC R13\nMOVSXD RAX,dword ptr [0x006069a8]\nADD RBX,0x78\nCMP R13,RAX\nJL 0x00401910\nMOV RDI,R15\nCALL 0x00401630\nMOV RSI,qword ptr [0x00606868]\nMOV EDI,0x403531\nXOR ECX,ECX\nXOR R8D,R8D\nMOV RDX,R14\nCALL 0x00401470\nMOV R15,RAX\nMOV RSI,qword ptr [0x00606960]\nMOV EDI,0x403536\nXOR ECX,ECX\nXOR R8D,R8D\nMOV RDX,R15\nCALL 0x00401470\nMOV R12,RAX\nMOV RSI,qword ptr [0x00606940]\nMOV EDI,0x403540\nXOR ECX,ECX\nXOR R8D,R8D\nMOV RDX,R12\nCALL 0x00401470\nMOV qword ptr [RSP + 0x10],0x403545\nMOV qword ptr [RSP + 0x18],0x40354e\nMOV RSI,qword ptr [0x006069c0]\nLEA R13,[RSP + 0x10]\nMOV EDI,0x403557\nMOV R8D,0x1\nMOV RDX,R12\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606a40],RAX\nMOV RSI,qword ptr [0x006068e0]\nMOV EDI,0x40354e\nXOR ECX,ECX\nXOR R8D,R8D\nMOV RDX,RAX\nCALL 0x00401440\nMOV qword ptr [0x00606a48],RAX\nMOV qword ptr [RSP + 0x10],0x604408\nMOV qword ptr [RSP + 0x18],0x6069f0\nMOV qword ptr [0x006069f0],0x402230\nMOV qword ptr [0x006069f8],0x4\nMOV RSI,qword ptr [0x00606880]\nMOV EDI,0x40355c\nMOV R8D,0x1\nMOV RDX,RAX\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606a80],RAX\nMOV qword ptr [0x006069f8],0x2\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a48]\nMOV EDI,0x40356d\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606a90],RAX\nMOV RSI,qword ptr [0x00606900]\nMOV RDX,qword ptr [0x00606a48]\nMOV EDI,0x40357c\nXOR ECX,ECX\nXOR R8D,R8D\nCALL 0x00401470\nMOV qword ptr [0x006069f0],0x402240\nMOV qword ptr [0x006069f8],0x1\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a48]\nMOV EDI,0x403582\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606aa0],RAX\nMOV qword ptr [0x006069f8],0x0\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a48]\nMOV EDI,0x403590\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606ab0],RAX\nMOV RSI,qword ptr [0x00606900]\nMOV RDX,qword ptr [0x00606a48]\nMOV EDI,0x40359b\nXOR ECX,ECX\nXOR R8D,R8D\nCALL 0x00401470\nMOV qword ptr [0x006069f0],0x402250\nMOV qword ptr [0x006069f8],0x1\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a48]\nMOV EDI,0x4035a1\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606ac0],RAX\nMOV qword ptr [0x006069f8],0x0\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a48]\nMOV EDI,0x4035af\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606ad0],RAX\nMOV qword ptr [RSP + 0x10],0x403545\nMOV qword ptr [RSP + 0x18],0x4035bf\nMOV RSI,qword ptr [0x006069c0]\nMOV EDI,0x4035cc\nMOV R8D,0x1\nMOV RDX,R12\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606a50],RAX\nMOV RSI,qword ptr [0x006068e0]\nMOV EDI,0x4035bf\nXOR ECX,ECX\nXOR R8D,R8D\nMOV RDX,RAX\nCALL 0x00401440\nMOV qword ptr [0x00606a58],RAX\nMOV qword ptr [RSP + 0x10],0x604408\nMOV qword ptr [RSP + 0x18],0x6069f0\nMOV qword ptr [0x006069f0],0x402330\nMOV qword ptr [0x006069f8],0x0\nMOV RSI,qword ptr [0x00606880]\nMOV EDI,0x4035ca\nMOV R8D,0x1\nMOV RDX,RAX\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606ae0],RAX\nMOV qword ptr [0x006069f8],0x1\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a58]\nMOV EDI,0x4035d3\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606af0],RAX\nMOV qword ptr [0x006069f8],0x2\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a58]\nMOV EDI,0x4035dd\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606b00],RAX\nMOV RSI,qword ptr [0x00606900]\nMOV RDX,qword ptr [0x00606a58]\nMOV EDI,0x40357c\nXOR ECX,ECX\nXOR R8D,R8D\nCALL 0x00401470\nMOV qword ptr [0x006069f8],0x3\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a58]\nMOV EDI,0x4035ea\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606b10],RAX\nMOV qword ptr [0x006069f8],0x4\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a58]\nMOV EDI,0x4035f7\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606b20],RAX\nMOV qword ptr [0x006069f8],0x5\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a58]\nMOV EDI,0x403607\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606b30],RAX\nMOV qword ptr [0x006069f8],0x6\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a58]\nMOV EDI,0x403616\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606b40],RAX\nMOV RSI,qword ptr [0x00606900]\nMOV RDX,qword ptr [0x00606a58]\nMOV EDI,0x40359b\nXOR ECX,ECX\nXOR R8D,R8D\nCALL 0x00401470\nMOV qword ptr [0x006069f8],0x7\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a58]\nMOV EDI,0x403628\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606b50],RAX\nMOV qword ptr [0x006069f8],0x8\nMOV RSI,qword ptr [0x00606880]\nMOV RDX,qword ptr [0x00606a58]\nMOV EDI,0x40363b\nMOV R8D,0x1\nMOV RCX,R13\nCALL 0x00401470\nMOV qword ptr [0x00606b60],RAX\nMOV RSI,qword ptr [0x006069a0]\nMOV EDI,0x403650\nXOR ECX,ECX\nXOR R8D,R8D\nMOV RDX,R15\nCALL 0x00401470\nMOV RBX,RAX\nMOV qword ptr [RSP + 0x10],0x6043bf\nMOV qword ptr [RSP + 0x18],0x0\nMOV RSI,qword ptr [0x006068c0]\nMOV EDI,0x403659\nMOV R8D,0x1\nMOV RDX,RBX\nMOV RCX,R13\nCALL 0x00401470\nMOV R15,RAX\nMOV RSI,qword ptr [0x00606860]\nMOV EDI,0x403662\nXOR ECX,ECX\nXOR R8D,R8D\nMOV RDX,RBX\nCALL 0x00401470\nMOV RBX,RAX\nMOV qword ptr [RSP + 0x10],0x403669\nMOV qword ptr [RSP + 0x18],0x6069f0\nMOV qword ptr [0x006069f0],0x402650\nMOV qword ptr [0x006069f8],R15\nMOV EDX,0x1\nMOV RDI,RBX\nMOV RSI,R13\nCALL 0x00401480\nMOV qword ptr [0x006069f0],0x4026b0\nMOV qword ptr [0x006069f8],RBX\nMOV EDX,0x1\nMOV RDI,R15\nMOV RSI,R13\nCALL 0x00401480\nMOV RSI,qword ptr [0x006068a0]\nMOV EDI,0x4039c3\nXOR ECX,ECX\nXOR R8D,R8D\nMOV RDX,R15\nCALL 0x00401470\nMOV qword ptr [0x00606a60],RAX\nMOVSX EDI,byte ptr [0x00606a30]\nXOR ESI,ESI\nCALL 0x00402750\nMOV qword ptr [RSP + 0x10],0x403678\nLEA RAX,[RSP + 0xc]\nMOV qword ptr [RSP + 0x18],RAX\nMOV RDI,qword ptr [0x00606a60]\nMOV EDX,0x1\nMOV RSI,R13\nCALL 0x00401490\nMOV EDI,dword ptr [RSP + 0xc]\nXOR ESI,ESI\nCALL 0x004027d0\nCALL 0x00402890\nMOV RDI,qword ptr [0x00606a38]\nMOV RSI,qword ptr [0x00606a60]\nXOR EDX,EDX\nCALL 0x00402a40\nMOV RDI,R14\nCALL 0x00401530\nMOV RAX,qword ptr [0x98 + R14]\nMOV RDI,qword ptr [RAX + 0x8]\nMOV ESI,0x403680\nXOR EDX,EDX\nCALL 0x004015c0\nMOV qword ptr [0x00606a68],RAX\nMOV RAX,qword ptr [0x98 + R14]\nMOV RSI,qword ptr [0xa8 + R14]\nMOV RDI,qword ptr [RAX + 0x8]\nMOV EDX,0x606a68\nMOV ECX,0x1\nCALL 0x00401550\nMOV qword ptr [RSP + 0x10],0x6046e8\nLEA RAX,[RSP + 0x6]\nMOV qword ptr [RSP + 0x18],RAX\nMOV qword ptr [RSP + 0x20],0x60446a\nLEA RAX,[RSP + 0x4]\nMOV qword ptr [RSP + 0x28],RAX\nMOV RDI,qword ptr [0x00606a60]\nMOV EDX,0x2\nMOV RSI,R13\nCALL 0x00401490\nMOV qword ptr [RSP + 0x10],0x6046e8\nLEA RAX,[RSP + 0x2]\nMOV qword ptr [RSP + 0x18],RAX\nMOV qword ptr [RSP + 0x20],0x60446a\nMOV RAX,RSP\nMOV qword ptr [RSP + 0x28],RAX\nMOV EDX,0x2\nMOV RDI,R15\nMOV RSI,R13\nCALL 0x00401490\nMOV qword ptr [RSP + 0x10],0x403691\nMOVZX EAX,word ptr [RSP + 0x6]\nMOV qword ptr [RSP + 0x18],RAX\nMOV qword ptr [RSP + 0x20],0x40369d\nMOVZX EAX,word ptr [RSP + 0x4]\nMOV qword ptr [RSP + 0x28],RAX\nMOV qword ptr [RSP + 0x30],0x4036aa\nMOVZX EAX,word ptr [RSP + 0x2]\nMOV qword ptr [RSP + 0x38],RAX\nMOV qword ptr [RSP + 0x40],0x4036b6\nMOVZX EAX,word ptr [RSP]\nMOV qword ptr [RSP + 0x48],RAX\nMOV EDX,0x4\nMOV RDI,RBX\nMOV RSI,R13\nCALL 0x00401480\nMOV RAX,qword ptr [0x98 + RBX]\nMOV RSI,qword ptr [0xa8 + RBX]\nMOV RDI,qword ptr [RAX + 0x8]\nCALL 0x00401690\nMOV RDI,qword ptr [RSP + 0x78]\nCALL 0x004015d0\nXOR EAX,EAX\nADD RSP,0x80\nPOP RBX\nPOP R12\nPOP R13\nPOP R14\nPOP R15\nRET\nCALL 0x004020b0\nMOV RDI,qword ptr [0x006069e0]\nMOV RDX,qword ptr [0x00606a10]\nMOV RCX,qword ptr [0x00606a28]\nMOV ESI,0x4034e8\nXOR EAX,EAX\nCALL 0x00401520\nMOV EDI,0x1\nCALL 0x00401650\n'
+p32
+S'41 57\n41 56\n41 55\n41 54\n53\n48 81 ec 80 00 00 00\n48 89 f3\n89 7c 24 08\n48 8b 03\n48 89 05 4f 52 20 00\n31 ff\n31 f6\n31 d2\ne8 54 fe ff ff\n48 83 ec 08\n48 8d bc 24 80 00 00 00\n4c 8d 44 24 10\nbe e0 34 40 00\nba 70 51 60 00\nb9 03 00 00 00\n49 89 d9\n6a 00\n6a 00\n68 d0 51 60 00\ne8 53 fc ff ff\n48 83 c4 20\n49 89 c6\n83 7c 24 08 01\n0f 85 6f 08 00 00\nbf 0a 00 00 00\ne8 27 09 00 00\nbe 28 6a 60 00\nba 70 52 60 00\nb9 02 00 00 00\n45 31 c0\n45 31 c9\n4c 89 f7\ne8 da fb ff ff\n8b 35 6c 51 20 00\nbf a0 54 60 00\ne8 ca fc ff ff\n8b 35 5c 51 20 00\n48 8b 15 d5 51 20 00\nbf a0 54 60 00\ne8 33 fd ff ff\n48 89 05 d4 51 20 00\n48 85 c0\n0f 84 16 08 00 00\n48 8b 7c 24 78\nbe d0 52 60 00\nba 05 00 00 00\ne8 2f fd ff ff\nbf 0d 35 40 00\ne8 55 fd ff ff\n4c 89 f7\n48 89 c6\ne8 ca fc ff ff\n48 c7 44 24 10 e8 46 60 00\n48 c7 44 24 18 01 00 00 00\n48 c7 44 24 20 6a 44 60 00\n48 c7 44 24 28 01 00 00 00\n48 8b 35 67 50 20 00\n48 8d 4c 24 10\nbf 2b 35 40 00\n41 b8 02 00 00 00\n4c 89 f2\ne8 57 fb ff ff\n49 89 c7\n8b 35 c6 50 20 00\nbf a0 54 60 00\nba 2f 3a 40 00\ne8 9f fc ff ff\n49 89 c4\n83 3d ad 50 20 00 00\n7e 40\nbb a0 54 60 00\n45 31 ed\n66 66 2e 0f 1f 84 00 00 00 00 00\n48 89 df\n4c 89 fe\n4c 89 e2\ne8 62 fc ff ff\n48 89 df\ne8 9a 08 00 00\n48 89 43 70\n49 ff c5\n48 63 05 74 50 20 00\n48 83 c3 78\n49 39 c5\n7c d3\n4c 89 ff\ne8 eb fc ff ff\n48 8b 35 1c 4f 20 00\nbf 31 35 40 00\n31 c9\n45 31 c0\n4c 89 f2\ne8 12 fb ff ff\n49 89 c7\n48 8b 35 f8 4f 20 00\nbf 36 35 40 00\n31 c9\n45 31 c0\n4c 89 fa\ne8 f6 fa ff ff\n49 89 c4\n48 8b 35 bc 4f 20 00\nbf 40 35 40 00\n31 c9\n45 31 c0\n4c 89 e2\ne8 da fa ff ff\n48 c7 44 24 10 45 35 40 00\n48 c7 44 24 18 4e 35 40 00\n48 8b 35 11 50 20 00\n4c 8d 6c 24 10\nbf 57 35 40 00\n41 b8 01 00 00 00\n4c 89 e2\n4c 89 e9\ne8 a6 fa ff ff\n48 89 05 6f 50 20 00\n48 8b 35 08 4f 20 00\nbf 4e 35 40 00\n31 c9\n45 31 c0\n48 89 c2\ne8 56 fa ff ff\n48 89 05 57 50 20 00\n48 c7 44 24 10 08 44 60 00\n48 c7 44 24 18 f0 69 60 00\n48 c7 05 e2 4f 20 00 30 22 40 00\n48 c7 05 df 4f 20 00 04 00 00 00\n48 8b 35 60 4e 20 00\nbf 5c 35 40 00\n41 b8 01 00 00 00\n48 89 c2\n4c 89 e9\ne8 3a fa ff ff\n48 89 05 43 50 20 00\n48 c7 05 b0 4f 20 00 02 00 00 00\n48 8b 35 31 4e 20 00\n48 8b 15 f2 4f 20 00\nbf 6d 35 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 07 fa ff ff\n48 89 05 20 50 20 00\n48 8b 35 89 4e 20 00\n48 8b 15 ca 4f 20 00\nbf 7c 35 40 00\n31 c9\n45 31 c0\ne8 e3 f9 ff ff\n48 c7 05 58 4f 20 00 40 22 40 00\n48 c7 05 55 4f 20 00 01 00 00 00\n48 8b 35 d6 4d 20 00\n48 8b 15 97 4f 20 00\nbf 82 35 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 ac f9 ff ff\n48 89 05 d5 4f 20 00\n48 c7 05 22 4f 20 00 00 00 00 00\n48 8b 35 a3 4d 20 00\n48 8b 15 64 4f 20 00\nbf 90 35 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 79 f9 ff ff\n48 89 05 b2 4f 20 00\n48 8b 35 fb 4d 20 00\n48 8b 15 3c 4f 20 00\nbf 9b 35 40 00\n31 c9\n45 31 c0\ne8 55 f9 ff ff\n48 c7 05 ca 4e 20 00 50 22 40 00\n48 c7 05 c7 4e 20 00 01 00 00 00\n48 8b 35 48 4d 20 00\n48 8b 15 09 4f 20 00\nbf a1 35 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 1e f9 ff ff\n48 89 05 67 4f 20 00\n48 c7 05 94 4e 20 00 00 00 00 00\n48 8b 35 15 4d 20 00\n48 8b 15 d6 4e 20 00\nbf af 35 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 eb f8 ff ff\n48 89 05 44 4f 20 00\n48 c7 44 24 10 45 35 40 00\n48 c7 44 24 18 bf 35 40 00\n48 8b 35 1b 4e 20 00\nbf cc 35 40 00\n41 b8 01 00 00 00\n4c 89 e2\n4c 89 e9\ne8 b5 f8 ff ff\n48 89 05 8e 4e 20 00\n48 8b 35 17 4d 20 00\nbf bf 35 40 00\n31 c9\n45 31 c0\n48 89 c2\ne8 65 f8 ff ff\n48 89 05 76 4e 20 00\n48 c7 44 24 10 08 44 60 00\n48 c7 44 24 18 f0 69 60 00\n48 c7 05 f1 4d 20 00 30 23 40 00\n48 c7 05 ee 4d 20 00 00 00 00 00\n48 8b 35 6f 4c 20 00\nbf ca 35 40 00\n41 b8 01 00 00 00\n48 89 c2\n4c 89 e9\ne8 49 f8 ff ff\n48 89 05 b2 4e 20 00\n48 c7 05 bf 4d 20 00 01 00 00 00\n48 8b 35 40 4c 20 00\n48 8b 15 11 4e 20 00\nbf d3 35 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 16 f8 ff ff\n48 89 05 8f 4e 20 00\n48 c7 05 8c 4d 20 00 02 00 00 00\n48 8b 35 0d 4c 20 00\n48 8b 15 de 4d 20 00\nbf dd 35 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 e3 f7 ff ff\n48 89 05 6c 4e 20 00\n48 8b 35 65 4c 20 00\n48 8b 15 b6 4d 20 00\nbf 7c 35 40 00\n31 c9\n45 31 c0\ne8 bf f7 ff ff\n48 c7 05 3c 4d 20 00 03 00 00 00\n48 8b 35 bd 4b 20 00\n48 8b 15 8e 4d 20 00\nbf ea 35 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 93 f7 ff ff\n48 89 05 2c 4e 20 00\n48 c7 05 09 4d 20 00 04 00 00 00\n48 8b 35 8a 4b 20 00\n48 8b 15 5b 4d 20 00\nbf f7 35 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 60 f7 ff ff\n48 89 05 09 4e 20 00\n48 c7 05 d6 4c 20 00 05 00 00 00\n48 8b 35 57 4b 20 00\n48 8b 15 28 4d 20 00\nbf 07 36 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 2d f7 ff ff\n48 89 05 e6 4d 20 00\n48 c7 05 a3 4c 20 00 06 00 00 00\n48 8b 35 24 4b 20 00\n48 8b 15 f5 4c 20 00\nbf 16 36 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 fa f6 ff ff\n48 89 05 c3 4d 20 00\n48 8b 35 7c 4b 20 00\n48 8b 15 cd 4c 20 00\nbf 9b 35 40 00\n31 c9\n45 31 c0\ne8 d6 f6 ff ff\n48 c7 05 53 4c 20 00 07 00 00 00\n48 8b 35 d4 4a 20 00\n48 8b 15 a5 4c 20 00\nbf 28 36 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 aa f6 ff ff\n48 89 05 83 4d 20 00\n48 c7 05 20 4c 20 00 08 00 00 00\n48 8b 35 a1 4a 20 00\n48 8b 15 72 4c 20 00\nbf 3b 36 40 00\n41 b8 01 00 00 00\n4c 89 e9\ne8 77 f6 ff ff\n48 89 05 60 4d 20 00\n48 8b 35 99 4b 20 00\nbf 50 36 40 00\n31 c9\n45 31 c0\n4c 89 fa\ne8 57 f6 ff ff\n48 89 c3\n48 c7 44 24 10 bf 43 60 00\n48 c7 44 24 18 00 00 00 00\n48 8b 35 8b 4a 20 00\nbf 59 36 40 00\n41 b8 01 00 00 00\n48 89 da\n4c 89 e9\ne8 25 f6 ff ff\n49 89 c7\n48 8b 35 0b 4a 20 00\nbf 62 36 40 00\n31 c9\n45 31 c0\n48 89 da\ne8 09 f6 ff ff\n48 89 c3\n48 c7 44 24 10 69 36 40 00\n48 c7 44 24 18 f0 69 60 00\n48 c7 05 69 4b 20 00 50 26 40 00\n4c 89 3d 6a 4b 20 00\nba 01 00 00 00\n48 89 df\n4c 89 ee\ne8 e2 f5 ff ff\n48 c7 05 47 4b 20 00 b0 26 40 00\n48 89 1d 48 4b 20 00\nba 01 00 00 00\n4c 89 ff\n4c 89 ee\ne8 c0 f5 ff ff\n48 8b 35 d9 49 20 00\nbf c3 39 40 00\n31 c9\n45 31 c0\n4c 89 fa\ne8 97 f5 ff ff\n48 89 05 80 4b 20 00\n0f be 3d 49 4b 20 00\n31 f6\ne8 62 08 00 00\n48 c7 44 24 10 78 36 40 00\n48 8d 44 24 0c\n48 89 44 24 18\n48 8b 3d 58 4b 20 00\nba 01 00 00 00\n4c 89 ee\ne8 7b f5 ff ff\n8b 7c 24 0c\n31 f6\ne8 b0 08 00 00\ne8 6b 09 00 00\n48 8b 3d 0c 4b 20 00\n48 8b 35 2d 4b 20 00\n31 d2\ne8 06 0b 00 00\n4c 89 f7\ne8 ee f5 ff ff\n49 8b 86 98 00 00 00\n48 8b 78 08\nbe 80 36 40 00\n31 d2\ne8 67 f6 ff ff\n48 89 05 08 4b 20 00\n49 8b 86 98 00 00 00\n49 8b b6 a8 00 00 00\n48 8b 78 08\nba 68 6a 60 00\nb9 01 00 00 00\ne8 cf f5 ff ff\n48 c7 44 24 10 e8 46 60 00\n48 8d 44 24 06\n48 89 44 24 18\n48 c7 44 24 20 6a 44 60 00\n48 8d 44 24 04\n48 89 44 24 28\n48 8b 3d b2 4a 20 00\nba 02 00 00 00\n4c 89 ee\ne8 d5 f4 ff ff\n48 c7 44 24 10 e8 46 60 00\n48 8d 44 24 02\n48 89 44 24 18\n48 c7 44 24 20 6a 44 60 00\n48 89 e0\n48 89 44 24 28\nba 02 00 00 00\n4c 89 ff\n4c 89 ee\ne8 a1 f4 ff ff\n48 c7 44 24 10 91 36 40 00\n0f b7 44 24 06\n48 89 44 24 18\n48 c7 44 24 20 9d 36 40 00\n0f b7 44 24 04\n48 89 44 24 28\n48 c7 44 24 30 aa 36 40 00\n0f b7 44 24 02\n48 89 44 24 38\n48 c7 44 24 40 b6 36 40 00\n0f b7 04 24\n48 89 44 24 48\nba 04 00 00 00\n48 89 df\n4c 89 ee\ne8 36 f4 ff ff\n48 8b 83 98 00 00 00\n48 8b b3 a8 00 00 00\n48 8b 78 08\ne8 2f f6 ff ff\n48 8b 7c 24 78\ne8 65 f5 ff ff\n31 c0\n48 81 c4 80 00 00 00\n5b\n41 5c\n41 5d\n41 5e\n41 5f\nc3\ne8 2d 00 00 00\n48 8b 3d 56 49 20 00\n48 8b 15 7f 49 20 00\n48 8b 0d 90 49 20 00\nbe e8 34 40 00\n31 c0\ne8 7c f4 ff ff\nbf 01 00 00 00\ne8 a2 f5 ff ff\n'
+p33
+S'.text:00000000004017a0\n.text:00000000004017a2\n.text:00000000004017a4\n.text:00000000004017a6\n.text:00000000004017a8\n.text:00000000004017a9\n.text:00000000004017b0\n.text:00000000004017b3\n.text:00000000004017b7\n.text:00000000004017ba\n.text:00000000004017c1\n.text:00000000004017c3\n.text:00000000004017c5\n.text:00000000004017c7\n.text:00000000004017cc\n.text:00000000004017d0\n.text:00000000004017d8\n.text:00000000004017dd\n.text:00000000004017e2\n.text:00000000004017e7\n.text:00000000004017ec\n.text:00000000004017ef\n.text:00000000004017f1\n.text:00000000004017f3\n.text:00000000004017f8\n.text:00000000004017fd\n.text:0000000000401801\n.text:0000000000401804\n.text:0000000000401809\n.text:000000000040180f\n.text:0000000000401814\n.text:0000000000401819\n.text:000000000040181e\n.text:0000000000401823\n.text:0000000000401828\n.text:000000000040182b\n.text:000000000040182e\n.text:0000000000401831\n.text:0000000000401836\n.text:000000000040183c\n.text:0000000000401841\n.text:0000000000401846\n.text:000000000040184c\n.text:0000000000401853\n.text:0000000000401858\n.text:000000000040185d\n.text:0000000000401864\n.text:0000000000401867\n.text:000000000040186d\n.text:0000000000401872\n.text:0000000000401877\n.text:000000000040187c\n.text:0000000000401881\n.text:0000000000401886\n.text:000000000040188b\n.text:000000000040188e\n.text:0000000000401891\n.text:0000000000401896\n.text:000000000040189f\n.text:00000000004018a8\n.text:00000000004018b1\n.text:00000000004018ba\n.text:00000000004018c1\n.text:00000000004018c6\n.text:00000000004018cb\n.text:00000000004018d1\n.text:00000000004018d4\n.text:00000000004018d9\n.text:00000000004018dc\n.text:00000000004018e2\n.text:00000000004018e7\n.text:00000000004018ec\n.text:00000000004018f1\n.text:00000000004018f4\n.text:00000000004018fb\n.text:00000000004018fd\n.text:0000000000401902\n.text:0000000000401905\n.text:0000000000401910\n.text:0000000000401913\n.text:0000000000401916\n.text:0000000000401919\n.text:000000000040191e\n.text:0000000000401921\n.text:0000000000401926\n.text:000000000040192a\n.text:000000000040192d\n.text:0000000000401934\n.text:0000000000401938\n.text:000000000040193b\n.text:000000000040193d\n.text:0000000000401940\n.text:0000000000401945\n.text:000000000040194c\n.text:0000000000401951\n.text:0000000000401953\n.text:0000000000401956\n.text:0000000000401959\n.text:000000000040195e\n.text:0000000000401961\n.text:0000000000401968\n.text:000000000040196d\n.text:000000000040196f\n.text:0000000000401972\n.text:0000000000401975\n.text:000000000040197a\n.text:000000000040197d\n.text:0000000000401984\n.text:0000000000401989\n.text:000000000040198b\n.text:000000000040198e\n.text:0000000000401991\n.text:0000000000401996\n.text:000000000040199f\n.text:00000000004019a8\n.text:00000000004019af\n.text:00000000004019b4\n.text:00000000004019b9\n.text:00000000004019bf\n.text:00000000004019c2\n.text:00000000004019c5\n.text:00000000004019ca\n.text:00000000004019d1\n.text:00000000004019d8\n.text:00000000004019dd\n.text:00000000004019df\n.text:00000000004019e2\n.text:00000000004019e5\n.text:00000000004019ea\n.text:00000000004019f1\n.text:00000000004019fa\n.text:0000000000401a03\n.text:0000000000401a0e\n.text:0000000000401a19\n.text:0000000000401a20\n.text:0000000000401a25\n.text:0000000000401a2b\n.text:0000000000401a2e\n.text:0000000000401a31\n.text:0000000000401a36\n.text:0000000000401a3d\n.text:0000000000401a48\n.text:0000000000401a4f\n.text:0000000000401a56\n.text:0000000000401a5b\n.text:0000000000401a61\n.text:0000000000401a64\n.text:0000000000401a69\n.text:0000000000401a70\n.text:0000000000401a77\n.text:0000000000401a7e\n.text:0000000000401a83\n.text:0000000000401a85\n.text:0000000000401a88\n.text:0000000000401a8d\n.text:0000000000401a98\n.text:0000000000401aa3\n.text:0000000000401aaa\n.text:0000000000401ab1\n.text:0000000000401ab6\n.text:0000000000401abc\n.text:0000000000401abf\n.text:0000000000401ac4\n.text:0000000000401acb\n.text:0000000000401ad6\n.text:0000000000401add\n.text:0000000000401ae4\n.text:0000000000401ae9\n.text:0000000000401aef\n.text:0000000000401af2\n.text:0000000000401af7\n.text:0000000000401afe\n.text:0000000000401b05\n.text:0000000000401b0c\n.text:0000000000401b11\n.text:0000000000401b13\n.text:0000000000401b16\n.text:0000000000401b1b\n.text:0000000000401b26\n.text:0000000000401b31\n.text:0000000000401b38\n.text:0000000000401b3f\n.text:0000000000401b44\n.text:0000000000401b4a\n.text:0000000000401b4d\n.text:0000000000401b52\n.text:0000000000401b59\n.text:0000000000401b64\n.text:0000000000401b6b\n.text:0000000000401b72\n.text:0000000000401b77\n.text:0000000000401b7d\n.text:0000000000401b80\n.text:0000000000401b85\n.text:0000000000401b8c\n.text:0000000000401b95\n.text:0000000000401b9e\n.text:0000000000401ba5\n.text:0000000000401baa\n.text:0000000000401bb0\n.text:0000000000401bb3\n.text:0000000000401bb6\n.text:0000000000401bbb\n.text:0000000000401bc2\n.text:0000000000401bc9\n.text:0000000000401bce\n.text:0000000000401bd0\n.text:0000000000401bd3\n.text:0000000000401bd6\n.text:0000000000401bdb\n.text:0000000000401be2\n.text:0000000000401beb\n.text:0000000000401bf4\n.text:0000000000401bff\n.text:0000000000401c0a\n.text:0000000000401c11\n.text:0000000000401c16\n.text:0000000000401c1c\n.text:0000000000401c1f\n.text:0000000000401c22\n.text:0000000000401c27\n.text:0000000000401c2e\n.text:0000000000401c39\n.text:0000000000401c40\n.text:0000000000401c47\n.text:0000000000401c4c\n.text:0000000000401c52\n.text:0000000000401c55\n.text:0000000000401c5a\n.text:0000000000401c61\n.text:0000000000401c6c\n.text:0000000000401c73\n.text:0000000000401c7a\n.text:0000000000401c7f\n.text:0000000000401c85\n.text:0000000000401c88\n.text:0000000000401c8d\n.text:0000000000401c94\n.text:0000000000401c9b\n.text:0000000000401ca2\n.text:0000000000401ca7\n.text:0000000000401ca9\n.text:0000000000401cac\n.text:0000000000401cb1\n.text:0000000000401cbc\n.text:0000000000401cc3\n.text:0000000000401cca\n.text:0000000000401ccf\n.text:0000000000401cd5\n.text:0000000000401cd8\n.text:0000000000401cdd\n.text:0000000000401ce4\n.text:0000000000401cef\n.text:0000000000401cf6\n.text:0000000000401cfd\n.text:0000000000401d02\n.text:0000000000401d08\n.text:0000000000401d0b\n.text:0000000000401d10\n.text:0000000000401d17\n.text:0000000000401d22\n.text:0000000000401d29\n.text:0000000000401d30\n.text:0000000000401d35\n.text:0000000000401d3b\n.text:0000000000401d3e\n.text:0000000000401d43\n.text:0000000000401d4a\n.text:0000000000401d55\n.text:0000000000401d5c\n.text:0000000000401d63\n.text:0000000000401d68\n.text:0000000000401d6e\n.text:0000000000401d71\n.text:0000000000401d76\n.text:0000000000401d7d\n.text:0000000000401d84\n.text:0000000000401d8b\n.text:0000000000401d90\n.text:0000000000401d92\n.text:0000000000401d95\n.text:0000000000401d9a\n.text:0000000000401da5\n.text:0000000000401dac\n.text:0000000000401db3\n.text:0000000000401db8\n.text:0000000000401dbe\n.text:0000000000401dc1\n.text:0000000000401dc6\n.text:0000000000401dcd\n.text:0000000000401dd8\n.text:0000000000401ddf\n.text:0000000000401de6\n.text:0000000000401deb\n.text:0000000000401df1\n.text:0000000000401df4\n.text:0000000000401df9\n.text:0000000000401e00\n.text:0000000000401e07\n.text:0000000000401e0c\n.text:0000000000401e0e\n.text:0000000000401e11\n.text:0000000000401e14\n.text:0000000000401e19\n.text:0000000000401e1c\n.text:0000000000401e25\n.text:0000000000401e2e\n.text:0000000000401e35\n.text:0000000000401e3a\n.text:0000000000401e40\n.text:0000000000401e43\n.text:0000000000401e46\n.text:0000000000401e4b\n.text:0000000000401e4e\n.text:0000000000401e55\n.text:0000000000401e5a\n.text:0000000000401e5c\n.text:0000000000401e5f\n.text:0000000000401e62\n.text:0000000000401e67\n.text:0000000000401e6a\n.text:0000000000401e73\n.text:0000000000401e7c\n.text:0000000000401e87\n.text:0000000000401e8e\n.text:0000000000401e93\n.text:0000000000401e96\n.text:0000000000401e99\n.text:0000000000401e9e\n.text:0000000000401ea9\n.text:0000000000401eb0\n.text:0000000000401eb5\n.text:0000000000401eb8\n.text:0000000000401ebb\n.text:0000000000401ec0\n.text:0000000000401ec7\n.text:0000000000401ecc\n.text:0000000000401ece\n.text:0000000000401ed1\n.text:0000000000401ed4\n.text:0000000000401ed9\n.text:0000000000401ee0\n.text:0000000000401ee7\n.text:0000000000401ee9\n.text:0000000000401eee\n.text:0000000000401ef7\n.text:0000000000401efc\n.text:0000000000401f01\n.text:0000000000401f08\n.text:0000000000401f0d\n.text:0000000000401f10\n.text:0000000000401f15\n.text:0000000000401f19\n.text:0000000000401f1b\n.text:0000000000401f20\n.text:0000000000401f25\n.text:0000000000401f2c\n.text:0000000000401f33\n.text:0000000000401f35\n.text:0000000000401f3a\n.text:0000000000401f3d\n.text:0000000000401f42\n.text:0000000000401f49\n.text:0000000000401f4d\n.text:0000000000401f52\n.text:0000000000401f54\n.text:0000000000401f59\n.text:0000000000401f60\n.text:0000000000401f67\n.text:0000000000401f6e\n.text:0000000000401f72\n.text:0000000000401f77\n.text:0000000000401f7c\n.text:0000000000401f81\n.text:0000000000401f8a\n.text:0000000000401f8f\n.text:0000000000401f94\n.text:0000000000401f9d\n.text:0000000000401fa2\n.text:0000000000401fa7\n.text:0000000000401fae\n.text:0000000000401fb3\n.text:0000000000401fb6\n.text:0000000000401fbb\n.text:0000000000401fc4\n.text:0000000000401fc9\n.text:0000000000401fce\n.text:0000000000401fd7\n.text:0000000000401fda\n.text:0000000000401fdf\n.text:0000000000401fe4\n.text:0000000000401fe7\n.text:0000000000401fea\n.text:0000000000401fef\n.text:0000000000401ff8\n.text:0000000000401ffd\n.text:0000000000402002\n.text:000000000040200b\n.text:0000000000402010\n.text:0000000000402015\n.text:000000000040201e\n.text:0000000000402023\n.text:0000000000402028\n.text:0000000000402031\n.text:0000000000402035\n.text:000000000040203a\n.text:000000000040203f\n.text:0000000000402042\n.text:0000000000402045\n.text:000000000040204a\n.text:0000000000402051\n.text:0000000000402058\n.text:000000000040205c\n.text:0000000000402061\n.text:0000000000402066\n.text:000000000040206b\n.text:000000000040206d\n.text:0000000000402074\n.text:0000000000402075\n.text:0000000000402077\n.text:0000000000402079\n.text:000000000040207b\n.text:000000000040207d\n.text:000000000040207e\n.text:0000000000402083\n.text:000000000040208a\n.text:0000000000402091\n.text:0000000000402098\n.text:000000000040209d\n.text:000000000040209f\n.text:00000000004020a4\n.text:00000000004020a9\n'
+p34
+tp35
+sS'XBell'
+p36
+(S'\n__stdcall XBell()\n'
+p37
+V\u000avoid XBell(void)\u000a\u000a{\u000a  (*(code *)PTR_XBell_00605020)();\u000a  return;\u000a}\u000a\u000a
+p38
+S'JMP qword ptr [0x00605020]\n'
+p39
+S'ff 25 fa 3b 20 00\n'
+p40
+S'.plt:0000000000401420\n'
+p41
+tp42
+sS'variable_labeltype_callback'
+p43
+(S'\n__stdcall variable_labeltype_callback(Widget gw, XtPointer closure, XtPointer data)\n'
+p44
+V\u000avoid variable_labeltype_callback(Widget gw,XtPointer closure,XtPointer data)\u000a\u000a{\u000a  set_labeltype_menu((ulong)(uint)(int)(char)closure,1);\u000a  return;\u000a}\u000a\u000a
+p45
+S'MOVSX EDI,SIL\nMOV ESI,0x1\nJMP 0x00402750\n'
+p46
+S'40 0f be fe\nbe 01 00 00 00\ne9 02 05 00 00\n'
+p47
+S'.text:0000000000402240\n.text:0000000000402244\n.text:0000000000402249\n'
+p48
+tp49
+sS'XtSetLanguageProc'
+p50
+(S'\n__stdcall XtSetLanguageProc()\n'
+p51
+V\u000avoid XtSetLanguageProc(void)\u000a\u000a{\u000a  (*(code *)PTR_XtSetLanguageProc_00605120)();\u000a  return;\u000a}\u000a\u000a
+p52
+S'JMP qword ptr [0x00605120]\n'
+p53
+S'ff 25 fa 3a 20 00\n'
+p54
+S'.plt:0000000000401620\n'
+p55
+tp56
+sS'toggle_callback'
+p57
+(S'\n__stdcall toggle_callback(Widget gw, XtPointer closure, XtPointer data)\n'
+p58
+V\u000avoid toggle_callback(Widget gw,XtPointer closure,XtPointer data)\u000a\u000a{\u000a  if ((char)data != 0) {\u000a    add_to_selected_list((XmuWidgetNode *)closure);\u000a    update_selection_items();\u000a    return;\u000a  }\u000a  remove_from_selected_list();\u000a  update_selection_items();\u000a  return;\u000a}\u000a\u000a
+p59
+S'PUSH RAX\nMOV RAX,RSI\nXOR ESI,ESI\nMOV RDI,RAX\nTEST DL,DL\nJZ 0x00403398\nCALL 0x00403230\nPOP RAX\nJMP 0x00402890\nCALL 0x00402fc0\nPOP RAX\nJMP 0x00402890\n'
+p60
+S'50\n48 89 f0\n31 f6\n48 89 c7\n84 d2\n74 0b\ne8 9e fe ff ff\n58\ne9 f8 f4 ff ff\ne8 23 fc ff ff\n58\ne9 ed f4 ff ff\n'
+p61
+S'.text:0000000000403380\n.text:0000000000403381\n.text:0000000000403384\n.text:0000000000403386\n.text:0000000000403389\n.text:000000000040338b\n.text:000000000040338d\n.text:0000000000403392\n.text:0000000000403393\n.text:0000000000403398\n.text:000000000040339d\n.text:000000000040339e\n'
+p62
+tp63
+sS'XtGetValues'
+p64
+(S'\n__stdcall XtGetValues()\n'
+p65
+V\u000avoid XtGetValues(void)\u000a\u000a{\u000a  (*(code *)PTR_XtGetValues_00605058)();\u000a  return;\u000a}\u000a\u000a
+p66
+S'JMP qword ptr [0x00605058]\n'
+p67
+S'ff 25 c2 3b 20 00\n'
+p68
+S'.plt:0000000000401490\n'
+p69
+tp70
+sS'XtDestroyWidget'
+p71
+(S'\n__stdcall XtDestroyWidget()\n'
+p72
+V\u000avoid XtDestroyWidget(void)\u000a\u000a{\u000a  (*(code *)PTR_XtDestroyWidget_00605128)();\u000a  return;\u000a}\u000a\u000a
+p73
+S'JMP qword ptr [0x00605128]\n'
+p74
+S'ff 25 f2 3a 20 00\n'
+p75
+S'.plt:0000000000401630\n'
+p76
+tp77
+sS'XtRealloc'
+p78
+(S'\n__stdcall XtRealloc()\n'
+p79
+V\u000avoid XtRealloc(void)\u000a\u000a{\u000a  (*(code *)PTR_XtRealloc_00605080)();\u000a  return;\u000a}\u000a\u000a
+p80
+S'JMP qword ptr [0x00605080]\n'
+p81
+S'ff 25 9a 3b 20 00\n'
+p82
+S'.plt:00000000004014e0\n'
+p83
+tp84
+sS'create_viewres_data'
+p85
+(S'\n__stdcall create_viewres_data(XmuWidgetNode * node)\n'
+p86
+V\u000aViewresData * create_viewres_data(XmuWidgetNode *node)\u000a\u000a{\u000a  Cardinal CVar1;\u000a  Cardinal CVar2;\u000a  ViewresData *pVVar3;\u000a  Cardinal CVar4;\u000a  \u000a  pVVar3 = (ViewresData *)malloc(0x30);\u000a  if (pVVar3 != (ViewresData *)0x0) {\u000a    pVVar3->resource_labels = (char **)0x0;\u000a    CVar1 = XmuWnCountOwnedResources(node,node,0);\u000a    pVVar3->nnewresources = CVar1;\u000a    CVar2 = XmuWnCountOwnedResources(node,node,1);\u000a    pVVar3->nnewconstraints = CVar2;\u000a    CVar4 = CVar2 + 1;\u000a    if (CVar2 == 0) {\u000a      CVar4 = CVar2;\u000a    }\u000a    pVVar3->nnew = CVar4 + CVar1;\u000a    *(undefined4 *)&pVVar3->instance = 0;\u000a    *(undefined4 *)((long)&pVVar3->instance + 4) = 0;\u000a    *(undefined4 *)&pVVar3->resource_lw = 0;\u000a    *(undefined4 *)((long)&pVVar3->resource_lw + 4) = 0;\u000a    pVVar3->selection_index = -1;\u000a  }\u000a  return pVVar3;\u000a}\u000a\u000a
+p87
+S'PUSH RBP\nPUSH R14\nPUSH RBX\nMOV R14,RDI\nMOV EDI,0x30\nCALL 0x004015a0\nMOV RBX,RAX\nTEST RBX,RBX\nJZ 0x00402220\nMOV qword ptr [RBX],0x0\nXOR EDX,EDX\nMOV RDI,R14\nMOV RSI,R14\nCALL 0x00401460\nMOV EBP,EAX\nMOV dword ptr [RBX + 0x8],EBP\nMOV EDX,0x1\nMOV RDI,R14\nMOV RSI,R14\nCALL 0x00401460\nMOV dword ptr [RBX + 0xc],EAX\nLEA ECX,[RAX + 0x1]\nTEST EAX,EAX\nCMOVZ ECX,EAX\nADD ECX,EBP\nMOV dword ptr [RBX + 0x10],ECX\nXORPS XMM0,XMM0\nMOVUPS xmmword ptr [RBX + 0x18],XMM0\nMOV dword ptr [RBX + 0x28],0xffffffff\nMOV RAX,RBX\nPOP RBX\nPOP R14\nPOP RBP\nRET\n'
+p88
+S'55\n41 56\n53\n49 89 fe\nbf 30 00 00 00\ne8 cf f3 ff ff\n48 89 c3\n48 85 db\n74 47\n48 c7 03 00 00 00 00\n31 d2\n4c 89 f7\n4c 89 f6\ne8 73 f2 ff ff\n89 c5\n89 6b 08\nba 01 00 00 00\n4c 89 f7\n4c 89 f6\ne8 5e f2 ff ff\n89 43 0c\n8d 48 01\n85 c0\n0f 44 c8\n01 e9\n89 4b 10\n0f 57 c0\n0f 11 43 18\nc7 43 28 ff ff ff ff\n48 89 d8\n5b\n41 5e\n5d\nc3\n'
+p89
+S'.text:00000000004021c0\n.text:00000000004021c1\n.text:00000000004021c3\n.text:00000000004021c4\n.text:00000000004021c7\n.text:00000000004021cc\n.text:00000000004021d1\n.text:00000000004021d4\n.text:00000000004021d7\n.text:00000000004021d9\n.text:00000000004021e0\n.text:00000000004021e2\n.text:00000000004021e5\n.text:00000000004021e8\n.text:00000000004021ed\n.text:00000000004021ef\n.text:00000000004021f2\n.text:00000000004021f7\n.text:00000000004021fa\n.text:00000000004021fd\n.text:0000000000402202\n.text:0000000000402205\n.text:0000000000402208\n.text:000000000040220a\n.text:000000000040220d\n.text:000000000040220f\n.text:0000000000402212\n.text:0000000000402215\n.text:0000000000402219\n.text:0000000000402220\n.text:0000000000402223\n.text:0000000000402224\n.text:0000000000402226\n.text:0000000000402227\n'
+p90
+tp91
+sS'FUN_00401400'
+p92
+(S'\n__stdcall FUN_00401400()\n'
+p93
+V\u000avoid FUN_00401400(void)\u000a\u000a{\u000a                    /* WARNING: Treating indirect jump as call */\u000a  (*(code *)PTR_00605010)();\u000a  return;\u000a}\u000a\u000a
+p94
+S'PUSH qword ptr [0x00605008]\nJMP qword ptr [0x00605010]\n'
+p95
+S'ff 35 02 3c 20 00\nff 25 04 3c 20 00\n'
+p96
+S'.plt:0000000000401400\n.plt:0000000000401406\n'
+p97
+tp98
+sS'frame_dummy'
+p99
+(S'\n__stdcall frame_dummy()\n'
+p100
+V\u000a/* WARNING: Removing unreachable block (ram,0x0040178a) */\u000a\u000avoid frame_dummy(void)\u000a\u000a{\u000a  register_tm_clones();\u000a  return;\u000a}\u000a\u000a
+p101
+S'MOV EDI,0x604378\nCMP qword ptr [RDI],0x0\nJNZ 0x00401780\nJMP 0x00401710\nMOV EAX,0x0\nTEST RAX,RAX\nJZ 0x0040177b\nPUSH RBP\nMOV RBP,RSP\nCALL RAX\nPOP RBP\nJMP 0x00401710\n'
+p102
+S'bf 78 43 60 00\n48 83 3f 00\n75 05\neb 93\nb8 00 00 00 00\n48 85 c0\n74 f1\n55\n48 89 e5\nff d0\n5d\ne9 7a ff ff ff\n'
+p103
+S'.text:0000000000401770\n.text:0000000000401775\n.text:0000000000401779\n.text:000000000040177b\n.text:0000000000401780\n.text:0000000000401785\n.text:0000000000401788\n.text:000000000040178a\n.text:000000000040178b\n.text:000000000040178e\n.text:0000000000401790\n.text:0000000000401791\n'
+p104
+tp105
+sS'XmuCompareISOLatin1'
+p106
+(S'\n__stdcall XmuCompareISOLatin1()\n'
+p107
+V\u000avoid XmuCompareISOLatin1(void)\u000a\u000a{\u000a  (*(code *)PTR_XmuCompareISOLatin1_006050c8)();\u000a  return;\u000a}\u000a\u000a
+p108
+S'JMP qword ptr [0x006050c8]\n'
+p109
+S'ff 25 52 3b 20 00\n'
+p110
+S'.plt:0000000000401570\n'
+p111
+tp112
+sS'do_single_arg'
+p113
+(S'\n__stdcall do_single_arg(Widget w, String * params, _nametable * table, XtCallbackProc * proc)\n'
+p114
+V\u000avoid do_single_arg(Widget w,String *params,_nametable *table,\u000a                  void (*proc)(Widget,XtPointer,XtPointer))\u000a\u000a{\u000a  int iVar1;\u000a  long lVar2;\u000a  int in_R8D;\u000a  code *UNRECOVERED_JUMPTABLE;\u000a  int *piVar3;\u000a  \u000a  if (((int)table == 1) && (0 < in_R8D)) {\u000a    piVar3 = (int *)(proc + 8);\u000a    lVar2 = 0;\u000a    do {\u000a      iVar1 = XmuCompareISOLatin1(*params,*(undefined8 *)(piVar3 + -2));\u000a      if (iVar1 == 0) {\u000a                    /* WARNING: Could not recover jumptable at 0x00402db6. Too many branches */\u000a                    /* WARNING: Treating indirect jump as call */\u000a        (*UNRECOVERED_JUMPTABLE)(w,(long)*piVar3,0);\u000a        return;\u000a      }\u000a      lVar2 = lVar2 + 1;\u000a      piVar3 = piVar3 + 4;\u000a    } while (lVar2 < (long)in_R8D);\u000a  }\u000a  XBell(((w->core).screen)->display,0);\u000a  return;\u000a}\u000a\u000a
+p115
+S'PUSH RBP\nPUSH R15\nPUSH R14\nPUSH R13\nPUSH R12\nPUSH RBX\nPUSH RAX\nMOV R13,RCX\nMOV R15,RSI\nMOV R14,RDI\nCMP EDX,0x1\nJNZ 0x00402d7c\nMOV RBP,R9\nTEST R8D,R8D\nJLE 0x00402d7c\nMOVSXD R12,R8D\nADD R13,0x8\nXOR EBX,EBX\nNOP word ptr [RAX + RAX*0x1]\nMOV RDI,qword ptr [R15]\nMOV RSI,qword ptr [R13 + -0x8]\nCALL 0x00401570\nTEST EAX,EAX\nJZ 0x00402d9c\nINC RBX\nADD R13,0x10\nCMP RBX,R12\nJL 0x00402d60\nMOV RAX,qword ptr [0x98 + R14]\nMOV RDI,qword ptr [RAX + 0x8]\nXOR ESI,ESI\nADD RSP,0x8\nPOP RBX\nPOP R12\nPOP R13\nPOP R14\nPOP R15\nPOP RBP\nJMP 0x00401420\nMOVSXD RSI,dword ptr [R13]\nXOR EDX,EDX\nMOV RDI,R14\nMOV RAX,RBP\nADD RSP,0x8\nPOP RBX\nPOP R12\nPOP R13\nPOP R14\nPOP R15\nPOP RBP\nJMP RAX\n'
+p116
+S'55\n41 57\n41 56\n41 55\n41 54\n53\n50\n49 89 cd\n49 89 f7\n49 89 fe\n83 fa 01\n75 33\n4c 89 cd\n45 85 c0\n7e 2b\n4d 63 e0\n49 83 c5 08\n31 db\n66 0f 1f 44 00 00\n49 8b 3f\n49 8b 75 f8\ne8 04 e8 ff ff\n85 c0\n74 2c\n48 ff c3\n49 83 c5 10\n4c 39 e3\n7c e4\n49 8b 86 98 00 00 00\n48 8b 78 08\n31 f6\n48 83 c4 08\n5b\n41 5c\n41 5d\n41 5e\n41 5f\n5d\ne9 84 e6 ff ff\n49 63 75 00\n31 d2\n4c 89 f7\n48 89 e8\n48 83 c4 08\n5b\n41 5c\n41 5d\n41 5e\n41 5f\n5d\nff e0\n'
+p117
+S'.text:0000000000402d30\n.text:0000000000402d31\n.text:0000000000402d33\n.text:0000000000402d35\n.text:0000000000402d37\n.text:0000000000402d39\n.text:0000000000402d3a\n.text:0000000000402d3b\n.text:0000000000402d3e\n.text:0000000000402d41\n.text:0000000000402d44\n.text:0000000000402d47\n.text:0000000000402d49\n.text:0000000000402d4c\n.text:0000000000402d4f\n.text:0000000000402d51\n.text:0000000000402d54\n.text:0000000000402d58\n.text:0000000000402d5a\n.text:0000000000402d60\n.text:0000000000402d63\n.text:0000000000402d67\n.text:0000000000402d6c\n.text:0000000000402d6e\n.text:0000000000402d70\n.text:0000000000402d73\n.text:0000000000402d77\n.text:0000000000402d7a\n.text:0000000000402d7c\n.text:0000000000402d83\n.text:0000000000402d87\n.text:0000000000402d89\n.text:0000000000402d8d\n.text:0000000000402d8e\n.text:0000000000402d90\n.text:0000000000402d92\n.text:0000000000402d94\n.text:0000000000402d96\n.text:0000000000402d97\n.text:0000000000402d9c\n.text:0000000000402da0\n.text:0000000000402da2\n.text:0000000000402da5\n.text:0000000000402da8\n.text:0000000000402dac\n.text:0000000000402dad\n.text:0000000000402daf\n.text:0000000000402db1\n.text:0000000000402db3\n.text:0000000000402db5\n.text:0000000000402db6\n'
+p118
+tp119
+sS'porthole_callback'
+p120
+(S'\n__stdcall porthole_callback(Widget gw, XtPointer closure, XtPointer data)\n'
+p121
+V\u000avoid porthole_callback(Widget gw,XtPointer closure,XtPointer data)\u000a\u000a{\u000a  uint uVar1;\u000a  Arg args [6];\u000a  char *local_68;\u000a  long local_60;\u000a  char *local_58;\u000a  long local_50;\u000a  char *local_48;\u000a  ulong local_40;\u000a  char *local_38;\u000a  ulong local_30;\u000a  char *local_28;\u000a  ulong local_20;\u000a  char *local_18;\u000a  ulong local_10;\u000a  \u000a  local_68 = "sliderX";\u000a  local_60 = (long)*(short *)((long)data + 4);\u000a  local_58 = "sliderY";\u000a  local_50 = (long)*(short *)((long)data + 6);\u000a  uVar1 = 2;\u000a  if (*(int *)data != 3) {\u000a    local_48 = "sliderWidth";\u000a    local_40 = (ulong)*(ushort *)((long)data + 8);\u000a    local_38 = "sliderHeight";\u000a    local_30 = (ulong)*(ushort *)((long)data + 10);\u000a    local_28 = "canvasWidth";\u000a    local_20 = (ulong)*(ushort *)((long)data + 0xc);\u000a    local_18 = "canvasHeight";\u000a    local_10 = (ulong)*(ushort *)((long)data + 0xe);\u000a    uVar1 = 6;\u000a  }\u000a  XtSetValues(closure,&local_68,(ulong)uVar1,&local_68);\u000a  return;\u000a}\u000a\u000a
+p122
+S'SUB RSP,0x68\nMOV qword ptr [RSP],0x403b0e\nMOVSX RAX,word ptr [RDX + 0x4]\nMOV qword ptr [RSP + 0x8],RAX\nMOV qword ptr [RSP + 0x10],0x403b16\nMOVSX RAX,word ptr [RDX + 0x6]\nMOV qword ptr [RSP + 0x18],RAX\nMOV EAX,0x2\nCMP dword ptr [RDX],0x3\nJZ 0x00402730\nMOV qword ptr [RSP + 0x20],0x4036aa\nMOVZX EAX,word ptr [RDX + 0x8]\nMOV qword ptr [RSP + 0x28],RAX\nMOV qword ptr [RSP + 0x30],0x4036b6\nMOVZX EAX,word ptr [RDX + 0xa]\nMOV qword ptr [RSP + 0x38],RAX\nMOV qword ptr [RSP + 0x40],0x403691\nMOVZX EAX,word ptr [RDX + 0xc]\nMOV qword ptr [RSP + 0x48],RAX\nMOV qword ptr [RSP + 0x50],0x40369d\nMOVZX EAX,word ptr [RDX + 0xe]\nMOV qword ptr [RSP + 0x58],RAX\nMOV EAX,0x6\nMOV RCX,RSP\nMOV RDI,RSI\nMOV RSI,RCX\nMOV EDX,EAX\nCALL 0x00401480\nADD RSP,0x68\nRET\n'
+p123
+S'48 83 ec 68\n48 c7 04 24 0e 3b 40 00\n48 0f bf 42 04\n48 89 44 24 08\n48 c7 44 24 10 16 3b 40 00\n48 0f bf 42 06\n48 89 44 24 18\nb8 02 00 00 00\n83 3a 03\n74 4d\n48 c7 44 24 20 aa 36 40 00\n0f b7 42 08\n48 89 44 24 28\n48 c7 44 24 30 b6 36 40 00\n0f b7 42 0a\n48 89 44 24 38\n48 c7 44 24 40 91 36 40 00\n0f b7 42 0c\n48 89 44 24 48\n48 c7 44 24 50 9d 36 40 00\n0f b7 42 0e\n48 89 44 24 58\nb8 06 00 00 00\n48 89 e1\n48 89 f7\n48 89 ce\n89 c2\ne8 40 ed ff ff\n48 83 c4 68\nc3\n'
+p124
+S'.text:00000000004026b0\n.text:00000000004026b4\n.text:00000000004026bc\n.text:00000000004026c1\n.text:00000000004026c6\n.text:00000000004026cf\n.text:00000000004026d4\n.text:00000000004026d9\n.text:00000000004026de\n.text:00000000004026e1\n.text:00000000004026e3\n.text:00000000004026ec\n.text:00000000004026f0\n.text:00000000004026f5\n.text:00000000004026fe\n.text:0000000000402702\n.text:0000000000402707\n.text:0000000000402710\n.text:0000000000402714\n.text:0000000000402719\n.text:0000000000402722\n.text:0000000000402726\n.text:000000000040272b\n.text:0000000000402730\n.text:0000000000402733\n.text:0000000000402736\n.text:0000000000402739\n.text:000000000040273b\n.text:0000000000402740\n.text:0000000000402744\n'
+p125
+tp126
+sS'XRaiseWindow'
+p127
+(S'\n__stdcall XRaiseWindow()\n'
+p128
+V\u000avoid XRaiseWindow(void)\u000a\u000a{\u000a  (*(code *)PTR_XRaiseWindow_00605158)();\u000a  return;\u000a}\u000a\u000a
+p129
+S'JMP qword ptr [0x00605158]\n'
+p130
+S'ff 25 c2 3a 20 00\n'
+p131
+S'.plt:0000000000401690\n'
+p132
+tp133
+sS'XtCreatePopupShell'
+p134
+(S'\n__stdcall XtCreatePopupShell()\n'
+p135
+V\u000avoid XtCreatePopupShell(void)\u000a\u000a{\u000a  (*(code *)PTR_XtCreatePopupShell_00605030)();\u000a  return;\u000a}\u000a\u000a
+p136
+S'JMP qword ptr [0x00605030]\n'
+p137
+S'ff 25 ea 3b 20 00\n'
+p138
+S'.plt:0000000000401440\n'
+p139
+tp140
+sS'XmuWnNameToNode'
+p141
+(S'\n__stdcall XmuWnNameToNode()\n'
+p142
+V\u000avoid XmuWnNameToNode(void)\u000a\u000a{\u000a  (*(code *)PTR_XmuWnNameToNode_006050d8)();\u000a  return;\u000a}\u000a\u000a
+p143
+S'JMP qword ptr [0x006050d8]\n'
+p144
+S'ff 25 42 3b 20 00\n'
+p145
+S'.plt:0000000000401590\n'
+p146
+tp147
+sS'XMapWindow'
+p148
+(S'\n__stdcall XMapWindow()\n'
+p149
+V\u000avoid XMapWindow(void)\u000a\u000a{\u000a  (*(code *)PTR_XMapWindow_00605130)();\u000a  return;\u000a}\u000a\u000a
+p150
+S'JMP qword ptr [0x00605130]\n'
+p151
+S'ff 25 ea 3a 20 00\n'
+p152
+S'.plt:0000000000401640\n'
+p153
+tp154
+sS'update_selection_items'
+p155
+(S'\n__stdcall update_selection_items()\n'
+p156
+V\u000avoid update_selection_items(void)\u000a\u000a{\u000a  XmuWidgetNode *pXVar1;\u000a  char cVar2;\u000a  Arg args [1];\u000a  char cVar3;\u000a  char cVar4;\u000a  long lVar5;\u000a  XtArgVal XVar6;\u000a  char cVar7;\u000a  XtArgVal XVar8;\u000a  char cVar9;\u000a  char cVar10;\u000a  \u000a  if (selected_list.n_elements < 1) {\u000a    cVar10 = 0;\u000a    XVar6 = 0;\u000a    XVar8 = 0;\u000a    cVar4 = 0;\u000a  }\u000a  else {\u000a    lVar5 = 0;\u000a    cVar4 = 0;\u000a    cVar7 = 0;\u000a    cVar9 = 0;\u000a    cVar10 = 0;\u000a    do {\u000a      pXVar1 = selected_list.elements[lVar5];\u000a      cVar2 = cVar10;\u000a      if (*(int *)((long)pXVar1->data + 0x10) != 0) {\u000a        if (*(long *)((long)pXVar1->data + 0x20) != 0) {\u000a          cVar3 = XtIsManaged();\u000a          cVar2 = 1;\u000a          if (cVar3 != 0) goto LAB_004028f3;\u000a        }\u000a        cVar4 = 1;\u000a        cVar2 = cVar10;\u000a      }\u000aLAB_004028f3:\u000a      cVar10 = cVar2;\u000a      if (pXVar1 != topnode) {\u000a        cVar9 = 1;\u000a      }\u000a      if (pXVar1->children != (_XmuWidgetNode *)0x0) {\u000a        cVar7 = 1;\u000a      }\u000a      lVar5 = lVar5 + 1;\u000a    } while (lVar5 < (long)selected_list.n_elements);\u000a    XVar6 = (XtArgVal)cVar9;\u000a    XVar8 = (XtArgVal)cVar7;\u000a  }\u000a  args[0].value = (XtArgVal)cVar4;\u000a  XtSetValues(view_widgets_4,0x605470,1);\u000a  args[0].value = (XtArgVal)cVar10;\u000a  XtSetValues(view_widgets_5,0x605470,1);\u000a  args[0].value = ZEXT18(0 < selected_list.n_elements);\u000a  XtSetValues(select_widgets_0,0x605470,1);\u000a  args[0].value = XVar6;\u000a  XtSetValues(select_widgets_3,0x605470,1);\u000a  XtSetValues(select_widgets_4,0x605470,1);\u000a  args[0].value = XVar8;\u000a  XtSetValues(select_widgets_5,0x605470,1);\u000a  XtSetValues(select_widgets_6,0x605470,1);\u000a  args[0].value = ZEXT18(0 < NumberShowing);\u000a  XtSetValues(select_widgets_8,0x605470,1);\u000a  return;\u000a}\u000a\u000a
+p157
+S'PUSH RBP\nPUSH R15\nPUSH R14\nPUSH R13\nPUSH R12\nPUSH RBX\nPUSH RAX\nCMP dword ptr [0x00606a18],0x0\nJLE 0x00402929\nXOR EBX,EBX\nXOR EAX,EAX\nMOV qword ptr [RSP],RAX\nXOR R12D,R12D\nXOR R13D,R13D\nXOR R15D,R15D\nNOP dword ptr [RAX]\nMOV RAX,qword ptr [0x00606a20]\nMOV RBP,qword ptr [RAX + RBX*0x8]\nMOV RAX,qword ptr [RBP + 0x70]\nCMP dword ptr [RAX + 0x10],0x0\nJZ 0x004028f0\nMOV RDI,qword ptr [RAX + 0x20]\nTEST RDI,RDI\nJZ 0x004028ea\nCALL 0x00401600\nMOV R14B,0x1\nTEST AL,AL\nJNZ 0x004028f3\nMOV AL,0x1\nMOV qword ptr [RSP],RAX\nMOV R14B,R15B\nCMP RBP,qword ptr [0x00606a38]\nJZ 0x004028ff\nMOV R13B,0x1\nCMP qword ptr [RBP + 0x18],0x0\nJZ 0x00402909\nMOV R12B,0x1\nINC RBX\nMOVSXD RAX,dword ptr [0x00606a18]\nCMP RBX,RAX\nMOV R15B,R14B\nJL 0x004028c0\nMOVSX RBX,R13B\nMOVSX R12,R12B\nMOV RAX,qword ptr [RSP]\nJMP 0x00402933\nXOR R14D,R14D\nXOR EBX,EBX\nXOR R12D,R12D\nXOR EAX,EAX\nMOVSX RAX,AL\nMOV qword ptr [0x00605478],RAX\nMOV RDI,qword ptr [0x00606ac0]\nMOV ESI,0x605470\nMOV EDX,0x1\nCALL 0x00401480\nMOVSX RAX,R14B\nMOV qword ptr [0x00605478],RAX\nMOV RDI,qword ptr [0x00606ad0]\nMOV ESI,0x605470\nMOV EDX,0x1\nCALL 0x00401480\nXOR EAX,EAX\nCMP dword ptr [0x00606a18],0x0\nSETG AL\nMOV qword ptr [0x00605478],RAX\nMOV RDI,qword ptr [0x00606ae0]\nMOV ESI,0x605470\nMOV EDX,0x1\nCALL 0x00401480\nMOV qword ptr [0x00605478],RBX\nMOV RDI,qword ptr [0x00606b10]\nMOV ESI,0x605470\nMOV EDX,0x1\nCALL 0x00401480\nMOV RDI,qword ptr [0x00606b20]\nMOV ESI,0x605470\nMOV EDX,0x1\nCALL 0x00401480\nMOV qword ptr [0x00605478],R12\nMOV RDI,qword ptr [0x00606b30]\nMOV ESI,0x605470\nMOV EDX,0x1\nCALL 0x00401480\nMOV RDI,qword ptr [0x00606b40]\nMOV ESI,0x605470\nMOV EDX,0x1\nCALL 0x00401480\nXOR EAX,EAX\nCMP dword ptr [0x00606a70],0x0\nSETG AL\nMOV qword ptr [0x00605478],RAX\nMOV RDI,qword ptr [0x00606b60]\nMOV ESI,0x605470\nMOV EDX,0x1\nADD RSP,0x8\nPOP RBX\nPOP R12\nPOP R13\nPOP R14\nPOP R15\nPOP RBP\nJMP 0x00401480\n'
+p158
+S'55\n41 57\n41 56\n41 55\n41 54\n53\n50\n83 3d 76 41 20 00 00\n0f 8e 81 00 00 00\n31 db\n31 c0\n48 89 04 24\n45 31 e4\n45 31 ed\n45 31 ff\n0f 1f 80 00 00 00 00\n48 8b 05 59 41 20 00\n48 8b 2c d8\n48 8b 45 70\n83 78 10 00\n74 1b\n48 8b 78 20\n48 85 ff\n74 0c\ne8 1d ed ff ff\n41 b6 01\n84 c0\n75 09\nb0 01\n48 89 04 24\n45 88 fe\n48 3b 2d 3e 41 20 00\n74 03\n41 b5 01\n48 83 7d 18 00\n74 03\n41 b4 01\n48 ff c3\n48 63 05 05 41 20 00\n48 39 c3\n45 88 f7\n7c a5\n49 0f be dd\n4d 0f be e4\n48 8b 04 24\neb 0a\n45 31 f6\n31 db\n45 31 e4\n31 c0\n48 0f be c0\n48 89 05 3a 2b 20 00\n48 8b 3d 7b 41 20 00\nbe 70 54 60 00\nba 01 00 00 00\ne8 2c eb ff ff\n49 0f be c6\n48 89 05 19 2b 20 00\n48 8b 3d 6a 41 20 00\nbe 70 54 60 00\nba 01 00 00 00\ne8 0b eb ff ff\n31 c0\n83 3d 9a 40 20 00 00\n0f 9f c0\n48 89 05 f0 2a 20 00\n48 8b 3d 51 41 20 00\nbe 70 54 60 00\nba 01 00 00 00\ne8 e2 ea ff ff\n48 89 1d d3 2a 20 00\n48 8b 3d 64 41 20 00\nbe 70 54 60 00\nba 01 00 00 00\ne8 c5 ea ff ff\n48 8b 3d 5e 41 20 00\nbe 70 54 60 00\nba 01 00 00 00\ne8 af ea ff ff\n4c 89 25 a0 2a 20 00\n48 8b 3d 51 41 20 00\nbe 70 54 60 00\nba 01 00 00 00\ne8 92 ea ff ff\n48 8b 3d 4b 41 20 00\nbe 70 54 60 00\nba 01 00 00 00\ne8 7c ea ff ff\n31 c0\n83 3d 63 40 20 00 00\n0f 9f c0\n48 89 05 61 2a 20 00\n48 8b 3d 42 41 20 00\nbe 70 54 60 00\nba 01 00 00 00\n48 83 c4 08\n5b\n41 5c\n41 5d\n41 5e\n41 5f\n5d\ne9 45 ea ff ff\n'
+p159
+S'.text:0000000000402890\n.text:0000000000402891\n.text:0000000000402893\n.text:0000000000402895\n.text:0000000000402897\n.text:0000000000402899\n.text:000000000040289a\n.text:000000000040289b\n.text:00000000004028a2\n.text:00000000004028a8\n.text:00000000004028aa\n.text:00000000004028ac\n.text:00000000004028b0\n.text:00000000004028b3\n.text:00000000004028b6\n.text:00000000004028b9\n.text:00000000004028c0\n.text:00000000004028c7\n.text:00000000004028cb\n.text:00000000004028cf\n.text:00000000004028d3\n.text:00000000004028d5\n.text:00000000004028d9\n.text:00000000004028dc\n.text:00000000004028de\n.text:00000000004028e3\n.text:00000000004028e6\n.text:00000000004028e8\n.text:00000000004028ea\n.text:00000000004028ec\n.text:00000000004028f0\n.text:00000000004028f3\n.text:00000000004028fa\n.text:00000000004028fc\n.text:00000000004028ff\n.text:0000000000402904\n.text:0000000000402906\n.text:0000000000402909\n.text:000000000040290c\n.text:0000000000402913\n.text:0000000000402916\n.text:0000000000402919\n.text:000000000040291b\n.text:000000000040291f\n.text:0000000000402923\n.text:0000000000402927\n.text:0000000000402929\n.text:000000000040292c\n.text:000000000040292e\n.text:0000000000402931\n.text:0000000000402933\n.text:0000000000402937\n.text:000000000040293e\n.text:0000000000402945\n.text:000000000040294a\n.text:000000000040294f\n.text:0000000000402954\n.text:0000000000402958\n.text:000000000040295f\n.text:0000000000402966\n.text:000000000040296b\n.text:0000000000402970\n.text:0000000000402975\n.text:0000000000402977\n.text:000000000040297e\n.text:0000000000402981\n.text:0000000000402988\n.text:000000000040298f\n.text:0000000000402994\n.text:0000000000402999\n.text:000000000040299e\n.text:00000000004029a5\n.text:00000000004029ac\n.text:00000000004029b1\n.text:00000000004029b6\n.text:00000000004029bb\n.text:00000000004029c2\n.text:00000000004029c7\n.text:00000000004029cc\n.text:00000000004029d1\n.text:00000000004029d8\n.text:00000000004029df\n.text:00000000004029e4\n.text:00000000004029e9\n.text:00000000004029ee\n.text:00000000004029f5\n.text:00000000004029fa\n.text:00000000004029ff\n.text:0000000000402a04\n.text:0000000000402a06\n.text:0000000000402a0d\n.text:0000000000402a10\n.text:0000000000402a17\n.text:0000000000402a1e\n.text:0000000000402a23\n.text:0000000000402a28\n.text:0000000000402a2c\n.text:0000000000402a2d\n.text:0000000000402a2f\n.text:0000000000402a31\n.text:0000000000402a33\n.text:0000000000402a35\n.text:0000000000402a36\n'
+p160
+tp161
+sS'remove_nodes_from_selected_list'
+p162
+(S'\n__stdcall remove_nodes_from_selected_list()\n'
+p163
+V\u000avoid remove_nodes_from_selected_list(uint uParm1)\u000a\u000a{\u000a  XmuWidgetNode *pXVar1;\u000a  XtPointer pvVar2;\u000a  int iVar3;\u000a  ulong uVar4;\u000a  \u000a  if (0 < (int)uParm1) {\u000a    uVar4 = 0;\u000a    do {\u000a      pXVar1 = selected_list.elements[uVar4];\u000a      pvVar2 = pXVar1->data;\u000a      selected_list.elements[(long)*(int *)((long)pvVar2 + 0x28)] = (XmuWidgetNode *)0x0;\u000a      *(undefined4 *)((long)pXVar1->data + 0x28) = 0xffffffff;\u000a      XtSetValues(*(undefined8 *)((long)pvVar2 + 0x18),false_args,1);\u000a      uVar4 = uVar4 + 1;\u000a    } while ((ulong)uParm1 != uVar4);\u000a  }\u000a  iVar3 = copydown();\u000a  selected_list.n_elements = selected_list.n_elements - iVar3;\u000a  return;\u000a}\u000a\u000a
+p164
+S'PUSH R14\nPUSH RBX\nPUSH RAX\nTEST EDI,EDI\nJLE 0x004031d1\nMOV R14D,EDI\nXOR EBX,EBX\nNOP dword ptr [RAX]\nMOV RAX,qword ptr [0x00606a20]\nMOV RCX,qword ptr [RAX + RBX*0x8]\nMOV RDX,qword ptr [RCX + 0x70]\nMOVSXD RSI,dword ptr [RDX + 0x28]\nMOV qword ptr [RAX + RSI*0x8],0x0\nMOV RAX,qword ptr [RCX + 0x70]\nMOV dword ptr [RAX + 0x28],0xffffffff\nMOV RDI,qword ptr [RDX + 0x18]\nMOV ESI,0x605420\nMOV EDX,0x1\nCALL 0x00401480\nINC RBX\nCMP R14,RBX\nJNZ 0x00403190\nXOR EDI,EDI\nCALL 0x00403130\nSUB dword ptr [0x00606a18],EAX\nADD RSP,0x8\nPOP RBX\nPOP R14\nRET\n'
+p165
+S'41 56\n53\n50\n85 ff\n7e 49\n41 89 fe\n31 db\n0f 1f 00\n48 8b 05 89 38 20 00\n48 8b 0c d8\n48 8b 51 70\n48 63 72 28\n48 c7 04 f0 00 00 00 00\n48 8b 41 70\nc7 40 28 ff ff ff ff\n48 8b 7a 18\nbe 20 54 60 00\nba 01 00 00 00\ne8 b7 e2 ff ff\n48 ff c3\n49 39 de\n75 bf\n31 ff\ne8 58 ff ff ff\n29 05 3a 38 20 00\n48 83 c4 08\n5b\n41 5e\nc3\n'
+p166
+S'.text:0000000000403180\n.text:0000000000403182\n.text:0000000000403183\n.text:0000000000403184\n.text:0000000000403186\n.text:0000000000403188\n.text:000000000040318b\n.text:000000000040318d\n.text:0000000000403190\n.text:0000000000403197\n.text:000000000040319b\n.text:000000000040319f\n.text:00000000004031a3\n.text:00000000004031ab\n.text:00000000004031af\n.text:00000000004031b6\n.text:00000000004031ba\n.text:00000000004031bf\n.text:00000000004031c4\n.text:00000000004031c9\n.text:00000000004031cc\n.text:00000000004031cf\n.text:00000000004031d1\n.text:00000000004031d3\n.text:00000000004031d8\n.text:00000000004031de\n.text:00000000004031e2\n.text:00000000004031e3\n.text:00000000004031e5\n'
+p167
+tp168
+sS'XtAppAddActions'
+p169
+(S'\n__stdcall XtAppAddActions()\n'
+p170
+V\u000avoid XtAppAddActions(void)\u000a\u000a{\u000a  (*(code *)PTR_XtAppAddActions_006050e8)();\u000a  return;\u000a}\u000a\u000a
+p171
+S'JMP qword ptr [0x006050e8]\n'
+p172
+S'ff 25 32 3b 20 00\n'
+p173
+S'.plt:00000000004015b0\n'
+p174
+tp175
+sS'ActionSelect'
+p176
+(S'\n__stdcall ActionSelect(Widget w, XEvent * event, String * params, Cardinal * num_params)\n'
+p177
+V\u000avoid ActionSelect(Widget w,XEvent *event,String *params,Cardinal *num_params)\u000a\u000a{\u000a  do_single_arg(w,params,(_nametable *)(ulong)*num_params,\u000a                (void (*)(Widget,XtPointer,XtPointer))select_nametable);\u000a  return;\u000a}\u000a\u000a
+p178
+S'MOV EAX,dword ptr [RCX]\nMOV ECX,0x605320\nMOV R8D,0x9\nMOV R9D,0x402330\nMOV RSI,RDX\nMOV EDX,EAX\nJMP 0x00402d30\n'
+p179
+S'8b 01\nb9 20 53 60 00\n41 b8 09 00 00 00\n41 b9 30 23 40 00\n48 89 d6\n89 c2\neb 36\n'
+p180
+S'.text:0000000000402ce0\n.text:0000000000402ce2\n.text:0000000000402ce7\n.text:0000000000402ced\n.text:0000000000402cf3\n.text:0000000000402cf6\n.text:0000000000402cf8\n'
+p181
+tp182
+sS'memset'
+p183
+(S'\n__stdcall memset(void * __s, int __c, size_t __n)\n'
+p184
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid * memset(void *__s,int __c,size_t __n)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = (void *)(*(code *)PTR_memset_00605070)();\u000a  return pvVar1;\u000a}\u000a\u000a
+p185
+S'JMP qword ptr [0x00605070]\n'
+p186
+S'ff 25 aa 3b 20 00\n'
+p187
+S'.plt:00000000004014c0\n'
+p188
+tp189
+sS'exit'
+p190
+(S'\n__stdcall exit(int __status)\n'
+p191
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid exit(int __status)\u000a\u000a{\u000a  (*(code *)PTR_exit_00605138)();\u000a  return;\u000a}\u000a\u000a
+p192
+S'JMP qword ptr [0x00605138]\n'
+p193
+S'ff 25 e2 3a 20 00\n'
+p194
+S'.plt:0000000000401650\n'
+p195
+tp196
+sS'__libc_csu_fini'
+p197
+(S'\n__stdcall __libc_csu_fini()\n'
+p198
+V\u000avoid __libc_csu_fini(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p199
+S'RET\n'
+p200
+S'f3 c3\n'
+p201
+S'.text:0000000000403420\n'
+p202
+tp203
+sS'set_node_labels'
+p204
+(S'\n__stdcall set_node_labels(XmuWidgetNode * node)\n'
+p205
+V\u000avoid set_node_labels(XmuWidgetNode *node)\u000a\u000a{\u000a  XmuWidgetNode *node_00;\u000a  Arg args [1];\u000a  undefined8 local_28;\u000a  char *local_20;\u000a  \u000a  if (node != (XmuWidgetNode *)0x0) {\u000a    local_28 = 0x60452d;\u000a    node_00 = node;\u000a    if (options.show_variable == 0) {\u000a      node_00 = (XmuWidgetNode *)&((*node->widget_class_ptr)->core_class).class_name;\u000a    }\u000a    local_20 = node_00->label;\u000a    XtSetValues(*(undefined8 *)((long)node->data + 0x18),&local_28,1);\u000a    node_00 = (XmuWidgetNode *)node->children;\u000a    while (node_00 != (XmuWidgetNode *)0x0) {\u000a      set_node_labels(node_00);\u000a      node_00 = (XmuWidgetNode *)node_00->siblings;\u000a    }\u000a  }\u000a  return;\u000a}\u000a\u000a
+p206
+S'PUSH RBP\nPUSH R14\nPUSH RBX\nSUB RSP,0x10\nMOV EBP,ESI\nMOV R14,RDI\nTEST R14,R14\nJZ 0x00403373\nMOV RAX,qword ptr [R14 + 0x70]\nMOV qword ptr [RSP],0x60452d\nCMP byte ptr [0x00606a30],0x0\nJZ 0x0040332c\nMOV RCX,R14\nJMP 0x00403337\nMOV RCX,qword ptr [R14 + 0x8]\nMOV RCX,qword ptr [RCX]\nADD RCX,0x8\nMOV RCX,qword ptr [RCX]\nMOV qword ptr [RSP + 0x8],RCX\nMOV RDI,qword ptr [RAX + 0x18]\nMOV RSI,RSP\nMOV EDX,0x1\nCALL 0x00401480\nMOV RBX,qword ptr [R14 + 0x18]\nTEST RBX,RBX\nJZ 0x00403373\nINC EBP\nNOP dword ptr [RAX + RAX*0x1]\nMOV RDI,RBX\nMOV ESI,EBP\nCALL 0x00403300\nMOV RBX,qword ptr [RBX + 0x20]\nTEST RBX,RBX\nJNZ 0x00403360\nADD RSP,0x10\nPOP RBX\nPOP R14\nPOP RBP\nRET\n'
+p207
+S'55\n41 56\n53\n48 83 ec 10\n89 f5\n49 89 fe\n4d 85 f6\n74 61\n49 8b 46 70\n48 c7 04 24 2d 45 60 00\n80 3d 0b 37 20 00 00\n74 05\n4c 89 f1\neb 0b\n49 8b 4e 08\n48 8b 09\n48 83 c1 08\n48 8b 09\n48 89 4c 24 08\n48 8b 78 18\n48 89 e6\nba 01 00 00 00\ne8 30 e1 ff ff\n49 8b 5e 18\n48 85 db\n74 1a\nff c5\n0f 1f 44 00 00\n48 89 df\n89 ee\ne8 96 ff ff ff\n48 8b 5b 20\n48 85 db\n75 ed\n48 83 c4 10\n5b\n41 5e\n5d\nc3\n'
+p208
+S'.text:0000000000403300\n.text:0000000000403301\n.text:0000000000403303\n.text:0000000000403304\n.text:0000000000403308\n.text:000000000040330a\n.text:000000000040330d\n.text:0000000000403310\n.text:0000000000403312\n.text:0000000000403316\n.text:000000000040331e\n.text:0000000000403325\n.text:0000000000403327\n.text:000000000040332a\n.text:000000000040332c\n.text:0000000000403330\n.text:0000000000403333\n.text:0000000000403337\n.text:000000000040333a\n.text:000000000040333f\n.text:0000000000403343\n.text:0000000000403346\n.text:000000000040334b\n.text:0000000000403350\n.text:0000000000403354\n.text:0000000000403357\n.text:0000000000403359\n.text:000000000040335b\n.text:0000000000403360\n.text:0000000000403363\n.text:0000000000403365\n.text:000000000040336a\n.text:000000000040336e\n.text:0000000000403371\n.text:0000000000403373\n.text:0000000000403377\n.text:0000000000403378\n.text:000000000040337a\n.text:000000000040337b\n'
+p209
+tp210
+sS'build_tree'
+p211
+(S'\n__stdcall build_tree(XmuWidgetNode * node, Widget tree, Widget super)\n'
+p212
+V\u000avoid build_tree(XmuWidgetNode *node,Widget tree,Widget super)\u000a\u000a{\u000a  XtPointer pvVar1;\u000a  XtCallbackRec callback_rec [2];\u000a  Widget super_00;\u000a  XmuWidgetNode *node_00;\u000a  undefined8 uVar2;\u000a  Arg args [3];\u000a  char *local_58;\u000a  Widget local_50;\u000a  undefined8 local_48;\u000a  undefined8 local_40;\u000a  \u000a  pvVar1 = node->data;\u000a  local_58 = "treeParent";\u000a  local_50 = super;\u000a  super_00 = (Widget)XtCreateManagedWidget(node->label,boxWidgetClass,tree,&local_58,1);\u000a  local_58 = (char *)0x60452d;\u000a  node_00 = node;\u000a  if (options.show_variable == 0) {\u000a    node_00 = (XmuWidgetNode *)&((*node->widget_class_ptr)->core_class).class_name;\u000a  }\u000a  local_50 = (Widget)node_00->label;\u000a  local_48 = 0x604408;\u000a  local_40 = 0x605480;\u000a  callback_rec[0].closure = node;\u000a  uVar2 = XtCreateManagedWidget(node->label,toggleWidgetClass,super_00,&local_58,2);\u000a  *(undefined8 *)((long)pvVar1 + 0x18) = uVar2;\u000a  node_00 = (XmuWidgetNode *)node->children;\u000a  while (node_00 != (XmuWidgetNode *)0x0) {\u000a    build_tree(node_00,tree,super_00);\u000a    node_00 = (XmuWidgetNode *)node_00->siblings;\u000a  }\u000a  return;\u000a}\u000a\u000a
+p213
+S'PUSH R15\nPUSH R14\nPUSH R12\nPUSH RBX\nSUB RSP,0x38\nMOV R14,RSI\nMOV R15,RDI\nMOV RBX,qword ptr [R15 + 0x70]\nMOV qword ptr [RSP],0x403b1e\nMOV qword ptr [RSP + 0x8],RDX\nMOV RDI,qword ptr [R15]\nMOV RSI,qword ptr [0x00606960]\nMOV RCX,RSP\nMOV R8D,0x1\nMOV RDX,R14\nCALL 0x00401470\nMOV R12,RAX\nMOV qword ptr [RSP],0x60452d\nCMP byte ptr [0x00606a30],0x0\nMOV RAX,R15\nJNZ 0x00402a9f\nMOV RAX,qword ptr [R15 + 0x8]\nMOV RAX,qword ptr [RAX]\nADD RAX,0x8\nMOV RAX,qword ptr [RAX]\nMOV qword ptr [RSP + 0x8],RAX\nMOV qword ptr [RSP + 0x10],0x604408\nMOV qword ptr [RSP + 0x18],0x605480\nMOV qword ptr [0x00605488],R15\nMOV RDI,qword ptr [R15]\nMOV RSI,qword ptr [0x00606920]\nMOV RCX,RSP\nMOV R8D,0x2\nMOV RDX,R12\nCALL 0x00401470\nMOV qword ptr [RBX + 0x18],RAX\nMOV RBX,qword ptr [R15 + 0x18]\nTEST RBX,RBX\nJZ 0x00402b07\nNOP dword ptr [RAX + RAX*0x1]\nMOV RDI,RBX\nMOV RSI,R14\nMOV RDX,R12\nCALL 0x00402a40\nMOV RBX,qword ptr [RBX + 0x20]\nTEST RBX,RBX\nJNZ 0x00402af0\nADD RSP,0x38\nPOP RBX\nPOP R12\nPOP R14\nPOP R15\nRET\n'
+p214
+S'41 57\n41 56\n41 54\n53\n48 83 ec 38\n49 89 f6\n49 89 ff\n49 8b 5f 70\n48 c7 04 24 1e 3b 40 00\n48 89 54 24 08\n49 8b 3f\n48 8b 35 f4 3e 20 00\n48 89 e1\n41 b8 01 00 00 00\n4c 89 f2\ne8 f3 e9 ff ff\n49 89 c4\n48 c7 04 24 2d 45 60 00\n80 3d a1 3f 20 00 00\n4c 89 f8\n75 0b\n49 8b 47 08\n48 8b 00\n48 83 c0 08\n48 8b 00\n48 89 44 24 08\n48 c7 44 24 10 08 44 60 00\n48 c7 44 24 18 80 54 60 00\n4c 89 3d c8 29 20 00\n49 8b 3f\n48 8b 35 56 3e 20 00\n48 89 e1\n41 b8 02 00 00 00\n4c 89 e2\ne8 95 e9 ff ff\n48 89 43 18\n49 8b 5f 18\n48 85 db\n74 1f\n0f 1f 84 00 00 00 00 00\n48 89 df\n4c 89 f6\n4c 89 e2\ne8 42 ff ff ff\n48 8b 5b 20\n48 85 db\n75 e9\n48 83 c4 38\n5b\n41 5c\n41 5e\n41 5f\nc3\n'
+p215
+S'.text:0000000000402a40\n.text:0000000000402a42\n.text:0000000000402a44\n.text:0000000000402a46\n.text:0000000000402a47\n.text:0000000000402a4b\n.text:0000000000402a4e\n.text:0000000000402a51\n.text:0000000000402a55\n.text:0000000000402a5d\n.text:0000000000402a62\n.text:0000000000402a65\n.text:0000000000402a6c\n.text:0000000000402a6f\n.text:0000000000402a75\n.text:0000000000402a78\n.text:0000000000402a7d\n.text:0000000000402a80\n.text:0000000000402a88\n.text:0000000000402a8f\n.text:0000000000402a92\n.text:0000000000402a94\n.text:0000000000402a98\n.text:0000000000402a9b\n.text:0000000000402a9f\n.text:0000000000402aa2\n.text:0000000000402aa7\n.text:0000000000402ab0\n.text:0000000000402ab9\n.text:0000000000402ac0\n.text:0000000000402ac3\n.text:0000000000402aca\n.text:0000000000402acd\n.text:0000000000402ad3\n.text:0000000000402ad6\n.text:0000000000402adb\n.text:0000000000402adf\n.text:0000000000402ae3\n.text:0000000000402ae6\n.text:0000000000402ae8\n.text:0000000000402af0\n.text:0000000000402af3\n.text:0000000000402af6\n.text:0000000000402af9\n.text:0000000000402afe\n.text:0000000000402b02\n.text:0000000000402b05\n.text:0000000000402b07\n.text:0000000000402b0b\n.text:0000000000402b0c\n.text:0000000000402b0e\n.text:0000000000402b10\n.text:0000000000402b12\n'
+p216
+tp217
+sS'set_labeltype_menu'
+p218
+(S'\n__stdcall set_labeltype_menu()\n'
+p219
+V\u000avoid set_labeltype_menu(Widget p_Parm1,char cParm2)\u000a\u000a{\u000a  options.show_variable = (Boolean)p_Parm1;\u000a  oneof_sensitive(p_Parm1,view_widgets_3);\u000a  if (cParm2 != 0) {\u000a    XUnmapWindow(((treeWidget->core).screen)->display,(treeWidget->core).window);\u000a    set_node_labels(topnode);\u000a    XawTreeForceLayout(treeWidget);\u000a    XMapWindow(((treeWidget->core).screen)->display,(treeWidget->core).window);\u000a    return;\u000a  }\u000a  return;\u000a}\u000a\u000a
+p220
+S'PUSH RBX\nMOV EBX,ESI\nMOV byte ptr [0x00606a30],DIL\nMOV RSI,qword ptr [0x00606ab0]\nMOV RDX,qword ptr [0x00606aa0]\nCALL 0x004032b0\nTEST BL,BL\nJZ 0x004027c8\nMOV RAX,qword ptr [0x00606a60]\nMOV RCX,qword ptr [0x98 + RAX]\nMOV RSI,qword ptr [0xa8 + RAX]\nMOV RDI,qword ptr [RCX + 0x8]\nCALL 0x004015f0\nMOV RDI,qword ptr [0x00606a38]\nXOR ESI,ESI\nCALL 0x00403300\nMOV RDI,qword ptr [0x00606a60]\nCALL 0x004014a0\nMOV RAX,qword ptr [0x00606a60]\nMOV RCX,qword ptr [0x98 + RAX]\nMOV RSI,qword ptr [0xa8 + RAX]\nMOV RDI,qword ptr [RCX + 0x8]\nPOP RBX\nJMP 0x00401640\nPOP RBX\nRET\n'
+p221
+S'53\n89 f3\n40 88 3d d6 42 20 00\n48 8b 35 4f 43 20 00\n48 8b 15 38 43 20 00\ne8 43 0b 00 00\n84 db\n74 57\n48 8b 05 e8 42 20 00\n48 8b 88 98 00 00 00\n48 8b b0 a8 00 00 00\n48 8b 79 08\ne8 61 ee ff ff\n48 8b 3d a2 42 20 00\n31 f6\ne8 63 0b 00 00\n48 8b 3d bc 42 20 00\ne8 f7 ec ff ff\n48 8b 05 b0 42 20 00\n48 8b 88 98 00 00 00\n48 8b b0 a8 00 00 00\n48 8b 79 08\n5b\ne9 78 ee ff ff\n5b\nc3\n'
+p222
+S'.text:0000000000402750\n.text:0000000000402751\n.text:0000000000402753\n.text:000000000040275a\n.text:0000000000402761\n.text:0000000000402768\n.text:000000000040276d\n.text:000000000040276f\n.text:0000000000402771\n.text:0000000000402778\n.text:000000000040277f\n.text:0000000000402786\n.text:000000000040278a\n.text:000000000040278f\n.text:0000000000402796\n.text:0000000000402798\n.text:000000000040279d\n.text:00000000004027a4\n.text:00000000004027a9\n.text:00000000004027b0\n.text:00000000004027b7\n.text:00000000004027be\n.text:00000000004027c2\n.text:00000000004027c3\n.text:00000000004027c8\n.text:00000000004027c9\n'
+p223
+tp224
+sS'widget_to_node'
+p225
+(S'\n__stdcall widget_to_node(Widget gw)\n'
+p226
+V\u000aXmuWidgetNode * widget_to_node(Widget gw)\u000a\u000a{\u000a  char cVar1;\u000a  undefined1 *puVar2;\u000a  int iVar3;\u000a  \u000a  cVar1 = XtIsSubclass(gw,toggleWidgetClass);\u000a  if (cVar1 == 0) {\u000a    cVar1 = XtIsSubclass(gw,listWidgetClass);\u000a    if (cVar1 == 0) {\u000a      return (XmuWidgetNode *)0x0;\u000a    }\u000a    if (XawWidgetCount < 1) {\u000a      return (XmuWidgetNode *)0x0;\u000a    }\u000a    puVar2 = XawWidgetArray;\u000a    iVar3 = 0;\u000a    do {\u000a      if (*(Widget *)((long)((XmuWidgetNode *)puVar2)->data + 0x20) == gw) {\u000a        return (XmuWidgetNode *)puVar2;\u000a      }\u000a      iVar3 = iVar3 + 1;\u000a      puVar2 = (undefined1 *)((XmuWidgetNode *)puVar2 + 1);\u000a    } while (iVar3 < XawWidgetCount);\u000a  }\u000a  else {\u000a    if (0 < XawWidgetCount) {\u000a      puVar2 = XawWidgetArray;\u000a      iVar3 = 0;\u000a      do {\u000a        if (*(Widget *)((long)((XmuWidgetNode *)puVar2)->data + 0x18) == gw) {\u000a          return (XmuWidgetNode *)puVar2;\u000a        }\u000a        iVar3 = iVar3 + 1;\u000a        puVar2 = (undefined1 *)((XmuWidgetNode *)puVar2 + 1);\u000a      } while (iVar3 < XawWidgetCount);\u000a    }\u000a  }\u000a  return (XmuWidgetNode *)0x0;\u000a}\u000a\u000a
+p227
+S'PUSH RBX\nMOV RBX,RDI\nMOV RSI,qword ptr [0x00606920]\nCALL 0x004014d0\nTEST AL,AL\nJZ 0x00402e06\nCMP dword ptr [0x006069a8],0x0\nJLE 0x00402e54\nMOV EAX,0x6054a0\nMOV ECX,dword ptr [0x006069a8]\nXOR EDX,EDX\nNOP word ptr [RAX + RAX*0x1]\nMOV RSI,qword ptr [RAX + 0x70]\nCMP qword ptr [RSI + 0x18],RBX\nJZ 0x00402e56\nINC EDX\nADD RAX,0x78\nCMP EDX,ECX\nJL 0x00402df0\nJMP 0x00402e54\nMOV RSI,qword ptr [0x00606980]\nMOV RDI,RBX\nCALL 0x004014d0\nMOV ECX,EAX\nXOR EAX,EAX\nTEST CL,CL\nJZ 0x00402e56\nMOV ECX,dword ptr [0x006069a8]\nTEST ECX,ECX\nJLE 0x00402e56\nMOV EAX,0x6054a0\nMOV ECX,dword ptr [0x006069a8]\nXOR EDX,EDX\nNOP word ptr CS:[RAX + RAX*0x1]\nMOV RSI,qword ptr [RAX + 0x70]\nCMP qword ptr [RSI + 0x20],RBX\nJZ 0x00402e56\nINC EDX\nADD RAX,0x78\nCMP EDX,ECX\nJL 0x00402e40\nXOR EAX,EAX\nPOP RBX\nRET\n'
+p228
+S'53\n48 89 fb\n48 8b 35 55 3b 20 00\ne8 00 e7 ff ff\n84 c0\n74 32\n83 3d cd 3b 20 00 00\n7e 77\nb8 a0 54 60 00\n8b 0d c0 3b 20 00\n31 d2\n66 0f 1f 44 00 00\n48 8b 70 70\n48 39 5e 18\n74 5c\nff c2\n48 83 c0 78\n39 ca\n7c ec\neb 4e\n48 8b 35 73 3b 20 00\n48 89 df\ne8 bb e6 ff ff\n89 c1\n31 c0\n84 c9\n74 39\n8b 0d 85 3b 20 00\n85 c9\n7e 2f\nb8 a0 54 60 00\n8b 0d 76 3b 20 00\n31 d2\n66 66 66 2e 0f 1f 84 00 00 00 00 00\n48 8b 70 70\n48 39 5e 20\n74 0c\nff c2\n48 83 c0 78\n39 ca\n7c ec\n31 c0\n5b\nc3\n'
+p229
+S'.text:0000000000402dc0\n.text:0000000000402dc1\n.text:0000000000402dc4\n.text:0000000000402dcb\n.text:0000000000402dd0\n.text:0000000000402dd2\n.text:0000000000402dd4\n.text:0000000000402ddb\n.text:0000000000402ddd\n.text:0000000000402de2\n.text:0000000000402de8\n.text:0000000000402dea\n.text:0000000000402df0\n.text:0000000000402df4\n.text:0000000000402df8\n.text:0000000000402dfa\n.text:0000000000402dfc\n.text:0000000000402e00\n.text:0000000000402e02\n.text:0000000000402e04\n.text:0000000000402e06\n.text:0000000000402e0d\n.text:0000000000402e10\n.text:0000000000402e15\n.text:0000000000402e17\n.text:0000000000402e19\n.text:0000000000402e1b\n.text:0000000000402e1d\n.text:0000000000402e23\n.text:0000000000402e25\n.text:0000000000402e27\n.text:0000000000402e2c\n.text:0000000000402e32\n.text:0000000000402e34\n.text:0000000000402e40\n.text:0000000000402e44\n.text:0000000000402e48\n.text:0000000000402e4a\n.text:0000000000402e4c\n.text:0000000000402e50\n.text:0000000000402e52\n.text:0000000000402e54\n.text:0000000000402e56\n.text:0000000000402e57\n'
+p230
+tp231
+sS'XtCreateWidget'
+p232
+(S'\n__stdcall XtCreateWidget()\n'
+p233
+V\u000avoid XtCreateWidget(void)\u000a\u000a{\u000a  (*(code *)PTR_XtCreateWidget_00605028)();\u000a  return;\u000a}\u000a\u000a
+p234
+S'JMP qword ptr [0x00605028]\n'
+p235
+S'ff 25 f2 3b 20 00\n'
+p236
+S'.plt:0000000000401430\n'
+p237
+tp238
+sS'gravity_callback'
+p239
+(S'\n__stdcall gravity_callback(Widget gw, XtPointer closure, XtPointer data)\n'
+p240
+V\u000avoid gravity_callback(Widget gw,XtPointer closure,XtPointer data)\u000a\u000a{\u000a  set_orientation_menu((ulong)closure & 0xffffffff,1);\u000a  return;\u000a}\u000a\u000a
+p241
+S'MOV RAX,RSI\nMOV ESI,0x1\nMOV EDI,EAX\nJMP 0x004027d0\n'
+p242
+S'48 89 f0\nbe 01 00 00 00\n89 c7\ne9 91 05 00 00\n'
+p243
+S'.text:0000000000402230\n.text:0000000000402233\n.text:0000000000402238\n.text:000000000040223a\n'
+p244
+tp245
+sS'panner_callback'
+p246
+(S'\n__stdcall panner_callback(Widget gw, XtPointer closure, XtPointer data)\n'
+p247
+V\u000avoid panner_callback(Widget gw,XtPointer closure,XtPointer data)\u000a\u000a{\u000a  Arg args [2];\u000a  undefined8 local_28;\u000a  long local_20;\u000a  undefined8 local_18;\u000a  long local_10;\u000a  \u000a  if (treeWidget != (Widget)0x0) {\u000a    local_28 = 0x6046f5;\u000a    local_20 = -(long)*(short *)((long)data + 4);\u000a    local_18 = 0x6046f7;\u000a    local_10 = -(long)*(short *)((long)data + 6);\u000a    XtSetValues(treeWidget,&local_28,2);\u000a  }\u000a  return;\u000a}\u000a\u000a
+p248
+S'CMP qword ptr [0x00606a60],0x0\nJZ 0x004026a1\nSUB RSP,0x28\nMOV qword ptr [RSP],0x6046f5\nMOVSX RAX,word ptr [RDX + 0x4]\nNEG RAX\nMOV qword ptr [RSP + 0x8],RAX\nMOV qword ptr [RSP + 0x10],0x6046f7\nMOVSX RAX,word ptr [RDX + 0x6]\nNEG RAX\nMOV qword ptr [RSP + 0x18],RAX\nMOV RDI,qword ptr [0x00606a60]\nMOV RSI,RSP\nMOV EDX,0x2\nCALL 0x00401480\nADD RSP,0x28\nRET\n'
+p249
+S'48 83 3d 08 44 20 00 00\n74 47\n48 83 ec 28\n48 c7 04 24 f5 46 60 00\n48 0f bf 42 04\n48 f7 d8\n48 89 44 24 08\n48 c7 44 24 10 f7 46 60 00\n48 0f bf 42 06\n48 f7 d8\n48 89 44 24 18\n48 8b 3d d0 43 20 00\n48 89 e6\nba 02 00 00 00\ne8 e3 ed ff ff\n48 83 c4 28\nc3\n'
+p250
+S'.text:0000000000402650\n.text:0000000000402658\n.text:000000000040265a\n.text:000000000040265e\n.text:0000000000402666\n.text:000000000040266b\n.text:000000000040266e\n.text:0000000000402673\n.text:000000000040267c\n.text:0000000000402681\n.text:0000000000402684\n.text:0000000000402689\n.text:0000000000402690\n.text:0000000000402693\n.text:0000000000402698\n.text:000000000040269d\n.text:00000000004026a1\n'
+p251
+tp252
+sS'XtIsSubclass'
+p253
+(S'\n__stdcall XtIsSubclass()\n'
+p254
+V\u000avoid XtIsSubclass(void)\u000a\u000a{\u000a  (*(code *)PTR_XtIsSubclass_00605078)();\u000a  return;\u000a}\u000a\u000a
+p255
+S'JMP qword ptr [0x00605078]\n'
+p256
+S'ff 25 a2 3b 20 00\n'
+p257
+S'.plt:00000000004014d0\n'
+p258
+tp259
+sS'XmuWnInitializeNodes'
+p260
+(S'\n__stdcall XmuWnInitializeNodes()\n'
+p261
+V\u000avoid XmuWnInitializeNodes(void)\u000a\u000a{\u000a  (*(code *)PTR_XmuWnInitializeNodes_00605098)();\u000a  return;\u000a}\u000a\u000a
+p262
+S'JMP qword ptr [0x00605098]\n'
+p263
+S'ff 25 82 3b 20 00\n'
+p264
+S'.plt:0000000000401510\n'
+p265
+tp266
+sS'ActionResources'
+p267
+(S'\n__stdcall ActionResources(Widget w, XEvent * event, String * params, Cardinal * num_params)\n'
+p268
+V\u000avoid ActionResources(Widget w,XEvent *event,String *params,Cardinal *num_params)\u000a\u000a{\u000a  if (*num_params != 0) {\u000a    do_single_arg(w,params,(_nametable *)(ulong)*num_params,\u000a                  (void (*)(Widget,XtPointer,XtPointer))boolean_nametable);\u000a    return;\u000a  }\u000a  show_resources_callback(w,(XtPointer)0x2,(XtPointer)0x0);\u000a  return;\u000a}\u000a\u000a
+p269
+S'MOV EAX,dword ptr [RCX]\nTEST EAX,EAX\nJZ 0x00402d1e\nMOV ECX,0x6053b0\nMOV R8D,0x7\nMOV R9D,0x402250\nMOV RSI,RDX\nMOV EDX,EAX\nJMP 0x00402d30\nMOV ESI,0x2\nXOR EDX,EDX\nJMP 0x00402250\n'
+p270
+S'8b 01\n85 c0\n74 18\nb9 b0 53 60 00\n41 b8 07 00 00 00\n41 b9 50 22 40 00\n48 89 d6\n89 c2\neb 12\nbe 02 00 00 00\n31 d2\ne9 26 f5 ff ff\n'
+p271
+S'.text:0000000000402d00\n.text:0000000000402d02\n.text:0000000000402d04\n.text:0000000000402d06\n.text:0000000000402d0b\n.text:0000000000402d11\n.text:0000000000402d17\n.text:0000000000402d1a\n.text:0000000000402d1c\n.text:0000000000402d1e\n.text:0000000000402d23\n.text:0000000000402d25\n'
+p272
+tp273
+sS'XtGetApplicationResources'
+p274
+(S'\n__stdcall XtGetApplicationResources()\n'
+p275
+V\u000avoid XtGetApplicationResources(void)\u000a\u000a{\u000a  (*(code *)PTR_XtGetApplicationResources_00605018)();\u000a  return;\u000a}\u000a\u000a
+p276
+S'JMP qword ptr [0x00605018]\n'
+p277
+S'ff 25 02 3c 20 00\n'
+p278
+S'.plt:0000000000401410\n'
+p279
+tp280
+sS'_start'
+p281
+(S'\n__stdcall _start()\n'
+p282
+V\u000avoid _start(undefined8 uParm1,undefined8 uParm2,undefined8 uParm3)\u000a\u000a{\u000a  undefined8 in_stack_00000000;\u000a  undefined auStack8 [8];\u000a  \u000a  (*(code *)PTR___libc_start_main_00604ff0)\u000a            (main,in_stack_00000000,&stack0x00000008,__libc_csu_init,__libc_csu_fini,uParm3,auStack8\u000a            );\u000a  do {\u000a                    /* WARNING: Do nothing block with infinite loop */\u000a  } while( true );\u000a}\u000a\u000a
+p283
+S'XOR EBP,EBP\nMOV R9,RDX\nPOP RSI\nMOV RDX,RSP\nAND RSP,-0x10\nPUSH RAX\nPUSH RSP\nMOV R8,0x403420\nMOV RCX,0x4033b0\nMOV RDI,0x4017a0\nCALL qword ptr [0x00604ff0]\nHLT\n'
+p284
+S'31 ed\n49 89 d1\n5e\n48 89 e2\n48 83 e4 f0\n50\n54\n49 c7 c0 20 34 40 00\n48 c7 c1 b0 33 40 00\n48 c7 c7 a0 17 40 00\nff 15 26 39 20 00\nf4\n'
+p285
+S'.text:00000000004016a0\n.text:00000000004016a2\n.text:00000000004016a5\n.text:00000000004016a6\n.text:00000000004016a9\n.text:00000000004016ad\n.text:00000000004016ae\n.text:00000000004016af\n.text:00000000004016b6\n.text:00000000004016bd\n.text:00000000004016c4\n.text:00000000004016ca\n'
+p286
+tp287
+sS'fputc'
+p288
+(S'\n__stdcall fputc(int __c, FILE * __stream)\n'
+p289
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint fputc(int __c,FILE *__stream)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_fputc_00605088)();\u000a  return iVar1;\u000a}\u000a\u000a
+p290
+S'JMP qword ptr [0x00605088]\n'
+p291
+S'ff 25 92 3b 20 00\n'
+p292
+S'.plt:00000000004014f0\n'
+p293
+tp294
+sS'XtIsManaged'
+p295
+(S'\n__stdcall XtIsManaged()\n'
+p296
+V\u000avoid XtIsManaged(void)\u000a\u000a{\u000a  (*(code *)PTR_XtIsManaged_00605110)();\u000a  return;\u000a}\u000a\u000a
+p297
+S'JMP qword ptr [0x00605110]\n'
+p298
+S'ff 25 0a 3b 20 00\n'
+p299
+S'.plt:0000000000401600\n'
+p300
+tp301
+sS'copydown'
+p302
+(S'\n__stdcall copydown()\n'
+p303
+V\u000aint copydown(void)\u000a\u000a{\u000a  XmuWidgetNode *pXVar1;\u000a  int iVar2;\u000a  XmuWidgetNode **ppXVar3;\u000a  int iVar4;\u000a  long lVar5;\u000a  XmuWidgetNode **ppXVar6;\u000a  int in_EDI;\u000a  \u000a  ppXVar3 = selected_list.elements;\u000a  iVar2 = selected_list.n_elements;\u000a  iVar4 = in_EDI;\u000a  if (in_EDI < selected_list.n_elements) {\u000a    lVar5 = (long)in_EDI;\u000a    ppXVar6 = selected_list.elements + lVar5;\u000a    do {\u000a      pXVar1 = ppXVar3[lVar5];\u000a      if (pXVar1 != (XmuWidgetNode *)0x0) {\u000a        *(int *)((long)pXVar1->data + 0x28) = in_EDI;\u000a        in_EDI = in_EDI + 1;\u000a        *ppXVar6 = ppXVar3[lVar5];\u000a        ppXVar6 = ppXVar6 + 1;\u000a      }\u000a      lVar5 = lVar5 + 1;\u000a      iVar4 = (int)lVar5;\u000a    } while (iVar4 < iVar2);\u000a  }\u000a  return iVar4 - in_EDI;\u000a}\u000a\u000a
+p304
+S'CMP dword ptr [0x00606a18],EDI\nJLE 0x00403177\nMOV RCX,qword ptr [0x00606a20]\nMOVSXD RAX,EDI\nLEA RDX,[RCX + RAX*0x8]\nMOV R8D,dword ptr [0x00606a18]\nNOP dword ptr [RAX]\nMOV RSI,qword ptr [RCX + RAX*0x8]\nTEST RSI,RSI\nJZ 0x0040316d\nMOV RSI,qword ptr [RSI + 0x70]\nMOV dword ptr [RSI + 0x28],EDI\nINC EDI\nMOV RSI,qword ptr [RCX + RAX*0x8]\nMOV qword ptr [RDX],RSI\nADD RDX,0x8\nINC RAX\nCMP EAX,R8D\nJL 0x00403150\nJMP 0x00403179\nMOV EAX,EDI\nSUB EAX,EDI\nRET\n'
+p305
+S'39 3d e2 38 20 00\n7e 3f\n48 8b 0d e1 38 20 00\n48 63 c7\n48 8d 14 c1\n44 8b 05 cb 38 20 00\n0f 1f 00\n48 8b 34 c1\n48 85 f6\n74 14\n48 8b 76 70\n89 7e 28\nff c7\n48 8b 34 c1\n48 89 32\n48 83 c2 08\n48 ff c0\n44 39 c0\n7c db\neb 02\n89 f8\n29 f8\nc3\n'
+p306
+S'.text:0000000000403130\n.text:0000000000403136\n.text:0000000000403138\n.text:000000000040313f\n.text:0000000000403142\n.text:0000000000403146\n.text:000000000040314d\n.text:0000000000403150\n.text:0000000000403154\n.text:0000000000403157\n.text:0000000000403159\n.text:000000000040315d\n.text:0000000000403160\n.text:0000000000403162\n.text:0000000000403166\n.text:0000000000403169\n.text:000000000040316d\n.text:0000000000403170\n.text:0000000000403173\n.text:0000000000403175\n.text:0000000000403177\n.text:0000000000403179\n.text:000000000040317b\n'
+p307
+tp308
+sS'calloc'
+p309
+(S'\n__stdcall calloc(size_t __nmemb, size_t __size)\n'
+p310
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid * calloc(size_t __nmemb,size_t __size)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = (void *)(*(code *)PTR_calloc_00605090)();\u000a  return pvVar1;\u000a}\u000a\u000a
+p311
+S'JMP qword ptr [0x00605090]\n'
+p312
+S'ff 25 8a 3b 20 00\n'
+p313
+S'.plt:0000000000401500\n'
+p314
+tp315
+sS'initialize_widgetnode_list'
+p316
+(S'\n__stdcall initialize_widgetnode_list()\n'
+p317
+V\u000avoid initialize_widgetnode_list(uint uParm1)\u000a\u000a{\u000a  uint uVar1;\u000a  \u000a  if (selected_list.elements == (XmuWidgetNode **)0x0) {\u000a    selected_list.elements = (XmuWidgetNode **)XtCalloc((ulong)uParm1,8);\u000a    uVar1 = 0;\u000a    if (selected_list.elements != (XmuWidgetNode **)0x0) {\u000a      uVar1 = uParm1;\u000a    }\u000a  }\u000a  else {\u000a    uVar1 = selected_list.max_elements;\u000a    if (selected_list.max_elements < (int)uParm1) {\u000a      selected_list.elements = (XmuWidgetNode **)XtRealloc();\u000a      if (selected_list.elements == (XmuWidgetNode **)0x0) {\u000a        uVar1 = 0;\u000a      }\u000a      else {\u000a        uVar1 = uParm1;\u000a        if (selected_list.max_elements < (int)uParm1) {\u000a          memset(selected_list.elements + (long)selected_list.max_elements,0,\u000a                 (ulong)((uParm1 - 1) - selected_list.max_elements) * 8 + 8);\u000a          uVar1 = uParm1;\u000a        }\u000a      }\u000a    }\u000a  }\u000a  selected_list.max_elements = uVar1;\u000a  return;\u000a}\u000a\u000a
+p318
+S'PUSH RBX\nMOV EBX,EDI\nMOV RDI,qword ptr [0x00606a20]\nTEST RDI,RDI\nJZ 0x00402194\nCMP dword ptr [0x00606a1c],EBX\nJGE 0x004021bb\nLEA ESI,[RBX*0x8]\nCALL 0x004014e0\nMOV qword ptr [0x00606a20],RAX\nTEST RAX,RAX\nJZ 0x004021b3\nMOVSXD RCX,dword ptr [0x00606a1c]\nCMP ECX,EBX\nJGE 0x004021b5\nLEA RDI,[RAX + RCX*0x8]\nLEA EAX,[RBX + -0x1]\nSUB EAX,ECX\nLEA RDX,[0x8 + RAX*0x8]\nXOR ESI,ESI\nCALL 0x004014c0\nJMP 0x004021b5\nMOV ESI,0x8\nMOV EDI,EBX\nCALL 0x00401610\nMOV qword ptr [0x00606a20],RAX\nXOR ECX,ECX\nTEST RAX,RAX\nCMOVNZ ECX,EBX\nMOV EBX,ECX\nJMP 0x004021b5\nXOR EBX,EBX\nMOV dword ptr [0x00606a1c],EBX\nPOP RBX\nRET\n'
+p319
+S'53\n89 fb\n48 8b 3d d6 48 20 00\n48 85 ff\n74 45\n39 1d c7 48 20 00\n7d 64\n8d 34 dd 00 00 00 00\ne8 7d f3 ff ff\n48 89 05 b6 48 20 00\n48 85 c0\n74 44\n48 63 0d a6 48 20 00\n39 d9\n7d 3b\n48 8d 3c c8\n8d 43 ff\n29 c8\n48 8d 14 c5 08 00 00 00\n31 f6\ne8 2e f3 ff ff\neb 21\nbe 08 00 00 00\n89 df\ne8 70 f4 ff ff\n48 89 05 79 48 20 00\n31 c9\n48 85 c0\n0f 45 cb\n89 cb\neb 02\n31 db\n89 1d 61 48 20 00\n5b\nc3\n'
+p320
+S'.text:0000000000402140\n.text:0000000000402141\n.text:0000000000402143\n.text:000000000040214a\n.text:000000000040214d\n.text:000000000040214f\n.text:0000000000402155\n.text:0000000000402157\n.text:000000000040215e\n.text:0000000000402163\n.text:000000000040216a\n.text:000000000040216d\n.text:000000000040216f\n.text:0000000000402176\n.text:0000000000402178\n.text:000000000040217a\n.text:000000000040217e\n.text:0000000000402181\n.text:0000000000402183\n.text:000000000040218b\n.text:000000000040218d\n.text:0000000000402192\n.text:0000000000402194\n.text:0000000000402199\n.text:000000000040219b\n.text:00000000004021a0\n.text:00000000004021a7\n.text:00000000004021a9\n.text:00000000004021ac\n.text:00000000004021af\n.text:00000000004021b1\n.text:00000000004021b3\n.text:00000000004021b5\n.text:00000000004021bb\n.text:00000000004021bc\n'
+p321
+tp322
+sS'XtUnmanageChild'
+p323
+(S'\n__stdcall XtUnmanageChild()\n'
+p324
+V\u000avoid XtUnmanageChild(void)\u000a\u000a{\u000a  (*(code *)PTR_XtUnmanageChild_00605068)();\u000a  return;\u000a}\u000a\u000a
+p325
+S'JMP qword ptr [0x00605068]\n'
+p326
+S'ff 25 b2 3b 20 00\n'
+p327
+S'.plt:00000000004014b0\n'
+p328
+tp329
+sS'XmuWnCountOwnedResources'
+p330
+(S'\n__stdcall XmuWnCountOwnedResources()\n'
+p331
+V\u000avoid XmuWnCountOwnedResources(void)\u000a\u000a{\u000a  (*(code *)PTR_XmuWnCountOwnedResources_00605040)();\u000a  return;\u000a}\u000a\u000a
+p332
+S'JMP qword ptr [0x00605040]\n'
+p333
+S'ff 25 da 3b 20 00\n'
+p334
+S'.plt:0000000000401460\n'
+p335
+tp336
+sS'deregister_tm_clones'
+p337
+(S'\n__stdcall deregister_tm_clones()\n'
+p338
+V\u000a/* WARNING: Removing unreachable block (ram,0x004016e5) */\u000a/* WARNING: Removing unreachable block (ram,0x004016ef) */\u000a\u000avoid deregister_tm_clones(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p339
+S'MOV EAX,0x6054a7\nPUSH RBP\nSUB RAX,0x6054a0\nCMP RAX,0xe\nMOV RBP,RSP\nJBE 0x00401700\nMOV EAX,0x0\nTEST RAX,RAX\nJZ 0x00401700\nPOP RBP\nMOV EDI,0x6054a0\nJMP RAX\nPOP RBP\nRET\n'
+p340
+S'b8 a7 54 60 00\n55\n48 2d a0 54 60 00\n48 83 f8 0e\n48 89 e5\n76 1b\nb8 00 00 00 00\n48 85 c0\n74 11\n5d\nbf a0 54 60 00\nff e0\n5d\nc3\n'
+p341
+S'.text:00000000004016d0\n.text:00000000004016d5\n.text:00000000004016d6\n.text:00000000004016dc\n.text:00000000004016e0\n.text:00000000004016e3\n.text:00000000004016e5\n.text:00000000004016ea\n.text:00000000004016ed\n.text:00000000004016ef\n.text:00000000004016f0\n.text:00000000004016f5\n.text:0000000000401700\n.text:0000000000401701\n'
+p342
+tp343
+sS'XtCreateManagedWidget'
+p344
+(S'\n__stdcall XtCreateManagedWidget()\n'
+p345
+V\u000avoid XtCreateManagedWidget(void)\u000a\u000a{\u000a  (*(code *)PTR_XtCreateManagedWidget_00605048)();\u000a  return;\u000a}\u000a\u000a
+p346
+S'JMP qword ptr [0x00605048]\n'
+p347
+S'ff 25 d2 3b 20 00\n'
+p348
+S'.plt:0000000000401470\n'
+p349
+tp350
+sS'oneof_sensitive'
+p351
+(S'\n__stdcall oneof_sensitive(Widget a, Widget b)\n'
+p352
+V\u000avoid oneof_sensitive(Widget a,Widget b)\u000a\u000a{\u000a  Arg args [1];\u000a  Widget in_RDX;\u000a  \u000a  args[0].value = 1;\u000a  if ((char)a != 0) {\u000a    b = in_RDX;\u000a  }\u000a  XtSetValues();\u000a  args[0].value = 0;\u000a  XtSetValues(b,0x605440,1);\u000a  return;\u000a}\u000a\u000a
+p353
+S'PUSH RBX\nMOV RBX,RSI\nMOV qword ptr [0x00605448],0x1\nTEST DIL,DIL\nMOV RDI,RDX\nCMOVNZ RDI,RBX\nCMOVNZ RBX,RDX\nMOV ESI,0x605440\nMOV EDX,0x1\nCALL 0x00401480\nMOV qword ptr [0x00605448],0x0\nMOV ESI,0x605440\nMOV EDX,0x1\nMOV RDI,RBX\nPOP RBX\nJMP 0x00401480\n'
+p354
+S'53\n48 89 f3\n48 c7 05 89 21 20 00 01 00 00 00\n40 84 ff\n48 89 d7\n48 0f 45 fb\n48 0f 45 da\nbe 40 54 60 00\nba 01 00 00 00\ne8 a4 e1 ff ff\n48 c7 05 61 21 20 00 00 00 00 00\nbe 40 54 60 00\nba 01 00 00 00\n48 89 df\n5b\ne9 86 e1 ff ff\n'
+p355
+S'.text:00000000004032b0\n.text:00000000004032b1\n.text:00000000004032b4\n.text:00000000004032bf\n.text:00000000004032c2\n.text:00000000004032c5\n.text:00000000004032c9\n.text:00000000004032cd\n.text:00000000004032d2\n.text:00000000004032d7\n.text:00000000004032dc\n.text:00000000004032e7\n.text:00000000004032ec\n.text:00000000004032f1\n.text:00000000004032f4\n.text:00000000004032f5\n'
+p356
+tp357
+sS'remove_from_selected_list'
+p358
+(S'\n__stdcall remove_from_selected_list()\n'
+p359
+V\u000aBoolean remove_from_selected_list(void)\u000a\u000a{\u000a  long lVar1;\u000a  Boolean BVar2;\u000a  int iVar3;\u000a  char in_SIL;\u000a  long in_RDI;\u000a  long lVar4;\u000a  \u000a  BVar2 = (Boolean)in_RDI;\u000a  lVar1 = *(long *)(in_RDI + 0x70);\u000a  lVar4 = (long)*(int *)(lVar1 + 0x28);\u000a  if (-1 < lVar4) {\u000a    selected_list.elements[lVar4] = (XmuWidgetNode *)0x0;\u000a    *(undefined4 *)(*(long *)(in_RDI + 0x70) + 0x28) = 0xffffffff;\u000a    iVar3 = 1;\u000a    if (1 < selected_list.n_elements) {\u000a      iVar3 = copydown();\u000a    }\u000a    BVar2 = (Boolean)iVar3;\u000a    selected_list.n_elements = selected_list.n_elements - iVar3;\u000a    if (in_SIL != 0) {\u000a      BVar2 = XtSetValues(*(undefined8 *)(lVar1 + 0x18),false_args,1);\u000a      return BVar2;\u000a    }\u000a  }\u000a  return BVar2;\u000a}\u000a\u000a
+p360
+S'PUSH RBP\nPUSH RBX\nPUSH RAX\nMOV EBP,ESI\nMOV RAX,RDI\nMOV RBX,qword ptr [RAX + 0x70]\nMOVSXD RDI,dword ptr [RBX + 0x28]\nTEST RDI,RDI\nJS 0x00403026\nMOV RCX,qword ptr [0x00606a20]\nMOV qword ptr [RCX + RDI*0x8],0x0\nMOV RAX,qword ptr [RAX + 0x70]\nMOV dword ptr [RAX + 0x28],0xffffffff\nMOV EAX,0x1\nCMP dword ptr [0x00606a18],0x2\nJL 0x00403002\nCALL 0x00403130\nSUB dword ptr [0x00606a18],EAX\nTEST BPL,BPL\nJZ 0x00403026\nMOV RDI,qword ptr [RBX + 0x18]\nMOV ESI,0x605420\nMOV EDX,0x1\nADD RSP,0x8\nPOP RBX\nPOP RBP\nJMP 0x00401480\nADD RSP,0x8\nPOP RBX\nPOP RBP\nRET\n'
+p361
+S'55\n53\n50\n89 f5\n48 89 f8\n48 8b 58 70\n48 63 7b 28\n48 85 ff\n78 51\n48 8b 0d 44 3a 20 00\n48 c7 04 f9 00 00 00 00\n48 8b 40 70\nc7 40 28 ff ff ff ff\nb8 01 00 00 00\n83 3d 1d 3a 20 00 02\n7c 05\ne8 2e 01 00 00\n29 05 10 3a 20 00\n40 84 ed\n74 19\n48 8b 7b 18\nbe 20 54 60 00\nba 01 00 00 00\n48 83 c4 08\n5b\n5d\ne9 5a e4 ff ff\n48 83 c4 08\n5b\n5d\nc3\n'
+p362
+S'.text:0000000000402fc0\n.text:0000000000402fc1\n.text:0000000000402fc2\n.text:0000000000402fc3\n.text:0000000000402fc5\n.text:0000000000402fc8\n.text:0000000000402fcc\n.text:0000000000402fd0\n.text:0000000000402fd3\n.text:0000000000402fd5\n.text:0000000000402fdc\n.text:0000000000402fe4\n.text:0000000000402fe8\n.text:0000000000402fef\n.text:0000000000402ff4\n.text:0000000000402ffb\n.text:0000000000402ffd\n.text:0000000000403002\n.text:0000000000403008\n.text:000000000040300b\n.text:000000000040300d\n.text:0000000000403011\n.text:0000000000403016\n.text:000000000040301b\n.text:000000000040301f\n.text:0000000000403020\n.text:0000000000403021\n.text:0000000000403026\n.text:000000000040302a\n.text:000000000040302b\n.text:000000000040302c\n'
+p363
+tp364
+sS'XUnmapWindow'
+p365
+(S'\n__stdcall XUnmapWindow()\n'
+p366
+V\u000avoid XUnmapWindow(void)\u000a\u000a{\u000a  (*(code *)PTR_XUnmapWindow_00605108)();\u000a  return;\u000a}\u000a\u000a
+p367
+S'JMP qword ptr [0x00605108]\n'
+p368
+S'ff 25 12 3b 20 00\n'
+p369
+S'.plt:00000000004015f0\n'
+p370
+tp371
+sS'XawTreeForceLayout'
+p372
+(S'\n__stdcall XawTreeForceLayout()\n'
+p373
+V\u000avoid XawTreeForceLayout(void)\u000a\u000a{\u000a  (*(code *)PTR_XawTreeForceLayout_00605060)();\u000a  return;\u000a}\u000a\u000a
+p374
+S'JMP qword ptr [0x00605060]\n'
+p375
+S'ff 25 ba 3b 20 00\n'
+p376
+S'.plt:00000000004014a0\n'
+p377
+tp378
+sS'add_subtree_to_selected_list'
+p379
+(S'\n__stdcall add_subtree_to_selected_list(XmuWidgetNode * node)\n'
+p380
+V\u000avoid add_subtree_to_selected_list(XmuWidgetNode *node)\u000a\u000a{\u000a  XmuWidgetNode *node_00;\u000a  \u000a  if (node != (XmuWidgetNode *)0x0) {\u000a    add_to_selected_list(node);\u000a    node_00 = (XmuWidgetNode *)node->children;\u000a    while (node_00 != (XmuWidgetNode *)0x0) {\u000a      add_subtree_to_selected_list(node_00);\u000a      node_00 = (XmuWidgetNode *)node_00->siblings;\u000a    }\u000a  }\u000a  return;\u000a}\u000a\u000a
+p381
+S'PUSH RBX\nMOV RBX,RDI\nTEST RBX,RBX\nJZ 0x00403221\nMOV ESI,0x1\nMOV RDI,RBX\nCALL 0x00403230\nMOV RBX,qword ptr [RBX + 0x18]\nTEST RBX,RBX\nJZ 0x00403221\nNOP\nMOV RDI,RBX\nCALL 0x004031f0\nMOV RBX,qword ptr [RBX + 0x20]\nTEST RBX,RBX\nJNZ 0x00403210\nPOP RBX\nRET\n'
+p382
+S'53\n48 89 fb\n48 85 db\n74 28\nbe 01 00 00 00\n48 89 df\ne8 2a 00 00 00\n48 8b 5b 18\n48 85 db\n74 12\n90\n48 89 df\ne8 d8 ff ff ff\n48 8b 5b 20\n48 85 db\n75 ef\n5b\nc3\n'
+p383
+S'.text:00000000004031f0\n.text:00000000004031f1\n.text:00000000004031f4\n.text:00000000004031f7\n.text:00000000004031f9\n.text:00000000004031fe\n.text:0000000000403201\n.text:0000000000403206\n.text:000000000040320a\n.text:000000000040320d\n.text:000000000040320f\n.text:0000000000403210\n.text:0000000000403213\n.text:0000000000403218\n.text:000000000040321c\n.text:000000000040321f\n.text:0000000000403221\n.text:0000000000403222\n'
+p384
+tp385
+sS'XtConvertAndStore'
+p386
+(S'\n__stdcall XtConvertAndStore()\n'
+p387
+V\u000avoid XtConvertAndStore(void)\u000a\u000a{\u000a  (*(code *)PTR_XtConvertAndStore_006050b0)();\u000a  return;\u000a}\u000a\u000a
+p388
+S'JMP qword ptr [0x006050b0]\n'
+p389
+S'ff 25 6a 3b 20 00\n'
+p390
+S'.plt:0000000000401540\n'
+p391
+tp392
+sS'XtParseTranslationTable'
+p393
+(S'\n__stdcall XtParseTranslationTable()\n'
+p394
+V\u000avoid XtParseTranslationTable(void)\u000a\u000a{\u000a  (*(code *)PTR_XtParseTranslationTable_00605100)();\u000a  return;\u000a}\u000a\u000a
+p395
+S'JMP qword ptr [0x00605100]\n'
+p396
+S'ff 25 1a 3b 20 00\n'
+p397
+S'.plt:00000000004015e0\n'
+p398
+tp399
+sS'XtRealizeWidget'
+p400
+(S'\n__stdcall XtRealizeWidget()\n'
+p401
+V\u000avoid XtRealizeWidget(void)\u000a\u000a{\u000a  (*(code *)PTR_XtRealizeWidget_006050a8)();\u000a  return;\u000a}\u000a\u000a
+p402
+S'JMP qword ptr [0x006050a8]\n'
+p403
+S'ff 25 72 3b 20 00\n'
+p404
+S'.plt:0000000000401530\n'
+p405
+tp406
+sS'XtSetValues'
+p407
+(S'\n__stdcall XtSetValues()\n'
+p408
+V\u000avoid XtSetValues(void)\u000a\u000a{\u000a  (*(code *)PTR_XtSetValues_00605050)();\u000a  return;\u000a}\u000a\u000a
+p409
+S'JMP qword ptr [0x00605050]\n'
+p410
+S'ff 25 ca 3b 20 00\n'
+p411
+S'.plt:0000000000401480\n'
+p412
+tp413
+sS'set_orientation_menu'
+p414
+(S'\n__stdcall set_orientation_menu()\n'
+p415
+V\u000avoid set_orientation_menu(int iParm1,char cParm2)\u000a\u000a{\u000a  Arg args [1];\u000a  char *local_28;\u000a  long local_20;\u000a  \u000a  XtSetValues(view_widgets_0,sensitiveargs + (ulong)(iParm1 != 4),1);\u000a  XtSetValues(view_widgets_1,sensitiveargs + (ulong)(iParm1 != 2),1);\u000a  if (cParm2 != 0) {\u000a    local_28 = "gravity";\u000a    local_20 = (long)iParm1;\u000a    XUnmapWindow(((treeWidget->core).screen)->display,(treeWidget->core).window);\u000a    XtSetValues(treeWidget,&local_28,1);\u000a    XMapWindow(((treeWidget->core).screen)->display,(treeWidget->core).window);\u000a  }\u000a  return;\u000a}\u000a\u000a
+p416
+S'PUSH RBP\nPUSH RBX\nSUB RSP,0x18\nMOV EBP,ESI\nMOV EBX,EDI\nMOV RDI,qword ptr [0x00606a80]\nXOR EAX,EAX\nCMP EBX,0x4\nSETNZ AL\nSHL RAX,0x4\nLEA RSI,[0x605450 + RAX]\nMOV EDX,0x1\nCALL 0x00401480\nMOV RDI,qword ptr [0x00606a90]\nXOR EAX,EAX\nCMP EBX,0x2\nSETNZ AL\nSHL RAX,0x4\nLEA RSI,[0x605450 + RAX]\nMOV EDX,0x1\nCALL 0x00401480\nTEST BPL,BPL\nJZ 0x00402887\nMOV qword ptr [RSP],0x403678\nMOVSXD RAX,EBX\nMOV qword ptr [RSP + 0x8],RAX\nMOV RAX,qword ptr [0x00606a60]\nMOV RCX,qword ptr [0x98 + RAX]\nMOV RSI,qword ptr [0xa8 + RAX]\nMOV RDI,qword ptr [RCX + 0x8]\nCALL 0x004015f0\nMOV RDI,qword ptr [0x00606a60]\nMOV RSI,RSP\nMOV EDX,0x1\nCALL 0x00401480\nMOV RAX,qword ptr [0x00606a60]\nMOV RCX,qword ptr [0x98 + RAX]\nMOV RSI,qword ptr [0xa8 + RAX]\nMOV RDI,qword ptr [RCX + 0x8]\nCALL 0x00401640\nADD RSP,0x18\nPOP RBX\nPOP RBP\nRET\n'
+p417
+S'55\n53\n48 83 ec 18\n89 f5\n89 fb\n48 8b 3d 9f 42 20 00\n31 c0\n83 fb 04\n0f 95 c0\n48 c1 e0 04\n48 8d b0 50 54 60 00\nba 01 00 00 00\ne8 82 ec ff ff\n48 8b 3d 8b 42 20 00\n31 c0\n83 fb 02\n0f 95 c0\n48 c1 e0 04\n48 8d b0 50 54 60 00\nba 01 00 00 00\ne8 5e ec ff ff\n40 84 ed\n74 60\n48 c7 04 24 78 36 40 00\n48 63 c3\n48 89 44 24 08\n48 8b 05 22 42 20 00\n48 8b 88 98 00 00 00\n48 8b b0 a8 00 00 00\n48 8b 79 08\ne8 9b ed ff ff\n48 8b 3d 04 42 20 00\n48 89 e6\nba 01 00 00 00\ne8 17 ec ff ff\n48 8b 05 f0 41 20 00\n48 8b 88 98 00 00 00\n48 8b b0 a8 00 00 00\n48 8b 79 08\ne8 b9 ed ff ff\n48 83 c4 18\n5b\n5d\nc3\n'
+p418
+S'.text:00000000004027d0\n.text:00000000004027d1\n.text:00000000004027d2\n.text:00000000004027d6\n.text:00000000004027d8\n.text:00000000004027da\n.text:00000000004027e1\n.text:00000000004027e3\n.text:00000000004027e6\n.text:00000000004027e9\n.text:00000000004027ed\n.text:00000000004027f4\n.text:00000000004027f9\n.text:00000000004027fe\n.text:0000000000402805\n.text:0000000000402807\n.text:000000000040280a\n.text:000000000040280d\n.text:0000000000402811\n.text:0000000000402818\n.text:000000000040281d\n.text:0000000000402822\n.text:0000000000402825\n.text:0000000000402827\n.text:000000000040282f\n.text:0000000000402832\n.text:0000000000402837\n.text:000000000040283e\n.text:0000000000402845\n.text:000000000040284c\n.text:0000000000402850\n.text:0000000000402855\n.text:000000000040285c\n.text:000000000040285f\n.text:0000000000402864\n.text:0000000000402869\n.text:0000000000402870\n.text:0000000000402877\n.text:000000000040287e\n.text:0000000000402882\n.text:0000000000402887\n.text:000000000040288b\n.text:000000000040288c\n.text:000000000040288d\n'
+p419
+tp420
+sS'XtAppInitialize'
+p421
+(S'\n__stdcall XtAppInitialize()\n'
+p422
+V\u000avoid XtAppInitialize(void)\u000a\u000a{\u000a  (*(code *)PTR_XtAppInitialize_00605038)();\u000a  return;\u000a}\u000a\u000a
+p423
+S'JMP qword ptr [0x00605038]\n'
+p424
+S'ff 25 e2 3b 20 00\n'
+p425
+S'.plt:0000000000401450\n'
+p426
+tp427
+sS'malloc'
+p428
+(S'\n__stdcall malloc(size_t __size)\n'
+p429
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid * malloc(size_t __size)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = (void *)(*(code *)PTR_malloc_006050e0)();\u000a  return pvVar1;\u000a}\u000a\u000a
+p430
+S'JMP qword ptr [0x006050e0]\n'
+p431
+S'ff 25 3a 3b 20 00\n'
+p432
+S'.plt:00000000004015a0\n'
+p433
+tp434
+sS'register_tm_clones'
+p435
+(S'\n__stdcall register_tm_clones()\n'
+p436
+V\u000a/* WARNING: Removing unreachable block (ram,0x00401733) */\u000a/* WARNING: Removing unreachable block (ram,0x0040173d) */\u000a\u000avoid register_tm_clones(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p437
+S'MOV ESI,0x6054a0\nPUSH RBP\nSUB RSI,0x6054a0\nSAR RSI,0x3\nMOV RBP,RSP\nMOV RAX,RSI\nSHR RAX,0x3f\nADD RSI,RAX\nSAR RSI,1\nJZ 0x00401748\nMOV EAX,0x0\nTEST RAX,RAX\nJZ 0x00401748\nPOP RBP\nMOV EDI,0x6054a0\nJMP RAX\nPOP RBP\nRET\n'
+p438
+S'be a0 54 60 00\n55\n48 81 ee a0 54 60 00\n48 c1 fe 03\n48 89 e5\n48 89 f0\n48 c1 e8 3f\n48 01 c6\n48 d1 fe\n74 15\nb8 00 00 00 00\n48 85 c0\n74 0b\n5d\nbf a0 54 60 00\nff e0\n5d\nc3\n'
+p439
+S'.text:0000000000401710\n.text:0000000000401715\n.text:0000000000401716\n.text:000000000040171d\n.text:0000000000401721\n.text:0000000000401724\n.text:0000000000401727\n.text:000000000040172b\n.text:000000000040172e\n.text:0000000000401731\n.text:0000000000401733\n.text:0000000000401738\n.text:000000000040173b\n.text:000000000040173d\n.text:000000000040173e\n.text:0000000000401743\n.text:0000000000401748\n.text:0000000000401749\n'
+p440
+tp441
+sS'set_resource_labels'
+p442
+(S'\n__stdcall set_resource_labels(XmuWidgetNode * node)\n'
+p443
+V\u000aBoolean set_resource_labels(XmuWidgetNode *node)\u000a\u000a{\u000a  _XmuWidgetNode **pp_Var1;\u000a  char *pcVar2;\u000a  char **ppcVar3;\u000a  char **ppcVar4;\u000a  char **ppcVar5;\u000a  ulong uVar6;\u000a  ulong uVar7;\u000a  \u000a  ppcVar5 = (char **)node->data;\u000a  if (*ppcVar5 == (char *)0x0) {\u000a    pcVar2 = (char *)calloc((ulong)(uint)(*(int *)(ppcVar5 + 2) * 3),8);\u000a    *ppcVar5 = pcVar2;\u000a    if (pcVar2 == (char *)0x0) {\u000a      return 0;\u000a    }\u000a  }\u000a  ppcVar4 = (char **)*ppcVar5;\u000a  if (node->nresources != 0) {\u000a    pp_Var1 = node->resourcewn;\u000a    ppcVar3 = &node->resources->resource_type;\u000a    uVar7 = 0;\u000a    do {\u000a      if ((XmuWidgetNode *)pp_Var1[uVar7] == node) {\u000a        *ppcVar4 = ppcVar3[-2];\u000a        ppcVar4[1] = ppcVar3[-1];\u000a        ppcVar4[2] = *ppcVar3;\u000a        ppcVar4 = ppcVar4 + 3;\u000a      }\u000a      uVar6 = uVar7 + 1;\u000a      ppcVar3 = ppcVar3 + 6;\u000a      uVar7 = uVar6 & 0xffffffff;\u000a    } while ((uint)uVar6 < node->nresources);\u000a  }\u000a  if (*(int *)((long)ppcVar5 + 0xc) != 0) {\u000a    *ppcVar4 = "";\u000a    ppcVar4[1] = "";\u000a    ppcVar4[2] = "";\u000a    ppcVar4 = ppcVar4 + 3;\u000a  }\u000a  if (node->nconstraints != 0) {\u000a    pp_Var1 = node->constraintwn;\u000a    ppcVar5 = &node->constraints->resource_type;\u000a    uVar7 = 0;\u000a    do {\u000a      if ((XmuWidgetNode *)pp_Var1[uVar7] == node) {\u000a        *ppcVar4 = ppcVar5[-2];\u000a        ppcVar4[1] = ppcVar5[-1];\u000a        ppcVar4[2] = *ppcVar5;\u000a        ppcVar4 = ppcVar4 + 3;\u000a      }\u000a      uVar6 = uVar7 + 1;\u000a      ppcVar5 = ppcVar5 + 6;\u000a      uVar7 = uVar6 & 0xffffffff;\u000a    } while ((uint)uVar6 < node->nconstraints);\u000a  }\u000a  return 1;\u000a}\u000a\u000a
+p444
+S'PUSH R14\nPUSH RBX\nPUSH RAX\nMOV RBX,RDI\nMOV R14,qword ptr [RBX + 0x70]\nCMP qword ptr [R14],0x0\nJNZ 0x0040305e\nMOV EAX,dword ptr [R14 + 0x10]\nLEA EDI,[RAX + RAX*0x2]\nMOV ESI,0x8\nCALL 0x00401500\nMOV qword ptr [R14],RAX\nTEST RAX,RAX\nJZ 0x0040311e\nMOV RCX,qword ptr [R14]\nCMP dword ptr [RBX + 0x50],0x0\nJZ 0x004030ac\nMOV RAX,qword ptr [RBX + 0x40]\nMOV RDX,qword ptr [RBX + 0x48]\nADD RAX,0x10\nXOR ESI,ESI\nNOP dword ptr CS:[RAX + RAX*0x1]\nCMP qword ptr [RDX + RSI*0x8],RBX\nJNZ 0x004030a0\nMOV RDI,qword ptr [RAX + -0x10]\nMOV qword ptr [RCX],RDI\nMOV RDI,qword ptr [RAX + -0x8]\nMOV qword ptr [RCX + 0x8],RDI\nMOV RDI,qword ptr [RAX]\nMOV qword ptr [RCX + 0x10],RDI\nADD RCX,0x18\nINC RSI\nADD RAX,0x30\nCMP ESI,dword ptr [RBX + 0x50]\nJC 0x00403080\nCMP dword ptr [R14 + 0xc],0x0\nJZ 0x004030ce\nMOV qword ptr [RCX],0x40350c\nMOV qword ptr [RCX + 0x8],0x40350c\nMOV qword ptr [RCX + 0x10],0x40350c\nADD RCX,0x18\nMOV AL,0x1\nCMP dword ptr [RBX + 0x68],0x0\nJZ 0x00403120\nMOV RDX,qword ptr [RBX + 0x58]\nMOV R8,qword ptr [RBX + 0x60]\nADD RDX,0x10\nXOR EDI,EDI\nNOP word ptr CS:[RAX + RAX*0x1]\nCMP qword ptr [R8 + RDI*0x8],RBX\nJNZ 0x00403110\nMOV RSI,qword ptr [RDX + -0x10]\nMOV qword ptr [RCX],RSI\nMOV RSI,qword ptr [RDX + -0x8]\nMOV qword ptr [RCX + 0x8],RSI\nMOV RSI,qword ptr [RDX]\nMOV qword ptr [RCX + 0x10],RSI\nADD RCX,0x18\nINC RDI\nADD RDX,0x30\nCMP EDI,dword ptr [RBX + 0x68]\nJC 0x004030f0\nJMP 0x00403120\nXOR EAX,EAX\nADD RSP,0x8\nPOP RBX\nPOP R14\nRET\n'
+p445
+S'41 56\n53\n50\n48 89 fb\n4c 8b 73 70\n49 83 3e 00\n75 1d\n41 8b 46 10\n8d 3c 40\nbe 08 00 00 00\ne8 ae e4 ff ff\n49 89 06\n48 85 c0\n0f 84 c0 00 00 00\n49 8b 0e\n83 7b 50 00\n74 45\n48 8b 43 40\n48 8b 53 48\n48 83 c0 10\n31 f6\n66 66 2e 0f 1f 84 00 00 00 00 00\n48 39 1c f2\n75 1a\n48 8b 78 f0\n48 89 39\n48 8b 78 f8\n48 89 79 08\n48 8b 38\n48 89 79 10\n48 83 c1 18\n48 ff c6\n48 83 c0 30\n3b 73 50\n72 d4\n41 83 7e 0c 00\n74 1b\n48 c7 01 0c 35 40 00\n48 c7 41 08 0c 35 40 00\n48 c7 41 10 0c 35 40 00\n48 83 c1 18\nb0 01\n83 7b 68 00\n74 4a\n48 8b 53 58\n4c 8b 43 60\n48 83 c2 10\n31 ff\n66 66 66 2e 0f 1f 84 00 00 00 00 00\n49 39 1c f8\n75 1a\n48 8b 72 f0\n48 89 31\n48 8b 72 f8\n48 89 71 08\n48 8b 32\n48 89 71 10\n48 83 c1 18\n48 ff c7\n48 83 c2 30\n3b 7b 68\n72 d4\neb 02\n31 c0\n48 83 c4 08\n5b\n41 5e\nc3\n'
+p446
+S'.text:0000000000403030\n.text:0000000000403032\n.text:0000000000403033\n.text:0000000000403034\n.text:0000000000403037\n.text:000000000040303b\n.text:000000000040303f\n.text:0000000000403041\n.text:0000000000403045\n.text:0000000000403048\n.text:000000000040304d\n.text:0000000000403052\n.text:0000000000403055\n.text:0000000000403058\n.text:000000000040305e\n.text:0000000000403061\n.text:0000000000403065\n.text:0000000000403067\n.text:000000000040306b\n.text:000000000040306f\n.text:0000000000403073\n.text:0000000000403075\n.text:0000000000403080\n.text:0000000000403084\n.text:0000000000403086\n.text:000000000040308a\n.text:000000000040308d\n.text:0000000000403091\n.text:0000000000403095\n.text:0000000000403098\n.text:000000000040309c\n.text:00000000004030a0\n.text:00000000004030a3\n.text:00000000004030a7\n.text:00000000004030aa\n.text:00000000004030ac\n.text:00000000004030b1\n.text:00000000004030b3\n.text:00000000004030ba\n.text:00000000004030c2\n.text:00000000004030ca\n.text:00000000004030ce\n.text:00000000004030d0\n.text:00000000004030d4\n.text:00000000004030d6\n.text:00000000004030da\n.text:00000000004030de\n.text:00000000004030e2\n.text:00000000004030e4\n.text:00000000004030f0\n.text:00000000004030f4\n.text:00000000004030f6\n.text:00000000004030fa\n.text:00000000004030fd\n.text:0000000000403101\n.text:0000000000403105\n.text:0000000000403108\n.text:000000000040310c\n.text:0000000000403110\n.text:0000000000403113\n.text:0000000000403117\n.text:000000000040311a\n.text:000000000040311c\n.text:000000000040311e\n.text:0000000000403120\n.text:0000000000403124\n.text:0000000000403125\n.text:0000000000403127\n'
+p447
+tp448
+sS'add_to_selected_list'
+p449
+(S'\n__stdcall add_to_selected_list(XmuWidgetNode * node)\n'
+p450
+V\u000avoid add_to_selected_list(XmuWidgetNode *node)\u000a\u000a{\u000a  XtPointer pvVar1;\u000a  XmuWidgetNode **ppXVar2;\u000a  long lVar3;\u000a  char in_SIL;\u000a  \u000a  pvVar1 = node->data;\u000a  if ((*(long *)((long)pvVar1 + 0x18) != 0) && (*(int *)((long)pvVar1 + 0x28) < 0)) {\u000a    if (selected_list.max_elements <= selected_list.n_elements) {\u000a      initialize_widgetnode_list\u000a                ((ulong)(uint)((int)(((uint)(selected_list.max_elements * 3) >> 0x1f) +\u000a                                    selected_list.max_elements * 3) >> 1));\u000a    }\u000a    ppXVar2 = selected_list.elements;\u000a    lVar3 = (long)selected_list.n_elements;\u000a    *(int *)((long)node->data + 0x28) = selected_list.n_elements;\u000a    ppXVar2[lVar3] = node;\u000a    selected_list.n_elements = selected_list.n_elements + 1;\u000a    if (in_SIL != 0) {\u000a      XtSetValues(*(undefined8 *)((long)pvVar1 + 0x18),true_args,1);\u000a      return;\u000a    }\u000a  }\u000a  return;\u000a}\u000a\u000a
+p451
+S'PUSH RBP\nPUSH R14\nPUSH RBX\nMOV R14D,ESI\nMOV RBX,RDI\nMOV RBP,qword ptr [RBX + 0x70]\nCMP qword ptr [RBP + 0x18],0x0\nJZ 0x0040324b\nCMP dword ptr [RBP + 0x28],0x0\nJS 0x00403250\nPOP RBX\nPOP R14\nPOP RBP\nRET\nMOV EAX,dword ptr [0x00606a1c]\nCMP dword ptr [0x00606a18],EAX\nJL 0x0040326f\nLEA EAX,[RAX + RAX*0x2]\nMOV EDI,EAX\nSHR EDI,0x1f\nADD EDI,EAX\nSAR EDI,1\nCALL 0x00402140\nMOV RAX,qword ptr [0x00606a20]\nMOVSXD RCX,dword ptr [0x00606a18]\nMOV RDX,qword ptr [RBX + 0x70]\nMOV dword ptr [RDX + 0x28],ECX\nMOV qword ptr [RAX + RCX*0x8],RBX\nINC dword ptr [0x00606a18]\nTEST R14B,R14B\nJZ 0x0040324b\nMOV RDI,qword ptr [RBP + 0x18]\nMOV ESI,0x605430\nMOV EDX,0x1\nPOP RBX\nPOP R14\nPOP RBP\nJMP 0x00401480\n'
+p452
+S'55\n41 56\n53\n41 89 f6\n48 89 fb\n48 8b 6b 70\n48 83 7d 18 00\n74 06\n83 7d 28 00\n78 05\n5b\n41 5e\n5d\nc3\n8b 05 c6 37 20 00\n39 05 bc 37 20 00\n7c 11\n8d 04 40\n89 c7\nc1 ef 1f\n01 c7\nd1 ff\ne8 d1 ee ff ff\n48 8b 05 aa 37 20 00\n48 63 0d 9b 37 20 00\n48 8b 53 70\n89 4a 28\n48 89 1c c8\nff 05 8a 37 20 00\n45 84 f6\n74 b8\n48 8b 7d 18\nbe 30 54 60 00\nba 01 00 00 00\n5b\n41 5e\n5d\ne9 d6 e1 ff ff\n'
+p453
+S'.text:0000000000403230\n.text:0000000000403231\n.text:0000000000403233\n.text:0000000000403234\n.text:0000000000403237\n.text:000000000040323a\n.text:000000000040323e\n.text:0000000000403243\n.text:0000000000403245\n.text:0000000000403249\n.text:000000000040324b\n.text:000000000040324c\n.text:000000000040324e\n.text:000000000040324f\n.text:0000000000403250\n.text:0000000000403256\n.text:000000000040325c\n.text:000000000040325e\n.text:0000000000403261\n.text:0000000000403263\n.text:0000000000403266\n.text:0000000000403268\n.text:000000000040326a\n.text:000000000040326f\n.text:0000000000403276\n.text:000000000040327d\n.text:0000000000403281\n.text:0000000000403284\n.text:0000000000403288\n.text:000000000040328e\n.text:0000000000403291\n.text:0000000000403293\n.text:0000000000403297\n.text:000000000040329c\n.text:00000000004032a1\n.text:00000000004032a2\n.text:00000000004032a4\n.text:00000000004032a5\n'
+p454
+tp455
+sS'XmuWnFetchResources'
+p456
+(S'\n__stdcall XmuWnFetchResources()\n'
+p457
+V\u000avoid XmuWnFetchResources(void)\u000a\u000a{\u000a  (*(code *)PTR_XmuWnFetchResources_006050d0)();\u000a  return;\u000a}\u000a\u000a
+p458
+S'JMP qword ptr [0x006050d0]\n'
+p459
+S'ff 25 4a 3b 20 00\n'
+p460
+S'.plt:0000000000401580\n'
+p461
+tp462
+sS'XawListUnhighlight'
+p463
+(S'\n__stdcall XawListUnhighlight()\n'
+p464
+V\u000avoid XawListUnhighlight(void)\u000a\u000a{\u000a  (*(code *)PTR_XawListUnhighlight_00605148)();\u000a  return;\u000a}\u000a\u000a
+p465
+S'JMP qword ptr [0x00605148]\n'
+p466
+S'ff 25 d2 3a 20 00\n'
+p467
+S'.plt:0000000000401670\n'
+p468
+tp469
+sS'create_resource_lw'
+p470
+(S'\n__stdcall create_resource_lw(XmuWidgetNode * node)\n'
+p471
+V\u000aBoolean create_resource_lw(XmuWidgetNode *node)\u000a\u000a{\u000a  long *plVar1;\u000a  Boolean BVar2;\u000a  long lVar3;\u000a  Arg args [4];\u000a  char *local_58;\u000a  ulong local_50;\u000a  undefined *local_48;\u000a  long local_40;\u000a  char *local_38;\u000a  undefined8 local_30;\u000a  char *local_28;\u000a  undefined8 local_20;\u000a  \u000a  plVar1 = (long *)node->data;\u000a  if (*(int *)(plVar1 + 2) == 0) {\u000aLAB_00402fb0:\u000a    BVar2 = 0;\u000a  }\u000a  else {\u000a    if (*plVar1 == 0) {\u000a      BVar2 = set_resource_labels(node);\u000a      if (BVar2 == 0) goto LAB_00402fb0;\u000a    }\u000a    local_58 = "numberStrings";\u000a    local_50 = (ulong)(uint)(*(int *)(plVar1 + 2) * 3);\u000a    local_48 = &DAT_00403ae7;\u000a    local_40 = *plVar1;\u000a    local_38 = "defaultColumns";\u000a    local_30 = 3;\u000a    local_28 = "forceColumns";\u000a    local_20 = 1;\u000a    lVar3 = XtCreateManagedWidget\u000a                      (node->label,listWidgetClass,*(undefined8 *)(plVar1[3] + 0x10),&local_58,4);\u000a    plVar1[4] = lVar3;\u000a    XtRealizeWidget(lVar3);\u000a    BVar2 = 1;\u000a  }\u000a  return BVar2;\u000a}\u000a\u000a
+p472
+S'PUSH R14\nPUSH RBX\nSUB RSP,0x48\nMOV R14,RDI\nMOV RBX,qword ptr [R14 + 0x70]\nCMP dword ptr [RBX + 0x10],0x0\nJZ 0x00402fb0\nCMP qword ptr [RBX],0x0\nJNZ 0x00402f3a\nMOV RDI,R14\nCALL 0x00403030\nTEST AL,AL\nJZ 0x00402fb0\nMOV qword ptr [RSP],0x403ad9\nIMUL EAX,dword ptr [RBX + 0x10],0x3\nMOV qword ptr [RSP + 0x8],RAX\nMOV qword ptr [RSP + 0x10],0x403ae7\nMOV RAX,qword ptr [RBX]\nMOV qword ptr [RSP + 0x18],RAX\nMOV qword ptr [RSP + 0x20],0x403aec\nMOV qword ptr [RSP + 0x28],0x3\nMOV qword ptr [RSP + 0x30],0x403afb\nMOV qword ptr [RSP + 0x38],0x1\nMOV RDI,qword ptr [R14]\nMOV RSI,qword ptr [0x00606980]\nMOV RAX,qword ptr [RBX + 0x18]\nMOV RDX,qword ptr [RAX + 0x10]\nMOV RCX,RSP\nMOV R8D,0x4\nCALL 0x00401470\nMOV qword ptr [RBX + 0x20],RAX\nMOV RDI,RAX\nCALL 0x00401530\nMOV AL,0x1\nJMP 0x00402fb2\nXOR EAX,EAX\nADD RSP,0x48\nPOP RBX\nPOP R14\nRET\n'
+p473
+S'41 56\n53\n48 83 ec 48\n49 89 fe\n49 8b 5e 70\n83 7b 10 00\n0f 84 88 00 00 00\n48 83 3b 00\n75 0c\n4c 89 f7\ne8 fa 00 00 00\n84 c0\n74 76\n48 c7 04 24 d9 3a 40 00\n6b 43 10 03\n48 89 44 24 08\n48 c7 44 24 10 e7 3a 40 00\n48 8b 03\n48 89 44 24 18\n48 c7 44 24 20 ec 3a 40 00\n48 c7 44 24 28 03 00 00 00\n48 c7 44 24 30 fb 3a 40 00\n48 c7 44 24 38 01 00 00 00\n49 8b 3e\n48 8b 35 f6 39 20 00\n48 8b 43 18\n48 8b 50 10\n48 89 e1\n41 b8 04 00 00 00\ne8 d0 e4 ff ff\n48 89 43 20\n48 89 c7\ne8 84 e5 ff ff\nb0 01\neb 02\n31 c0\n48 83 c4 48\n5b\n41 5e\nc3\n'
+p474
+S'.text:0000000000402f10\n.text:0000000000402f12\n.text:0000000000402f13\n.text:0000000000402f17\n.text:0000000000402f1a\n.text:0000000000402f1e\n.text:0000000000402f22\n.text:0000000000402f28\n.text:0000000000402f2c\n.text:0000000000402f2e\n.text:0000000000402f31\n.text:0000000000402f36\n.text:0000000000402f38\n.text:0000000000402f3a\n.text:0000000000402f42\n.text:0000000000402f46\n.text:0000000000402f4b\n.text:0000000000402f54\n.text:0000000000402f57\n.text:0000000000402f5c\n.text:0000000000402f65\n.text:0000000000402f6e\n.text:0000000000402f77\n.text:0000000000402f80\n.text:0000000000402f83\n.text:0000000000402f8a\n.text:0000000000402f8e\n.text:0000000000402f92\n.text:0000000000402f95\n.text:0000000000402f9b\n.text:0000000000402fa0\n.text:0000000000402fa4\n.text:0000000000402fa7\n.text:0000000000402fac\n.text:0000000000402fae\n.text:0000000000402fb0\n.text:0000000000402fb2\n.text:0000000000402fb6\n.text:0000000000402fb7\n.text:0000000000402fb9\n'
+p475
+tp476
+sS'fwrite'
+p477
+(S'\n__stdcall fwrite(void * __ptr, size_t __size, size_t __n, FILE * __s)\n'
+p478
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000asize_t fwrite(void *__ptr,size_t __size,size_t __n,FILE *__s)\u000a\u000a{\u000a  size_t sVar1;\u000a  \u000a  sVar1 = (*(code *)PTR_fwrite_00605140)();\u000a  return sVar1;\u000a}\u000a\u000a
+p479
+S'JMP qword ptr [0x00605140]\n'
+p480
+S'ff 25 da 3a 20 00\n'
+p481
+S'.plt:0000000000401660\n'
+p482
+tp483
+sS'do_resources'
+p484
+(S'\n__stdcall do_resources(XmuWidgetNode * node)\n'
+p485
+V\u000avoid do_resources(XmuWidgetNode *node)\u000a\u000a{\u000a  XtPointer pvVar1;\u000a  char cVar2;\u000a  Boolean BVar3;\u000a  char in_DL;\u000a  bool in_SIL;\u000a  \u000a  pvVar1 = node->data;\u000a  if (in_SIL == true) {\u000a    if (*(long *)((long)pvVar1 + 0x20) == 0) {\u000a      in_SIL = true;\u000a    }\u000a    else {\u000a      cVar2 = XtIsManaged();\u000a      in_SIL = cVar2 == 0;\u000a    }\u000a  }\u000a  if (in_SIL == true) {\u000a    if (*(long *)((long)pvVar1 + 0x20) == 0) {\u000a      BVar3 = create_resource_lw(node);\u000a      if (BVar3 != 0) {\u000a        NumberShowing = NumberShowing + 1;\u000a      }\u000a    }\u000a    else {\u000a      cVar2 = XtIsManaged();\u000a      if (cVar2 == 0) {\u000a        NumberShowing = NumberShowing + 1;\u000a        (*(code *)PTR_XtManageChild_00605150)(*(undefined8 *)((long)pvVar1 + 0x20));\u000a        return;\u000a      }\u000a    }\u000a  }\u000a  else {\u000a    if (*(long *)((long)pvVar1 + 0x20) != 0) {\u000a      cVar2 = XtIsManaged();\u000a      if (cVar2 != 0) {\u000a        NumberShowing = NumberShowing + -1;\u000a        XtUnmanageChild(*(undefined8 *)((long)pvVar1 + 0x20));\u000a        XawListUnhighlight(*(undefined8 *)((long)pvVar1 + 0x20));\u000a        if (in_DL != 0) {\u000a          remove_from_selected_list();\u000a          return;\u000a        }\u000a      }\u000a    }\u000a  }\u000a  return;\u000a}\u000a\u000a
+p486
+S'PUSH RBP\nPUSH R14\nPUSH RBX\nMOV R14D,EDX\nMOV RBX,RDI\nMOV RBP,qword ptr [RBX + 0x70]\nCMP SIL,0x2\nJNZ 0x00402e8d\nMOV RDI,qword ptr [RBP + 0x20]\nTEST RDI,RDI\nJZ 0x00402e8a\nCALL 0x00401600\nTEST AL,AL\nSETZ SIL\nJMP 0x00402e8d\nMOV SIL,0x1\nMOV RDI,qword ptr [RBP + 0x20]\nCMP SIL,0x1\nJNZ 0x00402eb8\nTEST RDI,RDI\nJZ 0x00402ef4\nCALL 0x00401600\nTEST AL,AL\nJNZ 0x00402f06\nINC dword ptr [0x00606a70]\nMOV RDI,qword ptr [RBP + 0x20]\nPOP RBX\nPOP R14\nPOP RBP\nJMP 0x00401680\nTEST RDI,RDI\nJZ 0x00402f06\nCALL 0x00401600\nTEST AL,AL\nJZ 0x00402f06\nDEC dword ptr [0x00606a70]\nMOV RDI,qword ptr [RBP + 0x20]\nCALL 0x004014b0\nMOV RDI,qword ptr [RBP + 0x20]\nCALL 0x00401670\nTEST R14B,R14B\nJZ 0x00402f06\nMOV ESI,0x1\nMOV RDI,RBX\nPOP RBX\nPOP R14\nPOP RBP\nJMP 0x00402fc0\nMOV RDI,RBX\nCALL 0x00402f10\nTEST AL,AL\nJZ 0x00402f06\nINC dword ptr [0x00606a70]\nPOP RBX\nPOP R14\nPOP RBP\nRET\n'
+p487
+S'55\n41 56\n53\n41 89 d6\n48 89 fb\n48 8b 6b 70\n40 80 fe 02\n75 19\n48 8b 7d 20\n48 85 ff\n74 0d\ne8 7e e7 ff ff\n84 c0\n40 0f 94 c6\neb 03\n40 b6 01\n48 8b 7d 20\n40 80 fe 01\n75 21\n48 85 ff\n74 58\ne8 5f e7 ff ff\n84 c0\n75 61\nff 05 c5 3b 20 00\n48 8b 7d 20\n5b\n41 5e\n5d\ne9 c8 e7 ff ff\n48 85 ff\n74 49\ne8 3e e7 ff ff\n84 c0\n74 40\nff 0d a4 3b 20 00\n48 8b 7d 20\ne8 db e5 ff ff\n48 8b 7d 20\ne8 92 e7 ff ff\n45 84 f6\n74 23\nbe 01 00 00 00\n48 89 df\n5b\n41 5e\n5d\ne9 cc 00 00 00\n48 89 df\ne8 14 00 00 00\n84 c0\n74 06\nff 05 6a 3b 20 00\n5b\n41 5e\n5d\nc3\n'
+p488
+S'.text:0000000000402e60\n.text:0000000000402e61\n.text:0000000000402e63\n.text:0000000000402e64\n.text:0000000000402e67\n.text:0000000000402e6a\n.text:0000000000402e6e\n.text:0000000000402e72\n.text:0000000000402e74\n.text:0000000000402e78\n.text:0000000000402e7b\n.text:0000000000402e7d\n.text:0000000000402e82\n.text:0000000000402e84\n.text:0000000000402e88\n.text:0000000000402e8a\n.text:0000000000402e8d\n.text:0000000000402e91\n.text:0000000000402e95\n.text:0000000000402e97\n.text:0000000000402e9a\n.text:0000000000402e9c\n.text:0000000000402ea1\n.text:0000000000402ea3\n.text:0000000000402ea5\n.text:0000000000402eab\n.text:0000000000402eaf\n.text:0000000000402eb0\n.text:0000000000402eb2\n.text:0000000000402eb3\n.text:0000000000402eb8\n.text:0000000000402ebb\n.text:0000000000402ebd\n.text:0000000000402ec2\n.text:0000000000402ec4\n.text:0000000000402ec6\n.text:0000000000402ecc\n.text:0000000000402ed0\n.text:0000000000402ed5\n.text:0000000000402ed9\n.text:0000000000402ede\n.text:0000000000402ee1\n.text:0000000000402ee3\n.text:0000000000402ee8\n.text:0000000000402eeb\n.text:0000000000402eec\n.text:0000000000402eee\n.text:0000000000402eef\n.text:0000000000402ef4\n.text:0000000000402ef7\n.text:0000000000402efc\n.text:0000000000402efe\n.text:0000000000402f00\n.text:0000000000402f06\n.text:0000000000402f07\n.text:0000000000402f09\n.text:0000000000402f0a\n'
+p489
+tp490
+sS'show_resources_callback'
+p491
+(S'\n__stdcall show_resources_callback(Widget gw, XtPointer closure, XtPointer data)\n'
+p492
+V\u000avoid show_resources_callback(Widget gw,XtPointer closure,XtPointer data)\u000a\u000a{\u000a  XmuWidgetNode *node;\u000a  long lVar1;\u000a  \u000a  node = widget_to_node(gw);\u000a  if (node == (XmuWidgetNode *)0x0) {\u000a    if (selected_list.n_elements < 1) {\u000a      return;\u000a    }\u000a    XUnmapWindow(((treeWidget->core).screen)->display,(treeWidget->core).window);\u000a    if (0 < selected_list.n_elements) {\u000a      lVar1 = 0;\u000a      do {\u000a        do_resources(selected_list.elements[lVar1]);\u000a        lVar1 = lVar1 + 1;\u000a      } while (lVar1 < (long)selected_list.n_elements);\u000a    }\u000a  }\u000a  else {\u000a    XUnmapWindow(((treeWidget->core).screen)->display,(treeWidget->core).window);\u000a    do_resources(node);\u000a  }\u000a  XawTreeForceLayout(treeWidget);\u000a  XMapWindow(((treeWidget->core).screen)->display,(treeWidget->core).window);\u000a  update_selection_items();\u000a  return;\u000a}\u000a\u000a
+p493
+S'PUSH RBP\nPUSH R14\nPUSH RBX\nMOV R14,RSI\nCALL 0x00402dc0\nMOV RBX,RAX\nTEST RBX,RBX\nJZ 0x004022c6\nMOV RAX,qword ptr [0x00606a60]\nMOV RCX,qword ptr [0x98 + RAX]\nMOV RSI,qword ptr [0xa8 + RAX]\nMOV RDI,qword ptr [RCX + 0x8]\nCALL 0x004015f0\nMOVSX ESI,R14B\nMOV EDX,0x1\nMOV RDI,RBX\nCALL 0x00402e60\nMOV RDI,qword ptr [0x00606a60]\nCALL 0x004014a0\nMOV RAX,qword ptr [0x00606a60]\nMOV RCX,qword ptr [0x98 + RAX]\nMOV RSI,qword ptr [0xa8 + RAX]\nMOV RDI,qword ptr [RCX + 0x8]\nCALL 0x00401640\nPOP RBX\nPOP R14\nPOP RBP\nJMP 0x00402890\nCMP dword ptr [0x00606a18],0x0\nJLE 0x00402328\nMOV RAX,qword ptr [0x00606a60]\nMOV RCX,qword ptr [0x98 + RAX]\nMOV RSI,qword ptr [0xa8 + RAX]\nMOV RDI,qword ptr [RCX + 0x8]\nCALL 0x004015f0\nCMP dword ptr [0x00606a18],0x0\nJLE 0x00402293\nXOR EBX,EBX\nMOVSX EBP,R14B\nNOP dword ptr [RAX]\nMOV RAX,qword ptr [0x00606a20]\nMOV RDI,qword ptr [RAX + RBX*0x8]\nXOR EDX,EDX\nMOV ESI,EBP\nCALL 0x00402e60\nINC RBX\nMOVSXD RAX,dword ptr [0x00606a18]\nCMP RBX,RAX\nJL 0x00402300\nJMP 0x00402293\nPOP RBX\nPOP R14\nPOP RBP\nRET\n'
+p494
+S'55\n41 56\n53\n49 89 f6\ne8 64 0b 00 00\n48 89 c3\n48 85 db\n74 62\n48 8b 05 f5 47 20 00\n48 8b 88 98 00 00 00\n48 8b b0 a8 00 00 00\n48 8b 79 08\ne8 6e f3 ff ff\n41 0f be f6\nba 01 00 00 00\n48 89 df\ne8 cd 0b 00 00\n48 8b 3d c6 47 20 00\ne8 01 f2 ff ff\n48 8b 05 ba 47 20 00\n48 8b 88 98 00 00 00\n48 8b b0 a8 00 00 00\n48 8b 79 08\ne8 83 f3 ff ff\n5b\n41 5e\n5d\ne9 ca 05 00 00\n83 3d 4b 47 20 00 00\n7e 59\n48 8b 05 8a 47 20 00\n48 8b 88 98 00 00 00\n48 8b b0 a8 00 00 00\n48 8b 79 08\ne8 03 f3 ff ff\n83 3d 24 47 20 00 00\n7e 9d\n31 db\n41 0f be ee\n0f 1f 40 00\n48 8b 05 19 47 20 00\n48 8b 3c d8\n31 d2\n89 ee\ne8 4c 0b 00 00\n48 ff c3\n48 63 05 fa 46 20 00\n48 39 c3\n7c dd\ne9 6b ff ff ff\n5b\n41 5e\n5d\nc3\n'
+p495
+S'.text:0000000000402250\n.text:0000000000402251\n.text:0000000000402253\n.text:0000000000402254\n.text:0000000000402257\n.text:000000000040225c\n.text:000000000040225f\n.text:0000000000402262\n.text:0000000000402264\n.text:000000000040226b\n.text:0000000000402272\n.text:0000000000402279\n.text:000000000040227d\n.text:0000000000402282\n.text:0000000000402286\n.text:000000000040228b\n.text:000000000040228e\n.text:0000000000402293\n.text:000000000040229a\n.text:000000000040229f\n.text:00000000004022a6\n.text:00000000004022ad\n.text:00000000004022b4\n.text:00000000004022b8\n.text:00000000004022bd\n.text:00000000004022be\n.text:00000000004022c0\n.text:00000000004022c1\n.text:00000000004022c6\n.text:00000000004022cd\n.text:00000000004022cf\n.text:00000000004022d6\n.text:00000000004022dd\n.text:00000000004022e4\n.text:00000000004022e8\n.text:00000000004022ed\n.text:00000000004022f4\n.text:00000000004022f6\n.text:00000000004022f8\n.text:00000000004022fc\n.text:0000000000402300\n.text:0000000000402307\n.text:000000000040230b\n.text:000000000040230d\n.text:000000000040230f\n.text:0000000000402314\n.text:0000000000402317\n.text:000000000040231e\n.text:0000000000402321\n.text:0000000000402323\n.text:0000000000402328\n.text:0000000000402329\n.text:000000000040232b\n.text:000000000040232c\n'
+p496
+tp497
+sS'fprintf'
+p498
+(S'\n__stdcall fprintf(FILE * __stream, char * __format)\n'
+p499
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint fprintf(FILE *__stream,char *__format,...)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_fprintf_006050a0)();\u000a  return iVar1;\u000a}\u000a\u000a
+p500
+S'JMP qword ptr [0x006050a0]\n'
+p501
+S'ff 25 7a 3b 20 00\n'
+p502
+S'.plt:0000000000401520\n'
+p503
+tp504
+sS'select_callback'
+p505
+(S'\n__stdcall select_callback(Widget gw, XtPointer closure, XtPointer data)\n'
+p506
+V\u000avoid select_callback(Widget gw,XtPointer closure,XtPointer data)\u000a\u000a{\u000a  char cVar1;\u000a  XmuWidgetNode *node;\u000a  _XmuWidgetNode *node_00;\u000a  undefined1 *node_01;\u000a  ulong uVar2;\u000a  int iVar3;\u000a  ulong uVar4;\u000a  \u000a  iVar3 = selected_list.n_elements;\u000a  if ((XtPointer)0x8 < closure) {\u000a    XBell(((gw->core).screen)->display,0);\u000a    return;\u000a  }\u000a  uVar4 = (ulong)(uint)selected_list.n_elements;\u000a  switch(closure) {\u000a  case (XtPointer)0x1:\u000a    node = topnode;\u000a    goto LAB_0040246c;\u000a  case (XtPointer)0x2:\u000a    if (0 < XawWidgetCount) {\u000a      node_01 = XawWidgetArray;\u000a      iVar3 = 0;\u000a      do {\u000a        if (*(int *)((long)((XmuWidgetNode *)node_01)->data + 0x28) < 0) {\u000a          add_to_selected_list((XmuWidgetNode *)node_01);\u000a        }\u000a        iVar3 = iVar3 + 1;\u000a        node_01 = (undefined1 *)((XmuWidgetNode *)node_01 + 1);\u000a      } while (iVar3 < XawWidgetCount);\u000a    }\u000a  case (XtPointer)0x0:\u000a    remove_nodes_from_selected_list(uVar4);\u000a    break;\u000a  case (XtPointer)0x3:\u000a    node = widget_to_node(gw);\u000a    if (node == (XmuWidgetNode *)0x0) {\u000a      if (0 < iVar3) {\u000a        uVar2 = 0;\u000a        do {\u000a          if ((XmuWidgetNode *)selected_list.elements[uVar2]->superclass != (XmuWidgetNode *)0x0) {\u000a            add_to_selected_list((XmuWidgetNode *)selected_list.elements[uVar2]->superclass);\u000a          }\u000a          uVar2 = uVar2 + 1;\u000a        } while (uVar4 != uVar2);\u000a      }\u000a    }\u000a    else {\u000a      if ((XmuWidgetNode *)node->superclass != (XmuWidgetNode *)0x0) {\u000a        add_to_selected_list((XmuWidgetNode *)node->superclass);\u000a      }\u000a    }\u000a    break;\u000a  case (XtPointer)0x4:\u000a    node_00 = (_XmuWidgetNode *)widget_to_node(gw);\u000a    if (node_00 == (_XmuWidgetNode *)0x0) {\u000a      if (0 < iVar3) {\u000a        uVar2 = 0;\u000a        do {\u000a          node = (XmuWidgetNode *)selected_list.elements[uVar2]->superclass;\u000a          while ((node != (XmuWidgetNode *)0x0 && (*(int *)((long)node->data + 0x28) < 0))) {\u000a            add_to_selected_list(node);\u000a            node = (XmuWidgetNode *)node->superclass;\u000a          }\u000a          uVar2 = uVar2 + 1;\u000a        } while (uVar2 != uVar4);\u000a      }\u000a    }\u000a    else {\u000a      do {\u000a        add_to_selected_list((XmuWidgetNode *)node_00);\u000a        node_00 = ((XmuWidgetNode *)node_00)->superclass;\u000a      } while (node_00 != (_XmuWidgetNode *)0x0);\u000a    }\u000a    break;\u000a  case (XtPointer)0x5:\u000a    node = widget_to_node(gw);\u000a    if (node == (XmuWidgetNode *)0x0) {\u000a      if (0 < iVar3) {\u000a        uVar2 = 0;\u000a        do {\u000a          node = selected_list.elements[uVar2];\u000a          add_to_selected_list(node);\u000a          node_00 = node->children;\u000a          while (node_00 != (_XmuWidgetNode *)0x0) {\u000a            add_to_selected_list((XmuWidgetNode *)node_00);\u000a            node_00 = ((XmuWidgetNode *)node_00)->siblings;\u000a          }\u000a          uVar2 = uVar2 + 1;\u000a        } while (uVar2 != uVar4);\u000a      }\u000a    }\u000a    else {\u000a      add_to_selected_list(node);\u000a      node = (XmuWidgetNode *)node->children;\u000a      while (node != (XmuWidgetNode *)0x0) {\u000a        add_to_selected_list(node);\u000a        node = (XmuWidgetNode *)node->siblings;\u000a      }\u000a    }\u000a    break;\u000a  case (XtPointer)0x6:\u000a    node = widget_to_node(gw);\u000a    if (node == (XmuWidgetNode *)0x0) {\u000a      if (0 < iVar3) {\u000a        uVar2 = 0;\u000a        do {\u000a          add_subtree_to_selected_list(selected_list.elements[uVar2]);\u000a          uVar2 = uVar2 + 1;\u000a        } while (uVar4 != uVar2);\u000a      }\u000a      break;\u000a    }\u000aLAB_0040246c:\u000a    add_subtree_to_selected_list(node);\u000a    break;\u000a  case (XtPointer)0x7:\u000a    if (0 < XawWidgetCount) {\u000a      node_01 = XawWidgetArray;\u000a      iVar3 = 0;\u000a      do {\u000a        if (*(int *)((long)((XmuWidgetNode *)node_01)->data + 0x10) != 0) {\u000a          add_to_selected_list((XmuWidgetNode *)node_01);\u000a        }\u000a        iVar3 = iVar3 + 1;\u000a        node_01 = (undefined1 *)((XmuWidgetNode *)node_01 + 1);\u000a      } while (iVar3 < XawWidgetCount);\u000a    }\u000a    break;\u000a  case (XtPointer)0x8:\u000a    if (0 < XawWidgetCount) {\u000a      node_01 = XawWidgetArray;\u000a      iVar3 = 0;\u000a      do {\u000a        if ((*(long *)((long)((XmuWidgetNode *)node_01)->data + 0x20) != 0) &&\u000a           (cVar1 = XtIsManaged(), cVar1 != 0)) {\u000a          add_to_selected_list((XmuWidgetNode *)node_01);\u000a        }\u000a        iVar3 = iVar3 + 1;\u000a        node_01 = (undefined1 *)((XmuWidgetNode *)node_01 + 1);\u000a      } while (iVar3 < XawWidgetCount);\u000a    }\u000a  }\u000a  update_selection_items();\u000a  return;\u000a}\u000a\u000a
+p507
+S'CMP RSI,0x8\nJA 0x00402357\nPUSH RBP\nPUSH R15\nPUSH R14\nPUSH RBX\nPUSH RAX\nMOV R14D,dword ptr [0x00606a18]\nJMP qword ptr [0x403440 + RSI*0x8]\nMOV RDI,qword ptr [0x00606a38]\nJMP 0x0040246c\nMOV RAX,qword ptr [0x98 + RDI]\nMOV RDI,qword ptr [RAX + 0x8]\nXOR ESI,ESI\nJMP 0x00401420\nCMP dword ptr [0x006069a8],0x0\nJLE 0x004023a5\nMOV EBX,0x6054a0\nXOR EBP,EBP\nNOP dword ptr [RAX]\nMOV RAX,qword ptr [RBX + 0x70]\nCMP dword ptr [RAX + 0x28],0x0\nJNS 0x00402397\nMOV ESI,0x1\nMOV RDI,RBX\nCALL 0x00403230\nINC EBP\nADD RBX,0x78\nCMP EBP,dword ptr [0x006069a8]\nJL 0x00402380\nMOV EDI,R14D\nCALL 0x00403180\nJMP 0x00402638\nCALL 0x00402dc0\nTEST RAX,RAX\nJZ 0x00402506\nMOV RDI,qword ptr [RAX + 0x10]\nTEST RDI,RDI\nJZ 0x00402638\nMOV ESI,0x1\nCALL 0x00403230\nJMP 0x00402638\nCALL 0x00402dc0\nMOV RBX,RAX\nTEST RBX,RBX\nJZ 0x0040254b\nNOP dword ptr [RAX]\nMOV ESI,0x1\nMOV RDI,RBX\nCALL 0x00403230\nMOV RBX,qword ptr [RBX + 0x10]\nTEST RBX,RBX\nJNZ 0x004023f0\nJMP 0x00402638\nCALL 0x00402dc0\nMOV RBX,RAX\nTEST RBX,RBX\nJZ 0x004025ad\nMOV ESI,0x1\nMOV RDI,RBX\nCALL 0x00403230\nMOV RBX,qword ptr [RBX + 0x18]\nTEST RBX,RBX\nJZ 0x00402638\nNOP word ptr CS:[RAX + RAX*0x1]\nMOV ESI,0x1\nMOV RDI,RBX\nCALL 0x00403230\nMOV RBX,qword ptr [RBX + 0x20]\nTEST RBX,RBX\nJNZ 0x00402440\nJMP 0x00402638\nCALL 0x00402dc0\nTEST RAX,RAX\nJZ 0x00402610\nMOV RDI,RAX\nCALL 0x004031f0\nJMP 0x00402638\nCMP dword ptr [0x006069a8],0x0\nJLE 0x00402638\nMOV EBX,0x6054a0\nXOR EBP,EBP\nNOP word ptr [RAX + RAX*0x1]\nMOV RAX,qword ptr [RBX + 0x70]\nCMP dword ptr [RAX + 0x10],0x0\nJZ 0x004024a7\nMOV ESI,0x1\nMOV RDI,RBX\nCALL 0x00403230\nINC EBP\nADD RBX,0x78\nCMP EBP,dword ptr [0x006069a8]\nJL 0x00402490\nJMP 0x00402638\nCMP dword ptr [0x006069a8],0x0\nJLE 0x00402638\nMOV EBX,0x6054a0\nXOR EBP,EBP\nNOP\nMOV RAX,qword ptr [RBX + 0x70]\nMOV RDI,qword ptr [RAX + 0x20]\nTEST RDI,RDI\nJZ 0x004024f3\nCALL 0x00401600\nTEST AL,AL\nJZ 0x004024f3\nMOV ESI,0x1\nMOV RDI,RBX\nCALL 0x00403230\nINC EBP\nADD RBX,0x78\nCMP EBP,dword ptr [0x006069a8]\nJL 0x004024d0\nJMP 0x00402638\nTEST R14D,R14D\nJLE 0x00402638\nXOR EBX,EBX\nNOP dword ptr CS:[RAX + RAX*0x1]\nMOV RAX,qword ptr [0x00606a20]\nMOV RAX,qword ptr [RAX + RBX*0x8]\nMOV RDI,qword ptr [RAX + 0x10]\nTEST RDI,RDI\nJZ 0x0040253e\nMOV ESI,0x1\nCALL 0x00403230\nINC RBX\nCMP R14,RBX\nJNZ 0x00402520\nJMP 0x00402638\nTEST R14D,R14D\nJLE 0x00402638\nXOR R15D,R15D\nNOP word ptr [RAX + RAX*0x1]\nMOV RAX,qword ptr [0x00606a20]\nMOV RAX,qword ptr [RAX + R15*0x8]\nMOV RBX,qword ptr [RAX + 0x10]\nTEST RBX,RBX\nJNZ 0x00402596\nJMP 0x004025a0\nMOV ESI,0x1\nMOV RDI,RBX\nCALL 0x00403230\nMOV RBX,qword ptr [RBX + 0x10]\nTEST RBX,RBX\nJZ 0x004025a0\nMOV RAX,qword ptr [RBX + 0x70]\nCMP dword ptr [RAX + 0x28],0x0\nJS 0x00402580\nINC R15\nCMP R15,R14\nJNZ 0x00402560\nJMP 0x00402638\nTEST R14D,R14D\nJLE 0x00402638\nXOR R15D,R15D\nNOP dword ptr [RAX]\nMOV RAX,qword ptr [0x00606a20]\nMOV RBX,qword ptr [RAX + R15*0x8]\nMOV ESI,0x1\nMOV RDI,RBX\nCALL 0x00403230\nMOV RBX,qword ptr [RBX + 0x18]\nTEST RBX,RBX\nJZ 0x00402606\nNOP dword ptr CS:[RAX + RAX*0x1]\nMOV ESI,0x1\nMOV RDI,RBX\nCALL 0x00403230\nMOV RBX,qword ptr [RBX + 0x20]\nTEST RBX,RBX\nJNZ 0x004025f0\nINC R15\nCMP R15,R14\nJNZ 0x004025c0\nJMP 0x00402638\nTEST R14D,R14D\nJLE 0x00402638\nXOR EBX,EBX\nNOP word ptr [RAX + RAX*0x1]\nMOV RAX,qword ptr [0x00606a20]\nMOV RDI,qword ptr [RAX + RBX*0x8]\nCALL 0x004031f0\nINC RBX\nCMP R14,RBX\nJNZ 0x00402620\nADD RSP,0x8\nPOP RBX\nPOP R14\nPOP R15\nPOP RBP\nJMP 0x00402890\n'
+p508
+S'48 83 fe 08\n77 21\n55\n41 57\n41 56\n53\n50\n44 8b 35 d4 46 20 00\nff 24 f5 40 34 40 00\n48 8b 3d e6 46 20 00\ne9 15 01 00 00\n48 8b 87 98 00 00 00\n48 8b 78 08\n31 f6\ne9 b7 f0 ff ff\n83 3d 38 46 20 00 00\n7e 33\nbb a0 54 60 00\n31 ed\n0f 1f 80 00 00 00 00\n48 8b 43 70\n83 78 28 00\n79 0d\nbe 01 00 00 00\n48 89 df\ne8 99 0e 00 00\nff c5\n48 83 c3 78\n3b 2d 05 46 20 00\n7c db\n44 89 f7\ne8 d3 0d 00 00\ne9 86 02 00 00\ne8 09 0a 00 00\n48 85 c0\n0f 84 46 01 00 00\n48 8b 78 10\n48 85 ff\n0f 84 6b 02 00 00\nbe 01 00 00 00\ne8 59 0e 00 00\ne9 5c 02 00 00\ne8 df 09 00 00\n48 89 c3\n48 85 db\n0f 84 5e 01 00 00\n0f 1f 00\nbe 01 00 00 00\n48 89 df\ne8 33 0e 00 00\n48 8b 5b 10\n48 85 db\n75 ea\ne9 2d 02 00 00\ne8 b0 09 00 00\n48 89 c3\n48 85 db\n0f 84 91 01 00 00\nbe 01 00 00 00\n48 89 df\ne8 07 0e 00 00\n48 8b 5b 18\n48 85 db\n0f 84 02 02 00 00\n66 2e 0f 1f 84 00 00 00 00 00\nbe 01 00 00 00\n48 89 df\ne8 e3 0d 00 00\n48 8b 5b 20\n48 85 db\n75 ea\ne9 dd 01 00 00\ne8 60 09 00 00\n48 85 c0\n0f 84 a7 01 00 00\n48 89 c7\ne8 7f 0d 00 00\ne9 c2 01 00 00\n83 3d 2b 45 20 00 00\n0f 8e b5 01 00 00\nbb a0 54 60 00\n31 ed\n66 0f 1f 44 00 00\n48 8b 43 70\n83 78 10 00\n74 0d\nbe 01 00 00 00\n48 89 df\ne8 89 0d 00 00\nff c5\n48 83 c3 78\n3b 2d f5 44 20 00\n7c db\ne9 7e 01 00 00\n83 3d e7 44 20 00 00\n0f 8e 71 01 00 00\nbb a0 54 60 00\n31 ed\n66 90\n48 8b 43 70\n48 8b 78 20\n48 85 ff\n74 16\ne8 1e f1 ff ff\n84 c0\n74 0d\nbe 01 00 00 00\n48 89 df\ne8 3d 0d 00 00\nff c5\n48 83 c3 78\n3b 2d a9 44 20 00\n7c cf\ne9 32 01 00 00\n45 85 f6\n0f 8e 29 01 00 00\n31 db\n66 66 66 66 66 66 2e 0f 1f 84 00 00 00 00 00\n48 8b 05 f9 44 20 00\n48 8b 04 d8\n48 8b 78 10\n48 85 ff\n74 0a\nbe 01 00 00 00\ne8 f2 0c 00 00\n48 ff c3\n49 39 de\n75 da\ne9 ed 00 00 00\n45 85 f6\n0f 8e e4 00 00 00\n45 31 ff\n66 0f 1f 84 00 00 00 00 00\n48 8b 05 b9 44 20 00\n4a 8b 04 f8\n48 8b 58 10\n48 85 db\n75 22\neb 2a\nbe 01 00 00 00\n48 89 df\ne8 a3 0c 00 00\n48 8b 5b 10\n48 85 db\n74 0a\n48 8b 43 70\n83 78 28 00\n78 e0\n49 ff c7\n4d 39 f7\n75 b8\ne9 8b 00 00 00\n45 85 f6\n0f 8e 82 00 00 00\n45 31 ff\n0f 1f 80 00 00 00 00\n48 8b 05 59 44 20 00\n4a 8b 1c f8\nbe 01 00 00 00\n48 89 df\ne8 58 0c 00 00\n48 8b 5b 18\n48 85 db\n74 25\n66 66 66 66 66 66 2e 0f 1f 84 00 00 00 00 00\nbe 01 00 00 00\n48 89 df\ne8 33 0c 00 00\n48 8b 5b 20\n48 85 db\n75 ea\n49 ff c7\n4d 39 f7\n75 b2\neb 28\n45 85 f6\n7e 23\n31 db\n66 0f 1f 84 00 00 00 00 00\n48 8b 05 f9 43 20 00\n48 8b 3c d8\ne8 c0 0b 00 00\n48 ff c3\n49 39 de\n75 e8\n48 83 c4 08\n5b\n41 5e\n41 5f\n5d\ne9 49 02 00 00\n'
+p509
+S'.text:0000000000402330\n.text:0000000000402334\n.text:0000000000402336\n.text:0000000000402337\n.text:0000000000402339\n.text:000000000040233b\n.text:000000000040233c\n.text:000000000040233d\n.text:0000000000402344\n.text:000000000040234b\n.text:0000000000402352\n.text:0000000000402357\n.text:000000000040235e\n.text:0000000000402362\n.text:0000000000402364\n.text:0000000000402369\n.text:0000000000402370\n.text:0000000000402372\n.text:0000000000402377\n.text:0000000000402379\n.text:0000000000402380\n.text:0000000000402384\n.text:0000000000402388\n.text:000000000040238a\n.text:000000000040238f\n.text:0000000000402392\n.text:0000000000402397\n.text:0000000000402399\n.text:000000000040239d\n.text:00000000004023a3\n.text:00000000004023a5\n.text:00000000004023a8\n.text:00000000004023ad\n.text:00000000004023b2\n.text:00000000004023b7\n.text:00000000004023ba\n.text:00000000004023c0\n.text:00000000004023c4\n.text:00000000004023c7\n.text:00000000004023cd\n.text:00000000004023d2\n.text:00000000004023d7\n.text:00000000004023dc\n.text:00000000004023e1\n.text:00000000004023e4\n.text:00000000004023e7\n.text:00000000004023ed\n.text:00000000004023f0\n.text:00000000004023f5\n.text:00000000004023f8\n.text:00000000004023fd\n.text:0000000000402401\n.text:0000000000402404\n.text:0000000000402406\n.text:000000000040240b\n.text:0000000000402410\n.text:0000000000402413\n.text:0000000000402416\n.text:000000000040241c\n.text:0000000000402421\n.text:0000000000402424\n.text:0000000000402429\n.text:000000000040242d\n.text:0000000000402430\n.text:0000000000402436\n.text:0000000000402440\n.text:0000000000402445\n.text:0000000000402448\n.text:000000000040244d\n.text:0000000000402451\n.text:0000000000402454\n.text:0000000000402456\n.text:000000000040245b\n.text:0000000000402460\n.text:0000000000402463\n.text:0000000000402469\n.text:000000000040246c\n.text:0000000000402471\n.text:0000000000402476\n.text:000000000040247d\n.text:0000000000402483\n.text:0000000000402488\n.text:000000000040248a\n.text:0000000000402490\n.text:0000000000402494\n.text:0000000000402498\n.text:000000000040249a\n.text:000000000040249f\n.text:00000000004024a2\n.text:00000000004024a7\n.text:00000000004024a9\n.text:00000000004024ad\n.text:00000000004024b3\n.text:00000000004024b5\n.text:00000000004024ba\n.text:00000000004024c1\n.text:00000000004024c7\n.text:00000000004024cc\n.text:00000000004024ce\n.text:00000000004024d0\n.text:00000000004024d4\n.text:00000000004024d8\n.text:00000000004024db\n.text:00000000004024dd\n.text:00000000004024e2\n.text:00000000004024e4\n.text:00000000004024e6\n.text:00000000004024eb\n.text:00000000004024ee\n.text:00000000004024f3\n.text:00000000004024f5\n.text:00000000004024f9\n.text:00000000004024ff\n.text:0000000000402501\n.text:0000000000402506\n.text:0000000000402509\n.text:000000000040250f\n.text:0000000000402511\n.text:0000000000402520\n.text:0000000000402527\n.text:000000000040252b\n.text:000000000040252f\n.text:0000000000402532\n.text:0000000000402534\n.text:0000000000402539\n.text:000000000040253e\n.text:0000000000402541\n.text:0000000000402544\n.text:0000000000402546\n.text:000000000040254b\n.text:000000000040254e\n.text:0000000000402554\n.text:0000000000402557\n.text:0000000000402560\n.text:0000000000402567\n.text:000000000040256b\n.text:000000000040256f\n.text:0000000000402572\n.text:0000000000402574\n.text:0000000000402580\n.text:0000000000402585\n.text:0000000000402588\n.text:000000000040258d\n.text:0000000000402591\n.text:0000000000402594\n.text:0000000000402596\n.text:000000000040259a\n.text:000000000040259e\n.text:00000000004025a0\n.text:00000000004025a3\n.text:00000000004025a6\n.text:00000000004025a8\n.text:00000000004025ad\n.text:00000000004025b0\n.text:00000000004025b6\n.text:00000000004025b9\n.text:00000000004025c0\n.text:00000000004025c7\n.text:00000000004025cb\n.text:00000000004025d0\n.text:00000000004025d3\n.text:00000000004025d8\n.text:00000000004025dc\n.text:00000000004025df\n.text:00000000004025e1\n.text:00000000004025f0\n.text:00000000004025f5\n.text:00000000004025f8\n.text:00000000004025fd\n.text:0000000000402601\n.text:0000000000402604\n.text:0000000000402606\n.text:0000000000402609\n.text:000000000040260c\n.text:000000000040260e\n.text:0000000000402610\n.text:0000000000402613\n.text:0000000000402615\n.text:0000000000402617\n.text:0000000000402620\n.text:0000000000402627\n.text:000000000040262b\n.text:0000000000402630\n.text:0000000000402633\n.text:0000000000402636\n.text:0000000000402638\n.text:000000000040263c\n.text:000000000040263d\n.text:000000000040263f\n.text:0000000000402641\n.text:0000000000402642\n'
+p510
+tp511
+sS'XInternAtom'
+p512
+(S'\n__stdcall XInternAtom()\n'
+p513
+V\u000avoid XInternAtom(void)\u000a\u000a{\u000a  (*(code *)PTR_XInternAtom_006050f0)();\u000a  return;\u000a}\u000a\u000a
+p514
+S'JMP qword ptr [0x006050f0]\n'
+p515
+S'ff 25 2a 3b 20 00\n'
+p516
+S'.plt:00000000004015c0\n'
+p517
+tp518
+sS'ActionQuit'
+p519
+(S'\n__stdcall ActionQuit(Widget w, XEvent * event, String * params, Cardinal * num_params)\n'
+p520
+V\u000avoid ActionQuit(Widget w,XEvent *event,String *params,Cardinal *num_params)\u000a\u000a{\u000a                    /* WARNING: Subroutine does not return */\u000a  exit(0);\u000a}\u000a\u000a
+p521
+S'PUSH RAX\nXOR EDI,EDI\nCALL 0x00401650\n'
+p522
+S'50\n31 ff\ne8 28 eb ff ff\n'
+p523
+S'.text:0000000000402b20\n.text:0000000000402b21\n.text:0000000000402b23\n'
+p524
+tp525
+sS'XSetWMProtocols'
+p526
+(S'\n__stdcall XSetWMProtocols()\n'
+p527
+V\u000avoid XSetWMProtocols(void)\u000a\u000a{\u000a  (*(code *)PTR_XSetWMProtocols_006050b8)();\u000a  return;\u000a}\u000a\u000a
+p528
+S'JMP qword ptr [0x006050b8]\n'
+p529
+S'ff 25 62 3b 20 00\n'
+p530
+S'.plt:0000000000401550\n'
+p531
+tp532
+sS'XtOverrideTranslations'
+p533
+(S'\n__stdcall XtOverrideTranslations()\n'
+p534
+V\u000avoid XtOverrideTranslations(void)\u000a\u000a{\u000a  (*(code *)PTR_XtOverrideTranslations_006050c0)();\u000a  return;\u000a}\u000a\u000a
+p535
+S'JMP qword ptr [0x006050c0]\n'
+p536
+S'ff 25 5a 3b 20 00\n'
+p537
+S'.plt:0000000000401560\n'
+p538
+tp539
+sS'XtCalloc'
+p540
+(S'\n__stdcall XtCalloc()\n'
+p541
+V\u000avoid XtCalloc(void)\u000a\u000a{\u000a  (*(code *)PTR_XtCalloc_00605118)();\u000a  return;\u000a}\u000a\u000a
+p542
+S'JMP qword ptr [0x00605118]\n'
+p543
+S'ff 25 02 3b 20 00\n'
+p544
+S'.plt:0000000000401610\n'
+p545
+tp546
+sS'__do_global_dtors_aux'
+p547
+(S'\n__stdcall __do_global_dtors_aux()\n'
+p548
+V\u000avoid __do_global_dtors_aux(void)\u000a\u000a{\u000a  if (completed_7561 == 0) {\u000a    deregister_tm_clones();\u000a    completed_7561 = 1;\u000a  }\u000a  return;\u000a}\u000a\u000a
+p549
+S'CMP byte ptr [0x006069e8],0x0\nJNZ 0x0040176a\nPUSH RBP\nMOV RBP,RSP\nCALL 0x004016d0\nPOP RBP\nMOV byte ptr [0x006069e8],0x1\nRET\n'
+p550
+S'80 3d 91 52 20 00 00\n75 11\n55\n48 89 e5\ne8 6e ff ff ff\n5d\nc6 05 7e 52 20 00 01\nf3 c3\n'
+p551
+S'.text:0000000000401750\n.text:0000000000401757\n.text:0000000000401759\n.text:000000000040175a\n.text:000000000040175d\n.text:0000000000401762\n.text:0000000000401763\n.text:000000000040176a\n'
+p552
+tp553
+sS'_fini'
+p554
+(S'\n__stdcall _fini()\n'
+p555
+V\u000avoid _fini(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p556
+S'SUB RSP,0x8\nADD RSP,0x8\nRET\n'
+p557
+S'48 83 ec 08\n48 83 c4 08\nc3\n'
+p558
+S'.fini:0000000000403424\n.fini:0000000000403428\n.fini:000000000040342c\n'
+p559
+tp560
+sS'ActionSetLableType'
+p561
+(S'\n__stdcall ActionSetLableType(Widget w, XEvent * event, String * params, Cardinal * num_params)\n'
+p562
+V\u000avoid ActionSetLableType(Widget w,XEvent *event,String *params,Cardinal *num_params)\u000a\u000a{\u000a  Boolean BVar1;\u000a  int iVar2;\u000a  char *pcVar3;\u000a  bool bVar4;\u000a  \u000a  BVar1 = options.show_variable;\u000a  if (*num_params == 0) {\u000a    pcVar3 = "toggle";\u000a  }\u000a  else {\u000a    if (*num_params != 1) goto LAB_00402b86;\u000a    pcVar3 = *params;\u000a  }\u000a  iVar2 = XmuCompareISOLatin1(pcVar3,"toggle");\u000a  if (iVar2 == 0) {\u000a    bVar4 = BVar1 == 0;\u000a    if (bVar4 != (bool)BVar1) {\u000aLAB_00402bbe:\u000a      set_labeltype_menu((ulong)bVar4,1);\u000a      return;\u000a    }\u000a  }\u000a  else {\u000a    iVar2 = XmuCompareISOLatin1(pcVar3,0x4036d4);\u000a    if (iVar2 == 0) {\u000a      bVar4 = true;\u000a      if (BVar1 != 1) goto LAB_00402bbe;\u000a    }\u000a    else {\u000a      iVar2 = XmuCompareISOLatin1(pcVar3,"class");\u000a      if (iVar2 != 0) {\u000aLAB_00402b86:\u000a        XBell(((w->core).screen)->display,0);\u000a        return;\u000a      }\u000a      bVar4 = false;\u000a      if (BVar1 != 0) goto LAB_00402bbe;\u000a    }\u000a  }\u000a  return;\u000a}\u000a\u000a
+p563
+S'PUSH RBP\nPUSH R14\nPUSH RBX\nMOV R14,RDI\nMOV BPL,byte ptr [0x00606a30]\nMOV EAX,dword ptr [RCX]\nTEST EAX,EAX\nJZ 0x00402b4e\nCMP EAX,0x1\nJNZ 0x00402b86\nMOV RBX,qword ptr [RDX]\nJMP 0x00402b53\nMOV EBX,0x403a72\nMOV ESI,0x403a72\nMOV RDI,RBX\nCALL 0x00401570\nTEST EAX,EAX\nJZ 0x00402b9c\nMOV ESI,0x4036d4\nMOV RDI,RBX\nCALL 0x00401570\nTEST EAX,EAX\nJZ 0x00402ba9\nMOV ESI,0x403a79\nMOV RDI,RBX\nCALL 0x00401570\nTEST EAX,EAX\nJZ 0x00402bb2\nMOV RAX,qword ptr [0x98 + R14]\nMOV RDI,qword ptr [RAX + 0x8]\nXOR ESI,ESI\nPOP RBX\nPOP R14\nPOP RBP\nJMP 0x00401420\nTEST BPL,BPL\nSETZ AL\nCMP AL,BPL\nJZ 0x00402bb9\nJMP 0x00402bbe\nMOV AL,0x1\nCMP AL,BPL\nJZ 0x00402bb9\nJMP 0x00402bbe\nXOR EAX,EAX\nCMP AL,BPL\nJNZ 0x00402bbe\nPOP RBX\nPOP R14\nPOP RBP\nRET\nMOVZX EDI,AL\nMOV ESI,0x1\nPOP RBX\nPOP R14\nPOP RBP\nJMP 0x00402750\n'
+p564
+S'55\n41 56\n53\n49 89 fe\n40 8a 2d f2 3e 20 00\n8b 01\n85 c0\n74 0a\n83 f8 01\n75 3d\n48 8b 1a\neb 05\nbb 72 3a 40 00\nbe 72 3a 40 00\n48 89 df\ne8 10 ea ff ff\n85 c0\n74 38\nbe d4 36 40 00\n48 89 df\ne8 ff e9 ff ff\n85 c0\n74 34\nbe 79 3a 40 00\n48 89 df\ne8 ee e9 ff ff\n85 c0\n74 2c\n49 8b 86 98 00 00 00\n48 8b 78 08\n31 f6\n5b\n41 5e\n5d\ne9 84 e8 ff ff\n40 84 ed\n0f 94 c0\n40 38 e8\n74 12\neb 15\nb0 01\n40 38 e8\n74 09\neb 0c\n31 c0\n40 38 e8\n75 05\n5b\n41 5e\n5d\nc3\n0f b6 f8\nbe 01 00 00 00\n5b\n41 5e\n5d\ne9 81 fb ff ff\n'
+p565
+S'.text:0000000000402b30\n.text:0000000000402b31\n.text:0000000000402b33\n.text:0000000000402b34\n.text:0000000000402b37\n.text:0000000000402b3e\n.text:0000000000402b40\n.text:0000000000402b42\n.text:0000000000402b44\n.text:0000000000402b47\n.text:0000000000402b49\n.text:0000000000402b4c\n.text:0000000000402b4e\n.text:0000000000402b53\n.text:0000000000402b58\n.text:0000000000402b5b\n.text:0000000000402b60\n.text:0000000000402b62\n.text:0000000000402b64\n.text:0000000000402b69\n.text:0000000000402b6c\n.text:0000000000402b71\n.text:0000000000402b73\n.text:0000000000402b75\n.text:0000000000402b7a\n.text:0000000000402b7d\n.text:0000000000402b82\n.text:0000000000402b84\n.text:0000000000402b86\n.text:0000000000402b8d\n.text:0000000000402b91\n.text:0000000000402b93\n.text:0000000000402b94\n.text:0000000000402b96\n.text:0000000000402b97\n.text:0000000000402b9c\n.text:0000000000402b9f\n.text:0000000000402ba2\n.text:0000000000402ba5\n.text:0000000000402ba7\n.text:0000000000402ba9\n.text:0000000000402bab\n.text:0000000000402bae\n.text:0000000000402bb0\n.text:0000000000402bb2\n.text:0000000000402bb4\n.text:0000000000402bb7\n.text:0000000000402bb9\n.text:0000000000402bba\n.text:0000000000402bbc\n.text:0000000000402bbd\n.text:0000000000402bbe\n.text:0000000000402bc1\n.text:0000000000402bc6\n.text:0000000000402bc7\n.text:0000000000402bc9\n.text:0000000000402bca\n'
+p566
+tp567
+sS'ActionSetOrientation'
+p568
+(S'\n__stdcall ActionSetOrientation(Widget w, XEvent * event, String * params, Cardinal * num_params)\n'
+p569
+V\u000avoid ActionSetOrientation(Widget w,XEvent *event,String *params,Cardinal *num_params)\u000a\u000a{\u000a  XrmValue toval;\u000a  XrmValue fromval;\u000a  uint local_2c;\u000a  undefined4 local_28 [2];\u000a  uint *local_20;\u000a  undefined8 local_18;\u000a  undefined4 *local_10;\u000a  \u000a  local_2c = 0;\u000a  if (*num_params == 0) {\u000a    local_28[0] = 0;\u000a    local_18 = "gravity";\u000a    local_10 = local_28;\u000a    XtGetValues(treeWidget,&local_18,1);\u000a    switch(local_28[0]) {\u000a    case 2:\u000a      local_2c = 4;\u000a      break;\u000a    default:\u000a      goto switchD_00402c83_caseD_3;\u000a    case 4:\u000a      local_2c = 2;\u000a      break;\u000a    case 6:\u000a      local_2c = 8;\u000a      break;\u000a    case 8:\u000a      local_2c = 6;\u000a    }\u000a  }\u000a  else {\u000a    local_18 = (char *)CONCAT44(local_18._4_4_,8);\u000a    local_10 = (undefined4 *)*params;\u000a    local_28[0] = 4;\u000a    local_20 = &local_2c;\u000a    XtConvertAndStore(treeWidget,0x604a85,&local_18,0x604b7a,local_28);\u000a  }\u000a  if ((local_2c < 9) && ((0x154U >> (local_2c & 0x1f) & 1) != 0)) {\u000a    set_orientation_menu((ulong)local_2c,1);\u000a  }\u000a  else {\u000a    XBell(((w->core).screen)->display,0);\u000a  }\u000aswitchD_00402c83_caseD_3:\u000a  return;\u000a}\u000a\u000a
+p570
+S'PUSH RBX\nSUB RSP,0x30\nMOV RBX,RDI\nMOV dword ptr [RSP + 0xc],0x0\nCMP dword ptr [RCX],0x0\nJZ 0x00402c46\nMOV dword ptr [RSP + 0x20],0x8\nMOV RAX,qword ptr [RDX]\nMOV qword ptr [RSP + 0x28],RAX\nMOV dword ptr [RSP + 0x10],0x4\nLEA RAX,[RSP + 0xc]\nMOV qword ptr [RSP + 0x18],RAX\nMOV RDI,qword ptr [0x00606a60]\nLEA RDX,[RSP + 0x20]\nLEA R8,[RSP + 0x10]\nMOV ESI,0x604a85\nMOV ECX,0x604b7a\nCALL 0x00401540\nMOV EDI,dword ptr [RSP + 0xc]\nCMP EDI,0x8\nJA 0x00402c94\nMOV EAX,0x154\nBT EAX,EDI\nJNC 0x00402c94\nMOV ESI,0x1\nCALL 0x004027d0\nJMP 0x00402ca6\nMOV dword ptr [RSP + 0x10],0x0\nMOV qword ptr [RSP + 0x20],0x403678\nLEA RAX,[RSP + 0x10]\nMOV qword ptr [RSP + 0x28],RAX\nMOV RDI,qword ptr [0x00606a60]\nLEA RSI,[RSP + 0x20]\nMOV EDX,0x1\nCALL 0x00401490\nMOV EAX,dword ptr [RSP + 0x10]\nADD EAX,-0x2\nCMP EAX,0x6\nJA 0x00402ca6\nJMP qword ptr [0x403488 + RAX*0x8]\nMOV dword ptr [RSP + 0xc],0x4\nJMP 0x00402c27\nMOV RAX,qword ptr [0x98 + RBX]\nMOV RDI,qword ptr [RAX + 0x8]\nXOR ESI,ESI\nCALL 0x00401420\nADD RSP,0x30\nPOP RBX\nRET\nMOV dword ptr [RSP + 0xc],0x2\nJMP 0x00402c27\nMOV dword ptr [RSP + 0xc],0x8\nJMP 0x00402c27\nMOV dword ptr [RSP + 0xc],0x6\nJMP 0x00402c27\n'
+p571
+S'53\n48 83 ec 30\n48 89 fb\nc7 44 24 0c 00 00 00 00\n83 39 00\n74 61\nc7 44 24 20 08 00 00 00\n48 8b 02\n48 89 44 24 28\nc7 44 24 10 04 00 00 00\n48 8d 44 24 0c\n48 89 44 24 18\n48 8b 3d 52 3e 20 00\n48 8d 54 24 20\n4c 8d 44 24 10\nbe 85 4a 60 00\nb9 7a 4b 60 00\ne8 19 e9 ff ff\n8b 7c 24 0c\n83 ff 08\n77 64\nb8 54 01 00 00\n0f a3 f8\n73 5a\nbe 01 00 00 00\ne8 8c fb ff ff\neb 60\nc7 44 24 10 00 00 00 00\n48 c7 44 24 20 78 36 40 00\n48 8d 44 24 10\n48 89 44 24 28\n48 8b 3d f8 3d 20 00\n48 8d 74 24 20\nba 01 00 00 00\ne8 19 e8 ff ff\n8b 44 24 10\n83 c0 fe\n83 f8 06\n77 23\nff 24 c5 88 34 40 00\nc7 44 24 0c 04 00 00 00\neb 93\n48 8b 83 98 00 00 00\n48 8b 78 08\n31 f6\ne8 7a e7 ff ff\n48 83 c4 30\n5b\nc3\nc7 44 24 0c 02 00 00 00\ne9 6e ff ff ff\nc7 44 24 0c 08 00 00 00\ne9 61 ff ff ff\nc7 44 24 0c 06 00 00 00\ne9 54 ff ff ff\n'
+p572
+S'.text:0000000000402bd0\n.text:0000000000402bd1\n.text:0000000000402bd5\n.text:0000000000402bd8\n.text:0000000000402be0\n.text:0000000000402be3\n.text:0000000000402be5\n.text:0000000000402bed\n.text:0000000000402bf0\n.text:0000000000402bf5\n.text:0000000000402bfd\n.text:0000000000402c02\n.text:0000000000402c07\n.text:0000000000402c0e\n.text:0000000000402c13\n.text:0000000000402c18\n.text:0000000000402c1d\n.text:0000000000402c22\n.text:0000000000402c27\n.text:0000000000402c2b\n.text:0000000000402c2e\n.text:0000000000402c30\n.text:0000000000402c35\n.text:0000000000402c38\n.text:0000000000402c3a\n.text:0000000000402c3f\n.text:0000000000402c44\n.text:0000000000402c46\n.text:0000000000402c4e\n.text:0000000000402c57\n.text:0000000000402c5c\n.text:0000000000402c61\n.text:0000000000402c68\n.text:0000000000402c6d\n.text:0000000000402c72\n.text:0000000000402c77\n.text:0000000000402c7b\n.text:0000000000402c7e\n.text:0000000000402c81\n.text:0000000000402c83\n.text:0000000000402c8a\n.text:0000000000402c92\n.text:0000000000402c94\n.text:0000000000402c9b\n.text:0000000000402c9f\n.text:0000000000402ca1\n.text:0000000000402ca6\n.text:0000000000402caa\n.text:0000000000402cab\n.text:0000000000402cac\n.text:0000000000402cb4\n.text:0000000000402cb9\n.text:0000000000402cc1\n.text:0000000000402cc6\n.text:0000000000402cce\n'
+p573
+tp574
+s.
