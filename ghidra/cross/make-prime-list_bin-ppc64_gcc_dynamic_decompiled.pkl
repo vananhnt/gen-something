@@ -1,0 +1,470 @@
+(dp0
+S'__libc_csu_init'
+p1
+(S'\n__stdcall __libc_csu_init()\n'
+p2
+V\u000a/* __libc_csu_init */\u000a\u000alonglong __libc_csu_init(EVP_PKEY_CTX *pEParm1,undefined8 uParm2,undefined8 uParm3)\u000a\u000a{\u000a  int iVar1;\u000a  longlong lVar2;\u000a  code **ppcVar3;\u000a  longlong lVar4;\u000a  byte in_cr0;\u000a  \u000a                    /* local function entry for global function __libc_csu_init at {@address\u000a                       00101990} */\u000a  iVar1 = __init(pEParm1);\u000a  lVar2 = (longlong)iVar1;\u000a  if (!(bool)(in_cr0 >> 1 & 1)) {\u000a    ppcVar3 = (code **)&DAT_0011fc48;\u000a    lVar4 = 0;\u000a    do {\u000a      ppcVar3 = ppcVar3 + 1;\u000a      lVar4 = lVar4 + 1;\u000a      lVar2 = (**ppcVar3)(pEParm1,uParm2,uParm3);\u000a    } while (lVar4 != 0);\u000a  }\u000a  return lVar2;\u000a}\u000a\u000a
+p3
+S'mfspr r0,LR\nstd r26,-0x30(r1)\nstd r27,-0x28(r1)\nor r26,r3,r3\nstd r28,-0x20(r1)\nstd r29,-0x18(r1)\nsubis r29,r2,0x1\nor r27,r4,r4\nstd r30,-0x10(r1)\nstd r31,-0x8(r1)\nsubis r30,r2,0x1\naddi r29,r29,0x7d50\naddi r30,r30,0x7d50\nor r28,r5,r5\nsubf r29,r30,r29\nstd r0,0x10(r1)\nstdu r1,-0x50(r1)\nbl 0x00100948\nori r0,r0,0x0\nsradi. r29,r29,0x3\nbeq 0x00101a30\nsubi r30,r30,0x8\nli r31,0x0\nori r0,r0,0x0\nori r0,r0,0x0\nori r2,r2,0x0\nldu r9,0x8(r30)\nor r5,r28,r28\nstd r2,0x18(r1)\nor r4,r27,r27\nor r3,r26,r26\naddi r31,r31,0x1\nmtspr CTR,r9\nor r12,r9,r9\nbctrl\nld r2,0x18(r1)\ncmpld cr7,r29,r31\nbne cr7,0x00101a00\naddi r1,r1,0x50\nld r0,0x10(r1)\nld r26,-0x30(r1)\nld r27,-0x28(r1)\nld r28,-0x20(r1)\nld r29,-0x18(r1)\nld r30,-0x10(r1)\nld r31,-0x8(r1)\nmtspr LR,r0\nblr\n'
+p4
+S'a6 02 08 7c\nd0 ff 41 fb\nd8 ff 61 fb\n78 1b 7a 7c\ne0 ff 81 fb\ne8 ff a1 fb\nff ff a2 3f\n78 23 9b 7c\nf0 ff c1 fb\nf8 ff e1 fb\nff ff c2 3f\n50 7d bd 3b\n50 7d de 3b\n78 2b bc 7c\n50 e8 be 7f\n10 00 01 f8\nb1 ff 21 f8\n6d ef ff 4b\n00 00 00 60\n75 1e bd 7f\n48 00 82 41\nf8 ff de 3b\n00 00 e0 3b\n00 00 00 60\n00 00 00 60\n00 00 42 60\n09 00 3e e9\n78 e3 85 7f\n18 00 41 f8\n78 db 64 7f\n78 d3 43 7f\n01 00 ff 3b\na6 03 29 7d\n78 4b 2c 7d\n21 04 80 4e\n18 00 41 e8\n40 f8 bd 7f\nd4 ff 9e 40\n50 00 21 38\n10 00 01 e8\nd0 ff 41 eb\nd8 ff 61 eb\ne0 ff 81 eb\ne8 ff a1 eb\nf0 ff c1 eb\nf8 ff e1 eb\na6 03 08 7c\n20 00 80 4e\n'
+p5
+S'.text:0000000000101998\n.text:000000000010199c\n.text:00000000001019a0\n.text:00000000001019a4\n.text:00000000001019a8\n.text:00000000001019ac\n.text:00000000001019b0\n.text:00000000001019b4\n.text:00000000001019b8\n.text:00000000001019bc\n.text:00000000001019c0\n.text:00000000001019c4\n.text:00000000001019c8\n.text:00000000001019cc\n.text:00000000001019d0\n.text:00000000001019d4\n.text:00000000001019d8\n.text:00000000001019dc\n.text:00000000001019e0\n.text:00000000001019e4\n.text:00000000001019e8\n.text:00000000001019ec\n.text:00000000001019f0\n.text:00000000001019f4\n.text:00000000001019f8\n.text:00000000001019fc\n.text:0000000000101a00\n.text:0000000000101a04\n.text:0000000000101a08\n.text:0000000000101a0c\n.text:0000000000101a10\n.text:0000000000101a14\n.text:0000000000101a18\n.text:0000000000101a1c\n.text:0000000000101a20\n.text:0000000000101a24\n.text:0000000000101a28\n.text:0000000000101a2c\n.text:0000000000101a30\n.text:0000000000101a34\n.text:0000000000101a38\n.text:0000000000101a3c\n.text:0000000000101a40\n.text:0000000000101a44\n.text:0000000000101a48\n.text:0000000000101a4c\n.text:0000000000101a50\n.text:0000000000101a54\n'
+p6
+tp7
+sS'_init'
+p8
+(S'\n__stdcall _init(EVP_PKEY_CTX * ctx)\n'
+p9
+V\u000aint _init(EVP_PKEY_CTX *ctx)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  if (PTR___gmon_start___0011ff08 != (undefined *)0x0) {\u000a    00000036_plt_call___gmon_start__((int)ctx);\u000a  }\u000a  frame_dummy();\u000a  iVar1 = __do_global_ctors_aux();\u000a  return iVar1;\u000a}\u000a\u000a
+p10
+S'addis r2,r12,0x2\naddi r2,r2,0x75c0\n'
+p11
+S'02 00 4c 3c\nc0 75 42 38\n'
+p12
+S'.init:0000000000100940\n.init:0000000000100944\n'
+p13
+tp14
+sS'_start'
+p15
+(S'\n__stdcall _start()\n'
+p16
+V\u000a/* _start */\u000a\u000avoid _start(void)\u000a\u000a{\u000a  (*(code *)PTR___libc_start_main_0011fe90)();\u000a  return;\u000a                    /* local function entry for global function _start at {@address 00100bc0} */\u000a}\u000a\u000a
+p17
+S'or r9,r1,r1\nrldicr r1,r1,0x0,0x3b\nli r0,0x0\nstdu r1,-0x80(r1)\nmtspr LR,r0\nstd r0,0x0(r1)\nld r8,-0x7fd8(r2)\nb 0x00100aa0\n'
+p18
+S'78 0b 29 7c\ne4 06 21 78\n00 00 00 38\n81 ff 21 f8\na6 03 08 7c\n00 00 01 f8\n28 80 02 e9\nbc fe ff 4b\n'
+p19
+S'.text:0000000000100bc8\n.text:0000000000100bcc\n.text:0000000000100bd0\n.text:0000000000100bd4\n.text:0000000000100bd8\n.text:0000000000100bdc\n.text:0000000000100be0\n.text:0000000000100be4\n'
+p20
+tp21
+sS'output_primes'
+p22
+(S'\n__stdcall output_primes()\n'
+p23
+V\u000a/* output_primes */\u000a\u000avoid output_primes(longlong lParm1,ulonglong uParm2)\u000a\u000a{\u000a  int iVar1;\u000a  ulonglong uVar2;\u000a  bool bVar3;\u000a  uint uVar4;\u000a  ulonglong uVar5;\u000a  ulonglong uVar6;\u000a  longlong lVar7;\u000a  ulonglong uVar8;\u000a  longlong local_88;\u000a  \u000a                    /* local function entry for global function output_primes at {@address 00101064}\u000a                        */\u000a  uVar5 = 0xffffffffffffffff;\u000a  uVar6 = 0xffffffffffffffff;\u000a  uVar8 = 0;\u000a  while( true ) {\u000a    if ((uVar5 | uVar6) == 0) break;\u000a    uVar5 = uVar6 << 0x3f | uVar5 >> 1;\u000a    uVar6 = uVar6 >> 1;\u000a    uVar8 = uVar8 + 1 & 0xffffffff;\u000a  }\u000a  00000018_plt_call_puts__GLIBC_2_17("/* Generated file -- DO NOT EDIT */\u005cn");\u000a  00000018_plt_call___printf_chk__GLIBC_2_17(1,local_88 + -0x262f0,uVar8);\u000a  uVar5 = 2;\u000a  uVar6 = 0;\u000a  do {\u000a    if ((uParm2 & 0xffffffff) <= uVar6) {\u000aLAB_001011a8:\u000a      00000018_plt_call_puts__GLIBC_2_17(local_88 + -0x262a0);\u000a      do {\u000a        uVar5 = uVar5 + 2 & 0xffffffff;\u000a        uVar6 = 0;\u000a        while (lVar7 = lParm1 + uVar6 * 0x30, iVar1 = *(int *)(lParm1 + uVar6 * 0x30),\u000a              ((longlong)iVar1 * (longlong)iVar1 & 0xffffffffU) <= uVar5) {\u000a          uVar8 = *(longlong *)(lVar7 + 0x18) * uVar5 +\u000a                  SUB168(ZEXT816(uVar5) * ZEXT816(*(ulonglong *)(lVar7 + 0x10)) >> 0x40,0);\u000a          if ((uVar8 <= *(ulonglong *)(lVar7 + 0x28)) &&\u000a             ((uVar8 != *(ulonglong *)(lVar7 + 0x28) ||\u000a              (uVar5 * *(ulonglong *)(lVar7 + 0x10) <= *(ulonglong *)(lVar7 + 0x20))))) {\u000a            bVar3 = false;\u000a            goto LAB_001011d8;\u000a          }\u000a          uVar6 = uVar6 + 1 & 0xffffffff;\u000a        }\u000a        bVar3 = true;\u000aLAB_001011d8:\u000a        if (bVar3) {\u000a          00000018_plt_call___printf_chk__GLIBC_2_17(1,local_88 + -0x26280,uVar5);\u000a          return;\u000a        }\u000a      } while( true );\u000a    }\u000a    if ((uVar6 + 8 & 0xffffffff) < (uParm2 & 0xffffffff)) {\u000a      uVar4 = *(int *)(lParm1 + (uVar6 + 8 & 0xffffffff) * 0x30) - *(int *)(lParm1 + uVar6 * 0x30);\u000a      uVar2 = (ulonglong)uVar4;\u000a      if (0xff < uVar4) {\u000a        00000018_plt_call_abort__GLIBC_2_17();\u000a        goto LAB_001011a8;\u000a      }\u000a    }\u000a    else {\u000a      uVar2 = 0xff;\u000a    }\u000a    lVar7 = uVar6 * 0x30;\u000a    00000018_plt_call___printf_chk__GLIBC_2_17\u000a              (1,local_88 + -0x262d0,(ulonglong)*(uint *)(lParm1 + lVar7) - uVar5 & 0xffffffff,uVar2\u000a              );\u000a    print_wide_uint(*(undefined8 *)(lParm1 + lVar7 + 0x10),*(undefined8 *)(lParm1 + lVar7 + 0x18),0,\u000a                    uVar8);\u000a    00000018_plt_call___printf_chk__GLIBC_2_17\u000a              (1,local_88 + -0x262c0,(ulonglong)*(uint *)(lParm1 + lVar7));\u000a    uVar5 = (ulonglong)*(uint *)(lParm1 + lVar7);\u000a    uVar6 = uVar6 + 1 & 0xffffffff;\u000a  } while( true );\u000a}\u000a\u000a
+p24
+S'mfspr r0,LR\nstd r0,0x10(r1)\nstd r25,-0x38(r1)\nstd r26,-0x30(r1)\nstd r27,-0x28(r1)\nstd r28,-0x20(r1)\nstd r29,-0x18(r1)\nstd r30,-0x10(r1)\nstd r31,-0x8(r1)\nstdu r1,-0xa0(r1)\nor r29,r3,r3\nor r25,r4,r4\nli r9,-0x1\nli r10,-0x1\nli r31,0x0\nb 0x001010c4\nrldicr r8,r10,0x3f,0x0\nrldicl r9,r9,0x3f,0x1\nor r9,r8,r9\nrldicl r10,r10,0x3f,0x1\naddi r31,r31,0x1\nrldicl r31,r31,0x0,0x20\nor. r8,r9,r10\nbne 0x001010ac\nsubis r3,r2,0x2\nsubi r3,r3,0x6318\nbl 0x00100a80\nld r2,0x18(r1)\nor r5,r31,r31\nsubis r4,r2,0x2\nsubi r4,r4,0x62f0\nli r3,0x1\nbl 0x00100b60\nld r2,0x18(r1)\nli r30,0x2\nli r28,0x0\nb 0x00101168\nli r6,0xff\nmulli r27,r28,0x30\nadd r26,r29,r27\nlwzx r5,r29,r27\nsubf r5,r30,r5\nrldicl r5,r5,0x0,0x20\nsubis r4,r2,0x2\nsubi r4,r4,0x62d0\nli r3,0x1\nbl 0x00100b60\nld r2,0x18(r1)\naddi r26,r26,0x10\nor r6,r31,r31\nli r5,0x0\nld r3,0x0(r26)\nld r4,0x8(r26)\nbl 0x00100ef8\nlwzx r5,r29,r27\nsubis r4,r2,0x2\nsubi r4,r4,0x62c0\nli r3,0x1\nbl 0x00100b60\nld r2,0x18(r1)\nlwzx r30,r29,r27\naddi r28,r28,0x1\nrldicl r28,r28,0x0,0x20\ncmplw cr7,r28,r25\nbge cr7,0x001011a8\naddi r9,r28,0x8\nrldicl r10,r9,0x0,0x20\ncmplw cr7,r9,r25\nbge cr7,0x00101100\nmulli r10,r10,0x30\nlwzx r10,r29,r10\nmulli r9,r28,0x30\nlwzx r9,r29,r9\nsubf r9,r9,r10\nrldicl r6,r9,0x0,0x20\ncmplwi cr7,r9,0xff\nble cr7,0x00101104\nbl 0x00100ac0\nld r2,0x18(r1)\nsubis r3,r2,0x2\nsubi r3,r3,0x62a0\nbl 0x00100a80\nld r2,0x18(r1)\nb 0x001011e0\ncmpld cr7,r6,r9\nbne cr7,0x001011cc\ncmpld cr7,r5,r7\nbgt cr7,0x0010122c\nli r9,0x0\nb 0x001011d8\nli r9,0x1\ncmpdi cr7,r9,0x0\nbne cr7,0x00101238\naddi r30,r30,0x2\nrldicl r30,r30,0x0,0x20\nli r8,0x0\nmulli r9,r8,0x30\nadd r10,r29,r9\nlwzx r9,r29,r9\nmullw r9,r9,r9\ncmplw cr7,r9,r30\nbgt cr7,0x001011d4\nld r9,0x10(r10)\nld r7,0x18(r10)\nmulld r7,r7,r30\nmulld r5,r30,r9\nmulhdu r9,r30,r9\nadd r6,r7,r9\nld r7,0x20(r10)\nld r9,0x28(r10)\ncmpld cr7,r6,r9\nble cr7,0x001011bc\naddi r8,r8,0x1\nrldicl r8,r8,0x0,0x20\nb 0x001011ec\nor r5,r30,r30\nsubis r4,r2,0x2\nsubi r4,r4,0x6280\nli r3,0x1\nbl 0x00100b60\nld r2,0x18(r1)\naddi r1,r1,0xa0\nld r0,0x10(r1)\nmtspr LR,r0\nld r25,-0x38(r1)\nld r26,-0x30(r1)\nld r27,-0x28(r1)\nld r28,-0x20(r1)\nld r29,-0x18(r1)\nld r30,-0x10(r1)\nld r31,-0x8(r1)\nblr\n'
+p25
+S'a6 02 08 7c\n10 00 01 f8\nc8 ff 21 fb\nd0 ff 41 fb\nd8 ff 61 fb\ne0 ff 81 fb\ne8 ff a1 fb\nf0 ff c1 fb\nf8 ff e1 fb\n61 ff 21 f8\n78 1b 7d 7c\n78 23 99 7c\nff ff 20 39\nff ff 40 39\n00 00 e0 3b\n1c 00 00 48\n06 f8 48 79\n42 f8 29 79\n78 4b 09 7d\n42 f8 4a 79\n01 00 ff 3b\n20 00 ff 7b\n79 53 28 7d\ne4 ff 82 40\nfe ff 62 3c\ne8 9c 63 38\nad f9 ff 4b\n18 00 41 e8\n78 fb e5 7f\nfe ff 82 3c\n10 9d 84 38\n01 00 60 38\n75 fa ff 4b\n18 00 41 e8\n02 00 c0 3b\n00 00 80 3b\n6c 00 00 48\nff 00 c0 38\n30 00 7c 1f\n14 da 5d 7f\n2e d8 bd 7c\n50 28 be 7c\n20 00 a5 78\nfe ff 82 3c\n30 9d 84 38\n01 00 60 38\n3d fa ff 4b\n18 00 41 e8\n10 00 5a 3b\n78 fb e6 7f\n00 00 a0 38\n00 00 7a e8\n08 00 9a e8\nb9 fd ff 4b\n2e d8 bd 7c\nfe ff 82 3c\n40 9d 84 38\n01 00 60 38\n0d fa ff 4b\n18 00 41 e8\n2e d8 dd 7f\n01 00 9c 3b\n20 00 9c 7b\n40 c8 9c 7f\n3c 00 9c 40\n08 00 3c 39\n20 00 2a 79\n40 c8 89 7f\n84 ff 9c 40\n30 00 4a 1d\n2e 50 5d 7d\n30 00 3c 1d\n2e 48 3d 7d\n50 50 29 7d\n20 00 26 79\nff 00 89 2b\n68 ff 9d 40\n21 f9 ff 4b\n18 00 41 e8\nfe ff 62 3c\n60 9d 63 38\nd1 f8 ff 4b\n18 00 41 e8\n28 00 00 48\n40 48 a6 7f\n0c 00 9e 40\n40 38 a5 7f\n64 00 9d 41\n00 00 20 39\n08 00 00 48\n01 00 20 39\n00 00 a9 2f\n5c 00 9e 40\n02 00 de 3b\n20 00 de 7b\n00 00 00 39\n30 00 28 1d\n14 4a 5d 7d\n2e 48 3d 7d\nd6 49 29 7d\n40 f0 89 7f\nd4 ff 9d 41\n10 00 2a e9\n18 00 ea e8\nd2 f1 e7 7c\nd2 49 be 7c\n12 48 3e 7d\n14 4a c7 7c\n20 00 ea e8\n28 00 2a e9\n40 48 a6 7f\n94 ff 9d 40\n01 00 08 39\n20 00 08 79\nb8 ff ff 4b\n78 f3 c5 7f\nfe ff 82 3c\n80 9d 84 38\n01 00 60 38\n19 f9 ff 4b\n18 00 41 e8\na0 00 21 38\n10 00 01 e8\na6 03 08 7c\nc8 ff 21 eb\nd0 ff 41 eb\nd8 ff 61 eb\ne0 ff 81 eb\ne8 ff a1 eb\nf0 ff c1 eb\nf8 ff e1 eb\n20 00 80 4e\n'
+p26
+S'.text:000000000010106c\n.text:0000000000101070\n.text:0000000000101074\n.text:0000000000101078\n.text:000000000010107c\n.text:0000000000101080\n.text:0000000000101084\n.text:0000000000101088\n.text:000000000010108c\n.text:0000000000101090\n.text:0000000000101094\n.text:0000000000101098\n.text:000000000010109c\n.text:00000000001010a0\n.text:00000000001010a4\n.text:00000000001010a8\n.text:00000000001010ac\n.text:00000000001010b0\n.text:00000000001010b4\n.text:00000000001010b8\n.text:00000000001010bc\n.text:00000000001010c0\n.text:00000000001010c4\n.text:00000000001010c8\n.text:00000000001010cc\n.text:00000000001010d0\n.text:00000000001010d4\n.text:00000000001010d8\n.text:00000000001010dc\n.text:00000000001010e0\n.text:00000000001010e4\n.text:00000000001010e8\n.text:00000000001010ec\n.text:00000000001010f0\n.text:00000000001010f4\n.text:00000000001010f8\n.text:00000000001010fc\n.text:0000000000101100\n.text:0000000000101104\n.text:0000000000101108\n.text:000000000010110c\n.text:0000000000101110\n.text:0000000000101114\n.text:0000000000101118\n.text:000000000010111c\n.text:0000000000101120\n.text:0000000000101124\n.text:0000000000101128\n.text:000000000010112c\n.text:0000000000101130\n.text:0000000000101134\n.text:0000000000101138\n.text:000000000010113c\n.text:0000000000101140\n.text:0000000000101144\n.text:0000000000101148\n.text:000000000010114c\n.text:0000000000101150\n.text:0000000000101154\n.text:0000000000101158\n.text:000000000010115c\n.text:0000000000101160\n.text:0000000000101164\n.text:0000000000101168\n.text:000000000010116c\n.text:0000000000101170\n.text:0000000000101174\n.text:0000000000101178\n.text:000000000010117c\n.text:0000000000101180\n.text:0000000000101184\n.text:0000000000101188\n.text:000000000010118c\n.text:0000000000101190\n.text:0000000000101194\n.text:0000000000101198\n.text:000000000010119c\n.text:00000000001011a0\n.text:00000000001011a4\n.text:00000000001011a8\n.text:00000000001011ac\n.text:00000000001011b0\n.text:00000000001011b4\n.text:00000000001011b8\n.text:00000000001011bc\n.text:00000000001011c0\n.text:00000000001011c4\n.text:00000000001011c8\n.text:00000000001011cc\n.text:00000000001011d0\n.text:00000000001011d4\n.text:00000000001011d8\n.text:00000000001011dc\n.text:00000000001011e0\n.text:00000000001011e4\n.text:00000000001011e8\n.text:00000000001011ec\n.text:00000000001011f0\n.text:00000000001011f4\n.text:00000000001011f8\n.text:00000000001011fc\n.text:0000000000101200\n.text:0000000000101204\n.text:0000000000101208\n.text:000000000010120c\n.text:0000000000101210\n.text:0000000000101214\n.text:0000000000101218\n.text:000000000010121c\n.text:0000000000101220\n.text:0000000000101224\n.text:0000000000101228\n.text:000000000010122c\n.text:0000000000101230\n.text:0000000000101234\n.text:0000000000101238\n.text:000000000010123c\n.text:0000000000101240\n.text:0000000000101244\n.text:0000000000101248\n.text:000000000010124c\n.text:0000000000101250\n.text:0000000000101254\n.text:0000000000101258\n.text:000000000010125c\n.text:0000000000101260\n.text:0000000000101264\n.text:0000000000101268\n.text:000000000010126c\n.text:0000000000101270\n.text:0000000000101274\n.text:0000000000101278\n'
+p27
+tp28
+sS'main'
+p29
+(S'\n__stdcall main()\n'
+p30
+V\u000a/* main */\u000a\u000alonglong main(int iParm1,undefined8 *puParm2)\u000a\u000a{\u000a  ulonglong uVar1;\u000a  uint uVar2;\u000a  int iVar3;\u000a  int iVar4;\u000a  longlong lVar5;\u000a  longlong lVar6;\u000a  int *piVar7;\u000a  undefined8 uVar8;\u000a  ulonglong uVar9;\u000a  ulonglong uVar10;\u000a  ulonglong uVar11;\u000a  undefined8 *puVar12;\u000a  undefined8 uVar13;\u000a  longlong local_88;\u000a  \u000a                    /* local function entry for global function main at {@address 001012f8} */\u000a  if (iParm1 == 2) {\u000a    uVar2 = 00000018_plt_call_strtol__GLIBC_2_17(puParm2[1],0,10);\u000a    if ((int)uVar2 < 3) {\u000a      lVar5 = 0;\u000a    }\u000a    else {\u000a      if ((uVar2 & 1) == 0) {\u000a        uVar2 = uVar2 - 1;\u000a      }\u000a      uVar2 = uVar2 - 1;\u000a      uVar10 = SEXT48((int)(((int)uVar2 >> 1) + (uint)((int)uVar2 < 0 && (uVar2 & 1) != 0)));\u000a      lVar5 = xalloc(uVar10);\u000a      00000018_plt_call_memset__GLIBC_2_17(lVar5,1,uVar10);\u000a      lVar6 = xalloc(uVar10 * 0x30);\u000a      uVar11 = 0;\u000a      uVar9 = 0;\u000aLAB_0010141c:\u000a      if (uVar11 < uVar10) {\u000a        uVar2 = (int)uVar11 * 2 + 3;\u000a        uVar1 = uVar9 + 1 & 0xffffffff;\u000a        process_prime(lVar6 + uVar9 * 0x30,(ulonglong)uVar2);\u000a        uVar9 = (longlong)(int)uVar2 * (longlong)(int)uVar2 - 3U >> 1 & 0x7fffffff;\u000a        while (uVar9 < uVar10) {\u000a          *(undefined *)(lVar5 + uVar9) = 0;\u000a          uVar9 = uVar9 + (ulonglong)uVar2 & 0xffffffff;\u000a        }\u000a        do {\u000a          uVar11 = uVar11 + 1;\u000a          uVar9 = uVar1;\u000a          if (uVar10 <= uVar11) break;\u000a          uVar9 = uVar1;\u000a        } while (*(char *)(lVar5 + uVar11) == 0);\u000a        goto LAB_0010141c;\u000a      }\u000a      output_primes(lVar6,uVar9);\u000a      00000018_plt_call_free__GLIBC_2_17(lVar5);\u000a      00000018_plt_call_free__GLIBC_2_17(lVar6);\u000a      puVar12 = *(undefined8 **)(local_88 + -0x7fc8);\u000a      iVar3 = 00000018_plt_call_ferror__GLIBC_2_17(*puVar12);\u000a      iVar4 = 00000018_plt_call_fclose__GLIBC_2_17(*puVar12);\u000a      lVar5 = (longlong)(iVar4 + iVar3);\u000a      if (lVar5 != 0) {\u000a        uVar13 = **(undefined8 **)(local_88 + -0x7fd0);\u000a        piVar7 = (int *)00000018_plt_call___errno_location__GLIBC_2_17();\u000a        uVar8 = 00000018_plt_call_strerror__GLIBC_2_17((longlong)*piVar7);\u000a        00000018_plt_call___fprintf_chk__GLIBC_2_17(uVar13,1,local_88 + -0x26208,uVar8);\u000a        lVar5 = 1;\u000a      }\u000a    }\u000a  }\u000a  else {\u000a    00000018_plt_call___fprintf_chk__GLIBC_2_17\u000a              (*(undefined8 *)PTR_stderr_0011ff30,1,\u000a               "Usage: %s LIMIT\u005cnProduces a list of odd primes <= LIMIT\u005cn",*puParm2);\u000a    lVar5 = 1;\u000a  }\u000a  return lVar5;\u000a}\u000a\u000a
+p31
+S'mfspr r0,LR\nstd r0,0x10(r1)\nstdu r1,-0xa0(r1)\nor r9,r4,r4\ncmpwi cr7,r3,0x2\nbeq cr7,0x00101350\nld r6,0x0(r4)\nsubis r5,r2,0x2\nsubi r5,r5,0x6240\nli r4,0x1\nori r0,r0,0x0\nld r9,-0x7fd0(r2)\nld r3,0x0(r9)\nbl 0x00100a20\nld r2,0x18(r1)\nli r3,0x1\naddi r1,r1,0xa0\nld r0,0x10(r1)\nmtspr LR,r0\nblr\nli r5,0xa\nli r4,0x0\nld r3,0x8(r9)\nbl 0x00100ae0\nld r2,0x18(r1)\nextsw r3,r3\ncmpwi cr7,r3,0x2\nble cr7,0x00101528\nstd r25,0x68(r1)\nstd r26,0x70(r1)\nstd r27,0x78(r1)\nstd r28,0x80(r1)\nstd r29,0x88(r1)\nstd r30,0x90(r1)\nstd r31,0x98(r1)\nandi. r9,r3,0x1\nbne 0x0010139c\nsubi r3,r3,0x1\nextsw r3,r3\nsubi r29,r3,0x1\nsrawi r29,r29,0x1\naddze r29,r29\nextsw r29,r29\nor r3,r29,r29\nbl 0x00101290\nor r28,r3,r3\nor r5,r29,r29\nli r4,0x1\nbl 0x00100b20\nld r2,0x18(r1)\nmulli r3,r29,0x30\nbl 0x00101290\nor r26,r3,r3\nli r4,0x0\nli r30,0x0\nb 0x0010141c\nli r10,0x0\nstbx r10,r28,r9\nadd r9,r9,r27\nrldicl r9,r9,0x0,0x20\ncmpld cr7,r9,r29\nblt cr7,0x001013e0\naddi r30,r30,0x1\ncmpld cr7,r29,r30\nble cr7,0x00101418\nlbzx r9,r28,r30\ncmpdi cr7,r9,0x0\nbeq cr7,0x001013f8\nor r4,r25,r25\nb 0x0010141c\nor r4,r25,r25\ncmpld cr7,r30,r29\nbge cr7,0x00101458\nrlwinm r31,r30,0x1,0x0,0x1e\naddi r31,r31,0x3\nrldicl r27,r31,0x0,0x20\naddi r9,r4,0x1\nrldicl r25,r9,0x0,0x20\nmulli r3,r4,0x30\nor r4,r27,r27\nadd r3,r26,r3\nbl 0x00100e70\nmullw r31,r31,r31\nsubi r9,r31,0x3\nrldicl r9,r9,0x3f,0x21\nb 0x001013f0\nor r3,r26,r26\nbl 0x0010106c\nor r3,r28,r28\nbl 0x001009e0\nld r2,0x18(r1)\nor r3,r26,r26\nbl 0x001009e0\nld r2,0x18(r1)\nori r0,r0,0x0\nld r30,-0x7fc8(r2)\nld r3,0x0(r30)\nbl 0x00100b40\nld r2,0x18(r1)\nor r31,r3,r3\nld r3,0x0(r30)\nbl 0x00100ba0\nld r2,0x18(r1)\nadd r3,r3,r31\nextsw. r3,r3\nbne 0x001014c8\nld r25,0x68(r1)\nld r26,0x70(r1)\nld r27,0x78(r1)\nld r28,0x80(r1)\nld r29,0x88(r1)\nld r30,0x90(r1)\nld r31,0x98(r1)\nb 0x00101340\nori r0,r0,0x0\nld r9,-0x7fd0(r2)\nld r31,0x0(r9)\nbl 0x00100b00\nld r2,0x18(r1)\nlwa r3,0x0(r3)\nbl 0x001009a0\nld r2,0x18(r1)\nor r6,r3,r3\nsubis r5,r2,0x2\nsubi r5,r5,0x6208\nli r4,0x1\nor r3,r31,r31\nbl 0x00100a20\nld r2,0x18(r1)\nli r3,0x1\nld r25,0x68(r1)\nld r26,0x70(r1)\nld r27,0x78(r1)\nld r28,0x80(r1)\nld r29,0x88(r1)\nld r30,0x90(r1)\nld r31,0x98(r1)\nb 0x00101340\nli r3,0x0\nb 0x00101340\n'
+p32
+S'a6 02 08 7c\n10 00 01 f8\n61 ff 21 f8\n78 23 89 7c\n02 00 83 2f\n3c 00 9e 41\n00 00 c4 e8\nfe ff a2 3c\nc0 9d a5 38\n01 00 80 38\n00 00 00 60\n30 80 22 e9\n00 00 69 e8\ned f6 ff 4b\n18 00 41 e8\n01 00 60 38\na0 00 21 38\n10 00 01 e8\na6 03 08 7c\n20 00 80 4e\n0a 00 a0 38\n00 00 80 38\n08 00 69 e8\n85 f7 ff 4b\n18 00 41 e8\nb4 07 63 7c\n02 00 83 2f\nbc 01 9d 40\n68 00 21 fb\n70 00 41 fb\n78 00 61 fb\n80 00 81 fb\n88 00 a1 fb\n90 00 c1 fb\n98 00 e1 fb\n01 00 69 70\n0c 00 82 40\nff ff 63 38\nb4 07 63 7c\nff ff a3 3b\n70 0e bd 7f\n94 01 bd 7f\nb4 07 bd 7f\n78 eb a3 7f\ne1 fe ff 4b\n78 1b 7c 7c\n78 eb a5 7f\n01 00 80 38\n61 f7 ff 4b\n18 00 41 e8\n30 00 7d 1c\nc5 fe ff 4b\n78 1b 7a 7c\n00 00 80 38\n00 00 c0 3b\n40 00 00 48\n00 00 40 39\nae 49 5c 7d\n14 da 29 7d\n20 00 29 79\n40 e8 a9 7f\nec ff 9c 41\n01 00 de 3b\n40 f0 bd 7f\n18 00 9d 40\nae f0 3c 7d\n00 00 a9 2f\nec ff 9e 41\n78 cb 24 7f\n08 00 00 48\n78 cb 24 7f\n40 e8 be 7f\n38 00 9c 40\n3c 08 df 57\n03 00 ff 3b\n20 00 fb 7b\n01 00 24 39\n20 00 39 79\n30 00 64 1c\n78 db 64 7f\n14 1a 7a 7c\n2d fa ff 4b\nd6 f9 ff 7f\nfd ff 3f 39\n62 f8 29 79\n9c ff ff 4b\n78 d3 43 7f\n11 fc ff 4b\n78 e3 83 7f\n7d f5 ff 4b\n18 00 41 e8\n78 d3 43 7f\n71 f5 ff 4b\n18 00 41 e8\n00 00 00 60\n38 80 c2 eb\n00 00 7e e8\nbd f6 ff 4b\n18 00 41 e8\n78 1b 7f 7c\n00 00 7e e8\n0d f7 ff 4b\n18 00 41 e8\n14 fa 63 7c\nb5 07 63 7c\n24 00 82 40\n68 00 21 eb\n70 00 41 eb\n78 00 61 eb\n80 00 81 eb\n88 00 a1 eb\n90 00 c1 eb\n98 00 e1 eb\n7c fe ff 4b\n00 00 00 60\n30 80 22 e9\n00 00 e9 eb\n2d f6 ff 4b\n18 00 41 e8\n02 00 63 e8\nc1 f4 ff 4b\n18 00 41 e8\n78 1b 66 7c\nfe ff a2 3c\nf8 9d a5 38\n01 00 80 38\n78 fb e3 7f\n25 f5 ff 4b\n18 00 41 e8\n01 00 60 38\n68 00 21 eb\n70 00 41 eb\n78 00 61 eb\n80 00 81 eb\n88 00 a1 eb\n90 00 c1 eb\n98 00 e1 eb\n1c fe ff 4b\n00 00 60 38\n14 fe ff 4b\n'
+p33
+S'.text:0000000000101300\n.text:0000000000101304\n.text:0000000000101308\n.text:000000000010130c\n.text:0000000000101310\n.text:0000000000101314\n.text:0000000000101318\n.text:000000000010131c\n.text:0000000000101320\n.text:0000000000101324\n.text:0000000000101328\n.text:000000000010132c\n.text:0000000000101330\n.text:0000000000101334\n.text:0000000000101338\n.text:000000000010133c\n.text:0000000000101340\n.text:0000000000101344\n.text:0000000000101348\n.text:000000000010134c\n.text:0000000000101350\n.text:0000000000101354\n.text:0000000000101358\n.text:000000000010135c\n.text:0000000000101360\n.text:0000000000101364\n.text:0000000000101368\n.text:000000000010136c\n.text:0000000000101370\n.text:0000000000101374\n.text:0000000000101378\n.text:000000000010137c\n.text:0000000000101380\n.text:0000000000101384\n.text:0000000000101388\n.text:000000000010138c\n.text:0000000000101390\n.text:0000000000101394\n.text:0000000000101398\n.text:000000000010139c\n.text:00000000001013a0\n.text:00000000001013a4\n.text:00000000001013a8\n.text:00000000001013ac\n.text:00000000001013b0\n.text:00000000001013b4\n.text:00000000001013b8\n.text:00000000001013bc\n.text:00000000001013c0\n.text:00000000001013c4\n.text:00000000001013c8\n.text:00000000001013cc\n.text:00000000001013d0\n.text:00000000001013d4\n.text:00000000001013d8\n.text:00000000001013dc\n.text:00000000001013e0\n.text:00000000001013e4\n.text:00000000001013e8\n.text:00000000001013ec\n.text:00000000001013f0\n.text:00000000001013f4\n.text:00000000001013f8\n.text:00000000001013fc\n.text:0000000000101400\n.text:0000000000101404\n.text:0000000000101408\n.text:000000000010140c\n.text:0000000000101410\n.text:0000000000101414\n.text:0000000000101418\n.text:000000000010141c\n.text:0000000000101420\n.text:0000000000101424\n.text:0000000000101428\n.text:000000000010142c\n.text:0000000000101430\n.text:0000000000101434\n.text:0000000000101438\n.text:000000000010143c\n.text:0000000000101440\n.text:0000000000101444\n.text:0000000000101448\n.text:000000000010144c\n.text:0000000000101450\n.text:0000000000101454\n.text:0000000000101458\n.text:000000000010145c\n.text:0000000000101460\n.text:0000000000101464\n.text:0000000000101468\n.text:000000000010146c\n.text:0000000000101470\n.text:0000000000101474\n.text:0000000000101478\n.text:000000000010147c\n.text:0000000000101480\n.text:0000000000101484\n.text:0000000000101488\n.text:000000000010148c\n.text:0000000000101490\n.text:0000000000101494\n.text:0000000000101498\n.text:000000000010149c\n.text:00000000001014a0\n.text:00000000001014a4\n.text:00000000001014a8\n.text:00000000001014ac\n.text:00000000001014b0\n.text:00000000001014b4\n.text:00000000001014b8\n.text:00000000001014bc\n.text:00000000001014c0\n.text:00000000001014c4\n.text:00000000001014c8\n.text:00000000001014cc\n.text:00000000001014d0\n.text:00000000001014d4\n.text:00000000001014d8\n.text:00000000001014dc\n.text:00000000001014e0\n.text:00000000001014e4\n.text:00000000001014e8\n.text:00000000001014ec\n.text:00000000001014f0\n.text:00000000001014f4\n.text:00000000001014f8\n.text:00000000001014fc\n.text:0000000000101500\n.text:0000000000101504\n.text:0000000000101508\n.text:000000000010150c\n.text:0000000000101510\n.text:0000000000101514\n.text:0000000000101518\n.text:000000000010151c\n.text:0000000000101520\n.text:0000000000101524\n.text:0000000000101528\n.text:000000000010152c\n'
+p34
+tp35
+sS'00000018.plt_call.abort@@GLIBC_2.17'
+p36
+(S'\n__stdcall 00000018.plt_call.abort@@GLIBC_2.17()\n'
+p37
+V\u000avoid 00000018_plt_call_abort__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_abort_0011feb8)();\u000a  return;\u000a}\u000a\u000a
+p38
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7fb8(r12)\nmtspr CTR,r12\nbctr\n'
+p39
+S'18 00 41 f8\nff ff 82 3d\nb8 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p40
+S'.text:0000000000100ac0\n.text:0000000000100ac4\n.text:0000000000100ac8\n.text:0000000000100acc\n.text:0000000000100ad0\n'
+p41
+tp42
+sS'__glink_PLTresolve'
+p43
+(S'\n__stdcall __glink_PLTresolve()\n'
+p44
+V\u000avoid __glink_PLTresolve(void)\u000a\u000a{\u000a                    /* WARNING: Could not recover jumptable at 0x00101b34. Too many branches */\u000a                    /* WARNING: Treating indirect jump as call */\u000a  (**(code **)(DAT_00101af8 + 0x101b08))();\u000a  return;\u000a}\u000a\u000a
+p45
+S'mfspr r0,LR\nbl 0x00101b08\nmfspr r11,LR\nstd r2,0x18(r1)\nld r2,-0x10(r11)\nmtspr LR,r0\nsubf r12,r11,r12\nadd r11,r2,r11\nsubi r0,r12,0x30\nld r12,0x0(r11)\nrldicl r0,r0,0x3e,0x2\nmtspr CTR,r12\nld r11,0x8(r11)\nbctr\n'
+p46
+S'a6 02 08 7c\n05 00 9f 42\na6 02 68 7d\n18 00 41 f8\nf0 ff 4b e8\na6 03 08 7c\n50 60 8b 7d\n14 5a 62 7d\nd0 ff 0c 38\n00 00 8b e9\n82 f0 00 78\na6 03 89 7d\n08 00 6b e9\n20 04 80 4e\n'
+p47
+S'.text:0000000000101b00\n.text:0000000000101b04\n.text:0000000000101b08\n.text:0000000000101b0c\n.text:0000000000101b10\n.text:0000000000101b14\n.text:0000000000101b18\n.text:0000000000101b1c\n.text:0000000000101b20\n.text:0000000000101b24\n.text:0000000000101b28\n.text:0000000000101b2c\n.text:0000000000101b30\n.text:0000000000101b34\n'
+p48
+tp49
+sS'deregister_tm_clones'
+p50
+(S'\n__stdcall deregister_tm_clones()\n'
+p51
+V\u000a/* WARNING: Removing unreachable block (ram,0x00100c34) */\u000a/* WARNING: Removing unreachable block (ram,0x00100c44) */\u000a/* deregister_tm_clones */\u000a\u000avoid deregister_tm_clones(void)\u000a\u000a{\u000a                    /* local function entry for global function deregister_tm_clones at {@address\u000a                       00100c10} */\u000a  return;\u000a}\u000a\u000a
+p52
+S'ori r0,r0,0x0\nori r0,r0,0x0\nstdu r1,-0x20(r1)\nsubi r3,r2,0x7ef0\nsubi r9,r2,0x7ef0\ncmpd cr7,r9,r3\nbeq cr7,0x00100c68\nori r0,r0,0x0\nld r9,-0x7ff0(r2)\ncmpdi cr7,r9,0x0\nbeq cr7,0x00100c68\nmfspr r0,LR\nstd r2,0x18(r1)\nor r12,r9,r9\nmtspr CTR,r9\nstd r0,0x30(r1)\nbctrl\nld r2,0x18(r1)\nld r0,0x30(r1)\nmtspr LR,r0\naddi r1,r1,0x20\nblr\n'
+p53
+S'00 00 00 60\n00 00 00 60\ne1 ff 21 f8\n10 81 62 38\n10 81 22 39\n00 18 a9 7f\n38 00 9e 41\n00 00 00 60\n10 80 22 e9\n00 00 a9 2f\n28 00 9e 41\na6 02 08 7c\n18 00 41 f8\n78 4b 2c 7d\na6 03 29 7d\n30 00 01 f8\n21 04 80 4e\n18 00 41 e8\n30 00 01 e8\na6 03 08 7c\n20 00 21 38\n20 00 80 4e\n'
+p54
+S'.text:0000000000100c18\n.text:0000000000100c1c\n.text:0000000000100c20\n.text:0000000000100c24\n.text:0000000000100c28\n.text:0000000000100c2c\n.text:0000000000100c30\n.text:0000000000100c34\n.text:0000000000100c38\n.text:0000000000100c3c\n.text:0000000000100c40\n.text:0000000000100c44\n.text:0000000000100c48\n.text:0000000000100c4c\n.text:0000000000100c50\n.text:0000000000100c54\n.text:0000000000100c58\n.text:0000000000100c5c\n.text:0000000000100c60\n.text:0000000000100c64\n.text:0000000000100c68\n.text:0000000000100c6c\n'
+p55
+tp56
+sS'00000018.plt_call.__fprintf_chk@@GLIBC_2.17'
+p57
+(S'\n__stdcall 00000018.plt_call.__fprintf_chk@@GLIBC_2.17()\n'
+p58
+V\u000avoid 00000018_plt_call___fprintf_chk__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR___fprintf_chk_0011fec8)();\u000a  return;\u000a}\u000a\u000a
+p59
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7fc8(r12)\nmtspr CTR,r12\nbctr\n'
+p60
+S'18 00 41 f8\nff ff 82 3d\nc8 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p61
+S'.text:0000000000100a20\n.text:0000000000100a24\n.text:0000000000100a28\n.text:0000000000100a2c\n.text:0000000000100a30\n'
+p62
+tp63
+sS'00000018.plt_call.putchar@@GLIBC_2.17'
+p64
+(S'\n__stdcall 00000018.plt_call.putchar@@GLIBC_2.17()\n'
+p65
+V\u000avoid 00000018_plt_call_putchar__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_putchar_0011fef0)();\u000a  return;\u000a}\u000a\u000a
+p66
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7ff0(r12)\nmtspr CTR,r12\nbctr\n'
+p67
+S'18 00 41 f8\nff ff 82 3d\nf0 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p68
+S'.text:0000000000100a40\n.text:0000000000100a44\n.text:0000000000100a48\n.text:0000000000100a4c\n.text:0000000000100a50\n'
+p69
+tp70
+sS'__udivti3'
+p71
+(S'\n__stdcall __udivti3()\n'
+p72
+V\u000aulonglong __udivti3(ulonglong uParm1,ulonglong uParm2,ulonglong uParm3,ulonglong uParm4)\u000a\u000a{\u000a  ulonglong uVar1;\u000a  ulonglong uVar2;\u000a  ulonglong uVar3;\u000a  ulonglong uVar4;\u000a  ulonglong uVar5;\u000a  ulonglong uVar6;\u000a  ulonglong uVar7;\u000a  ulonglong uVar8;\u000a  ulonglong uVar9;\u000a  \u000a  if (uParm4 == 0) {\u000a    if (uParm3 <= uParm2) {\u000a      if (uParm3 == 0) {\u000a        uParm3 = 1 / 0;\u000a      }\u000a      uVar4 = countLeadingZeros(uParm3);\u000a      if (uVar4 == 0) {\u000a        uParm2 = uParm2 - uParm3;\u000a        uVar1 = uParm3 >> 0x20;\u000a        uVar2 = uParm3 & 0xffffffff;\u000a      }\u000a      else {\u000a        uParm3 = uParm3 << (uVar4 & 0x7f);\u000a        uVar5 = uParm2 >> (0x40 - uVar4 & 0x7f);\u000a        uVar1 = uParm3 >> 0x20;\u000a        uVar3 = uVar5 / uVar1;\u000a        uVar2 = uParm3 & 0xffffffff;\u000a        uVar6 = uParm1 >> (0x40 - uVar4 & 0x7f) | uParm2 << (uVar4 & 0x7f);\u000a        uParm1 = uParm1 << (uVar4 & 0x7f);\u000a        uVar4 = uVar2 * uVar3;\u000a        uVar5 = uVar5 - uVar3 * uVar1 << 0x20 | uVar6 >> 0x20;\u000a        if (((uVar5 < uVar4) && (uVar5 = uVar5 + uParm3, uParm3 <= uVar5)) && (uVar5 < uVar4)) {\u000a          uVar5 = uVar5 + uParm3;\u000a        }\u000a        uVar9 = (uVar5 - uVar4) / uVar1;\u000a        uVar3 = uVar2 * uVar9;\u000a        uParm2 = (uVar5 - uVar4) - uVar9 * uVar1 << 0x20 | uVar6 & 0xffffffff;\u000a        if (((uParm2 < uVar3) && (uParm2 = uParm2 + uParm3, uParm3 <= uParm2)) && (uParm2 < uVar3))\u000a        {\u000a          uParm2 = uParm2 + uParm3;\u000a        }\u000a        uParm2 = uParm2 - uVar3;\u000a      }\u000a      uVar3 = uParm2 / uVar1;\u000a      uVar5 = uVar3 * uVar2;\u000a      uVar6 = uParm2 - uVar3 * uVar1 << 0x20 | uParm1 >> 0x20;\u000a      uVar4 = uVar3;\u000a      if (uVar6 < uVar5) {\u000a        uVar6 = uVar6 + uParm3;\u000a        uVar4 = uVar3 - 1;\u000a        if ((uParm3 <= uVar6) && (uVar6 < uVar5)) {\u000a          uVar4 = uVar3 - 2;\u000a          uVar6 = uVar6 + uParm3;\u000a        }\u000a      }\u000a      uVar3 = (uVar6 - uVar5) / uVar1;\u000a      uVar5 = (uVar6 - uVar5) - uVar3 * uVar1 << 0x20 | uParm1 & 0xffffffff;\u000a      uVar1 = uVar3;\u000a      if (uVar5 < uVar3 * uVar2) {\u000a        uVar5 = uParm3 + uVar5;\u000a        uVar1 = uVar3 - 1;\u000a        if ((uParm3 <= uVar5) && (uVar5 < uVar3 * uVar2)) {\u000a          uVar1 = uVar3 - 2;\u000a        }\u000a      }\u000a      return uVar4 << 0x20 | uVar1;\u000a    }\u000a    uVar4 = countLeadingZeros(uParm3);\u000a    if (uVar4 != 0) {\u000a      uParm3 = uParm3 << (uVar4 & 0x7f);\u000a      uParm2 = uParm1 >> (0x40 - (uVar4 & 0xffffffff) & 0x7f) | uParm2 << (uVar4 & 0x7f);\u000a      uParm1 = uParm1 << (uVar4 & 0x7f);\u000a    }\u000a    uVar4 = uParm3 >> 0x20;\u000a    uVar6 = uParm2 / uVar4;\u000a    uVar2 = (uParm3 & 0xffffffff) * uVar6;\u000a    uVar5 = uParm2 - uVar6 * uVar4 << 0x20 | uParm1 >> 0x20;\u000a    uVar1 = uVar6;\u000a    if (uVar5 < uVar2) {\u000a      uVar5 = uVar5 + uParm3;\u000a      uVar1 = uVar6 - 1;\u000a      if ((uParm3 <= uVar5) && (uVar5 < uVar2)) {\u000a        uVar1 = uVar6 - 2;\u000a        uVar5 = uVar5 + uParm3;\u000a      }\u000a    }\u000a    uVar3 = (uVar5 - uVar2) / uVar4;\u000a    uVar6 = (uParm3 & 0xffffffff) * uVar3;\u000a    uVar2 = (uVar5 - uVar2) - uVar3 * uVar4 << 0x20 | uParm1 & 0xffffffff;\u000a    uVar4 = uVar3;\u000a    if (uVar2 < uVar6) {\u000a      uVar2 = uParm3 + uVar2;\u000a      uVar4 = uVar3 - 1;\u000a      if ((uParm3 <= uVar2) && (uVar2 < uVar6)) {\u000a        uVar4 = uVar3 - 2;\u000a      }\u000a    }\u000a    return uVar1 << 0x20 | uVar4;\u000a  }\u000a  if (uParm2 < uParm4) {\u000a    uVar4 = 0;\u000a  }\u000a  else {\u000a    uVar1 = countLeadingZeros(uParm4);\u000a    if (uVar1 == 0) {\u000a      if ((uParm4 < uParm2) || (uParm3 <= uParm1)) {\u000a        return 1;\u000a      }\u000a      uVar4 = 0;\u000a    }\u000a    else {\u000a      uVar2 = 0x40 - uVar1;\u000a      uVar9 = uParm2 >> (uVar2 & 0x7f);\u000a      uVar3 = uParm3 >> (uVar2 & 0x7f) | uParm4 << (uVar1 & 0x7f);\u000a      uVar4 = uVar3 >> 0x20;\u000a      uVar7 = uVar9 / uVar4;\u000a      uVar6 = uParm1 >> (uVar2 & 0x7f) | uParm2 << (uVar1 & 0x7f);\u000a      uParm3 = uParm3 << (uVar1 & 0x7f);\u000a      uVar5 = (uVar3 & 0xffffffff) * uVar7;\u000a      uVar9 = uVar9 - uVar7 * uVar4 << 0x20 | uVar6 >> 0x20;\u000a      uVar2 = uVar7;\u000a      if (uVar9 < uVar5) {\u000a        uVar9 = uVar9 + uVar3;\u000a        uVar2 = uVar7 - 1;\u000a        if ((uVar3 <= uVar9) && (uVar9 < uVar5)) {\u000a          uVar2 = uVar7 - 2;\u000a          uVar9 = uVar9 + uVar3;\u000a        }\u000a      }\u000a      uVar8 = (uVar9 - uVar5) / uVar4;\u000a      uVar7 = (uVar3 & 0xffffffff) * uVar8;\u000a      uVar5 = (uVar9 - uVar5) - uVar8 * uVar4 << 0x20 | uVar6 & 0xffffffff;\u000a      uVar4 = uVar8;\u000a      if (uVar5 < uVar7) {\u000a        uVar5 = uVar5 + uVar3;\u000a        uVar4 = uVar8 - 1;\u000a        if ((uVar3 <= uVar5) && (uVar5 < uVar7)) {\u000a          uVar4 = uVar8 - 2;\u000a          uVar5 = uVar5 + uVar3;\u000a        }\u000a      }\u000a      uVar4 = uVar2 << 0x20 | uVar4;\u000a      uVar2 = SUB168(ZEXT816(uVar4) * ZEXT816(uParm3) >> 0x40,0);\u000a      if ((uVar5 - uVar7 < uVar2) ||\u000a         ((uVar5 - uVar7 == uVar2 && (uParm1 << (uVar1 & 0x7f) < uParm3 * uVar4)))) {\u000a        uVar4 = uVar4 - 1;\u000a      }\u000a    }\u000a  }\u000a  return uVar4;\u000a}\u000a\u000a
+p73
+S'cmpdi r6,0x0\nstd r30,-0x10(r1)\nstd r31,-0x8(r1)\nbne 0x00101640\ncmpld cr7,r5,r4\nor r9,r5,r5\nor r10,r3,r3\nor r8,r4,r4\nble cr7,0x00101680\ncntlzd r7,r5\ncmpdi cr7,r7,0x0\nbeq cr7,0x0010158c\nrldicl r7,r7,0x0,0x20\nsubfic r6,r7,0x40\nsld r8,r4,r7\nsrd r6,r3,r6\nsld r9,r5,r7\nor r8,r6,r8\nsld r10,r3,r7\nrldicl r7,r9,0x20,0x20\nrldicl r4,r9,0x0,0x20\ndivdu r12,r8,r7\nrldicl r6,r10,0x20,0x20\nmulld r11,r12,r7\nmulld r5,r4,r12\nor r3,r12,r12\nsubf r11,r11,r8\nor r8,r6,r6\nrldimi r8,r11,0x20,0x0\ncmpld cr7,r5,r8\nble cr7,0x001015e0\nadd r8,r8,r9\nsubi r3,r12,0x1\ncmpld cr7,r9,r8\nbgt cr7,0x001015e0\ncmpld cr7,r5,r8\nble cr7,0x001015e0\nsubi r3,r12,0x2\nadd r8,r8,r9\nori r2,r2,0x0\nsubf r8,r5,r8\ndivdu r5,r8,r7\nmulld r7,r5,r7\nmulld r4,r4,r5\nor r6,r5,r5\nsubf r7,r7,r8\nrldimi r10,r7,0x20,0x0\ncmpld cr7,r4,r10\nble cr7,0x00101620\nadd r10,r9,r10\nsubi r6,r5,0x1\ncmpld cr7,r9,r10\nbgt cr7,0x00101620\ncmpld cr7,r4,r10\nble cr7,0x00101620\nsubi r6,r5,0x2\nrldicr r3,r3,0x20,0x1f\nli r4,0x0\nor r3,r3,r6\nld r30,-0x10(r1)\nld r31,-0x8(r1)\nblr\ncmpld cr7,r6,r4\nbgt cr7,0x00101750\ncntlzd r10,r6\ncmpdi cr5,r10,0x0\nbne cr5,0x00101770\nli r4,0x0\nblt cr7,0x00101664\ncmpld cr7,r5,r3\nbgt cr7,0x00101970\nli r3,0x1\nld r30,-0x10(r1)\nld r31,-0x8(r1)\nblr\ncmpdi cr7,r5,0x0\nbne cr7,0x00101690\nli r8,0x1\ndivdu r9,r8,r5\ncntlzd r8,r9\ncmpdi cr7,r8,0x0\nbne cr7,0x00101870\nsubf r11,r9,r4\nrldicl r8,r9,0x20,0x20\nrldicl r6,r9,0x0,0x20\nli r4,0x1\ndivdu r12,r11,r8\nrldicl r7,r10,0x20,0x20\nmulld r0,r12,r8\nmulld r5,r12,r6\nor r3,r12,r12\nsubf r11,r0,r11\nrldimi r7,r11,0x20,0x0\ncmpld cr7,r5,r7\nble cr7,0x001016f0\nadd r7,r7,r9\nsubi r3,r12,0x1\ncmpld cr7,r9,r7\nbgt cr7,0x001016f0\ncmpld cr7,r5,r7\nbgt cr7,0x00101960\nori r0,r0,0x0\nori r2,r2,0x0\nsubf r7,r5,r7\ndivdu r11,r7,r8\nmulld r8,r11,r8\nmulld r6,r11,r6\nor r5,r11,r11\nsubf r8,r8,r7\nrldimi r10,r8,0x20,0x0\ncmpld cr7,r6,r10\nble cr7,0x00101730\nadd r10,r9,r10\nsubi r5,r11,0x1\ncmpld cr7,r9,r10\nbgt cr7,0x00101730\ncmpld cr7,r6,r10\nble cr7,0x00101730\nsubi r5,r11,0x2\nrldicr r3,r3,0x20,0x1f\nor r3,r3,r5\nld r30,-0x10(r1)\nld r31,-0x8(r1)\nblr\nli r4,0x0\nli r3,0x0\nld r30,-0x10(r1)\nld r31,-0x8(r1)\nblr\nsubfic r9,r10,0x40\nrldicl r12,r10,0x0,0x20\nrldicl r9,r9,0x0,0x20\nsld r7,r6,r12\nsrd r6,r5,r9\nsrd r30,r4,r9\nor r7,r6,r7\nsrd r9,r3,r9\nrldicl r8,r7,0x20,0x20\nrldicl r10,r7,0x0,0x20\ndivdu r31,r30,r8\nsld r4,r4,r12\nor r4,r9,r4\nrldicl r11,r4,0x20,0x20\nsld r5,r5,r12\nmulld r6,r31,r8\nmulld r0,r10,r31\nor r9,r31,r31\nsubf r6,r6,r30\nrldimi r11,r6,0x20,0x0\ncmpld cr7,r0,r11\nble cr7,0x001017f0\nadd r11,r11,r7\nsubi r9,r31,0x1\ncmpld cr7,r7,r11\nbgt cr7,0x001017f0\ncmpld cr7,r0,r11\nble cr7,0x001017f0\nsubi r9,r31,0x2\nadd r11,r11,r7\nori r0,r0,0x0\nori r2,r2,0x0\nsubf r11,r0,r11\ndivdu r31,r11,r8\nmulld r8,r31,r8\nmulld r10,r10,r31\nor r6,r31,r31\nsubf r8,r8,r11\nrldimi r4,r8,0x20,0x0\ncmpld cr7,r10,r4\nble cr7,0x00101840\nadd r4,r4,r7\nsubi r6,r31,0x1\ncmpld cr7,r7,r4\nbgt cr7,0x00101840\ncmpld cr7,r10,r4\nble cr7,0x00101840\nsubi r6,r31,0x2\nadd r4,r4,r7\nori r0,r0,0x0\nori r0,r0,0x0\nori r2,r2,0x0\nsubf r4,r10,r4\nrldicr r9,r9,0x20,0x1f\nor r9,r9,r6\nmulhdu r10,r9,r5\ncmpld cr7,r4,r10\nmulld r5,r5,r9\nblt cr7,0x00101950\nbeq cr7,0x00101940\nor r3,r9,r9\nli r4,0x0\nb 0x00101758\nrldicl r10,r8,0x0,0x20\nsubfic r8,r8,0x40\nsld r9,r9,r10\nrldicl r7,r8,0x0,0x20\nsrd r0,r4,r7\nrldicl r8,r9,0x20,0x20\ndivdu r31,r0,r8\nrldicl r6,r9,0x0,0x20\nsrd r7,r3,r7\nsld r4,r4,r10\nor r4,r7,r4\nrldicl r7,r4,0x20,0x20\nsld r10,r3,r10\nmulld r11,r31,r8\nmulld r5,r6,r31\nor r3,r31,r31\nsubf r11,r11,r0\nrldimi r7,r11,0x20,0x0\ncmpld cr7,r5,r7\nble cr7,0x001018e0\nadd r7,r7,r9\nsubi r3,r31,0x1\ncmpld cr7,r9,r7\nbgt cr7,0x001018e0\ncmpld cr7,r5,r7\nble cr7,0x001018e0\nsubi r3,r31,0x2\nadd r7,r7,r9\nsubf r7,r5,r7\ndivdu r31,r7,r8\nmulld r5,r31,r8\nmulld r11,r6,r31\nor r12,r31,r31\nsubf r7,r5,r7\nrldimi r4,r7,0x20,0x0\ncmpld cr7,r11,r4\nble cr7,0x00101930\nadd r4,r4,r9\nsubi r12,r31,0x1\ncmpld cr7,r9,r4\nbgt cr7,0x00101930\ncmpld cr7,r11,r4\nble cr7,0x00101930\nsubi r12,r31,0x2\nadd r4,r4,r9\nori r0,r0,0x0\nori r0,r0,0x0\nori r2,r2,0x0\nrldicr r3,r3,0x20,0x1f\nsubf r11,r11,r4\nor r4,r3,r12\nb 0x001016ac\nsld r3,r3,r12\ncmpld cr7,r3,r5\nbge cr7,0x00101860\nori r2,r2,0x0\nsubi r3,r9,0x1\nli r4,0x0\nb 0x00101758\nsubi r3,r12,0x2\nadd r7,r7,r9\nb 0x001016f0\nli r3,0x0\nb 0x00101758\n'
+p74
+S'00 00 26 2c\nf0 ff c1 fb\nf8 ff e1 fb\nf4 00 82 40\n40 20 a5 7f\n78 2b a9 7c\n78 1b 6a 7c\n78 23 88 7c\n20 01 9d 40\n74 00 a7 7c\n00 00 a7 2f\n20 00 9e 41\n20 00 e7 78\n40 00 c7 20\n36 38 88 7c\n36 34 66 7c\n36 38 a9 7c\n78 43 c8 7c\n36 38 6a 7c\n22 00 27 79\n20 00 24 79\n92 3b 88 7d\n22 00 46 79\nd2 39 6c 7d\nd2 61 a4 7c\n78 63 83 7d\n50 40 6b 7d\n78 33 c8 7c\n0e 00 68 79\n40 40 a5 7f\n28 00 9d 40\n14 4a 08 7d\nff ff 6c 38\n40 40 a9 7f\n18 00 9d 41\n40 40 a5 7f\n10 00 9d 40\nfe ff 6c 38\n14 4a 08 7d\n00 00 42 60\n50 40 05 7d\n92 3b a8 7c\nd2 39 e5 7c\nd2 29 84 7c\n78 2b a6 7c\n50 40 e7 7c\n0e 00 ea 78\n40 50 a4 7f\n20 00 9d 40\n14 52 49 7d\nff ff c5 38\n40 50 a9 7f\n10 00 9d 41\n40 50 a4 7f\n08 00 9d 40\nfe ff c5 38\nc6 07 63 78\n00 00 80 38\n78 33 63 7c\nf0 ff c1 eb\nf8 ff e1 eb\n20 00 80 4e\n40 20 a6 7f\n0c 01 9d 41\n74 00 ca 7c\n00 00 aa 2e\n20 01 96 40\n00 00 80 38\n0c 00 9c 41\n40 18 a5 7f\n10 03 9d 41\n01 00 60 38\nf0 ff c1 eb\nf8 ff e1 eb\n20 00 80 4e\n00 00 a5 2f\n0c 00 9e 40\n01 00 00 39\n92 2b 28 7d\n74 00 28 7d\n00 00 a8 2f\nd8 01 9e 40\n50 20 69 7d\n22 00 28 79\n20 00 26 79\n01 00 80 38\n92 43 8b 7d\n22 00 47 79\nd2 41 0c 7c\nd2 31 ac 7c\n78 63 83 7d\n50 58 60 7d\n0e 00 67 79\n40 38 a5 7f\n24 00 9d 40\n14 4a e7 7c\nff ff 6c 38\n40 38 a9 7f\n14 00 9d 41\n40 38 a5 7f\n7c 02 9d 41\n00 00 00 60\n00 00 42 60\n50 38 e5 7c\n92 43 67 7d\nd2 41 0b 7d\nd2 31 cb 7c\n78 5b 65 7d\n50 38 08 7d\n0e 00 0a 79\n40 50 a6 7f\n20 00 9d 40\n14 52 49 7d\nff ff ab 38\n40 50 a9 7f\n10 00 9d 41\n40 50 a6 7f\n08 00 9d 40\nfe ff ab 38\nc6 07 63 78\n78 2b 63 7c\nf0 ff c1 eb\nf8 ff e1 eb\n20 00 80 4e\n00 00 80 38\n00 00 60 38\nf0 ff c1 eb\nf8 ff e1 eb\n20 00 80 4e\n40 00 2a 21\n20 00 4c 79\n20 00 29 79\n36 60 c7 7c\n36 4c a6 7c\n36 4c 9e 7c\n78 3b c7 7c\n36 4c 69 7c\n22 00 e8 78\n20 00 ea 78\n92 43 fe 7f\n36 60 84 7c\n78 23 24 7d\n22 00 8b 78\n36 60 a5 7c\nd2 41 df 7c\nd2 f9 0a 7c\n78 fb e9 7f\n50 f0 c6 7c\n0e 00 cb 78\n40 58 a0 7f\n2c 00 9d 40\n14 3a 6b 7d\nff ff 3f 39\n40 58 a7 7f\n1c 00 9d 41\n40 58 a0 7f\n14 00 9d 40\nfe ff 3f 39\n14 3a 6b 7d\n00 00 00 60\n00 00 42 60\n50 58 60 7d\n92 43 eb 7f\nd2 41 1f 7d\nd2 f9 4a 7d\n78 fb e6 7f\n50 58 08 7d\n0e 00 04 79\n40 20 aa 7f\n30 00 9d 40\n14 3a 84 7c\nff ff df 38\n40 20 a7 7f\n20 00 9d 41\n40 20 aa 7f\n18 00 9d 40\nfe ff df 38\n14 3a 84 7c\n00 00 00 60\n00 00 00 60\n00 00 42 60\n50 20 8a 7c\nc6 07 29 79\n78 33 29 7d\n12 28 49 7d\n40 50 a4 7f\nd2 49 a5 7c\nf8 00 9c 41\ne4 00 9e 41\n78 4b 23 7d\n00 00 80 38\nf0 fe ff 4b\n20 00 0a 79\n40 00 08 21\n36 50 29 7d\n20 00 07 79\n36 3c 80 7c\n22 00 28 79\n92 43 e0 7f\n20 00 26 79\n36 3c 67 7c\n36 50 84 7c\n78 23 e4 7c\n22 00 87 78\n36 50 6a 7c\nd2 41 7f 7d\nd2 f9 a6 7c\n78 fb e3 7f\n50 00 6b 7d\n0e 00 67 79\n40 38 a5 7f\n24 00 9d 40\n14 4a e7 7c\nff ff 7f 38\n40 38 a9 7f\n14 00 9d 41\n40 38 a5 7f\n0c 00 9d 40\nfe ff 7f 38\n14 4a e7 7c\n50 38 e5 7c\n92 43 e7 7f\nd2 41 bf 7c\nd2 f9 66 7d\n78 fb ec 7f\n50 38 e5 7c\n0e 00 e4 78\n40 20 ab 7f\n30 00 9d 40\n14 4a 84 7c\nff ff 9f 39\n40 20 a9 7f\n20 00 9d 41\n40 20 ab 7f\n18 00 9d 40\nfe ff 9f 39\n14 4a 84 7c\n00 00 00 60\n00 00 00 60\n00 00 42 60\nc6 07 63 78\n50 20 6b 7d\n78 63 64 7c\n70 fd ff 4b\n36 60 63 7c\n40 28 a3 7f\n18 ff 9c 40\n00 00 42 60\nff ff 69 38\n00 00 80 38\n00 fe ff 4b\nfe ff 6c 38\n14 4a e7 7c\n88 fd ff 4b\n00 00 60 38\ne4 fd ff 4b\n'
+p75
+S'.text:0000000000101540\n.text:0000000000101544\n.text:0000000000101548\n.text:000000000010154c\n.text:0000000000101550\n.text:0000000000101554\n.text:0000000000101558\n.text:000000000010155c\n.text:0000000000101560\n.text:0000000000101564\n.text:0000000000101568\n.text:000000000010156c\n.text:0000000000101570\n.text:0000000000101574\n.text:0000000000101578\n.text:000000000010157c\n.text:0000000000101580\n.text:0000000000101584\n.text:0000000000101588\n.text:000000000010158c\n.text:0000000000101590\n.text:0000000000101594\n.text:0000000000101598\n.text:000000000010159c\n.text:00000000001015a0\n.text:00000000001015a4\n.text:00000000001015a8\n.text:00000000001015ac\n.text:00000000001015b0\n.text:00000000001015b4\n.text:00000000001015b8\n.text:00000000001015bc\n.text:00000000001015c0\n.text:00000000001015c4\n.text:00000000001015c8\n.text:00000000001015cc\n.text:00000000001015d0\n.text:00000000001015d4\n.text:00000000001015d8\n.text:00000000001015dc\n.text:00000000001015e0\n.text:00000000001015e4\n.text:00000000001015e8\n.text:00000000001015ec\n.text:00000000001015f0\n.text:00000000001015f4\n.text:00000000001015f8\n.text:00000000001015fc\n.text:0000000000101600\n.text:0000000000101604\n.text:0000000000101608\n.text:000000000010160c\n.text:0000000000101610\n.text:0000000000101614\n.text:0000000000101618\n.text:000000000010161c\n.text:0000000000101620\n.text:0000000000101624\n.text:0000000000101628\n.text:000000000010162c\n.text:0000000000101630\n.text:0000000000101634\n.text:0000000000101640\n.text:0000000000101644\n.text:0000000000101648\n.text:000000000010164c\n.text:0000000000101650\n.text:0000000000101654\n.text:0000000000101658\n.text:000000000010165c\n.text:0000000000101660\n.text:0000000000101664\n.text:0000000000101668\n.text:000000000010166c\n.text:0000000000101670\n.text:0000000000101680\n.text:0000000000101684\n.text:0000000000101688\n.text:000000000010168c\n.text:0000000000101690\n.text:0000000000101694\n.text:0000000000101698\n.text:000000000010169c\n.text:00000000001016a0\n.text:00000000001016a4\n.text:00000000001016a8\n.text:00000000001016ac\n.text:00000000001016b0\n.text:00000000001016b4\n.text:00000000001016b8\n.text:00000000001016bc\n.text:00000000001016c0\n.text:00000000001016c4\n.text:00000000001016c8\n.text:00000000001016cc\n.text:00000000001016d0\n.text:00000000001016d4\n.text:00000000001016d8\n.text:00000000001016dc\n.text:00000000001016e0\n.text:00000000001016e4\n.text:00000000001016e8\n.text:00000000001016ec\n.text:00000000001016f0\n.text:00000000001016f4\n.text:00000000001016f8\n.text:00000000001016fc\n.text:0000000000101700\n.text:0000000000101704\n.text:0000000000101708\n.text:000000000010170c\n.text:0000000000101710\n.text:0000000000101714\n.text:0000000000101718\n.text:000000000010171c\n.text:0000000000101720\n.text:0000000000101724\n.text:0000000000101728\n.text:000000000010172c\n.text:0000000000101730\n.text:0000000000101734\n.text:0000000000101738\n.text:000000000010173c\n.text:0000000000101740\n.text:0000000000101750\n.text:0000000000101754\n.text:0000000000101758\n.text:000000000010175c\n.text:0000000000101760\n.text:0000000000101770\n.text:0000000000101774\n.text:0000000000101778\n.text:000000000010177c\n.text:0000000000101780\n.text:0000000000101784\n.text:0000000000101788\n.text:000000000010178c\n.text:0000000000101790\n.text:0000000000101794\n.text:0000000000101798\n.text:000000000010179c\n.text:00000000001017a0\n.text:00000000001017a4\n.text:00000000001017a8\n.text:00000000001017ac\n.text:00000000001017b0\n.text:00000000001017b4\n.text:00000000001017b8\n.text:00000000001017bc\n.text:00000000001017c0\n.text:00000000001017c4\n.text:00000000001017c8\n.text:00000000001017cc\n.text:00000000001017d0\n.text:00000000001017d4\n.text:00000000001017d8\n.text:00000000001017dc\n.text:00000000001017e0\n.text:00000000001017e4\n.text:00000000001017e8\n.text:00000000001017ec\n.text:00000000001017f0\n.text:00000000001017f4\n.text:00000000001017f8\n.text:00000000001017fc\n.text:0000000000101800\n.text:0000000000101804\n.text:0000000000101808\n.text:000000000010180c\n.text:0000000000101810\n.text:0000000000101814\n.text:0000000000101818\n.text:000000000010181c\n.text:0000000000101820\n.text:0000000000101824\n.text:0000000000101828\n.text:000000000010182c\n.text:0000000000101830\n.text:0000000000101834\n.text:0000000000101838\n.text:000000000010183c\n.text:0000000000101840\n.text:0000000000101844\n.text:0000000000101848\n.text:000000000010184c\n.text:0000000000101850\n.text:0000000000101854\n.text:0000000000101858\n.text:000000000010185c\n.text:0000000000101860\n.text:0000000000101864\n.text:0000000000101868\n.text:0000000000101870\n.text:0000000000101874\n.text:0000000000101878\n.text:000000000010187c\n.text:0000000000101880\n.text:0000000000101884\n.text:0000000000101888\n.text:000000000010188c\n.text:0000000000101890\n.text:0000000000101894\n.text:0000000000101898\n.text:000000000010189c\n.text:00000000001018a0\n.text:00000000001018a4\n.text:00000000001018a8\n.text:00000000001018ac\n.text:00000000001018b0\n.text:00000000001018b4\n.text:00000000001018b8\n.text:00000000001018bc\n.text:00000000001018c0\n.text:00000000001018c4\n.text:00000000001018c8\n.text:00000000001018cc\n.text:00000000001018d0\n.text:00000000001018d4\n.text:00000000001018d8\n.text:00000000001018dc\n.text:00000000001018e0\n.text:00000000001018e4\n.text:00000000001018e8\n.text:00000000001018ec\n.text:00000000001018f0\n.text:00000000001018f4\n.text:00000000001018f8\n.text:00000000001018fc\n.text:0000000000101900\n.text:0000000000101904\n.text:0000000000101908\n.text:000000000010190c\n.text:0000000000101910\n.text:0000000000101914\n.text:0000000000101918\n.text:000000000010191c\n.text:0000000000101920\n.text:0000000000101924\n.text:0000000000101928\n.text:000000000010192c\n.text:0000000000101930\n.text:0000000000101934\n.text:0000000000101938\n.text:000000000010193c\n.text:0000000000101940\n.text:0000000000101944\n.text:0000000000101948\n.text:000000000010194c\n.text:0000000000101950\n.text:0000000000101954\n.text:0000000000101958\n.text:0000000000101960\n.text:0000000000101964\n.text:0000000000101968\n.text:0000000000101970\n.text:0000000000101974\n'
+p76
+tp77
+sS'00000018.plt_call.free@@GLIBC_2.17'
+p78
+(S'\n__stdcall 00000018.plt_call.free@@GLIBC_2.17()\n'
+p79
+V\u000avoid 00000018_plt_call_free__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_free_0011fed8)();\u000a  return;\u000a}\u000a\u000a
+p80
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7fd8(r12)\nmtspr CTR,r12\nbctr\n'
+p81
+S'18 00 41 f8\nff ff 82 3d\nd8 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p82
+S'.text:00000000001009e0\n.text:00000000001009e4\n.text:00000000001009e8\n.text:00000000001009ec\n.text:00000000001009f0\n'
+p83
+tp84
+sS'00000036.plt_call.__gmon_start__'
+p85
+(S'\n__stdcall 00000036.plt_call.__gmon_start__()\n'
+p86
+V\u000avoid 00000036_plt_call___gmon_start__(void)\u000a\u000a{\u000a  (*(code *)PTR___gmon_start___0011feb0)();\u000a  return;\u000a}\u000a\u000a
+p87
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7fb0(r12)\nmtspr CTR,r12\nbctr\n'
+p88
+S'18 00 41 f8\nff ff 82 3d\nb0 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p89
+S'.init:0000000000100920\n.init:0000000000100924\n.init:0000000000100928\n.init:000000000010092c\n.init:0000000000100930\n'
+p90
+tp91
+sS'frame_dummy'
+p92
+(S'\n__stdcall frame_dummy()\n'
+p93
+V\u000a/* WARNING: Removing unreachable block (ram,0x00100ca0) */\u000a/* WARNING: Removing unreachable block (ram,0x00100cb0) */\u000a/* frame_dummy */\u000a\u000avoid frame_dummy(void)\u000a\u000a{\u000a  return;\u000a                    /* local function entry for global function frame_dummy at {@address 00100dd0}\u000a                        */\u000a}\u000a\u000a
+p94
+S'b 0x00100c78\n'
+p95
+S'a0 fe ff 4b\n'
+p96
+S'.text:0000000000100dd8\n'
+p97
+tp98
+sS'00000018.plt_call.fwrite@@GLIBC_2.17'
+p99
+(S'\n__stdcall 00000018.plt_call.fwrite@@GLIBC_2.17()\n'
+p100
+V\u000avoid 00000018_plt_call_fwrite__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_fwrite_0011fee0)();\u000a  return;\u000a}\u000a\u000a
+p101
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7fe0(r12)\nmtspr CTR,r12\nbctr\n'
+p102
+S'18 00 41 f8\nff ff 82 3d\ne0 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p103
+S'.text:0000000000100a60\n.text:0000000000100a64\n.text:0000000000100a68\n.text:0000000000100a6c\n.text:0000000000100a70\n'
+p104
+tp105
+sS'00000018.plt_call.ferror@@GLIBC_2.17'
+p106
+(S'\n__stdcall 00000018.plt_call.ferror@@GLIBC_2.17()\n'
+p107
+V\u000avoid 00000018_plt_call_ferror__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_ferror_0011fef8)();\u000a  return;\u000a}\u000a\u000a
+p108
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7ff8(r12)\nmtspr CTR,r12\nbctr\n'
+p109
+S'18 00 41 f8\nff ff 82 3d\nf8 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p110
+S'.text:0000000000100b40\n.text:0000000000100b44\n.text:0000000000100b48\n.text:0000000000100b4c\n.text:0000000000100b50\n'
+p111
+tp112
+sS'00000018.plt_call.strerror@@GLIBC_2.17'
+p113
+(S'\n__stdcall 00000018.plt_call.strerror@@GLIBC_2.17()\n'
+p114
+V\u000avoid 00000018_plt_call_strerror__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_strerror_0011fea8)();\u000a  return;\u000a}\u000a\u000a
+p115
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7fa8(r12)\nmtspr CTR,r12\nbctr\n'
+p116
+S'18 00 41 f8\nff ff 82 3d\na8 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p117
+S'.text:00000000001009a0\n.text:00000000001009a4\n.text:00000000001009a8\n.text:00000000001009ac\n.text:00000000001009b0\n'
+p118
+tp119
+sS'register_tm_clones'
+p120
+(S'\n__stdcall register_tm_clones()\n'
+p121
+V\u000a/* WARNING: Removing unreachable block (ram,0x00100ca0) */\u000a/* WARNING: Removing unreachable block (ram,0x00100cb0) */\u000a/* register_tm_clones */\u000a\u000avoid register_tm_clones(void)\u000a\u000a{\u000a                    /* local function entry for global function register_tm_clones at {@address\u000a                       00100c70} */\u000a  return;\u000a}\u000a\u000a
+p122
+S'ori r0,r0,0x0\nori r0,r0,0x0\nstdu r1,-0x20(r1)\nsubi r3,r2,0x7ef0\nsubi r4,r2,0x7ef0\nsubf r4,r3,r4\nsradi r4,r4,0x3\nsradi r4,r4,0x1\naddze. r4,r4\nbeq 0x00100cd4\nori r0,r0,0x0\nld r9,-0x7fe8(r2)\ncmpdi cr7,r9,0x0\nbeq cr7,0x00100cd4\nmfspr r0,LR\nstd r2,0x18(r1)\nor r12,r9,r9\nmtspr CTR,r9\nstd r0,0x30(r1)\nbctrl\nld r2,0x18(r1)\nld r0,0x30(r1)\nmtspr LR,r0\naddi r1,r1,0x20\nblr\n'
+p123
+S'00 00 00 60\n00 00 00 60\ne1 ff 21 f8\n10 81 62 38\n10 81 82 38\n50 20 83 7c\n74 1e 84 7c\n74 0e 84 7c\n95 01 84 7c\n38 00 82 41\n00 00 00 60\n18 80 22 e9\n00 00 a9 2f\n28 00 9e 41\na6 02 08 7c\n18 00 41 f8\n78 4b 2c 7d\na6 03 29 7d\n30 00 01 f8\n21 04 80 4e\n18 00 41 e8\n30 00 01 e8\na6 03 08 7c\n20 00 21 38\n20 00 80 4e\n'
+p124
+S'.text:0000000000100c78\n.text:0000000000100c7c\n.text:0000000000100c80\n.text:0000000000100c84\n.text:0000000000100c88\n.text:0000000000100c8c\n.text:0000000000100c90\n.text:0000000000100c94\n.text:0000000000100c98\n.text:0000000000100c9c\n.text:0000000000100ca0\n.text:0000000000100ca4\n.text:0000000000100ca8\n.text:0000000000100cac\n.text:0000000000100cb0\n.text:0000000000100cb4\n.text:0000000000100cb8\n.text:0000000000100cbc\n.text:0000000000100cc0\n.text:0000000000100cc4\n.text:0000000000100cc8\n.text:0000000000100ccc\n.text:0000000000100cd0\n.text:0000000000100cd4\n.text:0000000000100cd8\n'
+p125
+tp126
+sS'process_prime'
+p127
+(S'\n__stdcall process_prime()\n'
+p128
+V\u000a/* process_prime */\u000a\u000avoid process_prime(undefined4 *puParm1,undefined8 uParm2)\u000a\u000a{\u000a  undefined8 uVar1;\u000a  undefined8 uVar2;\u000a  \u000a                    /* local function entry for global function process_prime at {@address 00100e68}\u000a                        */\u000a  *puParm1 = (int)uParm2;\u000a  uVar2 = 0;\u000a  uVar1 = binvert(uParm2);\u000a  *(undefined8 *)(puParm1 + 4) = uVar1;\u000a  *(undefined8 *)(puParm1 + 6) = uVar2;\u000a  uVar2 = 0xffffffffffffffff;\u000a  uVar1 = __udivti3(0xffffffffffffffff,0xffffffffffffffff,uParm2,0);\u000a  *(undefined8 *)(puParm1 + 8) = uVar1;\u000a  *(undefined8 *)(puParm1 + 10) = uVar2;\u000a  return;\u000a}\u000a\u000a
+p129
+S'mfspr r0,LR\nstd r0,0x10(r1)\nstd r30,-0x10(r1)\nstd r31,-0x8(r1)\nstdu r1,-0x30(r1)\nor r31,r3,r3\nor r30,r4,r4\nstw r4,0x0(r31)\nor r3,r4,r4\nli r4,0x0\nbl 0x00100ddc\naddi r9,r31,0x10\nstd r3,0x0(r9)\nstd r4,0x8(r9)\nor r5,r30,r30\nli r6,0x0\nli r3,-0x1\nli r4,-0x1\nbl 0x00101540\nori r0,r0,0x0\naddi r31,r31,0x20\nstd r3,0x0(r31)\nstd r4,0x8(r31)\naddi r1,r1,0x30\nld r0,0x10(r1)\nmtspr LR,r0\nld r30,-0x10(r1)\nld r31,-0x8(r1)\nblr\n'
+p130
+S'a6 02 08 7c\n10 00 01 f8\nf0 ff c1 fb\nf8 ff e1 fb\nd1 ff 21 f8\n78 1b 7f 7c\n78 23 9e 7c\n00 00 9f 90\n78 23 83 7c\n00 00 80 38\n45 ff ff 4b\n10 00 3f 39\n00 00 69 f8\n08 00 89 f8\n78 f3 c5 7f\n00 00 c0 38\nff ff 60 38\nff ff 80 38\n89 06 00 48\n00 00 00 60\n20 00 ff 3b\n00 00 7f f8\n08 00 9f f8\n30 00 21 38\n10 00 01 e8\na6 03 08 7c\nf0 ff c1 eb\nf8 ff e1 eb\n20 00 80 4e\n'
+p131
+S'.text:0000000000100e70\n.text:0000000000100e74\n.text:0000000000100e78\n.text:0000000000100e7c\n.text:0000000000100e80\n.text:0000000000100e84\n.text:0000000000100e88\n.text:0000000000100e8c\n.text:0000000000100e90\n.text:0000000000100e94\n.text:0000000000100e98\n.text:0000000000100e9c\n.text:0000000000100ea0\n.text:0000000000100ea4\n.text:0000000000100ea8\n.text:0000000000100eac\n.text:0000000000100eb0\n.text:0000000000100eb4\n.text:0000000000100eb8\n.text:0000000000100ebc\n.text:0000000000100ec0\n.text:0000000000100ec4\n.text:0000000000100ec8\n.text:0000000000100ecc\n.text:0000000000100ed0\n.text:0000000000100ed4\n.text:0000000000100ed8\n.text:0000000000100edc\n.text:0000000000100ee0\n'
+p132
+tp133
+sS'00000018.plt_call.puts@@GLIBC_2.17'
+p134
+(S'\n__stdcall 00000018.plt_call.puts@@GLIBC_2.17()\n'
+p135
+V\u000avoid 00000018_plt_call_puts__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_puts_0011fec0)();\u000a  return;\u000a}\u000a\u000a
+p136
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7fc0(r12)\nmtspr CTR,r12\nbctr\n'
+p137
+S'18 00 41 f8\nff ff 82 3d\nc0 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p138
+S'.text:0000000000100a80\n.text:0000000000100a84\n.text:0000000000100a88\n.text:0000000000100a8c\n.text:0000000000100a90\n'
+p139
+tp140
+sS'00000018.plt_call.__errno_location@@GLIBC_2.17'
+p141
+(S'\n__stdcall 00000018.plt_call.__errno_location@@GLIBC_2.17()\n'
+p142
+V\u000avoid 00000018_plt_call___errno_location__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR___errno_location_0011fee8)();\u000a  return;\u000a}\u000a\u000a
+p143
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7fe8(r12)\nmtspr CTR,r12\nbctr\n'
+p144
+S'18 00 41 f8\nff ff 82 3d\ne8 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p145
+S'.text:0000000000100b00\n.text:0000000000100b04\n.text:0000000000100b08\n.text:0000000000100b0c\n.text:0000000000100b10\n'
+p146
+tp147
+sS'print_wide_uint'
+p148
+(S'\n__stdcall print_wide_uint()\n'
+p149
+V\u000a/* print_wide_uint */\u000a\u000avoid print_wide_uint(ulonglong uParm1,ulonglong uParm2,longlong lParm3,undefined8 uParm4)\u000a\u000a{\u000a  undefined *puVar1;\u000a  longlong lVar2;\u000a  ulonglong uVar3;\u000a  undefined *local_88;\u000a  \u000a                    /* local function entry for global function print_wide_uint at {@address\u000a                       00100ef0} */\u000a  if (((uParm1 & 0xfffffff) == uParm1) && (uParm2 == 0)) {\u000a    if (lParm3 == 0) {\u000a      lVar2 = 7;\u000a      local_88 = &_TOC_;\u000a    }\u000a    else {\u000a      00000018_plt_call___printf_chk__GLIBC_2_17(1,"(uintmax_t) ");\u000a      lVar2 = (longlong)(int)(((int)uParm4 - 1U & 3) + 1);\u000a    }\u000a  }\u000a  else {\u000a    uVar3 = uParm2 << 8 | uParm1 >> 0x38;\u000a    puVar1 = &_TOC_;\u000a    if ((uVar3 | uParm2 >> 0x38) != 0) {\u000a      00000018_plt_call_putchar__GLIBC_2_17(0x28);\u000a      puVar1 = local_88;\u000a    }\u000a    print_wide_uint(uParm2 << 0x24 | uParm1 >> 0x1c,uParm2 >> 0x1c,(longlong)((int)lParm3 + 1),\u000a                    uParm4);\u000a    if ((uVar3 | uParm2 >> 0x38) != 0) {\u000a      00000018_plt_call___printf_chk__GLIBC_2_17\u000a                (1,puVar1 + -0x26348,(longlong)((int)lParm3 + 3),puVar1 + -0x262a8);\u000a      puVar1 = local_88;\u000a    }\u000a    00000018_plt_call___printf_chk__GLIBC_2_17(1,puVar1 + -0x26340,0x1c);\u000a    lVar2 = 7;\u000a  }\u000a  00000018_plt_call___printf_chk__GLIBC_2_17(1,local_88 + -0x26320,lVar2,uParm1 & 0xfffffff);\u000a  return;\u000a}\u000a\u000a
+p150
+S'mfspr r0,LR\nstd r0,0x10(r1)\nstd r27,-0x28(r1)\nstd r28,-0x20(r1)\nstd r30,-0x10(r1)\nstdu r1,-0xa0(r1)\nor r28,r5,r5\nor r30,r6,r6\nrldicl r27,r3,0x0,0x24\ncmpld cr7,r27,r3\nbne cr7,0x00100f40\nli r9,0x0\ncmpld cr7,r9,r4\nbne cr7,0x00100f40\ncmpdi cr7,r5,0x0\nbne cr7,0x00101030\nli r5,0x7\nb 0x00100fc4\nstd r25,0x68(r1)\nstd r26,0x70(r1)\nstd r29,0x88(r1)\nstd r31,0x98(r1)\nrldicr r9,r4,0x24,0x1b\nrldicl r26,r3,0x24,0x1c\nor r26,r9,r26\nrldicl r25,r4,0x24,0x1c\nrldicr r9,r4,0x8,0x37\nrldicl r31,r3,0x8,0x38\nor r31,r9,r31\nrldicl r29,r4,0x8,0x38\nor. r9,r31,r29\nbne 0x00100ff8\naddi r5,r28,0x1\nor r6,r30,r30\nextsw r5,r5\nor r3,r26,r26\nor r4,r25,r25\nbl 0x00100ef8\nor. r9,r31,r29\nbne 0x00101008\nli r5,0x1c\nsubis r4,r2,0x2\nsubi r4,r4,0x6340\nli r3,0x1\nbl 0x00100b60\nld r2,0x18(r1)\nli r5,0x7\nld r25,0x68(r1)\nld r26,0x70(r1)\nld r29,0x88(r1)\nld r31,0x98(r1)\nor r6,r27,r27\nsubis r4,r2,0x2\nsubi r4,r4,0x6320\nli r3,0x1\nbl 0x00100b60\nld r2,0x18(r1)\naddi r1,r1,0xa0\nld r0,0x10(r1)\nmtspr LR,r0\nld r27,-0x28(r1)\nld r28,-0x20(r1)\nld r30,-0x10(r1)\nblr\nli r3,0x28\nbl 0x00100a40\nld r2,0x18(r1)\nb 0x00100f78\naddi r5,r28,0x3\nsubis r6,r2,0x2\nsubi r6,r6,0x62a8\nextsw r5,r5\nsubis r4,r2,0x2\nsubi r4,r4,0x6348\nli r3,0x1\nbl 0x00100b60\nld r2,0x18(r1)\nb 0x00100f98\nsubis r4,r2,0x2\nsubi r4,r4,0x6330\nli r3,0x1\nbl 0x00100b60\nld r2,0x18(r1)\nsubi r5,r30,0x1\nrlwinm r5,r5,0x0,0x1e,0x1f\naddi r5,r5,0x1\nextsw r5,r5\nb 0x00100fc4\n'
+p151
+S'a6 02 08 7c\n10 00 01 f8\nd8 ff 61 fb\ne0 ff 81 fb\nf0 ff c1 fb\n61 ff 21 f8\n78 2b bc 7c\n78 33 de 7c\n20 01 7b 78\n40 18 bb 7f\n20 00 9e 40\n00 00 20 39\n40 20 a9 7f\n14 00 9e 40\n00 00 a5 2f\nfc 00 9e 40\n07 00 a0 38\n88 00 00 48\n68 00 21 fb\n70 00 41 fb\n88 00 a1 fb\n98 00 e1 fb\nc6 26 89 78\n02 27 7a 78\n78 d3 3a 7d\n02 27 99 78\ne4 45 89 78\n20 46 7f 78\n78 fb 3f 7d\n20 46 9d 78\n79 eb e9 7f\n84 00 82 40\n01 00 bc 38\n78 f3 c6 7f\nb4 07 a5 7c\n78 d3 43 7f\n78 cb 24 7f\n6d ff ff 4b\n79 eb e9 7f\n74 00 82 40\n1c 00 a0 38\nfe ff 82 3c\nc0 9c 84 38\n01 00 60 38\nb9 fb ff 4b\n18 00 41 e8\n07 00 a0 38\n68 00 21 eb\n70 00 41 eb\n88 00 a1 eb\n98 00 e1 eb\n78 db 66 7f\nfe ff 82 3c\ne0 9c 84 38\n01 00 60 38\n8d fb ff 4b\n18 00 41 e8\na0 00 21 38\n10 00 01 e8\na6 03 08 7c\nd8 ff 61 eb\ne0 ff 81 eb\nf0 ff c1 eb\n20 00 80 4e\n28 00 60 38\n45 fa ff 4b\n18 00 41 e8\n74 ff ff 4b\n03 00 bc 38\nfe ff c2 3c\n58 9d c6 38\nb4 07 a5 7c\nfe ff 82 3c\nb8 9c 84 38\n01 00 60 38\n3d fb ff 4b\n18 00 41 e8\n6c ff ff 4b\nfe ff 82 3c\nd0 9c 84 38\n01 00 60 38\n25 fb ff 4b\n18 00 41 e8\nff ff be 38\nbe 07 a5 54\n01 00 a5 38\nb4 07 a5 7c\n70 ff ff 4b\n'
+p152
+S'.text:0000000000100ef8\n.text:0000000000100efc\n.text:0000000000100f00\n.text:0000000000100f04\n.text:0000000000100f08\n.text:0000000000100f0c\n.text:0000000000100f10\n.text:0000000000100f14\n.text:0000000000100f18\n.text:0000000000100f1c\n.text:0000000000100f20\n.text:0000000000100f24\n.text:0000000000100f28\n.text:0000000000100f2c\n.text:0000000000100f30\n.text:0000000000100f34\n.text:0000000000100f38\n.text:0000000000100f3c\n.text:0000000000100f40\n.text:0000000000100f44\n.text:0000000000100f48\n.text:0000000000100f4c\n.text:0000000000100f50\n.text:0000000000100f54\n.text:0000000000100f58\n.text:0000000000100f5c\n.text:0000000000100f60\n.text:0000000000100f64\n.text:0000000000100f68\n.text:0000000000100f6c\n.text:0000000000100f70\n.text:0000000000100f74\n.text:0000000000100f78\n.text:0000000000100f7c\n.text:0000000000100f80\n.text:0000000000100f84\n.text:0000000000100f88\n.text:0000000000100f8c\n.text:0000000000100f90\n.text:0000000000100f94\n.text:0000000000100f98\n.text:0000000000100f9c\n.text:0000000000100fa0\n.text:0000000000100fa4\n.text:0000000000100fa8\n.text:0000000000100fac\n.text:0000000000100fb0\n.text:0000000000100fb4\n.text:0000000000100fb8\n.text:0000000000100fbc\n.text:0000000000100fc0\n.text:0000000000100fc4\n.text:0000000000100fc8\n.text:0000000000100fcc\n.text:0000000000100fd0\n.text:0000000000100fd4\n.text:0000000000100fd8\n.text:0000000000100fdc\n.text:0000000000100fe0\n.text:0000000000100fe4\n.text:0000000000100fe8\n.text:0000000000100fec\n.text:0000000000100ff0\n.text:0000000000100ff4\n.text:0000000000100ff8\n.text:0000000000100ffc\n.text:0000000000101000\n.text:0000000000101004\n.text:0000000000101008\n.text:000000000010100c\n.text:0000000000101010\n.text:0000000000101014\n.text:0000000000101018\n.text:000000000010101c\n.text:0000000000101020\n.text:0000000000101024\n.text:0000000000101028\n.text:000000000010102c\n.text:0000000000101030\n.text:0000000000101034\n.text:0000000000101038\n.text:000000000010103c\n.text:0000000000101040\n.text:0000000000101044\n.text:0000000000101048\n.text:000000000010104c\n.text:0000000000101050\n.text:0000000000101054\n'
+p153
+tp154
+sS'._init'
+p155
+(S'\n__stdcall ._init(EVP_PKEY_CTX * ctx)\n'
+p156
+V\u000aint __init(EVP_PKEY_CTX *ctx)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a                    /* local function entry for global function _init at {@address 00100940} */\u000a  if (PTR___gmon_start___0011ff08 != (undefined *)0x0) {\u000a    00000036_plt_call___gmon_start__((int)ctx);\u000a  }\u000a  frame_dummy();\u000a  iVar1 = __do_global_ctors_aux();\u000a  return iVar1;\u000a}\u000a\u000a
+p157
+S'mfspr r0,LR\nstd r0,0x10(r1)\nstdu r1,-0x60(r1)\nori r0,r0,0x0\nld r0,-0x7ff8(r2)\ncmpdi cr7,r0,0x0\nbeq cr7,0x0010096c\nbl 0x00100920\nld r2,0x18(r1)\nbl 0x00100dd8\nori r0,r0,0x0\nbl 0x00101a88\nori r0,r0,0x0\naddi r1,r1,0x60\nld r0,0x10(r1)\nmtspr LR,r0\nblr\n'
+p158
+S'a6 02 08 7c\n10 00 01 f8\na1 ff 21 f8\n00 00 00 60\n08 80 02 e8\n00 00 a0 2f\n0c 00 fe 41\nbd ff ff 4b\n18 00 41 e8\n6d 04 00 48\n00 00 00 60\n15 11 00 48\n00 00 00 60\n60 00 21 38\n10 00 01 e8\na6 03 08 7c\n20 00 80 4e\n'
+p159
+S'.init:0000000000100948\n.init:000000000010094c\n.init:0000000000100950\n.init:0000000000100954\n.init:0000000000100958\n.init:000000000010095c\n.init:0000000000100960\n.init:0000000000100964\n.init:0000000000100968\n.init:000000000010096c\n.init:0000000000100970\n.init:0000000000100974\n.init:0000000000100978\n.init:000000000010097c\n.init:0000000000100980\n.init:0000000000100984\n.init:0000000000100988\n'
+p160
+tp161
+sS'binvert'
+p162
+(S'\n__stdcall binvert()\n'
+p163
+V\u000aulonglong binvert(ulonglong uParm1,longlong lParm2)\u000a\u000a{\u000a  longlong lVar1;\u000a  ulonglong uVar2;\u000a  ulonglong uVar3;\u000a  longlong lVar4;\u000a  ulonglong uVar5;\u000a  \u000a  lVar4 = 0;\u000a  uVar2 = (ulonglong)(0xf5397db1 >> (ulonglong)(((uint)uParm1 & 0xe) << 1)) | 0xffffffff00000000;\u000a  do {\u000a    do {\u000a      uVar5 = uVar2;\u000a      lVar1 = lVar4;\u000a      uVar3 = uVar5 * uVar5;\u000a      uVar2 = uVar5 * 2 - uVar3 * uParm1;\u000a      lVar4 = (uVar5 >> 0x3f | lVar1 << 1) -\u000a              ((ulonglong)(uVar5 * 2 < uVar3 * uParm1) +\u000a              (lVar1 * uVar5 * 2 + SUB168(ZEXT816(uVar5) * ZEXT816(uVar5) >> 0x40,0)) * uParm1 +\u000a              lParm2 * uVar3 + SUB168(ZEXT816(uVar3) * ZEXT816(uParm1) >> 0x40,0));\u000a    } while (uVar5 != uVar2);\u000a  } while (lVar1 != lVar4);\u000a  return uVar5;\u000a}\u000a\u000a
+p164
+S'or r11,r4,r4\nrlwinm r9,r3,0x1,0x1b,0x1d\nlis r10,-0xac7\nori r10,r10,0x7db1\nsrw r10,r10,r9\nli r4,0x0\nb 0x00100e00\nor r10,r7,r7\nor r4,r9,r9\nrldicl r9,r10,0x1,0x3f\nrldicr r5,r4,0x1,0x3e\nor r5,r9,r5\nrldicr r6,r10,0x1,0x3e\nmulld r9,r4,r10\nrldicr r9,r9,0x1,0x3e\nmulld r8,r10,r10\nmulhdu r7,r10,r10\nadd r9,r9,r7\nmulld r9,r9,r3\nmulld r7,r11,r8\nadd r9,r9,r7\nmulld r7,r8,r3\nmulhdu r8,r8,r3\nadd r9,r9,r8\nsubfc r7,r7,r6\nsubfe r9,r9,r5\ncmpld cr7,r10,r7\nbne cr7,0x00100df8\ncmpld cr7,r4,r9\nbne cr7,0x00100df8\nor r3,r10,r10\nblr\n'
+p165
+S'78 23 8b 7c\nfa 0e 69 54\n39 f5 40 3d\nb1 7d 4a 61\n30 4c 4a 7d\n00 00 80 38\n0c 00 00 48\n78 3b ea 7c\n78 4b 24 7d\ne0 0f 49 79\na4 0f 85 78\n78 2b 25 7d\na4 0f 46 79\nd2 51 24 7d\na4 0f 29 79\nd2 51 0a 7d\n12 50 ea 7c\n14 3a 29 7d\nd2 19 29 7d\nd2 41 eb 7c\n14 3a 29 7d\nd2 19 e8 7c\n12 18 08 7d\n14 42 29 7d\n10 30 e7 7c\n10 29 29 7d\n40 38 aa 7f\nb0 ff 9e 40\n40 48 a4 7f\na8 ff 9e 40\n78 53 43 7d\n20 00 80 4e\n'
+p166
+S'.text:0000000000100ddc\n.text:0000000000100de0\n.text:0000000000100de4\n.text:0000000000100de8\n.text:0000000000100dec\n.text:0000000000100df0\n.text:0000000000100df4\n.text:0000000000100df8\n.text:0000000000100dfc\n.text:0000000000100e00\n.text:0000000000100e04\n.text:0000000000100e08\n.text:0000000000100e0c\n.text:0000000000100e10\n.text:0000000000100e14\n.text:0000000000100e18\n.text:0000000000100e1c\n.text:0000000000100e20\n.text:0000000000100e24\n.text:0000000000100e28\n.text:0000000000100e2c\n.text:0000000000100e30\n.text:0000000000100e34\n.text:0000000000100e38\n.text:0000000000100e3c\n.text:0000000000100e40\n.text:0000000000100e44\n.text:0000000000100e48\n.text:0000000000100e4c\n.text:0000000000100e50\n.text:0000000000100e54\n.text:0000000000100e58\n'
+p167
+tp168
+sS'00000018.plt_call.__cxa_finalize@@GLIBC_2.17'
+p169
+(S'\n__stdcall 00000018.plt_call.__cxa_finalize@@GLIBC_2.17()\n'
+p170
+V\u000avoid 00000018_plt_call___cxa_finalize__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR___cxa_finalize_0011fe78)();\u000a  return;\u000a}\u000a\u000a
+p171
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7f78(r12)\nmtspr CTR,r12\nbctr\n'
+p172
+S'18 00 41 f8\nff ff 82 3d\n78 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p173
+S'.text:0000000000100a00\n.text:0000000000100a04\n.text:0000000000100a08\n.text:0000000000100a0c\n.text:0000000000100a10\n'
+p174
+tp175
+sS'00000018.plt_call.fclose@@GLIBC_2.17'
+p176
+(S'\n__stdcall 00000018.plt_call.fclose@@GLIBC_2.17()\n'
+p177
+V\u000avoid 00000018_plt_call_fclose__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_fclose_0011fe80)();\u000a  return;\u000a}\u000a\u000a
+p178
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7f80(r12)\nmtspr CTR,r12\nbctr\n'
+p179
+S'18 00 41 f8\nff ff 82 3d\n80 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p180
+S'.text:0000000000100ba0\n.text:0000000000100ba4\n.text:0000000000100ba8\n.text:0000000000100bac\n.text:0000000000100bb0\n'
+p181
+tp182
+sS'00000018.plt_call.memset@@GLIBC_2.17'
+p183
+(S'\n__stdcall 00000018.plt_call.memset@@GLIBC_2.17()\n'
+p184
+V\u000avoid 00000018_plt_call_memset__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_memset_0011fea0)();\u000a  return;\u000a}\u000a\u000a
+p185
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7fa0(r12)\nmtspr CTR,r12\nbctr\n'
+p186
+S'18 00 41 f8\nff ff 82 3d\na0 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p187
+S'.text:0000000000100b20\n.text:0000000000100b24\n.text:0000000000100b28\n.text:0000000000100b2c\n.text:0000000000100b30\n'
+p188
+tp189
+sS'__libc_csu_fini'
+p190
+(S'\n__stdcall __libc_csu_fini()\n'
+p191
+V\u000avoid __libc_csu_fini(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p192
+S'blr\n'
+p193
+S'20 00 80 4e\n'
+p194
+S'.text:0000000000101a70\n'
+p195
+tp196
+sS'xalloc'
+p197
+(S'\n__stdcall xalloc()\n'
+p198
+V\u000a/* WARNING: Control flow encountered bad instruction data */\u000a/* xalloc */\u000a\u000avoid xalloc(void)\u000a\u000a{\u000a  longlong lVar1;\u000a  longlong local_8;\u000a  \u000a                    /* local function entry for global function xalloc at {@address 00101288} */\u000a  lVar1 = 00000018_plt_call_malloc__GLIBC_2_17();\u000a  if (lVar1 != 0) {\u000a    return;\u000a  }\u000a  00000018_plt_call_fwrite__GLIBC_2_17\u000a            (local_8 + -0x26260,1,0x1a,**(undefined8 **)(local_8 + -0x7fd0));\u000a  00000018_plt_call_exit__GLIBC_2_17(1);\u000a                    /* WARNING: Bad instruction - Truncating control flow here */\u000a  halt_baddata();\u000a}\u000a\u000a
+p199
+S'mfspr r0,LR\nstd r0,0x10(r1)\nstdu r1,-0x20(r1)\nbl 0x00100b80\nld r2,0x18(r1)\ncmpdi r3,0x0\nbeq 0x001012bc\naddi r1,r1,0x20\nld r0,0x10(r1)\nmtspr LR,r0\nblr\nori r0,r0,0x0\nld r9,-0x7fd0(r2)\nld r6,0x0(r9)\nli r5,0x1a\nli r4,0x1\nsubis r3,r2,0x2\nsubi r3,r3,0x6260\nbl 0x00100a60\nld r2,0x18(r1)\nli r3,0x1\nbl 0x001009c0\nld r2,0x18(r1)\n'
+p200
+S'a6 02 08 7c\n10 00 01 f8\ne1 ff 21 f8\ne5 f8 ff 4b\n18 00 41 e8\n00 00 23 2c\n14 00 82 41\n20 00 21 38\n10 00 01 e8\na6 03 08 7c\n20 00 80 4e\n00 00 00 60\n30 80 22 e9\n00 00 c9 e8\n1a 00 a0 38\n01 00 80 38\nfe ff 62 3c\na0 9d 63 38\n89 f7 ff 4b\n18 00 41 e8\n01 00 60 38\ndd f6 ff 4b\n18 00 41 e8\n'
+p201
+S'.text:0000000000101290\n.text:0000000000101294\n.text:0000000000101298\n.text:000000000010129c\n.text:00000000001012a0\n.text:00000000001012a4\n.text:00000000001012a8\n.text:00000000001012ac\n.text:00000000001012b0\n.text:00000000001012b4\n.text:00000000001012b8\n.text:00000000001012bc\n.text:00000000001012c0\n.text:00000000001012c4\n.text:00000000001012c8\n.text:00000000001012cc\n.text:00000000001012d0\n.text:00000000001012d4\n.text:00000000001012d8\n.text:00000000001012dc\n.text:00000000001012e0\n.text:00000000001012e4\n.text:00000000001012e8\n'
+p202
+tp203
+sS'00000018.plt_call.exit@@GLIBC_2.17'
+p204
+(S'\n__stdcall 00000018.plt_call.exit@@GLIBC_2.17()\n'
+p205
+V\u000avoid 00000018_plt_call_exit__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_exit_0011fe70)();\u000a  return;\u000a}\u000a\u000a
+p206
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7f70(r12)\nmtspr CTR,r12\nbctr\n'
+p207
+S'18 00 41 f8\nff ff 82 3d\n70 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p208
+S'.text:00000000001009c0\n.text:00000000001009c4\n.text:00000000001009c8\n.text:00000000001009cc\n.text:00000000001009d0\n'
+p209
+tp210
+sS'__do_global_dtors_aux'
+p211
+(S'\n__stdcall __do_global_dtors_aux()\n'
+p212
+V\u000a/* WARNING: Removing unreachable block (ram,0x00100d60) */\u000a/* WARNING: Removing unreachable block (ram,0x00100d70) */\u000a/* WARNING: Removing unreachable block (ram,0x00100da0) */\u000a/* __do_global_dtors_aux */\u000a\u000avoid __do_global_dtors_aux(void)\u000a\u000a{\u000a  undefined *puVar1;\u000a  undefined *local_28;\u000a  \u000a                    /* local function entry for global function __do_global_dtors_aux at {@address\u000a                       00100ce0} */\u000a  if (completed_9623 == 0) {\u000a    puVar1 = &_TOC_;\u000a    if (PTR___cxa_finalize_0011ff20 != (undefined *)0x0) {\u000a      00000018_plt_call___cxa_finalize__GLIBC_2_17(__dso_handle);\u000a      puVar1 = local_28;\u000a    }\u000a    deregister_tm_clones();\u000a    puVar1[-0x7ef0] = 1;\u000a  }\u000a  return;\u000a}\u000a\u000a
+p213
+S'ori r0,r0,0x0\nlbz r9,-0x7ef0(r2)\nstdu r1,-0x40(r1)\ncmpwi cr7,r9,0x0\nbne cr7,0x00100dc4\nmfspr r0,LR\nori r0,r0,0x0\nld r9,-0x7fe0(r2)\nstd r29,0x28(r1)\nstd r31,0x38(r1)\ncmpdi cr7,r9,0x0\nstd r0,0x50(r1)\nbeq cr7,0x00100d2c\nori r0,r0,0x0\nld r3,-0x7ef8(r2)\nbl 0x00100a00\nld r2,0x18(r1)\nsubis r10,r2,0x1\nsubis r31,r2,0x1\nori r0,r0,0x0\nld r9,-0x7ee8(r2)\naddi r10,r10,0x7d68\naddi r31,r31,0x7d60\nsubf r31,r31,r10\nsubis r29,r2,0x1\nsradi r31,r31,0x3\naddi r29,r29,0x7d60\nsubi r31,r31,0x1\ncmpld cr7,r9,r31\nbge cr7,0x00100da4\nstd r30,0x30(r1)\nori r0,r0,0x0\nsubi r30,r2,0x7ee8\nori r2,r2,0x0\naddi r9,r9,0x1\nrldicr r10,r9,0x3,0x3c\nstd r9,0x0(r30)\nldx r9,r29,r10\nstd r2,0x18(r1)\nmtspr CTR,r9\nor r12,r9,r9\nbctrl\nld r2,0x18(r1)\nld r9,0x0(r30)\ncmpld cr7,r9,r31\nblt cr7,0x00100d70\nld r30,0x30(r1)\nbl 0x00100c18\nld r0,0x50(r1)\nli r9,0x1\nori r0,r0,0x0\nld r29,0x28(r1)\nld r31,0x38(r1)\nstb r9,-0x7ef0(r2)\nmtspr LR,r0\naddi r1,r1,0x40\nblr\n'
+p214
+S'00 00 00 60\n10 81 22 89\nc1 ff 21 f8\n00 00 89 2f\ncc 00 9e 40\na6 02 08 7c\n00 00 00 60\n20 80 22 e9\n28 00 a1 fb\n38 00 e1 fb\n00 00 a9 2f\n50 00 01 f8\n14 00 9e 41\n00 00 00 60\n08 81 62 e8\ndd fc ff 4b\n18 00 41 e8\nff ff 42 3d\nff ff e2 3f\n00 00 00 60\n18 81 22 e9\n68 7d 4a 39\n60 7d ff 3b\n50 50 ff 7f\nff ff a2 3f\n74 1e ff 7f\n60 7d bd 3b\nff ff ff 3b\n40 f8 a9 7f\n48 00 9c 40\n30 00 c1 fb\n00 00 00 60\n18 81 c2 3b\n00 00 42 60\n01 00 29 39\n24 1f 2a 79\n00 00 3e f9\n2a 50 3d 7d\n18 00 41 f8\na6 03 29 7d\n78 4b 2c 7d\n21 04 80 4e\n18 00 41 e8\n00 00 3e e9\n40 f8 a9 7f\nd4 ff 9c 41\n30 00 c1 eb\n75 fe ff 4b\n50 00 01 e8\n01 00 20 39\n00 00 00 60\n28 00 a1 eb\n38 00 e1 eb\n10 81 22 99\na6 03 08 7c\n40 00 21 38\n20 00 80 4e\n'
+p215
+S'.text:0000000000100ce8\n.text:0000000000100cec\n.text:0000000000100cf0\n.text:0000000000100cf4\n.text:0000000000100cf8\n.text:0000000000100cfc\n.text:0000000000100d00\n.text:0000000000100d04\n.text:0000000000100d08\n.text:0000000000100d0c\n.text:0000000000100d10\n.text:0000000000100d14\n.text:0000000000100d18\n.text:0000000000100d1c\n.text:0000000000100d20\n.text:0000000000100d24\n.text:0000000000100d28\n.text:0000000000100d2c\n.text:0000000000100d30\n.text:0000000000100d34\n.text:0000000000100d38\n.text:0000000000100d3c\n.text:0000000000100d40\n.text:0000000000100d44\n.text:0000000000100d48\n.text:0000000000100d4c\n.text:0000000000100d50\n.text:0000000000100d54\n.text:0000000000100d58\n.text:0000000000100d5c\n.text:0000000000100d60\n.text:0000000000100d64\n.text:0000000000100d68\n.text:0000000000100d6c\n.text:0000000000100d70\n.text:0000000000100d74\n.text:0000000000100d78\n.text:0000000000100d7c\n.text:0000000000100d80\n.text:0000000000100d84\n.text:0000000000100d88\n.text:0000000000100d8c\n.text:0000000000100d90\n.text:0000000000100d94\n.text:0000000000100d98\n.text:0000000000100d9c\n.text:0000000000100da0\n.text:0000000000100da4\n.text:0000000000100da8\n.text:0000000000100dac\n.text:0000000000100db0\n.text:0000000000100db4\n.text:0000000000100db8\n.text:0000000000100dbc\n.text:0000000000100dc0\n.text:0000000000100dc4\n.text:0000000000100dc8\n'
+p216
+tp217
+sS'_fini'
+p218
+(S'\n__stdcall _fini()\n'
+p219
+V\u000a/* _fini */\u000a\u000avoid _fini(void)\u000a\u000a{\u000a                    /* local function entry for global function _fini at {@address 00101b80} */\u000a  __do_global_dtors_aux();\u000a  return;\u000a}\u000a\u000a
+p220
+S'mfspr r0,LR\nstd r0,0x10(r1)\nstdu r1,-0x60(r1)\nbl 0x00100ce8\nori r0,r0,0x0\naddi r1,r1,0x60\nld r0,0x10(r1)\nmtspr LR,r0\nblr\n'
+p221
+S'a6 02 08 7c\n10 00 01 f8\na1 ff 21 f8\n55 f1 ff 4b\n00 00 00 60\n60 00 21 38\n10 00 01 e8\na6 03 08 7c\n20 00 80 4e\n'
+p222
+S'.fini:0000000000101b88\n.fini:0000000000101b8c\n.fini:0000000000101b90\n.fini:0000000000101b94\n.fini:0000000000101b98\n.fini:0000000000101b9c\n.fini:0000000000101ba0\n.fini:0000000000101ba4\n.fini:0000000000101ba8\n'
+p223
+tp224
+sS'__do_global_ctors_aux'
+p225
+(S'\n__stdcall __do_global_ctors_aux()\n'
+p226
+V\u000a/* __do_global_ctors_aux */\u000a\u000avoid __do_global_ctors_aux(void)\u000a\u000a{\u000a  code *pcVar1;\u000a  code **ppcVar2;\u000a  \u000a                    /* local function entry for global function __do_global_ctors_aux at {@address\u000a                       00101a80} */\u000a  if (__CTOR_LIST__ != (code *)0xffffffffffffffff) {\u000a    ppcVar2 = (code **)&__CTOR_LIST__;\u000a    pcVar1 = __CTOR_LIST__;\u000a    do {\u000a      (*pcVar1)();\u000a      ppcVar2 = ppcVar2 + -1;\u000a      pcVar1 = *ppcVar2;\u000a    } while (pcVar1 != (code *)0xffffffffffffffff);\u000a  }\u000a  return;\u000a}\u000a\u000a
+p227
+S'subis r9,r2,0x1\nld r9,0x7d50(r9)\nstd r31,-0x8(r1)\nsubis r31,r2,0x1\nstdu r1,-0x30(r1)\naddi r31,r31,0x7d58\ncmpdi cr7,r9,-0x1\nbeq cr7,0x00101ae8\nmfspr r0,LR\nsubi r31,r31,0x8\nstd r0,0x40(r1)\nori r0,r0,0x0\nori r0,r0,0x0\nori r2,r2,0x0\nmtspr CTR,r9\nor r12,r9,r9\nstd r2,0x18(r1)\nbctrl\nld r2,0x18(r1)\nldu r9,-0x8(r31)\ncmpdi cr7,r9,-0x1\nbne cr7,0x00101ac0\nld r0,0x40(r1)\nmtspr LR,r0\naddi r1,r1,0x30\nld r31,-0x8(r1)\nblr\n'
+p228
+S'ff ff 22 3d\n50 7d 29 e9\nf8 ff e1 fb\nff ff e2 3f\nd1 ff 21 f8\n58 7d ff 3b\nff ff a9 2f\n44 00 9e 41\na6 02 08 7c\nf8 ff ff 3b\n40 00 01 f8\n00 00 00 60\n00 00 00 60\n00 00 42 60\na6 03 29 7d\n78 4b 2c 7d\n18 00 41 f8\n21 04 80 4e\n18 00 41 e8\nf9 ff 3f e9\nff ff a9 2f\ne4 ff 9e 40\n40 00 01 e8\na6 03 08 7c\n30 00 21 38\nf8 ff e1 eb\n20 00 80 4e\n'
+p229
+S'.text:0000000000101a88\n.text:0000000000101a8c\n.text:0000000000101a90\n.text:0000000000101a94\n.text:0000000000101a98\n.text:0000000000101a9c\n.text:0000000000101aa0\n.text:0000000000101aa4\n.text:0000000000101aa8\n.text:0000000000101aac\n.text:0000000000101ab0\n.text:0000000000101ab4\n.text:0000000000101ab8\n.text:0000000000101abc\n.text:0000000000101ac0\n.text:0000000000101ac4\n.text:0000000000101ac8\n.text:0000000000101acc\n.text:0000000000101ad0\n.text:0000000000101ad4\n.text:0000000000101ad8\n.text:0000000000101adc\n.text:0000000000101ae0\n.text:0000000000101ae4\n.text:0000000000101ae8\n.text:0000000000101aec\n.text:0000000000101af0\n'
+p230
+tp231
+sS'00000018.plt_call.strtol@@GLIBC_2.17'
+p232
+(S'\n__stdcall 00000018.plt_call.strtol@@GLIBC_2.17()\n'
+p233
+V\u000avoid 00000018_plt_call_strtol__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_strtol_0011fed0)();\u000a  return;\u000a}\u000a\u000a
+p234
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7fd0(r12)\nmtspr CTR,r12\nbctr\n'
+p235
+S'18 00 41 f8\nff ff 82 3d\nd0 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p236
+S'.text:0000000000100ae0\n.text:0000000000100ae4\n.text:0000000000100ae8\n.text:0000000000100aec\n.text:0000000000100af0\n'
+p237
+tp238
+sS'00000018.plt_call.__printf_chk@@GLIBC_2.17'
+p239
+(S'\n__stdcall 00000018.plt_call.__printf_chk@@GLIBC_2.17()\n'
+p240
+V\u000avoid 00000018_plt_call___printf_chk__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR___printf_chk_0011fe98)();\u000a  return;\u000a}\u000a\u000a
+p241
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7f98(r12)\nmtspr CTR,r12\nbctr\n'
+p242
+S'18 00 41 f8\nff ff 82 3d\n98 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p243
+S'.text:0000000000100b60\n.text:0000000000100b64\n.text:0000000000100b68\n.text:0000000000100b6c\n.text:0000000000100b70\n'
+p244
+tp245
+sS'00000018.plt_call.malloc@@GLIBC_2.17'
+p246
+(S'\n__stdcall 00000018.plt_call.malloc@@GLIBC_2.17()\n'
+p247
+V\u000avoid 00000018_plt_call_malloc__GLIBC_2_17(void)\u000a\u000a{\u000a  (*(code *)PTR_malloc_0011fe88)();\u000a  return;\u000a}\u000a\u000a
+p248
+S'std r2,0x18(r1)\nsubis r12,r2,0x1\nld r12,0x7f88(r12)\nmtspr CTR,r12\nbctr\n'
+p249
+S'18 00 41 f8\nff ff 82 3d\n88 7f 8c e9\na6 03 89 7d\n20 04 80 4e\n'
+p250
+S'.text:0000000000100b80\n.text:0000000000100b84\n.text:0000000000100b88\n.text:0000000000100b8c\n.text:0000000000100b90\n'
+p251
+tp252
+s.

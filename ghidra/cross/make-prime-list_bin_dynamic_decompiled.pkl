@@ -1,0 +1,379 @@
+(dp0
+S'__libc_csu_init'
+p1
+(S'\n__stdcall __libc_csu_init()\n'
+p2
+V\u000avoid __libc_csu_init(EVP_PKEY_CTX *pEParm1,undefined8 uParm2,undefined8 uParm3)\u000a\u000a{\u000a  long lVar1;\u000a  \u000a  _init(pEParm1);\u000a  lVar1 = 0;\u000a  do {\u000a    (*(code *)(&__frame_dummy_init_array_entry)[lVar1])((ulong)pEParm1 & 0xffffffff,uParm2,uParm3);\u000a    lVar1 = lVar1 + 1;\u000a  } while (lVar1 != 1);\u000a  return;\u000a}\u000a\u000a
+p3
+S'PUSH R15\nPUSH R14\nMOV R15D,EDI\nPUSH R13\nPUSH R12\nLEA R12,[0x601e08]\nPUSH RBP\nLEA RBP,[0x601e10]\nPUSH RBX\nMOV R14,RSI\nMOV R13,RDX\nSUB RBP,R12\nSUB RSP,0x8\nSAR RBP,0x3\nCALL 0x00400700\nTEST RBP,RBP\nJZ 0x00400db6\nXOR EBX,EBX\nNOP dword ptr [RAX + RAX*0x1]\nMOV RDX,R13\nMOV RSI,R14\nMOV EDI,R15D\nCALL qword ptr [R12 + RBX*0x8]\nADD RBX,0x1\nCMP RBP,RBX\nJNZ 0x00400da0\nADD RSP,0x8\nPOP RBX\nPOP RBP\nPOP R12\nPOP R13\nPOP R14\nPOP R15\nRET\n'
+p4
+S'41 57\n41 56\n41 89 ff\n41 55\n41 54\n4c 8d 25 96 10 20 00\n55\n48 8d 2d 96 10 20 00\n53\n49 89 f6\n49 89 d5\n4c 29 e5\n48 83 ec 08\n48 c1 fd 03\ne8 6f f9 ff ff\n48 85 ed\n74 20\n31 db\n0f 1f 84 00 00 00 00 00\n4c 89 ea\n4c 89 f6\n44 89 ff\n41 ff 14 dc\n48 83 c3 01\n48 39 dd\n75 ea\n48 83 c4 08\n5b\n5d\n41 5c\n41 5d\n41 5e\n41 5f\nc3\n'
+p5
+S'.text:0000000000400d60\n.text:0000000000400d62\n.text:0000000000400d64\n.text:0000000000400d67\n.text:0000000000400d69\n.text:0000000000400d6b\n.text:0000000000400d72\n.text:0000000000400d73\n.text:0000000000400d7a\n.text:0000000000400d7b\n.text:0000000000400d7e\n.text:0000000000400d81\n.text:0000000000400d84\n.text:0000000000400d88\n.text:0000000000400d8c\n.text:0000000000400d91\n.text:0000000000400d94\n.text:0000000000400d96\n.text:0000000000400d98\n.text:0000000000400da0\n.text:0000000000400da3\n.text:0000000000400da6\n.text:0000000000400da9\n.text:0000000000400dad\n.text:0000000000400db1\n.text:0000000000400db4\n.text:0000000000400db6\n.text:0000000000400dba\n.text:0000000000400dbb\n.text:0000000000400dbc\n.text:0000000000400dbe\n.text:0000000000400dc0\n.text:0000000000400dc2\n.text:0000000000400dc4\n'
+p6
+tp7
+sS'_init'
+p8
+(S'\n__stdcall _init(EVP_PKEY_CTX * ctx)\n'
+p9
+V\u000aint _init(EVP_PKEY_CTX *ctx)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (int)PTR___gmon_start___00601ff8;\u000a  if (PTR___gmon_start___00601ff8 != (undefined *)0x0) {\u000a    iVar1 = (*(code *)PTR___gmon_start___00601ff8)();\u000a  }\u000a  return iVar1;\u000a}\u000a\u000a
+p10
+S'SUB RSP,0x8\nMOV RAX,qword ptr [0x00601ff8]\nTEST RAX,RAX\nJZ 0x00400712\nCALL RAX\nADD RSP,0x8\nRET\n'
+p11
+S'48 83 ec 08\n48 8b 05 ed 18 20 00\n48 85 c0\n74 02\nff d0\n48 83 c4 08\nc3\n'
+p12
+S'.init:0000000000400700\n.init:0000000000400704\n.init:000000000040070b\n.init:000000000040070e\n.init:0000000000400710\n.init:0000000000400712\n.init:0000000000400716\n'
+p13
+tp14
+sS'FUN_00400720'
+p15
+(S'\n__stdcall FUN_00400720()\n'
+p16
+V\u000avoid FUN_00400720(void)\u000a\u000a{\u000a                    /* WARNING: Treating indirect jump as call */\u000a  (*(code *)PTR_00602010)();\u000a  return;\u000a}\u000a\u000a
+p17
+S'PUSH qword ptr [0x00602008]\nJMP qword ptr [0x00602010]\n'
+p18
+S'ff 35 e2 18 20 00\nff 25 e4 18 20 00\n'
+p19
+S'.plt:0000000000400720\n.plt:0000000000400726\n'
+p20
+tp21
+sS'_start'
+p22
+(S'\n__stdcall _start()\n'
+p23
+V\u000avoid _start(undefined8 uParm1,undefined8 uParm2,undefined8 uParm3)\u000a\u000a{\u000a  undefined8 in_stack_00000000;\u000a  undefined auStack8 [8];\u000a  \u000a  (*(code *)PTR___libc_start_main_00601ff0)\u000a            (main,in_stack_00000000,&stack0x00000008,__libc_csu_init,__libc_csu_fini,uParm3,auStack8\u000a            );\u000a  do {\u000a                    /* WARNING: Do nothing block with infinite loop */\u000a  } while( true );\u000a}\u000a\u000a
+p24
+S'XOR EBP,EBP\nMOV R9,RDX\nPOP RSI\nMOV RDX,RSP\nAND RSP,-0x10\nPUSH RAX\nPUSH RSP\nMOV R8,0x400dd0\nMOV RCX,0x400d60\nMOV RDI,0x400900\nCALL qword ptr [0x00601ff0]\nHLT\n'
+p25
+S'31 ed\n49 89 d1\n5e\n48 89 e2\n48 83 e4 f0\n50\n54\n49 c7 c0 d0 0d 40 00\n48 c7 c1 60 0d 40 00\n48 c7 c7 00 09 40 00\nff 15 c6 17 20 00\nf4\n'
+p26
+S'.text:0000000000400800\n.text:0000000000400802\n.text:0000000000400805\n.text:0000000000400806\n.text:0000000000400809\n.text:000000000040080d\n.text:000000000040080e\n.text:000000000040080f\n.text:0000000000400816\n.text:000000000040081d\n.text:0000000000400824\n.text:000000000040082a\n'
+p27
+tp28
+sS'__printf_chk'
+p29
+(S'\n__stdcall __printf_chk()\n'
+p30
+V\u000avoid __printf_chk(void)\u000a\u000a{\u000a  (*(code *)PTR___printf_chk_00602058)();\u000a  return;\u000a}\u000a\u000a
+p31
+S'JMP qword ptr [0x00602058]\n'
+p32
+S'ff 25 a2 18 20 00\n'
+p33
+S'.plt:00000000004007b0\n'
+p34
+tp35
+sS'main'
+p36
+(S'\n__stdcall main(char * * argv)\n'
+p37
+V\u000aint main(char **argv)\u000a\u000a{\u000a  ulong uVar1;\u000a  FILE *__stream;\u000a  uint uVar2;\u000a  int iVar3;\u000a  int iVar4;\u000a  void *__s;\u000a  prime *primes;\u000a  ulong uVar5;\u000a  int *piVar6;\u000a  char *pcVar7;\u000a  char *pcVar8;\u000a  uint uVar9;\u000a  ulong s;\u000a  char **in_RSI;\u000a  undefined8 uVar10;\u000a  ulong uVar11;\u000a  \u000a  if ((int)argv == 2) {\u000a    uVar2 = atoi(in_RSI[1]);\u000a    if ((int)uVar2 < 3) {\u000a      return 0;\u000a    }\u000a    uVar9 = uVar2 & 1;\u000a    s = SEXT48((int)((((uVar2 - 2) + uVar9 >> 0x1f) - 2) + uVar2 + uVar9) >> 1);\u000a    __s = xalloc(s);\u000a    memset(__s,1,s);\u000a    primes = (prime *)xalloc(s * 0x18);\u000a    if (2 < (uVar2 - 1) + uVar9) {\u000a      uVar11 = 0;\u000a      uVar5 = 0;\u000a      do {\u000a        iVar3 = (int)uVar5 * 2 + 3;\u000a        process_prime(primes + uVar11);\u000a        uVar2 = iVar3 * iVar3 - 3U >> 1;\u000a        while (uVar1 = (ulong)uVar2, uVar1 < s) {\u000a          uVar2 = uVar2 + iVar3;\u000a          *(undefined *)((long)__s + uVar1) = 0;\u000a        }\u000a        uVar11 = (ulong)((int)uVar11 + 1);\u000a        do {\u000a          uVar5 = uVar5 + 1;\u000a          if (s <= uVar5) break;\u000a        } while (*(char *)((long)__s + uVar5) == 0);\u000a      } while (uVar5 < s);\u000a    }\u000a    output_primes(primes);\u000a    free(__s);\u000a    free(primes);\u000a    __stream = stdout;\u000a    iVar3 = ferror(stdout);\u000a    iVar4 = fclose(__stream);\u000a    uVar10 = stderr;\u000a    if (iVar4 + iVar3 == 0) {\u000a      return 0;\u000a    }\u000a    piVar6 = __errno_location();\u000a    pcVar7 = strerror(*piVar6);\u000a    pcVar8 = "write error: %s\u005cn";\u000a  }\u000a  else {\u000a    pcVar7 = *in_RSI;\u000a    pcVar8 = "Usage: %s LIMIT\u005cnProduces a list of odd primes <= LIMIT\u005cn";\u000a    uVar10 = stderr;\u000a  }\u000a  __fprintf_chk(uVar10,1,pcVar8,pcVar7);\u000a  return 1;\u000a}\u000a\u000a
+p38
+S'PUSH RBP\nPUSH R15\nPUSH R14\nPUSH R13\nPUSH R12\nPUSH RBX\nPUSH RAX\nCMP EDI,0x2\nJNZ 0x00400a62\nMOV RDI,qword ptr [RSI + 0x8]\nCALL 0x004007c0\nMOV R12D,EAX\nXOR EBP,EBP\nCMP R12D,0x3\nJL 0x00400a82\nMOV EBX,R12D\nAND EBX,0x1\nMOV EAX,R12D\nADD EAX,EBX\nLEA ECX,[R12 + RBX*0x1 + -0x2]\nSHR ECX,0x1f\nLEA EAX,[RCX + RAX*0x1 + -0x2]\nSAR EAX,1\nMOVSXD RBP,EAX\nMOV RDI,RBP\nCALL 0x00400aa0\nMOV R13,RAX\nMOV ESI,0x1\nMOV RDI,R13\nMOV RDX,RBP\nCALL 0x00400790\nLEA RAX,[RBP*0x8]\nLEA RDI,[RAX + RAX*0x2]\nCALL 0x00400aa0\nMOV R15,RAX\nLEA EAX,[R12 + RBX*0x1 + -0x1]\nCMP EAX,0x3\nMOV R12D,0x0\nJC 0x004009f9\nXOR R12D,R12D\nXOR R14D,R14D\nNOP dword ptr [RAX]\nLEA EBX,[R14 + R14*0x1 + 0x3]\nMOV EAX,R12D\nLEA RAX,[RAX + RAX*0x2]\nLEA RDI,[R15 + RAX*0x8]\nMOV ESI,EBX\nCALL 0x00400ad0\nMOV EAX,EBX\nIMUL EAX,EAX\nADD EAX,-0x3\nSHR EAX,1\nCMP RAX,RBP\nJNC 0x004009cf\nLEA ECX,[RAX + RBX*0x1]\nNOP dword ptr [RAX]\nMOV byte ptr [R13 + RAX*0x1],0x0\nMOV EAX,ECX\nADD ECX,EBX\nCMP RAX,RBP\nJC 0x004009c0\nINC R12D\nINC R14\nMOV RAX,R14\nNOP dword ptr [RAX + RAX*0x1]\nMOV R14,RAX\nCMP R14,RBP\nJNC 0x004009f4\nLEA RAX,[R14 + 0x1]\nCMP byte ptr [R13 + R14*0x1],0x0\nJZ 0x004009e0\nCMP R14,RBP\nJC 0x00400990\nMOV RDI,R15\nMOV ESI,R12D\nCALL 0x00400b00\nMOV RDI,R13\nCALL 0x00400730\nMOV RDI,R15\nCALL 0x00400730\nMOV RBX,qword ptr [0x006020a0]\nMOV RDI,RBX\nCALL 0x00400770\nMOV EBP,EAX\nMOV RDI,RBX\nCALL 0x00400780\nADD EAX,EBP\nMOV EBP,0x0\nJZ 0x00400a82\nMOV RBX,qword ptr [0x006020c0]\nCALL 0x00400750\nMOV EDI,dword ptr [RAX]\nCALL 0x004007f0\nMOV RCX,RAX\nMOV EBP,0x1\nMOV ESI,0x1\nMOV EDX,0x400e1c\nXOR EAX,EAX\nMOV RDI,RBX\nJMP 0x00400a7d\nMOV RDI,qword ptr [0x006020c0]\nMOV RCX,qword ptr [RSI]\nMOV EBP,0x1\nMOV ESI,0x1\nMOV EDX,0x400de4\nXOR EAX,EAX\nCALL 0x004007e0\nMOV EAX,EBP\nADD RSP,0x8\nPOP RBX\nPOP R12\nPOP R13\nPOP R14\nPOP R15\nPOP RBP\nRET\n'
+p39
+S'55\n41 57\n41 56\n41 55\n41 54\n53\n50\n83 ff 02\n0f 85 4e 01 00 00\n48 8b 7e 08\ne8 a3 fe ff ff\n41 89 c4\n31 ed\n41 83 fc 03\n0f 8c 56 01 00 00\n44 89 e3\n83 e3 01\n44 89 e0\n01 d8\n41 8d 4c 1c fe\nc1 e9 1f\n8d 44 01 fe\nd1 f8\n48 63 e8\n48 89 ef\ne8 50 01 00 00\n49 89 c5\nbe 01 00 00 00\n4c 89 ef\n48 89 ea\ne8 2d fe ff ff\n48 8d 04 ed 00 00 00 00\n48 8d 3c 40\ne8 2c 01 00 00\n49 89 c7\n41 8d 44 1c ff\n83 f8 03\n41 bc 00 00 00 00\n72 72\n45 31 e4\n45 31 f6\n0f 1f 00\n43 8d 5c 36 03\n44 89 e0\n48 8d 04 40\n49 8d 3c c7\n89 de\ne8 29 01 00 00\n89 d8\n0f af c0\n83 c0 fd\nd1 e8\n48 39 e8\n73 19\n8d 0c 18\n0f 1f 80 00 00 00 00\n41 c6 44 05 00 00\n89 c8\n01 d9\n48 39 e8\n72 f1\n41 ff c4\n49 ff c6\n4c 89 f0\n0f 1f 84 00 00 00 00 00\n49 89 c6\n49 39 ee\n73 0c\n49 8d 46 01\n43 80 7c 35 00 00\n74 ec\n49 39 ee\n72 97\n4c 89 ff\n44 89 e6\ne8 fc 00 00 00\n4c 89 ef\ne8 24 fd ff ff\n4c 89 ff\ne8 1c fd ff ff\n48 8b 1d 85 16 20 00\n48 89 df\ne8 4d fd ff ff\n89 c5\n48 89 df\ne8 53 fd ff ff\n01 e8\nbd 00 00 00 00\n74 4c\n48 8b 1d 83 16 20 00\ne8 0e fd ff ff\n8b 38\ne8 a7 fd ff ff\n48 89 c1\nbd 01 00 00 00\nbe 01 00 00 00\nba 1c 0e 40 00\n31 c0\n48 89 df\neb 1b\n48 8b 3d 57 16 20 00\n48 8b 0e\nbd 01 00 00 00\nbe 01 00 00 00\nba e4 0d 40 00\n31 c0\ne8 5e fd ff ff\n89 e8\n48 83 c4 08\n5b\n41 5c\n41 5d\n41 5e\n41 5f\n5d\nc3\n'
+p40
+S'.text:0000000000400900\n.text:0000000000400901\n.text:0000000000400903\n.text:0000000000400905\n.text:0000000000400907\n.text:0000000000400909\n.text:000000000040090a\n.text:000000000040090b\n.text:000000000040090e\n.text:0000000000400914\n.text:0000000000400918\n.text:000000000040091d\n.text:0000000000400920\n.text:0000000000400922\n.text:0000000000400926\n.text:000000000040092c\n.text:000000000040092f\n.text:0000000000400932\n.text:0000000000400935\n.text:0000000000400937\n.text:000000000040093c\n.text:000000000040093f\n.text:0000000000400943\n.text:0000000000400945\n.text:0000000000400948\n.text:000000000040094b\n.text:0000000000400950\n.text:0000000000400953\n.text:0000000000400958\n.text:000000000040095b\n.text:000000000040095e\n.text:0000000000400963\n.text:000000000040096b\n.text:000000000040096f\n.text:0000000000400974\n.text:0000000000400977\n.text:000000000040097c\n.text:000000000040097f\n.text:0000000000400985\n.text:0000000000400987\n.text:000000000040098a\n.text:000000000040098d\n.text:0000000000400990\n.text:0000000000400995\n.text:0000000000400998\n.text:000000000040099c\n.text:00000000004009a0\n.text:00000000004009a2\n.text:00000000004009a7\n.text:00000000004009a9\n.text:00000000004009ac\n.text:00000000004009af\n.text:00000000004009b1\n.text:00000000004009b4\n.text:00000000004009b6\n.text:00000000004009b9\n.text:00000000004009c0\n.text:00000000004009c6\n.text:00000000004009c8\n.text:00000000004009ca\n.text:00000000004009cd\n.text:00000000004009cf\n.text:00000000004009d2\n.text:00000000004009d5\n.text:00000000004009d8\n.text:00000000004009e0\n.text:00000000004009e3\n.text:00000000004009e6\n.text:00000000004009e8\n.text:00000000004009ec\n.text:00000000004009f2\n.text:00000000004009f4\n.text:00000000004009f7\n.text:00000000004009f9\n.text:00000000004009fc\n.text:00000000004009ff\n.text:0000000000400a04\n.text:0000000000400a07\n.text:0000000000400a0c\n.text:0000000000400a0f\n.text:0000000000400a14\n.text:0000000000400a1b\n.text:0000000000400a1e\n.text:0000000000400a23\n.text:0000000000400a25\n.text:0000000000400a28\n.text:0000000000400a2d\n.text:0000000000400a2f\n.text:0000000000400a34\n.text:0000000000400a36\n.text:0000000000400a3d\n.text:0000000000400a42\n.text:0000000000400a44\n.text:0000000000400a49\n.text:0000000000400a4c\n.text:0000000000400a51\n.text:0000000000400a56\n.text:0000000000400a5b\n.text:0000000000400a5d\n.text:0000000000400a60\n.text:0000000000400a62\n.text:0000000000400a69\n.text:0000000000400a6c\n.text:0000000000400a71\n.text:0000000000400a76\n.text:0000000000400a7b\n.text:0000000000400a7d\n.text:0000000000400a82\n.text:0000000000400a84\n.text:0000000000400a88\n.text:0000000000400a89\n.text:0000000000400a8b\n.text:0000000000400a8d\n.text:0000000000400a8f\n.text:0000000000400a91\n.text:0000000000400a92\n'
+p41
+tp42
+sS'output_primes'
+p43
+(S'\n__stdcall output_primes(prime * primes)\n'
+p44
+V\u000avoid output_primes(prime *primes)\u000a\u000a{\u000a  uint uVar1;\u000a  prime *ppVar2;\u000a  ulong uVar3;\u000a  uint in_ESI;\u000a  ulong uVar4;\u000a  uint uVar5;\u000a  \u000a  puts("/* Generated file -- DO NOT EDIT */\u005cn");\u000a  __printf_chk(1,"#define WIDE_UINT_BITS %u\u005cn",0x40);\u000a  if (in_ESI == 0) {\u000a    uVar5 = 4;\u000a  }\u000a  else {\u000a    uVar5 = 2;\u000a    uVar3 = 0;\u000a    ppVar2 = primes;\u000a    do {\u000a      if (((uint)(uVar3 + 8) < in_ESI) && (0xff < primes[uVar3 + 8 & 0xffffffff].p - ppVar2->p)) {\u000a                    /* WARNING: Subroutine does not return */\u000a        abort();\u000a      }\u000a      __printf_chk(1,&DAT_00400e88,(ulong)(ppVar2->p - uVar5));\u000a      print_wide_uint(ppVar2->pinv);\u000a      __printf_chk(1,"),\u005cn   UINTMAX_MAX / %u)\u005cn",(ulong)ppVar2->p);\u000a      uVar5 = ppVar2->p;\u000a      uVar3 = uVar3 + 1;\u000a      ppVar2 = ppVar2 + 1;\u000a    } while (uVar3 < (ulong)in_ESI);\u000a    uVar5 = uVar5 + 2;\u000a  }\u000a  __printf_chk(1,"\u005cn#undef FIRST_OMITTED_PRIME\u005cn");\u000a  while (primes->p * primes->p <= uVar5) {\u000a    uVar1 = 1;\u000a    uVar3 = 0;\u000a    while (uVar4 = primes[uVar3].pinv * (ulong)uVar5,\u000a          primes[uVar3].lim <= uVar4 && uVar4 - primes[uVar3].lim != 0) {\u000a      uVar3 = (ulong)uVar1;\u000a      uVar1 = uVar1 + 1;\u000a      if (uVar5 < primes[uVar3].p * primes[uVar3].p) goto LAB_00400c36;\u000a    }\u000a    uVar5 = uVar5 + 2;\u000a  }\u000aLAB_00400c36:\u000a  __printf_chk(1,"#define FIRST_OMITTED_PRIME %u\u005cn",(ulong)uVar5);\u000a  return;\u000a}\u000a\u000a
+p45
+S'PUSH RBP\nPUSH R15\nPUSH R14\nPUSH R13\nPUSH R12\nPUSH RBX\nPUSH RAX\nMOV R14D,ESI\nMOV R12,RDI\nMOV EDI,0x400e48\nCALL 0x00400760\nMOV EDI,0x1\nMOV ESI,0x400e6d\nMOV EDX,0x40\nXOR EAX,EAX\nCALL 0x004007b0\nTEST R14D,R14D\nJZ 0x00400bc4\nMOV R15D,R14D\nMOV R13D,0x2\nMOV RBX,R12\nXOR EBP,EBP\nNOP dword ptr [RAX + RAX*0x1]\nLEA RAX,[RBP + 0x8]\nMOV EDX,dword ptr [RBX]\nMOV ECX,0xff\nCMP EAX,R14D\nJNC 0x00400b78\nMOV EAX,EAX\nLEA RAX,[RAX + RAX*0x2]\nMOV ECX,dword ptr [R12 + RAX*0x8]\nSUB ECX,EDX\nCMP ECX,0x100\nJNC 0x00400c58\nSUB EDX,R13D\nMOV EDI,0x1\nMOV ESI,0x400e88\nXOR EAX,EAX\nCALL 0x004007b0\nMOV RDI,qword ptr [RBX + 0x8]\nXOR ESI,ESI\nMOV EDX,0x40\nCALL 0x00400c90\nMOV EDX,dword ptr [RBX]\nMOV EDI,0x1\nMOV ESI,0x400e98\nXOR EAX,EAX\nCALL 0x004007b0\nMOV R13D,dword ptr [RBX]\nINC RBP\nADD RBX,0x18\nCMP RBP,R15\nJC 0x00400b50\nADD R13D,0x2\nJMP 0x00400bca\nMOV R13D,0x4\nMOV EDI,0x1\nMOV ESI,0x400eb1\nXOR EAX,EAX\nCALL 0x004007b0\nJMP 0x00400c04\nMOV EDX,ECX\nLEA RSI,[RDX + RDX*0x2]\nMOV ESI,dword ptr [R12 + RSI*0x8]\nIMUL ESI,ESI\nINC ECX\nCMP ESI,R13D\nJBE 0x00400c20\nJMP 0x00400c36\nADD R13D,0x2\nMOV EAX,dword ptr [R12]\nIMUL EAX,EAX\nCMP EAX,R13D\nJA 0x00400c36\nMOV EAX,R13D\nMOV ECX,0x1\nXOR EDX,EDX\nNOP word ptr [RAX + RAX*0x1]\nLEA RDX,[RDX + RDX*0x2]\nMOV RSI,qword ptr [R12 + RDX*0x8 + 0x8]\nIMUL RSI,RAX\nCMP RSI,qword ptr [R12 + RDX*0x8 + 0x10]\nJA 0x00400be0\nJMP 0x00400c00\nMOV EDI,0x1\nMOV ESI,0x400ece\nXOR EAX,EAX\nMOV EDX,R13D\nADD RSP,0x8\nPOP RBX\nPOP R12\nPOP R13\nPOP R14\nPOP R15\nPOP RBP\nJMP 0x004007b0\nCALL 0x00400740\n'
+p46
+S'55\n41 57\n41 56\n41 55\n41 54\n53\n50\n41 89 f6\n49 89 fc\nbf 48 0e 40 00\ne8 45 fc ff ff\nbf 01 00 00 00\nbe 6d 0e 40 00\nba 40 00 00 00\n31 c0\ne8 7f fc ff ff\n45 85 f6\n0f 84 8a 00 00 00\n45 89 f7\n41 bd 02 00 00 00\n4c 89 e3\n31 ed\n0f 1f 84 00 00 00 00 00\n48 8d 45 08\n8b 13\nb9 ff 00 00 00\n44 39 f0\n73 18\n89 c0\n48 8d 04 40\n41 8b 0c c4\n29 d1\n81 f9 00 01 00 00\n0f 83 e0 00 00 00\n44 29 ea\nbf 01 00 00 00\nbe 88 0e 40 00\n31 c0\ne8 24 fc ff ff\n48 8b 7b 08\n31 f6\nba 40 00 00 00\ne8 f4 00 00 00\n8b 13\nbf 01 00 00 00\nbe 98 0e 40 00\n31 c0\ne8 01 fc ff ff\n44 8b 2b\n48 ff c5\n48 83 c3 18\n4c 39 fd\n72 92\n41 83 c5 02\neb 06\n41 bd 04 00 00 00\nbf 01 00 00 00\nbe b1 0e 40 00\n31 c0\ne8 d5 fb ff ff\neb 27\n89 ca\n48 8d 34 52\n41 8b 34 f4\n0f af f6\nff c1\n44 39 ee\n76 2c\neb 40\n41 83 c5 02\n41 8b 04 24\n0f af c0\n44 39 e8\n77 26\n44 89 e8\nb9 01 00 00 00\n31 d2\n66 0f 1f 44 00 00\n48 8d 14 52\n49 8b 74 d4 08\n48 0f af f0\n49 3b 74 d4 10\n77 ac\neb ca\nbf 01 00 00 00\nbe ce 0e 40 00\n31 c0\n44 89 ea\n48 83 c4 08\n5b\n41 5c\n41 5d\n41 5e\n41 5f\n5d\ne9 58 fb ff ff\ne8 e3 fa ff ff\n'
+p47
+S'.text:0000000000400b00\n.text:0000000000400b01\n.text:0000000000400b03\n.text:0000000000400b05\n.text:0000000000400b07\n.text:0000000000400b09\n.text:0000000000400b0a\n.text:0000000000400b0b\n.text:0000000000400b0e\n.text:0000000000400b11\n.text:0000000000400b16\n.text:0000000000400b1b\n.text:0000000000400b20\n.text:0000000000400b25\n.text:0000000000400b2a\n.text:0000000000400b2c\n.text:0000000000400b31\n.text:0000000000400b34\n.text:0000000000400b3a\n.text:0000000000400b3d\n.text:0000000000400b43\n.text:0000000000400b46\n.text:0000000000400b48\n.text:0000000000400b50\n.text:0000000000400b54\n.text:0000000000400b56\n.text:0000000000400b5b\n.text:0000000000400b5e\n.text:0000000000400b60\n.text:0000000000400b62\n.text:0000000000400b66\n.text:0000000000400b6a\n.text:0000000000400b6c\n.text:0000000000400b72\n.text:0000000000400b78\n.text:0000000000400b7b\n.text:0000000000400b80\n.text:0000000000400b85\n.text:0000000000400b87\n.text:0000000000400b8c\n.text:0000000000400b90\n.text:0000000000400b92\n.text:0000000000400b97\n.text:0000000000400b9c\n.text:0000000000400b9e\n.text:0000000000400ba3\n.text:0000000000400ba8\n.text:0000000000400baa\n.text:0000000000400baf\n.text:0000000000400bb2\n.text:0000000000400bb5\n.text:0000000000400bb9\n.text:0000000000400bbc\n.text:0000000000400bbe\n.text:0000000000400bc2\n.text:0000000000400bc4\n.text:0000000000400bca\n.text:0000000000400bcf\n.text:0000000000400bd4\n.text:0000000000400bd6\n.text:0000000000400bdb\n.text:0000000000400be0\n.text:0000000000400be2\n.text:0000000000400be6\n.text:0000000000400bea\n.text:0000000000400bed\n.text:0000000000400bef\n.text:0000000000400bf2\n.text:0000000000400bf4\n.text:0000000000400c00\n.text:0000000000400c04\n.text:0000000000400c08\n.text:0000000000400c0b\n.text:0000000000400c0e\n.text:0000000000400c10\n.text:0000000000400c13\n.text:0000000000400c18\n.text:0000000000400c1a\n.text:0000000000400c20\n.text:0000000000400c24\n.text:0000000000400c29\n.text:0000000000400c2d\n.text:0000000000400c32\n.text:0000000000400c34\n.text:0000000000400c36\n.text:0000000000400c3b\n.text:0000000000400c40\n.text:0000000000400c42\n.text:0000000000400c45\n.text:0000000000400c49\n.text:0000000000400c4a\n.text:0000000000400c4c\n.text:0000000000400c4e\n.text:0000000000400c50\n.text:0000000000400c52\n.text:0000000000400c53\n.text:0000000000400c58\n'
+p48
+tp49
+sS'__fprintf_chk'
+p50
+(S'\n__stdcall __fprintf_chk()\n'
+p51
+V\u000avoid __fprintf_chk(void)\u000a\u000a{\u000a  (*(code *)PTR___fprintf_chk_00602070)();\u000a  return;\u000a}\u000a\u000a
+p52
+S'JMP qword ptr [0x00602070]\n'
+p53
+S'ff 25 8a 18 20 00\n'
+p54
+S'.plt:00000000004007e0\n'
+p55
+tp56
+sS'deregister_tm_clones'
+p57
+(S'\n__stdcall deregister_tm_clones()\n'
+p58
+V\u000a/* WARNING: Removing unreachable block (ram,0x00400845) */\u000a/* WARNING: Removing unreachable block (ram,0x0040084f) */\u000a\u000avoid deregister_tm_clones(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p59
+S'MOV EAX,0x602097\nPUSH RBP\nSUB RAX,0x602090\nCMP RAX,0xe\nMOV RBP,RSP\nJBE 0x00400860\nMOV EAX,0x0\nTEST RAX,RAX\nJZ 0x00400860\nPOP RBP\nMOV EDI,0x602090\nJMP RAX\nPOP RBP\nRET\n'
+p60
+S'b8 97 20 60 00\n55\n48 2d 90 20 60 00\n48 83 f8 0e\n48 89 e5\n76 1b\nb8 00 00 00 00\n48 85 c0\n74 11\n5d\nbf 90 20 60 00\nff e0\n5d\nc3\n'
+p61
+S'.text:0000000000400830\n.text:0000000000400835\n.text:0000000000400836\n.text:000000000040083c\n.text:0000000000400840\n.text:0000000000400843\n.text:0000000000400845\n.text:000000000040084a\n.text:000000000040084d\n.text:000000000040084f\n.text:0000000000400850\n.text:0000000000400855\n.text:0000000000400860\n.text:0000000000400861\n'
+p62
+tp63
+sS'__errno_location'
+p64
+(S'\n__stdcall __errno_location()\n'
+p65
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint * __errno_location(void)\u000a\u000a{\u000a  int *piVar1;\u000a  \u000a  piVar1 = (int *)(*(code *)PTR___errno_location_00602028)();\u000a  return piVar1;\u000a}\u000a\u000a
+p66
+S'JMP qword ptr [0x00602028]\n'
+p67
+S'ff 25 d2 18 20 00\n'
+p68
+S'.plt:0000000000400750\n'
+p69
+tp70
+sS'free'
+p71
+(S'\n__stdcall free(void * __ptr)\n'
+p72
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid free(void *__ptr)\u000a\u000a{\u000a  (*(code *)PTR_free_00602018)();\u000a  return;\u000a}\u000a\u000a
+p73
+S'JMP qword ptr [0x00602018]\n'
+p74
+S'ff 25 e2 18 20 00\n'
+p75
+S'.plt:0000000000400730\n'
+p76
+tp77
+sS'frame_dummy'
+p78
+(S'\n__stdcall frame_dummy()\n'
+p79
+V\u000a/* WARNING: Removing unreachable block (ram,0x004008ea) */\u000a\u000avoid frame_dummy(void)\u000a\u000a{\u000a  register_tm_clones();\u000a  return;\u000a}\u000a\u000a
+p80
+S'MOV EDI,0x601e18\nCMP qword ptr [RDI],0x0\nJNZ 0x004008e0\nJMP 0x00400870\nMOV EAX,0x0\nTEST RAX,RAX\nJZ 0x004008db\nPUSH RBP\nMOV RBP,RSP\nCALL RAX\nPOP RBP\nJMP 0x00400870\n'
+p81
+S'bf 18 1e 60 00\n48 83 3f 00\n75 05\neb 93\nb8 00 00 00 00\n48 85 c0\n74 f1\n55\n48 89 e5\nff d0\n5d\ne9 7a ff ff ff\n'
+p82
+S'.text:00000000004008d0\n.text:00000000004008d5\n.text:00000000004008d9\n.text:00000000004008db\n.text:00000000004008e0\n.text:00000000004008e5\n.text:00000000004008e8\n.text:00000000004008ea\n.text:00000000004008eb\n.text:00000000004008ee\n.text:00000000004008f0\n.text:00000000004008f1\n'
+p83
+tp84
+sS'atoi'
+p85
+(S'\n__stdcall atoi(char * __nptr)\n'
+p86
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint atoi(char *__nptr)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_atoi_00602060)();\u000a  return iVar1;\u000a}\u000a\u000a
+p87
+S'JMP qword ptr [0x00602060]\n'
+p88
+S'ff 25 9a 18 20 00\n'
+p89
+S'.plt:00000000004007c0\n'
+p90
+tp91
+sS'malloc'
+p92
+(S'\n__stdcall malloc(size_t __size)\n'
+p93
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid * malloc(size_t __size)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = (void *)(*(code *)PTR_malloc_00602050)();\u000a  return pvVar1;\u000a}\u000a\u000a
+p94
+S'JMP qword ptr [0x00602050]\n'
+p95
+S'ff 25 aa 18 20 00\n'
+p96
+S'.plt:00000000004007a0\n'
+p97
+tp98
+sS'register_tm_clones'
+p99
+(S'\n__stdcall register_tm_clones()\n'
+p100
+V\u000a/* WARNING: Removing unreachable block (ram,0x00400893) */\u000a/* WARNING: Removing unreachable block (ram,0x0040089d) */\u000a\u000avoid register_tm_clones(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p101
+S'MOV ESI,0x602090\nPUSH RBP\nSUB RSI,0x602090\nSAR RSI,0x3\nMOV RBP,RSP\nMOV RAX,RSI\nSHR RAX,0x3f\nADD RSI,RAX\nSAR RSI,1\nJZ 0x004008a8\nMOV EAX,0x0\nTEST RAX,RAX\nJZ 0x004008a8\nPOP RBP\nMOV EDI,0x602090\nJMP RAX\nPOP RBP\nRET\n'
+p102
+S'be 90 20 60 00\n55\n48 81 ee 90 20 60 00\n48 c1 fe 03\n48 89 e5\n48 89 f0\n48 c1 e8 3f\n48 01 c6\n48 d1 fe\n74 15\nb8 00 00 00 00\n48 85 c0\n74 0b\n5d\nbf 90 20 60 00\nff e0\n5d\nc3\n'
+p103
+S'.text:0000000000400870\n.text:0000000000400875\n.text:0000000000400876\n.text:000000000040087d\n.text:0000000000400881\n.text:0000000000400884\n.text:0000000000400887\n.text:000000000040088b\n.text:000000000040088e\n.text:0000000000400891\n.text:0000000000400893\n.text:0000000000400898\n.text:000000000040089b\n.text:000000000040089d\n.text:000000000040089e\n.text:00000000004008a3\n.text:00000000004008a8\n.text:00000000004008a9\n'
+p104
+tp105
+sS'process_prime'
+p106
+(S'\n__stdcall process_prime(prime * info)\n'
+p107
+V\u000avoid process_prime(prime *info)\u000a\u000a{\u000a  wide_uint wVar1;\u000a  uint in_ESI;\u000a  \u000a  info->p = in_ESI;\u000a  wVar1 = binvert((ulong)in_ESI);\u000a  info->pinv = wVar1;\u000a  info->lim = SUB168((ZEXT816(0) << 0x40 | ZEXT816(0xffffffffffffffff)) / ZEXT816((ulong)in_ESI),0);\u000a  return;\u000a}\u000a\u000a
+p108
+S'PUSH R14\nPUSH RBX\nPUSH RAX\nMOV RBX,RDI\nMOV dword ptr [RBX],ESI\nMOV R14D,ESI\nMOV RDI,R14\nCALL 0x00400c60\nMOV qword ptr [RBX + 0x8],RAX\nMOV RAX,-0x1\nXOR EDX,EDX\nDIV R14\nMOV qword ptr [RBX + 0x10],RAX\nADD RSP,0x8\nPOP RBX\nPOP R14\nRET\n'
+p109
+S'41 56\n53\n50\n48 89 fb\n89 33\n41 89 f6\n4c 89 f7\ne8 7c 01 00 00\n48 89 43 08\n48 c7 c0 ff ff ff ff\n31 d2\n49 f7 f6\n48 89 43 10\n48 83 c4 08\n5b\n41 5e\nc3\n'
+p110
+S'.text:0000000000400ad0\n.text:0000000000400ad2\n.text:0000000000400ad3\n.text:0000000000400ad4\n.text:0000000000400ad7\n.text:0000000000400ad9\n.text:0000000000400adc\n.text:0000000000400adf\n.text:0000000000400ae4\n.text:0000000000400ae8\n.text:0000000000400aef\n.text:0000000000400af1\n.text:0000000000400af4\n.text:0000000000400af8\n.text:0000000000400afc\n.text:0000000000400afd\n.text:0000000000400aff\n'
+p111
+tp112
+sS'fclose'
+p113
+(S'\n__stdcall fclose(FILE * __stream)\n'
+p114
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint fclose(FILE *__stream)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_fclose_00602040)();\u000a  return iVar1;\u000a}\u000a\u000a
+p115
+S'JMP qword ptr [0x00602040]\n'
+p116
+S'ff 25 ba 18 20 00\n'
+p117
+S'.plt:0000000000400780\n'
+p118
+tp119
+sS'print_wide_uint'
+p120
+(S'\n__stdcall print_wide_uint(wide_uint n)\n'
+p121
+V\u000avoid print_wide_uint(wide_uint n)\u000a\u000a{\u000a  undefined8 in_RDX;\u000a  uint uVar1;\u000a  int in_ESI;\u000a  ulong uVar2;\u000a  \u000a  uVar2 = (ulong)((uint)n & 0xfffffff);\u000a  if (uVar2 == n) {\u000a    if (in_ESI != 0) {\u000a      __printf_chk(1,"(uintmax_t) ");\u000a      uVar1 = ((int)in_RDX - 1U & 3) + 1;\u000a      goto LAB_00400d3d;\u000a    }\u000a  }\u000a  else {\u000a    if (n >> 0x38 == 0) {\u000a      print_wide_uint(n >> 0x1c);\u000a    }\u000a    else {\u000a      __printf_chk(1,&DAT_00400e96);\u000a      print_wide_uint(n >> 0x1c);\u000a      __printf_chk(1,")\u005cn%*s",(ulong)(in_ESI + 3),0x400eb0);\u000a    }\u000a    __printf_chk(1," << %d | ",0x1c);\u000a  }\u000a  uVar1 = 7;\u000aLAB_00400d3d:\u000a  __printf_chk(1,"0x%0*xU",(ulong)uVar1,uVar2);\u000a  return;\u000a}\u000a\u000a
+p122
+S'PUSH RBP\nPUSH R15\nPUSH R14\nPUSH RBX\nPUSH RAX\nMOV EBP,EDX\nMOV EBX,ESI\nMOV R14D,EDI\nAND R14D,0xfffffff\nCMP R14,RDI\nJNZ 0x00400ccc\nTEST EBX,EBX\nJZ 0x00400d38\nMOV EDI,0x1\nMOV ESI,0x400efe\nXOR EAX,EAX\nCALL 0x004007b0\nDEC EBP\nAND EBP,0x3\nINC EBP\nJMP 0x00400d3d\nMOV R15,RDI\nSHR R15,0x1c\nSHR RDI,0x38\nJZ 0x00400d14\nMOV EDI,0x1\nMOV ESI,0x400e96\nXOR EAX,EAX\nCALL 0x004007b0\nLEA ESI,[RBX + 0x1]\nMOV RDI,R15\nMOV EDX,EBP\nCALL 0x00400c90\nADD EBX,0x3\nMOV EDI,0x1\nMOV ESI,0x400eee\nMOV ECX,0x400eb0\nXOR EAX,EAX\nMOV EDX,EBX\nCALL 0x004007b0\nJMP 0x00400d22\nINC EBX\nMOV RDI,R15\nMOV ESI,EBX\nMOV EDX,EBP\nCALL 0x00400c90\nMOV EDI,0x1\nMOV ESI,0x400ef4\nMOV EDX,0x1c\nXOR EAX,EAX\nCALL 0x004007b0\nMOV EBP,0x7\nMOV EDI,0x1\nMOV ESI,0x400f0b\nXOR EAX,EAX\nMOV EDX,EBP\nMOV ECX,R14D\nADD RSP,0x8\nPOP RBX\nPOP R14\nPOP R15\nPOP RBP\nJMP 0x004007b0\n'
+p123
+S'55\n41 57\n41 56\n53\n50\n89 d5\n89 f3\n41 89 fe\n41 81 e6 ff ff ff 0f\n49 39 fe\n75 22\n85 db\n0f 84 86 00 00 00\nbf 01 00 00 00\nbe fe 0e 40 00\n31 c0\ne8 ed fa ff ff\nff cd\n83 e5 03\nff c5\neb 71\n49 89 ff\n49 c1 ef 1c\n48 c1 ef 38\n74 3b\nbf 01 00 00 00\nbe 96 0e 40 00\n31 c0\ne8 c6 fa ff ff\n8d 73 01\n4c 89 ff\n89 ea\ne8 99 ff ff ff\n83 c3 03\nbf 01 00 00 00\nbe ee 0e 40 00\nb9 b0 0e 40 00\n31 c0\n89 da\ne8 9e fa ff ff\neb 0e\nff c3\n4c 89 ff\n89 de\n89 ea\ne8 6e ff ff ff\nbf 01 00 00 00\nbe f4 0e 40 00\nba 1c 00 00 00\n31 c0\ne8 78 fa ff ff\nbd 07 00 00 00\nbf 01 00 00 00\nbe 0b 0f 40 00\n31 c0\n89 ea\n44 89 f1\n48 83 c4 08\n5b\n41 5e\n41 5f\n5d\ne9 53 fa ff ff\n'
+p124
+S'.text:0000000000400c90\n.text:0000000000400c91\n.text:0000000000400c93\n.text:0000000000400c95\n.text:0000000000400c96\n.text:0000000000400c97\n.text:0000000000400c99\n.text:0000000000400c9b\n.text:0000000000400c9e\n.text:0000000000400ca5\n.text:0000000000400ca8\n.text:0000000000400caa\n.text:0000000000400cac\n.text:0000000000400cb2\n.text:0000000000400cb7\n.text:0000000000400cbc\n.text:0000000000400cbe\n.text:0000000000400cc3\n.text:0000000000400cc5\n.text:0000000000400cc8\n.text:0000000000400cca\n.text:0000000000400ccc\n.text:0000000000400ccf\n.text:0000000000400cd3\n.text:0000000000400cd7\n.text:0000000000400cd9\n.text:0000000000400cde\n.text:0000000000400ce3\n.text:0000000000400ce5\n.text:0000000000400cea\n.text:0000000000400ced\n.text:0000000000400cf0\n.text:0000000000400cf2\n.text:0000000000400cf7\n.text:0000000000400cfa\n.text:0000000000400cff\n.text:0000000000400d04\n.text:0000000000400d09\n.text:0000000000400d0b\n.text:0000000000400d0d\n.text:0000000000400d12\n.text:0000000000400d14\n.text:0000000000400d16\n.text:0000000000400d19\n.text:0000000000400d1b\n.text:0000000000400d1d\n.text:0000000000400d22\n.text:0000000000400d27\n.text:0000000000400d2c\n.text:0000000000400d31\n.text:0000000000400d33\n.text:0000000000400d38\n.text:0000000000400d3d\n.text:0000000000400d42\n.text:0000000000400d47\n.text:0000000000400d49\n.text:0000000000400d4b\n.text:0000000000400d4e\n.text:0000000000400d52\n.text:0000000000400d53\n.text:0000000000400d55\n.text:0000000000400d57\n.text:0000000000400d58\n'
+p125
+tp126
+sS'binvert'
+p127
+(S'\n__stdcall binvert(wide_uint a)\n'
+p128
+V\u000awide_uint binvert(wide_uint a)\u000a\u000a{\u000a  long lVar1;\u000a  wide_uint wVar2;\u000a  ulong uVar3;\u000a  wide_uint wVar4;\u000a  \u000a  uVar3 = (ulong)(0xf5397db1 >> ((char)a * 2 & 0x1cU));\u000a  do {\u000a    wVar2 = uVar3;\u000a    wVar4 = (2 - uVar3 * a) * uVar3;\u000a    lVar1 = wVar4 - uVar3;\u000a    uVar3 = wVar4;\u000a  } while (lVar1 != 0);\u000a  return wVar2;\u000a}\u000a\u000a
+p129
+S'MOV ECX,EDI\nADD CL,CL\nAND CL,0x1c\nMOV EDX,0xf5397db1\nSHR EDX,CL\nNOP\nMOV RAX,RDX\nMOV RCX,RAX\nIMUL RCX,RDI\nMOV EDX,0x2\nSUB RDX,RCX\nIMUL RDX,RAX\nCMP RDX,RAX\nJNZ 0x00400c70\nRET\n'
+p130
+S'89 f9\n00 c9\n80 e1 1c\nba b1 7d 39 f5\nd3 ea\n66 90\n48 89 d0\n48 89 c1\n48 0f af cf\nba 02 00 00 00\n48 29 ca\n48 0f af d0\n48 39 c2\n75 e5\nc3\n'
+p131
+S'.text:0000000000400c60\n.text:0000000000400c62\n.text:0000000000400c64\n.text:0000000000400c67\n.text:0000000000400c6c\n.text:0000000000400c6e\n.text:0000000000400c70\n.text:0000000000400c73\n.text:0000000000400c76\n.text:0000000000400c7a\n.text:0000000000400c7f\n.text:0000000000400c82\n.text:0000000000400c86\n.text:0000000000400c89\n.text:0000000000400c8b\n'
+p132
+tp133
+sS'memset'
+p134
+(S'\n__stdcall memset(void * __s, int __c, size_t __n)\n'
+p135
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid * memset(void *__s,int __c,size_t __n)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = (void *)(*(code *)PTR_memset_00602048)();\u000a  return pvVar1;\u000a}\u000a\u000a
+p136
+S'JMP qword ptr [0x00602048]\n'
+p137
+S'ff 25 b2 18 20 00\n'
+p138
+S'.plt:0000000000400790\n'
+p139
+tp140
+sS'strerror'
+p141
+(S'\n__stdcall strerror(int __errnum)\n'
+p142
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000achar * strerror(int __errnum)\u000a\u000a{\u000a  char *pcVar1;\u000a  \u000a  pcVar1 = (char *)(*(code *)PTR_strerror_00602078)();\u000a  return pcVar1;\u000a}\u000a\u000a
+p143
+S'JMP qword ptr [0x00602078]\n'
+p144
+S'ff 25 82 18 20 00\n'
+p145
+S'.plt:00000000004007f0\n'
+p146
+tp147
+sS'puts'
+p148
+(S'\n__stdcall puts(char * __s)\n'
+p149
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint puts(char *__s)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_puts_00602030)();\u000a  return iVar1;\u000a}\u000a\u000a
+p150
+S'JMP qword ptr [0x00602030]\n'
+p151
+S'ff 25 ca 18 20 00\n'
+p152
+S'.plt:0000000000400760\n'
+p153
+tp154
+sS'ferror'
+p155
+(S'\n__stdcall ferror(FILE * __stream)\n'
+p156
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000aint ferror(FILE *__stream)\u000a\u000a{\u000a  int iVar1;\u000a  \u000a  iVar1 = (*(code *)PTR_ferror_00602038)();\u000a  return iVar1;\u000a}\u000a\u000a
+p157
+S'JMP qword ptr [0x00602038]\n'
+p158
+S'ff 25 c2 18 20 00\n'
+p159
+S'.plt:0000000000400770\n'
+p160
+tp161
+sS'exit'
+p162
+(S'\n__stdcall exit(int __status)\n'
+p163
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid exit(int __status)\u000a\u000a{\u000a  (*(code *)PTR_exit_00602068)();\u000a  return;\u000a}\u000a\u000a
+p164
+S'JMP qword ptr [0x00602068]\n'
+p165
+S'ff 25 92 18 20 00\n'
+p166
+S'.plt:00000000004007d0\n'
+p167
+tp168
+sS'__libc_csu_fini'
+p169
+(S'\n__stdcall __libc_csu_fini()\n'
+p170
+V\u000avoid __libc_csu_fini(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p171
+S'RET\n'
+p172
+S'f3 c3\n'
+p173
+S'.text:0000000000400dd0\n'
+p174
+tp175
+sS'xalloc'
+p176
+(S'\n__stdcall xalloc(size_t s)\n'
+p177
+V\u000avoid * xalloc(size_t s)\u000a\u000a{\u000a  void *pvVar1;\u000a  \u000a  pvVar1 = malloc(s);\u000a  if (pvVar1 != (void *)0x0) {\u000a    return pvVar1;\u000a  }\u000a  __fprintf_chk(stderr,1,"Virtual memory exhausted.\u005cn");\u000a                    /* WARNING: Subroutine does not return */\u000a  exit(1);\u000a}\u000a\u000a
+p178
+S'PUSH RAX\nCALL 0x004007a0\nTEST RAX,RAX\nJZ 0x00400aad\nPOP RCX\nRET\nMOV RDI,qword ptr [0x006020c0]\nMOV ESI,0x1\nMOV EDX,0x400e2d\nXOR EAX,EAX\nCALL 0x004007e0\nMOV EDI,0x1\nCALL 0x004007d0\n'
+p179
+S'50\ne8 fa fc ff ff\n48 85 c0\n74 02\n59\nc3\n48 8b 3d 0c 16 20 00\nbe 01 00 00 00\nba 2d 0e 40 00\n31 c0\ne8 1b fd ff ff\nbf 01 00 00 00\ne8 01 fd ff ff\n'
+p180
+S'.text:0000000000400aa0\n.text:0000000000400aa1\n.text:0000000000400aa6\n.text:0000000000400aa9\n.text:0000000000400aab\n.text:0000000000400aac\n.text:0000000000400aad\n.text:0000000000400ab4\n.text:0000000000400ab9\n.text:0000000000400abe\n.text:0000000000400ac0\n.text:0000000000400ac5\n.text:0000000000400aca\n'
+p181
+tp182
+sS'abort'
+p183
+(S'\n__stdcall abort()\n'
+p184
+V\u000a/* WARNING: Unknown calling convention yet parameter storage is locked */\u000a\u000avoid abort(void)\u000a\u000a{\u000a  (*(code *)PTR_abort_00602020)();\u000a  return;\u000a}\u000a\u000a
+p185
+S'JMP qword ptr [0x00602020]\n'
+p186
+S'ff 25 da 18 20 00\n'
+p187
+S'.plt:0000000000400740\n'
+p188
+tp189
+sS'__do_global_dtors_aux'
+p190
+(S'\n__stdcall __do_global_dtors_aux()\n'
+p191
+V\u000avoid __do_global_dtors_aux(void)\u000a\u000a{\u000a  if (completed_7561 == 0) {\u000a    deregister_tm_clones();\u000a    completed_7561 = 1;\u000a  }\u000a  return;\u000a}\u000a\u000a
+p192
+S'CMP byte ptr [0x006020c8],0x0\nJNZ 0x004008ca\nPUSH RBP\nMOV RBP,RSP\nCALL 0x00400830\nPOP RBP\nMOV byte ptr [0x006020c8],0x1\nRET\n'
+p193
+S'80 3d 11 18 20 00 00\n75 11\n55\n48 89 e5\ne8 6e ff ff ff\n5d\nc6 05 fe 17 20 00 01\nf3 c3\n'
+p194
+S'.text:00000000004008b0\n.text:00000000004008b7\n.text:00000000004008b9\n.text:00000000004008ba\n.text:00000000004008bd\n.text:00000000004008c2\n.text:00000000004008c3\n.text:00000000004008ca\n'
+p195
+tp196
+sS'_fini'
+p197
+(S'\n__stdcall _fini()\n'
+p198
+V\u000avoid _fini(void)\u000a\u000a{\u000a  return;\u000a}\u000a\u000a
+p199
+S'SUB RSP,0x8\nADD RSP,0x8\nRET\n'
+p200
+S'48 83 ec 08\n48 83 c4 08\nc3\n'
+p201
+S'.fini:0000000000400dd4\n.fini:0000000000400dd8\n.fini:0000000000400ddc\n'
+p202
+tp203
+s.
