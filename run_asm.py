@@ -15,13 +15,14 @@ import bleu
 import pickle
 import random
 
-default_output_dir = './model/'
+default_output_dir = './model_cross_vex_codebert/'
 # train_dataset='./spoc/spoc-train.frange'
 # dev_dataset = './spoc/spoc-testp.frange'
 # test_dataset = './spoc/spoc-testw.frange'
-train_dataset_dir='./ghidra/unstrip/train'
-dev_dataset_dir = './ghidra/unstrip/dev'
-test_dataset_dir ='./ghidra/unstrip/test'
+train_dataset_dir='./ghidra/cross/train'
+dev_dataset_dir = './ghidra/cross/dev'
+test_dataset_dir ='./ghidra/cross/test'
+vex_dir = './ghidra/cross_vex'
 
 MODEL_CLASSES = {'roberta': (RobertaConfig, RobertaModel, RobertaTokenizer)}
 
@@ -29,7 +30,9 @@ logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(messa
                     datefmt = '%m/%d/%Y %H:%M:%S',
                     level = logging.INFO)
 logger = logging.getLogger(__name__)
-tokenizer = RobertaTokenizer.from_pretrained("roberta-base")
+#tokenizer = RobertaTokenizer.from_pretrained("roberta-base")
+model_type = 'microsoft/codebert-base'
+tokenizer = RobertaTokenizer.from_pretrained("microsoft/codebert-base")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
@@ -76,7 +79,7 @@ def evaluate_test(model, eval_examples, eval_dataloader, idx, args):
                     predictions.append(str(gold.idx)+'\t'+ref)
                     f.write(str(gold.idx)+'\t'+ref+'\n')
                     f1.write(str(gold.idx)+'\t'+gold.target+'\n')     
-
+            
             (goldMap, predictionMap) = bleu.computeMaps(predictions, os.path.join(args.output_dir, "test_{}.gold".format(idx))) 
             dev_bleu=round(bleu.bleuFromMaps(goldMap, predictionMap)[0],2)
             logger.info("  %s = %s "%("bleu-4",str(dev_bleu)))
@@ -102,10 +105,10 @@ def main():
         os.makedirs(args.output_dir)
     
     config_class, model_class, tokenizer_class = MODEL_CLASSES[args.model_type]
-    config = RobertaConfig.from_pretrained("roberta-base")
+    config = RobertaConfig.from_pretrained(model_type)
     
     #build model
-    encoder = RobertaModel.from_pretrained("roberta-base")    
+    encoder = RobertaModel.from_pretrained(model_type)    
     decoder_layer = nn.TransformerDecoderLayer(d_model=config.hidden_size, nhead=config.num_attention_heads)
     decoder = nn.TransformerDecoder(decoder_layer, num_layers=6)
     model=Seq2Seq(encoder=encoder,decoder=decoder,config=config,

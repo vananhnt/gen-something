@@ -4,6 +4,7 @@ import re
 import glob
 import pickle
 from transformers import RobertaTokenizer
+from tqdm import tqdm
 
 tokenizer = RobertaTokenizer.from_pretrained("microsoft/codebert-base")
 
@@ -13,35 +14,71 @@ def to_token(s):
     #result = ' '.join([v for v in values if v is not None])
     return values
 
+def to_token_asm(s):
+    words = []
+    for line in s.split('\n'):
+        for word in re.split('\s|,', line):
+            words.append(normalize(word))
+    return [w for w in words if w is not None]
+
 def stripcomments(text):
     return re.sub('//.*?\n|/\*.*?\*/', '', text, flags=re.S)
 
+def normalise(text):
+    txt = stripcomments(text)
+    # remove function name
+    content = txt[txt.find('(')+1:]
+    return content
 
 # TODO: Need to add sampleID when process ghidra, not here
 def load_dataframe(dataset_dir):
     fileID = 0
     fid = 0
-    number_files = len(os.listdir(dataset_dir)) # dir is your directory path
     
     row_list = []
+    header = ['id', 'funcname', 'signature', 'decompiled', 'disassembly', 'bytes',  'vex', 'address', 'sampleID']
     
-    header = ['id', 'funcname', 'signature', 'decompiled', 'disassembly', 'bytes', 'address', 'sampleID']
-
-    for filename in glob.iglob(dataset_dir + '/*.pkl'):
+    if '.pkl' in dataset_dir:
+        filename = dataset_dir
         funcmap = pickle.load(open(filename, "rb" ))
+          
         for k in funcmap:
             funcname = k
             (signature, dec_func, disasm_result, byte, addr) = funcmap[k]      
+            vex = ''
             func_dict = {'id': fid, 'funcname': funcname, 
-                         'signature': signature, 'decompiled': stripcomments(dec_func), 
+                         'signature': signature, 'decompiled': normalise(dec_func), 
                          'disassembly': disasm_result, 'bytes': byte, 
-                         'address':addr, 'sampleID':fileID,
-                        }
+                         'vex':vex, 'address':addr, 'sampleID':fileID, 
+                        }   
             row_list.append(func_dict)
             fid += 1
-        fileID +=1
-    df = pd.DataFrame(row_list, columns = header)               
-    return df
+        df = pd.DataFrame(row_list, columns = header)               
+        return df
+    else:
+        vex_dir = './ghidra/' + dataset_dir.split('/')[2] + '_vex/'
+        number_files = len(os.listdir(dataset_dir)) # dir is your directory path
+        for filename in tqdm(glob.iglob(dataset_dir + '/*.pkl'), total = number_files):
+            funcmap = pickle.load(open(filename, "rb" ))
+
+            vex_map = pickle.load(open(vex_dir+filename.split('/')[-1], "rb")) if os.path.exists(vex_dir+filename.split('/')[-1]) else dict()
+
+            for k in funcmap:
+                funcname = k
+                (signature, dec_func, disasm_result, byte, addr) = funcmap[k]      
+                vex = vex_map[funcname] if funcname in vex_map.keys() else ''
+                func_dict = {'id': fid, 'funcname': funcname, 
+                             'signature': signature, 'decompiled': normalise(dec_func), 
+                             'disassembly': disasm_result, 'bytes': byte, 
+                             'vex':vex, 'address':addr, 'sampleID':fileID, 
+                            }   
+
+                row_list.append(func_dict)
+                fid += 1
+            fileID +=1
+            #if fileID > 5: break
+        df = pd.DataFrame(row_list, columns = header)               
+        return df
 
 def extract_decompile(dataset_dir):
     # return dict : idx, source, target
@@ -52,7 +89,7 @@ def extract_decompile(dataset_dir):
 def extract_asm(dataset_dir):
     # return dict : idx, source, target
     df = load_dataframe(dataset_dir)
-    samples = df.set_index('id')[['disassembly', 'funcname']].T.to_dict('list')
+    samples = df.set_index('id')[['disassembly', 'funcname', 'vex']].T.to_dict('list')
     return samples
 
 def args_parser(parser):
@@ -75,6 +112,9 @@ def args_parser(parser):
     parser.add_argument("--max_target_length", default=32, type=int,
                         help="The maximum total target sequence length after tokenization. Sequences longer "
                              "than this will be truncated, sequences shorter will be padded.")
+   
+    parser.add_argument("--with_vex", action='store_true',
+                        help="Whether to train with VEXIR.")
     
     parser.add_argument("--do_train", action='store_true',
                         help="Whether to run training.")
@@ -120,3 +160,12 @@ def args_parser(parser):
     
     args = parser.parse_args()
     return args
+
+def normalize(word):
+    if word == '':
+        return None
+    if '[' in word and 'x' in word:
+        return 'MEM'
+    if word.startswith('0x0'):
+        return 'VAL'
+    return word
