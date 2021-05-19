@@ -96,6 +96,7 @@ class Seq2Seq(nn.Module):
             preds=torch.cat(preds,0)                
             return preds 
 
+        
 class Beam(object):
     def __init__(self, size,sos,eos):
         self.size = size

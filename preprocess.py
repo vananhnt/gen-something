@@ -76,7 +76,7 @@ def load_dataframe(dataset_dir):
                 row_list.append(func_dict)
                 fid += 1
             fileID +=1
-            #if fileID > 5: break
+            if fileID > 50: break
         df = pd.DataFrame(row_list, columns = header)               
         return df
 

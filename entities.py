@@ -106,14 +106,15 @@ class InputFeatures(object):
 
 def convert_examples_to_features(examples, tokenizer, args, stage=None):
     features = []
-    max_source_length=36
-    max_target_length =36
+    max_source_length=256
+    max_target_length =20
     if args.with_vex:
         for example_index, example in enumerate(examples):
             #source
-            source_tokens = tokenizer.tokenize(example.source)[:max_source_length-2]
-            vex_tokens = tokenizer.tokenize(example.vex)[:max_source_length-2]
-            source_tokens =[tokenizer.cls_token]+source_token+vex_tokens+[tokenizer.sep_token]
+            source_tokens = tokenizer.tokenize(example.source)[:int(max_source_length/2)-2]
+            vex_tokens = source_tokens+[tokenizer.sep_token]+tokenizer.tokenize(example.vex)
+            concat_tokens = vex_tokens[:max_source_length-2]
+            source_tokens =[tokenizer.cls_token]+concat_tokens+[tokenizer.sep_token]
             source_ids =  tokenizer.convert_tokens_to_ids(source_tokens) 
             
             source_mask = [1] * (len(source_tokens))
@@ -161,7 +162,7 @@ def convert_examples_to_features(examples, tokenizer, args, stage=None):
     return features
 
 if __name__ == '__main__':
-    exm = read_examples('./ghidra/cross/train')
-    for example in exm:
-        print(example.source)
-        break
+    exm = read_examples('./ghidra/unstrip/')
+    #for example in exm:
+        #print(example.source)
+        

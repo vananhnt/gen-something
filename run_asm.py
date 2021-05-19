@@ -16,9 +16,6 @@ import pickle
 import random
 
 default_output_dir = './model_cross_vex_codebert/'
-# train_dataset='./spoc/spoc-train.frange'
-# dev_dataset = './spoc/spoc-testp.frange'
-# test_dataset = './spoc/spoc-testw.frange'
 train_dataset_dir='./ghidra/cross/train'
 dev_dataset_dir = './ghidra/cross/dev'
 test_dataset_dir ='./ghidra/cross/test'
