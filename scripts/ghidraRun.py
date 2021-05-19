@@ -8,26 +8,18 @@ import subprocess
 from tqdm import tqdm
 import math
 
-#root_dir = "/home/va/Documents/arm_full"
-root_dir = "/home/va/Downloads/cross-compile-dataset-master/bin/"
+root_dir = "/home/va/Documents/arm_full"
 ghidra_dir = "/home/va/ghidra_9.0.1"
 ghidra_out = './ghidra/cross'
 #add remove comments
 
 def save_decompile():
-    for filename in tqdm(glob.iglob(root_dir + '**/**', recursive=True)):
-        if os.path.isfile(filename) and 'bin' not in filename:
-            prefix = 'bin'
-            isdynamic = 'dynamic' if 'dynamic' in filename else 'static' 
-            print(filename.split('/')[-1])
-            newfile = filename+'_'+prefix+'_'+isdynamic
-            os.rename(filename, newfile)
-            #print(prefix)
-            cmd =  '/home/va/ghidra_9.0.1/support/analyzeHeadless /home/va run_12 -import {} -scriptPath /home/va -postScript ./ghidra/decompiler.py ./ghidra/cross/{}_decompiled.pkl'.format(newfile, newfile.split('/')[-1])
-            #cmd =  '/home/va/ghidra_9.0.1/support/analyzeHeadless /home/va run_1 -process {} -scriptPath /home/va -postScript ./ghidra/decompiler.py ./ghidra/out/{}_decompiler.pkl'.format(filename.split('/')[-1], filename.split('/')[-1])
-            p = subprocess.run(cmd, shell=True, stdout=subprocess.PIPE)
-            print(str(p).replace('\\n', '\n'))
-            
+    for filename in tqdm(glob.iglob(root_dir + '/*', recursive=True)):
+        print(filename.split('/')[-1])
+        cmd =  '/home/va/ghidra_9.0.1/support/analyzeHeadless /home/va run_1 -import {} -scriptPath /home/va -postScript ./ghidra/decompiler.py ./ghidra/out/{}_decompiled.pkl'.format(filename, filename.split('/')[-1])
+        #cmd =  '/home/va/ghidra_9.0.1/support/analyzeHeadless /home/va test_1 -process {} -scriptPath /home/va -postScript ./ghidra/decompiler.py ./ghidra/out/{}_decompiler.pkl'.format(filename.split('/')[-1], filename.split('/')[-1])
+        p = subprocess.run(cmd, shell=True, stdout=subprocess.PIPE)
+        print(str(p).replace('\\n', '\n'))
 
 def read_funcmap():
     fileID = 0
@@ -50,7 +42,7 @@ def split_train_test():
     source=ghidra_out
     dev='./ghidra/dev'
     test='./ghidra/test'
-    total = len(os.listdir(('./ghidra/out')))
+    total = len(os.listdir(('./ghidra/cross')))
     
     no_train, no_dev =  math.floor(0.7*total), math.floor(0.15*total), 
     no_test = total - no_train - no_dev    
@@ -74,6 +66,6 @@ def split_train_test():
     print("[" + str(no_test) +" files moved ]")
           
 if __name__ == '__main__':
-    save_decompile()
+    #save_decompile()
     #read_funcmap()
-    #split_train_test()
+    split_train_test()
