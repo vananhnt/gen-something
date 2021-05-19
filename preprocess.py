@@ -66,7 +66,7 @@ def load_dataframe(dataset_dir):
             for k in funcmap:
                 funcname = k
                 (signature, dec_func, disasm_result, byte, addr) = funcmap[k]      
-                vex = vex_map[funcname] if funcname in vex_map.keys() else ''
+                vex = vex_map[funcname][:50] if funcname in vex_map.keys() else ''
                 func_dict = {'id': fid, 'funcname': funcname, 
                              'signature': signature, 'decompiled': normalise(dec_func), 
                              'disassembly': disasm_result, 'bytes': byte, 
@@ -76,7 +76,7 @@ def load_dataframe(dataset_dir):
                 row_list.append(func_dict)
                 fid += 1
             fileID +=1
-            if fileID > 50: break
+            #if fileID > 100: break
         df = pd.DataFrame(row_list, columns = header)               
         return df
 

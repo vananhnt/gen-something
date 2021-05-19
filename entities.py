@@ -111,8 +111,8 @@ def convert_examples_to_features(examples, tokenizer, args, stage=None):
     if args.with_vex:
         for example_index, example in enumerate(examples):
             #source
-            source_tokens = tokenizer.tokenize(example.source)[:int(max_source_length/2)-2]
-            vex_tokens = source_tokens+[tokenizer.sep_token]+tokenizer.tokenize(example.vex)
+            source_tokens = tokenizer.tokenize(example.source)
+            vex_tokens = source_tokens+tokenizer.tokenize(example.vex)
             concat_tokens = vex_tokens[:max_source_length-2]
             source_tokens =[tokenizer.cls_token]+concat_tokens+[tokenizer.sep_token]
             source_ids =  tokenizer.convert_tokens_to_ids(source_tokens) 
